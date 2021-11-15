@@ -21,3 +21,5 @@ sicp-all:
 	# pandoc sicp.epub --epub-chapter-level=1 --extract-media=docs -t gfm-raw_html -s -o docs/direct.md
 	pandoc sicp.epub --extract-media=docs -t gfm-raw_html -s -o docs/direct.md
 
+test-filter:
+	pandoc sicp/html/index.xhtml  --defaults pandoc_defaults.yml -M sidebar_position="5" -s -o docs/sicp/index.filter.md;
