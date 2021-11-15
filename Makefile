@@ -1,14 +1,14 @@
 unzip:
-	unzip sicp.epub -d sicp
+	@if [ ! -d sicp ]; then unzip sicp.epub -d sicp; fi;
+	
+sicp-dir:
+	@if [ ! -d docs/sicp ]; then mkdir docs/sicp; fi;
 
-sicp-chapters:
+# epub -> unzip -> sicp-chapters
+sicp-chapters: unzip sicp-dir
 	for ch in sicp/html/*.xhtml; do \
 		pandoc $$ch -t gfm-raw_html --lua-filter=luaFilters/meta.lua -s -o docs/sicp/$$(basename $$ch .xhtml).md; \
 	done
-
-# epub -> unzip -> sicp-chapters
-sicp.md: unzip sicp-chapters
-
 
 toc:
 	pandoc sicp.epub -t gfm-raw_html --toc -s -o docs/toc.md
