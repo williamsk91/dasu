@@ -10,16 +10,20 @@ sicp-chapters: unzip sicp-dir
 		pandoc $$ch -t gfm-raw_html --lua-filter=luaFilters/meta.lua -s -o docs/sicp/$$(basename $$ch .xhtml).md; \
 	done
 
-toc:
-	pandoc sicp.epub -t gfm-raw_html --toc -s -o docs/toc.md
+toc-md:
+	pandoc sicp/toc.xhtml --defaults pandoc_defaults.yml -o docs/toc.md
 
-toc-unzip:
-	pandoc sicp/toc.xhtml -t gfm-raw_html -o docs/toc-unzip.md
+toc-json: toc-md
+	pandoc docs/toc.md -t writer/toc-json.lua -o docs/toc.json
+
+toc-chapters:
+	ts-node utils/pandoc_json_to_plain_json.ts docs/toc.json
+
 
 # Direct epub -> md conversion
-sicp-all:
-	# pandoc sicp.epub --epub-chapter-level=1 --extract-media=docs -t gfm-raw_html -s -o docs/direct.md
-	pandoc sicp.epub --extract-media=docs -t gfm-raw_html -s -o docs/direct.md
+sicp-direct:
+	pandoc sicp.epub -t html5 -s -o direct.html
+	# pandoc direct.md -t epub3 --epub-chapter-level=4 -s -o direct.epub
 
 test-filter:
-	pandoc sicp/html/index.xhtml  --defaults pandoc_defaults.yml -M sidebar_position="5" -s -o docs/sicp/index.filter.md;
+	pandoc sicp/html/index.xhtml --defaults pandoc_defaults.yml -M sidebar_position="5" -s -o docs/sicp/index.filter.md;

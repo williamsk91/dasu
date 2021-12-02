@@ -2,7 +2,8 @@
 -- Assign sidebar position metadata
 function Meta (m)
     return {
-        sidebar_position = m.sidebar_position
+        title = m.title,
+        sidebar_position = m.sidebar_position,
     }
 end
 
