@@ -8,14 +8,12 @@ const remarkGfm = require("remark-gfm");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "SICP",
-  tagline: "Dinosaurs are cool",
+  // tagline: "Dinosaurs are cool",
   url: "https://your-docusaurus-test-site.com",
   baseUrl: "/",
   onBrokenLinks: "ignore",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
 
   presets: [
     [
@@ -40,19 +38,21 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: "My Site",
-        logo: {
-          alt: "My Site Logo",
-          src: "img/logo.svg",
-        },
         items: [
           {
             type: "doc",
             docId: "Toc",
             position: "left",
-            label: "Book",
+            label: "SICP",
           },
         ],
+      },
+
+      colorMode: {
+        switchConfig: {
+          darkIcon: "☽",
+          lightIcon: "☀️",
+        },
       },
 
       prism: {
