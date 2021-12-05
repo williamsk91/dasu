@@ -28,7 +28,7 @@ const config = {
         blog: false,
         pages: false,
         theme: {
-          customCss: require.resolve("./src/css/custom.css"),
+          customCss: require.resolve("./src/css/custom.scss"),
         },
       }),
     ],
@@ -62,6 +62,7 @@ const config = {
     }),
 
   plugins: [
+    "docusaurus-plugin-sass",
     [
       require.resolve("@easyops-cn/docusaurus-search-local"),
       {
