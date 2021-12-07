@@ -4,6 +4,8 @@
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const remarkGfm = require("remark-gfm");
+const math = require("remark-math");
+const katex = require("rehype-katex");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -22,7 +24,8 @@ const config = {
       ({
         docs: {
           routeBasePath: "/",
-          remarkPlugins: [remarkGfm],
+          remarkPlugins: [remarkGfm, math],
+          rehypePlugins: [katex],
           sidebarPath: require.resolve("./sidebars.js"),
         },
         blog: false,
@@ -60,6 +63,15 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+
+  stylesheets: [
+    {
+      href: "https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css",
+      integrity:
+        "sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc",
+      crossorigin: "anonymous",
+    },
+  ],
 
   plugins: [
     "docusaurus-plugin-sass",
