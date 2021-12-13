@@ -44,7 +44,7 @@ const config = {
         items: [
           {
             type: "doc",
-            docId: "Toc",
+            docId: "direct",
             position: "left",
             label: "SICP",
           },
