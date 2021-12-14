@@ -1,17 +1,12 @@
 ---
-author: Harold Abelson, Gerald Jay Sussman, Julie Sussman
-date: 1996
-identifier: "urn:uuid:a412368e-e0ac-42ce-8c01-0f0da52f5731"
-language: en-US
-publisher: MIT Press
-title: direct
+title: book
+toc_min_heading_level: 3
+toc_max_heading_level: 3
 ---
 
 ![](html/fig/cover.png)
 
 <div className="section">
-
-[⇡](#index.xhtml#pagetop)
 
 # Structure and Interpretation of Computer Programs
 
@@ -23,7 +18,7 @@ Unofficial Texinfo Format 2.andresraba6.6
 </div>
 
 **Harold Abelson and Gerald Jay Sussman with Julie Sussman, foreword by
-Alan J. Perlis**  
+Alan J. Perlis**
 
 ©1996 by The Massachusetts Institute of Technology
 
@@ -58,30 +53,30 @@ based on [2.neilvandyke4](http://www.neilvandyke.org/sicp-texi/)
 
 <div className="shortcontents">
 
--   [Unofficial Texinfo
-    Format](#index.xhtml#toc-Unofficial-Texinfo-Format)
--   [Dedication](#index.xhtml#toc-Dedication-1)
--   [Foreword](#index.xhtml#toc-Foreword-1)
--   [Preface to the Second
-    Edition](#index.xhtml#toc-Preface-to-the-Second-Edition)
--   [Preface to the First
-    Edition](#index.xhtml#toc-Preface-to-the-First-Edition)
--   [Acknowledgments](#index.xhtml#toc-Acknowledgments-1)
--   [1 Building Abstractions with
-    Procedures](#index.xhtml#toc-Building-Abstractions-with-Procedures)
--   [2 Building Abstractions with
-    Data](#index.xhtml#toc-Building-Abstractions-with-Data)
--   [3 Modularity, Objects, and
-    State](#index.xhtml#toc-Modularity_002c-Objects_002c-and-State)
--   [4 Metalinguistic
-    Abstraction](#index.xhtml#toc-Metalinguistic-Abstraction)
--   [5 Computing with Register
-    Machines](#index.xhtml#toc-Computing-with-Register-Machines)
--   [References](#index.xhtml#toc-References-1)
--   [List of Exercises](#index.xhtml#toc-List-of-Exercises)
--   [List of Figures](#index.xhtml#toc-List-of-Figures)
--   [Term Index](#index.xhtml#toc-Term-Index-1)
--   [Colophon](#index.xhtml#toc-Colophon-1)
+- [Unofficial Texinfo
+  Format](#index.xhtml#toc-Unofficial-Texinfo-Format)
+- [Dedication](#index.xhtml#toc-Dedication-1)
+- [Foreword](#index.xhtml#toc-Foreword-1)
+- [Preface to the Second
+  Edition](#index.xhtml#toc-Preface-to-the-Second-Edition)
+- [Preface to the First
+  Edition](#index.xhtml#toc-Preface-to-the-First-Edition)
+- [Acknowledgments](#index.xhtml#toc-Acknowledgments-1)
+- [1 Building Abstractions with
+  Procedures](#index.xhtml#toc-Building-Abstractions-with-Procedures)
+- [2 Building Abstractions with
+  Data](#index.xhtml#toc-Building-Abstractions-with-Data)
+- [3 Modularity, Objects, and
+  State](#index.xhtml#toc-Modularity_002c-Objects_002c-and-State)
+- [4 Metalinguistic
+  Abstraction](#index.xhtml#toc-Metalinguistic-Abstraction)
+- [5 Computing with Register
+  Machines](#index.xhtml#toc-Computing-with-Register-Machines)
+- [References](#index.xhtml#toc-References-1)
+- [List of Exercises](#index.xhtml#toc-List-of-Exercises)
+- [List of Figures](#index.xhtml#toc-List-of-Figures)
+- [Term Index](#index.xhtml#toc-Term-Index-1)
+- [Colophon](#index.xhtml#toc-Colophon-1)
 
 </div>
 
@@ -89,264 +84,249 @@ based on [2.neilvandyke4](http://www.neilvandyke.org/sicp-texi/)
 
 <div className="contents">
 
--   [Unofficial Texinfo Format](#UTF.xhtml#UTF)
--   [Dedication](#Dedication.xhtml#Dedication)
--   [Foreword](#Foreword.xhtml#Foreword)
--   [Preface to the Second Edition](#Preface.xhtml#Preface)
--   [Preface to the First Edition](#Preface-1e.xhtml#Preface-1e)
--   [Acknowledgments](#Acknowledgments.xhtml#Acknowledgments)
--   [1 Building Abstractions with
-    Procedures](#Chapter-1.xhtml#Chapter-1)
-    -   [1.1 The Elements of Programming](#1_002e1.xhtml#g_t1_002e1)
-        -   [1.1.1 Expressions](#1_002e1.xhtml#g_t1_002e1_002e1)
-        -   [1.1.2 Naming and the
-            Environment](#1_002e1.xhtml#g_t1_002e1_002e2)
-        -   [1.1.3 Evaluating
-            Combinations](#1_002e1.xhtml#g_t1_002e1_002e3)
-        -   [1.1.4 Compound Procedures](#1_002e1.xhtml#g_t1_002e1_002e4)
-        -   [1.1.5 The Substitution Model for Procedure
-            Application](#1_002e1.xhtml#g_t1_002e1_002e5)
-        -   [1.1.6 Conditional Expressions and
-            Predicates](#1_002e1.xhtml#g_t1_002e1_002e6)
-        -   [1.1.7 Example: Square Roots by Newton’s
-            Method](#1_002e1.xhtml#g_t1_002e1_002e7)
-        -   [1.1.8 Procedures as Black-Box
-            Abstractions](#1_002e1.xhtml#g_t1_002e1_002e8)
-    -   [1.2 Procedures and the Processes They
-        Generate](#1_002e2.xhtml#g_t1_002e2)
-        -   [1.2.1 Linear Recursion and
-            Iteration](#1_002e2.xhtml#g_t1_002e2_002e1)
-        -   [1.2.2 Tree Recursion](#1_002e2.xhtml#g_t1_002e2_002e2)
-        -   [1.2.3 Orders of Growth](#1_002e2.xhtml#g_t1_002e2_002e3)
-        -   [1.2.4 Exponentiation](#1_002e2.xhtml#g_t1_002e2_002e4)
-        -   [1.2.5 Greatest Common
-            Divisors](#1_002e2.xhtml#g_t1_002e2_002e5)
-        -   [1.2.6 Example: Testing for
-            Primality](#1_002e2.xhtml#g_t1_002e2_002e6)
-    -   [1.3 Formulating Abstractions with Higher-Order
-        Procedures](#1_002e3.xhtml#g_t1_002e3)
-        -   [1.3.1 Procedures as
-            Arguments](#1_002e3.xhtml#g_t1_002e3_002e1)
-        -   [1.3.2 Constructing Procedures Using
-            `Lambda`](#1_002e3.xhtml#g_t1_002e3_002e2)
-        -   [1.3.3 Procedures as General
-            Methods](#1_002e3.xhtml#g_t1_002e3_002e3)
-        -   [1.3.4 Procedures as Returned
-            Values](#1_002e3.xhtml#g_t1_002e3_002e4)
--   [2 Building Abstractions with Data](#Chapter-2.xhtml#Chapter-2)
-    -   [2.1 Introduction to Data
-        Abstraction](#2_002e1.xhtml#g_t2_002e1)
-        -   [2.1.1 Example: Arithmetic Operations for Rational
-            Numbers](#2_002e1.xhtml#g_t2_002e1_002e1)
-        -   [2.1.2 Abstraction
-            Barriers](#2_002e1.xhtml#g_t2_002e1_002e2)
-        -   [2.1.3 What Is Meant by
-            Data?](#2_002e1.xhtml#g_t2_002e1_002e3)
-        -   [2.1.4 Extended Exercise: Interval
-            Arithmetic](#2_002e1.xhtml#g_t2_002e1_002e4)
-    -   [2.2 Hierarchical Data and the Closure
-        Property](#2_002e2.xhtml#g_t2_002e2)
-        -   [2.2.1 Representing
-            Sequences](#2_002e2.xhtml#g_t2_002e2_002e1)
-        -   [2.2.2 Hierarchical
-            Structures](#2_002e2.xhtml#g_t2_002e2_002e2)
-        -   [2.2.3 Sequences as Conventional
-            Interfaces](#2_002e2.xhtml#g_t2_002e2_002e3)
-        -   [2.2.4 Example: A Picture
-            Language](#2_002e2.xhtml#g_t2_002e2_002e4)
-    -   [2.3 Symbolic Data](#2_002e3.xhtml#g_t2_002e3)
-        -   [2.3.1 Quotation](#2_002e3.xhtml#g_t2_002e3_002e1)
-        -   [2.3.2 Example: Symbolic
-            Differentiation](#2_002e3.xhtml#g_t2_002e3_002e2)
-        -   [2.3.3 Example: Representing
-            Sets](#2_002e3.xhtml#g_t2_002e3_002e3)
-        -   [2.3.4 Example: Huffman Encoding
-            Trees](#2_002e3.xhtml#g_t2_002e3_002e4)
-    -   [2.4 Multiple Representations for Abstract
-        Data](#2_002e4.xhtml#g_t2_002e4)
-        -   [2.4.1 Representations for Complex
-            Numbers](#2_002e4.xhtml#g_t2_002e4_002e1)
-        -   [2.4.2 Tagged data](#2_002e4.xhtml#g_t2_002e4_002e2)
-        -   [2.4.3 Data-Directed Programming and
-            Additivity](#2_002e4.xhtml#g_t2_002e4_002e3)
-    -   [2.5 Systems with Generic Operations](#2_002e5.xhtml#g_t2_002e5)
-        -   [2.5.1 Generic Arithmetic
-            Operations](#2_002e5.xhtml#g_t2_002e5_002e1)
-        -   [2.5.2 Combining Data of Different
-            Types](#2_002e5.xhtml#g_t2_002e5_002e2)
-        -   [2.5.3 Example: Symbolic
-            Algebra](#2_002e5.xhtml#g_t2_002e5_002e3)
--   [3 Modularity, Objects, and State](#Chapter-3.xhtml#Chapter-3)
-    -   [3.1 Assignment and Local State](#3_002e1.xhtml#g_t3_002e1)
-        -   [3.1.1 Local State
-            Variables](#3_002e1.xhtml#g_t3_002e1_002e1)
-        -   [3.1.2 The Benefits of Introducing
-            Assignment](#3_002e1.xhtml#g_t3_002e1_002e2)
-        -   [3.1.3 The Costs of Introducing
-            Assignment](#3_002e1.xhtml#g_t3_002e1_002e3)
-    -   [3.2 The Environment Model of
-        Evaluation](#3_002e2.xhtml#g_t3_002e2)
-        -   [3.2.1 The Rules for
-            Evaluation](#3_002e2.xhtml#g_t3_002e2_002e1)
-        -   [3.2.2 Applying Simple
-            Procedures](#3_002e2.xhtml#g_t3_002e2_002e2)
-        -   [3.2.3 Frames as the Repository of Local
-            State](#3_002e2.xhtml#g_t3_002e2_002e3)
-        -   [3.2.4 Internal
-            Definitions](#3_002e2.xhtml#g_t3_002e2_002e4)
-    -   [3.3 Modeling with Mutable Data](#3_002e3.xhtml#g_t3_002e3)
-        -   [3.3.1 Mutable List
-            Structure](#3_002e3.xhtml#g_t3_002e3_002e1)
-        -   [3.3.2 Representing Queues](#3_002e3.xhtml#g_t3_002e3_002e2)
-        -   [3.3.3 Representing Tables](#3_002e3.xhtml#g_t3_002e3_002e3)
-        -   [3.3.4 A Simulator for Digital
-            Circuits](#3_002e3.xhtml#g_t3_002e3_002e4)
-        -   [3.3.5 Propagation of
-            Constraints](#3_002e3.xhtml#g_t3_002e3_002e5)
-    -   [3.4 Concurrency: Time Is of the
-        Essence](#3_002e4.xhtml#g_t3_002e4)
-        -   [3.4.1 The Nature of Time in Concurrent
-            Systems](#3_002e4.xhtml#g_t3_002e4_002e1)
-        -   [3.4.2 Mechanisms for Controlling
-            Concurrency](#3_002e4.xhtml#g_t3_002e4_002e2)
-    -   [3.5 Streams](#3_002e5.xhtml#g_t3_002e5)
-        -   [3.5.1 Streams Are Delayed
-            Lists](#3_002e5.xhtml#g_t3_002e5_002e1)
-        -   [3.5.2 Infinite Streams](#3_002e5.xhtml#g_t3_002e5_002e2)
-        -   [3.5.3 Exploiting the Stream
-            Paradigm](#3_002e5.xhtml#g_t3_002e5_002e3)
-        -   [3.5.4 Streams and Delayed
-            Evaluation](#3_002e5.xhtml#g_t3_002e5_002e4)
-        -   [3.5.5 Modularity of Functional Programs and Modularity of
-            Objects](#3_002e5.xhtml#g_t3_002e5_002e5)
--   [4 Metalinguistic Abstraction](#Chapter-4.xhtml#Chapter-4)
-    -   [4.1 The Metacircular Evaluator](#4_002e1.xhtml#g_t4_002e1)
-        -   [4.1.1 The Core of the
-            Evaluator](#4_002e1.xhtml#g_t4_002e1_002e1)
-        -   [4.1.2 Representing
-            Expressions](#4_002e1.xhtml#g_t4_002e1_002e2)
-        -   [4.1.3 Evaluator Data
-            Structures](#4_002e1.xhtml#g_t4_002e1_002e3)
-        -   [4.1.4 Running the Evaluator as a
-            Program](#4_002e1.xhtml#g_t4_002e1_002e4)
-        -   [4.1.5 Data as Programs](#4_002e1.xhtml#g_t4_002e1_002e5)
-        -   [4.1.6 Internal
-            Definitions](#4_002e1.xhtml#g_t4_002e1_002e6)
-        -   [4.1.7 Separating Syntactic Analysis from
-            Execution](#4_002e1.xhtml#g_t4_002e1_002e7)
-    -   [4.2 Variations on a Scheme — Lazy
-        Evaluation](#4_002e2.xhtml#g_t4_002e2)
-        -   [4.2.1 Normal Order and Applicative
-            Order](#4_002e2.xhtml#g_t4_002e2_002e1)
-        -   [4.2.2 An Interpreter with Lazy
-            Evaluation](#4_002e2.xhtml#g_t4_002e2_002e2)
-        -   [4.2.3 Streams as Lazy
-            Lists](#4_002e2.xhtml#g_t4_002e2_002e3)
-    -   [4.3 Variations on a Scheme — Nondeterministic
-        Computing](#4_002e3.xhtml#g_t4_002e3)
-        -   [4.3.1 Amb and Search](#4_002e3.xhtml#g_t4_002e3_002e1)
-        -   [4.3.2 Examples of Nondeterministic
-            Programs](#4_002e3.xhtml#g_t4_002e3_002e2)
-        -   [4.3.3 Implementing the `Amb`
-            Evaluator](#4_002e3.xhtml#g_t4_002e3_002e3)
-    -   [4.4 Logic Programming](#4_002e4.xhtml#g_t4_002e4)
-        -   [4.4.1 Deductive Information
-            Retrieval](#4_002e4.xhtml#g_t4_002e4_002e1)
-        -   [4.4.2 How the Query System
-            Works](#4_002e4.xhtml#g_t4_002e4_002e2)
-        -   [4.4.3 Is Logic Programming Mathematical
-            Logic?](#4_002e4.xhtml#g_t4_002e4_002e3)
-        -   [4.4.4 Implementing the Query
-            System](#4_002e4.xhtml#g_t4_002e4_002e4)
-            -   [4.4.4.1 The Driver Loop and
-                Instantiation](#4_002e4.xhtml#g_t4_002e4_002e4_002e1)
-            -   [4.4.4.2 The
-                Evaluator](#4_002e4.xhtml#g_t4_002e4_002e4_002e2)
-            -   [4.4.4.3 Finding Assertions by Pattern
-                Matching](#4_002e4.xhtml#g_t4_002e4_002e4_002e3)
-            -   [4.4.4.4 Rules and
-                Unification](#4_002e4.xhtml#g_t4_002e4_002e4_002e4)
-            -   [4.4.4.5 Maintaining the Data
-                Base](#4_002e4.xhtml#g_t4_002e4_002e4_002e5)
-            -   [4.4.4.6 Stream
-                Operations](#4_002e4.xhtml#g_t4_002e4_002e4_002e6)
-            -   [4.4.4.7 Query Syntax
-                Procedures](#4_002e4.xhtml#g_t4_002e4_002e4_002e7)
-            -   [4.4.4.8 Frames and
-                Bindings](#4_002e4.xhtml#g_t4_002e4_002e4_002e8)
--   [5 Computing with Register Machines](#Chapter-5.xhtml#Chapter-5)
-    -   [5.1 Designing Register Machines](#5_002e1.xhtml#g_t5_002e1)
-        -   [5.1.1 A Language for Describing Register
-            Machines](#5_002e1.xhtml#g_t5_002e1_002e1)
-        -   [5.1.2 Abstraction in Machine
-            Design](#5_002e1.xhtml#g_t5_002e1_002e2)
-        -   [5.1.3 Subroutines](#5_002e1.xhtml#g_t5_002e1_002e3)
-        -   [5.1.4 Using a Stack to Implement
-            Recursion](#5_002e1.xhtml#g_t5_002e1_002e4)
-        -   [5.1.5 Instruction Summary](#5_002e1.xhtml#g_t5_002e1_002e5)
-    -   [5.2 A Register-Machine Simulator](#5_002e2.xhtml#g_t5_002e2)
-        -   [5.2.1 The Machine Model](#5_002e2.xhtml#g_t5_002e2_002e1)
-        -   [5.2.2 The Assembler](#5_002e2.xhtml#g_t5_002e2_002e2)
-        -   [5.2.3 Generating Execution Procedures for
-            Instructions](#5_002e2.xhtml#g_t5_002e2_002e3)
-        -   [5.2.4 Monitoring Machine
-            Performance](#5_002e2.xhtml#g_t5_002e2_002e4)
-    -   [5.3 Storage Allocation and Garbage
-        Collection](#5_002e3.xhtml#g_t5_002e3)
-        -   [5.3.1 Memory as Vectors](#5_002e3.xhtml#g_t5_002e3_002e1)
-        -   [5.3.2 Maintaining the Illusion of Infinite
-            Memory](#5_002e3.xhtml#g_t5_002e3_002e2)
-    -   [5.4 The Explicit-Control Evaluator](#5_002e4.xhtml#g_t5_002e4)
-        -   [5.4.1 The Core of the Explicit-Control
-            Evaluator](#5_002e4.xhtml#g_t5_002e4_002e1)
-        -   [5.4.2 Sequence Evaluation and Tail
-            Recursion](#5_002e4.xhtml#g_t5_002e4_002e2)
-        -   [5.4.3 Conditionals, Assignments, and
-            Definitions](#5_002e4.xhtml#g_t5_002e4_002e3)
-        -   [5.4.4 Running the
-            Evaluator](#5_002e4.xhtml#g_t5_002e4_002e4)
-    -   [5.5 Compilation](#5_002e5.xhtml#g_t5_002e5)
-        -   [5.5.1 Structure of the
-            Compiler](#5_002e5.xhtml#g_t5_002e5_002e1)
-        -   [5.5.2 Compiling
-            Expressions](#5_002e5.xhtml#g_t5_002e5_002e2)
-        -   [5.5.3 Compiling
-            Combinations](#5_002e5.xhtml#g_t5_002e5_002e3)
-        -   [5.5.4 Combining Instruction
-            Sequences](#5_002e5.xhtml#g_t5_002e5_002e4)
-        -   [5.5.5 An Example of Compiled
-            Code](#5_002e5.xhtml#g_t5_002e5_002e5)
-        -   [5.5.6 Lexical Addressing](#5_002e5.xhtml#g_t5_002e5_002e6)
-        -   [5.5.7 Interfacing Compiled Code to the
-            Evaluator](#5_002e5.xhtml#g_t5_002e5_002e7)
--   [References](#References.xhtml#References)
--   [List of Exercises](#Exercises.xhtml#Exercises)
--   [List of Figures](#Figures.xhtml#Figures)
--   [Term Index](#Term-Index.xhtml#Term-Index)
--   [Colophon](#Colophon.xhtml#Colophon)
+- [Unofficial Texinfo Format](#UTF.xhtml#UTF)
+- [Dedication](#Dedication.xhtml#Dedication)
+- [Foreword](#Foreword.xhtml#Foreword)
+- [Preface to the Second Edition](#Preface.xhtml#Preface)
+- [Preface to the First Edition](#Preface-1e.xhtml#Preface-1e)
+- [Acknowledgments](#Acknowledgments.xhtml#Acknowledgments)
+- [1 Building Abstractions with
+  Procedures](#Chapter-1.xhtml#Chapter-1)
+  - [1.1 The Elements of Programming](#1_002e1.xhtml#g_t1_002e1)
+    - [1.1.1 Expressions](#1_002e1.xhtml#g_t1_002e1_002e1)
+    - [1.1.2 Naming and the
+      Environment](#1_002e1.xhtml#g_t1_002e1_002e2)
+    - [1.1.3 Evaluating
+      Combinations](#1_002e1.xhtml#g_t1_002e1_002e3)
+    - [1.1.4 Compound Procedures](#1_002e1.xhtml#g_t1_002e1_002e4)
+    - [1.1.5 The Substitution Model for Procedure
+      Application](#1_002e1.xhtml#g_t1_002e1_002e5)
+    - [1.1.6 Conditional Expressions and
+      Predicates](#1_002e1.xhtml#g_t1_002e1_002e6)
+    - [1.1.7 Example: Square Roots by Newton’s
+      Method](#1_002e1.xhtml#g_t1_002e1_002e7)
+    - [1.1.8 Procedures as Black-Box
+      Abstractions](#1_002e1.xhtml#g_t1_002e1_002e8)
+  - [1.2 Procedures and the Processes They
+    Generate](#1_002e2.xhtml#g_t1_002e2)
+    - [1.2.1 Linear Recursion and
+      Iteration](#1_002e2.xhtml#g_t1_002e2_002e1)
+    - [1.2.2 Tree Recursion](#1_002e2.xhtml#g_t1_002e2_002e2)
+    - [1.2.3 Orders of Growth](#1_002e2.xhtml#g_t1_002e2_002e3)
+    - [1.2.4 Exponentiation](#1_002e2.xhtml#g_t1_002e2_002e4)
+    - [1.2.5 Greatest Common
+      Divisors](#1_002e2.xhtml#g_t1_002e2_002e5)
+    - [1.2.6 Example: Testing for
+      Primality](#1_002e2.xhtml#g_t1_002e2_002e6)
+  - [1.3 Formulating Abstractions with Higher-Order
+    Procedures](#1_002e3.xhtml#g_t1_002e3)
+    - [1.3.1 Procedures as
+      Arguments](#1_002e3.xhtml#g_t1_002e3_002e1)
+    - [1.3.2 Constructing Procedures Using
+      `Lambda`](#1_002e3.xhtml#g_t1_002e3_002e2)
+    - [1.3.3 Procedures as General
+      Methods](#1_002e3.xhtml#g_t1_002e3_002e3)
+    - [1.3.4 Procedures as Returned
+      Values](#1_002e3.xhtml#g_t1_002e3_002e4)
+- [2 Building Abstractions with Data](#Chapter-2.xhtml#Chapter-2)
+  - [2.1 Introduction to Data
+    Abstraction](#2_002e1.xhtml#g_t2_002e1)
+    - [2.1.1 Example: Arithmetic Operations for Rational
+      Numbers](#2_002e1.xhtml#g_t2_002e1_002e1)
+    - [2.1.2 Abstraction
+      Barriers](#2_002e1.xhtml#g_t2_002e1_002e2)
+    - [2.1.3 What Is Meant by
+      Data?](#2_002e1.xhtml#g_t2_002e1_002e3)
+    - [2.1.4 Extended Exercise: Interval
+      Arithmetic](#2_002e1.xhtml#g_t2_002e1_002e4)
+  - [2.2 Hierarchical Data and the Closure
+    Property](#2_002e2.xhtml#g_t2_002e2)
+    - [2.2.1 Representing
+      Sequences](#2_002e2.xhtml#g_t2_002e2_002e1)
+    - [2.2.2 Hierarchical
+      Structures](#2_002e2.xhtml#g_t2_002e2_002e2)
+    - [2.2.3 Sequences as Conventional
+      Interfaces](#2_002e2.xhtml#g_t2_002e2_002e3)
+    - [2.2.4 Example: A Picture
+      Language](#2_002e2.xhtml#g_t2_002e2_002e4)
+  - [2.3 Symbolic Data](#2_002e3.xhtml#g_t2_002e3)
+    - [2.3.1 Quotation](#2_002e3.xhtml#g_t2_002e3_002e1)
+    - [2.3.2 Example: Symbolic
+      Differentiation](#2_002e3.xhtml#g_t2_002e3_002e2)
+    - [2.3.3 Example: Representing
+      Sets](#2_002e3.xhtml#g_t2_002e3_002e3)
+    - [2.3.4 Example: Huffman Encoding
+      Trees](#2_002e3.xhtml#g_t2_002e3_002e4)
+  - [2.4 Multiple Representations for Abstract
+    Data](#2_002e4.xhtml#g_t2_002e4)
+    - [2.4.1 Representations for Complex
+      Numbers](#2_002e4.xhtml#g_t2_002e4_002e1)
+    - [2.4.2 Tagged data](#2_002e4.xhtml#g_t2_002e4_002e2)
+    - [2.4.3 Data-Directed Programming and
+      Additivity](#2_002e4.xhtml#g_t2_002e4_002e3)
+  - [2.5 Systems with Generic Operations](#2_002e5.xhtml#g_t2_002e5)
+    - [2.5.1 Generic Arithmetic
+      Operations](#2_002e5.xhtml#g_t2_002e5_002e1)
+    - [2.5.2 Combining Data of Different
+      Types](#2_002e5.xhtml#g_t2_002e5_002e2)
+    - [2.5.3 Example: Symbolic
+      Algebra](#2_002e5.xhtml#g_t2_002e5_002e3)
+- [3 Modularity, Objects, and State](#Chapter-3.xhtml#Chapter-3)
+  - [3.1 Assignment and Local State](#3_002e1.xhtml#g_t3_002e1)
+    - [3.1.1 Local State
+      Variables](#3_002e1.xhtml#g_t3_002e1_002e1)
+    - [3.1.2 The Benefits of Introducing
+      Assignment](#3_002e1.xhtml#g_t3_002e1_002e2)
+    - [3.1.3 The Costs of Introducing
+      Assignment](#3_002e1.xhtml#g_t3_002e1_002e3)
+  - [3.2 The Environment Model of
+    Evaluation](#3_002e2.xhtml#g_t3_002e2)
+    - [3.2.1 The Rules for
+      Evaluation](#3_002e2.xhtml#g_t3_002e2_002e1)
+    - [3.2.2 Applying Simple
+      Procedures](#3_002e2.xhtml#g_t3_002e2_002e2)
+    - [3.2.3 Frames as the Repository of Local
+      State](#3_002e2.xhtml#g_t3_002e2_002e3)
+    - [3.2.4 Internal
+      Definitions](#3_002e2.xhtml#g_t3_002e2_002e4)
+  - [3.3 Modeling with Mutable Data](#3_002e3.xhtml#g_t3_002e3)
+    - [3.3.1 Mutable List
+      Structure](#3_002e3.xhtml#g_t3_002e3_002e1)
+    - [3.3.2 Representing Queues](#3_002e3.xhtml#g_t3_002e3_002e2)
+    - [3.3.3 Representing Tables](#3_002e3.xhtml#g_t3_002e3_002e3)
+    - [3.3.4 A Simulator for Digital
+      Circuits](#3_002e3.xhtml#g_t3_002e3_002e4)
+    - [3.3.5 Propagation of
+      Constraints](#3_002e3.xhtml#g_t3_002e3_002e5)
+  - [3.4 Concurrency: Time Is of the
+    Essence](#3_002e4.xhtml#g_t3_002e4)
+    - [3.4.1 The Nature of Time in Concurrent
+      Systems](#3_002e4.xhtml#g_t3_002e4_002e1)
+    - [3.4.2 Mechanisms for Controlling
+      Concurrency](#3_002e4.xhtml#g_t3_002e4_002e2)
+  - [3.5 Streams](#3_002e5.xhtml#g_t3_002e5)
+    - [3.5.1 Streams Are Delayed
+      Lists](#3_002e5.xhtml#g_t3_002e5_002e1)
+    - [3.5.2 Infinite Streams](#3_002e5.xhtml#g_t3_002e5_002e2)
+    - [3.5.3 Exploiting the Stream
+      Paradigm](#3_002e5.xhtml#g_t3_002e5_002e3)
+    - [3.5.4 Streams and Delayed
+      Evaluation](#3_002e5.xhtml#g_t3_002e5_002e4)
+    - [3.5.5 Modularity of Functional Programs and Modularity of
+      Objects](#3_002e5.xhtml#g_t3_002e5_002e5)
+- [4 Metalinguistic Abstraction](#Chapter-4.xhtml#Chapter-4)
+  - [4.1 The Metacircular Evaluator](#4_002e1.xhtml#g_t4_002e1)
+    - [4.1.1 The Core of the
+      Evaluator](#4_002e1.xhtml#g_t4_002e1_002e1)
+    - [4.1.2 Representing
+      Expressions](#4_002e1.xhtml#g_t4_002e1_002e2)
+    - [4.1.3 Evaluator Data
+      Structures](#4_002e1.xhtml#g_t4_002e1_002e3)
+    - [4.1.4 Running the Evaluator as a
+      Program](#4_002e1.xhtml#g_t4_002e1_002e4)
+    - [4.1.5 Data as Programs](#4_002e1.xhtml#g_t4_002e1_002e5)
+    - [4.1.6 Internal
+      Definitions](#4_002e1.xhtml#g_t4_002e1_002e6)
+    - [4.1.7 Separating Syntactic Analysis from
+      Execution](#4_002e1.xhtml#g_t4_002e1_002e7)
+  - [4.2 Variations on a Scheme — Lazy
+    Evaluation](#4_002e2.xhtml#g_t4_002e2)
+    - [4.2.1 Normal Order and Applicative
+      Order](#4_002e2.xhtml#g_t4_002e2_002e1)
+    - [4.2.2 An Interpreter with Lazy
+      Evaluation](#4_002e2.xhtml#g_t4_002e2_002e2)
+    - [4.2.3 Streams as Lazy
+      Lists](#4_002e2.xhtml#g_t4_002e2_002e3)
+  - [4.3 Variations on a Scheme — Nondeterministic
+    Computing](#4_002e3.xhtml#g_t4_002e3)
+    - [4.3.1 Amb and Search](#4_002e3.xhtml#g_t4_002e3_002e1)
+    - [4.3.2 Examples of Nondeterministic
+      Programs](#4_002e3.xhtml#g_t4_002e3_002e2)
+    - [4.3.3 Implementing the `Amb`
+      Evaluator](#4_002e3.xhtml#g_t4_002e3_002e3)
+  - [4.4 Logic Programming](#4_002e4.xhtml#g_t4_002e4)
+    - [4.4.1 Deductive Information
+      Retrieval](#4_002e4.xhtml#g_t4_002e4_002e1)
+    - [4.4.2 How the Query System
+      Works](#4_002e4.xhtml#g_t4_002e4_002e2)
+    - [4.4.3 Is Logic Programming Mathematical
+      Logic?](#4_002e4.xhtml#g_t4_002e4_002e3)
+    - [4.4.4 Implementing the Query
+      System](#4_002e4.xhtml#g_t4_002e4_002e4)
+      - [4.4.4.1 The Driver Loop and
+        Instantiation](#4_002e4.xhtml#g_t4_002e4_002e4_002e1)
+      - [4.4.4.2 The
+        Evaluator](#4_002e4.xhtml#g_t4_002e4_002e4_002e2)
+      - [4.4.4.3 Finding Assertions by Pattern
+        Matching](#4_002e4.xhtml#g_t4_002e4_002e4_002e3)
+      - [4.4.4.4 Rules and
+        Unification](#4_002e4.xhtml#g_t4_002e4_002e4_002e4)
+      - [4.4.4.5 Maintaining the Data
+        Base](#4_002e4.xhtml#g_t4_002e4_002e4_002e5)
+      - [4.4.4.6 Stream
+        Operations](#4_002e4.xhtml#g_t4_002e4_002e4_002e6)
+      - [4.4.4.7 Query Syntax
+        Procedures](#4_002e4.xhtml#g_t4_002e4_002e4_002e7)
+      - [4.4.4.8 Frames and
+        Bindings](#4_002e4.xhtml#g_t4_002e4_002e4_002e8)
+- [5 Computing with Register Machines](#Chapter-5.xhtml#Chapter-5)
+  - [5.1 Designing Register Machines](#5_002e1.xhtml#g_t5_002e1)
+    - [5.1.1 A Language for Describing Register
+      Machines](#5_002e1.xhtml#g_t5_002e1_002e1)
+    - [5.1.2 Abstraction in Machine
+      Design](#5_002e1.xhtml#g_t5_002e1_002e2)
+    - [5.1.3 Subroutines](#5_002e1.xhtml#g_t5_002e1_002e3)
+    - [5.1.4 Using a Stack to Implement
+      Recursion](#5_002e1.xhtml#g_t5_002e1_002e4)
+    - [5.1.5 Instruction Summary](#5_002e1.xhtml#g_t5_002e1_002e5)
+  - [5.2 A Register-Machine Simulator](#5_002e2.xhtml#g_t5_002e2)
+    - [5.2.1 The Machine Model](#5_002e2.xhtml#g_t5_002e2_002e1)
+    - [5.2.2 The Assembler](#5_002e2.xhtml#g_t5_002e2_002e2)
+    - [5.2.3 Generating Execution Procedures for
+      Instructions](#5_002e2.xhtml#g_t5_002e2_002e3)
+    - [5.2.4 Monitoring Machine
+      Performance](#5_002e2.xhtml#g_t5_002e2_002e4)
+  - [5.3 Storage Allocation and Garbage
+    Collection](#5_002e3.xhtml#g_t5_002e3)
+    - [5.3.1 Memory as Vectors](#5_002e3.xhtml#g_t5_002e3_002e1)
+    - [5.3.2 Maintaining the Illusion of Infinite
+      Memory](#5_002e3.xhtml#g_t5_002e3_002e2)
+  - [5.4 The Explicit-Control Evaluator](#5_002e4.xhtml#g_t5_002e4)
+    - [5.4.1 The Core of the Explicit-Control
+      Evaluator](#5_002e4.xhtml#g_t5_002e4_002e1)
+    - [5.4.2 Sequence Evaluation and Tail
+      Recursion](#5_002e4.xhtml#g_t5_002e4_002e2)
+    - [5.4.3 Conditionals, Assignments, and
+      Definitions](#5_002e4.xhtml#g_t5_002e4_002e3)
+    - [5.4.4 Running the
+      Evaluator](#5_002e4.xhtml#g_t5_002e4_002e4)
+  - [5.5 Compilation](#5_002e5.xhtml#g_t5_002e5)
+    - [5.5.1 Structure of the
+      Compiler](#5_002e5.xhtml#g_t5_002e5_002e1)
+    - [5.5.2 Compiling
+      Expressions](#5_002e5.xhtml#g_t5_002e5_002e2)
+    - [5.5.3 Compiling
+      Combinations](#5_002e5.xhtml#g_t5_002e5_002e3)
+    - [5.5.4 Combining Instruction
+      Sequences](#5_002e5.xhtml#g_t5_002e5_002e4)
+    - [5.5.5 An Example of Compiled
+      Code](#5_002e5.xhtml#g_t5_002e5_002e5)
+    - [5.5.6 Lexical Addressing](#5_002e5.xhtml#g_t5_002e5_002e6)
+    - [5.5.7 Interfacing Compiled Code to the
+      Evaluator](#5_002e5.xhtml#g_t5_002e5_002e7)
+- [References](#References.xhtml#References)
+- [List of Exercises](#Exercises.xhtml#Exercises)
+- [List of Figures](#Figures.xhtml#Figures)
+- [Term Index](#Term-Index.xhtml#Term-Index)
+- [Colophon](#Colophon.xhtml#Colophon)
 
 </div>
-
-Next: [UTF](#UTF.xhtml#UTF), Prev: [(dir)](../index.xhtml), Up:
-[(dir)](../index.xhtml)  
-\[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
 
 # Top
 
-Next: [UTF](#UTF.xhtml#UTF), Prev: [(dir)](../index.xhtml), Up:
-[(dir)](../index.xhtml)  
-\[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
-
 </div>
 
-[⇣](#index.xhtml#pagebottom)
-
 <div className="section">
-
-[⇡](#UTF.xhtml#pagetop)
-Next: [Dedication](#Dedication.xhtml#Dedication), Prev:
-[Top](#index.xhtml#Top), Up: [Top](#index.xhtml#Top)  
-\[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
 
 ## Unofficial Texinfo Format
 
@@ -368,7 +348,7 @@ accessible to people running on modest computers, such as donated
 interpreter simultaneously, but most 386s probably can’t also run both
 Netscape and the necessary X Window System without prematurely
 introducing budding young underfunded hackers to the concept of
-*thrashing*. UTF can also fit uncompressed on a 1.44MB floppy diskette,
+_thrashing_. UTF can also fit uncompressed on a 1.44MB floppy diskette,
 which may come in handy for installing UTF on PCs that do not have
 Internet or LAN access.
 
@@ -378,9 +358,9 @@ some introduction of breakage. In the case of Unofficial Texinfo Format,
 figures have suffered an amateurish resurrection of the lost art of
 ASCII. Also, it’s quite possible that some errors of ambiguity were
 introduced during the conversion of some of the copious superscripts
-(‘^’) and subscripts (‘\_’). Divining *which* has been left as an
+(‘^’) and subscripts (‘\_’). Divining _which_ has been left as an
 exercise to the reader. But at least we don’t put our brave astronauts
-at risk by encoding the *greater-than-or-equal* symbol as `<u>&gt;</u>`.
+at risk by encoding the _greater-than-or-equal_ symbol as `<u>&gt;</u>`.
 
 If you modify `sicp.texi` to correct errors or improve the ASCII art,
 then update the `@set utfversion 2.andresraba6.6` line to reflect your
@@ -396,8 +376,8 @@ spirit of the graciously freely-distributed HTML version. But you never
 know when someone’s armada of lawyers might need something to do, and
 get their shorts all in a knot over some benign little thing, so think
 twice before you use your full name or distribute Info, DVI, PostScript,
-or PDF formats that might embed your account or machine name. *Peath,
-Lytha Ayth*
+or PDF formats that might embed your account or machine name. _Peath,
+Lytha Ayth_
 
 **Addendum:** See also the SICP video lectures by Abelson and Sussman:
 at [MIT
@@ -405,13 +385,12 @@ CSAIL](http://groups.csail.mit.edu/mac/classes/6.001/abelson-sussman-lectures/)
 or [MIT
 OCW](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-001-structure-and-interpretation-of-computer-programs-spring-2005/video-lectures/).
 
-**Second Addendum:** Above is the original introduction to the UTF from
-2001. Ten years later, UTF has been transformed: mathematical symbols
+**Second Addendum:** Above is the original introduction to the UTF from 2001. Ten years later, UTF has been transformed: mathematical symbols
 and formulas are properly typeset, and figures drawn in vector graphics.
 The original text formulas and ASCII art figures are still there in the
 Texinfo source, but will display only when compiled to Info output. At
 the dawn of e-book readers and tablets, reading a PDF on screen is
-officially not silly anymore. Enjoy! *A.R, May, 2011*
+officially not silly anymore. Enjoy! _A.R, May, 2011_
 
 **Third Addendum:** Things go in spirals. We explored the powers of
 Texinfo and LaTeX at typesetting the PDF book. Now it’s time to come
@@ -422,23 +401,12 @@ to approach the quality of LaTeX output by using the HTML5 toolbox.
 JavaScript, CSS3, SVG, MathJax, MathML, and web fonts are employed here.
 Due to the experimental nature of this undertaking, there will be
 glitches and errors in some browsers. Technical and artistic help is
-appreciated. In the meantime, enjoy the book, and fire up a REPL! *A.R,
-January, 2014*
-
-Next: [Dedication](#Dedication.xhtml#Dedication), Prev:
-[Top](#index.xhtml#Top), Up: [Top](#index.xhtml#Top)  
-\[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
+appreciated. In the meantime, enjoy the book, and fire up a REPL! _A.R,
+January, 2014_
 
 </div>
 
-[⇣](#UTF.xhtml#pagebottom)
-
 <div className="section">
-
-[⇡](#Dedication.xhtml#pagetop)
-Next: [Foreword](#Foreword.xhtml#Foreword), Prev: [UTF](#UTF.xhtml#UTF),
-Up: [Top](#index.xhtml#Top)  
-\[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
 
 ## Dedication
 
@@ -463,20 +431,9 @@ lives in the computer.
 >
 > —Alan J. Perlis (April 1, 1922 – February 7, 1990)
 
-Next: [Foreword](#Foreword.xhtml#Foreword), Prev: [UTF](#UTF.xhtml#UTF),
-Up: [Top](#index.xhtml#Top)  
-\[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
-
 </div>
 
-[⇣](#Dedication.xhtml#pagebottom)
-
 <div className="section">
-
-[⇡](#Foreword.xhtml#pagetop)
-Next: [Preface](#Preface.xhtml#Preface), Prev:
-[Dedication](#Dedication.xhtml#Dedication), Up: [Top](#index.xhtml#Top)
-  \[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
 
 ## Foreword
 
@@ -650,20 +607,9 @@ parentheses.
 Alan J. Perlis  
 New Haven, Connecticut
 
-Next: [Preface](#Preface.xhtml#Preface), Prev:
-[Dedication](#Dedication.xhtml#Dedication), Up: [Top](#index.xhtml#Top)
-  \[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
-
 </div>
 
-[⇣](#Foreword.xhtml#pagebottom)
-
 <div className="section">
-
-[⇡](#Preface.xhtml#pagetop)
-Next: [Preface 1e](#Preface-1e.xhtml#Preface-1e), Prev:
-[Foreword](#Foreword.xhtml#Foreword), Up: [Top](#index.xhtml#Top)  
-\[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
 
 ## Preface to the Second Edition
 
@@ -719,20 +665,9 @@ for users of this book. This includes programs from the book, sample
 programming assignments, supplementary materials, and downloadable
 implementations of the Scheme dialect of Lisp.
 
-Next: [Preface 1e](#Preface-1e.xhtml#Preface-1e), Prev:
-[Foreword](#Foreword.xhtml#Foreword), Up: [Top](#index.xhtml#Top)  
-\[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
-
 </div>
 
-[⇣](#Preface.xhtml#pagebottom)
-
 <div className="section">
-
-[⇡](#Preface-1e.xhtml#pagetop)
-Next: [Acknowledgments](#Acknowledgments.xhtml#Acknowledgments), Prev:
-[Preface](#Preface.xhtml#Preface), Up: [Top](#index.xhtml#Top)  
-\[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
 
 ## Preface to the First Edition
 
@@ -794,8 +729,8 @@ Underlying our approach to this subject is our conviction that “computer
 science” is not a science and that its significance has little to do
 with computers. The computer revolution is a revolution in the way we
 think and in the way we express what we think. The essence of this
-change is the emergence of what might best be called *procedural
-epistemology*—the study of the structure of knowledge from an imperative
+change is the emergence of what might best be called _procedural
+epistemology_—the study of the structure of knowledge from an imperative
 point of view, as opposed to the more declarative point of view taken by
 classical mathematical subjects. Mathematics provides a framework for
 dealing precisely with notions of “what is.” Computation provides a
@@ -836,20 +771,9 @@ our debt to the mathematicians who scouted out this territory decades
 before computers appeared on the scene. These pioneers include Alonzo
 Church, Barkley Rosser, Stephen Kleene, and Haskell Curry.
 
-Next: [Acknowledgments](#Acknowledgments.xhtml#Acknowledgments), Prev:
-[Preface](#Preface.xhtml#Preface), Up: [Top](#index.xhtml#Top)  
-\[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
-
 </div>
 
-[⇣](#Preface-1e.xhtml#pagebottom)
-
 <div className="section">
-
-[⇡](#Acknowledgments.xhtml#pagetop)
-Next: [Chapter 1](#Chapter-1.xhtml#Chapter-1), Prev: [Preface
-1e](#Preface-1e.xhtml#Preface-1e), Up: [Top](#index.xhtml#Top)  
-\[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
 
 ## Acknowledgments
 
@@ -969,23 +893,13 @@ that have encouraged this work over the years, including support from
 Hewlett-Packard, made possible by Ira Goldstein and Joel Birnbaum, and
 support from DARPA, made possible by Bob Kahn.
 
-Next: [Chapter 1](#Chapter-1.xhtml#Chapter-1), Prev: [Preface
-1e](#Preface-1e.xhtml#Preface-1e), Up: [Top](#index.xhtml#Top)  
-\[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
-
 </div>
-
-[⇣](#Acknowledgments.xhtml#pagebottom)
 
 <div className="section">
 
-[⇡](#Chapter-1.xhtml#pagetop)
-Next: [1.1](#1_002e1.xhtml#g_t1_002e1), Prev:
-[Acknowledgments](#Acknowledgments.xhtml#Acknowledgments), Up:
-[Top](#index.xhtml#Top)  
 \[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
 
-## 1Building Abstractions with Procedures
+## 1 Building Abstractions with Procedures
 
 > The acts of the mind, wherein it exerts its power over simple ideas,
 > are chiefly these three: 1. Combining several simple ideas into one
@@ -999,11 +913,11 @@ Next: [1.1](#1_002e1.xhtml#g_t1_002e1), Prev:
 >
 > —John Locke, An Essay Concerning Human Understanding (1690)
 
-We are about to study the idea of a *computational process*.
+We are about to study the idea of a _computational process_.
 Computational processes are abstract beings that inhabit computers. As
-they evolve, processes manipulate other abstract things called *data*.
+they evolve, processes manipulate other abstract things called _data_.
 The evolution of a process is directed by a pattern of rules called a
-*program*. People create programs to direct processes. In effect, we
+_program_. People create programs to direct processes. In effect, we
 conjure the spirits of the computer with our spells.
 
 A computational process is indeed much like a sorcerer’s idea of a
@@ -1012,14 +926,14 @@ all. However, it is very real. It can perform intellectual work. It can
 answer questions. It can affect the world by disbursing money at a bank
 or by controlling a robot arm in a factory. The programs we use to
 conjure processes are like a sorcerer’s spells. They are carefully
-composed from symbolic expressions in arcane and esoteric *programming
-languages* that prescribe the tasks we want our processes to perform.
+composed from symbolic expressions in arcane and esoteric _programming
+languages_ that prescribe the tasks we want our processes to perform.
 
 A computational process, in a correctly working computer, executes
 programs precisely and accurately. Thus, like the sorcerer’s apprentice,
 novice programmers must learn to understand and to anticipate the
 consequences of their conjuring. Even small errors (usually called
-*bugs* or *glitches*) in programs can have complex and unanticipated
+_bugs_ or _glitches_) in programs can have complex and unanticipated
 consequences.
 
 Fortunately, learning to program is considerably less dangerous than
@@ -1034,7 +948,7 @@ they can be reasonably sure that the resulting processes will perform
 the tasks intended. They can visualize the behavior of their systems in
 advance. They know how to structure programs so that unanticipated
 problems do not lead to catastrophic consequences, and when problems do
-arise, they can *debug* their programs. Well-designed computational
+arise, they can _debug_ their programs. Well-designed computational
 systems, like well-designed automobiles or nuclear reactors, are
 designed in a modular manner, so that the parts can be constructed,
 replaced, and debugged separately.
@@ -1048,13 +962,13 @@ French, or Japanese), and descriptions of quantitative phenomena are
 expressed with mathematical notations, our procedural thoughts will be
 expressed in Lisp. Lisp was invented in the late 1950s as a formalism
 for reasoning about the use of certain kinds of logical expressions,
-called *recursion equations*, as a model for computation. The language
+called _recursion equations_, as a model for computation. The language
 was conceived by John McCarthy and is based on his paper “Recursive
 Functions of Symbolic Expressions and Their Computation by Machine”
 ([McCarthy 1960](#References.xhtml#McCarthy-1960)).
 
 Despite its inception as a mathematical formalism, Lisp is a practical
-programming language. A Lisp *interpreter* is a machine that carries out
+programming language. A Lisp _interpreter_ is a machine that carries out
 processes described in the Lisp language. The first Lisp interpreter was
 implemented by McCarthy with the help of colleagues and students in the
 Artificial Intelligence Group of the MIT Research Laboratory of
@@ -1099,7 +1013,7 @@ possesses unique features that make it an excellent medium for studying
 important programming constructs and data structures and for relating
 them to the linguistic features that support them. The most significant
 of these features is the fact that Lisp descriptions of processes,
-called *procedures*, can themselves be represented and manipulated as
+called _procedures_, can themselves be represented and manipulated as
 Lisp data. The importance of this is that there are powerful
 program-design techniques that rely on the ability to blur the
 traditional distinction between “passive” data and “active” processes.
@@ -1119,8 +1033,7 @@ programming in Lisp is great fun.
 
 [¹](#Chapter-1.xhtml#DOCF1) The Lisp 1 Programmer’s Manual appeared in
 1960 and the Lisp 1.5 Programmer’s Manual ([McCarthy et al.
-1965](#References.xhtml#McCarthy-et-al_002e-1965)) was published in
-1962. The early history of Lisp is described in [McCarthy
+1965](#References.xhtml#McCarthy-et-al_002e-1965)) was published in 1962. The early history of Lisp is described in [McCarthy
 1978](#References.xhtml#McCarthy-1978).
 
 </div>
@@ -1172,24 +1085,15 @@ Wisdom 1992](#References.xhtml#Sussman-and-Wisdom-1992)).
 
 </div>
 
-Next: [1.1](#1_002e1.xhtml#g_t1_002e1), Prev:
-[Acknowledgments](#Acknowledgments.xhtml#Acknowledgments), Up:
-[Top](#index.xhtml#Top)  
 \[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
 
 </div>
 
-[⇣](#Chapter-1.xhtml#pagebottom)
-
 <div className="section">
 
-[⇡](#1_002e1.xhtml#pagetop)
-Next: [1.2](#1_002e2.xhtml#g_t1_002e2), Prev: [Chapter
-1](#Chapter-1.xhtml#Chapter-1), Up: [Chapter
-1](#Chapter-1.xhtml#Chapter-1)  
 \[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
 
-### 1.1The Elements of Programming
+### 1.1 The Elements of Programming
 
 A powerful programming language is more than just a means for
 instructing a computer to perform tasks. The language also serves as a
@@ -1199,12 +1103,12 @@ that the language provides for combining simple ideas to form more
 complex ideas. Every powerful language has three mechanisms for
 accomplishing this:
 
--   **primitive expressions**, which represent the simplest entities the
-    language is concerned with,
--   **means of combination**, by which compound elements are built from
-    simpler ones, and
--   **means of abstraction**, by which compound elements can be named
-    and manipulated as units.
+- **primitive expressions**, which represent the simplest entities the
+  language is concerned with,
+- **means of combination**, by which compound elements are built from
+  simpler ones, and
+- **means of abstraction**, by which compound elements can be named
+  and manipulated as units.
 
 In programming, we deal with two kinds of elements: procedures and data.
 (Later we will discover that they are really not so distinct.)
@@ -1219,13 +1123,13 @@ can focus on the rules for building procedures.[⁴](#1_002e1.xhtml#FOOT4)
 In later chapters we will see that these same rules allow us to build
 procedures to manipulate compound data as well.
 
-#### 1.1.1Expressions
+#### 1.1.1 Expressions
 
 One easy way to get started at programming is to examine some typical
 interactions with an interpreter for the Scheme dialect of Lisp. Imagine
-that you are sitting at a computer terminal. You type an *expression*,
+that you are sitting at a computer terminal. You type an _expression_,
 and the interpreter responds by displaying the result of its
-*evaluating* that expression.
+_evaluating_ that expression.
 
 One kind of primitive expression you might type is a number. (More
 precisely, the expression that you type consists of the numerals that
@@ -1233,7 +1137,7 @@ represent the number in base 10.) If you present Lisp with a number
 
 <div className="lisp">
 
-``` lisp
+```lisp
 486
 ```
 
@@ -1243,7 +1147,7 @@ the interpreter will respond by printing[⁵](#1_002e1.xhtml#FOOT5)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 486
 ```
 
@@ -1256,7 +1160,7 @@ those numbers. For example:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (+ 137 349)
 486
 
@@ -1277,13 +1181,13 @@ those numbers. For example:
 
 Expressions such as these, formed by delimiting a list of expressions
 within parentheses in order to denote procedure application, are called
-*combinations*. The leftmost element in the list is called the
-*operator*, and the other elements are called *operands*. The value of a
+_combinations_. The leftmost element in the list is called the
+_operator_, and the other elements are called _operands_. The value of a
 combination is obtained by applying the procedure specified by the
-operator to the *arguments* that are the values of the operands.
+operator to the _arguments_ that are the values of the operands.
 
 The convention of placing the operator to the left of the operands is
-known as *prefix notation*, and it may be somewhat confusing at first
+known as _prefix notation_, and it may be somewhat confusing at first
 because it departs significantly from the customary mathematical
 convention. Prefix notation has several advantages, however. One of them
 is that it can accommodate procedures that may take an arbitrary number
@@ -1291,7 +1195,7 @@ of arguments, as in the following examples:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (+ 21 35 12 7)
 75
 
@@ -1305,12 +1209,12 @@ No ambiguity can arise, because the operator is always the leftmost
 element and the entire combination is delimited by the parentheses.
 
 A second advantage of prefix notation is that it extends in a
-straightforward way to allow combinations to be *nested*, that is, to
+straightforward way to allow combinations to be _nested_, that is, to
 have combinations whose elements are themselves combinations:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (+ (* 3 5) (- 10 6))
 19
 ```
@@ -1324,7 +1228,7 @@ expressions such as
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (+ (* 3 (+ (* 2 4) (+ 3 5))) (+ (- 10 7) 6))
 ```
 
@@ -1335,7 +1239,7 @@ ourselves by writing such an expression in the form
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (+ (* 3
       (+ (* 2 4)
          (+ 3 5)))
@@ -1345,7 +1249,7 @@ ourselves by writing such an expression in the form
 
 </div>
 
-following a formatting convention known as *pretty-printing*, in which
+following a formatting convention known as _pretty-printing_, in which
 each long combination is written so that the operands are aligned
 vertically. The resulting indentations display clearly the structure of
 the expression.[⁶](#1_002e1.xhtml#FOOT6)
@@ -1353,22 +1257,22 @@ the expression.[⁶](#1_002e1.xhtml#FOOT6)
 Even with complex expressions, the interpreter always operates in the
 same basic cycle: It reads an expression from the terminal, evaluates
 the expression, and prints the result. This mode of operation is often
-expressed by saying that the interpreter runs in a *read-eval-print
-loop*. Observe in particular that it is not necessary to explicitly
+expressed by saying that the interpreter runs in a _read-eval-print
+loop_. Observe in particular that it is not necessary to explicitly
 instruct the interpreter to print the value of the
 expression.[⁷](#1_002e1.xhtml#FOOT7)
 
-#### 1.1.2Naming and the Environment
+#### 1.1.2 Naming and the Environment
 
 A critical aspect of a programming language is the means it provides for
 using names to refer to computational objects. We say that the name
-identifies a *variable* whose *value* is the object.
+identifies a _variable_ whose _value_ is the object.
 
 In the Scheme dialect of Lisp, we name things with `define`. Typing
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define size 2)
 ```
 
@@ -1380,7 +1284,7 @@ associated with the number 2, we can refer to the value 2 by name:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 size
 2
 
@@ -1394,7 +1298,7 @@ Here are further examples of the use of `define`:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define pi 3.14159)
 (define radius 10)
 
@@ -1426,11 +1330,11 @@ relatively simple procedures.
 It should be clear that the possibility of associating values with
 symbols and later retrieving them means that the interpreter must
 maintain some sort of memory that keeps track of the name-object pairs.
-This memory is called the *environment* (more precisely the *global
-environment*, since we will see later that a computation may involve a
+This memory is called the _environment_ (more precisely the _global
+environment_, since we will see later that a computation may involve a
 number of different environments).[⁹](#1_002e1.xhtml#FOOT9)
 
-#### 1.1.3Evaluating Combinations
+#### 1.1.3 Evaluating Combinations
 
 One of our goals in this chapter is to isolate issues about thinking
 procedurally. As a case in point, let us consider that, in evaluating
@@ -1447,7 +1351,7 @@ Even this simple rule illustrates some important points about processes
 in general. First, observe that the first step dictates that in order to
 accomplish the evaluation process for a combination we must first
 perform the evaluation process on each element of the combination. Thus,
-the evaluation rule is *recursive* in nature; that is, it includes, as
+the evaluation rule is _recursive_ in nature; that is, it includes, as
 one of its steps, the need to invoke the rule
 itself.[¹⁰](#1_002e1.xhtml#FOOT10)
 
@@ -1457,7 +1361,7 @@ a rather complicated process. For example, evaluating
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (* (+ 2 (* 4 6)) (+ 3 5 7))
 ```
 
@@ -1476,7 +1380,7 @@ nodes and then combining at higher and higher levels. In general, we
 shall see that recursion is a very powerful technique for dealing with
 hierarchical, treelike objects. In fact, the “percolate values upward”
 form of the evaluation rule is an example of a general kind of process
-known as *tree accumulation*.
+known as _tree accumulation_.
 
 SVG
 **Figure 1.1:** Tree representation, showing the value of each
@@ -1487,11 +1391,11 @@ to the point where we need to evaluate, not combinations, but primitive
 expressions such as numerals, built-in operators, or other names. We
 take care of the primitive cases by stipulating that
 
--   the values of numerals are the numbers that they name,
--   the values of built-in operators are the machine instruction
-    sequences that carry out the corresponding operations, and
--   the values of other names are the objects associated with those
-    names in the environment.
+- the values of numerals are the numbers that they name,
+- the values of built-in operators are the machine instruction
+  sequences that carry out the corresponding operations, and
+- the values of other names are the objects associated with those
+  names in the environment.
 
 We may regard the second rule as a special case of the third one by
 stipulating that symbols such as `+` and `*` are also included in the
@@ -1512,8 +1416,8 @@ arguments, one of which is the value of the symbol `x` and the other of
 which is 3, since the purpose of the `define` is precisely to associate
 `x` with a value. (That is, `(define x 3)` is not a combination.)
 
-Such exceptions to the general evaluation rule are called *special
-forms*. `Define` is the only example of a special form that we have seen
+Such exceptions to the general evaluation rule are called _special
+forms_. `Define` is the only example of a special form that we have seen
 so far, but we will meet others shortly. Each special form has its own
 evaluation rule. The various kinds of expressions (each with its
 associated evaluation rule) constitute the syntax of the programming
@@ -1522,17 +1426,17 @@ a very simple syntax; that is, the evaluation rule for expressions can
 be described by a simple general rule together with specialized rules
 for a small number of special forms.[¹¹](#1_002e1.xhtml#FOOT11)
 
-#### 1.1.4Compound Procedures
+#### 1.1.4 Compound Procedures
 
 We have identified in Lisp some of the elements that must appear in any
 powerful programming language:
 
--   Numbers and arithmetic operations are primitive data and procedures.
--   Nesting of combinations provides a means of combining operations.
--   Definitions that associate names with values provide a limited means
-    of abstraction.
+- Numbers and arithmetic operations are primitive data and procedures.
+- Nesting of combinations provides a means of combining operations.
+- Definitions that associate names with values provide a limited means
+  of abstraction.
 
-Now we will learn about *procedure definitions*, a much more powerful
+Now we will learn about _procedure definitions_, a much more powerful
 abstraction technique by which a compound operation can be given a name
 and then referred to as a unit.
 
@@ -1542,7 +1446,7 @@ our language as
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (square x) (* x x))
 ```
 
@@ -1552,7 +1456,7 @@ We can understand this in the following way:
 
 <div className="example">
 
-``` example
+```example
 (define (square x)    (*       x       x))
   |      |      |      |       |       |
  To square something, multiply it by itself.
@@ -1560,7 +1464,7 @@ We can understand this in the following way:
 
 </div>
 
-We have here a *compound procedure*, which has been given the name
+We have here a _compound procedure_, which has been given the name
 `square`. The procedure represents the operation of multiplying
 something by itself. The thing to be multiplied is given a local name,
 `x`, which plays the same role that a pronoun plays in natural language.
@@ -1571,20 +1475,20 @@ The general form of a procedure definition is
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (⟨name⟩ ⟨formal parameters⟩) ⟨body⟩)
 ```
 
 </div>
 
-The `⟨``name``⟩` is a symbol to be associated with the procedure
+The ` ⟨``name``⟩ ` is a symbol to be associated with the procedure
 definition in the environment.[¹³](#1_002e1.xhtml#FOOT13) The
-`⟨``formal parameters``⟩` are the names used within the body of the
+` ⟨``formal parameters``⟩ ` are the names used within the body of the
 procedure to refer to the corresponding arguments of the procedure. The
-`⟨``body``⟩` is an expression that will yield the value of the procedure
+` ⟨``body``⟩ ` is an expression that will yield the value of the procedure
 application when the formal parameters are replaced by the actual
 arguments to which the procedure is applied.[¹⁴](#1_002e1.xhtml#FOOT14)
-The `⟨``name``⟩` and the `⟨``formal parameters``⟩` are grouped within
+The ` ⟨``name``⟩ ` and the ` ⟨``formal parameters``⟩ ` are grouped within
 parentheses, just as they would be in an actual call to the procedure
 being defined.
 
@@ -1592,7 +1496,7 @@ Having defined `square`, we can now use it:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (square 21)
 441
 
@@ -1610,7 +1514,7 @@ procedures. For example, *x*² + *y*² can be expressed as
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (+ (square x) (square y))
 ```
 
@@ -1621,7 +1525,7 @@ numbers as arguments, produces the sum of their squares:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (sum-of-squares x y)
   (+ (square x) (square y)))
 
@@ -1636,7 +1540,7 @@ further procedures:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (f a)
   (sum-of-squares (+ a 1) (* a 2)))
 
@@ -1651,7 +1555,7 @@ procedures. Indeed, one could not tell by looking at the definition of
 `sum-of-squares` given above whether `square` was built into the
 interpreter, like `+` and `*`, or defined as a compound procedure.
 
-#### 1.1.5The Substitution Model for Procedure Application
+#### 1.1.5 The Substitution Model for Procedure Application
 
 To evaluate a combination whose operator names a compound procedure, the
 interpreter follows much the same process as for combinations whose
@@ -1673,7 +1577,7 @@ To illustrate this process, let’s evaluate the combination
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (f 5)
 ```
 
@@ -1685,7 +1589,7 @@ body of `f`:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (sum-of-squares (+ a 1) (* a 2))
 ```
 
@@ -1695,7 +1599,7 @@ Then we replace the formal parameter `a` by the argument 5:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (sum-of-squares (+ 5 1) (* 5 2))
 ```
 
@@ -1712,7 +1616,7 @@ substituted for the formal parameters `x` and `y` in the body of
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (+ (square 6) (square 10))
 ```
 
@@ -1722,7 +1626,7 @@ If we use the definition of `square`, this reduces to
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (+ (* 6 6) (* 10 10))
 ```
 
@@ -1732,7 +1636,7 @@ which reduces by multiplication to
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (+ 36 100)
 ```
 
@@ -1742,42 +1646,42 @@ and finally to
 
 <div className="lisp">
 
-``` lisp
+```lisp
 136
 ```
 
 </div>
 
-The process we have just described is called the *substitution model*
+The process we have just described is called the _substitution model_
 for procedure application. It can be taken as a model that determines
 the “meaning” of procedure application, insofar as the procedures in
 this chapter are concerned. However, there are two points that should be
 stressed:
 
--   The purpose of the substitution is to help us think about procedure
-    application, not to provide a description of how the interpreter
-    really works. Typical interpreters do not evaluate procedure
-    applications by manipulating the text of a procedure to substitute
-    values for the formal parameters. In practice, the “substitution” is
-    accomplished by using a local environment for the formal parameters.
-    We will discuss this more fully in [Chapter
-    3](#Chapter-3.xhtml#Chapter-3) and [Chapter
-    4](#Chapter-4.xhtml#Chapter-4) when we examine the implementation of
-    an interpreter in detail.
--   Over the course of this book, we will present a sequence of
-    increasingly elaborate models of how interpreters work, culminating
-    with a complete implementation of an interpreter and compiler in
-    [Chapter 5](#Chapter-5.xhtml#Chapter-5). The substitution model is
-    only the first of these models—a way to get started thinking
-    formally about the evaluation process. In general, when modeling
-    phenomena in science and engineering, we begin with simplified,
-    incomplete models. As we examine things in greater detail, these
-    simple models become inadequate and must be replaced by more refined
-    models. The substitution model is no exception. In particular, when
-    we address in [Chapter 3](#Chapter-3.xhtml#Chapter-3) the use of
-    procedures with “mutable data,” we will see that the substitution
-    model breaks down and must be replaced by a more complicated model
-    of procedure application.[¹⁵](#1_002e1.xhtml#FOOT15)
+- The purpose of the substitution is to help us think about procedure
+  application, not to provide a description of how the interpreter
+  really works. Typical interpreters do not evaluate procedure
+  applications by manipulating the text of a procedure to substitute
+  values for the formal parameters. In practice, the “substitution” is
+  accomplished by using a local environment for the formal parameters.
+  We will discuss this more fully in [Chapter
+  3](#Chapter-3.xhtml#Chapter-3) and [Chapter
+  4](#Chapter-4.xhtml#Chapter-4) when we examine the implementation of
+  an interpreter in detail.
+- Over the course of this book, we will present a sequence of
+  increasingly elaborate models of how interpreters work, culminating
+  with a complete implementation of an interpreter and compiler in
+  [Chapter 5](#Chapter-5.xhtml#Chapter-5). The substitution model is
+  only the first of these models—a way to get started thinking
+  formally about the evaluation process. In general, when modeling
+  phenomena in science and engineering, we begin with simplified,
+  incomplete models. As we examine things in greater detail, these
+  simple models become inadequate and must be replaced by more refined
+  models. The substitution model is no exception. In particular, when
+  we address in [Chapter 3](#Chapter-3.xhtml#Chapter-3) the use of
+  procedures with “mutable data,” we will see that the substitution
+  model breaks down and must be replaced by a more complicated model
+  of procedure application.[¹⁵](#1_002e1.xhtml#FOOT15)
 
 ##### Applicative order versus normal order
 
@@ -1794,13 +1698,13 @@ proceed according to the sequence of expansions
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (sum-of-squares (+ 5 1) (* 5 2))
 
-(+ (square (+ 5 1)) 
+(+ (square (+ 5 1))
    (square (* 5 2)))
 
-(+ (* (+ 5 1) (+ 5 1)) 
+(+ (* (+ 5 1) (+ 5 1))
    (* (* 5 2) (* 5 2)))
 ```
 
@@ -1810,8 +1714,8 @@ followed by the reductions
 
 <div className="lisp">
 
-``` lisp
-(+ (* 6 6) 
+```lisp
+(+ (* 6 6)
    (* 10 10))
 
 (+ 36 100)
@@ -1828,9 +1732,9 @@ of the expression `(* x x)` with `x` replaced respectively by `(+ 5 1)`
 and `(* 5 2)`.
 
 This alternative “fully expand and then reduce” evaluation method is
-known as *normal-order evaluation*, in contrast to the “evaluate the
+known as _normal-order evaluation_, in contrast to the “evaluate the
 arguments and then apply” method that the interpreter actually uses,
-which is called *applicative-order evaluation*. It can be shown that,
+which is called _applicative-order evaluation_. It can be shown that,
 for procedure applications that can be modeled using substitution
 (including all the procedures in the first two chapters of this book)
 and that yield legitimate values, normal-order and applicative-order
@@ -1849,7 +1753,7 @@ can be an extremely valuable tool, and we will investigate some of its
 implications in [Chapter 3](#Chapter-3.xhtml#Chapter-3) and [Chapter
 4](#Chapter-4.xhtml#Chapter-4).[¹⁶](#1_002e1.xhtml#FOOT16)
 
-#### 1.1.6Conditional Expressions and Predicates
+#### 1.1.6 Conditional Expressions and Predicates
 
 The expressive power of the class of procedures that we can define at
 this point is very limited, because we have no way to make tests and to
@@ -1858,18 +1762,22 @@ instance, we cannot define a procedure that computes the absolute value
 of a number by testing whether the number is positive, negative, or zero
 and taking different actions in the different cases according to the
 rule
-$$\|x\|\\; = \\;\\left\\{ \\begin{matrix}
+
+$$
+\|x\|\\; = \\;\\left\\{ \\begin{matrix}
 x & {\\;\\text{if}} & {x > 0,} \\\\
 0 & {\\;\\text{if}} & {x = 0,} \\\\
 {- x} & {\\;\\text{if}} & {x \< 0.} \\\\
-\\end{matrix} \\right.$$
-This construct is called a *case analysis*, and there is a special form
+\\end{matrix} \\right.
+$$
+
+This construct is called a _case analysis_, and there is a special form
 in Lisp for notating such a case analysis. It is called `cond` (which
 stands for “conditional”), and it is used as follows:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (abs x)
   (cond ((> x 0) x)
         ((= x 0) 0)
@@ -1882,7 +1790,7 @@ The general form of a conditional expression is
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (cond (⟨p₁⟩ ⟨e₁⟩)
       (⟨p₂⟩ ⟨e₂⟩)
       …
@@ -1896,26 +1804,26 @@ expressions
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (⟨p⟩ ⟨e⟩)
 ```
 
 </div>
 
-called *clauses*. The first expression in each pair is a
-*predicate*—that is, an expression whose value is interpreted as either
+called _clauses_. The first expression in each pair is a
+_predicate_—that is, an expression whose value is interpreted as either
 true or false.[¹⁷](#1_002e1.xhtml#FOOT17)
 
 Conditional expressions are evaluated as follows. The predicate ⟨*p*₁⟩
 is evaluated first. If its value is false, then ⟨*p*₂⟩ is evaluated. If
 ⟨*p*₂⟩’s value is also false, then ⟨*p*₃⟩ is evaluated. This process
 continues until a predicate is found whose value is true, in which case
-the interpreter returns the value of the corresponding *consequent
-expression* ⟨*e*⟩ of the clause as the value of the conditional
-expression. If none of the ⟨*p*⟩’s is found to be true, the value of the
+the interpreter returns the value of the corresponding _consequent
+expression_ ⟨_e_⟩ of the clause as the value of the conditional
+expression. If none of the ⟨_p_⟩’s is found to be true, the value of the
 `cond` is undefined.
 
-The word *predicate* is used for procedures that return true or false,
+The word _predicate_ is used for procedures that return true or false,
 as well as for expressions that evaluate to true or false. The
 absolute-value procedure `abs` makes use of the primitive predicates
 `>`, `<`, and `=`.[¹⁸](#1_002e1.xhtml#FOOT18) These take two numbers as
@@ -1927,7 +1835,7 @@ Another way to write the absolute-value procedure is
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (abs x)
   (cond ((< x 0) (- x))
         (else x)))
@@ -1935,19 +1843,19 @@ Another way to write the absolute-value procedure is
 
 </div>
 
-which could be expressed in English as “If *x* is less than zero return
- − *x*; otherwise return *x*.” `Else` is a special symbol that can be
-used in place of the ⟨*p*⟩ in the final clause of a `cond`. This causes
-the `cond` to return as its value the value of the corresponding ⟨*e*⟩
+which could be expressed in English as “If _x_ is less than zero return
+ − *x*; otherwise return _x_.” `Else` is a special symbol that can be
+used in place of the ⟨_p_⟩ in the final clause of a `cond`. This causes
+the `cond` to return as its value the value of the corresponding ⟨_e_⟩
 whenever all previous clauses have been bypassed. In fact, any
 expression that always evaluates to a true value could be used as the
-⟨*p*⟩ here.
+⟨_p_⟩ here.
 
 Here is yet another way to write the absolute-value procedure:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (abs x)
   (if (< x 0)
       (- x)
@@ -1962,54 +1870,54 @@ general form of an `if` expression is
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (if ⟨predicate⟩ ⟨consequent⟩ ⟨alternative⟩)
 ```
 
 </div>
 
 To evaluate an `if` expression, the interpreter starts by evaluating the
-`⟨``predicate``⟩` part of the expression. If the `⟨``predicate``⟩`
+` ⟨``predicate``⟩ ` part of the expression. If the ` ⟨``predicate``⟩ `
 evaluates to a true value, the interpreter then evaluates the
-`⟨``consequent``⟩` and returns its value. Otherwise it evaluates the
-`⟨``alternative``⟩` and returns its value.[¹⁹](#1_002e1.xhtml#FOOT19)
+` ⟨``consequent``⟩ ` and returns its value. Otherwise it evaluates the
+` ⟨``alternative``⟩ ` and returns its value.[¹⁹](#1_002e1.xhtml#FOOT19)
 
 In addition to primitive predicates such as `<`, `=`, and `>`, there are
 logical composition operations, which enable us to construct compound
 predicates. The three most frequently used are these:
 
--   `(and ⟨e₁⟩ … ⟨eₙ⟩)`
+- `(and ⟨e₁⟩ … ⟨eₙ⟩)`
 
-    The interpreter evaluates the expressions `⟨``e``⟩` one at a time,
-    in left-to-right order. If any `⟨``e``⟩` evaluates to false, the
-    value of the `and` expression is false, and the rest of the
-    `⟨``e``⟩`’s are not evaluated. If all `⟨``e``⟩`’s evaluate to true
-    values, the value of the `and` expression is the value of the last
-    one.
+  The interpreter evaluates the expressions ` ⟨``e``⟩ ` one at a time,
+  in left-to-right order. If any ` ⟨``e``⟩ ` evaluates to false, the
+  value of the `and` expression is false, and the rest of the
+  ` ⟨``e``⟩ `’s are not evaluated. If all ` ⟨``e``⟩ `’s evaluate to true
+  values, the value of the `and` expression is the value of the last
+  one.
 
--   `(or ⟨e₁⟩ … ⟨eₙ⟩)`
+- `(or ⟨e₁⟩ … ⟨eₙ⟩)`
 
-    The interpreter evaluates the expressions `⟨``e``⟩` one at a time,
-    in left-to-right order. If any `⟨``e``⟩` evaluates to a true value,
-    that value is returned as the value of the `or` expression, and the
-    rest of the `⟨``e``⟩`’s are not evaluated. If all `⟨``e``⟩`’s
-    evaluate to false, the value of the `or` expression is false.
+  The interpreter evaluates the expressions ` ⟨``e``⟩ ` one at a time,
+  in left-to-right order. If any ` ⟨``e``⟩ ` evaluates to a true value,
+  that value is returned as the value of the `or` expression, and the
+  rest of the ` ⟨``e``⟩ `’s are not evaluated. If all ` ⟨``e``⟩ `’s
+  evaluate to false, the value of the `or` expression is false.
 
--   `(not ⟨e⟩)`
+- `(not ⟨e⟩)`
 
-    The value of a `not` expression is true when the expression
-    `⟨``e``⟩` evaluates to false, and false otherwise.
+  The value of a `not` expression is true when the expression
+  ` ⟨``e``⟩ ` evaluates to false, and false otherwise.
 
 Notice that `and` and `or` are special forms, not procedures, because
 the subexpressions are not necessarily all evaluated. `Not` is an
 ordinary procedure.
 
-As an example of how these are used, the condition that a number *x* be
+As an example of how these are used, the condition that a number _x_ be
 in the range 5 \< *x* \< 10 may be expressed as
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (and (> x 5) (< x 10))
 ```
 
@@ -2020,8 +1928,8 @@ is greater than or equal to another as
 
 <div className="lisp">
 
-``` lisp
-(define (>= x y) 
+```lisp
+(define (>= x y)
   (or (> x y) (= x y)))
 ```
 
@@ -2031,8 +1939,8 @@ or alternatively as
 
 <div className="lisp">
 
-``` lisp
-(define (>= x y) 
+```lisp
+(define (>= x y)
   (not (< x y)))
 ```
 
@@ -2045,7 +1953,7 @@ or alternatively as
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > 10
 > (+ 5 3 4)
 > (- 9 1)
@@ -2083,7 +1991,7 @@ or alternatively as
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (a-plus-abs-b a b)
 >   ((if (> b 0) + -) a b))
 > ```
@@ -2097,12 +2005,12 @@ or alternatively as
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (p) (p))
 >
-> (define (test x y) 
->   (if (= x 0) 
->       0 
+> (define (test x y)
+>   (if (= x 0)
+>       0
 >       y))
 > ```
 >
@@ -2112,7 +2020,7 @@ or alternatively as
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (test 0 (p))
 > ```
 >
@@ -2126,7 +2034,7 @@ or alternatively as
 > predicate expression is evaluated first, and the result determines
 > whether to evaluate the consequent or the alternative expression.)
 
-#### 1.1.7Example: Square Roots by Newton’s Method
+#### 1.1.7 Example: Square Roots by Newton’s Method
 
 Procedures, as introduced above, are much like ordinary mathematical
 functions. They specify a value that is determined by one or more
@@ -2145,9 +2053,9 @@ will not help matters to rephrase this definition in pseudo-Lisp:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (sqrt x)
-  (the y (and (>= y 0) 
+  (the y (and (>= y 0)
               (= (square y) x))))
 ```
 
@@ -2165,15 +2073,15 @@ imperative (how to) descriptions.[²⁰](#1_002e1.xhtml#FOOT20)
 
 How does one compute square roots? The most common way is to use
 Newton’s method of successive approximations, which says that whenever
-we have a guess *y* for the value of the square root of a number *x*, we
+we have a guess _y_ for the value of the square root of a number _x_, we
 can perform a simple manipulation to get a better guess (one closer to
-the actual square root) by averaging *y* with
-*x*/*y*.[²¹](#1_002e1.xhtml#FOOT21) For example, we can compute the
+the actual square root) by averaging _y_ with
+_x_/_y_.[²¹](#1_002e1.xhtml#FOOT21) For example, we can compute the
 square root of 2 as follows. Suppose our initial guess is 1:
 
 <div className="example">
 
-``` example
+```example
 Guess     Quotient      Average
 
 1         (2/1)  = 2    ((2 + 1)/2)  = 1.5
@@ -2181,8 +2089,8 @@ Guess     Quotient      Average
 1.5       (2/1.5)       ((1.3333 + 1.5)/2)
             = 1.3333      = 1.4167
 
-1.4167    (2/1.4167)    ((1.4167 + 1.4118)/2) 
-            = 1.4118      = 1.4142  
+1.4167    (2/1.4167)    ((1.4167 + 1.4118)/2)
+            = 1.4118      = 1.4142
 
 1.4142    ...           ...
 ```
@@ -2200,7 +2108,7 @@ improved guess. We write this basic strategy as a procedure:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (sqrt-iter guess x)
   (if (good-enough? guess x)
       guess
@@ -2214,7 +2122,7 @@ and the old guess:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (improve guess x)
   (average guess (/ x guess)))
 ```
@@ -2225,8 +2133,8 @@ where
 
 <div className="lisp">
 
-``` lisp
-(define (average x y) 
+```lisp
+(define (average x y)
   (/ (+ x y) 2))
 ```
 
@@ -2241,7 +2149,7 @@ radicand by less than a predetermined tolerance (here
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (good-enough? guess x)
   (< (abs (- (square guess) x)) 0.001))
 ```
@@ -2253,7 +2161,7 @@ that the square root of any number is 1:[²³](#1_002e1.xhtml#FOOT23)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (sqrt x)
   (sqrt-iter 1.0 x))
 ```
@@ -2265,7 +2173,7 @@ as we can use any procedure:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (sqrt 9)
 3.00009155413138
 
@@ -2297,9 +2205,9 @@ ability to call a procedure.[²⁴](#1_002e1.xhtml#FOOT24)
 >
 > <div className="lisp">
 >
-> ``` lisp
-> (define (new-if predicate 
->                 then-clause 
+> ```lisp
+> (define (new-if predicate
+>                 then-clause
 >                 else-clause)
 >   (cond (predicate then-clause)
 >         (else else-clause)))
@@ -2311,7 +2219,7 @@ ability to call a procedure.[²⁴](#1_002e1.xhtml#FOOT24)
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (new-if (= 2 3) 0 5)
 > 5
 >
@@ -2325,7 +2233,7 @@ ability to call a procedure.[²⁴](#1_002e1.xhtml#FOOT24)
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (sqrt-iter guess x)
 >   (new-if (good-enough? guess x)
 >           guess
@@ -2350,7 +2258,7 @@ ability to call a procedure.[²⁴](#1_002e1.xhtml#FOOT24)
 > small and large numbers?
 
 > **Exercise 1.8:** Newton’s method for cube roots is based on the fact
-> that if *y* is an approximation to the cube root of *x*, then a better
+> that if _y_ is an approximation to the cube root of _x_, then a better
 > approximation is given by the value
 > $$\\frac{{x/y^{2}} + 2y}{3}.$$
 > Use this formula to implement a cube-root procedure analogous to the
@@ -2358,11 +2266,11 @@ ability to call a procedure.[²⁴](#1_002e1.xhtml#FOOT24)
 > will see how to implement Newton’s method in general as an abstraction
 > of these square-root and cube-root procedures.)
 
-#### 1.1.8Procedures as Black-Box Abstractions
+#### 1.1.8 Procedures as Black-Box Abstractions
 
 `Sqrt` is our first example of a process defined by a set of mutually
 defined procedures. Notice that the definition of `sqrt-iter` is
-*recursive*; that is, the procedure is defined in terms of itself. The
+_recursive_; that is, the procedure is defined in terms of itself. The
 idea of being able to define a procedure in terms of itself may be
 disturbing; it may seem unclear how such a “circular” definition could
 make sense at all, much less specify a well-defined process to be
@@ -2389,12 +2297,12 @@ procedure accomplishes an identifiable task that can be used as a module
 in defining other procedures. For example, when we define the
 `good-enough?` procedure in terms of `square`, we are able to regard the
 `square` procedure as a “black box.” We are not at that moment concerned
-with *how* the procedure computes its result, only with the fact that it
+with _how_ the procedure computes its result, only with the fact that it
 computes the square. The details of how the square is computed can be
 suppressed, to be considered at a later time. Indeed, as far as the
 `good-enough?` procedure is concerned, `square` is not quite a procedure
-but rather an abstraction of a procedure, a so-called *procedural
-abstraction*. At this level of abstraction, any procedure that computes
+but rather an abstraction of a procedure, a so-called _procedural
+abstraction_. At this level of abstraction, any procedure that computes
 the square is equally good.
 
 Thus, considering only the values they return, the following two
@@ -2404,10 +2312,10 @@ value.[²⁵](#1_002e1.xhtml#FOOT25)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (square x) (* x x))
 
-(define (square x) 
+(define (square x)
   (exp (double (log x))))
 
 (define (double x) (+ x x))
@@ -2429,7 +2337,7 @@ be distinguishable:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (square x) (* x x))
 (define (square y) (* y y))
 ```
@@ -2445,7 +2353,7 @@ definition of `good-enough?` in our square-root procedure:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (good-enough? guess x)
   (< (abs (- (square guess) x)) 0.001))
 ```
@@ -2471,12 +2379,12 @@ would not be the black box we desired.
 
 A formal parameter of a procedure has a very special role in the
 procedure definition, in that it doesn’t matter what name the formal
-parameter has. Such a name is called a *bound variable*, and we say that
-the procedure definition *binds* its formal parameters. The meaning of a
+parameter has. Such a name is called a _bound variable_, and we say that
+the procedure definition _binds_ its formal parameters. The meaning of a
 procedure definition is unchanged if a bound variable is consistently
 renamed throughout the definition.[²⁶](#1_002e1.xhtml#FOOT26) If a
-variable is not bound, we say that it is *free*. The set of expressions
-for which a binding defines a name is called the *scope* of that name.
+variable is not bound, we say that it is _free_. The set of expressions
+for which a binding defines a name is called the _scope_ of that name.
 In a procedure definition, the bound variables declared as the formal
 parameters of the procedure have the body of the procedure as their
 scope.
@@ -2486,7 +2394,7 @@ variables but `<`, `-`, `abs`, and `square` are free. The meaning of
 `good-enough?` should be independent of the names we choose for `guess`
 and `x` so long as they are distinct and different from `<`, `-`, `abs`,
 and `square`. (If we renamed `guess` to `abs` we would have introduced a
-bug by *capturing* the variable `abs`. It would have changed from free
+bug by _capturing_ the variable `abs`. It would have changed from free
 to bound.) The meaning of `good-enough?` is not independent of the names
 of its free variables, however. It surely depends upon the fact
 (external to this definition) that the symbol `abs` names a procedure
@@ -2504,8 +2412,8 @@ procedures:
 
 <div className="lisp">
 
-``` lisp
-(define (sqrt x) 
+```lisp
+(define (sqrt x)
   (sqrt-iter 1.0 x))
 
 (define (sqrt-iter guess x)
@@ -2541,7 +2449,7 @@ problem we can write
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (sqrt x)
   (define (good-enough? guess x)
     (< (abs (- (square guess) x)) 0.001))
@@ -2556,7 +2464,7 @@ problem we can write
 
 </div>
 
-Such nesting of definitions, called *block structure*, is basically the
+Such nesting of definitions, called _block structure_, is basically the
 right solution to the simplest name-packaging problem. But there is a
 better idea lurking here. In addition to internalizing the definitions
 of the auxiliary procedures, we can simplify them. Since `x` is bound in
@@ -2566,11 +2474,11 @@ the definition of `sqrt`, the procedures `good-enough?`, `improve`, and
 procedures. Instead, we allow `x` to be a free variable in the internal
 definitions, as shown below. Then `x` gets its value from the argument
 with which the enclosing procedure `sqrt` is called. This discipline is
-called *lexical scoping*.[²⁷](#1_002e1.xhtml#FOOT27)
+called _lexical scoping_.[²⁷](#1_002e1.xhtml#FOOT27)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (sqrt x)
   (define (good-enough? guess)
     (< (abs (- (square guess) x)) 0.001))
@@ -2601,7 +2509,7 @@ for helping to organize the construction of large programs.
 data” is a barefaced bluff. In fact, the treatment of numbers is one of
 the trickiest and most confusing aspects of any programming language.
 Some typical issues involved are these: Some computer systems
-distinguish *integers*, such as 2, from *real numbers*, such as 2.71. Is
+distinguish _integers_, such as 2, from _real numbers_, such as 2.71. Is
 the real number 2.00 different from the integer 2? Are the arithmetic
 operations used for integers the same as the operations used for real
 numbers? Does 6 divided by 2 produce 3, or 3.0? How large a number can
@@ -2679,7 +2587,7 @@ compound expressions.
 
 [¹¹](#1_002e1.xhtml#DOCF11) Special syntactic forms that are simply
 convenient alternative surface structures for things that can be written
-in more uniform ways are sometimes called *syntactic sugar*, to use a
+in more uniform ways are sometimes called _syntactic sugar_, to use a
 phrase coined by Peter Landin. In comparison with users of other
 languages, Lisp programmers, as a rule, are less concerned with matters
 of syntax. (By contrast, examine any Pascal manual and notice how much
@@ -2708,7 +2616,7 @@ will see how to do this in [1.3.2](#1_002e3.xhtml#g_t1_002e3_002e2).
 
 [¹³](#1_002e1.xhtml#DOCF13) Throughout this book, we will describe the
 general syntax of expressions by using italic symbols delimited by angle
-brackets—e.g., `⟨``name``⟩`—to denote the “slots” in the expression to
+brackets—e.g., ` ⟨``name``⟩ `—to denote the “slots” in the expression to
 be filled in when such an expression is actually used.
 
 </div>
@@ -2730,7 +2638,7 @@ mathematical definition of the substitution process. The problem arises
 from the possibility of confusion between the names used for the formal
 parameters of a procedure and the (possibly identical) names used in the
 expressions to which the procedure may be applied. Indeed, there is a
-long history of erroneous definitions of *substitution* in the
+long history of erroneous definitions of _substitution_ in the
 literature of logic and programming semantics. See [Stoy
 1977](#References.xhtml#Stoy-1977) for a careful discussion of
 substitution.
@@ -2740,7 +2648,7 @@ substitution.
 <div id="1_002e1.xhtml#FOOT16">
 
 [¹⁶](#1_002e1.xhtml#DOCF16) In [Chapter 3](#Chapter-3.xhtml#Chapter-3)
-we will introduce *stream processing*, which is a way of handling
+we will introduce _stream processing_, which is a way of handling
 apparently “infinite” data structures by incorporating a limited form of
 normal-order evaluation. In [4.2](#4_002e2.xhtml#g_t4_002e2) we will
 modify the Scheme interpreter to produce a normal-order variant of
@@ -2771,12 +2679,12 @@ negation.
 <div id="1_002e1.xhtml#FOOT19">
 
 [¹⁹](#1_002e1.xhtml#DOCF19) A minor difference between `if` and `cond`
-is that the `⟨``e``⟩` part of each `cond` clause may be a sequence of
-expressions. If the corresponding `⟨``p``⟩` is found to be true, the
-expressions `⟨``e``⟩` are evaluated in sequence and the value of the
+is that the ` ⟨``e``⟩ ` part of each `cond` clause may be a sequence of
+expressions. If the corresponding ` ⟨``p``⟩ ` is found to be true, the
+expressions ` ⟨``e``⟩ ` are evaluated in sequence and the value of the
 final expression in the sequence is returned as the value of the `cond`.
-In an `if` expression, however, the `⟨``consequent``⟩` and
-`⟨``alternative``⟩` must be single expressions.
+In an `if` expression, however, the ` ⟨``consequent``⟩ ` and
+` ⟨``alternative``⟩ ` must be single expressions.
 
 </div>
 
@@ -2832,7 +2740,7 @@ rational number rather than a decimal. For example, dividing 10 by 6
 yields 5/3, while dividing 10.0 by 6.0 yields 1.6666666666666667. (We
 will learn how to implement arithmetic on rational numbers in
 [2.1.1](#2_002e1.xhtml#g_t2_002e1_002e1).) If we start with an initial
-guess of 1 in our square-root program, and *x* is an exact integer, all
+guess of 1 in our square-root program, and _x_ is an exact integer, all
 subsequent values produced in the square-root computation will be
 rational numbers rather than decimals. Mixed operations on rational
 numbers and decimals always yield decimals, so starting with an initial
@@ -2889,23 +2797,13 @@ of running programs that intertwine definition and use.
 
 </div>
 
-Next: [1.2](#1_002e2.xhtml#g_t1_002e2), Prev: [Chapter
-1](#Chapter-1.xhtml#Chapter-1), Up: [1.1](#1_002e1.xhtml#g_t1_002e1)  
-\[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
-
 </div>
-
-[⇣](#1_002e1.xhtml#pagebottom)
 
 <div className="section">
 
-[⇡](#1_002e2.xhtml#pagetop)
-Next: [1.3](#1_002e3.xhtml#g_t1_002e3), Prev:
-[1.1](#1_002e1.xhtml#g_t1_002e1), Up: [Chapter
-1](#Chapter-1.xhtml#Chapter-1)  
 \[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
 
-### 1.2Procedures and the Processes They Generate
+### 1.2 Procedures and the Processes They Generate
 
 We have now considered the elements of programming: We have used
 primitive arithmetic operations, we have combined these operations, and
@@ -2933,10 +2831,10 @@ processes generated by various types of procedures. Only after we have
 developed such a skill can we learn to reliably construct programs that
 exhibit the desired behavior.
 
-A procedure is a pattern for the *local evolution* of a computational
+A procedure is a pattern for the _local evolution_ of a computational
 process. It specifies how each stage of the process is built upon the
 previous stage. We would like to be able to make statements about the
-overall, or *global*, behavior of a process whose local evolution has
+overall, or _global_, behavior of a process whose local evolution has
 been specified by a procedure. This is very difficult to do in general,
 but we can at least try to describe some typical patterns of process
 evolution.
@@ -2949,24 +2847,24 @@ role is like that played by test patterns in photography: as
 oversimplified prototypical patterns, rather than practical examples in
 their own right.
 
-#### 1.2.1Linear Recursion and Iteration
+#### 1.2.1 Linear Recursion and Iteration
 
 We begin by considering the factorial function, defined by
-*n*! = *n* ⋅ (*n*−1) ⋅ (*n*−2)⋯3 ⋅ 2 ⋅ 1.
+_n_! = *n* ⋅ (*n*−1) ⋅ (*n*−2)⋯3 ⋅ 2 ⋅ 1.
 There are many ways to compute factorials. One way is to make use of the
-observation that *n*! is equal to *n* times (*n*−1)! for any positive
-integer *n*:
-*n*! = *n*⋅\[(*n*−1) ⋅ (*n*−2)⋯3 ⋅ 2 ⋅ 1\] = *n* ⋅ (*n*−1)!.
-Thus, we can compute *n*! by computing (*n*−1)! and multiplying the
-result by *n*. If we add the stipulation that 1! is equal to 1, this
+observation that _n_! is equal to _n_ times (*n*−1)! for any positive
+integer _n_:
+_n_! = *n*⋅\[(*n*−1) ⋅ (*n*−2)⋯3 ⋅ 2 ⋅ 1\] = *n* ⋅ (*n*−1)!.
+Thus, we can compute _n_! by computing (*n*−1)! and multiplying the
+result by _n_. If we add the stipulation that 1! is equal to 1, this
 observation translates directly into a procedure:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (factorial n)
-  (if (= n 1) 
-      1 
+  (if (= n 1)
+      1
       (* n (factorial (- n 1)))))
 ```
 
@@ -2981,36 +2879,36 @@ SVG
 **Figure 1.3:** A linear recursive process for computing 6!.
 
 Now let’s take a different perspective on computing factorials. We could
-describe a rule for computing *n*! by specifying that we first multiply
+describe a rule for computing _n_! by specifying that we first multiply
 1 by 2, then multiply the result by 3, then by 4, and so on until we
-reach *n*. More formally, we maintain a running product, together with a
-counter that counts from 1 up to *n*. We can describe the computation by
+reach _n_. More formally, we maintain a running product, together with a
+counter that counts from 1 up to _n_. We can describe the computation by
 saying that the counter and the product simultaneously change from one
 step to the next according to the rule
 
 <div className="example">
 
-``` example
-product 
+```example
+product
   ←
  counter * product
-counter 
+counter
   ←
  counter + 1
 ```
 
 </div>
 
-and stipulating that *n*! is the value of the product when the counter
-exceeds *n*.
+and stipulating that _n_! is the value of the product when the counter
+exceeds _n_.
 
 Once again, we can recast our description as a procedure for computing
 factorials:[²⁹](#1_002e2.xhtml#FOOT29)
 
 <div className="lisp">
 
-``` lisp
-(define (factorial n) 
+```lisp
+(define (factorial n)
   (fact-iter 1 1 n))
 
 (define (fact-iter product counter max-count)
@@ -3031,8 +2929,8 @@ SVG
 
 Compare the two processes. From one point of view, they seem hardly
 different at all. Both compute the same mathematical function on the
-same domain, and each requires a number of steps proportional to *n* to
-compute *n*!. Indeed, both processes even carry out the same sequence of
+same domain, and each requires a number of steps proportional to _n_ to
+compute _n_!. Indeed, both processes even carry out the same sequence of
 multiplications, obtaining the same sequence of partial products. On the
 other hand, when we consider the “shapes” of the two processes, we find
 that they evolve quite differently.
@@ -3040,27 +2938,27 @@ that they evolve quite differently.
 Consider the first process. The substitution model reveals a shape of
 expansion followed by contraction, indicated by the arrow in [Figure
 1.3](#1_002e2.xhtml#Figure-1_002e3). The expansion occurs as the process
-builds up a chain of *deferred operations* (in this case, a chain of
+builds up a chain of _deferred operations_ (in this case, a chain of
 multiplications). The contraction occurs as the operations are actually
 performed. This type of process, characterized by a chain of deferred
-operations, is called a *recursive process*. Carrying out this process
+operations, is called a _recursive process_. Carrying out this process
 requires that the interpreter keep track of the operations to be
-performed later on. In the computation of *n*!, the length of the chain
+performed later on. In the computation of _n_!, the length of the chain
 of deferred multiplications, and hence the amount of information needed
-to keep track of it, grows linearly with *n* (is proportional to *n*),
-just like the number of steps. Such a process is called a *linear
-recursive process*.
+to keep track of it, grows linearly with _n_ (is proportional to _n_),
+just like the number of steps. Such a process is called a _linear
+recursive process_.
 
 By contrast, the second process does not grow and shrink. At each step,
-all we need to keep track of, for any *n*, are the current values of the
+all we need to keep track of, for any _n_, are the current values of the
 variables `product`, `counter`, and `max-count`. We call this an
-*iterative process*. In general, an iterative process is one whose state
-can be summarized by a fixed number of *state variables*, together with
+_iterative process_. In general, an iterative process is one whose state
+can be summarized by a fixed number of _state variables_, together with
 a fixed rule that describes how the state variables should be updated as
 the process moves from state to state and an (optional) end test that
 specifies conditions under which the process should terminate. In
-computing *n*!, the number of steps required grows linearly with *n*.
-Such a process is called a *linear iterative process*.
+computing _n_!, the number of steps required grows linearly with _n_.
+Such a process is called a _linear iterative process_.
 
 The contrast between the two processes can be seen in another way. In
 the iterative case, the program variables provide a complete description
@@ -3074,8 +2972,8 @@ negotiating the chain of deferred operations. The longer the chain, the
 more information must be maintained.[³⁰](#1_002e2.xhtml#FOOT30)
 
 In contrasting iteration and recursion, we must be careful not to
-confuse the notion of a recursive *process* with the notion of a
-recursive *procedure*. When we describe a procedure as recursive, we are
+confuse the notion of a recursive _process_ with the notion of a
+recursive _procedure_. When we describe a procedure as recursive, we are
 referring to the syntactic fact that the procedure definition refers
 (either directly or indirectly) to the procedure itself. But when we
 describe a process as following a pattern that is, say, linearly
@@ -3098,7 +2996,7 @@ implementation of Scheme we shall consider in [Chapter
 5](#Chapter-5.xhtml#Chapter-5) does not share this defect. It will
 execute an iterative process in constant space, even if the iterative
 process is described by a recursive procedure. An implementation with
-this property is called *tail-recursive*. With a tail-recursive
+this property is called _tail-recursive_. With a tail-recursive
 implementation, iteration can be expressed using the ordinary procedure
 call mechanism, so that special iteration constructs are useful only as
 syntactic sugar.[³¹](#1_002e2.xhtml#FOOT31)
@@ -3110,15 +3008,15 @@ syntactic sugar.[³¹](#1_002e2.xhtml#FOOT31)
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (+ a b)
->   (if (= a 0) 
->       b 
+>   (if (= a 0)
+>       b
 >       (inc (+ (dec a) b))))
 >
 > (define (+ a b)
->   (if (= a 0) 
->       b 
+>   (if (= a 0)
+>       b
 >       (+ (dec a) (inc b))))
 > ```
 >
@@ -3133,7 +3031,7 @@ syntactic sugar.[³¹](#1_002e2.xhtml#FOOT31)
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (A x y)
 >   (cond ((= y 0) 0)
 >         ((= x 0) (* 2 y))
@@ -3148,7 +3046,7 @@ syntactic sugar.[³¹](#1_002e2.xhtml#FOOT31)
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (A 1 10)
 > (A 2 4)
 > (A 3 3)
@@ -3161,7 +3059,7 @@ syntactic sugar.[³¹](#1_002e2.xhtml#FOOT31)
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (f n) (A 0 n))
 > (define (g n) (A 1 n))
 > (define (h n) (A 2 n))
@@ -3171,31 +3069,33 @@ syntactic sugar.[³¹](#1_002e2.xhtml#FOOT31)
 > </div>
 >
 > Give concise mathematical definitions for the functions computed by
-> the procedures `f`, `g`, and `h` for positive integer values of *n*.
+> the procedures `f`, `g`, and `h` for positive integer values of _n_.
 > For example, `(k n)` computes 5*n*².
 
-#### 1.2.2Tree Recursion
+#### 1.2.2 Tree Recursion
 
-Another common pattern of computation is called *tree recursion*. As an
+Another common pattern of computation is called _tree recursion_. As an
 example, consider computing the sequence of Fibonacci numbers, in which
 each number is the sum of the preceding two:
 
-
 0, 1, 1, 2, 3, 5, 8, 13, 21, ….
 
-
 In general, the Fibonacci numbers can be defined by the rule
-$$\\text{Fib}(n)\\; = \\;\\left\\{ \\begin{matrix}
+
+$$
+\\text{Fib}(n)\\; = \\;\\left\\{ \\begin{matrix}
 0 & {\\;\\text{if}\\;\\; n = 0,} \\\\
 1 & {\\;\\text{if}\\;\\; n = 1,} \\\\
 {\\text{Fib}(n - 1) + \\text{Fib}(n - 2)} & {\\;\\text{otherwise}.} \\\\
-\\end{matrix} \\right.$$
+\\end{matrix} \\right.
+$$
+
 We can immediately translate this definition into a recursive procedure
 for computing Fibonacci numbers:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (fib n)
   (cond ((= n 0) 0)
         ((= n 1) 1)
@@ -3224,12 +3124,12 @@ redundant computation. Notice in [Figure
 `(fib 3)`—almost half the work—is duplicated. In fact, it is not hard to
 show that the number of times the procedure will compute `(fib 1)` or
 `(fib 0)` (the number of leaves in the above tree, in general) is
-precisely Fib(*n*+1). To get an idea of how bad this is, one can show
-that the value of Fib(*n*) grows exponentially with *n*. More precisely
-(see [Exercise 1.13](#1_002e2.xhtml#Exercise-1_002e13)), Fib(*n*) is the
+precisely Fib(_n_+1). To get an idea of how bad this is, one can show
+that the value of Fib(_n_) grows exponentially with _n_. More precisely
+(see [Exercise 1.13](#1_002e2.xhtml#Exercise-1_002e13)), Fib(_n_) is the
 closest integer to $\\varphi^{n}/\\sqrt{5}$, where
 $$\\varphi\\, = \\,\\frac{1 + \\sqrt{5}}{2}\\, \\approx \\, 1.6180$$
-is the *golden ratio*, which satisfies the equation
+is the _golden ratio_, which satisfies the equation
 *φ*² = *φ* + 1.
 Thus, the process uses a number of steps that grows exponentially with
 the input. On the other hand, the space required grows only linearly
@@ -3240,24 +3140,26 @@ the number of nodes in the tree, while the space required will be
 proportional to the maximum depth of the tree.
 
 We can also formulate an iterative process for computing the Fibonacci
-numbers. The idea is to use a pair of integers *a* and *b*, initialized
+numbers. The idea is to use a pair of integers _a_ and _b_, initialized
 to Fib(1) = 1 and Fib(0) = 0, and to repeatedly apply the simultaneous
 transformations
 
-$$\\begin{array}{l}
+$$
+\\begin{array}{l}
 {a\\;\\leftarrow\\; a + b,} \\\\
 {b\\;\\leftarrow\\; a.} \\\\
-\\end{array}$$
+\\end{array}
+$$
 
-It is not hard to show that, after applying this transformation *n*
-times, *a* and *b* will be equal, respectively, to Fib(*n*+1) and
-Fib(*n*). Thus, we can compute Fibonacci numbers iteratively using the
+It is not hard to show that, after applying this transformation _n_
+times, _a_ and _b_ will be equal, respectively, to Fib(_n_+1) and
+Fib(_n_). Thus, we can compute Fibonacci numbers iteratively using the
 procedure
 
 <div className="lisp">
 
-``` lisp
-(define (fib n) 
+```lisp
+(define (fib n)
   (fib-iter 1 0 n))
 
 (define (fib-iter a b count)
@@ -3268,9 +3170,9 @@ procedure
 
 </div>
 
-This second method for computing Fib(*n*) is a linear iteration. The
+This second method for computing Fib(_n_) is a linear iteration. The
 difference in number of steps required by the two methods—one linear in
-*n*, one growing as fast as Fib(*n*) itself—is enormous, even for small
+_n_, one growing as fast as Fib(_n_) itself—is enormous, even for small
 inputs.
 
 One should not conclude from this that tree-recursive processes are
@@ -3298,12 +3200,12 @@ This problem has a simple solution as a recursive procedure. Suppose we
 think of the types of coins available as arranged in some order. Then
 the following relation holds:
 
-The number of ways to change amount *a* using *n* kinds of coins equals
+The number of ways to change amount _a_ using _n_ kinds of coins equals
 
--   the number of ways to change amount *a* using all but the first kind
-    of coin, plus
--   the number of ways to change amount *a* − *d* using all *n* kinds of
-    coins, where *d* is the denomination of the first kind of coin.
+- the number of ways to change amount _a_ using all but the first kind
+  of coin, plus
+- the number of ways to change amount *a* − *d* using all _n_ kinds of
+  coins, where _d_ is the denomination of the first kind of coin.
 
 To see why this is true, observe that the ways to make change can be
 divided into two groups: those that do not use any of the first kind of
@@ -3320,27 +3222,27 @@ Consider this reduction rule carefully, and convince yourself that we
 can use it to describe an algorithm if we specify the following
 degenerate cases:[³³](#1_002e2.xhtml#FOOT33)
 
--   If *a* is exactly 0, we should count that as 1 way to make change.
--   If *a* is less than 0, we should count that as 0 ways to make
-    change.
--   If *n* is 0, we should count that as 0 ways to make change.
+- If _a_ is exactly 0, we should count that as 1 way to make change.
+- If _a_ is less than 0, we should count that as 0 ways to make
+  change.
+- If _n_ is 0, we should count that as 0 ways to make change.
 
 We can easily translate this description into a recursive procedure:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (count-change amount)
   (cc amount 5))
 
 (define (cc amount kinds-of-coins)
   (cond ((= amount 0) 1)
-        ((or (< amount 0) 
-             (= kinds-of-coins 0)) 
+        ((or (< amount 0)
+             (= kinds-of-coins 0))
          0)
-        (else 
+        (else
          (+ (cc amount (- kinds-of-coins 1))
-            (cc (- amount (first-denomination 
+            (cc (- amount (first-denomination
                            kinds-of-coins))
                 kinds-of-coins)))))
 
@@ -3362,7 +3264,7 @@ original question about changing a dollar:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (count-change 100)
 292
 ```
@@ -3380,18 +3282,18 @@ best of both worlds by designing a “smart compiler” that could transform
 tree-recursive procedures into more efficient procedures that compute
 the same result.[³⁴](#1_002e2.xhtml#FOOT34)
 
-> **Exercise 1.11:** A function *f* is defined by the rule that
-> *f*(*n*) = *n* if *n* \< 3 and
-> *f*(*n*) = *f*(*n*−1) + 2*f*(*n*−2) + 3*f*(*n*−3) if *n* ≥ 3. Write a
-> procedure that computes *f* by means of a recursive process. Write a
-> procedure that computes *f* by means of an iterative process.
+> **Exercise 1.11:** A function _f_ is defined by the rule that
+> _f_(_n_) = *n* if *n* \< 3 and
+> _f_(_n_) = *f*(*n*−1) + 2*f*(*n*−2) + 3*f*(*n*−3) if *n* ≥ 3. Write a
+> procedure that computes _f_ by means of a recursive process. Write a
+> procedure that computes _f_ by means of an iterative process.
 
 > **Exercise 1.12:** The following pattern of numbers is called
-> *Pascal’s triangle*.
+> _Pascal’s triangle_.
 >
 > <div className="example">
 >
-> ``` example
+> ```example
 >          1
 >        1   1
 >      1   2   1
@@ -3407,61 +3309,61 @@ the same result.[³⁴](#1_002e2.xhtml#FOOT34)
 > it.[³⁵](#1_002e2.xhtml#FOOT35) Write a procedure that computes
 > elements of Pascal’s triangle by means of a recursive process.
 
-> **Exercise 1.13:** Prove that Fib(*n*) is the closest integer to
+> **Exercise 1.13:** Prove that Fib(_n_) is the closest integer to
 > $\\varphi^{n}/\\sqrt{5}$, where $\\varphi = {(1 + \\sqrt{5})/2}$.
 > Hint: Let $\\psi = {(1 - \\sqrt{5})/2}$. Use induction and the
 > definition of the Fibonacci numbers (see
 > [1.2.2](#1_002e2.xhtml#g_t1_002e2_002e2)) to prove that
 > ${\\text{Fib}(n)} = {(\\varphi^{n} - \\psi^{n})/\\sqrt{5}}$.
 
-#### 1.2.3Orders of Growth
+#### 1.2.3 Orders of Growth
 
 The previous examples illustrate that processes can differ considerably
 in the rates at which they consume computational resources. One
 convenient way to describe this difference is to use the notion of
-*order of growth* to obtain a gross measure of the resources required by
+_order of growth_ to obtain a gross measure of the resources required by
 a process as the inputs become larger.
 
-Let *n* be a parameter that measures the size of the problem, and let
-*R*(*n*) be the amount of resources the process requires for a problem
-of size *n*. In our previous examples we took *n* to be the number for
+Let _n_ be a parameter that measures the size of the problem, and let
+_R_(_n_) be the amount of resources the process requires for a problem
+of size _n_. In our previous examples we took _n_ to be the number for
 which a given function is to be computed, but there are other
 possibilities. For instance, if our goal is to compute an approximation
-to the square root of a number, we might take *n* to be the number of
-digits accuracy required. For matrix multiplication we might take *n* to
+to the square root of a number, we might take _n_ to be the number of
+digits accuracy required. For matrix multiplication we might take _n_ to
 be the number of rows in the matrices. In general there are a number of
 properties of the problem with respect to which it will be desirable to
-analyze a given process. Similarly, *R*(*n*) might measure the number of
+analyze a given process. Similarly, _R_(_n_) might measure the number of
 internal storage registers used, the number of elementary machine
 operations performed, and so on. In computers that do only a fixed
 number of operations at a time, the time required will be proportional
 to the number of elementary machine operations performed.
 
-We say that *R*(*n*) has order of growth *Θ*(*f*(*n*)), written
-*R*(*n*) = *Θ*(*f*(*n*)) (pronounced “theta of *f*(*n*)”), if there are
-positive constants *k*₁ and *k*₂ independent of *n* such that
-*k*₁*f*(*n*) ≤ *R*(*n*) ≤ *k*₂*f*(*n*) for any sufficiently large value
-of *n*. (In other words, for large *n*, the value *R*(*n*) is sandwiched
-between *k*₁*f*(*n*) and *k*₂*f*(*n*).)
+We say that _R_(_n_) has order of growth _Θ_(_f_(_n_)), written
+_R_(_n_) = *Θ*(_f_(_n_)) (pronounced “theta of _f_(_n_)”), if there are
+positive constants *k*₁ and *k*₂ independent of _n_ such that
+*k*₁*f*(_n_) ≤ *R*(_n_) ≤ *k*₂*f*(_n_) for any sufficiently large value
+of _n_. (In other words, for large _n_, the value _R_(_n_) is sandwiched
+between *k*₁*f*(_n_) and *k*₂*f*(_n_).)
 
 For instance, with the linear recursive process for computing factorial
 described in [1.2.1](#1_002e2.xhtml#g_t1_002e2_002e1) the number of
-steps grows proportionally to the input *n*. Thus, the steps required
-for this process grows as *Θ*(*n*). We also saw that the space required
-grows as *Θ*(*n*). For the iterative factorial, the number of steps is
-still *Θ*(*n*) but the space is *Θ*(1)—that is,
+steps grows proportionally to the input _n_. Thus, the steps required
+for this process grows as _Θ_(_n_). We also saw that the space required
+grows as _Θ_(_n_). For the iterative factorial, the number of steps is
+still _Θ_(_n_) but the space is _Θ_(1)—that is,
 constant.[³⁶](#1_002e2.xhtml#FOOT36) The tree-recursive Fibonacci
-computation requires *Θ*(*φ*^(*n*)) steps and space *Θ*(*n*), where *φ*
+computation requires _Θ_(_φ_^(_n_)) steps and space _Θ_(_n_), where _φ_
 is the golden ratio described in
 [1.2.2](#1_002e2.xhtml#g_t1_002e2_002e2).
 
 Orders of growth provide only a crude description of the behavior of a
 process. For example, a process requiring *n*² steps and a process
 requiring 1000*n*² steps and a process requiring 3*n*² + 10*n* + 17
-steps all have *Θ*(*n*²) order of growth. On the other hand, order of
+steps all have _Θ_(*n*²) order of growth. On the other hand, order of
 growth provides a useful indication of how we may expect the behavior of
 the process to change as we change the size of the problem. For a
-*Θ*(*n*) (linear) process, doubling the size will roughly double the
+_Θ_(_n_) (linear) process, doubling the size will roughly double the
 amount of resources used. For an exponential process, each increment in
 problem size will multiply the resource utilization by a constant
 factor. In the remainder of [1.2](#1_002e2.xhtml#g_t1_002e2) we will
@@ -3476,7 +3378,7 @@ constant amount.
 > used by this process as the amount to be changed increases?
 
 > **Exercise 1.15:** The sine of an angle (specified in radians) can be
-> computed by making use of the approximation sin *x* ≈ *x* if *x* is
+> computed by making use of the approximation sin *x* ≈ *x* if _x_ is
 > sufficiently small, and the trigonometric identity
 > $${\\sin x}\\, = \\,{3\\sin\\frac{x}{3}}\\, - \\,{4\\sin^{3}\\frac{x}{3}}$$
 > to reduce the size of the argument of sin. (For purposes of this
@@ -3486,7 +3388,7 @@ constant amount.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (cube x) (* x x x))
 > (define (p x) (- (* 3 x) (* 4 (cube x))))
 > (define (sine angle)
@@ -3500,40 +3402,44 @@ constant amount.
 > 1.  How many times is the procedure `p` applied when `(sine 12.15)` is
 >     evaluated?
 > 2.  What is the order of growth in space and number of steps (as a
->     function of *a*) used by the process generated by the `sine`
+>     function of _a_) used by the process generated by the `sine`
 >     procedure when `(sine a)` is evaluated?
 
-#### 1.2.4Exponentiation
+#### 1.2.4 Exponentiation
 
 Consider the problem of computing the exponential of a given number. We
-would like a procedure that takes as arguments a base *b* and a positive
-integer exponent *n* and computes *b*^(*n*). One way to do this is via
+would like a procedure that takes as arguments a base _b_ and a positive
+integer exponent _n_ and computes _b_^(_n_). One way to do this is via
 the recursive definition
-$$\\begin{array}{l}
+
+$$
+\\begin{array}{l}
 {b^{n}\\, = \\, b \\cdot b^{n - 1},} \\\\
 {b^{0}\\, = \\, 1,} \\\\
-\\end{array}$$
+\\end{array}
+$$
+
 which translates readily into the procedure
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (expt b n)
-  (if (= n 0) 
-      1 
+  (if (= n 0)
+      1
       (* b (expt b (- n 1)))))
 ```
 
 </div>
 
-This is a linear recursive process, which requires *Θ*(*n*) steps and
-*Θ*(*n*) space. Just as with factorial, we can readily formulate an
+This is a linear recursive process, which requires _Θ_(_n_) steps and
+_Θ_(_n_) space. Just as with factorial, we can readily formulate an
 equivalent linear iteration:
 
 <div className="lisp">
 
-``` lisp
-(define (expt b n) 
+```lisp
+(define (expt b n)
   (expt-iter b n 1))
 
 (define (expt-iter b counter product)
@@ -3546,35 +3452,43 @@ equivalent linear iteration:
 
 </div>
 
-This version requires *Θ*(*n*) steps and *Θ*(1) space.
+This version requires _Θ_(_n_) steps and _Θ_(1) space.
 
 We can compute exponentials in fewer steps by using successive squaring.
 For instance, rather than computing *b*⁸ as
 *b*⋅(*b*⋅(*b* ⋅ (*b*⋅(*b*⋅(*b* ⋅ (*b*⋅*b*)))))),
 we can compute it using three multiplications:
-$$\\begin{array}{l}
+
+$$
+\\begin{array}{l}
 {b^{2}\\, = \\, b \\cdot b,} \\\\
 {b^{4}\\, = \\, b^{2} \\cdot b^{2},} \\\\
 {b^{8}\\, = \\, b^{4} \\cdot b^{4}.} \\\\
-\\end{array}$$
+\\end{array}
+$$
+
 This method works fine for exponents that are powers of 2. We can also
 take advantage of successive squaring in computing exponentials in
 general if we use the rule
-$$\\begin{matrix}
+
+$$
+\\begin{matrix}
 {b^{n}\\, = \\,(b^{n/2})^{2}} & {\\text{if}\\; n\\;\\text{is\\ even},} \\\\
 {b^{n}\\, = \\, b \\cdot b^{n - 1}} & {\\text{if}\\; n\\;\\text{is\\ odd}.} \\\\
-\\end{matrix}$$
+\\end{matrix}
+$$
+
 We can express this method as a procedure:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (fast-expt b n)
-  (cond ((= n 0) 
+  (cond ((= n 0)
          1)
-        ((even? n) 
+        ((even? n)
          (square (fast-expt b (/ n 2))))
-        (else 
+        (else
          (* b (fast-expt b (- n 1))))))
 ```
 
@@ -3585,24 +3499,24 @@ terms of the primitive procedure `remainder` by
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (even? n)
   (= (remainder n 2) 0))
 ```
 
 </div>
 
-The process evolved by `fast-expt` grows logarithmically with *n* in
+The process evolved by `fast-expt` grows logarithmically with _n_ in
 both space and number of steps. To see this, observe that computing
-*b*^(2*n*) using `fast-expt` requires only one more multiplication than
-computing *b*^(*n*). The size of the exponent we can compute therefore
+_b_^(2*n*) using `fast-expt` requires only one more multiplication than
+computing _b_^(_n_). The size of the exponent we can compute therefore
 doubles (approximately) with every new multiplication we are allowed.
-Thus, the number of multiplications required for an exponent of *n*
-grows about as fast as the logarithm of *n* to the base 2. The process
-has *Θ*(log*n*) growth.[³⁷](#1_002e2.xhtml#FOOT37)
+Thus, the number of multiplications required for an exponent of _n_
+grows about as fast as the logarithm of _n_ to the base 2. The process
+has _Θ_(log*n*) growth.[³⁷](#1_002e2.xhtml#FOOT37)
 
-The difference between *Θ*(log*n*) growth and *Θ*(*n*) growth becomes
-striking as *n* becomes large. For example, `fast-expt` for *n* = 1000
+The difference between _Θ_(log*n*) growth and _Θ_(_n_) growth becomes
+striking as _n_ becomes large. For example, `fast-expt` for _n_ = 1000
 requires only 14 multiplications.[³⁸](#1_002e2.xhtml#FOOT38) It is also
 possible to use the idea of successive squaring to devise an iterative
 algorithm that computes exponentials with a logarithmic number of steps
@@ -3613,13 +3527,13 @@ straightforwardly as the recursive algorithm.[³⁹](#1_002e2.xhtml#FOOT39)
 > **Exercise 1.16:** Design a procedure that evolves an iterative
 > exponentiation process that uses successive squaring and uses a
 > logarithmic number of steps, as does `fast-expt`. (Hint: Using the
-> observation that (*b*^(*n*/2))² = (*b*²)^(*n*/2), keep, along with the
-> exponent *n* and the base *b*, an additional state variable *a*, and
+> observation that (_b_^(_n_/2))² = (*b*²)^(_n_/2), keep, along with the
+> exponent _n_ and the base _b_, an additional state variable _a_, and
 > define the state transformation in such a way that the product
-> *a**b*^(*n*) is unchanged from state to state. At the beginning of the
-> process *a* is taken to be 1, and the answer is given by the value of
-> *a* at the end of the process. In general, the technique of defining
-> an *invariant quantity* that remains unchanged from state to state is
+> _a\*\*b_^(_n_) is unchanged from state to state. At the beginning of the
+> process _a_ is taken to be 1, and the answer is given by the value of
+> _a_ at the end of the process. In general, the technique of defining
+> an _invariant quantity_ that remains unchanged from state to state is
 > a powerful way to think about the design of iterative algorithms.)
 
 > **Exercise 1.17:** The exponentiation algorithms in this section are
@@ -3631,7 +3545,7 @@ straightforwardly as the recursive algorithm.[³⁹](#1_002e2.xhtml#FOOT39)
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (* a b)
 >   (if (= b 0)
 >       0
@@ -3655,33 +3569,33 @@ straightforwardly as the recursive algorithm.[³⁹](#1_002e2.xhtml#FOOT39)
 
 > **Exercise 1.19:** There is a clever algorithm for computing the
 > Fibonacci numbers in a logarithmic number of steps. Recall the
-> transformation of the state variables *a* and *b* in the `fib-iter`
+> transformation of the state variables _a_ and _b_ in the `fib-iter`
 > process of [1.2.2](#1_002e2.xhtml#g_t1_002e2_002e2): *a* ← *a* + *b*
-> and *b* ← *a*. Call this transformation *T*, and observe that applying
-> *T* over and over again *n* times, starting with 1 and 0, produces the
-> pair Fib(*n*+1) and Fib(*n*). In other words, the Fibonacci numbers
-> are produced by applying *T*^(*n*), the *n*^(th) power of the
-> transformation *T*, starting with the pair (1, 0). Now consider *T* to
+> and *b* ← *a*. Call this transformation _T_, and observe that applying
+> _T_ over and over again _n_ times, starting with 1 and 0, produces the
+> pair Fib(_n_+1) and Fib(_n_). In other words, the Fibonacci numbers
+> are produced by applying _T_^(_n_), the _n_^(th) power of the
+> transformation _T_, starting with the pair (1, 0). Now consider _T_ to
 > be the special case of *p* = 0 and *q* = 1 in a family of
-> transformations *T*_(*p**q*), where *T*_(*p**q*) transforms the pair
-> (*a*,*b*) according to *a* ← *b**q* + *a**q* + *a**p* and
-> *b* ← *b**p* + *a**q*. Show that if we apply such a transformation
-> *T*_(*p**q*) twice, the effect is the same as using a single
-> transformation *T*_(*p*^(′)*q*^(′)) of the same form, and compute
-> *p*^(′)  and *q*^(′)  in terms of *p* and *q*. This gives us an
+> transformations _T\_\_(*p\*\*q*), where *T*_(_p\*\*q_) transforms the pair
+> (_a_,_b_) according to *a* ← *b\*\*q* + *a\*\*q* + *a\*\*p* and
+> *b* ← *b\*\*p* + *a\*\*q*. Show that if we apply such a transformation
+> _T\_\_(*p\*\*q*) twice, the effect is the same as using a single
+> transformation *T*_(_p_^(′)_q_^(′)) of the same form, and compute
+> _p_^(′)  and _q_^(′)  in terms of _p_ and _q_. This gives us an
 > explicit way to square these transformations, and thus we can compute
-> *T*^(*n*) using successive squaring, as in the `fast-expt` procedure.
+> _T_^(_n_) using successive squaring, as in the `fast-expt` procedure.
 > Put this all together to complete the following procedure, which runs
 > in a logarithmic number of steps:[⁴¹](#1_002e2.xhtml#FOOT41)
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (fib n)
 >   (fib-iter 1 0 0 1 n))
 >
 > (define (fib-iter a b p q count)
->   (cond ((= count 0) 
+>   (cond ((= count 0)
 >          b)
 >         ((even? count)
 >          (fib-iter a
@@ -3689,11 +3603,11 @@ straightforwardly as the recursive algorithm.[³⁹](#1_002e2.xhtml#FOOT39)
 >                    ⟨??⟩  ;compute p'
 >                    ⟨??⟩  ;compute q'
 >                    (/ count 2)))
->         (else 
->          (fib-iter (+ (* b q) 
->                       (* a q) 
+>         (else
+>          (fib-iter (+ (* b q)
+>                       (* a q)
 >                       (* a p))
->                    (+ (* b p) 
+>                    (+ (* b p)
 >                       (* a q))
 >                    p
 >                    q
@@ -3702,10 +3616,10 @@ straightforwardly as the recursive algorithm.[³⁹](#1_002e2.xhtml#FOOT39)
 >
 > </div>
 
-#### 1.2.5Greatest Common Divisors
+#### 1.2.5 Greatest Common Divisors
 
-The greatest common divisor (GCD) of two integers *a* and *b* is defined
-to be the largest integer that divides both *a* and *b* with no
+The greatest common divisor (GCD) of two integers _a_ and _b_ is defined
+to be the largest integer that divides both _a_ and _b_ with no
 remainder. For example, the GCD of 16 and 28 is 4. In [Chapter
 2](#Chapter-2.xhtml#Chapter-2), when we investigate how to implement
 rational-number arithmetic, we will need to be able to compute GCDs in
@@ -3715,14 +3629,14 @@ denominator by their GCD. For example, 16/28 reduces to 4/7.) One way to
 find the GCD of two integers is to factor them and search for common
 factors, but there is a famous algorithm that is much more efficient.
 
-The idea of the algorithm is based on the observation that, if *r* is
-the remainder when *a* is divided by *b*, then the common divisors of
-*a* and *b* are precisely the same as the common divisors of *b* and
-*r*. Thus, we can use the equation
+The idea of the algorithm is based on the observation that, if _r_ is
+the remainder when _a_ is divided by _b_, then the common divisors of
+_a_ and _b_ are precisely the same as the common divisors of _b_ and
+_r_. Thus, we can use the equation
 
 <div className="example">
 
-``` example
+```example
 GCD(a,b) = GCD(b,r)
 ```
 
@@ -3733,7 +3647,7 @@ computing the GCD of smaller and smaller pairs of integers. For example,
 
 <div className="example">
 
-``` example
+```example
 GCD(206,40) = GCD(40,6)
             = GCD(6,4)
             = GCD(4,2)
@@ -3746,14 +3660,14 @@ reduces GCD(206, 40) to GCD(2, 0), which is 2. It is possible to show
 that starting with any two positive integers and performing repeated
 reductions will always eventually produce a pair where the second number
 is 0. Then the GCD is the other number in the pair. This method for
-computing the GCD is known as *Euclid’s
-Algorithm*.[⁴²](#1_002e2.xhtml#FOOT42)
+computing the GCD is known as _Euclid’s
+Algorithm_.[⁴²](#1_002e2.xhtml#FOOT42)
 
 It is easy to express Euclid’s Algorithm as a procedure:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (gcd a b)
   (if (= b 0)
       a
@@ -3769,17 +3683,17 @@ The fact that the number of steps required by Euclid’s Algorithm has
 logarithmic growth bears an interesting relation to the Fibonacci
 numbers:
 
-> **Lamé’s Theorem:** If Euclid’s Algorithm requires *k* steps to
+> **Lamé’s Theorem:** If Euclid’s Algorithm requires _k_ steps to
 > compute the GCD of some pair, then the smaller number in the pair must
-> be greater than or equal to the *k*^(th) Fibonacci
+> be greater than or equal to the _k_^(th) Fibonacci
 > number.[⁴³](#1_002e2.xhtml#FOOT43)
 
 We can use this theorem to get an order-of-growth estimate for Euclid’s
-Algorithm. Let *n* be the smaller of the two inputs to the procedure. If
-the process takes *k* steps, then we must have
+Algorithm. Let _n_ be the smaller of the two inputs to the procedure. If
+the process takes _k_ steps, then we must have
 $n \\geq {\\text{Fib}(k)} \\approx {\\varphi^{k}/\\sqrt{5}}$. Therefore
-the number of steps *k* grows as the logarithm (to the base *φ*) of *n*.
-Hence, the order of growth is *Θ*(log*n*).
+the number of steps _k_ grows as the logarithm (to the base _φ_) of _n_.
+Hence, the order of growth is _Θ_(log*n*).
 
 > **Exercise 1.20:** The process that a procedure generates is of course
 > dependent on the rules used by the interpreter. As an example,
@@ -3794,11 +3708,11 @@ Hence, the order of growth is *Θ*(log*n*).
 > performed in the normal-order evaluation of `(gcd 206 40)`? In the
 > applicative-order evaluation?
 
-#### 1.2.6Example: Testing for Primality
+#### 1.2.6 Example: Testing for Primality
 
 This section describes two methods for checking the primality of an
-integer *n*, one with order of growth $\\Theta(\\sqrt{n})$, and a
-“probabilistic” algorithm with order of growth *Θ*(log*n*). The
+integer _n_, one with order of growth $\\Theta(\\sqrt{n})$, and a
+“probabilistic” algorithm with order of growth _Θ_(log*n*). The
 exercises at the end of this section suggest programming projects based
 on these algorithms.
 
@@ -3809,22 +3723,22 @@ concerning prime numbers, and many people have worked on the problem of
 determining ways to test if numbers are prime. One way to test if a
 number is prime is to find the number’s divisors. The following program
 finds the smallest integral divisor (greater than 1) of a given number
-*n*. It does this in a straightforward way, by testing *n* for
+_n_. It does this in a straightforward way, by testing _n_ for
 divisibility by successive integers starting with 2.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (smallest-divisor n)
   (find-divisor n 2))
 
 (define (find-divisor n test-divisor)
-  (cond ((> (square test-divisor) n) 
+  (cond ((> (square test-divisor) n)
          n)
-        ((divides? test-divisor n) 
+        ((divides? test-divisor n)
          test-divisor)
-        (else (find-divisor 
-               n 
+        (else (find-divisor
+               n
                (+ test-divisor 1)))))
 
 (define (divides? a b)
@@ -3833,48 +3747,48 @@ divisibility by successive integers starting with 2.
 
 </div>
 
-We can test whether a number is prime as follows: *n* is prime if and
-only if *n* is its own smallest divisor.
+We can test whether a number is prime as follows: _n_ is prime if and
+only if _n_ is its own smallest divisor.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (prime? n)
   (= n (smallest-divisor n)))
 ```
 
 </div>
 
-The end test for `find-divisor` is based on the fact that if *n* is not
+The end test for `find-divisor` is based on the fact that if _n_ is not
 prime it must have a divisor less than or equal to
 $\\sqrt{n}$.[⁴⁴](#1_002e2.xhtml#FOOT44) This means that the algorithm
 need only test divisors between 1 and $\\sqrt{n}$. Consequently, the
-number of steps required to identify *n* as prime will have order of
+number of steps required to identify _n_ as prime will have order of
 growth $\\Theta(\\sqrt{n})$.
 
 ##### The Fermat test
 
-The *Θ*(log*n*) primality test is based on a result from number theory
+The _Θ_(log*n*) primality test is based on a result from number theory
 known as Fermat’s Little Theorem.[⁴⁵](#1_002e2.xhtml#FOOT45)
 
-> **Fermat’s Little Theorem:** If *n* is a prime number and *a* is any
-> positive integer less than *n*, then *a* raised to the *n*^(th) power
-> is congruent to *a* modulo *n*.
+> **Fermat’s Little Theorem:** If _n_ is a prime number and _a_ is any
+> positive integer less than _n_, then _a_ raised to the _n_^(th) power
+> is congruent to _a_ modulo _n_.
 
-(Two numbers are said to be *congruent modulo* *n* if they both have the
-same remainder when divided by *n*. The remainder of a number *a* when
-divided by *n* is also referred to as the *remainder of* *a* *modulo*
-*n*, or simply as *a* *modulo* *n*.)
+(Two numbers are said to be _congruent modulo_ _n_ if they both have the
+same remainder when divided by _n_. The remainder of a number _a_ when
+divided by _n_ is also referred to as the _remainder of_ _a_ _modulo_
+_n_, or simply as _a_ _modulo_ _n_.)
 
-If *n* is not prime, then, in general, most of the numbers *a* \< *n*
+If _n_ is not prime, then, in general, most of the numbers *a* \< *n*
 will not satisfy the above relation. This leads to the following
-algorithm for testing primality: Given a number *n*, pick a random
-number *a* \< *n* and compute the remainder of *a*^(*n*) modulo *n*. If
-the result is not equal to *a*, then *n* is certainly not prime. If it
-is *a*, then chances are good that *n* is prime. Now pick another random
-number *a* and test it with the same method. If it also satisfies the
-equation, then we can be even more confident that *n* is prime. By
-trying more and more values of *a*, we can increase our confidence in
+algorithm for testing primality: Given a number _n_, pick a random
+number *a* \< *n* and compute the remainder of _a_^(_n_) modulo _n_. If
+the result is not equal to _a_, then _n_ is certainly not prime. If it
+is _a_, then chances are good that _n_ is prime. Now pick another random
+number _a_ and test it with the same method. If it also satisfies the
+equation, then we can be even more confident that _n_ is prime. By
+trying more and more values of _a_, we can increase our confidence in
 the result. This algorithm is known as the Fermat test.
 
 To implement the Fermat test, we need a procedure that computes the
@@ -3882,15 +3796,15 @@ exponential of a number modulo another number:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (expmod base exp m)
   (cond ((= exp 0) 1)
         ((even? exp)
-         (remainder 
+         (remainder
           (square (expmod base (/ exp 2) m))
           m))
         (else
-         (remainder 
+         (remainder
           (* base (expmod base (- exp 1) m))
           m))))
 ```
@@ -3902,9 +3816,9 @@ This is very similar to the `fast-expt` procedure of
 so that the number of steps grows logarithmically with the
 exponent.[⁴⁶](#1_002e2.xhtml#FOOT46)
 
-The Fermat test is performed by choosing at random a number *a* between
-1 and *n* − 1 inclusive and checking whether the remainder modulo *n* of
-the *n*^(th) power of *a* is equal to *a*. The random number *a* is
+The Fermat test is performed by choosing at random a number _a_ between
+1 and *n* − 1 inclusive and checking whether the remainder modulo _n_ of
+the _n_^(th) power of _a_ is equal to _a_. The random number _a_ is
 chosen using the procedure `random`, which we assume is included as a
 primitive in Scheme. `Random` returns a nonnegative integer less than
 its integer input. Hence, to obtain a random number between 1 and
@@ -3913,7 +3827,7 @@ result:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (fermat-test n)
   (define (try-it a)
     (= (expmod a n n) a))
@@ -3928,10 +3842,10 @@ time, and false otherwise.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (fast-prime? n times)
   (cond ((= times 0) true)
-        ((fermat-test n) 
+        ((fermat-test n)
          (fast-prime? n (- times 1)))
         (else false)))
 ```
@@ -3942,37 +3856,37 @@ time, and false otherwise.
 
 The Fermat test differs in character from most familiar algorithms, in
 which one computes an answer that is guaranteed to be correct. Here, the
-answer obtained is only probably correct. More precisely, if *n* ever
-fails the Fermat test, we can be certain that *n* is not prime. But the
-fact that *n* passes the test, while an extremely strong indication, is
-still not a guarantee that *n* is prime. What we would like to say is
-that for any number *n*, if we perform the test enough times and find
-that *n* always passes the test, then the probability of error in our
+answer obtained is only probably correct. More precisely, if _n_ ever
+fails the Fermat test, we can be certain that _n_ is not prime. But the
+fact that _n_ passes the test, while an extremely strong indication, is
+still not a guarantee that _n_ is prime. What we would like to say is
+that for any number _n_, if we perform the test enough times and find
+that _n_ always passes the test, then the probability of error in our
 primality test can be made as small as we like.
 
 Unfortunately, this assertion is not quite correct. There do exist
-numbers that fool the Fermat test: numbers *n* that are not prime and
-yet have the property that *a*^(*n*) is congruent to *a* modulo *n* for
+numbers that fool the Fermat test: numbers _n_ that are not prime and
+yet have the property that _a_^(_n_) is congruent to _a_ modulo _n_ for
 all integers *a* \< *n*. Such numbers are extremely rare, so the Fermat
 test is quite reliable in practice.[⁴⁷](#1_002e2.xhtml#FOOT47)
 
 There are variations of the Fermat test that cannot be fooled. In these
 tests, as with the Fermat method, one tests the primality of an integer
-*n* by choosing a random integer *a* \< *n* and checking some condition
-that depends upon *n* and *a*. (See [Exercise
+_n_ by choosing a random integer *a* \< *n* and checking some condition
+that depends upon _n_ and _a_. (See [Exercise
 1.28](#1_002e2.xhtml#Exercise-1_002e28) for an example of such a test.)
 On the other hand, in contrast to the Fermat test, one can prove that,
-for any *n*, the condition does not hold for most of the integers
-*a* \< *n* unless *n* is prime. Thus, if *n* passes the test for some
-random choice of *a*, the chances are better than even that *n* is
-prime. If *n* passes the test for two random choices of *a*, the chances
-are better than 3 out of 4 that *n* is prime. By running the test with
-more and more randomly chosen values of *a* we can make the probability
+for any _n_, the condition does not hold for most of the integers
+*a* \< *n* unless _n_ is prime. Thus, if _n_ passes the test for some
+random choice of _a_, the chances are better than even that _n_ is
+prime. If _n_ passes the test for two random choices of _a_, the chances
+are better than 3 out of 4 that _n_ is prime. By running the test with
+more and more randomly chosen values of _a_ we can make the probability
 of error as small as we like.
 
 The existence of tests for which one can prove that the chance of error
 becomes arbitrarily small has sparked interest in algorithms of this
-type, which have come to be known as *probabilistic algorithms*. There
+type, which have come to be known as _probabilistic algorithms_. There
 is a great deal of research activity in this area, and probabilistic
 algorithms have been fruitfully applied to many
 fields.[⁴⁸](#1_002e2.xhtml#FOOT48)
@@ -3984,13 +3898,13 @@ fields.[⁴⁸](#1_002e2.xhtml#FOOT48)
 > called `runtime` that returns an integer that specifies the amount of
 > time the system has been running (measured, for example, in
 > microseconds). The following `timed-prime-test` procedure, when called
-> with an integer *n*, prints *n* and checks to see if *n* is prime. If
-> *n* is prime, the procedure prints three asterisks followed by the
+> with an integer _n_, prints _n_ and checks to see if _n_ is prime. If
+> _n_ is prime, the procedure prints three asterisks followed by the
 > amount of time used in performing the test.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (timed-prime-test n)
 >   (newline)
 >   (display n)
@@ -4001,10 +3915,10 @@ fields.[⁴⁸](#1_002e2.xhtml#FOOT48)
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (start-prime-test n start-time)
 >   (if (prime? n)
->       (report-prime (- (runtime) 
+>       (report-prime (- (runtime)
 >                        start-time))))
 > ```
 >
@@ -4012,7 +3926,7 @@ fields.[⁴⁸](#1_002e2.xhtml#FOOT48)
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (report-prime elapsed-time)
 >   (display " *** ")
 >   (display elapsed-time))
@@ -4053,7 +3967,7 @@ fields.[⁴⁸](#1_002e2.xhtml#FOOT48)
 > **Exercise 1.24:** Modify the `timed-prime-test` procedure of
 > [Exercise 1.22](#1_002e2.xhtml#Exercise-1_002e22) to use `fast-prime?`
 > (the Fermat method), and test each of the 12 primes you found in that
-> exercise. Since the Fermat test has *Θ*(log*n*) growth, how would you
+> exercise. Since the Fermat test has _Θ_(log*n*) growth, how would you
 > expect the time to test primes near 1,000,000 to compare with the time
 > needed to test primes near 1000? Do your data bear this out? Can you
 > explain any discrepancy you find?
@@ -4064,7 +3978,7 @@ fields.[⁴⁸](#1_002e2.xhtml#FOOT48)
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (expmod base exp m)
 >   (remainder (fast-expt base exp) m))
 > ```
@@ -4083,17 +3997,17 @@ fields.[⁴⁸](#1_002e2.xhtml#FOOT48)
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (expmod base exp m)
 >   (cond ((= exp 0) 1)
 >         ((even? exp)
->          (remainder 
+>          (remainder
 >           (* (expmod base (/ exp 2) m)
 >              (expmod base (/ exp 2) m))
 >           m))
 >         (else
->          (remainder 
->           (* base 
+>          (remainder
+>           (* base
 >              (expmod base (- exp 1) m))
 >           m))))
 > ```
@@ -4102,32 +4016,32 @@ fields.[⁴⁸](#1_002e2.xhtml#FOOT48)
 >
 > “I don’t see what difference that could make,” says Louis. “I do.”
 > says Eva. “By writing the procedure like that, you have transformed
-> the *Θ*(log*n*) process into a *Θ*(*n*) process.” Explain.
+> the _Θ_(log*n*) process into a _Θ_(_n_) process.” Explain.
 
 > **Exercise 1.27:** Demonstrate that the Carmichael numbers listed in
 > [Footnote 47](#1_002e2.xhtml#Footnote-47) really do fool the Fermat
-> test. That is, write a procedure that takes an integer *n* and tests
-> whether *a*^(*n*) is congruent to *a* modulo *n* for every *a* \< *n*,
+> test. That is, write a procedure that takes an integer _n_ and tests
+> whether _a_^(_n_) is congruent to _a_ modulo _n_ for every *a* \< *n*,
 > and try your procedure on the given Carmichael numbers.
 
 > **Exercise 1.28:** One variant of the Fermat test that cannot be
-> fooled is called the *Miller-Rabin test* ([Miller
+> fooled is called the _Miller-Rabin test_ ([Miller
 > 1976](#References.xhtml#Miller-1976); [Rabin
 > 1980](#References.xhtml#Rabin-1980)). This starts from an alternate
-> form of Fermat’s Little Theorem, which states that if *n* is a prime
-> number and *a* is any positive integer less than *n*, then *a* raised
-> to the (*n*−1)-st power is congruent to 1 modulo *n*. To test the
-> primality of a number *n* by the Miller-Rabin test, we pick a random
-> number *a* \< *n* and raise *a* to the (*n*−1)-st power modulo *n*
+> form of Fermat’s Little Theorem, which states that if _n_ is a prime
+> number and _a_ is any positive integer less than _n_, then _a_ raised
+> to the (*n*−1)-st power is congruent to 1 modulo _n_. To test the
+> primality of a number _n_ by the Miller-Rabin test, we pick a random
+> number *a* \< *n* and raise _a_ to the (*n*−1)-st power modulo _n_
 > using the `expmod` procedure. However, whenever we perform the
 > squaring step in `expmod`, we check to see if we have discovered a
-> “nontrivial square root of 1 modulo *n*,” that is, a number not equal
-> to 1 or *n* − 1 whose square is equal to 1 modulo *n*. It is possible
-> to prove that if such a nontrivial square root of 1 exists, then *n*
-> is not prime. It is also possible to prove that if *n* is an odd
+> “nontrivial square root of 1 modulo _n_,” that is, a number not equal
+> to 1 or *n* − 1 whose square is equal to 1 modulo _n_. It is possible
+> to prove that if such a nontrivial square root of 1 exists, then _n_
+> is not prime. It is also possible to prove that if _n_ is an odd
 > number that is not prime, then, for at least half the numbers
-> *a* \< *n*, computing *a*^(*n* − 1) in this way will reveal a
-> nontrivial square root of 1 modulo *n*. (This is why the Miller-Rabin
+> *a* \< *n*, computing _a_^(*n* − 1) in this way will reveal a
+> nontrivial square root of 1 modulo _n_. (This is why the Miller-Rabin
 > test cannot be fooled.) Modify the `expmod` procedure to signal if it
 > discovers a nontrivial square root of 1, and use this to implement the
 > Miller-Rabin test with a procedure analogous to `fermat-test`. Check
@@ -4146,7 +4060,7 @@ block structure introduced in the last section to hide the definition of
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (factorial n)
   (define (iter product counter)
     (if (> counter n)
@@ -4171,7 +4085,7 @@ procedures on register machines in [Chapter
 can be realized “in hardware” as a machine that has a fixed set of
 registers and no auxiliary memory. In contrast, realizing a recursive
 process requires a machine that uses an auxiliary data structure known
-as a *stack*.
+as a _stack_.
 
 </div>
 
@@ -4215,8 +4129,8 @@ computations is to arrange matters so that we automatically construct a
 table of values as they are computed. Each time we are asked to apply
 the procedure to some argument, we first look to see if the value is
 already stored in the table, in which case we avoid performing the
-redundant computation. This strategy, known as *tabulation* or
-*memoization*, can be implemented in a straightforward way. Tabulation
+redundant computation. This strategy, known as _tabulation_ or
+_memoization_, can be implemented in a straightforward way. Tabulation
 can sometimes be used to transform processes that require an exponential
 number of steps (such as `count-change`) into processes whose space and
 time requirements grow linearly with the input. See [Exercise
@@ -4227,8 +4141,8 @@ time requirements grow linearly with the input. See [Exercise
 <div id="1_002e2.xhtml#FOOT35">
 
 [³⁵](#1_002e2.xhtml#DOCF35) The elements of Pascal’s triangle are called
-the *binomial coefficients*, because the *n*^(th) row consists of the
-coefficients of the terms in the expansion of (*x*+*y*)^(*n*). This
+the _binomial coefficients_, because the _n_^(th) row consists of the
+coefficients of the terms in the expansion of (_x_+_y_)^(_n_). This
 pattern for computing the coefficients appeared in Blaise Pascal’s 1653
 seminal work on probability theory, Traité du triangle arithmétique.
 According to [Knuth (1973)](#References.xhtml#Knuth-_00281973_0029), the
@@ -4256,12 +4170,12 @@ can be carried out at various levels of abstraction.
 <div id="1_002e2.xhtml#FOOT37">
 
 [³⁷](#1_002e2.xhtml#DOCF37) More precisely, the number of
-multiplications required is equal to 1 less than the log base 2 of *n*
-plus the number of ones in the binary representation of *n*. This total
-is always less than twice the log base 2 of *n*. The arbitrary constants
+multiplications required is equal to 1 less than the log base 2 of _n_
+plus the number of ones in the binary representation of _n_. This total
+is always less than twice the log base 2 of _n_. The arbitrary constants
 *k*₁ and *k*₂ in the definition of order notation imply that, for a
 logarithmic process, the base to which logarithms are taken does not
-matter, so all such processes are described as *Θ*(log*n*).
+matter, so all such processes are described as _Θ_(log*n*).
 
 </div>
 
@@ -4319,40 +4233,40 @@ set of illustrative examples.
 [⁴³](#1_002e2.xhtml#DOCF43) This theorem was proved in 1845 by Gabriel
 Lamé, a French mathematician and engineer known chiefly for his
 contributions to mathematical physics. To prove the theorem, we consider
-pairs (*a*_(*k*),*b*_(*k*)), where *a*_(*k*) ≥ *b*_(*k*), for which
-Euclid’s Algorithm terminates in *k* steps. The proof is based on the
+pairs (_a\_\_(*k*),*b*_(_k_)), where _a\_\_(*k*) ≥ *b*_(_k_), for which
+Euclid’s Algorithm terminates in _k_ steps. The proof is based on the
 claim that, if
-(*a*_(*k* + 1),*b*_(*k* + 1)) → (*a*_(*k*),*b*_(*k*)) → (*a*_(*k* − 1),*b*_(*k* − 1))
+(_a\_\_(*k* + 1),*b*_(*k* + 1)) → (_a\_\_(*k*),*b*_(_k_)) → (_a\_\_(*k* − 1),*b*_(*k* − 1))
 are three successive pairs in the reduction process, then we must have
-*b*_(*k* + 1) ≥ *b*_(*k*) + *b*_(*k* − 1). To verify the claim, consider
+_b\_\_(*k* + 1) ≥ *b*_(_k_) + *b*_(*k* − 1). To verify the claim, consider
 that a reduction step is defined by applying the transformation
-*a*_(*k* − 1) = *b*_(*k*), *b*_(*k* − 1)= remainder of *a*_(*k*) divided
-by *b*_(*k*). The second equation means that
-*a*_(*k*) = *q**b*_(*k*) + *b*_(*k* − 1) for some positive integer *q*.
+*a*_(*k* − 1) = *b*_(*k*), *b*_(*k* − 1)= remainder of _a\_\_(*k*) divided
+by *b*_(_k_). The second equation means that
+_a\_\_(*k*) = *q\*\*b*_(_k_) + *b*_(*k* − 1) for some positive integer *q*.
 And since *q* must be at least 1 we have
-*a*_(*k*) = *q**b*_(*k*) + *b*_(*k* − 1) ≥ *b*_(*k*) + *b*_(*k* − 1).
-But in the previous reduction step we have *b*_(*k* + 1) = *a*_(*k*).
-Therefore, *b*_(*k* + 1) = *a*_(*k*) ≥ *b*_(*k*) + *b*_(*k* − 1). This
-verifies the claim. Now we can prove the theorem by induction on *k*,
+*a*_(_k_) = *q\*\*b*_(*k*) + *b*_(*k* − 1) ≥ *b*_(*k*) + *b*_(*k* − 1).
+But in the previous reduction step we have _b\_\_(*k* + 1) = *a*_(_k_).
+Therefore, _b\_\_(*k* + 1) = *a*_(_k_) ≥ *b*_(*k*) + *b*_(*k* − 1). This
+verifies the claim. Now we can prove the theorem by induction on _k_,
 the number of steps that the algorithm requires to terminate. The result
-is true for *k* = 1, since this merely requires that *b* be at least as
+is true for *k* = 1, since this merely requires that _b_ be at least as
 large as Fib(1) = 1. Now, assume that the result is true for all
-integers less than or equal to *k* and establish the result for *k* + 1.
+integers less than or equal to _k_ and establish the result for *k* + 1.
 Let
-(*a*_(*k* + 1),*b*_(*k* + 1)) → (*a*_(*k*),*b*_(*k*)) → (*a*_(*k* − 1),*b*_(*k* − 1))
+(_a\_\_(*k* + 1),*b*_(*k* + 1)) → (_a\_\_(*k*),*b*_(_k_)) → (_a\_\_(*k* − 1),*b*_(*k* − 1))
 be successive pairs in the reduction process. By our induction
-hypotheses, we have *b*_(*k* − 1) ≥ Fib(*k*−1) and *b*_(*k*) ≥ Fib(*k*).
+hypotheses, we have _b\_\_(*k* − 1) ≥ Fib(*k*−1) and *b*_(_k_) ≥ Fib(_k_).
 Thus, applying the claim we just proved together with the definition of
 the Fibonacci numbers gives
-*b*_(*k* + 1) ≥ *b*_(*k*) + *b*_(*k* − 1) ≥ Fib(*k*) + Fib(*k*−1) = Fib(*k*+1),
+_b\_\_(*k* + 1) ≥ *b*_(_k_) + *b*\_(*k* − 1) ≥ Fib(_k_) + Fib(*k*−1) = Fib(_k_+1),
 which completes the proof of Lamé’s Theorem.
 
 </div>
 
 <div id="1_002e2.xhtml#FOOT44">
 
-[⁴⁴](#1_002e2.xhtml#DOCF44) If *d* is a divisor of *n*, then so is
-*n* / *d*. But *d* and *n* / *d* cannot both be greater than
+[⁴⁴](#1_002e2.xhtml#DOCF44) If _d_ is a divisor of _n_, then so is
+*n* / *d*. But _d_ and *n* / *d* cannot both be greater than
 $\\sqrt{n}$.
 
 </div>
@@ -4379,15 +4293,15 @@ University.
 <div id="1_002e2.xhtml#FOOT46">
 
 [⁴⁶](#1_002e2.xhtml#DOCF46) The reduction steps in the cases where the
-exponent *e* is greater than 1 are based on the fact that, for any
-integers *x*, *y*, and *m*, we can find the remainder of *x* times *y*
-modulo *m* by computing separately the remainders of *x* modulo *m* and
-*y* modulo *m*, multiplying these, and then taking the remainder of the
-result modulo *m*. For instance, in the case where *e* is even, we
-compute the remainder of *b*^(*e*/2) modulo *m*, square this, and take
-the remainder modulo *m*. This technique is useful because it means we
+exponent _e_ is greater than 1 are based on the fact that, for any
+integers _x_, _y_, and _m_, we can find the remainder of _x_ times _y_
+modulo _m_ by computing separately the remainders of _x_ modulo _m_ and
+_y_ modulo _m_, multiplying these, and then taking the remainder of the
+result modulo _m_. For instance, in the case where _e_ is even, we
+compute the remainder of _b_^(_e_/2) modulo _m_, square this, and take
+the remainder modulo _m_. This technique is useful because it means we
 can perform our computation without ever having to deal with numbers
-much larger than *m*. (Compare [Exercise
+much larger than _m_. (Compare [Exercise
 1.25](#1_002e2.xhtml#Exercise-1_002e25).)
 
 </div>
@@ -4395,7 +4309,7 @@ much larger than *m*. (Compare [Exercise
 <div id="1_002e2.xhtml#FOOT47">
 
 [⁴⁷](#1_002e2.xhtml#DOCF47) Numbers that fool the Fermat test are called
-*Carmichael numbers*, and little is known about them other than that
+_Carmichael numbers_, and little is known about them other than that
 they are extremely rare. There are 255 Carmichael numbers below
 100,000,000. The smallest few are 561, 1105, 1729, 2465, 2821, and 6601.
 In testing primality of very large numbers chosen at random, the chance
@@ -4416,7 +4330,7 @@ Although it is now computationally infeasible to factor an arbitrary
 seconds with the Fermat test. This fact forms the basis of a technique
 for constructing “unbreakable codes” suggested by [Rivest et al.
 (1977)](#References.xhtml#Rivest-et-al_002e-_00281977_0029). The
-resulting *RSA algorithm* has become a widely used technique for
+resulting _RSA algorithm_ has become a widely used technique for
 enhancing the security of electronic communications. Because of this and
 related developments, the study of prime numbers, once considered the
 epitome of a topic in “pure” mathematics to be studied only for its own
@@ -4427,23 +4341,13 @@ cryptography, electronic funds transfer, and information retrieval.
 
 </div>
 
-Next: [1.3](#1_002e3.xhtml#g_t1_002e3), Prev:
-[1.1](#1_002e1.xhtml#g_t1_002e1), Up: [1.2](#1_002e2.xhtml#g_t1_002e2)  
-\[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
-
 </div>
-
-[⇣](#1_002e2.xhtml#pagebottom)
 
 <div className="section">
 
-[⇡](#1_002e3.xhtml#pagetop)
-Next: [Chapter 2](#Chapter-2.xhtml#Chapter-2), Prev:
-[1.2](#1_002e2.xhtml#g_t1_002e2), Up: [Chapter
-1](#Chapter-1.xhtml#Chapter-1)  
 \[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
 
-### 1.3Formulating Abstractions with Higher-Order Procedures
+### 1.3 Formulating Abstractions with Higher-Order Procedures
 
 We have seen that procedures are, in effect, abstractions that describe
 compound operations on numbers independent of the particular numbers.
@@ -4451,7 +4355,7 @@ For example, when we
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (cube x) (* x x x))
 ```
 
@@ -4464,7 +4368,7 @@ expressions such as
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (* 3 3 3)
 (* x x x)
 (* y y y)
@@ -4490,21 +4394,21 @@ parameters must be numbers. Often the same programming pattern will be
 used with a number of different procedures. To express such patterns as
 concepts, we will need to construct procedures that can accept
 procedures as arguments or return procedures as values. Procedures that
-manipulate procedures are called *higher-order procedures*. This section
+manipulate procedures are called _higher-order procedures_. This section
 shows how higher-order procedures can serve as powerful abstraction
 mechanisms, vastly increasing the expressive power of our language.
 
-#### 1.3.1Procedures as Arguments
+#### 1.3.1 Procedures as Arguments
 
 Consider the following three procedures. The first computes the sum of
 the integers from `a` through `b`:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (sum-integers a b)
-  (if (> a b) 
-      0 
+  (if (> a b)
+      0
       (+ a (sum-integers (+ a 1) b))))
 ```
 
@@ -4515,11 +4419,11 @@ range:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (sum-cubes a b)
-  (if (> a b) 
-      0 
-      (+ (cube a) 
+  (if (> a b)
+      0
+      (+ (cube a)
          (sum-cubes (+ a 1) b))))
 ```
 
@@ -4527,15 +4431,15 @@ range:
 
 The third computes the sum of a sequence of terms in the series
 $$\\frac{1}{1 \\cdot 3} + \\frac{1}{5 \\cdot 7} + \\frac{1}{9 \\cdot 11} + {\\ldots,}$$
-which converges to *π*/8 (very slowly):[⁴⁹](#1_002e3.xhtml#FOOT49)
+which converges to _π_/8 (very slowly):[⁴⁹](#1_002e3.xhtml#FOOT49)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (pi-sum a b)
   (if (> a b)
       0
-      (+ (/ 1.0 (* a (+ a 2))) 
+      (+ (/ 1.0 (* a (+ a 2)))
          (pi-sum (+ a 4) b))))
 ```
 
@@ -4549,11 +4453,11 @@ of the procedures by filling in slots in the same template:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (⟨name⟩ a b)
   (if (> a b)
       0
-      (+ (⟨term⟩ a) 
+      (+ (⟨term⟩ a)
          (⟨name⟩ (⟨next⟩ a) b))))
 ```
 
@@ -4561,8 +4465,8 @@ of the procedures by filling in slots in the same template:
 
 The presence of such a common pattern is strong evidence that there is a
 useful abstraction waiting to be brought to the surface. Indeed,
-mathematicians long ago identified the abstraction of *summation of a
-series* and invented “sigma notation,” for example
+mathematicians long ago identified the abstraction of _summation of a
+series_ and invented “sigma notation,” for example
 $${\\sum\\limits\_{n = a}^{b}f(n)}\\, = \\,{f(a)} + \\cdots + {f(b),}$$
 to express this concept. The power of sigma notation is that it allows
 mathematicians to deal with the concept of summation itself rather than
@@ -4578,7 +4482,7 @@ formal parameters:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (sum term a next b)
   (if (> a b)
       0
@@ -4596,7 +4500,7 @@ procedure `inc` that increments its argument by 1) to define
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (inc n) (+ n 1))
 
 (define (sum-cubes a b)
@@ -4610,7 +4514,7 @@ to 10:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (sum-cubes 1 10)
 3025
 ```
@@ -4622,7 +4526,7 @@ With the aid of an identity procedure to compute the term, we can define
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (identity x) x)
 
 (define (sum-integers a b)
@@ -4635,7 +4539,7 @@ Then we can add up the integers from 1 to 10:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (sum-integers 1 10)
 55
 ```
@@ -4646,7 +4550,7 @@ We can also define `pi-sum` in the same way:[⁵⁰](#1_002e3.xhtml#FOOT50)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (pi-sum a b)
   (define (pi-term x)
     (/ 1.0 (* x (+ x 2))))
@@ -4657,11 +4561,11 @@ We can also define `pi-sum` in the same way:[⁵⁰](#1_002e3.xhtml#FOOT50)
 
 </div>
 
-Using these procedures, we can compute an approximation to *π*:
+Using these procedures, we can compute an approximation to _π_:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (* 8 (pi-sum 1 1000))
 3.139592655589783
 ```
@@ -4669,18 +4573,18 @@ Using these procedures, we can compute an approximation to *π*:
 </div>
 
 Once we have `sum`, we can use it as a building block in formulating
-further concepts. For instance, the definite integral of a function *f*
-between the limits *a* and *b* can be approximated numerically using the
+further concepts. For instance, the definite integral of a function _f_
+between the limits _a_ and _b_ can be approximated numerically using the
 formula
 $${\\int\_{a}^{b}\\mspace{-5mu} f}\\; = \\;\\left\\lbrack \\; f\\left( a + \\frac{dx}{2} \\right) \\right.\\, + \\,{f\\left( a + dx + \\frac{dx}{2} \\right)}\\, + \\,{\\left. f\\left( a + 2dx + \\frac{dx}{2} \\right)\\, + \\,\\ldots\\; \\right\\rbrack dx}$$
-for small values of *d**x*. We can express this directly as a procedure:
+for small values of _d\*\*x_. We can express this directly as a procedure:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (integral f a b dx)
   (define (add-dx x) (+ x dx))
-  (* (sum f (+ a (/ dx 2.0)) add-dx b) 
+  (* (sum f (+ a (/ dx 2.0)) add-dx b)
      dx))
 
 (integral cube 0 1 0.01)
@@ -4696,13 +4600,13 @@ for small values of *d**x*. We can express this directly as a procedure:
 
 > **Exercise 1.29:** Simpson’s Rule is a more accurate method of
 > numerical integration than the method illustrated above. Using
-> Simpson’s Rule, the integral of a function *f* between *a* and *b* is
+> Simpson’s Rule, the integral of a function _f_ between _a_ and _b_ is
 > approximated as
 > $$\\frac{h}{3}(y\_{0} + {4y\_{1}} + {2y\_{2}} + {4y\_{3}} + {2y\_{4}} + \\cdots + {2y\_{n - 2}} + {4y\_{n - 1} + y\_{n}),}$$
-> where *h* = (*b*−*a*)/*n*, for some even integer *n*, and
-> *y*_(*k*) = *f*(*a*+*k**h*). (Increasing *n* increases the accuracy of
-> the approximation.) Define a procedure that takes as arguments *f*,
-> *a*, *b*, and *n* and returns the value of the integral, computed
+> where *h* = (*b*−*a*)/_n_, for some even integer _n_, and
+> _y_\_(_k_) = *f*(_a_+_k\*\*h_). (Increasing _n_ increases the accuracy of
+> the approximation.) Define a procedure that takes as arguments _f_,
+> _a_, _b_, and _n_ and returns the value of the integral, computed
 > using Simpson’s Rule. Use your procedure to integrate `cube` between 0
 > and 1 (with *n* = 100 and *n* = 1000), and compare the results to
 > those of the `integral` procedure shown above.
@@ -4714,7 +4618,7 @@ for small values of *d**x*. We can express this directly as a procedure:
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (sum term a next b)
 >   (define (iter a result)
 >     (if ⟨??⟩
@@ -4733,8 +4637,7 @@ for small values of *d**x*. We can express this directly as a procedure:
 >     procedure called `product` that returns the product of the values
 >     of a function at points over a given range. Show how to define
 >     `factorial` in terms of `product`. Also use `product` to compute
->     approximations to *π* using the formula[⁵²](#1_002e3.xhtml#FOOT52)
->     $$\\frac{\\pi}{4}\\, = \\,{\\frac{2 \\cdot 4 \\cdot 4 \\cdot 6 \\cdot 6 \\cdot 8 \\cdot \\cdots}{3 \\cdot 3 \\cdot 5 \\cdot 5 \\cdot 7 \\cdot 7 \\cdot \\cdots}.}$$
+>     approximations to _π_ using the formula[⁵²](#1_002e3.xhtml#FOOT52) > $$\\frac{\\pi}{4}\\, = \\,{\\frac{2 \\cdot 4 \\cdot 4 \\cdot 6 \\cdot 6 \\cdot 8 \\cdot \\cdots}{3 \\cdot 3 \\cdot 5 \\cdot 5 \\cdot 7 \\cdot 7 \\cdot \\cdots}.}$$
 > 2.  If your `product` procedure generates a recursive process, write
 >     one that generates an iterative process. If it generates an
 >     iterative process, write one that generates a recursive process.
@@ -4748,8 +4651,8 @@ for small values of *d**x*. We can express this directly as a procedure:
 >
 >     <div className="lisp">
 >
->     ``` lisp
->     (accumulate 
+>     ```lisp
+>     (accumulate
 >      combiner null-value term a next b)
 >     ```
 >
@@ -4769,7 +4672,7 @@ for small values of *d**x*. We can express this directly as a procedure:
 
 > **Exercise 1.33:** You can obtain an even more general version of
 > `accumulate` ([Exercise 1.32](#1_002e3.xhtml#Exercise-1_002e32)) by
-> introducing the notion of a *filter* on the terms to be combined. That
+> introducing the notion of a _filter_ on the terms to be combined. That
 > is, combine only those terms derived from values in the range that
 > satisfy a specified condition. The resulting `filtered-accumulate`
 > abstraction takes the same arguments as accumulate, together with an
@@ -4777,13 +4680,13 @@ for small values of *d**x*. We can express this directly as a procedure:
 > `filtered-accumulate` as a procedure. Show how to express the
 > following using `filtered-accumulate`:
 >
-> 1.  the sum of the squares of the prime numbers in the interval *a* to
->     *b* (assuming that you have a `prime?` predicate already written)
-> 2.  the product of all the positive integers less than *n* that are
->     relatively prime to *n* (i.e., all positive integers *i* \< *n*
->     such that GCD(*i*,*n*) = 1).
+> 1.  the sum of the squares of the prime numbers in the interval _a_ to
+>     _b_ (assuming that you have a `prime?` predicate already written)
+> 2.  the product of all the positive integers less than _n_ that are
+>     relatively prime to _n_ (i.e., all positive integers *i* \< *n*
+>     such that GCD(_i_,_n_) = 1).
 
-#### 1.3.2Constructing Procedures Using `Lambda`
+#### 1.3.2 Constructing Procedures Using `Lambda`
 
 In using `sum` as in [1.3.1](#1_002e3.xhtml#g_t1_002e3_002e1), it seems
 terribly awkward to have to define trivial procedures such as `pi-term`
@@ -4797,7 +4700,7 @@ introducing the special form `lambda`, which creates procedures. Using
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (lambda (x) (+ x 4))
 ```
 
@@ -4807,7 +4710,7 @@ and
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (lambda (x) (/ 1.0 (* x (+ x 2))))
 ```
 
@@ -4818,7 +4721,7 @@ auxiliary procedures as
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (pi-sum a b)
   (sum (lambda (x) (/ 1.0 (* x (+ x 2))))
        a
@@ -4833,7 +4736,7 @@ having to define the auxiliary procedure `add-dx`:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (integral f a b dx)
   (* (sum f (+ a (/ dx 2.0))
             (lambda (x) (+ x dx))
@@ -4848,7 +4751,7 @@ In general, `lambda` is used to create procedures in the same way as
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (lambda (⟨formal-parameters⟩) ⟨body⟩)
 ```
 
@@ -4860,7 +4763,7 @@ associated with any name in the environment. In fact,
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (plus4 x) (+ x 4))
 ```
 
@@ -4870,7 +4773,7 @@ is equivalent to
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define plus4 (lambda (x) (+ x 4)))
 ```
 
@@ -4880,7 +4783,7 @@ We can read a `lambda` expression as follows:
 
 <div className="example">
 
-``` example
+```example
 (lambda                     (x)     (+   x     4))
     |                        |       |   |     |
 the procedure of an argument x that adds x and 4
@@ -4893,7 +4796,7 @@ expression can be used as the operator in a combination such as
 
 <div className="lisp">
 
-``` lisp
+```lisp
 ((lambda (x y z) (+ x y (square z))) 1 2 3)
 12
 ```
@@ -4909,27 +4812,31 @@ Another use of `lambda` is in creating local variables. We often need
 local variables in our procedures other than those that have been bound
 as formal parameters. For example, suppose we wish to compute the
 function
-*f*(*x*,*y*) = *x*(1+*x**y*)² + *y*(1−*y*) + (1+*x**y*)(1−*y*),
+_f_(_x_,_y_) = *x*(1+_x\*\*y_)² + *y*(1−*y*) + (1+_x\*\*y_)(1−*y*),
 which we could also express as
-$$\\begin{matrix}
+
+$$
+\\begin{matrix}
 a & = & {1 + xy,} \\\\
 {\\phantom{(x,y)}b} & = & {1 - y,} \\\\
 {f(x,y)} & = & {{xa^{2}} + {yb} + {ab.}} \\\\
-\\end{matrix}$$
-In writing a procedure to compute *f*, we would like to include as local
-variables not only *x* and *y* but also the names of intermediate
-quantities like *a* and *b*. One way to accomplish this is to use an
+\\end{matrix}
+$$
+
+In writing a procedure to compute _f_, we would like to include as local
+variables not only _x_ and _y_ but also the names of intermediate
+quantities like _a_ and _b_. One way to accomplish this is to use an
 auxiliary procedure to bind the local variables:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (f x y)
   (define (f-helper a b)
     (+ (* x (square a))
        (* y b)
        (* a b)))
-  (f-helper (+ 1 (* x y)) 
+  (f-helper (+ 1 (* x y))
             (- 1 y)))
 ```
 
@@ -4941,11 +4848,11 @@ a single call to that procedure:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (f x y)
   ((lambda (a b)
-     (+ (* x (square a)) 
-        (* y b) 
+     (+ (* x (square a))
+        (* y b)
         (* a b)))
    (+ 1 (* x y))
    (- 1 y)))
@@ -4959,7 +4866,7 @@ written as
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (f x y)
   (let ((a (+ 1 (* x y)))
         (b (- 1 y)))
@@ -4974,7 +4881,7 @@ The general form of a `let` expression is
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (let ((⟨var₁⟩ ⟨exp₁⟩)
       (⟨var₂⟩ ⟨exp₂⟩)
       …
@@ -4988,7 +4895,7 @@ which can be thought of as saying
 
 <div className="example">
 
-``` example
+```example
 let ⟨var₁⟩ have the value ⟨exp₁⟩ and
     ⟨var₂⟩ have the value ⟨exp₂⟩ and
     …
@@ -5007,7 +4914,7 @@ syntax for
 
 <div className="lisp">
 
-``` lisp
+```lisp
 ((lambda (⟨var₁⟩ … ⟨varₙ⟩)
    ⟨body⟩)
  ⟨exp₁⟩
@@ -5024,50 +4931,50 @@ underlying `lambda` application.
 We can see from this equivalence that the scope of a variable specified
 by a `let` expression is the body of the `let`. This implies that:
 
--   `Let` allows one to bind variables as locally as possible to where
-    they are to be used. For example, if the value of `x` is 5, the
-    value of the expression
+- `Let` allows one to bind variables as locally as possible to where
+  they are to be used. For example, if the value of `x` is 5, the
+  value of the expression
 
-    <div className="lisp">
+  <div className="lisp">
 
-    ``` lisp
-    (+ (let ((x 3))
-         (+ x (* x 10)))
-       x)
-    ```
+  ```lisp
+  (+ (let ((x 3))
+       (+ x (* x 10)))
+     x)
+  ```
 
-    </div>
+  </div>
 
-    is 38. Here, the `x` in the body of the `let` is 3, so the value of
-    the `let` expression is 33. On the other hand, the `x` that is the
-    second argument to the outermost `+` is still 5.
+  is 38. Here, the `x` in the body of the `let` is 3, so the value of
+  the `let` expression is 33. On the other hand, the `x` that is the
+  second argument to the outermost `+` is still 5.
 
--   The variables’ values are computed outside the `let`. This matters
-    when the expressions that provide the values for the local variables
-    depend upon variables having the same names as the local variables
-    themselves. For example, if the value of `x` is 2, the expression
+- The variables’ values are computed outside the `let`. This matters
+  when the expressions that provide the values for the local variables
+  depend upon variables having the same names as the local variables
+  themselves. For example, if the value of `x` is 2, the expression
 
-    <div className="lisp">
+  <div className="lisp">
 
-    ``` lisp
-    (let ((x 3)
-          (y (+ x 2)))
-      (* x y))
-    ```
+  ```lisp
+  (let ((x 3)
+        (y (+ x 2)))
+    (* x y))
+  ```
 
-    </div>
+  </div>
 
-    will have the value 12 because, inside the body of the `let`, `x`
-    will be 3 and `y` will be 4 (which is the outer `x` plus 2).
+  will have the value 12 because, inside the body of the `let`, `x`
+  will be 3 and `y` will be 4 (which is the outer `x` plus 2).
 
 Sometimes we can use internal definitions to get the same effect as with
 `let`. For example, we could have defined the procedure `f` above as
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (f x y)
-  (define a 
+  (define a
     (+ 1 (* x y)))
   (define b (- 1 y))
   (+ (* x (square a))
@@ -5085,7 +4992,7 @@ procedures.[⁵⁴](#1_002e3.xhtml#FOOT54)
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (f g) (g 2))
 > ```
 >
@@ -5095,7 +5002,7 @@ procedures.[⁵⁴](#1_002e3.xhtml#FOOT54)
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (f square)
 > 4
 >
@@ -5108,7 +5015,7 @@ procedures.[⁵⁴](#1_002e3.xhtml#FOOT54)
 > What happens if we (perversely) ask the interpreter to evaluate the
 > combination `(f f)`? Explain.
 
-#### 1.3.3Procedures as General Methods
+#### 1.3.3 Procedures as General Methods
 
 We introduced compound procedures in
 [1.1.4](#1_002e1.xhtml#g_t1_002e1_002e4) as a mechanism for abstracting
@@ -5124,32 +5031,32 @@ procedures.
 
 ##### Finding roots of equations by the half-interval method
 
-The *half-interval method* is a simple but powerful technique for
-finding roots of an equation *f*(*x*) = 0, where *f* is a continuous
-function. The idea is that, if we are given points *a* and *b* such that
-*f*(*a*) \< 0 \< *f*(*b*), then *f* must have at least one zero between
-*a* and *b*. To locate a zero, let *x* be the average of *a* and *b*,
-and compute *f*(*x*). If *f*(*x*) \> 0, then *f* must have a zero
-between *a* and *x*. If *f*(*x*) \< 0, then *f* must have a zero between
-*x* and *b*. Continuing in this way, we can identify smaller and smaller
-intervals on which *f* must have a zero. When we reach a point where the
+The _half-interval method_ is a simple but powerful technique for
+finding roots of an equation _f_(_x_) = 0, where _f_ is a continuous
+function. The idea is that, if we are given points _a_ and _b_ such that
+_f_(_a_) \< 0 \< *f*(_b_), then _f_ must have at least one zero between
+_a_ and _b_. To locate a zero, let _x_ be the average of _a_ and _b_,
+and compute _f_(_x_). If _f_(_x_) \> 0, then _f_ must have a zero
+between _a_ and _x_. If _f_(_x_) \< 0, then _f_ must have a zero between
+_x_ and _b_. Continuing in this way, we can identify smaller and smaller
+intervals on which _f_ must have a zero. When we reach a point where the
 interval is small enough, the process stops. Since the interval of
 uncertainty is reduced by half at each step of the process, the number
-of steps required grows as *Θ*(log(*L* / *T*)), where *L* is the length
-of the original interval and *T* is the error tolerance (that is, the
+of steps required grows as _Θ_(log(*L* / *T*)), where _L_ is the length
+of the original interval and _T_ is the error tolerance (that is, the
 size of the interval we will consider “small enough”). Here is a
 procedure that implements this strategy:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (search f neg-point pos-point)
-  (let ((midpoint 
+  (let ((midpoint
          (average neg-point pos-point)))
     (if (close-enough? neg-point pos-point)
         midpoint
         (let ((test-value (f midpoint)))
-          (cond 
+          (cond
            ((positive? test-value)
             (search f neg-point midpoint))
            ((negative? test-value)
@@ -5159,11 +5066,11 @@ procedure that implements this strategy:
 
 </div>
 
-We assume that we are initially given the function *f* together with
+We assume that we are initially given the function _f_ together with
 points at which its values are negative and positive. We first compute
 the midpoint of the two given points. Next we check to see if the given
 interval is small enough, and if so we simply return the midpoint as our
-answer. Otherwise, we compute as a test value the value of *f* at the
+answer. Otherwise, we compute as a test value the value of _f_ at the
 midpoint. If the test value is positive, then we continue the process
 with a new interval running from the original negative point to the
 midpoint. If the test value is negative, we continue with the interval
@@ -5177,15 +5084,15 @@ computing square roots:[⁵⁵](#1_002e3.xhtml#FOOT55)
 
 <div className="lisp">
 
-``` lisp
-(define (close-enough? x y) 
+```lisp
+(define (close-enough? x y)
   (< (abs (- x y)) 0.001))
 ```
 
 </div>
 
 `Search` is awkward to use directly, because we can accidentally give it
-points at which *f*’s values do not have the required sign, in which
+points at which _f_’s values do not have the required sign, in which
 case we get a wrong answer. Instead we will use `search` via the
 following procedure, which checks to see which of the endpoints has a
 negative function value and which has a positive value, and calls the
@@ -5195,29 +5102,29 @@ the procedure signals an error.[⁵⁶](#1_002e3.xhtml#FOOT56)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (half-interval-method f a b)
   (let ((a-value (f a))
         (b-value (f b)))
-    (cond ((and (negative? a-value) 
+    (cond ((and (negative? a-value)
                 (positive? b-value))
            (search f a b))
-          ((and (negative? b-value) 
+          ((and (negative? b-value)
                 (positive? a-value))
            (search f b a))
           (else
-           (error "Values are not of 
+           (error "Values are not of
                    opposite sign" a b)))))
 ```
 
 </div>
 
-The following example uses the half-interval method to approximate *π*
+The following example uses the half-interval method to approximate _π_
 as the root between 2 and 4 of sin *x* = 0:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (half-interval-method sin 2.0 4.0)
 3.14111328125
 ```
@@ -5229,8 +5136,8 @@ root of the equation *x*³ − 2*x* − 3 = 0 between 1 and 2:
 
 <div className="lisp">
 
-``` lisp
-(half-interval-method 
+```lisp
+(half-interval-method
  (lambda (x) (- (* x x x) (* 2 x) 3))
  1.0
  2.0)
@@ -5241,11 +5148,11 @@ root of the equation *x*³ − 2*x* − 3 = 0 between 1 and 2:
 
 ##### Finding fixed points of functions
 
-A number *x* is called a *fixed point* of a function *f* if *x*
-satisfies the equation *f*(*x*) = *x*. For some functions *f* we can
-locate a fixed point by beginning with an initial guess and applying *f*
+A number _x_ is called a _fixed point_ of a function _f_ if _x_
+satisfies the equation _f_(_x_) = *x*. For some functions _f_ we can
+locate a fixed point by beginning with an initial guess and applying _f_
 repeatedly,
-*f*(*x*),  *f*(*f*(*x*)),  *f*(*f*(*f*(*x*))),  …,
+_f_(_x_),  *f*(_f_(_x_)),  *f*(_f_(_f_(_x_))),  …,
 until the value does not change very much. Using this idea, we can
 devise a procedure `fixed-point` that takes as inputs a function and an
 initial guess and produces an approximation to a fixed point of the
@@ -5254,12 +5161,12 @@ values whose difference is less than some prescribed tolerance:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define tolerance 0.00001)
 
 (define (fixed-point f first-guess)
   (define (close-enough? v1 v2)
-    (< (abs (- v1 v2)) 
+    (< (abs (- v1 v2))
        tolerance))
   (define (try guess)
     (let ((next (f guess)))
@@ -5277,7 +5184,7 @@ approximation:[⁵⁷](#1_002e3.xhtml#FOOT57)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (fixed-point cos 1.0)
 .7390822985224023
 ```
@@ -5289,7 +5196,7 @@ Similarly, we can find a solution to the equation
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (fixed-point (lambda (y) (+ (sin y) (cos y)))
              1.0)
 1.2587315962971173
@@ -5302,15 +5209,15 @@ finding square roots in [1.1.7](#1_002e1.xhtml#g_t1_002e1_002e7). Both
 are based on the idea of repeatedly improving a guess until the result
 satisfies some criterion. In fact, we can readily formulate the
 square-root computation as a fixed-point search. Computing the square
-root of some number *x* requires finding a *y* such that *y*² = *x*.
-Putting this equation into the equivalent form *y* = *x*/*y*, we
+root of some number _x_ requires finding a _y_ such that *y*² = *x*.
+Putting this equation into the equivalent form *y* = *x*/_y_, we
 recognize that we are looking for a fixed point of the
-function[⁵⁸](#1_002e3.xhtml#FOOT58) *y* ↦ *x*/*y*, and we can therefore
+function[⁵⁸](#1_002e3.xhtml#FOOT58) *y* ↦ *x*/_y_, and we can therefore
 try to compute square roots as
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (sqrt x)
   (fixed-point (lambda (y) (/ x y))
                1.0))
@@ -5320,23 +5227,23 @@ try to compute square roots as
 
 Unfortunately, this fixed-point search does not converge. Consider an
 initial guess *y*₁. The next guess is *y*₂ = *x*/*y*₁ and the next guess
-is *y*₃ = *x*/*y*₂ = *x*/(*x*/*y*₁) = *y*₁. This results in an infinite
+is *y*₃ = *x*/*y*₂ = *x*/(_x_/*y*₁) = *y*₁. This results in an infinite
 loop in which the two guesses *y*₁ and *y*₂ repeat over and over,
 oscillating about the answer.
 
 One way to control such oscillations is to prevent the guesses from
-changing so much. Since the answer is always between our guess *y* and
-*x*/*y*, we can make a new guess that is not as far from *y* as *x*/*y*
-by averaging *y* with *x*/*y*, so that the next guess after *y* is
-$\\frac{1}{2}(y + x/y)$ instead of *x*/*y*. The process of making such a
+changing so much. Since the answer is always between our guess _y_ and
+_x_/_y_, we can make a new guess that is not as far from _y_ as _x_/_y_
+by averaging _y_ with _x_/_y_, so that the next guess after _y_ is
+$\\frac{1}{2}(y + x/y)$ instead of _x_/_y_. The process of making such a
 sequence of guesses is simply the process of looking for a fixed point
 of $y\\mapsto{\\frac{1}{2}(y + x/y)}$:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (sqrt x)
-  (fixed-point 
+  (fixed-point
    (lambda (y) (average y (/ x y)))
    1.0))
 ```
@@ -5344,7 +5251,7 @@ of $y\\mapsto{\\frac{1}{2}(y + x/y)}$:
 </div>
 
 (Note that $y = {\\frac{1}{2}(y + x/y)}$ is a simple transformation of
-the equation *y* = *x*/*y*; to derive it, add *y* to both sides of the
+the equation *y* = *x*/_y_; to derive it, add _y_ to both sides of the
 equation and divide by 2.)
 
 With this modification, the square-root procedure works. In fact, if we
@@ -5353,18 +5260,18 @@ to the square root generated here is precisely the same as the one
 generated by our original square-root procedure of
 [1.1.7](#1_002e1.xhtml#g_t1_002e1_002e7). This approach of averaging
 successive approximations to a solution, a technique that we call
-*average damping*, often aids the convergence of fixed-point searches.
+_average damping_, often aids the convergence of fixed-point searches.
 
-> **Exercise 1.35:** Show that the golden ratio *φ*
+> **Exercise 1.35:** Show that the golden ratio _φ_
 > ([1.2.2](#1_002e2.xhtml#g_t1_002e2_002e2)) is a fixed point of the
-> transformation *x* ↦ 1 + 1/*x*, and use this fact to compute *φ* by
+> transformation *x* ↦ 1 + 1/_x_, and use this fact to compute _φ_ by
 > means of the `fixed-point` procedure.
 
 > **Exercise 1.36:** Modify `fixed-point` so that it prints the sequence
 > of approximations it generates, using the `newline` and `display`
 > primitives shown in [Exercise 1.22](#1_002e2.xhtml#Exercise-1_002e22).
-> Then find a solution to *x*^(*x*) = 1000 by finding a fixed point of
-> *x* ↦ log (1000)/log (*x*). (Use Scheme’s primitive `log` procedure,
+> Then find a solution to _x_^(_x_) = 1000 by finding a fixed point of
+> *x* ↦ log (1000)/log (_x_). (Use Scheme’s primitive `log` procedure,
 > which computes natural logarithms.) Compare the number of steps this
 > takes with and without average damping. (Note that you cannot start
 > `fixed-point` with a guess of 1, as this would cause division by
@@ -5372,27 +5279,27 @@ successive approximations to a solution, a technique that we call
 
 > **Exercise 1.37:**
 >
-> 1.  An infinite *continued fraction* is an expression of the form
+> 1.  An infinite _continued fraction_ is an expression of the form
 >     $$f\\, = \\,{\\frac{N\_{1}}{D\_{1} + \\frac{N\_{2}}{D\_{2} + \\frac{N\_{3}}{D\_{3} + \\ldots}}}.}$$
 >     As an example, one can show that the infinite continued fraction
->     expansion with the *N*_(*i*) and the *D*_(*i*) all equal to 1
->     produces 1/*φ*, where *φ* is the golden ratio (described in
+>     expansion with the _N\_\_(*i*) and the *D*_(_i_) all equal to 1
+>     produces 1/_φ_, where _φ_ is the golden ratio (described in
 >     [1.2.2](#1_002e2.xhtml#g_t1_002e2_002e2)). One way to approximate
 >     an infinite continued fraction is to truncate the expansion after
 >     a given number of terms. Such a truncation—a so-called finite
->     continued fraction **k*-term finite continued fraction*—has the
+>     continued fraction \*_k_-term finite continued fraction*—has the
 >     form
 >     $$\\frac{N\_{1}}{D\_{1} + \\frac{N\_{2}}{\\ddots + \\frac{N\_{k}}{D\_{k}}}}.$$
 >     Suppose that `n` and `d` are procedures of one argument (the term
->     index *i*) that return the *N*_(*i*) and *D*_(*i*) of the terms of
+>     index *i*) that return the *N*\_(*i*) and *D*\_(*i*) of the terms of
 >     the continued fraction. Define a procedure `cont-frac` such that
 >     evaluating `(cont-frac n d k)` computes the value of the *k*-term
 >     finite continued fraction. Check your procedure by approximating
->     1/*φ* using
+>     1/*φ\* using
 >
 >     <div className="lisp">
 >
->     ``` lisp
+>     ```lisp
 >     (cont-frac (lambda (i) 1.0)
 >                (lambda (i) 1.0)
 >                k)
@@ -5409,23 +5316,23 @@ successive approximations to a solution, a technique that we call
 
 > **Exercise 1.38:** In 1737, the Swiss mathematician Leonhard Euler
 > published a memoir De Fractionibus Continuis, which included a
-> continued fraction expansion for *e* − 2, where *e* is the base of the
-> natural logarithms. In this fraction, the *N*_(*i*) are all 1, and the
-> *D*_(*i*) are successively 1, 2, 1, 1, 4, 1, 1, 6, 1, 1, 8, …. Write a
+> continued fraction expansion for *e* − 2, where _e_ is the base of the
+> natural logarithms. In this fraction, the _N\_\_(*i*) are all 1, and the
+> *D*_(_i_) are successively 1, 2, 1, 1, 4, 1, 1, 6, 1, 1, 8, …. Write a
 > program that uses your `cont-frac` procedure from [Exercise
-> 1.37](#1_002e3.xhtml#Exercise-1_002e37) to approximate *e*, based on
+> 1.37](#1_002e3.xhtml#Exercise-1_002e37) to approximate _e_, based on
 > Euler’s expansion.
 
 > **Exercise 1.39:** A continued fraction representation of the tangent
 > function was published in 1770 by the German mathematician J.H.
 > Lambert:
 > $${\\tan x}\\, = \\,{\\frac{x}{1 - \\frac{x^{2}}{3 - \\frac{x^{2}}{5 - \\ldots}}}\\,,}$$
-> where *x* is in radians. Define a procedure `(tan-cf x k)` that
+> where _x_ is in radians. Define a procedure `(tan-cf x k)` that
 > computes an approximation to the tangent function based on Lambert’s
 > formula. `k` specifies the number of terms to compute, as in [Exercise
 > 1.37](#1_002e3.xhtml#Exercise-1_002e37).
 
-#### 1.3.4Procedures as Returned Values
+#### 1.3.4 Procedures as Returned Values
 
 The above examples demonstrate how the ability to pass procedures as
 arguments significantly enhances the expressive power of our programming
@@ -5436,19 +5343,19 @@ We can illustrate this idea by looking again at the fixed-point example
 described at the end of [1.3.3](#1_002e3.xhtml#g_t1_002e3_002e3). We
 formulated a new version of the square-root procedure as a fixed-point
 search, starting with the observation that $\\sqrt{x}$ is a fixed-point
-of the function *y* ↦ *x*/*y*. Then we used average damping to make the
+of the function *y* ↦ *x*/_y_. Then we used average damping to make the
 approximations converge. Average damping is a useful general technique
-in itself. Namely, given a function *f*, we consider the function whose
-value at *x* is equal to the average of *x* and *f*(*x*).
+in itself. Namely, given a function _f_, we consider the function whose
+value at _x_ is equal to the average of _x_ and _f_(_x_).
 
 We can express the idea of average damping by means of the following
 procedure:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (average-damp f)
-  (lambda (x) 
+  (lambda (x)
     (average x (f x))))
 ```
 
@@ -5458,13 +5365,13 @@ procedure:
 and returns as its value a procedure (produced by the `lambda`) that,
 when applied to a number `x`, produces the average of `x` and `(f x)`.
 For example, applying `average-damp` to the `square` procedure produces
-a procedure whose value at some number *x* is the average of *x* and
+a procedure whose value at some number _x_ is the average of _x_ and
 *x*². Applying this resulting procedure to 10 returns the average of 10
 and 100, or 55:[⁵⁹](#1_002e3.xhtml#FOOT59)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 ((average-damp square) 10)
 55
 ```
@@ -5476,10 +5383,10 @@ follows:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (sqrt x)
-  (fixed-point 
-   (average-damp 
+  (fixed-point
+   (average-damp
     (lambda (y) (/ x y)))
    1.0))
 ```
@@ -5488,7 +5395,7 @@ follows:
 
 Notice how this formulation makes explicit the three ideas in the
 method: fixed-point search, average damping, and the function
-*y* ↦ *x*/*y*. It is instructive to compare this formulation of the
+*y* ↦ *x*/_y_. It is instructive to compare this formulation of the
 square-root method with the original version given in
 [1.1.7](#1_002e1.xhtml#g_t1_002e1_002e7). Bear in mind that these
 procedures express the same process, and notice how much clearer the
@@ -5498,17 +5405,17 @@ Experienced programmers know how to choose procedural formulations that
 are particularly perspicuous, and where useful elements of the process
 are exposed as separate entities that can be reused in other
 applications. As a simple example of reuse, notice that the cube root of
-*x* is a fixed point of the function *y* ↦ *x*/*y*², so we can
+_x_ is a fixed point of the function *y* ↦ *x*/*y*², so we can
 immediately generalize our square-root procedure to one that extracts
 cube roots:[⁶⁰](#1_002e3.xhtml#FOOT60)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (cube-root x)
-  (fixed-point 
-   (average-damp 
-    (lambda (y) 
+  (fixed-point
+   (average-damp
+    (lambda (y)
       (/ x (square y))))
    1.0))
 ```
@@ -5519,33 +5426,33 @@ cube roots:[⁶⁰](#1_002e3.xhtml#FOOT60)
 
 When we first introduced the square-root procedure, in
 [1.1.7](#1_002e1.xhtml#g_t1_002e1_002e7), we mentioned that this was a
-special case of *Newton’s method*. If *x* ↦ *g*(*x*) is a differentiable
-function, then a solution of the equation *g*(*x*) = 0 is a fixed point
-of the function *x* ↦ *f*(*x*) where
+special case of _Newton’s method_. If *x* ↦ *g*(_x_) is a differentiable
+function, then a solution of the equation _g_(_x_) = 0 is a fixed point
+of the function *x* ↦ *f*(_x_) where
 $${f(x)}\\, = \\, x - \\frac{g(x)}{Dg(x)}$$
-and *D**g*(*x*) is the derivative of *g* evaluated at *x*. Newton’s
+and _D\*\*g_(_x_) is the derivative of _g_ evaluated at _x_. Newton’s
 method is the use of the fixed-point method we saw above to approximate
 a solution of the equation by finding a fixed point of the function
-*f*.[⁶¹](#1_002e3.xhtml#FOOT61)
+_f_.[⁶¹](#1_002e3.xhtml#FOOT61)
 
-For many functions *g* and for sufficiently good initial guesses for
-*x*, Newton’s method converges very rapidly to a solution of
-*g*(*x*) = 0.[⁶²](#1_002e3.xhtml#FOOT62)
+For many functions _g_ and for sufficiently good initial guesses for
+_x_, Newton’s method converges very rapidly to a solution of
+_g_(_x_) = 0.[⁶²](#1_002e3.xhtml#FOOT62)
 
 In order to implement Newton’s method as a procedure, we must first
 express the idea of derivative. Note that “derivative,” like average
 damping, is something that transforms a function into another function.
 For instance, the derivative of the function *x* ↦ *x*³ is the function
-*x* ↦ 3*x*². In general, if *g* is a function and *d**x* is a small
-number, then the derivative *D**g* of *g* is the function whose value at
-any number *x* is given (in the limit of small *d**x*) by
+*x* ↦ 3*x*². In general, if _g_ is a function and _d\*\*x_ is a small
+number, then the derivative _D\*\*g_ of _g_ is the function whose value at
+any number _x_ is given (in the limit of small _d\*\*x_) by
 $$Dg(x)\\, = \\,{\\frac{g(x + dx) - g(x)}{dx}.}$$
-Thus, we can express the idea of derivative (taking *d**x* to be, say,
+Thus, we can express the idea of derivative (taking _d\*\*x_ to be, say,
 0.00001) as the procedure
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (deriv g)
   (lambda (x)
     (/ (- (g (+ x dx)) (g x))
@@ -5558,7 +5465,7 @@ along with the definition
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define dx 0.00001)
 ```
 
@@ -5571,7 +5478,7 @@ evaluate
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (cube x) (* x x x))
 
 ((deriv cube) 5)
@@ -5585,14 +5492,14 @@ process:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (newton-transform g)
   (lambda (x)
-    (- x (/ (g x) 
+    (- x (/ (g x)
             ((deriv g) x)))))
 
 (define (newtons-method g guess)
-  (fixed-point (newton-transform g) 
+  (fixed-point (newton-transform g)
                guess))
 ```
 
@@ -5602,7 +5509,7 @@ The `newton-transform` procedure expresses the formula at the beginning
 of this section, and `newtons-method` is readily defined in terms of
 this. It takes as arguments a procedure that computes the function for
 which we want to find a zero, together with an initial guess. For
-instance, to find the square root of *x*, we can use Newton’s method to
+instance, to find the square root of _x_, we can use Newton’s method to
 find a zero of the function *y* ↦ *y*² − *x* starting with an initial
 guess of 1.[⁶³](#1_002e3.xhtml#FOOT63)
 
@@ -5610,11 +5517,11 @@ This provides yet another form of the square-root procedure:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (sqrt x)
-  (newtons-method 
-   (lambda (y) 
-     (- (square y) x)) 
+  (newtons-method
+   (lambda (y)
+     (- (square y) x))
    1.0))
 ```
 
@@ -5632,8 +5539,8 @@ itself as a procedure:
 
 <div className="lisp">
 
-``` lisp
-(define (fixed-point-of-transform 
+```lisp
+(define (fixed-point-of-transform
          g transform guess)
   (fixed-point (transform g) guess))
 ```
@@ -5646,13 +5553,13 @@ guess. The returned result is a fixed point of the transformed function.
 
 Using this abstraction, we can recast the first square-root computation
 from this section (where we look for a fixed point of the average-damped
-version of *y* ↦ *x*/*y*) as an instance of this general method:
+version of *y* ↦ *x*/_y_) as an instance of this general method:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (sqrt x)
-  (fixed-point-of-transform 
+  (fixed-point-of-transform
    (lambda (y) (/ x y))
    average-damp
    1.0))
@@ -5666,9 +5573,9 @@ Newton transform of *y* ↦ *y*² − *x*) as
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (sqrt x)
-  (fixed-point-of-transform 
+  (fixed-point-of-transform
    (lambda (y) (- (square y) x))
    newton-transform
    1.0))
@@ -5697,14 +5604,14 @@ computational elements.
 
 In general, programming languages impose restrictions on the ways in
 which computational elements can be manipulated. Elements with the
-fewest restrictions are said to have *first-class* status. Some of the
+fewest restrictions are said to have _first-class_ status. Some of the
 “rights and privileges” of first-class elements
 are:[⁶⁴](#1_002e3.xhtml#FOOT64)
 
--   They may be named by variables.
--   They may be passed as arguments to procedures.
--   They may be returned as the results of procedures.
--   They may be included in data structures.[⁶⁵](#1_002e3.xhtml#FOOT65)
+- They may be named by variables.
+- They may be passed as arguments to procedures.
+- They may be returned as the results of procedures.
+- They may be included in data structures.[⁶⁵](#1_002e3.xhtml#FOOT65)
 
 Lisp, unlike other common programming languages, awards procedures full
 first-class status. This poses challenges for efficient implementation,
@@ -5717,13 +5624,13 @@ enormous.[⁶⁶](#1_002e3.xhtml#FOOT66)
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (newtons-method (cubic a b c) 1)
 > ```
 >
 > </div>
 >
-> to approximate zeros of the cubic *x*³ + *a**x*² + *b**x* + *c*.
+> to approximate zeros of the cubic *x*³ + *a\*\*x*² + *b\*\*x* + *c*.
 
 > **Exercise 1.41:** Define a procedure `double` that takes a procedure
 > of one argument as argument and returns a procedure that applies the
@@ -5733,43 +5640,43 @@ enormous.[⁶⁶](#1_002e3.xhtml#FOOT66)
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (((double (double double)) inc) 5)
 > ```
 >
 > </div>
 
-> **Exercise 1.42:** Let *f* and *g* be two one-argument functions. The
-> *composition* *f* after *g* is defined to be the function
-> *x* ↦ *f*(*g*(*x*)). Define a procedure `compose` that implements
+> **Exercise 1.42:** Let _f_ and _g_ be two one-argument functions. The
+> _composition_ _f_ after _g_ is defined to be the function
+> *x* ↦ *f*(_g_(_x_)). Define a procedure `compose` that implements
 > composition. For example, if `inc` is a procedure that adds 1 to its
 > argument,
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > ((compose square inc) 6)
 > 49
 > ```
 >
 > </div>
 
-> **Exercise 1.43:** If *f* is a numerical function and *n* is a
-> positive integer, then we can form the *n*^(th) repeated application
-> of *f*, which is defined to be the function whose value at *x* is
-> *f*(*f*(…(*f*(*x*))…)). For example, if *f* is the function
-> *x* ↦ *x* + 1, then the *n*^(th) repeated application of *f* is the
-> function *x* ↦ *x* + *n*. If *f* is the operation of squaring a
-> number, then the *n*^(th) repeated application of *f* is the function
-> that raises its argument to the 2^(*n*)-th power. Write a procedure
-> that takes as inputs a procedure that computes *f* and a positive
-> integer *n* and returns the procedure that computes the *n*^(th)
-> repeated application of *f*. Your procedure should be able to be used
+> **Exercise 1.43:** If _f_ is a numerical function and _n_ is a
+> positive integer, then we can form the _n_^(th) repeated application
+> of _f_, which is defined to be the function whose value at _x_ is
+> _f_(_f_(…(_f_(_x_))…)). For example, if _f_ is the function
+> *x* ↦ *x* + 1, then the _n_^(th) repeated application of _f_ is the
+> function *x* ↦ *x* + *n*. If _f_ is the operation of squaring a
+> number, then the _n_^(th) repeated application of _f_ is the function
+> that raises its argument to the 2^(_n_)-th power. Write a procedure
+> that takes as inputs a procedure that computes _f_ and a positive
+> integer _n_ and returns the procedure that computes the _n_^(th)
+> repeated application of _f_. Your procedure should be able to be used
 > as follows:
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > ((repeated square 2) 5)
 > 625
 > ```
@@ -5779,21 +5686,20 @@ enormous.[⁶⁶](#1_002e3.xhtml#FOOT66)
 > Hint: You may find it convenient to use `compose` from [Exercise
 > 1.42](#1_002e3.xhtml#Exercise-1_002e42).
 
-> **Exercise 1.44:** The idea of *smoothing* a function is an important
-> concept in signal processing. If *f* is a function and *d**x* is some
-> small number, then the smoothed version of *f* is the function whose
-> value at a point *x* is the average of *f*(*x*−*d**x*), *f*(*x*), and
-> *f*(*x*+*d**x*). Write a procedure `smooth` that takes as input a
-> procedure that computes *f* and returns a procedure that computes the
-> smoothed *f*. It is sometimes valuable to repeatedly smooth a function
-> (that is, smooth the smoothed function, and so on) to obtain the
-> **n*-fold smoothed function*. Show how to generate the *n*-fold
+> **Exercise 1.44:** The idea of _smoothing_ a function is an important
+> concept in signal processing. If _f_ is a function and _d\*\*x_ is some
+> small number, then the smoothed version of _f_ is the function whose
+> value at a point _x_ is the average of _f_(*x*−*d\*\*x*), _f_(_x_), and
+> _f_(_x_+_d\*\*x_). Write a procedure `smooth` that takes as input a
+> procedure that computes _f_ and returns a procedure that computes the
+> smoothed _f_. It is sometimes valuable to repeatedly smooth a function
+> (that is, smooth the smoothed function, and so on) to obtain the \*_n_-fold smoothed function*. Show how to generate the *n\*-fold
 > smoothed function of any given function using `smooth` and `repeated`
 > from [Exercise 1.43](#1_002e3.xhtml#Exercise-1_002e43).
 
 > **Exercise 1.45:** We saw in [1.3.3](#1_002e3.xhtml#g_t1_002e3_002e3)
 > that attempting to compute square roots by naively finding a fixed
-> point of *y* ↦ *x*/*y* does not converge, and that this can be fixed
+> point of *y* ↦ *x*/_y_ does not converge, and that this can be fixed
 > by average damping. The same method works for finding cube roots as
 > fixed points of the average-damped *y* ↦ *x*/*y*². Unfortunately, the
 > process does not work for fourth roots—a single average damp is not
@@ -5801,16 +5707,16 @@ enormous.[⁶⁶](#1_002e3.xhtml#FOOT66)
 > the other hand, if we average damp twice (i.e., use the average damp
 > of the average damp of *y* ↦ *x*/*y*³) the fixed-point search does
 > converge. Do some experiments to determine how many average damps are
-> required to compute *n*^(th) roots as a fixed-point search based upon
+> required to compute _n_^(th) roots as a fixed-point search based upon
 > repeated average damping of $y\\mapsto x/y^{\\mspace{2mu} n - 1}$. Use
-> this to implement a simple procedure for computing *n*^(th) roots
+> this to implement a simple procedure for computing _n_^(th) roots
 > using `fixed-point`, `average-damp`, and the `repeated` procedure of
 > [Exercise 1.43](#1_002e3.xhtml#Exercise-1_002e43). Assume that any
 > arithmetic operations you need are available as primitives.
 
 > **Exercise 1.46:** Several of the numerical methods described in this
 > chapter are instances of an extremely general computational strategy
-> known as *iterative improvement*. Iterative improvement says that, to
+> known as _iterative improvement_. Iterative improvement says that, to
 > compute something, we start with an initial guess for the answer, test
 > if the guess is good enough, and otherwise improve the guess and
 > continue the process using the improved guess as the new guess. Write
@@ -5859,7 +5765,7 @@ tied in using them at this point since we do not yet have data
 structures to provide suitable means of combination for these
 abstractions. We will return to these ideas in
 [2.2.3](#2_002e2.xhtml#g_t2_002e2_002e3) when we show how to use
-*sequences* as interfaces for combining filters and accumulators to
+_sequences_ as interfaces for combining filters and accumulators to
 build even more powerful abstractions. We will see there how these
 methods really come into their own as a powerful and elegant approach to
 designing programs.
@@ -5930,9 +5836,9 @@ until you obtain the fixed point.
 <div id="1_002e3.xhtml#FOOT58">
 
 [⁵⁸](#1_002e3.xhtml#DOCF58) ↦ (pronounced “maps to”) is the
-mathematician’s way of writing `lambda`. *y* ↦ *x*/*y* means
-`(lambda (y) (/ x y))`, that is, the function whose value at *y* is
-*x*/*y*.
+mathematician’s way of writing `lambda`. *y* ↦ *x*/_y_ means
+`(lambda (y) (/ x y))`, that is, the function whose value at _y_ is
+_x_/_y_.
 
 </div>
 
@@ -5959,7 +5865,7 @@ procedure.
 
 [⁶¹](#1_002e3.xhtml#DOCF61) Elementary calculus books usually describe
 Newton’s method in terms of the sequence of approximations
-*x*_(*n* + 1) = *x*_(*n*) − *g*(*x*_(*n*)) /*D**g*(*x*_(*n*)). Having
+_x\_\_(*n* + 1) = *x*_(_n_) − *g*(_x\_\_(*n*)) /*D\*\*g*(*x*_(_n_)). Having
 language for talking about processes and using the idea of fixed points
 simplifies the description of the method.
 
@@ -6010,22 +5916,11 @@ procedure’s environment.
 
 </div>
 
-Next: [Chapter 2](#Chapter-2.xhtml#Chapter-2), Prev:
-[1.2](#1_002e2.xhtml#g_t1_002e2), Up: [1.3](#1_002e3.xhtml#g_t1_002e3)  
-\[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
-
 </div>
-
-[⇣](#1_002e3.xhtml#pagebottom)
 
 <div className="section">
 
-[⇡](#Chapter-2.xhtml#pagetop)
-Next: [2.1](#2_002e1.xhtml#g_t2_002e1), Prev:
-[1.3](#1_002e3.xhtml#g_t1_002e3), Up: [Top](#index.xhtml#Top)  
-\[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
-
-## 2Building Abstractions with Data
+## 2 Building Abstractions with Data
 
 > We now come to the decisive step of mathematical abstraction: we
 > forget about what the symbols stand for. … \[The mathematician\] need
@@ -6059,7 +5954,7 @@ that have several aspects. Thus, whereas our focus in chapter 1 was on
 building abstractions by combining procedures to form compound
 procedures, we turn in this chapter to another key aspect of any
 programming language: the means it provides for building abstractions by
-combining data objects to form *compound data*.
+combining data objects to form _compound data_.
 
 Why do we want compound data in a programming language? For the same
 reasons that we want compound procedures: to elevate the conceptual
@@ -6085,7 +5980,7 @@ denominators. In a system intended to perform many operations on many
 rational numbers, such bookkeeping details would clutter the programs
 substantially, to say nothing of what they would do to our minds. It
 would be much better if we could “glue together” a numerator and
-denominator to form a pair—a *compound data object*—that our programs
+denominator to form a pair—a _compound data object_—that our programs
 could manipulate in a way that would be consistent with regarding a
 rational number as a single conceptual unit.
 
@@ -6096,20 +5991,20 @@ deals with rational numbers per se from the details of how rational
 numbers may be represented as pairs of integers. The general technique
 of isolating the parts of a program that deal with how data objects are
 represented from the parts of a program that deal with how data objects
-are used is a powerful design methodology called *data abstraction*. We
+are used is a powerful design methodology called _data abstraction_. We
 will see how data abstraction makes programs much easier to design,
 maintain, and modify.
 
 The use of compound data leads to a real increase in the expressive
 power of our programming language. Consider the idea of forming a
-“linear combination” *a**x* + *b**y*. We might like to write a procedure
-that would accept *a*, *b*, *x*, and *y* as arguments and return the
-value of *a**x* + *b**y*. This presents no difficulty if the arguments
+“linear combination” *a\*\*x* + *b\*\*y*. We might like to write a procedure
+that would accept _a_, _b_, _x_, and _y_ as arguments and return the
+value of *a\*\*x* + *b\*\*y*. This presents no difficulty if the arguments
 are to be numbers, because we can readily define the procedure
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (linear-combination a b x y)
   (+ (* a x) (* b y)))
 ```
@@ -6124,7 +6019,7 @@ express this as a procedure of the form
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (linear-combination a b x y)
   (add (mul a x) (mul b y)))
 ```
@@ -6151,7 +6046,7 @@ system mentioned above. This will form the background for our discussion
 of compound data and data abstraction. As with compound procedures, the
 main issue to be addressed is that of abstraction as a technique for
 coping with complexity, and we will see how data abstraction enables us
-to erect suitable *abstraction barriers* between different parts of a
+to erect suitable _abstraction barriers_ between different parts of a
 program.
 
 We will see that the key to forming compound data is that a programming
@@ -6162,16 +6057,16 @@ no special “data” operations at all, only procedures. This will further
 blur the distinction between “procedure” and “data,” which was already
 becoming tenuous toward the end of chapter 1. We will also explore some
 conventional techniques for representing sequences and trees. One key
-idea in dealing with compound data is the notion of *closure*—that the
+idea in dealing with compound data is the notion of _closure_—that the
 glue we use for combining data objects should allow us to combine not
 only primitive data objects, but compound data objects as well. Another
-key idea is that compound data objects can serve as *conventional
-interfaces* for combining program modules in mix-and-match ways. We
+key idea is that compound data objects can serve as _conventional
+interfaces_ for combining program modules in mix-and-match ways. We
 illustrate some of these ideas by presenting a simple graphics language
 that exploits closure.
 
 We will then augment the representational power of our language by
-introducing *symbolic expressions*—data whose elementary parts can be
+introducing _symbolic expressions_—data whose elementary parts can be
 arbitrary symbols rather than only numbers. We explore various
 alternatives for representing sets of objects. We will find that, just
 as a given numerical function can be computed by many different
@@ -6184,13 +6079,13 @@ representation of sets, and the encoding of information.
 
 Next we will take up the problem of working with data that may be
 represented differently by different parts of a program. This leads to
-the need to implement *generic operations*, which must handle many
+the need to implement _generic operations_, which must handle many
 different types of data. Maintaining modularity in the presence of
 generic operations requires more powerful abstraction barriers than can
 be erected with simple data abstraction alone. In particular, we
-introduce *data-directed programming* as a technique that allows
+introduce _data-directed programming_ as a technique that allows
 individual data representations to be designed in isolation and then
-combined *additively* (i.e., without modification). To illustrate the
+combined _additively_ (i.e., without modification). To illustrate the
 power of this approach to system design, we close the chapter by
 applying what we have learned to the implementation of a package for
 performing symbolic arithmetic on polynomials, in which the coefficients
@@ -6222,23 +6117,13 @@ are irrelevant.
 
 </div>
 
-Next: [2.1](#2_002e1.xhtml#g_t2_002e1), Prev:
-[1.3](#1_002e3.xhtml#g_t1_002e3), Up: [Top](#index.xhtml#Top)  
-\[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
-
 </div>
-
-[⇣](#Chapter-2.xhtml#pagebottom)
 
 <div className="section">
 
-[⇡](#2_002e1.xhtml#pagetop)
-Next: [2.2](#2_002e2.xhtml#g_t2_002e2), Prev: [Chapter
-2](#Chapter-2.xhtml#Chapter-2), Up: [Chapter
-2](#Chapter-2.xhtml#Chapter-2)  
 \[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
 
-### 2.1Introduction to Data Abstraction
+### 2.1 Introduction to Data Abstraction
 
 In [1.1.8](#1_002e1.xhtml#g_t1_002e1_002e8), we noted that a procedure
 used as an element in creating a more complex procedure could be
@@ -6249,7 +6134,7 @@ could be replaced by any other procedure with the same overall behavior.
 In other words, we could make an abstraction that would separate the way
 the procedure would be used from the details of how the procedure would
 be implemented in terms of more primitive procedures. The analogous
-notion for compound data is called *data abstraction*. Data abstraction
+notion for compound data is called _data abstraction_. Data abstraction
 is a methodology that enables us to isolate how a compound data object
 is used from the details of how it is constructed from more primitive
 data objects.
@@ -6261,12 +6146,12 @@ assumptions about the data that are not strictly necessary for
 performing the task at hand. At the same time, a “concrete” data
 representation is defined independent of the programs that use the data.
 The interface between these two parts of our system will be a set of
-procedures, called *selectors* and *constructors*, that implement the
+procedures, called _selectors_ and _constructors_, that implement the
 abstract data in terms of the concrete representation. To illustrate
 this technique, we will consider how to design a set of procedures for
 manipulating rational numbers.
 
-#### 2.1.1Example: Arithmetic Operations for Rational Numbers
+#### 2.1.1 Example: Arithmetic Operations for Rational Numbers
 
 Suppose we want to do arithmetic with rational numbers. We want to be
 able to add, subtract, multiply, and divide them and to test whether two
@@ -6278,28 +6163,32 @@ given a rational number, we have a way of extracting (or selecting) its
 numerator and its denominator. Let us further assume that the
 constructor and selectors are available as procedures:
 
--   `(make-rat ⟨n⟩ ⟨d⟩)` returns the rational number whose numerator is
-    the integer `⟨n⟩` and whose denominator is the integer `⟨d⟩`.
--   `(numer ⟨x⟩)` returns the numerator of the rational number `⟨x⟩`.
--   `(denom ⟨x⟩)` returns the denominator of the rational number `⟨x⟩`.
+- `(make-rat ⟨n⟩ ⟨d⟩)` returns the rational number whose numerator is
+  the integer `⟨n⟩` and whose denominator is the integer `⟨d⟩`.
+- `(numer ⟨x⟩)` returns the numerator of the rational number `⟨x⟩`.
+- `(denom ⟨x⟩)` returns the denominator of the rational number `⟨x⟩`.
 
-We are using here a powerful strategy of synthesis: *wishful thinking*.
+We are using here a powerful strategy of synthesis: _wishful thinking_.
 We haven’t yet said how a rational number is represented, or how the
 procedures `numer`, `denom`, and `make-rat` should be implemented. Even
 so, if we did have these three procedures, we could then add, subtract,
 multiply, divide, and test equality by using the following relations:
-$$\\begin{matrix}
+
+$$
+\\begin{matrix}
 {\\frac{n\_{1}}{d\_{1}} + \\frac{n\_{2}}{d\_{2}}} & = & {\\frac{n\_{1}d\_{2} + n\_{2}d\_{1}}{d\_{1}d\_{2}},} \\\\
 {\\frac{n\_{1}}{d\_{1}} - \\frac{n\_{2}}{d\_{2}}} & = & {\\frac{n\_{1}d\_{2} - n\_{2}d\_{1}}{d\_{1}d\_{2}},} \\\\
 {\\frac{n\_{1}}{d\_{1}} \\times \\frac{n\_{2}}{d\_{2}}} & = & {\\frac{n\_{1}n\_{2}}{d\_{1}d\_{2}},} \\\\
 \\frac{n\_{1}\\,/\\, d\_{1}}{n\_{2}\\,/\\, d\_{2}} & = & {\\frac{n\_{1}d\_{2}}{d\_{1}n\_{2}},} \\\\
 \\frac{n\_{1}}{d\_{1}} & = & {\\frac{n\_{2}}{d\_{2}}\\quad{\\ if\\ and\\ only\\ if\\quad}n\_{1}d\_{2} = n\_{2}d\_{1}.} \\\\
-\\end{matrix}$$
+\\end{matrix}
+$$
+
 We can express these rules as procedures:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (add-rat x y)
   (make-rat (+ (* (numer x) (denom y))
                (* (numer y) (denom x)))
@@ -6333,7 +6222,7 @@ together a numerator and a denominator to form a rational number.
 ##### Pairs
 
 To enable us to implement the concrete level of our data abstraction,
-our language provides a compound structure called a *pair*, which can be
+our language provides a compound structure called a _pair_, which can be
 constructed with the primitive procedure `cons`. This procedure takes
 two arguments and returns a compound data object that contains the two
 arguments as parts. Given a pair, we can extract the parts using the
@@ -6342,7 +6231,7 @@ we can use `cons`, `car`, and `cdr` as follows:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define x (cons 1 2))
 
 (car x)
@@ -6360,7 +6249,7 @@ used to form pairs whose elements are pairs, and so on:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define x (cons 1 2))
 (define y (cons 3 4))
 (define z (cons x y))
@@ -6377,9 +6266,9 @@ used to form pairs whose elements are pairs, and so on:
 In [2.2](#2_002e2.xhtml#g_t2_002e2) we will see how this ability to
 combine pairs means that pairs can be used as general-purpose building
 blocks to create all sorts of complex data structures. The single
-compound-data primitive *pair*, implemented by the procedures `cons`,
+compound-data primitive _pair_, implemented by the procedures `cons`,
 `car`, and `cdr`, is the only glue we need. Data objects constructed
-from pairs are called *list-structured* data.
+from pairs are called _list-structured_ data.
 
 ##### Representing rational numbers
 
@@ -6390,7 +6279,7 @@ implemented as follows:[⁶⁹](#2_002e1.xhtml#FOOT69)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (make-rat n d) (cons n d))
 (define (numer x) (car x))
 (define (denom x) (cdr x))
@@ -6404,7 +6293,7 @@ denominator:[⁷⁰](#2_002e1.xhtml#FOOT70)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (print-rat x)
   (newline)
   (display (numer x))
@@ -6418,7 +6307,7 @@ Now we can try our rational-number procedures:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define one-half (make-rat 1 2))
 (print-rat one-half)
 1/2
@@ -6448,10 +6337,10 @@ and the denominator to lowest terms before constructing the pair:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (make-rat n d)
   (let ((g (gcd n d)))
-    (cons (/ n g) 
+    (cons (/ n g)
           (/ d g))))
 ```
 
@@ -6461,8 +6350,8 @@ Now we have
 
 <div className="lisp">
 
-``` lisp
-(print-rat 
+```lisp
+(print-rat
  (add-rat one-third one-third))
 2/3
 ```
@@ -6479,7 +6368,7 @@ constructor `make-rat` without changing any of the procedures (such as
 > and denominator are positive, and if the rational number is negative,
 > only the numerator is negative.
 
-#### 2.1.2Abstraction Barriers
+#### 2.1.2 Abstraction Barriers
 
 Before continuing with more examples of compound data and data
 abstraction, let us consider some of the issues raised by the
@@ -6492,7 +6381,7 @@ to use only those operations in manipulating the data.
 
 We can envision the structure of the rational-number system as shown in
 [Figure 2.1](#2_002e1.xhtml#Figure-2_002e1). The horizontal lines
-represent *abstraction barriers* that isolate different “levels” of the
+represent _abstraction barriers_ that isolate different “levels” of the
 system. At each level, the barrier separates the programs (above) that
 use the data abstraction from the programs (below) that implement the
 data abstraction. Programs that use rational numbers manipulate them
@@ -6528,7 +6417,7 @@ This leads to different constructor and selector procedures:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (make-rat n d)
   (cons n d))
 
@@ -6566,8 +6455,8 @@ without losing the ability to make progress on the rest of the system.
 > starting point and an ending point. Define a constructor
 > `make-segment` and selectors `start-segment` and `end-segment` that
 > define the representation of segments in terms of points. Furthermore,
-> a point can be represented as a pair of numbers: the *x* coordinate
-> and the *y* coordinate. Accordingly, specify a constructor
+> a point can be represented as a pair of numbers: the _x_ coordinate
+> and the _y_ coordinate. Accordingly, specify a constructor
 > `make-point` and selectors `x-point` and `y-point` that define this
 > representation. Finally, using your selectors and constructors, define
 > a procedure `midpoint-segment` that takes a line segment as argument
@@ -6577,7 +6466,7 @@ without losing the ability to make progress on the rest of the system.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (print-point p)
 >   (newline)
 >   (display "(")
@@ -6598,7 +6487,7 @@ without losing the ability to make progress on the rest of the system.
 > barriers, so that the same perimeter and area procedures will work
 > using either representation?
 
-#### 2.1.3What Is Meant by Data?
+#### 2.1.3 What Is Meant by Data?
 
 We began the rational-number implementation in
 [2.1.1](#2_002e1.xhtml#g_t2_002e1_002e1) by implementing the
@@ -6608,7 +6497,7 @@ point, we could think of the operations as being defined in terms of
 data objects—numerators, denominators, and rational numbers—whose
 behavior was specified by the latter three procedures.
 
-But exactly what is meant by *data*? It is not enough to say “whatever
+But exactly what is meant by _data_? It is not enough to say “whatever
 is implemented by the given selectors and constructors.” Clearly, not
 every arbitrary set of three procedures can serve as an appropriate
 basis for the rational-number implementation. We need to guarantee that,
@@ -6645,12 +6534,12 @@ are the definitions:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (cons x y)
   (define (dispatch m)
     (cond ((= m 0) x)
           ((= m 1) y)
-          (else 
+          (else
            (error "Argument not 0 or 1:
                    CONS" m))))
   dispatch)
@@ -6689,7 +6578,7 @@ that the ability to manipulate procedures as objects automatically
 provides the ability to represent compound data. This may seem a
 curiosity now, but procedural representations of data will play a
 central role in our programming repertoire. This style of programming is
-often called *message passing*, and we will be using it as a basic tool
+often called _message passing_, and we will be using it as a basic tool
 in [Chapter 3](#Chapter-3.xhtml#Chapter-3) when we address the issues of
 modeling and simulation.
 
@@ -6699,11 +6588,11 @@ modeling and simulation.
 >
 > <div className="lisp">
 >
-> ``` lisp
-> (define (cons x y) 
+> ```lisp
+> (define (cons x y)
 >   (lambda (m) (m x y)))
 >
-> (define (car z) 
+> (define (car z)
 >   (z (lambda (p q) p)))
 > ```
 >
@@ -6715,8 +6604,8 @@ modeling and simulation.
 
 > **Exercise 2.5:** Show that we can represent pairs of nonnegative
 > integers using only numbers and arithmetic operations if we represent
-> the pair *a* and *b* as the integer that is the product
-> 2^(*a*)3^(*b*). Give the corresponding definitions of the procedures
+> the pair _a_ and _b_ as the integer that is the product
+> 2^(_a_)3^(_b_). Give the corresponding definitions of the procedures
 > `cons`, `car`, and `cdr`.
 
 > **Exercise 2.6:** In case representing pairs as procedures wasn’t
@@ -6727,7 +6616,7 @@ modeling and simulation.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define zero (lambda (f) (lambda (x) x)))
 >
 > (define (add-1 n)
@@ -6736,7 +6625,7 @@ modeling and simulation.
 >
 > </div>
 >
-> This representation is known as *Church numerals*, after its inventor,
+> This representation is known as _Church numerals_, after its inventor,
 > Alonzo Church, the logician who invented the λ-calculus.
 >
 > Define `one` and `two` directly (not in terms of `zero` and `add-1`).
@@ -6744,7 +6633,7 @@ modeling and simulation.
 > definition of the addition procedure `+` (not in terms of repeated
 > application of `add-1`).
 
-#### 2.1.4Extended Exercise: Interval Arithmetic
+#### 2.1.4 Extended Exercise: Interval Arithmetic
 
 Alyssa P. Hacker is designing a system to help people solve engineering
 problems. One feature she wants to provide in her system is the ability
@@ -6755,7 +6644,7 @@ known precision.
 
 Electrical engineers will be using Alyssa’s system to compute electrical
 quantities. It is sometimes necessary for them to compute the value of a
-parallel equivalent resistance *R*_(*p*) of two resistors *R*₁ and *R*₂
+parallel equivalent resistance _R_\_(_p_) of two resistors *R*₁ and *R*₂
 using the formula
 $$R\_{p}\\, = \\,{\\frac{1}{1/R\_{1} + 1/R\_{2}}.}$$
 Resistance values are usually known only up to some tolerance guaranteed
@@ -6784,11 +6673,11 @@ bounds:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (add-interval x y)
-  (make-interval (+ (lower-bound x) 
+  (make-interval (+ (lower-bound x)
                     (lower-bound y))
-                 (+ (upper-bound x) 
+                 (+ (upper-bound x)
                     (upper-bound y))))
 ```
 
@@ -6801,15 +6690,15 @@ that find the minimum or maximum of any number of arguments.)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (mul-interval x y)
-  (let ((p1 (* (lower-bound x) 
+  (let ((p1 (* (lower-bound x)
                (lower-bound y)))
-        (p2 (* (lower-bound x) 
+        (p2 (* (lower-bound x)
                (upper-bound y)))
-        (p3 (* (upper-bound x) 
+        (p3 (* (upper-bound x)
                (lower-bound y)))
-        (p4 (* (upper-bound x) 
+        (p4 (* (upper-bound x)
                (upper-bound y))))
     (make-interval (min p1 p2 p3 p4)
                    (max p1 p2 p3 p4))))
@@ -6824,11 +6713,11 @@ that order.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (div-interval x y)
-  (mul-interval x 
-                (make-interval 
-                 (/ 1.0 (upper-bound y)) 
+  (mul-interval x
+                (make-interval
+                 (/ 1.0 (upper-bound y))
                  (/ 1.0 (lower-bound y)))))
 ```
 
@@ -6840,7 +6729,7 @@ that order.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (make-interval a b) (cons a b))
 > ```
 >
@@ -6853,7 +6742,7 @@ that order.
 > the difference of two intervals may be computed. Define a
 > corresponding subtraction procedure, called `sub-interval`.
 
-> **Exercise 2.9:** The *width* of an interval is half of the difference
+> **Exercise 2.9:** The _width_ of an interval is half of the difference
 > between its upper and lower bounds. The width is a measure of the
 > uncertainty of the number specified by the interval. For some
 > arithmetic operations the width of the result of combining two
@@ -6885,18 +6774,18 @@ that order.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (make-center-width c w)
 >   (make-interval (- c w) (+ c w)))
 >
 > (define (center i)
->   (/ (+ (lower-bound i) 
->         (upper-bound i)) 
+>   (/ (+ (lower-bound i)
+>         (upper-bound i))
 >      2))
 >
 > (define (width i)
->   (/ (- (upper-bound i) 
->         (lower-bound i)) 
+>   (/ (- (upper-bound i)
+>         (lower-bound i))
 >      2))
 > ```
 >
@@ -6934,18 +6823,18 @@ that order.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (par1 r1 r2)
->   (div-interval 
+>   (div-interval
 >    (mul-interval r1 r2)
 >    (add-interval r1 r2)))
 >
 > (define (par2 r1 r2)
 >   (let ((one (make-interval 1 1)))
->     (div-interval 
+>     (div-interval
 >      one
->      (add-interval 
->       (div-interval one r1) 
+>      (add-interval
+>       (div-interval one r1)
 >       (div-interval one r2)))))
 > ```
 >
@@ -6956,8 +6845,8 @@ that order.
 
 > **Exercise 2.14:** Demonstrate that Lem is right. Investigate the
 > behavior of the system on a variety of arithmetic expressions. Make
-> some intervals *A* and *B*, and use them in computing the expressions
-> *A*/*A* and *A*/*B*. You will get the most insight by using intervals
+> some intervals _A_ and _B_, and use them in computing the expressions
+> _A_/_A_ and _A_/_B_. You will get the most insight by using intervals
 > whose width is a small percentage of the center value. Examine the
 > results of the computation in center-percent form (see [Exercise
 > 2.12](#2_002e1.xhtml#Exercise-2_002e12)).
@@ -6998,7 +6887,7 @@ constructor is
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define make-rat cons)
 (define numer car)
 (define denom cdr)
@@ -7012,7 +6901,7 @@ pairs. Thus `make-rat` and `cons` are names for the same primitive
 constructor.
 
 Defining selectors and constructors in this way is efficient: Instead of
-`make-rat` *calling* `cons`, `make-rat` *is* `cons`, so there is only
+`make-rat` _calling_ `cons`, `make-rat` _is_ `cons`, so there is only
 one procedure called, not two, when `make-rat` is called. On the other
 hand, doing this defeats debugging aids that trace procedure calls or
 put breakpoints on procedure calls: You may want to watch `make-rat`
@@ -7039,7 +6928,7 @@ what the interpreter prints as the value returned by `print-rat`.
 formulate rigorously. There are two approaches to giving such a
 formulation. One, pioneered by C. A. R. [Hoare
 (1972)](#References.xhtml#Hoare-_00281972_0029), is known as the method
-of *abstract models*. It formalizes the “procedures plus conditions”
+of _abstract models_. It formalizes the “procedures plus conditions”
 specification as outlined in the rational-number example above. Note
 that the condition on the rational-number representation was stated in
 terms of facts about integers (equality and division). In general,
@@ -7050,7 +6939,7 @@ defined data objects. Another approach, introduced by Zilles at MIT, by
 Goguen, Thatcher, Wagner, and Wright at IBM (see [Thatcher et al.
 1978](#References.xhtml#Thatcher-et-al_002e-1978)), and by Guttag at
 Toronto (see [Guttag 1977](#References.xhtml#Guttag-1977)), is called
-*algebraic specification*. It regards the “procedures” as elements of an
+_algebraic specification_. It regards the “procedures” as elements of an
 abstract algebraic system whose behavior is specified by axioms that
 correspond to our “conditions,” and uses the techniques of abstract
 algebra to check assertions about data objects. Both methods are
@@ -7061,30 +6950,20 @@ surveyed in the paper by [Liskov and Zilles
 
 </div>
 
-Next: [2.2](#2_002e2.xhtml#g_t2_002e2), Prev: [Chapter
-2](#Chapter-2.xhtml#Chapter-2), Up: [2.1](#2_002e1.xhtml#g_t2_002e1)  
-\[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
-
 </div>
-
-[⇣](#2_002e1.xhtml#pagebottom)
 
 <div className="section">
 
-[⇡](#2_002e2.xhtml#pagetop)
-Next: [2.3](#2_002e3.xhtml#g_t2_002e3), Prev:
-[2.1](#2_002e1.xhtml#g_t2_002e1), Up: [Chapter
-2](#Chapter-2.xhtml#Chapter-2)  
 \[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
 
-### 2.2Hierarchical Data and the Closure Property
+### 2.2 Hierarchical Data and the Closure Property
 
 As we have seen, pairs provide a primitive “glue” that we can use to
 construct compound data objects. [Figure
 2.2](#2_002e2.xhtml#Figure-2_002e2) shows a standard way to visualize a
 pair—in this case, the pair formed by `(cons 1 2)`. In this
-representation, which is called *box-and-pointer notation*, each object
-is shown as a *pointer* to a box. The box for a primitive object
+representation, which is called _box-and-pointer notation_, each object
+is shown as a _pointer_ to a box. The box for a primitive object
 contains a representation of the object. For example, the box for a
 number contains a numeral. The box for a pair is actually a double box,
 the left part containing (a pointer to) the `car` of the pair and the
@@ -7106,12 +6985,12 @@ SVG
 
 The ability to create pairs whose elements are pairs is the essence of
 list structure’s importance as a representational tool. We refer to this
-ability as the *closure property* of `cons`. In general, an operation
+ability as the _closure property_ of `cons`. In general, an operation
 for combining data objects satisfies the closure property if the results
 of combining things with that operation can themselves be combined using
 the same operation.[⁷²](#2_002e2.xhtml#FOOT72) Closure is the key to
 power in any means of combination because it permits us to create
-*hierarchical* structures—structures made up of parts, which themselves
+_hierarchical_ structures—structures made up of parts, which themselves
 are made up of parts, and so on.
 
 From the outset of [Chapter 1](#Chapter-1.xhtml#Chapter-1), we’ve made
@@ -7123,9 +7002,9 @@ conventional techniques for using pairs to represent sequences and
 trees, and we exhibit a graphics language that illustrates closure in a
 vivid way.[⁷³](#2_002e2.xhtml#FOOT73)
 
-#### 2.2.1Representing Sequences
+#### 2.2.1 Representing Sequences
 
-One of the useful structures we can build with pairs is a *sequence*—an
+One of the useful structures we can build with pairs is a _sequence_—an
 ordered collection of data objects. There are, of course, many ways to
 represent sequences in terms of pairs. One particularly straightforward
 representation is illustrated in [Figure
@@ -7140,7 +7019,7 @@ constructed by nested `cons` operations:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (cons 1
       (cons 2
             (cons 3
@@ -7152,14 +7031,14 @@ constructed by nested `cons` operations:
 SVG
 **Figure 2.4:** The sequence 1, 2, 3, 4 represented as a chain of pairs.
 
-Such a sequence of pairs, formed by nested `cons`es, is called a *list*,
+Such a sequence of pairs, formed by nested `cons`es, is called a _list_,
 and Scheme provides a primitive called `list` to help in constructing
 lists.[⁷⁴](#2_002e2.xhtml#FOOT74) The above sequence could be produced
 by `(list 1 2 3 4)`. In general,
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (list ⟨a₁⟩ ⟨a₂⟩ … ⟨aₙ⟩)
 ```
 
@@ -7169,7 +7048,7 @@ is equivalent to
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (cons ⟨a₁⟩
       (cons ⟨a₂⟩
             (cons …
@@ -7185,7 +7064,7 @@ elements, enclosed in parentheses. Thus, the data object in [Figure
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define one-through-four (list 1 2 3 4))
 
 one-through-four
@@ -7209,7 +7088,7 @@ like the original one, but with an additional item at the beginning.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (car one-through-four)
 1
 
@@ -7229,8 +7108,8 @@ like the original one, but with an additional item at the beginning.
 </div>
 
 The value of `nil`, used to terminate the chain of pairs, can be thought
-of as a sequence of no elements, the *empty list*. The word *nil* is a
-contraction of the Latin word *nihil*, which means
+of as a sequence of no elements, the _empty list_. The word _nil_ is a
+contraction of the Latin word _nihil_, which means
 “nothing.”[⁷⁶](#2_002e2.xhtml#FOOT76)
 
 ##### List operations
@@ -7238,25 +7117,25 @@ contraction of the Latin word *nihil*, which means
 The use of pairs to represent sequences of elements as lists is
 accompanied by conventional programming techniques for manipulating
 lists by successively “`cdr`ing down” the lists. For example, the
-procedure `list-ref` takes as arguments a list and a number *n* and
-returns the *n*^(th) item of the list. It is customary to number the
+procedure `list-ref` takes as arguments a list and a number _n_ and
+returns the _n_^(th) item of the list. It is customary to number the
 elements of the list beginning with 0. The method for computing
 `list-ref` is the following:
 
--   For *n* = 0, `list-ref` should return the `car` of the list.
--   Otherwise, `list-ref` should return the (*n*−1)-st item of the `cdr`
-    of the list.
+- For *n* = 0, `list-ref` should return the `car` of the list.
+- Otherwise, `list-ref` should return the (*n*−1)-st item of the `cdr`
+  of the list.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (list-ref items n)
   (if (= n 0)
       (car items)
-      (list-ref (cdr items) 
+      (list-ref (cdr items)
                 (- n 1))))
 
-(define squares 
+(define squares
   (list 1 4 9 16 25))
 
 (list-ref squares 3)
@@ -7272,7 +7151,7 @@ a list, illustrates this typical pattern of use:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (length items)
   (if (null? items)
       0
@@ -7290,23 +7169,23 @@ a list, illustrates this typical pattern of use:
 The `length` procedure implements a simple recursive plan. The reduction
 step is:
 
--   The `length` of any list is 1 plus the `length` of the `cdr` of the
-    list.
+- The `length` of any list is 1 plus the `length` of the `cdr` of the
+  list.
 
 This is applied successively until we reach the base case:
 
--   The `length` of the empty list is 0.
+- The `length` of the empty list is 0.
 
 We could also compute `length` in an iterative style:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (length items)
   (define (length-iter a count)
     (if (null? a)
         count
-        (length-iter (cdr a) 
+        (length-iter (cdr a)
                      (+ 1 count))))
   (length-iter items 0))
 ```
@@ -7320,7 +7199,7 @@ list:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (append squares odds)
 (1 4 9 16 25 1 3 5 7)
 
@@ -7333,18 +7212,18 @@ list:
 `Append` is also implemented using a recursive plan. To `append` lists
 `list1` and `list2`, do the following:
 
--   If `list1` is the empty list, then the result is just `list2`.
--   Otherwise, `append` the `cdr` of `list1` and `list2`, and `cons` the
-    `car` of `list1` onto the result:
+- If `list1` is the empty list, then the result is just `list2`.
+- Otherwise, `append` the `cdr` of `list1` and `list2`, and `cons` the
+  `car` of `list1` onto the result:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (append list1 list2)
   (if (null? list1)
       list2
-      (cons (car list1) 
-            (append (cdr list1) 
+      (cons (car list1)
+            (append (cdr list1)
                     list2))))
 ```
 
@@ -7355,7 +7234,7 @@ list:
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (last-pair (list 23 72 149 34))
 > (34)
 > ```
@@ -7367,7 +7246,7 @@ list:
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (reverse (list 1 4 9 16 25))
 > (25 16 9 4 1)
 > ```
@@ -7391,11 +7270,11 @@ list:
 >
 > <div className="lisp">
 >
-> ``` lisp
-> (define us-coins 
+> ```lisp
+> (define us-coins
 >   (list 50 25 10 5 1))
 >
-> (define uk-coins 
+> (define uk-coins
 >   (list 100 50 20 10 5 2 1 0.5))
 > ```
 >
@@ -7405,7 +7284,7 @@ list:
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (cc 100 us-coins)
 > 292
 > ```
@@ -7418,21 +7297,21 @@ list:
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (cc amount coin-values)
->   (cond ((= amount 0) 
+>   (cond ((= amount 0)
 >          1)
->         ((or (< amount 0) 
->              (no-more? coin-values)) 
+>         ((or (< amount 0)
+>              (no-more? coin-values))
 >          0)
 >         (else
->          (+ (cc 
+>          (+ (cc
 >              amount
->              (except-first-denomination 
+>              (except-first-denomination
 >               coin-values))
->             (cc 
+>             (cc
 >              (- amount
->                 (first-denomination 
+>                 (first-denomination
 >                  coin-values))
 >              coin-values)))))
 > ```
@@ -7446,16 +7325,16 @@ list:
 
 > **Exercise 2.20:** The procedures `+`, `*`, and `list` take arbitrary
 > numbers of arguments. One way to define such procedures is to use
-> `define` with *dotted-tail notation*. In a procedure definition, a
+> `define` with _dotted-tail notation_. In a procedure definition, a
 > parameter list that has a dot before the last parameter name indicates
 > that, when the procedure is called, the initial parameters (if any)
 > will have as values the initial arguments, as usual, but the final
-> parameter’s value will be a *list* of any remaining arguments. For
+> parameter’s value will be a _list_ of any remaining arguments. For
 > instance, given the definition
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (f x y . z) ⟨body⟩)
 > ```
 >
@@ -7466,7 +7345,7 @@ list:
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (f 1 2 3 4 5 6)
 > ```
 >
@@ -7477,7 +7356,7 @@ list:
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (g . w) ⟨body⟩)
 > ```
 >
@@ -7488,7 +7367,7 @@ list:
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (g 1 2 3 4 5 6)
 > ```
 >
@@ -7503,7 +7382,7 @@ list:
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (same-parity 1 2 3 4 5 6 7)
 > (1 3 5 7)
 >
@@ -7521,12 +7400,12 @@ following procedure scales each number in a list by a given factor:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (scale-list items factor)
   (if (null? items)
       nil
       (cons (* (car items) factor)
-            (scale-list (cdr items) 
+            (scale-list (cdr items)
                         factor))))
 
 (scale-list (list 1 2 3 4 5) 10)
@@ -7544,7 +7423,7 @@ procedure to each element in the list:[⁷⁸](#2_002e2.xhtml#FOOT78)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (map proc items)
   (if (null? items)
       nil
@@ -7564,7 +7443,7 @@ Now we can give a new definition of `scale-list` in terms of `map`:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (scale-list items factor)
   (map (lambda (x) (* x factor))
        items))
@@ -7597,7 +7476,7 @@ sequences as a framework for organizing programs.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (square-list (list 1 2 3 4))
 > (1 4 9 16)
 > ```
@@ -7609,7 +7488,7 @@ sequences as a framework for organizing programs.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (square-list items)
 >   (if (null? items)
 >       nil
@@ -7628,7 +7507,7 @@ sequences as a framework for organizing programs.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (square-list items)
 >   (define (iter things answer)
 >     (if (null? things)
@@ -7649,14 +7528,14 @@ sequences as a framework for organizing programs.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (square-list items)
 >   (define (iter things answer)
 >     (if (null? things)
 >         answer
 >         (iter (cdr things)
 >               (cons answer
->                     (square 
+>                     (square
 >                      (car things))))))
 >   (iter items nil))
 > ```
@@ -7675,8 +7554,8 @@ sequences as a framework for organizing programs.
 >
 > <div className="lisp">
 >
-> ``` lisp
-> (for-each 
+> ```lisp
+> (for-each
 >  (lambda (x) (newline) (display x))
 >  (list 57 321 88))
 >
@@ -7691,7 +7570,7 @@ sequences as a framework for organizing programs.
 > can be something arbitrary, such as true. Give an implementation of
 > `for-each`.
 
-#### 2.2.2Hierarchical Structures
+#### 2.2.2 Hierarchical Structures
 
 The representation of sequences in terms of lists generalizes naturally
 to represent sequences whose elements may themselves be sequences. For
@@ -7699,7 +7578,7 @@ example, we can regard the object `((1 2) 3 4)` constructed by
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (cons (list 1 2) (list 3 4))
 ```
 
@@ -7714,7 +7593,7 @@ SVG
 **Figure 2.5:** Structure formed by `(cons (list 1 2) (list 3 4))`.
 
 Another way to think of sequences whose elements are sequences is as
-*trees*. The elements of the sequence are the branches of the tree, and
+_trees_. The elements of the sequence are the branches of the tree, and
 elements that are themselves sequences are subtrees. [Figure
 2.6](#2_002e2.xhtml#Figure-2_002e6) shows the structure in [Figure
 2.5](#2_002e2.xhtml#Figure-2_002e5) viewed as a tree.
@@ -7733,7 +7612,7 @@ tree:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define x (cons (list 1 2) (list 3 4)))
 ```
 
@@ -7741,7 +7620,7 @@ tree:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (length x)
 3
 ```
@@ -7750,7 +7629,7 @@ tree:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (count-leaves x)
 4
 
@@ -7769,24 +7648,24 @@ tree:
 To implement `count-leaves`, recall the recursive plan for computing
 `length`:
 
--   `Length` of a list `x` is 1 plus `length` of the `cdr` of `x`.
--   `Length` of the empty list is 0.
+- `Length` of a list `x` is 1 plus `length` of the `cdr` of `x`.
+- `Length` of the empty list is 0.
 
 `Count-leaves` is similar. The value for the empty list is the same:
 
--   `Count-leaves` of the empty list is 0.
+- `Count-leaves` of the empty list is 0.
 
 But in the reduction step, where we strip off the `car` of the list, we
 must take into account that the `car` may itself be a tree whose leaves
 we need to count. Thus, the appropriate reduction step is
 
--   `Count-leaves` of a tree `x` is `count-leaves` of the `car` of `x`
-    plus `count-leaves` of the `cdr` of `x`.
+- `Count-leaves` of a tree `x` is `count-leaves` of the `car` of `x`
+  plus `count-leaves` of the `cdr` of `x`.
 
 Finally, by taking `car`s we reach actual leaves, so we need another
 base case:
 
--   `Count-leaves` of a leaf is 1.
+- `Count-leaves` of a leaf is 1.
 
 To aid in writing recursive procedures on trees, Scheme provides the
 primitive predicate `pair?`, which tests whether its argument is a pair.
@@ -7794,7 +7673,7 @@ Here is the complete procedure:[⁷⁹](#2_002e2.xhtml#FOOT79)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (count-leaves x)
   (cond ((null? x) 0)
         ((not (pair? x)) 1)
@@ -7815,7 +7694,7 @@ Here is the complete procedure:[⁷⁹](#2_002e2.xhtml#FOOT79)
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (1 3 (5 7) 9)
 > ((7))
 > (1 (2 (3 (4 (5 (6 7))))))
@@ -7827,7 +7706,7 @@ Here is the complete procedure:[⁷⁹](#2_002e2.xhtml#FOOT79)
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define x (list 1 2 3))
 > (define y (list 4 5 6))
 > ```
@@ -7839,7 +7718,7 @@ Here is the complete procedure:[⁷⁹](#2_002e2.xhtml#FOOT79)
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (append x y)
 > (cons x y)
 > (list x y)
@@ -7855,8 +7734,8 @@ Here is the complete procedure:[⁷⁹](#2_002e2.xhtml#FOOT79)
 >
 > <div className="lisp">
 >
-> ``` lisp
-> (define x 
+> ```lisp
+> (define x
 >   (list (list 1 2) (list 3 4)))
 >
 > x
@@ -7877,8 +7756,8 @@ Here is the complete procedure:[⁷⁹](#2_002e2.xhtml#FOOT79)
 >
 > <div className="lisp">
 >
-> ``` lisp
-> (define x 
+> ```lisp
+> (define x
 >   (list (list 1 2) (list 3 4)))
 >
 > (fringe x)
@@ -7898,7 +7777,7 @@ Here is the complete procedure:[⁷⁹](#2_002e2.xhtml#FOOT79)
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (make-mobile left right)
 >   (list left right))
 > ```
@@ -7911,7 +7790,7 @@ Here is the complete procedure:[⁷⁹](#2_002e2.xhtml#FOOT79)
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (make-branch length structure)
 >   (list length structure))
 > ```
@@ -7926,7 +7805,7 @@ Here is the complete procedure:[⁷⁹](#2_002e2.xhtml#FOOT79)
 > 2.  Using your selectors, define a procedure `total-weight` that
 >     returns the total weight of a mobile.
 >
-> 3.  A mobile is said to be *balanced* if the torque applied by its
+> 3.  A mobile is said to be _balanced_ if the torque applied by its
 >     top-left branch is equal to that applied by its top-right branch
 >     (that is, if the length of the left rod multiplied by the weight
 >     hanging from that rod is equal to the corresponding product for
@@ -7939,7 +7818,7 @@ Here is the complete procedure:[⁷⁹](#2_002e2.xhtml#FOOT79)
 >
 >     <div className="lisp">
 >
->     ``` lisp
+>     ```lisp
 >     (define (make-mobile left right)
 >       (cons left right))
 >
@@ -7965,19 +7844,19 @@ factor. The recursive plan for `scale-tree` is similar to the one for
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (scale-tree tree factor)
   (cond ((null? tree) nil)
-        ((not (pair? tree)) 
+        ((not (pair? tree))
          (* tree factor))
         (else
-         (cons (scale-tree (car tree) 
+         (cons (scale-tree (car tree)
                            factor)
-               (scale-tree (cdr tree) 
+               (scale-tree (cdr tree)
                            factor)))))
 
-(scale-tree (list 1 
-                  (list 2 (list 3 4) 5) 
+(scale-tree (list 1
+                  (list 2 (list 3 4) 5)
                   (list 6 7))
             10)
 
@@ -7993,7 +7872,7 @@ where the tree is a leaf, we simply multiply by the factor:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (scale-tree tree factor)
   (map (lambda (sub-tree)
          (if (pair? sub-tree)
@@ -8014,7 +7893,7 @@ sequence operations and recursion.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (square-tree
 >  (list 1
 >        (list 2 (list 3 4) 5)
@@ -8033,8 +7912,8 @@ sequence operations and recursion.
 >
 > <div className="lisp">
 >
-> ``` lisp
-> (define (square-tree tree) 
+> ```lisp
+> (define (square-tree tree)
 >   (tree-map square tree))
 > ```
 >
@@ -8049,7 +7928,7 @@ sequence operations and recursion.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (subsets s)
 >   (if (null? s)
 >       (list nil)
@@ -8059,14 +7938,14 @@ sequence operations and recursion.
 >
 > </div>
 
-#### 2.2.3Sequences as Conventional Interfaces
+#### 2.2.3 Sequences as Conventional Interfaces
 
 In working with compound data, we’ve stressed how data abstraction
 permits us to design programs without becoming enmeshed in the details
 of data representations, and how abstraction preserves for us the
 flexibility to experiment with alternative representations. In this
 section, we introduce another powerful design principle for working with
-data structures—the use of *conventional interfaces*.
+data structures—the use of _conventional interfaces_.
 
 In [1.3](#1_002e3.xhtml#g_t1_002e3) we saw how program abstractions,
 implemented as higher-order procedures, can capture common patterns in
@@ -8080,26 +7959,26 @@ are odd:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (sum-odd-squares tree)
   (cond ((null? tree) 0)
         ((not (pair? tree))
          (if (odd? tree) (square tree) 0))
-        (else (+ (sum-odd-squares 
+        (else (+ (sum-odd-squares
                   (car tree))
-                 (sum-odd-squares 
+                 (sum-odd-squares
                   (cdr tree))))))
 ```
 
 </div>
 
 On the surface, this procedure is very different from the following one,
-which constructs a list of all the even Fibonacci numbers Fib(*k*),
-where *k* is less than or equal to a given integer *n*:
+which constructs a list of all the even Fibonacci numbers Fib(_k_),
+where _k_ is less than or equal to a given integer _n_:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (even-fibs n)
   (define (next k)
     (if (> k n)
@@ -8117,27 +7996,27 @@ Despite the fact that these two procedures are structurally very
 different, a more abstract description of the two computations reveals a
 great deal of similarity. The first program
 
--   enumerates the leaves of a tree;
--   filters them, selecting the odd ones;
--   squares each of the selected ones; and
--   accumulates the results using `+`, starting with 0.
+- enumerates the leaves of a tree;
+- filters them, selecting the odd ones;
+- squares each of the selected ones; and
+- accumulates the results using `+`, starting with 0.
 
 The second program
 
--   enumerates the integers from 0 to *n*;
--   computes the Fibonacci number for each integer;
--   filters them, selecting the even ones; and
--   accumulates the results using `cons`, starting with the empty list.
+- enumerates the integers from 0 to _n_;
+- computes the Fibonacci number for each integer;
+- filters them, selecting the even ones; and
+- accumulates the results using `cons`, starting with the empty list.
 
 A signal-processing engineer would find it natural to conceptualize
 these processes in terms of signals flowing through a cascade of stages,
 each of which implements part of the program plan, as shown in [Figure
 2.7](#2_002e2.xhtml#Figure-2_002e7). In `sum-odd-squares`, we begin with
-an *enumerator*, which generates a “signal” consisting of the leaves of
-a given tree. This signal is passed through a *filter*, which eliminates
+an _enumerator_, which generates a “signal” consisting of the leaves of
+a given tree. This signal is passed through a _filter_, which eliminates
 all but the odd elements. The resulting signal is in turn passed through
-a *map*, which is a “transducer” that applies the `square` procedure to
-each element. The output of the map is then fed to an *accumulator*,
+a _map_, which is a “transducer” that applies the `square` procedure to
+each element. The output of the map is then fed to an _accumulator_,
 which combines the elements using `+`, starting from an initial 0. The
 plan for `even-fibs` is analogous.
 
@@ -8172,7 +8051,7 @@ the signal-flow diagrams using the `map` procedure from
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (map square (list 1 2 3 4 5))
 (1 4 9 16 25)
 ```
@@ -8184,14 +8063,14 @@ predicate is accomplished by
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (filter predicate sequence)
   (cond ((null? sequence) nil)
         ((predicate (car sequence))
          (cons (car sequence)
-               (filter predicate 
+               (filter predicate
                        (cdr sequence))))
-        (else  (filter predicate 
+        (else  (filter predicate
                        (cdr sequence)))))
 ```
 
@@ -8201,7 +8080,7 @@ For example,
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (filter odd? (list 1 2 3 4 5))
 (1 3 5)
 ```
@@ -8212,13 +8091,13 @@ Accumulations can be implemented by
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (accumulate op initial sequence)
   (if (null? sequence)
       initial
       (op (car sequence)
-          (accumulate op 
-                      initial 
+          (accumulate op
+                      initial
                       (cdr sequence)))))
 
 (accumulate + 0 (list 1 2 3 4 5))
@@ -8238,13 +8117,13 @@ follows:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (enumerate-interval low high)
   (if (> low high)
       nil
-      (cons low 
-            (enumerate-interval 
-             (+ low 1) 
+      (cons low
+            (enumerate-interval
+             (+ low 1)
              high))))
 
 (enumerate-interval 2 7)
@@ -8257,11 +8136,11 @@ To enumerate the leaves of a tree, we can use[⁸⁰](#2_002e2.xhtml#FOOT80)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (enumerate-tree tree)
   (cond ((null? tree) nil)
         ((not (pair? tree)) (list tree))
-        (else (append 
+        (else (append
                (enumerate-tree (car tree))
                (enumerate-tree (cdr tree))))))
 
@@ -8278,9 +8157,9 @@ sequence, square each element, and sum the results:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (sum-odd-squares tree)
-  (accumulate 
+  (accumulate
    +
    0
    (map square
@@ -8290,16 +8169,16 @@ sequence, square each element, and sum the results:
 
 </div>
 
-For `even-fibs`, we enumerate the integers from 0 to *n*, generate the
+For `even-fibs`, we enumerate the integers from 0 to _n_, generate the
 Fibonacci number for each of these integers, filter the resulting
 sequence to keep only the even elements, and accumulate the results into
 a list:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (even-fibs n)
-  (accumulate 
+  (accumulate
    cons
    nil
    (filter even?
@@ -8327,9 +8206,9 @@ constructs a list of the squares of the first *n* + 1 Fibonacci numbers:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (list-fib-squares n)
-  (accumulate 
+  (accumulate
    cons
    nil
    (map square
@@ -8347,16 +8226,16 @@ squares of the odd integers in a sequence:
 
 <div className="lisp">
 
-``` lisp
-(define 
+```lisp
+(define
   (product-of-squares-of-odd-elements
    sequence)
-  (accumulate 
+  (accumulate
    *
    1
    (map square (filter odd? sequence))))
 
-(product-of-squares-of-odd-elements 
+(product-of-squares-of-odd-elements
  (list 1 2 3 4 5))
 225
 ```
@@ -8372,11 +8251,11 @@ programmer. Then we can write
 
 <div className="lisp">
 
-``` lisp
-(define 
+```lisp
+(define
   (salary-of-highest-paid-programmer
    records)
-  (accumulate 
+  (accumulate
    max
    0
    (map salary
@@ -8404,9 +8283,9 @@ sequence-processing paradigm to admit infinite sequences.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (map p sequence)
->   (accumulate (lambda (x y) ⟨??⟩) 
+>   (accumulate (lambda (x y) ⟨??⟩)
 >               nil sequence))
 >
 > (define (append seq1 seq2)
@@ -8418,26 +8297,26 @@ sequence-processing paradigm to admit infinite sequences.
 >
 > </div>
 
-> **Exercise 2.34:** Evaluating a polynomial in *x* at a given value of
-> *x* can be formulated as an accumulation. We evaluate the polynomial
-> *a*_(*n*)*x*^(*n*) + *a*_(*n* − 1)*x*^(*n* − 1) + ⋯ + *a*₁*x* + *a*₀
-> using a well-known algorithm called *Horner’s rule*, which structures
+> **Exercise 2.34:** Evaluating a polynomial in _x_ at a given value of
+> _x_ can be formulated as an accumulation. We evaluate the polynomial
+> _a\_\_(*n*)*x*^(*n*) + *a*_(*n* − 1)_x_^(*n* − 1) + ⋯ + *a*₁*x* + *a*₀
+> using a well-known algorithm called _Horner’s rule_, which structures
 > the computation as
-> (…(*a*_(*n*)*x* + *a*_(*n* − 1))*x* + ⋯ + *a*₁)*x* + *a*₀.
-> In other words, we start with *a*_(*n*), multiply by *x*, add
-> *a*_(*n* − 1), multiply by *x*, and so on, until we reach
+> (…(_a\_\_(*n*)*x* + *a*_(*n* − 1))*x* + ⋯ + *a*₁)*x* + *a*₀.
+> In other words, we start with _a\_\_(*n*), multiply by *x*, add
+> *a*_(*n* − 1), multiply by _x_, and so on, until we reach
 > *a*₀.[⁸²](#2_002e2.xhtml#FOOT82)
 >
 > Fill in the following template to produce a procedure that evaluates a
 > polynomial using Horner’s rule. Assume that the coefficients of the
-> polynomial are arranged in a sequence, from *a*₀ through *a*_(*n*).
+> polynomial are arranged in a sequence, from *a*₀ through _a_\_(_n_).
 >
 > <div className="lisp">
 >
-> ``` lisp
-> (define 
+> ```lisp
+> (define
 >   (horner-eval x coefficient-sequence)
->   (accumulate 
+>   (accumulate
 >    (lambda (this-coeff higher-terms)
 >      ⟨??⟩)
 >    0
@@ -8451,7 +8330,7 @@ sequence-processing paradigm to admit infinite sequences.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (horner-eval 2 (list 1 3 0 5 0 1))
 > ```
 >
@@ -8462,7 +8341,7 @@ sequence-processing paradigm to admit infinite sequences.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (count-leaves t)
 >   (accumulate ⟨??⟩ ⟨??⟩ (map ⟨??⟩ ⟨??⟩)))
 > ```
@@ -8482,7 +8361,7 @@ sequence-processing paradigm to admit infinite sequences.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (accumulate-n op init seqs)
 >   (if (null? (car seqs))
 >       nil
@@ -8492,19 +8371,25 @@ sequence-processing paradigm to admit infinite sequences.
 >
 > </div>
 
-> **Exercise 2.37:** Suppose we represent vectors **v** = (*v*_(*i*)) as
-> sequences of numbers, and matrices **m** = (*m*_(*i**j*)) as sequences
+> **Exercise 2.37:** Suppose we represent vectors **v** = (_v\_\_(*i*)) as
+> sequences of numbers, and matrices **m** = (*m*_(_i\*\*j_)) as sequences
 > of vectors (the rows of the matrix). For example, the matrix
-> $$\\begin{pmatrix}
+>
+> $$
+> \\begin{pmatrix}
 > 1 & 2 & 3 & 4 \\\\
 > 4 & 5 & 6 & 6 \\\\
 > 6 & 7 & 8 & 9 \\\\
-> \\end{pmatrix}$$
+> \\end{pmatrix}
+> $$
+>
 > is represented as the sequence `((1 2 3 4) (4 5 6 6) (6 7 8 9))`. With
 > this representation, we can use sequence operations to concisely
 > express the basic matrix and vector operations. These operations
 > (which are described in any book on matrix algebra) are the following:
-> $$\\begin{matrix}
+>
+> $$
+> \\begin{matrix}
 > \\text{(dot-product\\ v\\ w)} & {\\text{returns\\ the\\ sum}\\;\\Sigma\_{i}v\_{i}w\_{i};} \\\\
 > \\text{(matrix-\*-vector\\ m\\ v)} & {\\text{returns\\ the\\ vector}\\;\\mathbf{t},} \\\\
 >  & {\\text{where}\\; t\_{i} = \\Sigma\_{j}m\_{ij}v\_{j};} \\\\
@@ -8512,12 +8397,14 @@ sequence-processing paradigm to admit infinite sequences.
 >  & {\\text{where}\\; p\_{ij} = \\Sigma\_{k}m\_{ik}n\_{kj};} \\\\
 > \\text{(transpose\\ m)} & {\\text{returns\\ the\\ matrix}\\;\\mathbf{n},} \\\\
 >  & {\\text{where}\\; n\_{ij} = m\_{ji}.} \\\\
-> \\end{matrix}$$
+> \\end{matrix}
+> $$
+>
 > We can define the dot product as[⁸³](#2_002e2.xhtml#FOOT83)
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (dot-product v w)
 >   (accumulate + 0 (map * v w)))
 > ```
@@ -8530,7 +8417,7 @@ sequence-processing paradigm to admit infinite sequences.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (matrix-*-vector m v)
 >   (map ⟨??⟩ m))
 >
@@ -8552,7 +8439,7 @@ sequence-processing paradigm to admit infinite sequences.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (fold-left op initial sequence)
 >   (define (iter result rest)
 >     (if (null? rest)
@@ -8568,7 +8455,7 @@ sequence-processing paradigm to admit infinite sequences.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (fold-right / 1 (list 1 2 3))
 > (fold-left  / 1 (list 1 2 3))
 > (fold-right list nil (list 1 2 3))
@@ -8588,13 +8475,13 @@ sequence-processing paradigm to admit infinite sequences.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (reverse sequence)
->   (fold-right 
+>   (fold-right
 >    (lambda (x y) ⟨??⟩) nil sequence))
 >
 > (define (reverse sequence)
->   (fold-left 
+>   (fold-left
 >    (lambda (x y) ⟨??⟩) nil sequence))
 > ```
 >
@@ -8604,39 +8491,43 @@ sequence-processing paradigm to admit infinite sequences.
 
 We can extend the sequence paradigm to include many computations that
 are commonly expressed using nested loops.[⁸⁴](#2_002e2.xhtml#FOOT84)
-Consider this problem: Given a positive integer *n*, find all ordered
-pairs of distinct positive integers *i* and *j*, where
-1 ≤ *j* \< *i* ≤ *n*, such that *i* + *j* is prime. For example, if *n*
+Consider this problem: Given a positive integer _n_, find all ordered
+pairs of distinct positive integers _i_ and _j_, where
+1 ≤ *j* \< *i* ≤ *n*, such that *i* + *j* is prime. For example, if _n_
 is 6, then the pairs are the following:
-$$\\begin{matrix}
+
+$$
+\\begin{matrix}
 i & 2 & 3 & 4 & 4 & 5 & 6 & 6 \\\\
 j & 1 & 2 & 1 & 3 & 2 & 1 & 5 \\\\
 {i + j} & 3 & 5 & 5 & 7 & 7 & 7 & 11 \\\\
-\\end{matrix}$$
+\\end{matrix}
+$$
+
 A natural way to organize this computation is to generate the sequence
-of all ordered pairs of positive integers less than or equal to *n*,
+of all ordered pairs of positive integers less than or equal to _n_,
 filter to select those pairs whose sum is prime, and then, for each pair
-(*i*,*j*) that passes through the filter, produce the triple
-(*i*,*j*,*i*+*j*).
+(_i_,_j_) that passes through the filter, produce the triple
+(_i_,_j_,_i_+_j_).
 
 Here is a way to generate the sequence of pairs: For each integer
-*i* ≤ *n*, enumerate the integers *j* \< *i*, and for each such *i* and
-*j* generate the pair (*i*,*j*). In terms of sequence operations, we map
-along the sequence `(enumerate-interval 1 n)`. For each *i* in this
+*i* ≤ *n*, enumerate the integers *j* \< *i*, and for each such _i_ and
+_j_ generate the pair (_i_,_j_). In terms of sequence operations, we map
+along the sequence `(enumerate-interval 1 n)`. For each _i_ in this
 sequence, we map along the sequence `(enumerate-interval 1 (- i 1))`.
-For each *j* in this latter sequence, we generate the pair `(list i j)`.
-This gives us a sequence of pairs for each *i*. Combining all the
-sequences for all the *i* (by accumulating with `append`) produces the
+For each _j_ in this latter sequence, we generate the pair `(list i j)`.
+This gives us a sequence of pairs for each _i_. Combining all the
+sequences for all the _i_ (by accumulating with `append`) produces the
 required sequence of pairs:[⁸⁵](#2_002e2.xhtml#FOOT85)
 
 <div className="lisp">
 
-``` lisp
-(accumulate 
+```lisp
+(accumulate
  append
  nil
  (map (lambda (i)
-        (map (lambda (j) 
+        (map (lambda (j)
                (list i j))
              (enumerate-interval 1 (- i 1))))
       (enumerate-interval 1 n)))
@@ -8649,7 +8540,7 @@ in this sort of program that we will isolate it as a separate procedure:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (flatmap proc seq)
   (accumulate append nil (map proc seq)))
 ```
@@ -8663,7 +8554,7 @@ the predicate to apply to each element in the sequence is
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (prime-sum? pair)
   (prime? (+ (car pair) (cadr pair))))
 ```
@@ -8676,10 +8567,10 @@ consisting of the two elements of the pair along with their sum:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (make-pair-sum pair)
-  (list (car pair) 
-        (cadr pair) 
+  (list (car pair)
+        (cadr pair)
         (+ (car pair) (cadr pair))))
 ```
 
@@ -8689,17 +8580,17 @@ Combining all these steps yields the complete procedure:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (prime-sum-pairs n)
   (map make-pair-sum
-       (filter 
+       (filter
         prime-sum?
         (flatmap
          (lambda (i)
-           (map (lambda (j) 
+           (map (lambda (j)
                   (list i j))
-                (enumerate-interval 
-                 1 
+                (enumerate-interval
+                 1
                  (- i 1))))
          (enumerate-interval 1 n)))))
 ```
@@ -8708,26 +8599,26 @@ Combining all these steps yields the complete procedure:
 
 Nested mappings are also useful for sequences other than those that
 enumerate intervals. Suppose we wish to generate all the permutations of
-a set *S*; that is, all the ways of ordering the items in the set. For
+a set _S_; that is, all the ways of ordering the items in the set. For
 instance, the permutations of {1, 2, 3} are {1, 2, 3}, {1, 3, 2},
 {2, 1, 3}, {2, 3, 1}, {3, 1, 2}, and {3, 2, 1}. Here is a plan for
-generating the permutations of *S*: For each item *x* in *S*,
+generating the permutations of _S_: For each item _x_ in _S_,
 recursively generate the sequence of permutations of
-*S* − *x*,[⁸⁶](#2_002e2.xhtml#FOOT86) and adjoin *x* to the front of
-each one. This yields, for each *x* in *S*, the sequence of permutations
-of *S* that begin with *x*. Combining these sequences for all *x* gives
-all the permutations of *S*:[⁸⁷](#2_002e2.xhtml#FOOT87)
+*S* − *x*,[⁸⁶](#2_002e2.xhtml#FOOT86) and adjoin _x_ to the front of
+each one. This yields, for each _x_ in _S_, the sequence of permutations
+of _S_ that begin with _x_. Combining these sequences for all _x_ gives
+all the permutations of _S_:[⁸⁷](#2_002e2.xhtml#FOOT87)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (permutations s)
   (if (null? s)   ; empty set?
       (list nil)  ; sequence containing empty set
       (flatmap (lambda (x)
-                 (map (lambda (p) 
+                 (map (lambda (p)
                         (cons x p))
-                      (permutations 
+                      (permutations
                        (remove x s))))
                s)))
 ```
@@ -8735,8 +8626,8 @@ all the permutations of *S*:[⁸⁷](#2_002e2.xhtml#FOOT87)
 </div>
 
 Notice how this strategy reduces the problem of generating permutations
-of *S* to the problem of generating the permutations of sets with fewer
-elements than *S*. In the terminal case, we work our way down to the
+of _S_ to the problem of generating the permutations of sets with fewer
+elements than _S_. In the terminal case, we work our way down to the
 empty list, which represents a set of no elements. For this, we generate
 `(list nil)`, which is a sequence with one item, namely the set with no
 elements. The `remove` procedure used in `permutations` returns all the
@@ -8745,7 +8636,7 @@ as a simple filter:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (remove item sequence)
   (filter (lambda (x) (not (= x item)))
           sequence))
@@ -8754,13 +8645,13 @@ as a simple filter:
 </div>
 
 > **Exercise 2.40:** Define a procedure `unique-pairs` that, given an
-> integer *n*, generates the sequence of pairs (*i*,*j*) with
+> integer _n_, generates the sequence of pairs (_i_,_j_) with
 > 1 ≤ *j* \< *i* ≤ *n*. Use `unique-pairs` to simplify the definition of
 > `prime-sum-pairs` given above.
 
 > **Exercise 2.41:** Write a procedure to find all ordered triples of
-> distinct positive integers *i*, *j*, and *k* less than or equal to a
-> given integer *n* that sum to a given integer *s*.
+> distinct positive integers _i_, _j_, and _k_ less than or equal to a
+> given integer _n_ that sum to a given integer _s_.
 
 > **Exercise 2.42:** The “eight-queens puzzle” asks how to place eight
 > queens on a chessboard so that no queen is in check from any other
@@ -8768,16 +8659,16 @@ as a simple filter:
 > possible solution is shown in [Figure
 > 2.8](#2_002e2.xhtml#Figure-2_002e8). One way to solve the puzzle is to
 > work across the board, placing a queen in each column. Once we have
-> placed *k* − 1 queens, we must place the *k*^(th) queen in a position
+> placed *k* − 1 queens, we must place the _k_^(th) queen in a position
 > where it does not check any of the queens already on the board. We can
 > formulate this approach recursively: Assume that we have already
 > generated the sequence of all possible ways to place *k* − 1 queens in
 > the first *k* − 1 columns of the board. For each of these ways,
 > generate an extended set of positions by placing a queen in each row
-> of the *k*^(th) column. Now filter these, keeping only the positions
-> for which the queen in the *k*^(th) column is safe with respect to the
-> other queens. This produces the sequence of all ways to place *k*
-> queens in the first *k* columns. By continuing this process, we will
+> of the _k_^(th) column. Now filter these, keeping only the positions
+> for which the queen in the _k_^(th) column is safe with respect to the
+> other queens. This produces the sequence of all ways to place _k_
+> queens in the first _k_ columns. By continuing this process, we will
 > produce not only one solution, but all solutions to the puzzle.
 >
 > SVG
@@ -8785,30 +8676,30 @@ as a simple filter:
 > **Figure 2.8:** A solution to the eight-queens puzzle.
 
 We implement this solution as a procedure `queens`, which returns a
-sequence of all solutions to the problem of placing *n* queens on an
+sequence of all solutions to the problem of placing _n_ queens on an
 *n* × *n* chessboard. `Queens` has an internal procedure `queen-cols`
-that returns the sequence of all ways to place queens in the first *k*
+that returns the sequence of all ways to place queens in the first _k_
 columns of the board.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (queens board-size)
   (define (queen-cols k)
     (if (= k 0)
         (list empty-board)
         (filter
-         (lambda (positions) 
+         (lambda (positions)
            (safe? k positions))
          (flatmap
           (lambda (rest-of-queens)
             (map (lambda (new-row)
-                   (adjoin-position 
-                    new-row 
-                    k 
+                   (adjoin-position
+                    new-row
+                    k
                     rest-of-queens))
-                 (enumerate-interval 
-                  1 
+                 (enumerate-interval
+                  1
                   board-size)))
           (queen-cols (- k 1))))))
   (queen-cols board-size))
@@ -8818,12 +8709,12 @@ columns of the board.
 
 In this procedure `rest-of-queens` is a way to place *k* − 1 queens in
 the first *k* − 1 columns, and `new-row` is a proposed row in which to
-place the queen for the *k*^(th) column. Complete the program by
+place the queen for the _k_^(th) column. Complete the program by
 implementing the representation for sets of board positions, including
 the procedure `adjoin-position`, which adjoins a new row-column position
 to a set of positions, and `empty-board`, which represents an empty set
 of positions. You must also write the procedure `safe?`, which
-determines for a set of positions, whether the queen in the *k*^(th)
+determines for a set of positions, whether the queen in the _k_^(th)
 column is safe with respect to the others. (Note that we need only check
 whether the new queen is safe—the other queens are already guaranteed
 safe with respect to each other.)
@@ -8838,11 +8729,11 @@ safe with respect to each other.)
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (flatmap
 >  (lambda (new-row)
 >    (map (lambda (rest-of-queens)
->           (adjoin-position 
+>           (adjoin-position
 >            new-row k rest-of-queens))
 >         (queen-cols (- k 1))))
 >  (enumerate-interval 1 board-size))
@@ -8853,9 +8744,9 @@ safe with respect to each other.)
 > Explain why this interchange makes the program run slowly. Estimate
 > how long it will take Louis’s program to solve the eight-queens
 > puzzle, assuming that the program in [Exercise
-> 2.42](#2_002e2.xhtml#Exercise-2_002e42) solves the puzzle in time *T*.
+> 2.42](#2_002e2.xhtml#Exercise-2_002e42) solves the puzzle in time _T_.
 
-#### 2.2.4Example: A Picture Language
+#### 2.2.4 Example: A Picture Language
 
 This section presents a simple language for drawing pictures that
 illustrates the power of data abstraction and closure, and also exploits
@@ -8882,7 +8773,7 @@ means of combination, and its means of abstraction. We’ll follow that
 framework here.
 
 Part of the elegance of this picture language is that there is only one
-kind of element, called a *painter*. A painter draws an image that is
+kind of element, called a _painter_. A painter draws an image that is
 shifted and scaled to fit within a designated parallelogram-shaped
 frame. For example, there’s a primitive painter we’ll call `wave` that
 makes a crude line drawing, as shown in [Figure
@@ -8925,7 +8816,7 @@ painter called `wave4` that is built up in two stages starting from
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define wave2 (beside wave (flip-vert wave)))
 (define wave4 (below wave2 wave2))
 ```
@@ -8954,10 +8845,10 @@ procedures. For example, we can abstract the pattern in `wave4` as
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (flipped-pairs painter)
-  (let ((painter2 
-         (beside painter 
+  (let ((painter2
+         (beside painter
                  (flip-vert painter))))
     (below painter2 painter2)))
 ```
@@ -8968,7 +8859,7 @@ and define `wave4` as an instance of this pattern:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define wave4 (flipped-pairs wave))
 ```
 
@@ -8981,13 +8872,13 @@ split and branch towards the right as shown in [Figure
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (right-split painter n)
   (if (= n 0)
       painter
-      (let ((smaller (right-split painter 
+      (let ((smaller (right-split painter
                                   (- n 1))))
-        (beside painter 
+        (beside painter
                 (below smaller smaller)))))
 ```
 
@@ -9003,20 +8894,20 @@ the right (see [Exercise 2.44](#2_002e2.xhtml#Exercise-2_002e44),
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (corner-split painter n)
   (if (= n 0)
       painter
       (let ((up (up-split painter (- n 1)))
-            (right (right-split painter 
+            (right (right-split painter
                                 (- n 1))))
         (let ((top-left (beside up up))
-              (bottom-right (below right 
+              (bottom-right (below right
                                    right))
-              (corner (corner-split painter 
+              (corner (corner-split painter
                                     (- n 1))))
           (beside (below painter top-left)
-                  (below bottom-right 
+                  (below bottom-right
                          corner))))))
 ```
 
@@ -9034,10 +8925,10 @@ is shown in [Figure 2.9](#2_002e2.xhtml#Figure-2_002e9):
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (square-limit painter n)
   (let ((quarter (corner-split painter n)))
-    (let ((half (beside (flip-horiz quarter) 
+    (let ((half (beside (flip-horiz quarter)
                         quarter)))
       (below (flip-vert half) half))))
 ```
@@ -9068,12 +8959,12 @@ and the bottom right copy, respectively.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (square-of-four tl tr bl br)
   (lambda (painter)
-    (let ((top (beside (tl painter) 
+    (let ((top (beside (tl painter)
                        (tr painter)))
-          (bottom (beside (bl painter) 
+          (bottom (beside (bl painter)
                           (br painter))))
       (below bottom top))))
 ```
@@ -9085,12 +8976,12 @@ follows:[⁹⁰](#2_002e2.xhtml#FOOT90)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (flipped-pairs painter)
-  (let ((combine4 
-         (square-of-four identity 
+  (let ((combine4
+         (square-of-four identity
                          flip-vert
-                         identity 
+                         identity
                          flip-vert)))
     (combine4 painter)))
 ```
@@ -9101,12 +8992,12 @@ and `square-limit` can be expressed as[⁹¹](#2_002e2.xhtml#FOOT91)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (square-limit painter n)
-  (let ((combine4 
-         (square-of-four flip-horiz 
+  (let ((combine4
+         (square-of-four flip-horiz
                          identity
-                         rotate180 
+                         rotate180
                          flip-vert)))
     (combine4 (corner-split painter n))))
 ```
@@ -9119,7 +9010,7 @@ and `square-limit` can be expressed as[⁹¹](#2_002e2.xhtml#FOOT91)
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define right-split (split beside below))
 > (define up-split (split below beside))
 > ```
@@ -9153,10 +9044,10 @@ SVG
 two edges.
 
 We will use coordinates in the unit square (0≤*x*,*y*≤1) to specify
-images. With each frame, we associate a *frame coordinate map*, which
+images. With each frame, we associate a _frame coordinate map_, which
 will be used to shift and scale images to fit the frame. The map
 transforms the unit square into the frame by mapping the vector
-**v** = (*x*,*y*) to the vector sum
+**v** = (_x_,_y_) to the vector sum
 Origin(Frame) + *x* ⋅ Edge₁(Frame) + *y* ⋅ Edge₂(Frame).
 For example, (0, 0) is mapped to the origin of the frame, (1, 1) to the
 vertex diagonally opposite the origin, and (0.5, 0.5) to the center of
@@ -9165,12 +9056,12 @@ procedure:[⁹²](#2_002e2.xhtml#FOOT92)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (frame-coord-map frame)
   (lambda (v)
     (add-vect
      (origin-frame frame)
-     (add-vect 
+     (add-vect
       (scale-vect (xcor-vect v)
                   (edge1-frame frame))
       (scale-vect (ycor-vect v)
@@ -9185,7 +9076,7 @@ unit square, the result vector will be in the frame. For example,
 
 <div className="lisp">
 
-``` lisp
+```lisp
 ((frame-coord-map a-frame) (make-vect 0 0))
 ```
 
@@ -9195,7 +9086,7 @@ returns the same vector as
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (origin-frame a-frame)
 ```
 
@@ -9203,23 +9094,26 @@ returns the same vector as
 
 > **Exercise 2.46:** A two-dimensional vector **v** running from the
 > origin to a point can be represented as a pair consisting of an
-> *x*-coordinate and a *y*-coordinate. Implement a data abstraction for
+> _x_-coordinate and a _y_-coordinate. Implement a data abstraction for
 > vectors by giving a constructor `make-vect` and corresponding
 > selectors `xcor-vect` and `ycor-vect`. In terms of your selectors and
 > constructor, implement procedures `add-vect`, `sub-vect`, and
 > `scale-vect` that perform the operations vector addition, vector
 > subtraction, and multiplying a vector by a scalar:
-> $$\\begin{matrix}
+>
+> $$
+> \\begin{matrix}
 > {(x\_{1},y\_{1}) + (x\_{2},y\_{2})} & = & {(x\_{1} + x\_{2},y\_{1} + y\_{2}),} \\\\
 > {(x\_{1},y\_{1}) - (x\_{2},y\_{2})} & = & {(x\_{1} - x\_{2},y\_{1} - y\_{2}),} \\\\
 > {s \\cdot (x,y)} & = & {(sx,sy).} \\\\
-> \\end{matrix}$$
+> \\end{matrix}
+> $$
 
 > **Exercise 2.47:** Here are two possible constructors for frames:
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (make-frame origin edge1 edge2)
 >   (list origin edge1 edge2))
 >
@@ -9249,15 +9143,15 @@ follows:[⁹³](#2_002e2.xhtml#FOOT93)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (segments->painter segment-list)
   (lambda (frame)
     (for-each
      (lambda (segment)
        (draw-line
-        ((frame-coord-map frame) 
+        ((frame-coord-map frame)
          (start-segment segment))
-        ((frame-coord-map frame) 
+        ((frame-coord-map frame)
          (end-segment segment))))
      segment-list)))
 ```
@@ -9316,14 +9210,14 @@ frame.
 
 <div className="lisp">
 
-``` lisp
-(define (transform-painter 
+```lisp
+(define (transform-painter
          painter origin corner1 corner2)
   (lambda (frame)
     (let ((m (frame-coord-map frame)))
       (let ((new-origin (m origin)))
         (painter (make-frame new-origin
-                  (sub-vect (m corner1) 
+                  (sub-vect (m corner1)
                             new-origin)
                   (sub-vect (m corner2)
                             new-origin)))))))
@@ -9335,9 +9229,9 @@ Here’s how to flip painter images vertically:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (flip-vert painter)
-  (transform-painter 
+  (transform-painter
    painter
    (make-vect 0.0 1.0)   ; new origin
    (make-vect 1.0 1.0)   ; new end of edge1
@@ -9352,7 +9246,7 @@ upper-right quarter of the frame it is given:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (shrink-to-upper-right painter)
   (transform-painter painter
                      (make-vect 0.5 0.5)
@@ -9367,7 +9261,7 @@ degrees[⁹⁵](#2_002e2.xhtml#FOOT95)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (rotate90 painter)
   (transform-painter painter
                      (make-vect 1.0 0.0)
@@ -9382,7 +9276,7 @@ frame:[⁹⁶](#2_002e2.xhtml#FOOT96)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (squash-inwards painter)
   (transform-painter painter
                      (make-vect 0.0 0.0)
@@ -9402,10 +9296,10 @@ transformed painter to paint in the right half of the frame:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (beside painter1 painter2)
   (let ((split-point (make-vect 0.5 0.0)))
-    (let ((paint-left  (transform-painter 
+    (let ((paint-left  (transform-painter
                         painter1
                         (make-vect 0.0 0.0)
                         split-point
@@ -9452,7 +9346,7 @@ designs. Finally, all the tools for abstracting procedures are available
 to us for abstracting means of combination for painters.
 
 We have also obtained a glimpse of another crucial idea about languages
-and program design. This is the approach of *stratified design*, the
+and program design. This is the approach of _stratified design_, the
 notion that a complex system should be structured as a sequence of
 levels that are described using a sequence of languages. Each level is
 constructed by combining parts that are regarded as primitive at that
@@ -9483,7 +9377,7 @@ these primitives, using geometric combiners such as `beside` and
 such as `square-of-four`, capture common patterns of combining geometric
 combiners.
 
-Stratified design helps make programs *robust*, that is, it makes it
+Stratified design helps make programs _robust_, that is, it makes it
 likely that small changes in a specification will require
 correspondingly small changes in the program. For instance, suppose we
 wanted to change the image based on `wave` shown in [Figure
@@ -9552,9 +9446,9 @@ functions operate on 10 data structures.”
 
 <div id="2_002e2.xhtml#FOOT74">
 
-[⁷⁴](#2_002e2.xhtml#DOCF74) In this book, we use *list* to mean a chain
+[⁷⁴](#2_002e2.xhtml#DOCF74) In this book, we use _list_ to mean a chain
 of pairs terminated by the end-of-list marker. In contrast, the term
-*list structure* refers to any data structure made out of pairs, not
+_list structure_ refers to any data structure made out of pairs, not
 just to lists.
 
 </div>
@@ -9567,7 +9461,7 @@ them—for instance,
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (cadr ⟨arg⟩) = (car (cdr ⟨arg⟩))
 ```
 
@@ -9605,7 +9499,7 @@ would write
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define f (lambda (x y . z) ⟨body⟩))
 (define g (lambda w ⟨body⟩))
 ```
@@ -9618,17 +9512,17 @@ would write
 
 [⁷⁸](#2_002e2.xhtml#DOCF78) Scheme standardly provides a `map` procedure
 that is more general than the one described here. This more general
-`map` takes a procedure of *n* arguments, together with *n* lists, and
+`map` takes a procedure of _n_ arguments, together with _n_ lists, and
 applies the procedure to all the first elements of the lists, all the
 second elements of the lists, and so on, returning a list of the
 results. For example:
 
 <div className="lisp">
 
-``` lisp
-(map + 
-     (list 1 2 3) 
-     (list 40 50 60) 
+```lisp
+(map +
+     (list 1 2 3)
+     (list 40 50 60)
      (list 700 800 900))
 (741 852 963)
 
@@ -9683,8 +9577,8 @@ for all sorts of array operations.
 Horner early in the nineteenth century, but the method was actually used
 by Newton over a hundred years earlier. Horner’s rule evaluates the
 polynomial using fewer additions and multiplications than does the
-straightforward method of first computing *a*_(*n*)*x*^(*n*), then
-adding *a*_(*n* − 1)*x*^(*n* − 1), and so on. In fact, it is possible to
+straightforward method of first computing _a\_\_(*n*)*x*^(*n*), then
+adding *a*_(*n* − 1)_x_^(*n* − 1), and so on. In fact, it is possible to
 prove that any algorithm for evaluating arbitrary polynomials must use
 at least as many additions and multiplications as does Horner’s rule,
 and thus Horner’s rule is an optimal algorithm for polynomial
@@ -9719,7 +9613,7 @@ generalizes to infinite sequences.
 <div id="2_002e2.xhtml#FOOT85">
 
 [⁸⁵](#2_002e2.xhtml#DOCF85) We’re representing a pair here as a list of
-two elements rather than as a Lisp pair. Thus, the “pair” (*i*,*j*) is
+two elements rather than as a Lisp pair. Thus, the “pair” (_i_,_j_) is
 represented as `(list i j)`, not `(cons i j)`.
 
 </div>
@@ -9727,14 +9621,14 @@ represented as `(list i j)`, not `(cons i j)`.
 <div id="2_002e2.xhtml#FOOT86">
 
 [⁸⁶](#2_002e2.xhtml#DOCF86) The set *S* − *x* is the set of all elements
-of *S*, excluding *x*.
+of _S_, excluding _x_.
 
 </div>
 
 <div id="2_002e2.xhtml#FOOT87">
 
 [⁸⁷](#2_002e2.xhtml#DOCF87) Semicolons in Scheme code are used to
-introduce *comments*. Everything from the semicolon to the end of the
+introduce _comments_. Everything from the semicolon to the end of the
 line is ignored by the interpreter. In this book we don’t use many
 comments; we try to make our programs self-documenting by using
 descriptive names.
@@ -9810,9 +9704,9 @@ In the words of Francis A. Walker (MIT’s third president):
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define flipped-pairs
-  (square-of-four 
+  (square-of-four
    identity flip-vert identity flip-vert))
 ```
 
@@ -9894,42 +9788,32 @@ applied to `wave` and `rogers`.
 
 </div>
 
-Next: [2.3](#2_002e3.xhtml#g_t2_002e3), Prev:
-[2.1](#2_002e1.xhtml#g_t2_002e1), Up: [2.2](#2_002e2.xhtml#g_t2_002e2)  
-\[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
-
 </div>
-
-[⇣](#2_002e2.xhtml#pagebottom)
 
 <div className="section">
 
-[⇡](#2_002e3.xhtml#pagetop)
-Next: [2.4](#2_002e4.xhtml#g_t2_002e4), Prev:
-[2.2](#2_002e2.xhtml#g_t2_002e2), Up: [Chapter
-2](#Chapter-2.xhtml#Chapter-2)  
 \[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
 
-### 2.3Symbolic Data
+### 2.3 Symbolic Data
 
 All the compound data objects we have used so far were constructed
 ultimately from numbers. In this section we extend the representational
 capability of our language by introducing the ability to work with
 arbitrary symbols as data.
 
-#### 2.3.1Quotation
+#### 2.3.1 Quotation
 
 If we can form compound data using symbols, we can have lists such as
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (a b c d)
 (23 45 17)
-((Norah 12) 
- (Molly 9) 
- (Anna 7) 
- (Lauren 6) 
+((Norah 12)
+ (Molly 9)
+ (Anna 7)
+ (Lauren 6)
  (Charlotte 4))
 ```
 
@@ -9940,20 +9824,20 @@ language:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (* (+ 23 45) (+ x 9))
-(define (fact n) 
-  (if (= n 1) 
-      1 
+(define (fact n)
+  (if (= n 1)
+      1
       (* n (fact (- n 1)))))
 ```
 
 </div>
 
 In order to manipulate symbols we need a new element in our language:
-the ability to *quote* a data object. Suppose we want to construct the
+the ability to _quote_ a data object. Suppose we want to construct the
 list `(a b)`. We can’t accomplish this with `(list a b)`, because this
-expression constructs a list of the *values* of `a` and `b` rather than
+expression constructs a list of the _values_ of `a` and `b` rather than
 the symbols themselves. This issue is well known in the context of
 natural languages, where words and sentences may be regarded either as
 semantic entities or as character strings (syntactic entities). The
@@ -9979,7 +9863,7 @@ Now we can distinguish between symbols and their values:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define a 1)
 (define b 2)
 
@@ -10001,7 +9885,7 @@ lists:[¹⁰⁰](#2_002e3.xhtml#FOOT100)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (car '(a b c))
 a
 
@@ -10025,7 +9909,7 @@ symbol:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (memq item x)
   (cond ((null? x) false)
         ((eq? item (car x)) x)
@@ -10038,7 +9922,7 @@ For example, the value of
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (memq 'apple '(pear banana prune))
 ```
 
@@ -10048,7 +9932,7 @@ is false, whereas the value of
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (memq 'apple '(x (apple sauce) y apple pear))
 ```
 
@@ -10061,7 +9945,7 @@ is `(apple pear)`.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (list 'a 'b 'c)
 > (list (list 'george))
 > (cdr '((x1 x2) (y1 y2)))
@@ -10078,8 +9962,8 @@ is `(apple pear)`.
 >
 > <div className="lisp">
 >
-> ``` lisp
-> (equal? '(this is a list) 
+> ```lisp
+> (equal? '(this is a list)
 >         '(this is a list))
 > ```
 >
@@ -10089,8 +9973,8 @@ is `(apple pear)`.
 >
 > <div className="lisp">
 >
-> ``` lisp
-> (equal? '(this is a list) 
+> ```lisp
+> (equal? '(this is a list)
 >         '(this (is a) list))
 > ```
 >
@@ -10107,7 +9991,7 @@ is `(apple pear)`.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (car ''abracadabra)
 > ```
 >
@@ -10115,7 +9999,7 @@ is `(apple pear)`.
 >
 > To her surprise, the interpreter prints back `quote`. Explain.
 
-#### 2.3.2Example: Symbolic Differentiation
+#### 2.3.2 Example: Symbolic Differentiation
 
 As an illustration of symbol manipulation and a further illustration of
 data abstraction, consider the design of a procedure that performs
@@ -10123,8 +10007,8 @@ symbolic differentiation of algebraic expressions. We would like the
 procedure to take as arguments an algebraic expression and a variable
 and to return the derivative of the expression with respect to the
 variable. For example, if the arguments to the procedure are
-*a**x*² + *b**x* + *c* and *x*, the procedure should return
-2*a**x* + *b*. Symbolic differentiation is of special historical
+*a\*\*x*² + *b\*\*x* + *c* and _x_, the procedure should return
+2*a\*\*x* + *b*. Symbolic differentiation is of special historical
 significance in Lisp. It was one of the motivating examples behind the
 development of a computer language for symbol manipulation. Furthermore,
 it marked the beginning of the line of research that led to the
@@ -10148,11 +10032,15 @@ up using only the operations of addition and multiplication with two
 arguments. Differentiation of any such expression can be carried out by
 applying the following reduction rules:
 $${\\frac{dc}{dx}\\, = \\, 0,}\\quad{\\text{for\~}c\\text{\~a\\ constant\~}}\\text{or\\ a\\ variable\~}{\\text{different\\ from\~}x,}$$
-$$\\begin{matrix}
+
+$$
+\\begin{matrix}
 \\frac{dx}{dx} & = & {1,} \\\\
 \\frac{d(u + v)}{dx} & = & {\\frac{du}{dx} + \\frac{dv}{dx},} \\\\
 \\frac{d(uv)}{dx} & = & {u\\mspace{2mu}\\frac{dv}{dx} + v\\mspace{2mu}\\frac{du}{dx}.} \\\\
-\\end{matrix}$$
+\\end{matrix}
+$$
+
 Observe that the latter two rules are recursive in nature. That is, to
 obtain the derivative of a sum we first find the derivatives of the
 terms and add them. Each of the terms may in turn be an expression that
@@ -10172,7 +10060,7 @@ implement the following selectors, constructors, and predicates:
 
 <div className="example">
 
-``` example
+```example
 (variable? e)          Is e a variable?
 (same-variable? v1 v2) Are v1 and v2 the same variable?
 (sum? e)               Is e a sum?
@@ -10193,7 +10081,7 @@ procedure:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (deriv exp var)
   (cond ((number? exp) 0)
         ((variable? exp)
@@ -10203,13 +10091,13 @@ procedure:
                    (deriv (augend exp) var)))
         ((product? exp)
          (make-sum
-          (make-product 
+          (make-product
            (multiplier exp)
            (deriv (multiplicand exp) var))
-          (make-product 
+          (make-product
            (deriv (multiplier exp) var)
            (multiplicand exp))))
-        (else (error "unknown expression 
+        (else (error "unknown expression
                       type: DERIV" exp))))
 ```
 
@@ -10225,92 +10113,100 @@ we must address next.
 
 We can imagine many ways to use list structure to represent algebraic
 expressions. For example, we could use lists of symbols that mirror the
-usual algebraic notation, representing *a**x* + *b* as the list
+usual algebraic notation, representing *a\*\*x* + *b* as the list
 `(a * x + b)`. However, one especially straightforward choice is to use
 the same parenthesized prefix notation that Lisp uses for combinations;
-that is, to represent *a**x* + *b* as `(+ (* a x) b)`. Then our data
+that is, to represent *a\*\*x* + *b* as `(+ (* a x) b)`. Then our data
 representation for the differentiation problem is as follows:
 
--   The variables are symbols. They are identified by the primitive
-    predicate `symbol?`:
-    <div className="lisp">
+- The variables are symbols. They are identified by the primitive
+  predicate `symbol?`:
+  <div className="lisp">
 
-    ``` lisp
-    (define (variable? x) (symbol? x))
-    ```
+  ```lisp
+  (define (variable? x) (symbol? x))
+  ```
 
-    </div>
--   Two variables are the same if the symbols representing them are
-    `eq?`:
-    <div className="lisp">
+  </div>
 
-    ``` lisp
-    (define (same-variable? v1 v2)
-      (and (variable? v1)
-           (variable? v2)
-           (eq? v1 v2)))
-    ```
+- Two variables are the same if the symbols representing them are
+  `eq?`:
+  <div className="lisp">
 
-    </div>
--   Sums and products are constructed as lists:
-    <div className="lisp">
+  ```lisp
+  (define (same-variable? v1 v2)
+    (and (variable? v1)
+         (variable? v2)
+         (eq? v1 v2)))
+  ```
 
-    ``` lisp
-    (define (make-sum a1 a2) (list '+ a1 a2))
-    (define (make-product m1 m2) (list '* m1 m2))
-    ```
+  </div>
 
-    </div>
--   A sum is a list whose first element is the symbol `+`:
-    <div className="lisp">
+- Sums and products are constructed as lists:
+  <div className="lisp">
 
-    ``` lisp
-    (define (sum? x)
-      (and (pair? x) (eq? (car x) '+)))
-    ```
+  ```lisp
+  (define (make-sum a1 a2) (list '+ a1 a2))
+  (define (make-product m1 m2) (list '* m1 m2))
+  ```
 
-    </div>
--   The addend is the second item of the sum list:
-    <div className="lisp">
+  </div>
 
-    ``` lisp
-    (define (addend s) (cadr s))
-    ```
+- A sum is a list whose first element is the symbol `+`:
+  <div className="lisp">
 
-    </div>
--   The augend is the third item of the sum list:
-    <div className="lisp">
+  ```lisp
+  (define (sum? x)
+    (and (pair? x) (eq? (car x) '+)))
+  ```
 
-    ``` lisp
-    (define (augend s) (caddr s))
-    ```
+  </div>
 
-    </div>
--   A product is a list whose first element is the symbol `*`:
-    <div className="lisp">
+- The addend is the second item of the sum list:
+  <div className="lisp">
 
-    ``` lisp
-    (define (product? x)
-      (and (pair? x) (eq? (car x) '*)))
-    ```
+  ```lisp
+  (define (addend s) (cadr s))
+  ```
 
-    </div>
--   The multiplier is the second item of the product list:
-    <div className="lisp">
+  </div>
 
-    ``` lisp
-    (define (multiplier p) (cadr p))
-    ```
+- The augend is the third item of the sum list:
+  <div className="lisp">
 
-    </div>
--   The multiplicand is the third item of the product list:
-    <div className="lisp">
+  ```lisp
+  (define (augend s) (caddr s))
+  ```
 
-    ``` lisp
-    (define (multiplicand p) (caddr p))
-    ```
+  </div>
 
-    </div>
+- A product is a list whose first element is the symbol `*`:
+  <div className="lisp">
+
+  ```lisp
+  (define (product? x)
+    (and (pair? x) (eq? (car x) '*)))
+  ```
+
+  </div>
+
+- The multiplier is the second item of the product list:
+  <div className="lisp">
+
+  ```lisp
+  (define (multiplier p) (cadr p))
+  ```
+
+  </div>
+
+- The multiplicand is the third item of the product list:
+  <div className="lisp">
+
+  ```lisp
+  (define (multiplicand p) (caddr p))
+  ```
+
+  </div>
 
 Thus, we need only combine these with the algorithm as embodied by
 `deriv` in order to have a working symbolic-differentiation program. Let
@@ -10318,7 +10214,7 @@ us look at some examples of its behavior:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (deriv '(+ x 3) 'x)
 (+ 1 0)
 
@@ -10352,11 +10248,11 @@ summands is 0, then `make-sum` will return the other summand:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (make-sum a1 a2)
   (cond ((=number? a1 0) a2)
         ((=number? a2 0) a1)
-        ((and (number? a1) (number? a2)) 
+        ((and (number? a1) (number? a2))
          (+ a1 a2))
         (else (list '+ a1 a2))))
 ```
@@ -10368,7 +10264,7 @@ is equal to a given number:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (=number? exp num)
   (and (number? exp) (= exp num)))
 ```
@@ -10380,14 +10276,14 @@ times anything is 0 and 1 times anything is the thing itself:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (make-product m1 m2)
-  (cond ((or (=number? m1 0) 
-             (=number? m2 0)) 
+  (cond ((or (=number? m1 0)
+             (=number? m2 0))
          0)
         ((=number? m1 1) m2)
         ((=number? m2 1) m1)
-        ((and (number? m1) (number? m2)) 
+        ((and (number? m1) (number? m2))
          (* m1 m2))
         (else (list '* m1 m2))))
 ```
@@ -10398,7 +10294,7 @@ Here is how this version works on our three examples:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (deriv '(+ x 3) 'x)
 1
 
@@ -10433,7 +10329,7 @@ form that may be simplest for one purpose may not be for another.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (deriv '(* x y (+ x 3)) 'x)
 > ```
 >
@@ -10465,7 +10361,7 @@ form that may be simplest for one purpose may not be for another.
 >     and constructors for this notation such that our derivative
 >     program still works?
 
-#### 2.3.3Example: Representing Sets
+#### 2.3.3 Example: Representing Sets
 
 In the previous examples we built representations for two kinds of
 compound data objects: rational numbers and algebraic expressions. In
@@ -10503,7 +10399,7 @@ procedure `memq` of [2.3.1](#2_002e3.xhtml#g_t2_002e3_002e1). It uses
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (element-of-set? x set)
   (cond ((null? set) false)
         ((equal? x (car set)) true)
@@ -10518,7 +10414,7 @@ add the object to the list that represents the set:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (adjoin-set x set)
   (if (element-of-set? x set)
       set
@@ -10535,15 +10431,15 @@ procedure:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (intersection-set set1 set2)
-  (cond ((or (null? set1) (null? set2)) 
+  (cond ((or (null? set1) (null? set2))
          '())
         ((element-of-set? (car set1) set2)
          (cons (car set1)
-               (intersection-set (cdr set1) 
+               (intersection-set (cdr set1)
                                  set2)))
-        (else (intersection-set (cdr set1) 
+        (else (intersection-set (cdr set1)
                                 set2))))
 ```
 
@@ -10556,12 +10452,12 @@ operation has a major impact on the efficiency of the set implementation
 as a whole. Now, in order to check whether an object is a member of a
 set, `element-of-set?` may have to scan the entire set. (In the worst
 case, the object turns out not to be in the set.) Hence, if the set has
-*n* elements, `element-of-set?` might take up to *n* steps. Thus, the
-number of steps required grows as *Θ*(*n*). The number of steps required
-by `adjoin-set`, which uses this operation, also grows as *Θ*(*n*). For
+_n_ elements, `element-of-set?` might take up to _n_ steps. Thus, the
+number of steps required grows as _Θ_(_n_). The number of steps required
+by `adjoin-set`, which uses this operation, also grows as _Θ_(_n_). For
 `intersection-set`, which does an `element-of-set?` check for each
 element of `set1`, the number of steps required grows as the product of
-the sizes of the sets involved, or *Θ*(*n*²) for two sets of size *n*.
+the sizes of the sets involved, or _Θ_(*n*²) for two sets of size _n_.
 The same will be true of `union-set`.
 
 > **Exercise 2.59:** Implement the `union-set` operation for the
@@ -10599,7 +10495,7 @@ then we know that the item is not in the set:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (element-of-set? x set)
   (cond ((null? set) false)
         ((= x (car set)) true)
@@ -10617,12 +10513,12 @@ will be able to stop searching at a point near the beginning of the list
 and that other times we will still need to examine most of the list. On
 the average we should expect to have to examine about half of the items
 in the set. Thus, the average number of steps required will be about
-*n*/2. This is still *Θ*(*n*) growth, but it does save us, on the
+_n_/2. This is still _Θ_(_n_) growth, but it does save us, on the
 average, a factor of 2 in number of steps over the previous
 implementation.
 
 We obtain a more impressive speedup with `intersection-set`. In the
-unordered representation this operation required *Θ*(*n*²) steps,
+unordered representation this operation required _Θ_(*n*²) steps,
 because we performed a complete scan of `set2` for each element of
 `set1`. But with the ordered representation, we can use a more clever
 method. Begin by comparing the initial elements, `x1` and `x2`, of the
@@ -10638,20 +10534,20 @@ the `cdr` of `set2`. Here is the procedure:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (intersection-set set1 set2)
   (if (or (null? set1) (null? set2))
       '()
       (let ((x1 (car set1)) (x2 (car set2)))
         (cond ((= x1 x2)
-               (cons x1 (intersection-set 
+               (cons x1 (intersection-set
                          (cdr set1)
                          (cdr set2))))
-              ((< x1 x2) (intersection-set 
-                          (cdr set1) 
+              ((< x1 x2) (intersection-set
+                          (cdr set1)
                           set2))
-              ((< x2 x1) (intersection-set 
-                          set1 
+              ((< x2 x1) (intersection-set
+                          set1
                           (cdr set2)))))))
 ```
 
@@ -10662,8 +10558,8 @@ at each step we reduce the intersection problem to computing
 intersections of smaller sets—removing the first element from `set1` or
 `set2` or both. Thus, the number of steps required is at most the sum of
 the sizes of `set1` and `set2`, rather than the product of the sizes as
-with the unordered representation. This is *Θ*(*n*) growth rather than
-*Θ*(*n*²)—a considerable speedup, even for sets of moderate size.
+with the unordered representation. This is _Θ_(_n_) growth rather than
+_Θ_(*n*²)—a considerable speedup, even for sets of moderate size.
 
 > **Exercise 2.61:** Give an implementation of `adjoin-set` using the
 > ordered representation. By analogy with `element-of-set?` show how to
@@ -10671,7 +10567,7 @@ with the unordered representation. This is *Θ*(*n*) growth rather than
 > the average about half as many steps as with the unordered
 > representation.
 
-> **Exercise 2.62:** Give a *Θ*(*n*) implementation of `union-set` for
+> **Exercise 2.62:** Give a _Θ_(_n_) implementation of `union-set` for
 > sets represented as ordered lists.
 
 ##### Sets as binary trees
@@ -10693,15 +10589,15 @@ SVG
 {1, 3, 5, 7, 9, 11}.
 
 The advantage of the tree representation is this: Suppose we want to
-check whether a number *x* is contained in a set. We begin by comparing
-*x* with the entry in the top node. If *x* is less than this, we know
-that we need only search the left subtree; if *x* is greater, we need
+check whether a number _x_ is contained in a set. We begin by comparing
+_x_ with the entry in the top node. If _x_ is less than this, we know
+that we need only search the left subtree; if _x_ is greater, we need
 only search the right subtree. Now, if the tree is “balanced,” each of
 these subtrees will be about half the size of the original. Thus, in one
-step we have reduced the problem of searching a tree of size *n* to
-searching a tree of size *n*/2. Since the size of the tree is halved at
+step we have reduced the problem of searching a tree of size _n_ to
+searching a tree of size _n_/2. Since the size of the tree is halved at
 each step, we should expect that the number of steps needed to search a
-tree of size *n* grows as *Θ*(log*n*).[¹⁰⁴](#2_002e3.xhtml#FOOT104) For
+tree of size _n_ grows as _Θ_(log*n*).[¹⁰⁴](#2_002e3.xhtml#FOOT104) For
 large sets, this will be a significant speedup over the previous
 representations.
 
@@ -10713,7 +10609,7 @@ following procedures:[¹⁰⁵](#2_002e3.xhtml#FOOT105)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (entry tree) (car tree))
 (define (left-branch tree) (cadr tree))
 (define (right-branch tree) (caddr tree))
@@ -10728,24 +10624,24 @@ described above:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (element-of-set? x set)
   (cond ((null? set) false)
         ((= x (entry set)) true)
         ((< x (entry set))
-         (element-of-set? 
-          x 
+         (element-of-set?
+          x
           (left-branch set)))
         ((> x (entry set))
-         (element-of-set? 
-          x 
+         (element-of-set?
+          x
           (right-branch set)))))
 ```
 
 </div>
 
 Adjoining an item to a set is implemented similarly and also requires
-*Θ*(log*n*) steps. To adjoin an item `x`, we compare `x` with the node
+_Θ_(log*n*) steps. To adjoin an item `x`, we compare `x` with the node
 entry to determine whether `x` should be added to the right or to the
 left branch, and having adjoined `x` to the appropriate branch we piece
 this newly constructed branch together with the original entry and the
@@ -10756,12 +10652,12 @@ procedure:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (adjoin-set x set)
   (cond ((null? set) (make-tree x '() '()))
         ((= x (entry set)) set)
         ((< x (entry set))
-         (make-tree 
+         (make-tree
           (entry set)
           (adjoin-set x (left-branch set))
           (right-branch set)))
@@ -10794,7 +10690,7 @@ an arbitrary tree into a balanced tree with the same elements. Then we
 can perform this transformation after every few `adjoin-set` operations
 to keep our set in balance. There are also other ways to solve this
 problem, most of which involve designing new data structures for which
-searching and insertion both can be done in *Θ*(log*n*)
+searching and insertion both can be done in _Θ_(log*n*)
 steps.[¹⁰⁶](#2_002e3.xhtml#FOOT106)
 
 SVG
@@ -10806,25 +10702,25 @@ sequence.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (tree->list-1 tree)
 >   (if (null? tree)
 >       '()
->       (append 
->        (tree->list-1 
+>       (append
+>        (tree->list-1
 >         (left-branch tree))
 >        (cons (entry tree)
->              (tree->list-1 
+>              (tree->list-1
 >               (right-branch tree))))))
 >
 > (define (tree->list-2 tree)
 >   (define (copy-to-list tree result-list)
 >     (if (null? tree)
 >         result-list
->         (copy-to-list 
+>         (copy-to-list
 >          (left-branch tree)
 >          (cons (entry tree)
->                (copy-to-list 
+>                (copy-to-list
 >                 (right-branch tree)
 >                 result-list)))))
 >   (copy-to-list tree '()))
@@ -10837,50 +10733,50 @@ sequence.
 >     produce for the trees in [Figure
 >     2.16](#2_002e3.xhtml#Figure-2_002e16)?
 > 2.  Do the two procedures have the same order of growth in the number
->     of steps required to convert a balanced tree with *n* elements to
+>     of steps required to convert a balanced tree with _n_ elements to
 >     a list? If not, which one grows more slowly?
 
 > **Exercise 2.64:** The following procedure `list->tree` converts an
 > ordered list to a balanced binary tree. The helper procedure
-> `partial-tree` takes as arguments an integer *n* and list of at least
-> *n* elements and constructs a balanced tree containing the first *n*
+> `partial-tree` takes as arguments an integer _n_ and list of at least
+> _n_ elements and constructs a balanced tree containing the first _n_
 > elements of the list. The result returned by `partial-tree` is a pair
 > (formed with `cons`) whose `car` is the constructed tree and whose
 > `cdr` is the list of elements not included in the tree.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (list->tree elements)
->   (car (partial-tree 
+>   (car (partial-tree
 >         elements (length elements))))
 >
 > (define (partial-tree elts n)
 >   (if (= n 0)
 >       (cons '() elts)
->       (let ((left-size 
+>       (let ((left-size
 >              (quotient (- n 1) 2)))
->         (let ((left-result 
->                (partial-tree 
+>         (let ((left-result
+>                (partial-tree
 >                 elts left-size)))
->           (let ((left-tree 
+>           (let ((left-tree
 >                  (car left-result))
->                 (non-left-elts 
+>                 (non-left-elts
 >                  (cdr left-result))
->                 (right-size 
+>                 (right-size
 >                  (- n (+ left-size 1))))
->             (let ((this-entry 
+>             (let ((this-entry
 >                    (car non-left-elts))
->                   (right-result 
->                    (partial-tree 
+>                   (right-result
+>                    (partial-tree
 >                     (cdr non-left-elts)
 >                     right-size)))
->               (let ((right-tree 
+>               (let ((right-tree
 >                      (car right-result))
->                     (remaining-elts 
+>                     (remaining-elts
 >                      (cdr right-result)))
->                 (cons (make-tree this-entry 
->                                  left-tree 
+>                 (cons (make-tree this-entry
+>                                  left-tree
 >                                  right-tree)
 >                       remaining-elts))))))))
 > ```
@@ -10891,11 +10787,11 @@ sequence.
 >     `partial-tree` works. Draw the tree produced by `list->tree` for
 >     the list `(1 3 5 7 9 11)`.
 > 2.  What is the order of growth in the number of steps required by
->     `list->tree` to convert a list of *n* elements?
+>     `list->tree` to convert a list of _n_ elements?
 
 > **Exercise 2.65:** Use the results of [Exercise
 > 2.63](#2_002e3.xhtml#Exercise-2_002e63) and [Exercise
-> 2.64](#2_002e3.xhtml#Exercise-2_002e64) to give *Θ*(*n*)
+> 2.64](#2_002e3.xhtml#Exercise-2_002e64) to give _Θ_(_n_)
 > implementations of `union-set` and `intersection-set` for sets
 > implemented as (balanced) binary trees.[¹⁰⁷](#2_002e3.xhtml#FOOT107)
 
@@ -10913,7 +10809,7 @@ accounting system. A typical data-management system spends a large
 amount of time accessing or modifying the data in the records and
 therefore requires an efficient method for accessing records. This is
 done by identifying a part of each record to serve as an identifying
-*key*. A key can be anything that uniquely identifies the record. For a
+_key_. A key can be anything that uniquely identifies the record. For a
 personnel file, it might be an employee’s ID number. For an accounting
 system, it might be a transaction number. Whatever the key is, when we
 define the record as a data structure we should include a `key` selector
@@ -10928,14 +10824,14 @@ implemented as an unordered list, we could use
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (lookup given-key set-of-records)
   (cond ((null? set-of-records) false)
-        ((equal? given-key 
+        ((equal? given-key
                  (key (car set-of-records)))
          (car set-of-records))
-        (else 
-         (lookup given-key 
+        (else
+         (lookup given-key
                  (cdr set-of-records)))))
 ```
 
@@ -10959,7 +10855,7 @@ require any changes to the rest of the system.
 > the set of records is structured as a binary tree, ordered by the
 > numerical values of the keys.
 
-#### 2.3.4Example: Huffman Encoding Trees
+#### 2.3.4 Example: Huffman Encoding Trees
 
 This section provides practice in the use of list structure and data
 abstraction to manipulate sets and trees. The application is to methods
@@ -10967,14 +10863,14 @@ for representing data as sequences of ones and zeros (bits). For
 example, the ASCII standard code used to represent text in computers
 encodes each character as a sequence of seven bits. Using seven bits
 allows us to distinguish 2⁷, or 128, possible different characters. In
-general, if we want to distinguish *n* different symbols, we will need
+general, if we want to distinguish _n_ different symbols, we will need
 to use log₂*n* bits per symbol. If all our messages are made up of the
 eight symbols A, B, C, D, E, F, G, and H, we can choose a code with
 three bits per character, for example
 
 <div className="example">
 
-``` example
+```example
 A 000  C 010  E 100  G 110
 B 001  D 011  F 101  H 111
 ```
@@ -10985,7 +10881,7 @@ With this code, the message
 
 <div className="example">
 
-``` example
+```example
 BACADAEAFABBAAAGAH
 ```
 
@@ -10995,7 +10891,7 @@ is encoded as the string of 54 bits
 
 <div className="example">
 
-``` example
+```example
 001000010000011000100000101
 000001001000000000110000111
 ```
@@ -11003,9 +10899,9 @@ is encoded as the string of 54 bits
 </div>
 
 Codes such as ASCII and the A-through-H code above are known as
-*fixed-length* codes, because they represent each symbol in the message
+_fixed-length_ codes, because they represent each symbol in the message
 with the same number of bits. It is sometimes advantageous to use
-*variable-length* codes, in which different symbols may be represented
+_variable-length_ codes, in which different symbols may be represented
 by different numbers of bits. For example, Morse code does not use the
 same number of dots and dashes for each letter of the alphabet. In
 particular, E, the most frequent letter, is represented by a single dot.
@@ -11017,7 +10913,7 @@ letters A through H:
 
 <div className="example">
 
-``` example
+```example
 A 0    C 1010  E 1100  G 1110
 B 100  D 1011  F 1101  H 1111
 ```
@@ -11028,7 +10924,7 @@ With this code, the same message as above is encoded as the string
 
 <div className="example">
 
-``` example
+```example
 100010100101101100011
 010100100000111001111
 ```
@@ -11040,11 +10936,11 @@ comparison with the fixed-length code shown above.
 
 One of the difficulties of using a variable-length code is knowing when
 you have reached the end of a symbol in reading a sequence of zeros and
-ones. Morse code solves this problem by using a special *separator code*
+ones. Morse code solves this problem by using a special _separator code_
 (in this case, a pause) after the sequence of dots and dashes for each
 letter. Another solution is to design the code in such a way that no
-complete code for any symbol is the beginning (or *prefix*) of the code
-for another symbol. Such a code is called a *prefix code*. In the
+complete code for any symbol is the beginning (or _prefix_) of the code
+for another symbol. Such a code is called a _prefix code_. In the
 example above, A is encoded by 0 and B is encoded by 100, so no other
 symbol can have a code that begins with 0 or with 100.
 
@@ -11124,29 +11020,29 @@ the root of the entire tree. Here is how the Huffman tree of [Figure
 
 <div className="example">
 
-``` example
-Initial {(A 8) (B 3) (C 1) (D 1) 
+```example
+Initial {(A 8) (B 3) (C 1) (D 1)
 leaves   (E 1) (F 1) (G 1) (H 1)}
 
-Merge   {(A 8) (B 3) ({C D} 2) 
+Merge   {(A 8) (B 3) ({C D} 2)
          (E 1) (F 1) (G 1) (H 1)}
 
-Merge   {(A 8) (B 3) ({C D} 2) 
+Merge   {(A 8) (B 3) ({C D} 2)
          ({E F} 2) (G 1) (H 1)}
 
-Merge   {(A 8) (B 3) ({C D} 2) 
+Merge   {(A 8) (B 3) ({C D} 2)
          ({E F} 2) ({G H} 2)}
 
-Merge   {(A 8) (B 3) ({C D} 2) 
+Merge   {(A 8) (B 3) ({C D} 2)
          ({E F G H} 4)}
 
-Merge   {(A 8) ({B C D} 5) 
+Merge   {(A 8) ({B C D} 5)
          ({E F G H} 4)}
 
 Merge   {(A 8) ({B C D E F G H} 9)}
 
 Final   {({A B C D E F G H} 17)}
-merge    
+merge
 ```
 
 </div>
@@ -11168,7 +11064,7 @@ Leaves of the tree are represented by a list consisting of the symbol
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (make-leaf symbol weight)
   (list 'leaf symbol weight))
 (define (leaf? object)
@@ -11190,11 +11086,11 @@ procedure we defined in [2.2.1](#2_002e2.xhtml#g_t2_002e2_002e1):
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (make-code-tree left right)
   (list left
         right
-        (append (symbols left) 
+        (append (symbols left)
                 (symbols right))
         (+ (weight left) (weight right))))
 ```
@@ -11205,7 +11101,7 @@ If we make a tree in this way, we have the following selectors:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (left-branch tree) (car tree))
 (define (right-branch tree) (cadr tree))
 
@@ -11224,7 +11120,7 @@ If we make a tree in this way, we have the following selectors:
 
 The procedures `symbols` and `weight` must do something slightly
 different depending on whether they are called with a leaf or a general
-tree. These are simple examples of *generic procedures* (procedures that
+tree. These are simple examples of _generic procedures_ (procedures that
 can handle more than one kind of data), which we will have much more to
 say about in [2.4](#2_002e4.xhtml#g_t2_002e4) and
 [2.5](#2_002e5.xhtml#g_t2_002e5).
@@ -11236,27 +11132,27 @@ arguments a list of zeros and ones, together with a Huffman tree.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (decode bits tree)
   (define (decode-1 bits current-branch)
     (if (null? bits)
         '()
         (let ((next-branch
-               (choose-branch 
-                (car bits) 
+               (choose-branch
+                (car bits)
                 current-branch)))
           (if (leaf? next-branch)
-              (cons 
+              (cons
                (symbol-leaf next-branch)
                (decode-1 (cdr bits) tree))
-              (decode-1 (cdr bits) 
+              (decode-1 (cdr bits)
                         next-branch)))))
   (decode-1 bits tree))
 
 (define (choose-branch bit branch)
   (cond ((= bit 0) (left-branch branch))
         ((= bit 1) (right-branch branch))
-        (else (error "bad bit: 
+        (else (error "bad bit:
                CHOOSE-BRANCH" bit))))
 ```
 
@@ -11292,12 +11188,12 @@ never already in it.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (adjoin-set x set)
   (cond ((null? set) (list x))
-        ((< (weight x) (weight (car set))) 
+        ((< (weight x) (weight (car set)))
          (cons x set))
-        (else 
+        (else
          (cons (car set)
                (adjoin-set x (cdr set))))))
 ```
@@ -11310,12 +11206,12 @@ leaves, ready to be merged according to the Huffman algorithm:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (make-leaf-set pairs)
   (if (null? pairs)
       '()
       (let ((pair (car pairs)))
-        (adjoin-set 
+        (adjoin-set
          (make-leaf (car pair)    ; symbol
                     (cadr pair))  ; frequency
          (make-leaf-set (cdr pairs))))))
@@ -11327,17 +11223,17 @@ leaves, ready to be merged according to the Huffman algorithm:
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define sample-tree
->   (make-code-tree 
+>   (make-code-tree
 >    (make-leaf 'A 4)
 >    (make-code-tree
 >     (make-leaf 'B 2)
->     (make-code-tree 
+>     (make-code-tree
 >      (make-leaf 'D 1)
 >      (make-leaf 'C 1)))))
 >
-> (define sample-message 
+> (define sample-message
 >   '(0 1 1 0 0 1 0 1 0 1 1 1 0))
 > ```
 >
@@ -11351,12 +11247,12 @@ leaves, ready to be merged according to the Huffman algorithm:
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (encode message tree)
 >   (if (null? message)
 >       '()
->       (append 
->        (encode-symbol (car message) 
+>       (append
+>        (encode-symbol (car message)
 >                       tree)
 >        (encode (cdr message) tree))))
 > ```
@@ -11378,9 +11274,9 @@ leaves, ready to be merged according to the Huffman algorithm:
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (generate-huffman-tree pairs)
->   (successive-merge 
+>   (successive-merge
 >    (make-leaf-set pairs)))
 > ```
 >
@@ -11403,7 +11299,7 @@ leaves, ready to be merged according to the Huffman algorithm:
 >
 > <div className="example">
 >
-> ``` example
+> ```example
 > A    2    NA  16
 > BOOM 1    SHA  3
 > GET  2    YIP  9
@@ -11420,14 +11316,14 @@ leaves, ready to be merged according to the Huffman algorithm:
 >
 > <div className="example">
 >
-> ``` example
+> ```example
 > Get a job
 > Sha na na na na na na na na
 >
 > Get a job
 > Sha na na na na na na na na
 >
-> Wah yip yip yip yip 
+> Wah yip yip yip yip
 > yip yip yip yip yip
 > Sha boom
 > ```
@@ -11439,9 +11335,9 @@ leaves, ready to be merged according to the Huffman algorithm:
 > fixed-length code for the eight-symbol alphabet?
 
 > **Exercise 2.71:** Suppose we have a Huffman tree for an alphabet of
-> *n* symbols, and that the relative frequencies of the symbols are
+> _n_ symbols, and that the relative frequencies of the symbols are
 > 1, 2, 4, …, 2^(*n* − 1). Sketch the tree for *n* = 5; for *n* = 10. In
-> such a tree (for general *n*) how many bits are required to encode the
+> such a tree (for general _n_) how many bits are required to encode the
 > most frequent symbol? The least frequent symbol?
 
 > **Exercise 2.72:** Consider the encoding procedure that you designed
@@ -11450,9 +11346,9 @@ leaves, ready to be merged according to the Huffman algorithm:
 > sure to include the number of steps needed to search the symbol list
 > at each node encountered. To answer this question in general is
 > difficult. Consider the special case where the relative frequencies of
-> the *n* symbols are as described in [Exercise
+> the _n_ symbols are as described in [Exercise
 > 2.71](#2_002e3.xhtml#Exercise-2_002e71), and give the order of growth
-> (as a function of *n*) of the number of steps needed to encode the
+> (as a function of _n_) of the number of steps needed to encode the
 > most frequent and least frequent symbols in the alphabet.
 
 <div className="footnote">
@@ -11538,17 +11434,17 @@ numerically equal.
 specify “consistent with the interpretations given above” to mean that
 the operations satisfy a collection of rules such as these:
 
--   For any set `S` and any object `x`,
-    `(element-of-set? x (adjoin-set x S))` is true (informally:
-    “Adjoining an object to a set produces a set that contains the
-    object”).
--   For any sets `S` and `T` and any object `x`,
-    `(element-of-set? x (union-set S T))` is equal to
-    `(or (element-of-set? x S) (element-of-set? x T))` (informally: “The
-    elements of `(union S T)` are the elements that are in `S` or in
-    `T`”).
--   For any object `x`, `(element-of-set? x '())` is false (informally:
-    “No object is an element of the empty set”).
+- For any set `S` and any object `x`,
+  `(element-of-set? x (adjoin-set x S))` is true (informally:
+  “Adjoining an object to a set produces a set that contains the
+  object”).
+- For any sets `S` and `T` and any object `x`,
+  `(element-of-set? x (union-set S T))` is equal to
+  `(or (element-of-set? x S) (element-of-set? x T))` (informally: “The
+  elements of `(union S T)` are the elements that are in `S` or in
+  `T`”).
+- For any object `x`, `(element-of-set? x '())` is false (informally:
+  “No object is an element of the empty set”).
 
 </div>
 
@@ -11576,7 +11472,7 @@ represent such a tree in terms of list structure.
 <div id="2_002e3.xhtml#FOOT106">
 
 [¹⁰⁶](#2_002e3.xhtml#DOCF106) Examples of such structures include
-*B-trees* and *red-black trees*. There is a large literature on data
+_B-trees_ and _red-black trees_. There is a large literature on data
 structures devoted to this problem. See [Cormen et al.
 1990](#References.xhtml#Cormen-et-al_002e-1990).
 
@@ -11600,23 +11496,13 @@ mathematical properties of Huffman codes.
 
 </div>
 
-Next: [2.4](#2_002e4.xhtml#g_t2_002e4), Prev:
-[2.2](#2_002e2.xhtml#g_t2_002e2), Up: [2.3](#2_002e3.xhtml#g_t2_002e3)  
-\[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
-
 </div>
-
-[⇣](#2_002e3.xhtml#pagebottom)
 
 <div className="section">
 
-[⇡](#2_002e4.xhtml#pagetop)
-Next: [2.5](#2_002e5.xhtml#g_t2_002e5), Prev:
-[2.3](#2_002e3.xhtml#g_t2_002e3), Up: [Chapter
-2](#Chapter-2.xhtml#Chapter-2)  
 \[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
 
-### 2.4Multiple Representations for Abstract Data
+### 2.4 Multiple Representations for Abstract Data
 
 We have introduced data abstraction, a methodology for structuring
 systems in such a way that much of a program can be specified
@@ -11663,17 +11549,17 @@ choices from each other and permit different choices to coexist in a
 single program. Furthermore, since large programs are often created by
 combining pre-existing modules that were designed in isolation, we need
 conventions that permit programmers to incorporate modules into larger
-systems *additively*, that is, without having to redesign or reimplement
+systems _additively_, that is, without having to redesign or reimplement
 these modules.
 
 In this section, we will learn how to cope with data that may be
 represented in different ways by different parts of a program. This
-requires constructing *generic procedures*—procedures that can operate
+requires constructing _generic procedures_—procedures that can operate
 on data that may be represented in more than one way. Our main technique
 for building generic procedures will be to work in terms of data objects
-that have *type tags*, that is, data objects that include explicit
+that have _type tags_, that is, data objects that include explicit
 information about how they are to be processed. We will also discuss
-*data-directed* programming, a powerful and convenient implementation
+_data-directed_ programming, a powerful and convenient implementation
 strategy for additively assembling systems with generic operations.
 
 We begin with the simple complex-number example. We will see how type
@@ -11704,7 +11590,7 @@ kind of number is needed. In [2.5.3](#2_002e5.xhtml#g_t2_002e5_002e3),
 we’ll show how to use generic arithmetic in a system that performs
 symbolic algebra.
 
-#### 2.4.1Representations for Complex Numbers
+#### 2.4.1 Representations for Complex Numbers
 
 We will develop a system that performs arithmetic operations on complex
 numbers as a simple but unrealistic example of a program that uses
@@ -11720,31 +11606,37 @@ Like rational numbers, complex numbers are naturally represented as
 ordered pairs. The set of complex numbers can be thought of as a
 two-dimensional space with two orthogonal axes, the “real” axis and the
 “imaginary” axis. (See [Figure 2.20](#2_002e4.xhtml#Figure-2_002e20).)
-From this point of view, the complex number *z* = *x* + *i**y* (where
+From this point of view, the complex number *z* = *x* + *i\*\*y* (where
 $i^{\\mspace{2mu} 2} = \\text{−1}$) can be thought of as the point in
-the plane whose real coordinate is *x* and whose imaginary coordinate is
-*y*. Addition of complex numbers reduces in this representation to
+the plane whose real coordinate is _x_ and whose imaginary coordinate is
+_y_. Addition of complex numbers reduces in this representation to
 addition of coordinates:
-$$\\begin{matrix}
+
+$$
+\\begin{matrix}
 {\\text{Real-part}(z\_{1} + z\_{2})} & = & {\\text{Real-part}(z\_{1}) +} \\\\
  & & {\\text{Real-part}(z\_{2}),} \\\\
 {\\text{Imaginary-part}(z\_{1} + z\_{2})} & = & {\\text{Imaginary-part}(z\_{1}) +} \\\\
  & & {\\text{Imaginary-part}(z\_{2}).} \\\\
-\\end{matrix}$$
+\\end{matrix}
+$$
 
 SVG
 **Figure 2.20:** Complex numbers as points in the plane.
 
 When multiplying complex numbers, it is more natural to think in terms
 of representing a complex number in polar form, as a magnitude and an
-angle (*r* and *A* in [Figure 2.20](#2_002e4.xhtml#Figure-2_002e20)).
+angle (_r_ and _A_ in [Figure 2.20](#2_002e4.xhtml#Figure-2_002e20)).
 The product of two complex numbers is the vector obtained by stretching
 one complex number by the length of the other and then rotating it
 through the angle of the other:
-$$\\begin{matrix}
+
+$$
+\\begin{matrix}
 {\\text{Magnitude}(z\_{1} \\cdot z\_{2})} & = & {\\text{Magnitude}(z\_{1}) \\cdot \\text{Magnitude}(z\_{2}),} \\\\
 {\\text{Angle}(z\_{1} \\cdot z\_{2})} & = & {\\text{Angle}(z\_{1}) + \\text{Angle}(z\_{2}).} \\\\
-\\end{matrix}$$
+\\end{matrix}
+$$
 
 Thus, there are two different representations for complex numbers, which
 are appropriate for different operations. Yet, from the viewpoint of
@@ -11769,8 +11661,8 @@ number `z`, both
 
 <div className="lisp">
 
-``` lisp
-(make-from-real-imag (real-part z) 
+```lisp
+(make-from-real-imag (real-part z)
                      (imag-part z))
 ```
 
@@ -11780,8 +11672,8 @@ and
 
 <div className="lisp">
 
-``` lisp
-(make-from-mag-ang (magnitude z) 
+```lisp
+(make-from-mag-ang (magnitude z)
                    (angle z))
 ```
 
@@ -11799,24 +11691,24 @@ of magnitudes and angles:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (add-complex z1 z2)
-  (make-from-real-imag 
+  (make-from-real-imag
    (+ (real-part z1) (real-part z2))
    (+ (imag-part z1) (imag-part z2))))
 
 (define (sub-complex z1 z2)
-  (make-from-real-imag 
+  (make-from-real-imag
    (- (real-part z1) (real-part z2))
    (- (imag-part z1) (imag-part z2))))
 
 (define (mul-complex z1 z2)
-  (make-from-mag-ang 
+  (make-from-mag-ang
    (* (magnitude z1) (magnitude z2))
    (+ (angle z1) (angle z2))))
 
 (define (div-complex z1 z2)
-  (make-from-mag-ang 
+  (make-from-mag-ang
    (/ (magnitude z1) (magnitude z2))
    (- (angle z1) (angle z2))))
 ```
@@ -11840,31 +11732,33 @@ imaginary parts. To find the magnitude and the angle, or to construct a
 complex number with a given magnitude and angle, he uses the
 trigonometric relations
 
-$$\\begin{matrix}
+$$
+\\begin{matrix}
 x & = & {r\\cos A,} \\\\
 y & = & {r\\sin A,} \\\\
 r & = & \\sqrt{x^{2} + y^{2},} \\\\
 A & = & {\\arctan(y,x),} \\\\
-\\end{matrix}$$
+\\end{matrix}
+$$
 
-which relate the real and imaginary parts (*x*,*y*) to the magnitude and
-the angle (*r*,*A*).[¹¹⁰](#2_002e4.xhtml#FOOT110) Ben’s representation
+which relate the real and imaginary parts (_x_,_y_) to the magnitude and
+the angle (_r_,_A_).[¹¹⁰](#2_002e4.xhtml#FOOT110) Ben’s representation
 is therefore given by the following selectors and constructors:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (real-part z) (car z))
 (define (imag-part z) (cdr z))
 
 (define (magnitude z)
-  (sqrt (+ (square (real-part z)) 
+  (sqrt (+ (square (real-part z))
            (square (imag-part z)))))
 
 (define (angle z)
   (atan (imag-part z) (real-part z)))
 
-(define (make-from-real-imag x y) 
+(define (make-from-real-imag x y)
   (cons x y))
 
 (define (make-from-mag-ang r a)
@@ -11880,7 +11774,7 @@ parts. Alyssa’s representation is:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (real-part z)
   (* (magnitude z) (cos (angle z))))
 
@@ -11894,7 +11788,7 @@ parts. Alyssa’s representation is:
   (cons (sqrt (+ (square x) (square y)))
         (atan y x)))
 
-(define (make-from-mag-ang r a) 
+(define (make-from-mag-ang r a)
   (cons r a))
 ```
 
@@ -11904,7 +11798,7 @@ The discipline of data abstraction ensures that the same implementation
 of `add-complex`, `sub-complex`, `mul-complex`, and `div-complex` will
 work with either Ben’s representation or Alyssa’s representation.
 
-#### 2.4.2Tagged data
+#### 2.4.2 Tagged data
 
 One way to view data abstraction is as an application of the “principle
 of least commitment.” In implementing the complex-number system in
@@ -11917,15 +11811,15 @@ in our system design.
 
 The principle of least commitment can be carried to even further
 extremes. If we desire, we can maintain the ambiguity of representation
-even *after* we have designed the selectors and constructors, and elect
-to use both Ben’s representation *and* Alyssa’s representation. If both
+even _after_ we have designed the selectors and constructors, and elect
+to use both Ben’s representation _and_ Alyssa’s representation. If both
 representations are included in a single system, however, we will need
 some way to distinguish data in polar form from data in rectangular
 form. Otherwise, if we were asked, for instance, to find the `magnitude`
 of the pair (3, 4), we wouldn’t know whether to answer 5 (interpreting
 the number in rectangular form) or 3 (interpreting the number in polar
 form). A straightforward way to accomplish this distinction is to
-include a *type tag*—the symbol `rectangular` or `polar`—as part of each
+include a _type tag_—the symbol `rectangular` or `polar`—as part of each
 complex number. Then when we need to manipulate a complex number we can
 use the tag to decide which selector to apply.
 
@@ -11939,20 +11833,20 @@ structure:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (attach-tag type-tag contents)
   (cons type-tag contents))
 
 (define (type-tag datum)
   (if (pair? datum)
       (car datum)
-      (error "Bad tagged datum: 
+      (error "Bad tagged datum:
               TYPE-TAG" datum)))
 
 (define (contents datum)
   (if (pair? datum)
       (cdr datum)
-      (error "Bad tagged datum: 
+      (error "Bad tagged datum:
               CONTENTS" datum)))
 ```
 
@@ -11963,7 +11857,7 @@ Using these procedures, we can define predicates `rectangular?` and
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (rectangular? z)
   (eq? (type-tag z) 'rectangular))
 
@@ -11986,7 +11880,7 @@ rectangular representation from
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (real-part-rectangular z) (car z))
 (define (imag-part-rectangular z) (cdr z))
 
@@ -12002,7 +11896,7 @@ rectangular representation from
   (attach-tag 'rectangular (cons x y)))
 
 (define (make-from-mag-ang-rectangular r a)
-  (attach-tag 
+  (attach-tag
    'rectangular
    (cons (* r (cos a)) (* r (sin a)))))
 ```
@@ -12013,20 +11907,20 @@ and here is Alyssa’s revised polar representation:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (real-part-polar z)
-  (* (magnitude-polar z) 
+  (* (magnitude-polar z)
      (cos (angle-polar z))))
 
 (define (imag-part-polar z)
-  (* (magnitude-polar z) 
+  (* (magnitude-polar z)
      (sin (angle-polar z))))
 
 (define (magnitude-polar z) (car z))
 (define (angle-polar z) (cdr z))
 
 (define (make-from-real-imag-polar x y)
-  (attach-tag 
+  (attach-tag
    'polar
    (cons (sqrt (+ (square x) (square y)))
          (atan y x))))
@@ -12047,13 +11941,13 @@ the rectangular or polar procedure as required:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (real-part z)
   (cond ((rectangular? z)
          (real-part-rectangular (contents z)))
         ((polar? z)
          (real-part-polar (contents z)))
-        (else (error "Unknown type: 
+        (else (error "Unknown type:
                REAL-PART" z))))
 
 (define (imag-part z)
@@ -12061,7 +11955,7 @@ the rectangular or polar procedure as required:
          (imag-part-rectangular (contents z)))
         ((polar? z)
          (imag-part-polar (contents z)))
-        (else (error "Unknown type: 
+        (else (error "Unknown type:
                IMAG-PART" z))))
 
 (define (magnitude z)
@@ -12069,7 +11963,7 @@ the rectangular or polar procedure as required:
          (magnitude-rectangular (contents z)))
         ((polar? z)
          (magnitude-polar (contents z)))
-        (else (error "Unknown type: 
+        (else (error "Unknown type:
                MAGNITUDE" z))))
 
 (define (angle z)
@@ -12077,7 +11971,7 @@ the rectangular or polar procedure as required:
          (angle-rectangular (contents z)))
         ((polar? z)
          (angle-polar (contents z)))
-        (else (error "Unknown type: 
+        (else (error "Unknown type:
                ANGLE" z))))
 ```
 
@@ -12091,9 +11985,9 @@ representation. For example, the procedure `add-complex` is still
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (add-complex z1 z2)
-  (make-from-real-imag 
+  (make-from-real-imag
    (+ (real-part z1) (real-part z2))
    (+ (imag-part z1) (imag-part z2))))
 ```
@@ -12107,7 +12001,7 @@ and to construct polar numbers whenever we have magnitudes and angles:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (make-from-real-imag x y)
   (make-from-real-imag-rectangular x y))
 
@@ -12145,10 +12039,10 @@ tags as data objects are passed from level to level can be an important
 organizational strategy, as we shall see in
 [2.5](#2_002e5.xhtml#g_t2_002e5).
 
-#### 2.4.3Data-Directed Programming and Additivity
+#### 2.4.3 Data-Directed Programming and Additivity
 
 The general strategy of checking the type of a datum and calling an
-appropriate procedure is called *dispatching on type*. This is a
+appropriate procedure is called _dispatching on type_. This is a
 powerful strategy for obtaining modularity in system design. On the
 other hand, implementing the dispatch as in
 [2.4.2](#2_002e4.xhtml#g_t2_002e4_002e2) has two significant weaknesses.
@@ -12167,7 +12061,7 @@ and Alyssa had to change the names of their original procedures from
 [2.4.1](#2_002e4.xhtml#g_t2_002e4_002e1).
 
 The issue underlying both of these weaknesses is that the technique for
-implementing generic interfaces is not *additive*. The person
+implementing generic interfaces is not _additive_. The person
 implementing the generic selector procedures must modify those
 procedures each time a new representation is installed, and the people
 interfacing the individual representations must modify their code to
@@ -12183,8 +12077,8 @@ The problem is real and must be addressed in such programs as
 large-scale data-base-management systems.
 
 What we need is a means for modularizing the system design even further.
-This is provided by the programming technique known as *data-directed
-programming*. To understand how data-directed programming works, begin
+This is provided by the programming technique known as _data-directed
+programming_. To understand how data-directed programming works, begin
 with the observation that whenever we deal with a set of generic
 operations that are common to a set of different types we are, in
 effect, dealing with a two-dimensional table that contains the possible
@@ -12214,11 +12108,11 @@ procedures; we need only add new entries to the table.
 To implement this plan, assume that we have two procedures, `put` and
 `get`, for manipulating the operation-and-type table:
 
--   `(put ⟨op⟩ ⟨type⟩ ⟨item⟩)` installs the `⟨``item``⟩` in the table,
-    indexed by the `⟨``op``⟩` and the `⟨``type``⟩`.
--   `(get ⟨op⟩ ⟨type⟩)` looks up the `⟨``op``⟩`, `⟨``type``⟩` entry in
-    the table and returns the item found there. If no item is found,
-    `get` returns false.
+- `(put ⟨op⟩ ⟨type⟩ ⟨item⟩)` installs the ` ⟨``item``⟩ ` in the table,
+  indexed by the ` ⟨``op``⟩ ` and the ` ⟨``type``⟩ `.
+- `(get ⟨op⟩ ⟨type⟩)` looks up the ` ⟨``op``⟩ `, ` ⟨``type``⟩ ` entry in
+  the table and returns the item found there. If no item is found,
+  `get` returns false.
 
 For now, we can assume that `put` and `get` are included in our
 language. In [Chapter 3](#Chapter-3.xhtml#Chapter-3)
@@ -12228,19 +12122,19 @@ these and other operations for manipulating tables.
 Here is how data-directed programming can be used in the complex-number
 system. Ben, who developed the rectangular representation, implements
 his code just as he did originally. He defines a collection of
-procedures, or a *package*, and interfaces these to the rest of the
+procedures, or a _package_, and interfaces these to the rest of the
 system by adding entries to the table that tell the system how to
 operate on rectangular numbers. This is accomplished by calling the
 following procedure:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (install-rectangular-package)
   ;; internal procedures
   (define (real-part z) (car z))
   (define (imag-part z) (cdr z))
-  (define (make-from-real-imag x y) 
+  (define (make-from-real-imag x y)
     (cons x y))
   (define (magnitude z)
     (sqrt (+ (square (real-part z))
@@ -12250,17 +12144,17 @@ following procedure:
   (define (make-from-mag-ang r a)
     (cons (* r (cos a)) (* r (sin a))))
   ;; interface to the rest of the system
-  (define (tag x) 
+  (define (tag x)
     (attach-tag 'rectangular x))
   (put 'real-part '(rectangular) real-part)
   (put 'imag-part '(rectangular) imag-part)
   (put 'magnitude '(rectangular) magnitude)
   (put 'angle '(rectangular) angle)
   (put 'make-from-real-imag 'rectangular
-       (lambda (x y) 
+       (lambda (x y)
          (tag (make-from-real-imag x y))))
   (put 'make-from-mag-ang 'rectangular
-       (lambda (r a) 
+       (lambda (r a)
          (tag (make-from-mag-ang r a))))
   'done)
 ```
@@ -12285,7 +12179,7 @@ Alyssa’s polar package is analogous:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (install-polar-package)
   ;; internal procedures
   (define (magnitude z) (car z))
@@ -12305,10 +12199,10 @@ Alyssa’s polar package is analogous:
   (put 'magnitude '(polar) magnitude)
   (put 'angle '(polar) angle)
   (put 'make-from-real-imag 'polar
-       (lambda (x y) 
+       (lambda (x y)
          (tag (make-from-real-imag x y))))
   (put 'make-from-mag-ang 'polar
-       (lambda (r a) 
+       (lambda (r a)
          (tag (make-from-mag-ang r a))))
   'done)
 ```
@@ -12328,14 +12222,14 @@ resulting procedure if one is present:[¹¹³](#2_002e4.xhtml#FOOT113)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (apply-generic op . args)
   (let ((type-tags (map type-tag args)))
     (let ((proc (get op type-tags)))
       (if proc
           (apply proc (map contents args))
           (error
-            "No method for these types: 
+            "No method for these types:
              APPLY-GENERIC"
             (list op type-tags))))))
 ```
@@ -12346,14 +12240,14 @@ Using `apply-generic`, we can define our generic selectors as follows:
 
 <div className="lisp">
 
-``` lisp
-(define (real-part z) 
+```lisp
+(define (real-part z)
   (apply-generic 'real-part z))
-(define (imag-part z) 
+(define (imag-part z)
   (apply-generic 'imag-part z))
-(define (magnitude z) 
+(define (magnitude z)
   (apply-generic 'magnitude z))
-(define (angle z) 
+(define (angle z)
   (apply-generic 'angle z))
 ```
 
@@ -12371,15 +12265,15 @@ whenever we have magnitudes and angles:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (make-from-real-imag x y)
-  ((get 'make-from-real-imag 
-        'rectangular) 
+  ((get 'make-from-real-imag
+        'rectangular)
    x y))
 
 (define (make-from-mag-ang r a)
-  ((get 'make-from-mag-ang 
-        'polar) 
+  ((get 'make-from-mag-ang
+        'polar)
    r a))
 ```
 
@@ -12390,20 +12284,20 @@ whenever we have magnitudes and angles:
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (deriv exp var)
 >   (cond ((number? exp) 0)
->         ((variable? exp) 
+>         ((variable? exp)
 >          (if (same-variable? exp var) 1 0))
 >         ((sum? exp)
 >          (make-sum (deriv (addend exp) var)
 >                    (deriv (augend exp) var)))
 >         ((product? exp)
 >          (make-sum
->            (make-product 
+>            (make-product
 >             (multiplier exp)
 >             (deriv (multiplicand exp) var))
->            (make-product 
+>            (make-product
 >             (deriv (multiplier exp) var)
 >             (multiplicand exp))))
 >         ⟨more rules can be added here⟩
@@ -12422,15 +12316,15 @@ whenever we have magnitudes and angles:
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (deriv exp var)
 >    (cond ((number? exp) 0)
->          ((variable? exp) 
->            (if (same-variable? exp var) 
->                1 
+>          ((variable? exp)
+>            (if (same-variable? exp var)
+>                1
 >                0))
->          (else ((get 'deriv (operator exp)) 
->                 (operands exp) 
+>          (else ((get 'deriv (operator exp))
+>                 (operands exp)
 >                 var))))
 >
 > (define (operator exp) (car exp))
@@ -12459,8 +12353,8 @@ whenever we have magnitudes and angles:
 >
 >     <div className="lisp">
 >
->     ``` lisp
->     ((get (operator exp) 'deriv) 
+>     ```lisp
+>     ((get (operator exp) 'deriv)
 >      (operands exp) var)
 >     ```
 >
@@ -12533,7 +12427,7 @@ as
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (make-from-real-imag x y)
   (define (dispatch op)
     (cond ((eq? op 'real-part) x)
@@ -12542,7 +12436,7 @@ as
            (sqrt (+ (square x) (square y))))
           ((eq? op 'angle) (atan y x))
           (else
-           (error "Unknown op: 
+           (error "Unknown op:
             MAKE-FROM-REAL-IMAG" op))))
   dispatch)
 ```
@@ -12556,7 +12450,7 @@ work:[¹¹⁴](#2_002e4.xhtml#FOOT114)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (apply-generic op arg) (arg op))
 ```
 
@@ -12566,7 +12460,7 @@ Note that the value returned by `make-from-real-imag` is a procedure—the
 internal `dispatch` procedure. This is the procedure that is invoked
 when `apply-generic` requests an operation to be performed.
 
-This style of programming is called *message passing*. The name comes
+This style of programming is called _message passing_. The name comes
 from the image that a data object is an entity that receives the
 requested operation name as a “message.” We have already seen an example
 of message passing in [2.1.3](#2_002e1.xhtml#g_t2_002e1_002e3), where we
@@ -12613,7 +12507,7 @@ developed later in this chapter.
 
 [¹¹⁰](#2_002e4.xhtml#DOCF110) The arctangent function referred to here,
 computed by Scheme’s `atan` procedure, is defined so as to take two
-arguments *y* and *x* and to return the angle whose tangent is *y*/*x*.
+arguments _y_ and _x_ and to return the angle whose tangent is _y_/_x_.
 The signs of the arguments determine the quadrant of the angle.
 
 </div>
@@ -12649,7 +12543,7 @@ using the elements in the list as arguments. For example,
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (apply + (list 1 2 3 4))
 ```
 
@@ -12668,23 +12562,13 @@ permits only generic procedures of one argument.
 
 </div>
 
-Next: [2.5](#2_002e5.xhtml#g_t2_002e5), Prev:
-[2.3](#2_002e3.xhtml#g_t2_002e3), Up: [2.4](#2_002e4.xhtml#g_t2_002e4)  
-\[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
-
 </div>
-
-[⇣](#2_002e4.xhtml#pagebottom)
 
 <div className="section">
 
-[⇡](#2_002e5.xhtml#pagetop)
-Next: [Chapter 3](#Chapter-3.xhtml#Chapter-3), Prev:
-[2.4](#2_002e4.xhtml#g_t2_002e4), Up: [Chapter
-2](#Chapter-2.xhtml#Chapter-2)  
 \[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
 
-### 2.5Systems with Generic Operations
+### 2.5 Systems with Generic Operations
 
 In the previous section, we saw how to design systems in which data
 objects can be represented in more than one way. The key idea is to link
@@ -12719,7 +12603,7 @@ produce a generic arithmetic system.
 SVG
 **Figure 2.23:** Generic arithmetic system.
 
-#### 2.5.1Generic Arithmetic Operations
+#### 2.5.1 Generic Arithmetic Operations
 
 The task of designing generic arithmetic operations is analogous to that
 of designing the generic complex-number operations. We would like, for
@@ -12737,7 +12621,7 @@ The generic arithmetic procedures are defined as follows:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (add x y) (apply-generic 'add x y))
 (define (sub x y) (apply-generic 'sub x y))
 (define (mul x y) (apply-generic 'mul x y))
@@ -12746,7 +12630,7 @@ The generic arithmetic procedures are defined as follows:
 
 </div>
 
-We begin by installing a package for handling *ordinary* numbers, that
+We begin by installing a package for handling _ordinary_ numbers, that
 is, the primitive numbers of our language. We will tag these with the
 symbol `scheme-number`. The arithmetic operations in this package are
 the primitive arithmetic procedures (so there is no need to define extra
@@ -12756,7 +12640,7 @@ take two arguments, they are installed in the table keyed by the list
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (install-scheme-number-package)
   (define (tag x)
     (attach-tag 'scheme-number x))
@@ -12780,7 +12664,7 @@ by means of the procedure:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (make-scheme-number n)
   ((get 'make 'scheme-number) n))
 ```
@@ -12796,7 +12680,7 @@ the package:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (install-rational-package)
   ;; internal procedures
   (define (numer x) (car x))
@@ -12848,53 +12732,53 @@ use, as the internal operations, the same `add-complex`, `sub-complex`,
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (install-complex-package)
-  ;; imported procedures from rectangular 
+  ;; imported procedures from rectangular
   ;; and polar packages
   (define (make-from-real-imag x y)
-    ((get 'make-from-real-imag 
-          'rectangular) 
+    ((get 'make-from-real-imag
+          'rectangular)
      x y))
   (define (make-from-mag-ang r a)
-    ((get 'make-from-mag-ang 'polar) 
+    ((get 'make-from-mag-ang 'polar)
      r a))
   ;; internal procedures
   (define (add-complex z1 z2)
-    (make-from-real-imag 
+    (make-from-real-imag
      (+ (real-part z1) (real-part z2))
      (+ (imag-part z1) (imag-part z2))))
   (define (sub-complex z1 z2)
-    (make-from-real-imag 
+    (make-from-real-imag
      (- (real-part z1) (real-part z2))
      (- (imag-part z1) (imag-part z2))))
   (define (mul-complex z1 z2)
-    (make-from-mag-ang 
+    (make-from-mag-ang
      (* (magnitude z1) (magnitude z2))
      (+ (angle z1) (angle z2))))
   (define (div-complex z1 z2)
-    (make-from-mag-ang 
+    (make-from-mag-ang
      (/ (magnitude z1) (magnitude z2))
      (- (angle z1) (angle z2))))
   ;; interface to rest of the system
   (define (tag z) (attach-tag 'complex z))
   (put 'add '(complex complex)
-       (lambda (z1 z2) 
+       (lambda (z1 z2)
          (tag (add-complex z1 z2))))
   (put 'sub '(complex complex)
-       (lambda (z1 z2) 
+       (lambda (z1 z2)
          (tag (sub-complex z1 z2))))
   (put 'mul '(complex complex)
-       (lambda (z1 z2) 
+       (lambda (z1 z2)
          (tag (mul-complex z1 z2))))
   (put 'div '(complex complex)
-       (lambda (z1 z2) 
+       (lambda (z1 z2)
          (tag (div-complex z1 z2))))
   (put 'make-from-real-imag 'complex
-       (lambda (x y) 
+       (lambda (x y)
          (tag (make-from-real-imag x y))))
   (put 'make-from-mag-ang 'complex
-       (lambda (r a) 
+       (lambda (r a)
          (tag (make-from-mag-ang r a))))
   'done)
 ```
@@ -12909,7 +12793,7 @@ exported from there to the outside world.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (make-complex-from-real-imag x y)
   ((get 'make-from-real-imag 'complex) x y))
 (define (make-complex-from-mag-ang r a)
@@ -12951,7 +12835,7 @@ simply name them `add`, `sub`, `mul`, and `div` in both packages.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (put 'real-part '(complex) real-part)
 > (put 'imag-part '(complex) imag-part)
 > (put 'magnitude '(complex) magnitude)
@@ -12992,7 +12876,7 @@ simply name them `add`, `sub`, `mul`, and `div` in both packages.
 > package. This operation should work for ordinary numbers, rational
 > numbers, and complex numbers.
 
-#### 2.5.2Combining Data of Different Types
+#### 2.5.2 Combining Data of Different Types
 
 We have seen how to define a unified arithmetic system that encompasses
 ordinary numbers, complex numbers, rational numbers, and any other type
@@ -13017,14 +12901,14 @@ numbers and installs this in the table using the tag
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (add-complex-to-schemenum z x)
   (make-from-real-imag (+ (real-part z) x)
                        (imag-part z)))
 
-(put 'add 
+(put 'add
      '(complex scheme-number)
-     (lambda (z x) 
+     (lambda (z x)
        (tag (add-complex-to-schemenum z x))))
 ```
 
@@ -13057,7 +12941,7 @@ Fortunately, we can usually do better by taking advantage of additional
 structure that may be latent in our type system. Often the different
 data types are not completely independent, and there may be ways by
 which objects of one type may be viewed as being of another type. This
-process is called *coercion*. For example, if we are asked to
+process is called _coercion_. For example, if we are asked to
 arithmetically combine an ordinary number with a complex number, we can
 view the ordinary number as a complex number whose imaginary part is
 zero. This transforms the problem to that of combining two complex
@@ -13072,9 +12956,9 @@ imaginary part:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (scheme-number->complex n)
-  (make-complex-from-real-imag 
+  (make-complex-from-real-imag
    (contents n) 0))
 ```
 
@@ -13085,8 +12969,8 @@ indexed under the names of the two types:
 
 <div className="lisp">
 
-``` lisp
-(put-coercion 'scheme-number 'complex 
+```lisp
+(put-coercion 'scheme-number 'complex
               scheme-number->complex)
 ```
 
@@ -13118,7 +13002,7 @@ Here is the procedure:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (apply-generic op . args)
   (let ((type-tags (map type-tag args)))
     (let ((proc (get op type-tags)))
@@ -13129,26 +13013,26 @@ Here is the procedure:
                     (type2 (cadr type-tags))
                     (a1 (car args))
                     (a2 (cadr args)))
-                (let ((t1->t2 
+                (let ((t1->t2
                        (get-coercion type1
                                      type2))
-                      (t2->t1 
-                       (get-coercion type2 
+                      (t2->t1
+                       (get-coercion type2
                                      type1)))
                   (cond (t1->t2
-                         (apply-generic 
+                         (apply-generic
                           op (t1->t2 a1) a2))
                         (t2->t1
-                         (apply-generic 
+                         (apply-generic
                           op a1 (t2->t1 a2)))
                         (else
-                         (error 
-                          "No method for 
+                         (error
+                          "No method for
                            these types"
-                          (list 
-                           op 
+                          (list
+                           op
                            type-tags))))))
-              (error 
+              (error
                "No method for these types"
                (list op type-tags)))))))
 ```
@@ -13158,7 +13042,7 @@ Here is the procedure:
 This coercion scheme has many advantages over the method of defining
 explicit cross-type operations, as outlined above. Although we still
 need to write coercion procedures to relate the types (possibly *n*²
-procedures for a system with *n* types), we need to write only one
+procedures for a system with _n_ types), we need to write only one
 procedure for each pair of types rather than a different procedure for
 each collection of types and each generic
 operation.[¹¹⁷](#2_002e5.xhtml#FOOT117) What we are counting on here is
@@ -13184,13 +13068,13 @@ numbers, real numbers, and complex numbers. In such a system, it is
 quite natural to regard an integer as a special kind of rational number,
 which is in turn a special kind of real number, which is in turn a
 special kind of complex number. What we actually have is a so-called
-*hierarchy of types*, in which, for example, integers are a *subtype* of
+_hierarchy of types_, in which, for example, integers are a _subtype_ of
 rational numbers (i.e., any operation that can be applied to a rational
 number can automatically be applied to an integer). Conversely, we say
-that rational numbers form a *supertype* of integers. The particular
+that rational numbers form a _supertype_ of integers. The particular
 hierarchy we have here is of a very simple kind, in which each type has
 at most one supertype and at most one subtype. Such a structure, called
-a *tower*, is illustrated in [Figure
+a _tower_, is illustrated in [Figure
 2.25](#2_002e5.xhtml#Figure-2_002e25).
 
 SVG
@@ -13268,20 +13152,20 @@ SVG
 > **Exercise 2.81:** Louis Reasoner has noticed that `apply-generic` may
 > try to coerce the arguments to each other’s type even if they already
 > have the same type. Therefore, he reasons, we need to put procedures
-> in the coercion table to *coerce* arguments of each type to their own
+> in the coercion table to _coerce_ arguments of each type to their own
 > type. For example, in addition to the `scheme-number->complex`
 > coercion shown above, he would do:
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (scheme-number->scheme-number n) n)
 > (define (complex->complex z) z)
 >
 > (put-coercion 'scheme-number 'scheme-number
 >               scheme-number->scheme-number)
 >
-> (put-coercion 'complex 'complex 
+> (put-coercion 'complex 'complex
 >               complex->complex)
 > ```
 >
@@ -13296,8 +13180,8 @@ SVG
 >
 >     <div className="lisp">
 >
->     ``` lisp
->     (define (exp x y) 
+>     ```lisp
+>     (define (exp x y)
 >       (apply-generic 'exp x y))
 >     ```
 >
@@ -13308,12 +13192,12 @@ SVG
 >
 >     <div className="lisp">
 >
->     ``` lisp
+>     ```lisp
 >     ;; following added to Scheme-number package
->     (put 'exp 
+>     (put 'exp
 >          '(scheme-number scheme-number)
->          (lambda (x y) 
->            (tag (expt x y)))) 
+>          (lambda (x y)
+>            (tag (expt x y))))
 >            ; using primitive expt
 >     ```
 >
@@ -13387,7 +13271,7 @@ SVG
 > `sine` and `cosine` that are generic over ordinary numbers and
 > rational numbers.
 
-#### 2.5.3Example: Symbolic Algebra
+#### 2.5.3 Example: Symbolic Algebra
 
 The manipulation of symbolic algebraic expressions is a complex process
 that illustrates many of the hardest problems that occur in the design
@@ -13403,8 +13287,8 @@ rational function, or trigonometric function. We can regard these as
 compound “types,” which are often useful for directing the processing of
 expressions. For example, we could describe the expression
 *x*²sin (*y*²+1) + *x*cos 2*y* + cos (*y*³−2*y*²)
-as a polynomial in *x* with coefficients that are trigonometric
-functions of polynomials in *y* whose coefficients are integers.
+as a polynomial in _x_ with coefficients that are trigonometric
+functions of polynomials in _y_ whose coefficients are integers.
 
 We will not attempt to develop a complete algebraic-manipulation system
 here. Such systems are exceedingly complex programs, embodying deep
@@ -13418,26 +13302,26 @@ generic operations to help organize this effort.
 
 Our first task in designing a system for performing arithmetic on
 polynomials is to decide just what a polynomial is. Polynomials are
-normally defined relative to certain variables (the *indeterminates* of
+normally defined relative to certain variables (the _indeterminates_ of
 the polynomial). For simplicity, we will restrict ourselves to
-polynomials having just one indeterminate ( *univariate
-polynomials*).[¹²⁰](#2_002e5.xhtml#FOOT120) We will define a polynomial
+polynomials having just one indeterminate ( _univariate
+polynomials_).[¹²⁰](#2_002e5.xhtml#FOOT120) We will define a polynomial
 to be a sum of terms, each of which is either a coefficient, a power of
 the indeterminate, or a product of a coefficient and a power of the
 indeterminate. A coefficient is defined as an algebraic expression that
 is not dependent upon the indeterminate of the polynomial. For example,
 5*x*² + 3*x* + 7
-is a simple polynomial in *x*, and
+is a simple polynomial in _x_, and
 (*y*²+1)*x*³ + (2*y*)*x* + 1
-is a polynomial in *x* whose coefficients are polynomials in *y*.
+is a polynomial in _x_ whose coefficients are polynomials in _y_.
 
 Already we are skirting some thorny issues. Is the first of these
 polynomials the same as the polynomial 5*y*² + 3*y* + 7, or not? A
 reasonable answer might be “yes, if we are considering a polynomial
 purely as a mathematical function, but no, if we are considering a
 polynomial to be a syntactic form.” The second polynomial is
-algebraically equivalent to a polynomial in *y* whose coefficients are
-polynomials in *x*. Should our system recognize this, or not?
+algebraically equivalent to a polynomial in _y_ whose coefficients are
+polynomials in _x_. Should our system recognize this, or not?
 Furthermore, there are other ways to represent a polynomial—for example,
 as a product of factors, or (for a univariate polynomial) as the set of
 roots, or as a listing of the values of the polynomial at a specified
@@ -13453,7 +13337,7 @@ the same indeterminate.
 
 We will approach the design of our system by following the familiar
 discipline of data abstraction. We will represent polynomials using a
-data structure called a *poly*, which consists of a variable and a
+data structure called a _poly_, which consists of a variable and a
 collection of terms. We assume that we have selectors `variable` and
 `term-list` that extract those parts from a poly and a constructor
 `make-poly` that assembles a poly from a given variable and a term list.
@@ -13464,26 +13348,26 @@ of polys:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (add-poly p1 p2)
-  (if (same-variable? (variable p1) 
+  (if (same-variable? (variable p1)
                       (variable p2))
-      (make-poly 
+      (make-poly
        (variable p1)
        (add-terms (term-list p1)
                   (term-list p2)))
-      (error "Polys not in same var: 
+      (error "Polys not in same var:
               ADD-POLY"
              (list p1 p2))))
 
 (define (mul-poly p1 p2)
-  (if (same-variable? (variable p1) 
+  (if (same-variable? (variable p1)
                       (variable p2))
-      (make-poly 
+      (make-poly
        (variable p1)
        (mul-terms (term-list p1)
                   (term-list p2)))
-      (error "Polys not in same var: 
+      (error "Polys not in same var:
               MUL-POLY"
              (list p1 p2))))
 ```
@@ -13499,7 +13383,7 @@ polynomial package, similar to the ones in
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (install-polynomial-package)
   ;; internal procedures
   ;; representation of poly
@@ -13507,11 +13391,11 @@ polynomial package, similar to the ones in
     (cons variable term-list))
   (define (variable p) (car p))
   (define (term-list p) (cdr p))
-  ⟨procedures same-variable? 
+  ⟨procedures same-variable?
    and variable? from section 2.3.2⟩
 
   ;; representation of terms and term lists
-  ⟨procedures adjoin-term … coeff 
+  ⟨procedures adjoin-term … coeff
   from text below⟩
 
   (define (add-poly p1 p2) …)
@@ -13522,13 +13406,13 @@ polynomial package, similar to the ones in
   ;; interface to rest of the system
   (define (tag p) (attach-tag 'polynomial p))
   (put 'add '(polynomial polynomial)
-       (lambda (p1 p2) 
+       (lambda (p1 p2)
          (tag (add-poly p1 p2))))
   (put 'mul '(polynomial polynomial)
-       (lambda (p1 p2) 
+       (lambda (p1 p2)
          (tag (mul-poly p1 p2))))
   (put 'make 'polynomial
-       (lambda (var terms) 
+       (lambda (var terms)
          (tag (make-poly var terms))))
   'done)
 ```
@@ -13561,31 +13445,31 @@ polynomials:[¹²²](#2_002e5.xhtml#FOOT122)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (add-terms L1 L2)
   (cond ((empty-termlist? L1) L2)
         ((empty-termlist? L2) L1)
         (else
-         (let ((t1 (first-term L1)) 
+         (let ((t1 (first-term L1))
                (t2 (first-term L2)))
            (cond ((> (order t1) (order t2))
                   (adjoin-term
-                   t1 
-                   (add-terms (rest-terms L1) 
+                   t1
+                   (add-terms (rest-terms L1)
                               L2)))
                  ((< (order t1) (order t2))
                   (adjoin-term
-                   t2 
-                   (add-terms 
-                    L1 
+                   t2
+                   (add-terms
+                    L1
                     (rest-terms L2))))
                  (else
                   (adjoin-term
-                   (make-term 
+                   (make-term
                     (order t1)
-                    (add (coeff t1) 
+                    (add (coeff t1)
                          (coeff t2)))
-                   (add-terms 
+                   (add-terms
                     (rest-terms L1)
                     (rest-terms L2)))))))))
 ```
@@ -13606,12 +13490,12 @@ coefficient is the product of the coefficients of the factors:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (mul-terms L1 L2)
   (if (empty-termlist? L1)
       (the-empty-termlist)
-      (add-terms 
-       (mul-term-by-all-terms 
+      (add-terms
+       (mul-term-by-all-terms
         (first-term L1) L2)
        (mul-terms (rest-terms L1) L2))))
 
@@ -13620,11 +13504,11 @@ coefficient is the product of the coefficients of the factors:
       (the-empty-termlist)
       (let ((t2 (first-term L)))
         (adjoin-term
-         (make-term 
+         (make-term
           (+ (order t1) (order t2))
           (mul (coeff t1) (coeff t2)))
-         (mul-term-by-all-terms 
-          t1 
+         (mul-term-by-all-terms
+          t1
           (rest-terms L))))))
 ```
 
@@ -13643,10 +13527,10 @@ Because we installed the polynomial addition and multiplication
 procedures `add-poly` and `mul-poly` in the generic arithmetic system as
 the `add` and `mul` operations for type `polynomial`, our system is also
 automatically able to handle polynomial operations such as
-\[(*y*+1)*x*² + (*y*²+1)*x* + (*y*−1)\]⋅\[(*y*−2)*x* + (*y*³+7)\].
+\[(_y_+1)*x*² + (*y*²+1)*x* + (*y*−1)\]⋅\[(*y*−2)*x* + (*y*³+7)\].
 The reason is that when the system tries to combine coefficients, it
 will dispatch through `add` and `mul`. Since the coefficients are
-themselves polynomials (in *y*), these will be combined using `add-poly`
+themselves polynomials (in _y_), these will be combined using `add-poly`
 and `mul-poly`. The result is a kind of “data-directed recursion” in
 which, for example, a call to `mul-poly` will result in recursive calls
 to `mul-poly` in order to multiply the coefficients. If the coefficients
@@ -13668,25 +13552,25 @@ order. Thus, we will use some kind of ordered list representation.
 
 How should we structure the list that represents a term list? One
 consideration is the “density” of the polynomials we intend to
-manipulate. A polynomial is said to be *dense* if it has nonzero
+manipulate. A polynomial is said to be _dense_ if it has nonzero
 coefficients in terms of most orders. If it has many zero terms it is
-said to be *sparse*. For example,
-*A*:  *x*⁵ + 2*x*⁴ + 3*x*² − 2*x* − 5
+said to be _sparse_. For example,
+_A_:  *x*⁵ + 2*x*⁴ + 3*x*² − 2*x* − 5
 is a dense polynomial, whereas
-*B*:  *x*¹⁰⁰ + 2*x*² + 1
+_B_:  *x*¹⁰⁰ + 2*x*² + 1
 is sparse.
 
 The term lists of dense polynomials are most efficiently represented as
-lists of the coefficients. For example, *A* above would be nicely
+lists of the coefficients. For example, _A_ above would be nicely
 represented as `(1 2 0 3 -2 -5)`. The order of a term in this
 representation is the length of the sublist beginning with that term’s
 coefficient, decremented by 1.[¹²⁴](#2_002e5.xhtml#FOOT124) This would
-be a terrible representation for a sparse polynomial such as *B*: There
+be a terrible representation for a sparse polynomial such as _B_: There
 would be a giant list of zeros punctuated by a few lonely nonzero terms.
 A more reasonable representation of the term list of a sparse polynomial
 is as a list of the nonzero terms, where each term is a list containing
 the order of the term and the coefficient for that order. In such a
-scheme, polynomial *B* is efficiently represented as
+scheme, polynomial _B_ is efficiently represented as
 `((100 1) (2 2) (0 1))`. As most polynomial manipulations are performed
 on sparse polynomials, we will use this method. We will assume that term
 lists are represented as lists of terms, arranged from highest-order to
@@ -13696,7 +13580,7 @@ straightforward:[¹²⁵](#2_002e5.xhtml#FOOT125)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (adjoin-term term term-list)
   (if (=zero? (coeff term))
       term-list
@@ -13704,9 +13588,9 @@ straightforward:[¹²⁵](#2_002e5.xhtml#FOOT125)
 (define (the-empty-termlist) '())
 (define (first-term term-list) (car term-list))
 (define (rest-terms term-list) (cdr term-list))
-(define (empty-termlist? term-list) 
+(define (empty-termlist? term-list)
   (null? term-list))
-(define (make-term order coeff) 
+(define (make-term order coeff)
   (list order coeff))
 (define (order term) (car term))
 (define (coeff term) (cadr term))
@@ -13723,7 +13607,7 @@ means of the procedure:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (make-polynomial var terms)
   ((get 'make 'polynomial) var terms))
 ```
@@ -13782,21 +13666,21 @@ means of the procedure:
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (div-terms L1 L2)
 >   (if (empty-termlist? L1)
->       (list (the-empty-termlist) 
+>       (list (the-empty-termlist)
 >             (the-empty-termlist))
 >       (let ((t1 (first-term L1))
 >             (t2 (first-term L2)))
 >         (if (> (order t2) (order t1))
 >             (list (the-empty-termlist) L1)
->             (let ((new-c (div (coeff t1) 
+>             (let ((new-c (div (coeff t1)
 >                               (coeff t2)))
->                   (new-o (- (order t1) 
+>                   (new-o (- (order t1)
 >                             (order t2))))
 >               (let ((rest-of-result
->                      ⟨compute rest of result 
+>                      ⟨compute rest of result
 >                      recursively⟩ ))
 >                 ⟨form complete result⟩ ))))))
 > ```
@@ -13817,9 +13701,9 @@ complication without much trouble.
 
 On the other hand, polynomial algebra is a system for which the data
 types cannot be naturally arranged in a tower. For instance, it is
-possible to have polynomials in *x* whose coefficients are polynomials
-in *y*. It is also possible to have polynomials in *y* whose
-coefficients are polynomials in *x*. Neither of these types is “above”
+possible to have polynomials in _x_ whose coefficients are polynomials
+in _y_. It is also possible to have polynomials in _y_ whose
+coefficients are polynomials in _x_. Neither of these types is “above”
 the other in any natural way, yet it is often necessary to add together
 elements from each set. There are several ways to do this. One
 possibility is to convert one polynomial to the type of the other by
@@ -13850,8 +13734,8 @@ support the design of large systems.
 
 ##### Extended exercise: Rational functions
 
-We can extend our generic arithmetic system to include *rational
-functions*. These are “fractions” whose numerator and denominator are
+We can extend our generic arithmetic system to include _rational
+functions_. These are “fractions” whose numerator and denominator are
 polynomials, such as
 $$\\frac{x + 1}{x^{3} - 1}.$$
 The system should be able to add, subtract, multiply, and divide
@@ -13872,7 +13756,7 @@ reducing fractions to lowest terms.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define p1 (make-polynomial 'x '((2 1) (0 1))))
 > (define p2 (make-polynomial 'x '((3 1) (0 1))))
 > (define rf (make-rational p2 p1))
@@ -13893,7 +13777,7 @@ integer version is
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (gcd a b)
   (if (= b 0)
       a
@@ -13907,7 +13791,7 @@ operation that works on term lists:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (gcd-terms a b)
   (if (empty-termlist? b)
       a
@@ -13930,13 +13814,13 @@ implemented in [Exercise 2.91](#2_002e5.xhtml#Exercise-2_002e91).
 >
 > <div className="lisp">
 >
-> ``` lisp
-> (define p1 
->   (make-polynomial 
+> ```lisp
+> (define p1
+>   (make-polynomial
 >    'x '((4 1) (3 -1) (2 -2) (1 2))))
 >
-> (define p2 
->   (make-polynomial 
+> (define p2
+>   (make-polynomial
 >    'x '((3 1) (1 -1))))
 >
 > (greatest-common-divisor p1 p2)
@@ -13947,11 +13831,15 @@ implemented in [Exercise 2.91](#2_002e5.xhtml#Exercise-2_002e91).
 > and check your result by hand.
 
 > **Exercise 2.95:** Define *P*₁, *P*₂, and *P*₃ to be the polynomials
-> $$\\begin{matrix}
+>
+> $$
+> \\begin{matrix}
 > {P\_{1}:} & {x^{2} - 2x + 1,} \\\\
 > {P\_{2}:} & {11x^{2} + 7,} \\\\
 > {P\_{3}:} & {13x + 5.} \\\\
-> \\end{matrix}$$
+> \\end{matrix}
+> $$
+>
 > Now define *Q*₁ to be the product of *P*₁ and *P*₂, and *Q*₂ to be the
 > product of *P*₁ and *P*₃, and use `greatest-common-divisor` ([Exercise
 > 2.94](#2_002e5.xhtml#Exercise-2_002e94)) to compute the GCD of *Q*₁
@@ -13973,15 +13861,15 @@ the case of reducing rational functions to lowest terms; the GCD will be
 used to divide both the numerator and denominator, so the integer
 constant factor will cancel out.
 
-More precisely, if *P* and *Q* are polynomials, let *O*₁ be the order of
-*P* (i.e., the order of the largest term of *P*) and let *O*₂ be the
-order of *Q*. Let *c* be the leading coefficient of *Q*. Then it can be
-shown that, if we multiply *P* by the *integerizing factor*
-*c*^(1 + *O*₁ − *O*₂), the resulting polynomial can be divided by *Q* by
+More precisely, if _P_ and _Q_ are polynomials, let *O*₁ be the order of
+_P_ (i.e., the order of the largest term of _P_) and let *O*₂ be the
+order of _Q_. Let _c_ be the leading coefficient of _Q_. Then it can be
+shown that, if we multiply _P_ by the _integerizing factor_
+_c_^(1 + *O*₁ − *O*₂), the resulting polynomial can be divided by _Q_ by
 using the `div-terms` algorithm without introducing any fractions. The
 operation of multiplying the dividend by this constant and then dividing
-is sometimes called the *pseudodivision* of *P* by *Q*. The remainder of
-the division is called the *pseudoremainder*.
+is sometimes called the _pseudodivision_ of _P_ by _Q_. The remainder of
+the division is called the _pseudoremainder_.
 
 > **Exercise 2.96:**
 >
@@ -13999,23 +13887,23 @@ the division is called the *pseudoremainder*.
 
 Thus, here is how to reduce a rational function to lowest terms:
 
--   Compute the GCD of the numerator and denominator, using the version
-    of `gcd-terms` from [Exercise
-    2.96](#2_002e5.xhtml#Exercise-2_002e96).
--   When you obtain the GCD, multiply both numerator and denominator by
-    the same integerizing factor before dividing through by the GCD, so
-    that division by the GCD will not introduce any noninteger
-    coefficients. As the factor you can use the leading coefficient of
-    the GCD raised to the power 1 + *O*₁ − *O*₂, where *O*₂ is the order
-    of the GCD and *O*₁ is the maximum of the orders of the numerator
-    and denominator. This will ensure that dividing the numerator and
-    denominator by the GCD will not introduce any fractions.
--   The result of this operation will be a numerator and denominator
-    with integer coefficients. The coefficients will normally be very
-    large because of all of the integerizing factors, so the last step
-    is to remove the redundant factors by computing the (integer)
-    greatest common divisor of all the coefficients of the numerator and
-    the denominator and dividing through by this factor.
+- Compute the GCD of the numerator and denominator, using the version
+  of `gcd-terms` from [Exercise
+  2.96](#2_002e5.xhtml#Exercise-2_002e96).
+- When you obtain the GCD, multiply both numerator and denominator by
+  the same integerizing factor before dividing through by the GCD, so
+  that division by the GCD will not introduce any noninteger
+  coefficients. As the factor you can use the leading coefficient of
+  the GCD raised to the power 1 + *O*₁ − *O*₂, where *O*₂ is the order
+  of the GCD and *O*₁ is the maximum of the orders of the numerator
+  and denominator. This will ensure that dividing the numerator and
+  denominator by the GCD will not introduce any fractions.
+- The result of this operation will be a numerator and denominator
+  with integer coefficients. The coefficients will normally be very
+  large because of all of the integerizing factors, so the last step
+  is to remove the redundant factors by computing the (integer)
+  greatest common divisor of all the coefficients of the numerator and
+  the denominator and dividing through by this factor.
 
 > **Exercise 2.97:**
 >
@@ -14033,7 +13921,7 @@ Thus, here is how to reduce a rational function to lowest terms:
 >
 >     <div className="lisp">
 >
->     ``` lisp
+>     ```lisp
 >     (define (reduce-integers n d)
 >       (let ((g (gcd n d)))
 >         (list (/ n g) (/ d g))))
@@ -14054,14 +13942,14 @@ Thus, here is how to reduce a rational function to lowest terms:
 >
 >     <div className="lisp">
 >
->     ``` lisp
->     (define p1 
+>     ```lisp
+>     (define p1
 >       (make-polynomial 'x '((1 1) (0 1))))
->     (define p2 
+>     (define p2
 >       (make-polynomial 'x '((3 1) (0 -1))))
->     (define p3 
+>     (define p3
 >       (make-polynomial 'x '((1 1))))
->     (define p4 
+>     (define p4
 >       (make-polynomial 'x '((2 1) (0 -1))))
 >     (define rf1 (make-rational p1 p2))
 >     (define rf2 (make-rational p3 p4))
@@ -14167,7 +14055,7 @@ To obtain, for example, the sum of two polynomials represented in this
 way, we need only add the values of the polynomials at corresponding
 points. To transform back to a more familiar representation, we can use
 the Lagrange interpolation formula, which shows how to recover the
-coefficients of a polynomial of degree *n* given the values of the
+coefficients of a polynomial of degree _n_ given the values of the
 polynomial at *n* + 1 points.
 
 </div>
@@ -14190,7 +14078,7 @@ should also add to our generic arithmetic system the ability to coerce a
 “number” to a polynomial by regarding it as a polynomial of degree zero
 whose coefficient is the number. This is necessary if we are going to
 perform operations such as
-\[*x*² + (*y*+1)*x* + 5\] + \[*x*² + 2*x* + 1\],
+\[*x*² + (_y_+1)*x* + 5\] + \[*x*² + 2*x* + 1\],
 which requires adding the coefficient *y* + 1 to the coefficient 2.
 
 </div>
@@ -14224,15 +14112,15 @@ for the ordered-list representation of sets ([Exercise
 
 [¹²⁶](#2_002e5.xhtml#DOCF126) The fact that Euclid’s Algorithm works for
 polynomials is formalized in algebra by saying that polynomials form a
-kind of algebraic domain called a *Euclidean ring*. A Euclidean ring is
+kind of algebraic domain called a _Euclidean ring_. A Euclidean ring is
 a domain that admits addition, subtraction, and commutative
-multiplication, together with a way of assigning to each element *x* of
-the ring a positive integer “measure” *m*(*x*) with the properties that
-*m*(*x**y*) ≥ *m*(*x*) for any nonzero *x* and *y* and that, given any
-*x* and *y*, there exists a *q* such that *y* = *q**x* + *r* and either
-*r* = 0 or *m*(*r*) \< *m*(*x*). From an abstract point of view, this is
+multiplication, together with a way of assigning to each element _x_ of
+the ring a positive integer “measure” _m_(_x_) with the properties that
+_m_(_x\*\*y_) ≥ *m*(_x_) for any nonzero _x_ and _y_ and that, given any
+_x_ and _y_, there exists a _q_ such that *y* = *q\*\*x* + *r* and either
+*r* = 0 or _m_(_r_) \< *m*(_x_). From an abstract point of view, this is
 what is needed to prove that Euclid’s Algorithm works. For the domain of
-integers, the measure *m* of an integer is the absolute value of the
+integers, the measure _m_ of an integer is the absolute value of the
 integer itself. For the domain of polynomials, the measure of a
 polynomial is its degree.
 
@@ -14262,22 +14150,11 @@ together with other ways to compute polynomial GCDs.
 
 </div>
 
-Next: [Chapter 3](#Chapter-3.xhtml#Chapter-3), Prev:
-[2.4](#2_002e4.xhtml#g_t2_002e4), Up: [2.5](#2_002e5.xhtml#g_t2_002e5)  
-\[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
-
 </div>
-
-[⇣](#2_002e5.xhtml#pagebottom)
 
 <div className="section">
 
-[⇡](#Chapter-3.xhtml#pagetop)
-Next: [3.1](#3_002e1.xhtml#g_t3_002e1), Prev:
-[2.5](#2_002e5.xhtml#g_t2_002e5), Up: [Top](#index.xhtml#Top)  
-\[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
-
-## 3Modularity, Objects, and State
+## 3 Modularity, Objects, and State
 
 > Mεταβάλλον ὰναπαύεται  
 > (Even while it changes, it stands still.)  
@@ -14294,7 +14171,7 @@ these tools are not sufficient for designing programs. Effective program
 synthesis also requires organizational principles that can guide us in
 formulating the overall design of a program. In particular, we need
 strategies to help us structure large systems so that they will be
-*modular*, that is, so that they can be divided “naturally” into
+_modular_, that is, so that they can be divided “naturally” into
 coherent parts that can be separately developed and maintained.
 
 One powerful design strategy, which is particularly appropriate to the
@@ -14314,10 +14191,10 @@ To a large extent, then, the way we organize a large program is dictated
 by our perception of the system to be modeled. In this chapter we will
 investigate two prominent organizational strategies arising from two
 rather different “world views” of the structure of systems. The first
-organizational strategy concentrates on *objects*, viewing a large
+organizational strategy concentrates on _objects_, viewing a large
 system as a collection of distinct objects whose behaviors may change
 over time. An alternative organizational strategy concentrates on the
-*streams* of information that flow in the system, much as an electrical
+_streams_ of information that flow in the system, much as an electrical
 engineer views a signal-processing system.
 
 Both the object-based approach and the stream-processing approach raise
@@ -14325,7 +14202,7 @@ significant linguistic issues in programming. With objects, we must be
 concerned with how a computational object can change and yet maintain
 its identity. This will force us to abandon our old substitution model
 of computation ([1.1.5](#1_002e1.xhtml#g_t1_002e1_002e5)) in favor of a
-more mechanistic but less theoretically tractable *environment model* of
+more mechanistic but less theoretically tractable _environment model_ of
 computation. The difficulties of dealing with objects, change, and
 identity are a fundamental consequence of the need to grapple with time
 in our computational models. These difficulties become even greater when
@@ -14333,32 +14210,22 @@ we allow the possibility of concurrent execution of programs. The stream
 approach can be most fully exploited when we decouple simulated time in
 our model from the order of the events that take place in the computer
 during evaluation. We will accomplish this using a technique known as
-*delayed evaluation*.
-
-Next: [3.1](#3_002e1.xhtml#g_t3_002e1), Prev:
-[2.5](#2_002e5.xhtml#g_t2_002e5), Up: [Top](#index.xhtml#Top)  
-\[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
+_delayed evaluation_.
 
 </div>
 
-[⇣](#Chapter-3.xhtml#pagebottom)
-
 <div className="section">
 
-[⇡](#3_002e1.xhtml#pagetop)
-Next: [3.2](#3_002e2.xhtml#g_t3_002e2), Prev: [Chapter
-3](#Chapter-3.xhtml#Chapter-3), Up: [Chapter
-3](#Chapter-3.xhtml#Chapter-3)  
 \[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
 
-### 3.1Assignment and Local State
+### 3.1 Assignment and Local State
 
 We ordinarily view the world as populated by independent objects, each
 of which has a state that changes over time. An object is said to “have
 state” if its behavior is influenced by its history. A bank account, for
 example, has state in that the answer to the question “Can I withdraw
 $100?” depends upon the history of deposit and withdrawal transactions.
-We can characterize an object’s state by one or more *state variables*,
+We can characterize an object’s state by one or more _state variables_,
 which among them maintain enough information about history to determine
 the object’s current behavior. In a simple banking system, we could
 characterize the state of an account by a current balance rather than by
@@ -14376,7 +14243,7 @@ This view of a system can be a powerful framework for organizing
 computational models of the system. For such a model to be modular, it
 should be decomposed into computational objects that model the actual
 objects in the system. Each computational object must have its own
-*local state variables* describing the actual object’s state. Since the
+_local state variables_ describing the actual object’s state. Since the
 states of objects in the system being modeled change over time, the
 state variables of the corresponding computational objects must also
 change. If we choose to model the flow of time in the system by the
@@ -14384,10 +14251,10 @@ elapsed time in the computer, then we must have a way to construct
 computational objects whose behaviors change as our programs run. In
 particular, if we wish to model state variables by ordinary symbolic
 names in the programming language, then the language must provide an
-*assignment operator* to enable us to change the value associated with a
+_assignment operator_ to enable us to change the value associated with a
 name.
 
-#### 3.1.1Local State Variables
+#### 3.1.1 Local State Variables
 
 To illustrate what we mean by having a computational object with
 time-varying state, let us model the situation of withdrawing money from
@@ -14395,13 +14262,13 @@ a bank account. We will do this using a procedure `withdraw`, which
 takes as argument an `amount` to be withdrawn. If there is enough money
 in the account to accommodate the withdrawal, then `withdraw` should
 return the balance remaining after the withdrawal. Otherwise, `withdraw`
-should return the message *Insufficient funds*. For example, if we begin
+should return the message _Insufficient funds_. For example, if we begin
 with $100 in the account, we should obtain the following sequence of
 responses using `withdraw`:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (withdraw 25)
 75
 
@@ -14430,12 +14297,12 @@ balance of money in the account and define `withdraw` as a procedure
 that accesses `balance`. The `withdraw` procedure checks to see if
 `balance` is at least as large as the requested `amount`. If so,
 `withdraw` decrements `balance` by `amount` and returns the new value of
-`balance`. Otherwise, `withdraw` returns the *Insufficient funds*
+`balance`. Otherwise, `withdraw` returns the _Insufficient funds_
 message. Here are the definitions of `balance` and `withdraw`:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define balance 100)
 
 (define (withdraw amount)
@@ -14451,7 +14318,7 @@ Decrementing `balance` is accomplished by the expression
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (set! balance (- balance amount))
 ```
 
@@ -14461,15 +14328,15 @@ This uses the `set!` special form, whose syntax is
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (set! ⟨name⟩ ⟨new-value⟩)
 ```
 
 </div>
 
-Here `⟨``name``⟩` is a symbol and `⟨``new-value``⟩` is any expression.
-`Set!` changes `⟨``name``⟩` so that its value is the result obtained by
-evaluating `⟨``new-value``⟩`. In the case at hand, we are changing
+Here ` ⟨``name``⟩ ` is a symbol and ` ⟨``new-value``⟩ ` is any expression.
+`Set!` changes ` ⟨``name``⟩ ` so that its value is the result obtained by
+evaluating ` ⟨``new-value``⟩ `. In the case at hand, we are changing
 `balance` so that its new value will be the result of subtracting
 `amount` from the previous value of
 `balance`.[¹³⁰](#3_002e1.xhtml#FOOT130)
@@ -14481,15 +14348,15 @@ general, evaluating the expression
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (begin ⟨exp₁⟩ ⟨exp₂⟩ … ⟨expₖ⟩)
 ```
 
 </div>
 
-causes the expressions ⟨*e**x**p*₁⟩ through ⟨*e**x**p*_(*k*)⟩ to be
+causes the expressions ⟨*e**x**p*₁⟩ through ⟨_e**x**p\_\_(*k*)⟩ to be
 evaluated in sequence and the value of the final expression
-⟨*e**x**p*_(*k*)⟩ to be returned as the value of the entire `begin`
+⟨*e**x**p*_(_k_)⟩ to be returned as the value of the entire `begin`
 form.[¹³¹](#3_002e1.xhtml#FOOT131)
 
 Although `withdraw` works as desired, the variable `balance` presents a
@@ -14507,12 +14374,12 @@ as follows:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define new-withdraw
   (let ((balance 100))
     (lambda (amount)
       (if (>= balance amount)
-          (begin (set! balance 
+          (begin (set! balance
                        (- balance amount))
                  balance)
           "Insufficient funds"))))
@@ -14555,11 +14422,11 @@ the initial amount of money in the account.[¹³³](#3_002e1.xhtml#FOOT133)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (make-withdraw balance)
   (lambda (amount)
     (if (>= balance amount)
-        (begin (set! balance 
+        (begin (set! balance
                      (- balance amount))
                balance)
         "Insufficient funds")))
@@ -14572,7 +14439,7 @@ the initial amount of money in the account.[¹³³](#3_002e1.xhtml#FOOT133)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define W1 (make-withdraw 100))
 (define W2 (make-withdraw 100))
 
@@ -14601,11 +14468,11 @@ returns a “bank-account object” with a specified initial balance:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (make-account balance)
   (define (withdraw amount)
     (if (>= balance amount)
-        (begin (set! balance 
+        (begin (set! balance
                      (- balance amount))
                balance)
         "Insufficient funds"))
@@ -14615,7 +14482,7 @@ returns a “bank-account object” with a specified initial balance:
   (define (dispatch m)
     (cond ((eq? m 'withdraw) withdraw)
           ((eq? m 'deposit) deposit)
-          (else (error "Unknown request: 
+          (else (error "Unknown request:
                  MAKE-ACCOUNT" m))))
   dispatch)
 ```
@@ -14628,7 +14495,7 @@ procedures `deposit` and `withdraw` that access `balance` and an
 additional procedure `dispatch` that takes a “message” as input and
 returns one of the two local procedures. The `dispatch` procedure itself
 is returned as the value that represents the bank-account object. This
-is precisely the *message-passing* style of programming that we saw in
+is precisely the _message-passing_ style of programming that we saw in
 [2.4.3](#2_002e4.xhtml#g_t2_002e4_002e3), although here we are using it
 in conjunction with the ability to modify local variables.
 
@@ -14636,7 +14503,7 @@ in conjunction with the ability to modify local variables.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define acc (make-account 100))
 
 ((acc 'withdraw) 50)
@@ -14660,7 +14527,7 @@ case with `make-withdraw`, another call to `make-account`
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define acc2 (make-account 100))
 ```
 
@@ -14669,7 +14536,7 @@ case with `make-withdraw`, another call to `make-account`
 will produce a completely separate account object, which maintains its
 own local `balance`.
 
-> **Exercise 3.1:** An *accumulator* is a procedure that is called
+> **Exercise 3.1:** An _accumulator_ is a procedure that is called
 > repeatedly with a single numeric argument and accumulates its
 > arguments into a sum. Each time it is called, it returns the currently
 > accumulated sum. Write a procedure `make-accumulator` that generates
@@ -14679,7 +14546,7 @@ own local `balance`.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define A (make-accumulator 5))
 >
 > (A 10)
@@ -14706,7 +14573,7 @@ own local `balance`.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define s (make-monitored sqrt))
 >
 > (s 100)
@@ -14724,8 +14591,8 @@ own local `balance`.
 >
 > <div className="lisp">
 >
-> ``` lisp
-> (define acc 
+> ```lisp
+> (define acc
 >   (make-account 100 'secret-password))
 > ```
 >
@@ -14737,7 +14604,7 @@ own local `balance`.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > ((acc 'secret-password 'withdraw) 40)
 > 60
 >
@@ -14753,7 +14620,7 @@ own local `balance`.
 > consecutive times with an incorrect password, it invokes the procedure
 > `call-the-cops`.
 
-#### 3.1.2The Benefits of Introducing Assignment
+#### 3.1.2 The Benefits of Introducing Assignment
 
 As we shall see, introducing assignment into our programming language
 leads us into a thicket of difficult conceptual issues. Nevertheless,
@@ -14771,7 +14638,7 @@ property that if we start with a given number *x*₁ and form
 
 <div className="lisp">
 
-``` lisp
+```lisp
 x₂ = (rand-update x₁)
 x₃ = (rand-update x₂)
 ```
@@ -14788,7 +14655,7 @@ as the random number, and also stores this as the new value of `x`.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define rand
   (let ((x random-init))
     (lambda () (set! x (rand-update x)) x)))
@@ -14801,20 +14668,20 @@ using assignment by simply calling `rand-update` directly. However, this
 would mean that any part of our program that used random numbers would
 have to explicitly remember the current value of `x` to be passed as an
 argument to `rand-update`. To realize what an annoyance this would be,
-consider using random numbers to implement a technique called *Monte
-Carlo simulation*.
+consider using random numbers to implement a technique called _Monte
+Carlo simulation_.
 
 The Monte Carlo method consists of choosing sample experiments at random
 from a large set and then making deductions on the basis of the
 probabilities estimated from tabulating the results of those
-experiments. For example, we can approximate *π* using the fact that
+experiments. For example, we can approximate _π_ using the fact that
 6/*π*² is the probability that two integers chosen at random will have
 no factors in common; that is, that their greatest common divisor will
-be 1.[¹³⁵](#3_002e1.xhtml#FOOT135) To obtain the approximation to *π*,
+be 1.[¹³⁵](#3_002e1.xhtml#FOOT135) To obtain the approximation to _π_,
 we perform a large number of experiments. In each experiment we choose
 two integers at random and perform a test to see if their GCD is 1. The
 fraction of times that the test is passed gives us our estimate of
-6/*π*², and from this we obtain our approximation to *π*.
+6/*π*², and from this we obtain our approximation to _π_.
 
 The heart of our program is a procedure `monte-carlo`, which takes as
 arguments the number of times to try an experiment, together with the
@@ -14826,9 +14693,9 @@ be true.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (estimate-pi trials)
-  (sqrt (/ 6 (monte-carlo trials 
+  (sqrt (/ 6 (monte-carlo trials
                           cesaro-test))))
 (define (cesaro-test)
    (= (gcd (rand) (rand)) 1))
@@ -14838,10 +14705,10 @@ be true.
     (cond ((= trials-remaining 0)
            (/ trials-passed trials))
           ((experiment)
-           (iter (- trials-remaining 1) 
+           (iter (- trials-remaining 1)
                  (+ trials-passed 1)))
           (else
-           (iter (- trials-remaining 1) 
+           (iter (- trials-remaining 1)
                  trials-passed))))
   (iter trials 0))
 ```
@@ -14854,14 +14721,14 @@ assignment to model local state:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (estimate-pi trials)
-  (sqrt (/ 6 (random-gcd-test trials 
+  (sqrt (/ 6 (random-gcd-test trials
                               random-init))))
 
 (define (random-gcd-test trials initial-x)
-  (define (iter trials-remaining 
-                trials-passed 
+  (define (iter trials-remaining
+                trials-passed
                 x)
     (let ((x1 (rand-update x)))
       (let ((x2 (rand-update x1)))
@@ -14916,10 +14783,10 @@ than if all state had to be manipulated explicitly, by passing
 additional parameters. Unfortunately, as we shall see, the story is not
 so simple.
 
-> **Exercise 3.5:** *Monte Carlo integration* is a method of estimating
+> **Exercise 3.5:** _Monte Carlo integration_ is a method of estimating
 > definite integrals by means of Monte Carlo simulation. Consider
 > computing the area of a region of space described by a predicate
-> *P*(*x*,*y*) that is true for points (*x*,*y*) in the region and false
+> _P_(_x_,_y_) that is true for points (_x_,_y_) in the region and false
 > for points not in the region. For example, the region contained within
 > a circle of radius 3 centered at (5, 7) is described by the predicate
 > that tests whether (*x*−5)² + (*y*−7)² ≤ 3². To estimate the area of
@@ -14928,8 +14795,8 @@ so simple.
 > diagonally opposite corners at (2, 4) and (8, 10) contains the circle
 > above. The desired integral is the area of that portion of the
 > rectangle that lies in the region. We can estimate the integral by
-> picking, at random, points (*x*,*y*) that lie in the rectangle, and
-> testing *P*(*x*,*y*) for each point to determine whether the point
+> picking, at random, points (_x_,_y_) that lie in the rectangle, and
+> testing _P_(_x_,_y_) for each point to determine whether the point
 > lies in the region. If we try this with many points, then the fraction
 > of points that fall in the region should give an estimate of the
 > proportion of the rectangle that lies in the region. Hence,
@@ -14940,8 +14807,8 @@ so simple.
 > that takes as arguments a predicate `P`, upper and lower bounds `x1`,
 > `x2`, `y1`, and `y2` for the rectangle, and the number of trials to
 > perform in order to produce the estimate. Your procedure should use
-> the same `monte-carlo` procedure that was used above to estimate *π*.
-> Use your `estimate-integral` to produce an estimate of *π* by
+> the same `monte-carlo` procedure that was used above to estimate _π_.
+> Use your `estimate-integral` to produce an estimate of _π_ by
 > measuring the area of a unit circle.
 >
 > You will find it useful to have a procedure that returns a number
@@ -14952,7 +14819,7 @@ so simple.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (random-in-range low high)
 >   (let ((range (- high low)))
 >     (+ low (random range))))
@@ -14966,11 +14833,11 @@ so simple.
 > the symbol `generate` or the symbol `reset` and behaves as follows:
 > `(rand 'generate)` produces a new random number;
 > `((rand 'reset) ⟨new-value⟩)` resets the internal state variable to
-> the designated `⟨``new-value``⟩`. Thus, by resetting the state, one
+> the designated ` ⟨``new-value``⟩ `. Thus, by resetting the state, one
 > can generate repeatable sequences. These are very handy to have when
 > testing and debugging programs that use random numbers.
 
-#### 3.1.3The Costs of Introducing Assignment
+#### 3.1.3 The Costs of Introducing Assignment
 
 As we have seen, the `set!` operation enables us to model objects that
 have local state. However, this advantage comes at a price. Our
@@ -14984,8 +14851,8 @@ So long as we do not use assignments, two evaluations of the same
 procedure with the same arguments will produce the same result, so that
 procedures can be viewed as computing mathematical functions.
 Programming without any use of assignments, as we did throughout the
-first two chapters of this book, is accordingly known as *functional
-programming*.
+first two chapters of this book, is accordingly known as _functional
+programming_.
 
 To understand how assignment complicates matters, consider a simplified
 version of the `make-withdraw` procedure of
@@ -14994,7 +14861,7 @@ for an insufficient amount:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (make-simplified-withdraw balance)
   (lambda (amount)
     (set! balance (- balance amount))
@@ -15016,7 +14883,7 @@ which does not use `set!`:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (make-decrementer balance)
   (lambda (amount)
     (- balance amount)))
@@ -15030,7 +14897,7 @@ successive calls, as with `make-simplified-withdraw`:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define D (make-decrementer 25))
 
 (D 20)
@@ -15047,7 +14914,7 @@ works. For instance, let us analyze the evaluation of the expression
 
 <div className="lisp">
 
-``` lisp
+```lisp
 ((make-decrementer 25) 20)
 ```
 
@@ -15059,7 +14926,7 @@ to
 
 <div className="lisp">
 
-``` lisp
+```lisp
 ((lambda (amount) (- 25 amount)) 20)
 ```
 
@@ -15070,7 +14937,7 @@ the `lambda` expression:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (- 25 20)
 ```
 
@@ -15083,7 +14950,7 @@ analysis with `make-simplified-withdraw`:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 ((make-simplified-withdraw 25) 20)
 ```
 
@@ -15095,8 +14962,8 @@ to[¹³⁷](#3_002e1.xhtml#FOOT137)
 
 <div className="lisp">
 
-``` lisp
-((lambda (amount) 
+```lisp
+((lambda (amount)
    (set! balance (- 25 amount)) 25)
  20)
 ```
@@ -15108,7 +14975,7 @@ the `lambda` expression:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (set! balance (- 25 20)) 25
 ```
 
@@ -15144,7 +15011,7 @@ create two procedures:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define D1 (make-decrementer 25))
 (define D2 (make-decrementer 25))
 ```
@@ -15160,7 +15027,7 @@ Contrast this with making two calls to `make-simplified-withdraw`:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define W1 (make-simplified-withdraw 25))
 (define W2 (make-simplified-withdraw 25))
 ```
@@ -15173,7 +15040,7 @@ interactions:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (W1 20)
 5
 
@@ -15194,7 +15061,7 @@ evaluating the expression.
 
 A language that supports the concept that “equals can be substituted for
 equals” in an expression without changing the value of the expression is
-said to be *referentially transparent*. Referential transparency is
+said to be _referentially transparent_. Referential transparency is
 violated when we include `set!` in our computer language. This makes it
 tricky to determine when we can simplify expressions by substituting
 equivalent expressions. Consequently, reasoning about programs that use
@@ -15209,7 +15076,7 @@ modifying one object and then observing whether the other object has
 changed in the same way. But how can we tell if an object has “changed”
 other than by observing the “same” object twice and seeing whether some
 property of the object differs from one observation to the next? Thus,
-we cannot determine “change” without some *a priori* notion of
+we cannot determine “change” without some _a priori_ notion of
 “sameness,” and we cannot determine sameness without observing the
 effects of change.
 
@@ -15219,7 +15086,7 @@ There is a substantial difference between modeling this as
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define peter-acc (make-account 100))
 (define paul-acc (make-account 100))
 ```
@@ -15230,7 +15097,7 @@ and modeling it as
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define peter-acc (make-account 100))
 (define paul-acc peter-acc)
 ```
@@ -15239,8 +15106,8 @@ and modeling it as
 
 In the first situation, the two bank accounts are distinct. Transactions
 made by Peter will not affect Paul’s account, and vice versa. In the
-second situation, however, we have defined `paul-acc` to be *the same
-thing* as `peter-acc`. In effect, Peter and Paul now have a joint bank
+second situation, however, we have defined `paul-acc` to be _the same
+thing_ as `peter-acc`. In effect, Peter and Paul now have a joint bank
 account, and if Peter makes a withdrawal from `peter-acc` Paul will
 observe less money in `paul-acc`. These two similar but distinct
 situations can cause confusion in building computational models. With
@@ -15271,7 +15138,7 @@ same” rational number.
 ##### Pitfalls of imperative programming
 
 In contrast to functional programming, programming that makes extensive
-use of assignment is known as *imperative programming*. In addition to
+use of assignment is known as _imperative programming_. In addition to
 raising complications about computational models, programs written in
 imperative style are susceptible to bugs that cannot occur in functional
 programs. For example, recall the iterative factorial program from
@@ -15279,7 +15146,7 @@ programs. For example, recall the iterative factorial program from
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (factorial n)
   (define (iter product counter)
     (if (> counter n)
@@ -15297,14 +15164,14 @@ values of the variables `product` and `counter`:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (factorial n)
   (let ((product 1)
         (counter 1))
     (define (iter)
       (if (> counter n)
           product
-          (begin (set! product (* counter 
+          (begin (set! product (* counter
                                   product))
                  (set! counter (+ counter 1))
                  (iter))))
@@ -15320,7 +15187,7 @@ assignments in the opposite order
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (set! counter (+ counter 1))
 (set! product (* counter product))
 ```
@@ -15355,10 +15222,10 @@ with local state in designing simulations.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define paul-acc
->   (make-joint peter-acc 
->               'open-sesame 
+>   (make-joint peter-acc
+>               'open-sesame
 >               'rosebud))
 > ```
 >
@@ -15380,7 +15247,7 @@ with local state in designing simulations.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (+ (f 0) (f 1))
 > ```
 >
@@ -15424,7 +15291,7 @@ designating predicates by names that end with a question mark.
 
 [¹³¹](#3_002e1.xhtml#DOCF131) We have already used `begin` implicitly in
 our programs, because in Scheme the body of a procedure can be a
-sequence of expressions. Also, the `⟨``consequent``⟩` part of each
+sequence of expressions. Also, the ` ⟨``consequent``⟩ ` part of each
 clause in a `cond` expression can be a sequence of expressions rather
 than a single expression.
 
@@ -15433,9 +15300,9 @@ than a single expression.
 <div id="3_002e1.xhtml#FOOT132">
 
 [¹³²](#3_002e1.xhtml#DOCF132) In programming-language jargon, the
-variable `balance` is said to be *encapsulated* within the
+variable `balance` is said to be _encapsulated_ within the
 `new-withdraw` procedure. Encapsulation reflects the general
-system-design principle known as the *hiding principle*: One can make a
+system-design principle known as the _hiding principle_: One can make a
 system more modular and robust by protecting parts of the system from
 each other; that is, by providing information access only to those parts
 of the system that have a “need to know.”
@@ -15456,8 +15323,8 @@ discussion of the environment model of evaluation in
 <div id="3_002e1.xhtml#FOOT134">
 
 [¹³⁴](#3_002e1.xhtml#DOCF134) One common way to implement `rand-update`
-is to use the rule that *x* is updated to *a**x* + *b* modulo *m*, where
-*a*, *b*, and *m* are appropriately chosen integers. Chapter 3 of [Knuth
+is to use the rule that _x_ is updated to *a\*\*x* + *b* modulo _m_, where
+_a_, _b_, and _m_ are appropriately chosen integers. Chapter 3 of [Knuth
 1981](#References.xhtml#Knuth-1981) includes an extensive discussion of
 techniques for generating sequences of random numbers and establishing
 their statistical properties. Notice that the `rand-update` procedure
@@ -15465,7 +15332,7 @@ computes a mathematical function: Given the same input twice, it
 produces the same output. Therefore, the number sequence produced by
 `rand-update` certainly is not “random,” if by “random” we insist that
 each number in the sequence is unrelated to the preceding number. The
-relation between “real randomness” and so-called *pseudo-random*
+relation between “real randomness” and so-called _pseudo-random_
 sequences, which are produced by well-determined computations and yet
 have suitable statistical properties, is a complex question involving
 difficult issues in mathematics and philosophy. Kolmogorov, Solomonoff,
@@ -15496,7 +15363,7 @@ decimal value.
 <div id="3_002e1.xhtml#FOOT137">
 
 [¹³⁷](#3_002e1.xhtml#DOCF137) We don’t substitute for the occurrence of
-`balance` in the `set!` expression because the `⟨``name``⟩` in a `set!`
+`balance` in the `set!` expression because the ` ⟨``name``⟩ ` in a `set!`
 is not evaluated. If we did substitute for it, we would get
 `(set! 25 (- 25 amount))`, which makes no sense.
 
@@ -15505,14 +15372,14 @@ is not evaluated. If we did substitute for it, we would get
 <div id="3_002e1.xhtml#FOOT138">
 
 [¹³⁸](#3_002e1.xhtml#DOCF138) The phenomenon of a single computational
-object being accessed by more than one name is known as *aliasing*. The
+object being accessed by more than one name is known as _aliasing_. The
 joint bank account situation illustrates a very simple example of an
 alias. In [3.3](#3_002e3.xhtml#g_t3_002e3) we will see much more complex
 examples, such as “distinct” compound data structures that share parts.
 Bugs can occur in our programs if we forget that a change to an object
 may also, as a “side effect,” change a “different” object because the
 two “different” objects are actually a single object appearing under
-different aliases. These so-called *side-effect bugs* are so difficult
+different aliases. These so-called _side-effect bugs_ are so difficult
 to locate and to analyze that some people have proposed that programming
 languages be designed in such a way as to not allow side effects or
 aliasing ([Lampson et al.
@@ -15539,32 +15406,22 @@ programming and obscure the important ideas.
 
 </div>
 
-Next: [3.2](#3_002e2.xhtml#g_t3_002e2), Prev: [Chapter
-3](#Chapter-3.xhtml#Chapter-3), Up: [3.1](#3_002e1.xhtml#g_t3_002e1)  
-\[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
-
 </div>
-
-[⇣](#3_002e1.xhtml#pagebottom)
 
 <div className="section">
 
-[⇡](#3_002e2.xhtml#pagetop)
-Next: [3.3](#3_002e3.xhtml#g_t3_002e3), Prev:
-[3.1](#3_002e1.xhtml#g_t3_002e1), Up: [Chapter
-3](#Chapter-3.xhtml#Chapter-3)  
 \[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
 
-### 3.2The Environment Model of Evaluation
+### 3.2 The Environment Model of Evaluation
 
 When we introduced compound procedures in [Chapter
 1](#Chapter-1.xhtml#Chapter-1), we used the substitution model of
 evaluation ([1.1.5](#1_002e1.xhtml#g_t1_002e1_002e5)) to define what is
 meant by applying a procedure to arguments:
 
--   To apply a compound procedure to arguments, evaluate the body of the
-    procedure with each formal parameter replaced by the corresponding
-    argument.
+- To apply a compound procedure to arguments, evaluate the body of the
+  procedure with each formal parameter replaced by the corresponding
+  argument.
 
 Once we admit assignment into our programming language, such a
 definition is no longer adequate. In particular,
@@ -15572,18 +15429,18 @@ definition is no longer adequate. In particular,
 assignment, a variable can no longer be considered to be merely a name
 for a value. Rather, a variable must somehow designate a “place” in
 which values can be stored. In our new model of evaluation, these places
-will be maintained in structures called *environments*.
+will be maintained in structures called _environments_.
 
-An environment is a sequence of *frames*. Each frame is a table
-(possibly empty) of *bindings*, which associate variable names with
+An environment is a sequence of _frames_. Each frame is a table
+(possibly empty) of _bindings_, which associate variable names with
 their corresponding values. (A single frame may contain at most one
 binding for any variable.) Each frame also has a pointer to its
-*enclosing environment*, unless, for the purposes of discussion, the
-frame is considered to be *global*. The *value of a variable* with
+_enclosing environment_, unless, for the purposes of discussion, the
+frame is considered to be _global_. The _value of a variable_ with
 respect to an environment is the value given by the binding of the
 variable in the first frame in the environment that contains a binding
 for that variable. If no frame in the sequence specifies a binding for
-the variable, then the variable is said to be *unbound* in the
+the variable, then the variable is said to be _unbound_ in the
 environment.
 
 [Figure 3.1](#3_002e2.xhtml#Figure-3_002e1) shows a simple environment
@@ -15597,7 +15454,7 @@ is determined as follows: We examine the first frame in the sequence
 enclosing environment D and find the binding in frame I. On the other
 hand, the value of `x` in environment A is 7, because the first frame in
 the sequence (frame II) contains a binding of `x` to 7. With respect to
-environment A, the binding of `x` to 7 in frame II is said to *shadow*
+environment A, the binding of `x` to 7 in frame II is said to _shadow_
 the binding of `x` to 3 in frame I.
 
 SVG
@@ -15619,13 +15476,13 @@ associated with the primitive procedures. For example, the idea that `+`
 is the symbol for addition is captured by saying that the symbol `+` is
 bound in the global environment to the primitive addition procedure.
 
-#### 3.2.1The Rules for Evaluation
+#### 3.2.1 The Rules for Evaluation
 
 The overall specification of how the interpreter evaluates a combination
 remains the same as when we first introduced it in
 [1.1.3](#1_002e1.xhtml#g_t1_002e1_002e3):
 
--   To evaluate a combination:
+- To evaluate a combination:
 
 1.  Evaluate the subexpressions of the
     combination.[¹⁴⁰](#3_002e2.xhtml#FOOT140)
@@ -15645,7 +15502,7 @@ definition
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (square x)
   (* x x))
 ```
@@ -15658,7 +15515,7 @@ have been equivalent to have used
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define square
   (lambda (x) (* x x)))
 ```
@@ -15710,16 +15567,16 @@ global environment.
 The environment model of procedure application can be summarized by two
 rules:
 
--   A procedure object is applied to a set of arguments by constructing
-    a frame, binding the formal parameters of the procedure to the
-    arguments of the call, and then evaluating the body of the procedure
-    in the context of the new environment constructed. The new frame has
-    as its enclosing environment the environment part of the procedure
-    object being applied.
--   A procedure is created by evaluating a λ-expression relative to a
-    given environment. The resulting procedure object is a pair
-    consisting of the text of the λ-expression and a pointer to the
-    environment in which the procedure was created.
+- A procedure object is applied to a set of arguments by constructing
+  a frame, binding the formal parameters of the procedure to the
+  arguments of the call, and then evaluating the body of the procedure
+  in the context of the new environment constructed. The new frame has
+  as its enclosing environment the environment part of the procedure
+  object being applied.
+- A procedure is created by evaluating a λ-expression relative to a
+  given environment. The resulting procedure object is a pair
+  consisting of the text of the λ-expression and a pointer to the
+  environment in which the procedure was created.
 
 We also specify that defining a symbol using `define` creates a binding
 in the current environment frame and assigns to the symbol the indicated
@@ -15741,7 +15598,7 @@ a blueprint for implementing a working interpreter. The following
 sections elaborate the details of the model by analyzing some
 illustrative programs.
 
-#### 3.2.2Applying Simple Procedures
+#### 3.2.2 Applying Simple Procedures
 
 When we introduced the substitution model in
 [1.1.5](#1_002e1.xhtml#g_t1_002e1_002e5) we showed how the combination
@@ -15749,7 +15606,7 @@ When we introduced the substitution model in
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (square x)
   (* x x))
 (define (sum-of-squares x y)
@@ -15778,7 +15635,7 @@ the body of `f`:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (sum-of-squares (+ a 1) (* a 2))
 ```
 
@@ -15832,7 +15689,7 @@ detail in [Chapter 5](#Chapter-5.xhtml#Chapter-5).
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (factorial n)
 >   (if (= n 1)
 >       1
@@ -15845,12 +15702,12 @@ detail in [Chapter 5](#Chapter-5.xhtml#Chapter-5).
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (factorial n)
 >   (fact-iter 1 1 n))
 >
-> (define (fact-iter product 
->                    counter 
+> (define (fact-iter product
+>                    counter
 >                    max-count)
 >   (if (> counter max-count)
 >       product
@@ -15865,7 +15722,7 @@ detail in [Chapter 5](#Chapter-5.xhtml#Chapter-5).
 > using each version of the `factorial`
 > procedure.[¹⁴²](#3_002e2.xhtml#FOOT142)
 
-#### 3.2.3Frames as the Repository of Local State
+#### 3.2.3 Frames as the Repository of Local State
 
 We can turn to the environment model to see how procedures and
 assignment can be used to represent objects with local state. As an
@@ -15875,11 +15732,11 @@ procedure
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (make-withdraw balance)
   (lambda (amount)
     (if (>= balance amount)
-        (begin (set! balance 
+        (begin (set! balance
                      (- balance amount))
                balance)
         "Insufficient funds")))
@@ -15891,7 +15748,7 @@ Let us describe the evaluation of
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define W1 (make-withdraw 100))
 ```
 
@@ -15901,7 +15758,7 @@ followed by
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (W1 50)
 50
 ```
@@ -15923,7 +15780,7 @@ procedure `make-withdraw` to an argument:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define W1 (make-withdraw 100))
 ```
 
@@ -15948,7 +15805,7 @@ Now we can analyze what happens when `W1` is applied to an argument:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (W1 50)
 50
 ```
@@ -15964,7 +15821,7 @@ new environment, we evaluate the body of the procedure:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (if (>= balance amount)
     (begin (set! balance (- balance amount))
            balance)
@@ -16004,7 +15861,7 @@ another call to `make-withdraw`:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define W2 (make-withdraw 100))
 ```
 
@@ -16034,12 +15891,12 @@ second object.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (make-withdraw initial-amount)
 >   (let ((balance initial-amount))
 >     (lambda (amount)
 >       (if (>= balance amount)
->           (begin (set! balance 
+>           (begin (set! balance
 >                        (- balance amount))
 >                  balance)
 >           "Insufficient funds"))))
@@ -16052,7 +15909,7 @@ second object.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (let ((⟨var⟩ ⟨exp⟩)) ⟨body⟩)
 > ```
 >
@@ -16062,7 +15919,7 @@ second object.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > ((lambda (⟨var⟩) ⟨body⟩) ⟨exp⟩)
 > ```
 >
@@ -16074,7 +15931,7 @@ second object.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define W1 (make-withdraw 100))
 > (W1 50)
 > (define W2 (make-withdraw 100))
@@ -16086,7 +15943,7 @@ second object.
 > same behavior. How do the environment structures differ for the two
 > versions?
 
-#### 3.2.4Internal Definitions
+#### 3.2.4 Internal Definitions
 
 Section [1.1.8](#1_002e1.xhtml#g_t1_002e1_002e8) introduced the idea
 that procedures can have internal definitions, thus leading to a block
@@ -16094,7 +15951,7 @@ structure as in the following procedure to compute square roots:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (sqrt x)
   (define (good-enough? guess)
     (< (abs (- (square guess) x)) 0.001))
@@ -16127,7 +15984,7 @@ evaluated in E1. Since the first expression in the body of `sqrt` is
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (good-enough? guess)
   (< (abs (- (square guess) x)) 0.001))
 ```
@@ -16162,15 +16019,15 @@ The environment model thus explains the two key properties that make
 local procedure definitions a useful technique for modularizing
 programs:
 
--   The names of the local procedures do not interfere with names
-    external to the enclosing procedure, because the local procedure
-    names will be bound in the frame that the procedure creates when it
-    is run, rather than being bound in the global environment.
--   The local procedures can access the arguments of the enclosing
-    procedure, simply by using parameter names as free variables. This
-    is because the body of the local procedure is evaluated in an
-    environment that is subordinate to the evaluation environment for
-    the enclosing procedure.
+- The names of the local procedures do not interfere with names
+  external to the enclosing procedure, because the local procedure
+  names will be bound in the frame that the procedure creates when it
+  is run, rather than being bound in the global environment.
+- The local procedures can access the arguments of the enclosing
+  procedure, simply by using parameter names as free variables. This
+  is because the body of the local procedure is evaluated in an
+  environment that is subordinate to the evaluation environment for
+  the enclosing procedure.
 
 > **Exercise 3.11:** In [3.2.3](#3_002e2.xhtml#g_t3_002e2_002e3) we saw
 > how the environment model described the behavior of procedures with
@@ -16180,12 +16037,12 @@ programs:
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (make-account balance)
 >   (define (withdraw amount)
 >     (if (>= balance amount)
->         (begin (set! balance 
->                      (- balance 
+>         (begin (set! balance
+>                      (- balance
 >                         amount))
 >                balance)
 >         "Insufficient funds"))
@@ -16195,8 +16052,8 @@ programs:
 >   (define (dispatch m)
 >     (cond ((eq? m 'withdraw) withdraw)
 >           ((eq? m 'deposit) deposit)
->           (else (error "Unknown request: 
->                         MAKE-ACCOUNT" 
+>           (else (error "Unknown request:
+>                         MAKE-ACCOUNT"
 >                        m))))
 >   dispatch)
 > ```
@@ -16208,7 +16065,7 @@ programs:
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define acc (make-account 50))
 >
 > ((acc 'deposit) 40)
@@ -16225,7 +16082,7 @@ programs:
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define acc2 (make-account 100))
 > ```
 >
@@ -16290,23 +16147,13 @@ fact shared.
 
 </div>
 
-Next: [3.3](#3_002e3.xhtml#g_t3_002e3), Prev:
-[3.1](#3_002e1.xhtml#g_t3_002e1), Up: [3.2](#3_002e2.xhtml#g_t3_002e2)  
-\[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
-
 </div>
-
-[⇣](#3_002e2.xhtml#pagebottom)
 
 <div className="section">
 
-[⇡](#3_002e3.xhtml#pagetop)
-Next: [3.4](#3_002e4.xhtml#g_t3_002e4), Prev:
-[3.2](#3_002e2.xhtml#g_t3_002e2), Up: [Chapter
-3](#Chapter-3.xhtml#Chapter-3)  
 \[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
 
-### 3.3Modeling with Mutable Data
+### 3.3 Modeling with Mutable Data
 
 [Chapter 2](#Chapter-2.xhtml#Chapter-2) dealt with compound data as a
 means for constructing computational objects that have several parts, in
@@ -16320,21 +16167,21 @@ objects that have changing state leads us to the need to modify compound
 data objects, as well as to construct and select from them. In order to
 model compound objects with changing state, we will design data
 abstractions to include, in addition to selectors and constructors,
-operations called *mutators*, which modify data objects. For instance,
+operations called _mutators_, which modify data objects. For instance,
 modeling a banking system requires us to change account balances. Thus,
 a data structure for representing bank accounts might admit an operation
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (set-balance! ⟨account⟩ ⟨new-value⟩)
 ```
 
 </div>
 
 that changes the balance of the designated account to the designated new
-value. Data objects for which mutators are defined are known as *mutable
-data objects*.
+value. Data objects for which mutators are defined are known as _mutable
+data objects_.
 
 Chapter 2 introduced pairs as a general-purpose “glue” for synthesizing
 compound data. We begin this section by defining basic mutators for
@@ -16346,7 +16193,7 @@ other than the sequences and trees that we worked with in
 simulations in which complex systems are modeled as collections of
 objects with local state.
 
-#### 3.3.1Mutable List Structure
+#### 3.3.1 Mutable List Structure
 
 The basic operations on pairs—`cons`, `car`, and `cdr`—can be used to
 construct list structure and to select parts from list structure, but
@@ -16363,7 +16210,7 @@ second argument of `set-car!`.[¹⁴⁴](#3_002e3.xhtml#FOOT144)
 As an example, suppose that `x` is bound to the list `((a b) c d)` and
 `y` to the list `(e f)` as illustrated in [Figure
 3.12](#3_002e3.xhtml#Figure-3_002e12). Evaluating the expression
-` (set-car!  x y)` modifies the pair to which `x` is bound, replacing
+` (set-car! x y)` modifies the pair to which `x` is bound, replacing
 its `car` by the value of `y`. The result of the operation is shown in
 [Figure 3.13](#3_002e3.xhtml#Figure-3_002e13). The structure `x` has
 been modified and would now be printed as `((e f) c d)`. The pairs
@@ -16411,7 +16258,7 @@ the designated objects, and return the new pair as the result of the
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (cons x y)
   (let ((new (get-new-pair)))
     (set-car! new x)
@@ -16426,7 +16273,7 @@ the designated objects, and return the new pair as the result of the
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (append x y)
 >   (if (null? x)
 >       y
@@ -16444,7 +16291,7 @@ the designated objects, and return the new pair as the result of the
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (append! x y)
 >   (set-cdr! (last-pair x) y)
 >   x)
@@ -16457,7 +16304,7 @@ the designated objects, and return the new pair as the result of the
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (last-pair x)
 >   (if (null? (cdr x))
 >       x
@@ -16470,7 +16317,7 @@ the designated objects, and return the new pair as the result of the
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define x (list 'a 'b))
 > (define y (list 'c 'd))
 > (define z (append x y))
@@ -16492,7 +16339,7 @@ the designated objects, and return the new pair as the result of the
 >
 > </div>
 >
-> What are the missing `⟨``response``⟩`s? Draw box-and-pointer diagrams
+> What are the missing ` ⟨``response``⟩ `s? Draw box-and-pointer diagrams
 > to explain your answer.
 
 > **Exercise 3.13:** Consider the following `make-cycle` procedure,
@@ -16501,7 +16348,7 @@ the designated objects, and return the new pair as the result of the
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (make-cycle x)
 >   (set-cdr! (last-pair x) x)
 >   x)
@@ -16513,7 +16360,7 @@ the designated objects, and return the new pair as the result of the
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define z (make-cycle (list 'a 'b 'c)))
 > ```
 >
@@ -16526,7 +16373,7 @@ the designated objects, and return the new pair as the result of the
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (mystery x)
 >   (define (loop x y)
 >     (if (null? x)
@@ -16553,12 +16400,12 @@ the designated objects, and return the new pair as the result of the
 We mentioned in [3.1.3](#3_002e1.xhtml#g_t3_002e1_002e3) the theoretical
 issues of “sameness” and “change” raised by the introduction of
 assignment. These issues arise in practice when individual pairs are
-*shared* among different data objects. For example, consider the
+_shared_ among different data objects. For example, consider the
 structure formed by
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define x (list 'a 'b))
 (define z1 (cons x x))
 ```
@@ -16581,8 +16428,8 @@ In contrast to [Figure 3.16](#3_002e3.xhtml#Figure-3_002e16), [Figure
 
 <div className="lisp">
 
-``` lisp
-(define z2 
+```lisp
+(define z2
   (cons (list 'a 'b) (list 'a 'b)))
 ```
 
@@ -16605,7 +16452,7 @@ applied:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (set-to-wow! x)
   (set-car! (car x) 'wow)
   x)
@@ -16621,7 +16468,7 @@ are the same pair. With `z2`, the `car` and `cdr` are distinct, so
 
 <div className="lisp">
 
-``` lisp
+```lisp
 z1
 ((a b) a b)
 
@@ -16640,10 +16487,10 @@ z2
 One way to detect sharing in list structures is to use the predicate
 `eq?`, which we introduced in [2.3.1](#2_002e3.xhtml#g_t2_002e3_002e1)
 as a way to test whether two symbols are equal. More generally,
-`(eq?  x y)` tests whether `x` and `y` are the same object (that is,
+`(eq? x y)` tests whether `x` and `y` are the same object (that is,
 whether `x` and `y` are equal as pointers). Thus, with `z1` and `z2` as
 defined in [Figure 3.16](#3_002e3.xhtml#Figure-3_002e16) and [Figure
-3.17](#3_002e3.xhtml#Figure-3_002e17), `(eq?  (car z1) (cdr z1))` is
+3.17](#3_002e3.xhtml#Figure-3_002e17), `(eq? (car z1) (cdr z1))` is
 true and `(eq? (car z2) (cdr z2))` is false.
 
 As will be seen in the following sections, we can exploit sharing to
@@ -16666,7 +16513,7 @@ unanticipated results.[¹⁴⁸](#3_002e3.xhtml#FOOT148)
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (count-pairs x)
 >   (if (not (pair? x))
 >       0
@@ -16706,12 +16553,12 @@ purely in terms of procedures:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (cons x y)
   (define (dispatch m)
     (cond ((eq? m 'car) x)
           ((eq? m 'cdr) y)
-          (else (error "Undefined 
+          (else (error "Undefined
                  operation: CONS" m))))
   dispatch)
 
@@ -16730,7 +16577,7 @@ implemented bank accounts using `make-account` in
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (cons x y)
   (define (set-x! v) (set! x v))
   (define (set-y! v) (set! y v))
@@ -16739,7 +16586,7 @@ implemented bank accounts using `make-account` in
           ((eq? m 'cdr) y)
           ((eq? m 'set-car!) set-x!)
           ((eq? m 'set-cdr!) set-y!)
-          (else (error "Undefined 
+          (else (error "Undefined
                  operation: CONS" m))))
   dispatch)
 
@@ -16767,7 +16614,7 @@ general.[¹⁴⁹](#3_002e3.xhtml#FOOT149)
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define x (cons 1 2))
 > (define z (cons x x))
 >
@@ -16782,7 +16629,7 @@ general.[¹⁴⁹](#3_002e3.xhtml#FOOT149)
 > using the procedural implementation of pairs given above. (Compare
 > [Exercise 3.11](#3_002e2.xhtml#Exercise-3_002e11).)
 
-#### 3.3.2Representing Queues
+#### 3.3.2 Representing Queues
 
 The mutators `set-car!` and `set-cdr!` enable us to use pairs to
 construct data structures that cannot be built with `cons`, `car`, and
@@ -16791,13 +16638,13 @@ structure called a queue. Section
 [3.3.3](#3_002e3.xhtml#g_t3_002e3_002e3) will show how to represent data
 structures called tables.
 
-A *queue* is a sequence in which items are inserted at one end (called
-the *rear* of the queue) and deleted from the other end (the *front*).
+A _queue_ is a sequence in which items are inserted at one end (called
+the _rear_ of the queue) and deleted from the other end (the _front_).
 [Figure 3.18](#3_002e3.xhtml#Figure-3_002e18) shows an initially empty
 queue in which the items `a` and `b` are inserted. Then `a` is removed,
 `c` and `d` are inserted, and `b` is removed. Because items are always
 removed in the order in which they are inserted, a queue is sometimes
-called a *FIFO* (first in, first out) buffer.
+called a _FIFO_ (first in, first out) buffer.
 
 SVG
 **Figure 3.18:** Queue operations.
@@ -16805,56 +16652,56 @@ SVG
 In terms of data abstraction, we can regard a queue as defined by the
 following set of operations:
 
--   a constructor: `(make-queue)` returns an empty queue (a queue
-    containing no items).
+- a constructor: `(make-queue)` returns an empty queue (a queue
+  containing no items).
 
--   two selectors:
+- two selectors:
 
-    <div className="lisp">
+  <div className="lisp">
 
-    ``` lisp
-    (empty-queue? ⟨queue⟩)
-    ```
+  ```lisp
+  (empty-queue? ⟨queue⟩)
+  ```
 
-    </div>
+  </div>
 
-    tests if the queue is empty.
+  tests if the queue is empty.
 
-    <div className="lisp">
+  <div className="lisp">
 
-    ``` lisp
-    (front-queue ⟨queue⟩)
-    ```
+  ```lisp
+  (front-queue ⟨queue⟩)
+  ```
 
-    </div>
+  </div>
 
-    returns the object at the front of the queue, signaling an error if
-    the queue is empty; it does not modify the queue.
+  returns the object at the front of the queue, signaling an error if
+  the queue is empty; it does not modify the queue.
 
--   two mutators:
+- two mutators:
 
-    <div className="lisp">
+  <div className="lisp">
 
-    ``` lisp
-    (insert-queue! ⟨queue⟩ ⟨item⟩)
-    ```
+  ```lisp
+  (insert-queue! ⟨queue⟩ ⟨item⟩)
+  ```
 
-    </div>
+  </div>
 
-    inserts the item at the rear of the queue and returns the modified
-    queue as its value.
+  inserts the item at the rear of the queue and returns the modified
+  queue as its value.
 
-    <div className="lisp">
+  <div className="lisp">
 
-    ``` lisp
-    (delete-queue! ⟨queue⟩)
-    ```
+  ```lisp
+  (delete-queue! ⟨queue⟩)
+  ```
 
-    </div>
+  </div>
 
-    removes the item at the front of the queue and returns the modified
-    queue as its value, signaling an error if the queue is empty before
-    the deletion.
+  removes the item at the front of the queue and returns the modified
+  queue as its value, signaling an error if the queue is empty before
+  the deletion.
 
 Because a queue is a sequence of items, we could certainly represent it
 as an ordinary list; the front of the queue would be the `car` of the
@@ -16863,10 +16710,10 @@ element at the end of the list, and deleting an item from the queue
 would just be taking the `cdr` of the list. However, this representation
 is inefficient, because in order to insert an item we must scan the list
 until we reach the end. Since the only method we have for scanning a
-list is by successive `cdr` operations, this scanning requires *Θ*(*n*)
-steps for a list of *n* items. A simple modification to the list
+list is by successive `cdr` operations, this scanning requires _Θ_(_n_)
+steps for a list of _n_ items. A simple modification to the list
 representation overcomes this disadvantage by allowing the queue
-operations to be implemented so that they require *Θ*(1) steps; that is,
+operations to be implemented so that they require _Θ_(1) steps; that is,
 so that the number of steps needed is independent of the length of the
 queue.
 
@@ -16897,12 +16744,12 @@ queue:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (front-ptr queue) (car queue))
 (define (rear-ptr queue) (cdr queue))
-(define (set-front-ptr! queue item) 
+(define (set-front-ptr! queue item)
   (set-car! queue item))
-(define (set-rear-ptr! queue item) 
+(define (set-rear-ptr! queue item)
   (set-cdr! queue item))
 ```
 
@@ -16913,8 +16760,8 @@ queue to be empty if its front pointer is the empty list:
 
 <div className="lisp">
 
-``` lisp
-(define (empty-queue? queue) 
+```lisp
+(define (empty-queue? queue)
   (null? (front-ptr queue)))
 ```
 
@@ -16925,7 +16772,7 @@ pair whose `car` and `cdr` are both the empty list:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (make-queue) (cons '() '()))
 ```
 
@@ -16936,10 +16783,10 @@ pair indicated by the front pointer:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (front-queue queue)
   (if (empty-queue? queue)
-      (error "FRONT called with an 
+      (error "FRONT called with an
               empty queue" queue)
       (car (front-ptr queue))))
 ```
@@ -16960,14 +16807,14 @@ SVG
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (insert-queue! queue item)
   (let ((new-pair (cons item '())))
     (cond ((empty-queue? queue)
            (set-front-ptr! queue new-pair)
            (set-rear-ptr! queue new-pair)
            queue)
-          (else (set-cdr! (rear-ptr queue) 
+          (else (set-cdr! (rear-ptr queue)
                           new-pair)
                 (set-rear-ptr! queue new-pair)
                 queue))))
@@ -16982,13 +16829,13 @@ be found by following the `cdr` pointer of the first item (see [Figure
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (delete-queue! queue)
   (cond ((empty-queue? queue)
-         (error "DELETE! called with 
+         (error "DELETE! called with
                  an empty queue" queue))
-        (else (set-front-ptr! 
-               queue 
+        (else (set-front-ptr!
+               queue
                (cdr (front-ptr queue)))
               queue)))
 ```
@@ -16996,7 +16843,7 @@ be found by following the `cdr` pointer of the first item (see [Figure
 </div>
 
 SVG
-**Figure 3.21:** Result of using `(delete-queue!  q)` on the queue of
+**Figure 3.21:** Result of using `(delete-queue! q)` on the queue of
 [Figure 3.20](#3_002e3.xhtml#Figure-3_002e20).
 
 > **Exercise 3.21:** Ben Bitdiddle decides to test the queue
@@ -17005,7 +16852,7 @@ SVG
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define q1 (make-queue))
 >
 > (insert-queue! q1 'a)
@@ -17043,7 +16890,7 @@ SVG
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (make-queue)
 >   (let ((front-ptr … )
 >         (rear-ptr … ))
@@ -17057,7 +16904,7 @@ SVG
 > Complete the definition of `make-queue` and provide implementations of
 > the queue operations using this representation.
 
-> **Exercise 3.23:** A *deque* (“double-ended queue”) is a sequence in
+> **Exercise 3.23:** A _deque_ (“double-ended queue”) is a sequence in
 > which items can be inserted and deleted at either the front or the
 > rear. Operations on deques are the constructor `make-deque`, the
 > predicate `empty-deque?`, selectors `front-deque` and `rear-deque`,
@@ -17065,9 +16912,9 @@ SVG
 > `front-delete-deque!`, `rear-delete-deque!`. Show how to represent
 > deques using pairs, and give implementations of the
 > operations.[¹⁵¹](#3_002e3.xhtml#FOOT151) All operations should be
-> accomplished in *Θ*(1) steps.
+> accomplished in _Θ_(1) steps.
 
-#### 3.3.3Representing Tables
+#### 3.3.3 Representing Tables
 
 When we studied various ways of representing sets in [Chapter
 2](#Chapter-2.xhtml#Chapter-2), we mentioned in
@@ -17083,16 +16930,16 @@ under a single key. We implement the table as a list of records, each of
 which is implemented as a pair consisting of a key and the associated
 value. The records are glued together to form a list by pairs whose
 `car`s point to successive records. These gluing pairs are called the
-*backbone* of the table. In order to have a place that we can change
-when we add a new record to the table, we build the table as a *headed
-list*. A headed list has a special backbone pair at the beginning, which
+_backbone_ of the table. In order to have a place that we can change
+when we add a new record to the table, we build the table as a _headed
+list_. A headed list has a special backbone pair at the beginning, which
 holds a dummy “record”—in this case the arbitrarily chosen symbol
 `*table*`. [Figure 3.22](#3_002e3.xhtml#Figure-3_002e22) shows the
 box-and-pointer diagram for the table
 
 <div className="lisp">
 
-``` lisp
+```lisp
 a:  1
 b:  2
 c:  3
@@ -17115,7 +16962,7 @@ resulting record returned by `assoc` is not false, and returns the value
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (lookup key table)
   (let ((record (assoc key (cdr table))))
     (if record
@@ -17124,7 +16971,7 @@ resulting record returned by `assoc` is not false, and returns the value
 
 (define (assoc key records)
   (cond ((null? records) false)
-        ((equal? key (caar records)) 
+        ((equal? key (caar records))
          (car records))
         (else (assoc key (cdr records)))))
 ```
@@ -17142,13 +16989,13 @@ record.[¹⁵³](#3_002e3.xhtml#FOOT153)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (insert! key value table)
   (let ((record (assoc key (cdr table))))
     (if record
         (set-cdr! record value)
         (set-cdr! table
-                  (cons (cons key value) 
+                  (cons (cons key value)
                         (cdr table)))))
   'ok)
 ```
@@ -17160,7 +17007,7 @@ To construct a new table, we simply create a list containing the symbol
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (make-table)
   (list '*table*))
 ```
@@ -17176,7 +17023,7 @@ shows the box-and-pointer diagram for the table
 
 <div className="example">
 
-``` example
+```example
 math:  +: 43    letters:  a: 97
        -: 45              b: 98
        *: 42
@@ -17196,11 +17043,11 @@ subtable.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (lookup key-1 key-2 table)
   (let ((subtable (assoc key-1 (cdr table))))
     (if subtable
-        (let ((record 
+        (let ((record
                (assoc key-2 (cdr subtable))))
           (if record (cdr record) false))
         false)))
@@ -17217,19 +17064,19 @@ insertion method for one-dimensional tables described above:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (insert! key-1 key-2 value table)
   (let ((subtable (assoc key-1 (cdr table))))
     (if subtable
-        (let ((record 
+        (let ((record
                (assoc key-2 (cdr subtable))))
           (if record
               (set-cdr! record value)
-              (set-cdr! 
+              (set-cdr!
                subtable
                (cons (cons key-2 value)
                      (cdr subtable)))))
-        (set-cdr! 
+        (set-cdr!
          table
          (cons (list key-1 (cons key-2 value))
                (cdr table)))))
@@ -17252,32 +17099,32 @@ tables represented in this fashion:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (make-table)
   (let ((local-table (list '*table*)))
     (define (lookup key-1 key-2)
-      (let ((subtable 
+      (let ((subtable
              (assoc key-1 (cdr local-table))))
         (if subtable
-            (let ((record 
-                   (assoc key-2 
+            (let ((record
+                   (assoc key-2
                           (cdr subtable))))
               (if record (cdr record) false))
             false)))
     (define (insert! key-1 key-2 value)
-      (let ((subtable 
+      (let ((subtable
              (assoc key-1 (cdr local-table))))
         (if subtable
-            (let ((record 
-                   (assoc key-2 
+            (let ((record
+                   (assoc key-2
                           (cdr subtable))))
               (if record
                   (set-cdr! record value)
-                  (set-cdr! 
+                  (set-cdr!
                    subtable
                    (cons (cons key-2 value)
                          (cdr subtable)))))
-            (set-cdr! 
+            (set-cdr!
              local-table
              (cons (list key-1
                          (cons key-2 value))
@@ -17286,7 +17133,7 @@ tables represented in this fashion:
     (define (dispatch m)
       (cond ((eq? m 'lookup-proc) lookup)
             ((eq? m 'insert-proc!) insert!)
-            (else (error "Unknown operation: 
+            (else (error "Unknown operation:
                           TABLE" m))))
     dispatch))
 ```
@@ -17299,7 +17146,7 @@ programming, as follows:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define operation-table (make-table))
 (define get (operation-table 'lookup-proc))
 (define put (operation-table 'insert-proc!))
@@ -17337,7 +17184,7 @@ encapsulated within the object created by the call to `make-table`.
 > (Compare [Exercise 2.66](#2_002e3.xhtml#Exercise-2_002e66) of [Chapter
 > 2](#Chapter-2.xhtml#Chapter-2).)
 
-> **Exercise 3.27:** *Memoization* (also called *tabulation*) is a
+> **Exercise 3.27:** _Memoization_ (also called _tabulation_) is a
 > technique that enables a procedure to record, in a local table, values
 > that have previously been computed. This technique can make a vast
 > difference in the performance of a program. A memoized procedure
@@ -17352,7 +17199,7 @@ encapsulated within the object created by the call to `make-table`.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (fib n)
 >   (cond ((= n 0) 0)
 >         ((= n 1) 1)
@@ -17366,13 +17213,13 @@ encapsulated within the object created by the call to `make-table`.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define memo-fib
->   (memoize 
+>   (memoize
 >    (lambda (n)
 >      (cond ((= n 0) 0)
 >            ((= n 1) 1)
->            (else 
+>            (else
 >             (+ (memo-fib (- n 1))
 >                (memo-fib (- n 2))))))))
 > ```
@@ -17383,11 +17230,11 @@ encapsulated within the object created by the call to `make-table`.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (memoize f)
 >   (let ((table (make-table)))
 >     (lambda (x)
->       (let ((previously-computed-result 
+>       (let ((previously-computed-result
 >              (lookup x table)))
 >         (or previously-computed-result
 >             (let ((result (f x)))
@@ -17398,11 +17245,11 @@ encapsulated within the object created by the call to `make-table`.
 > </div>
 >
 > Draw an environment diagram to analyze the computation of
-> `(memo-fib 3)`. Explain why `memo-fib` computes the *n*^(th) Fibonacci
-> number in a number of steps proportional to *n*. Would the scheme
+> `(memo-fib 3)`. Explain why `memo-fib` computes the _n_^(th) Fibonacci
+> number in a number of steps proportional to _n_. Would the scheme
 > still work if we had simply defined `memo-fib` to be `(memoize fib)`?
 
-#### 3.3.4A Simulator for Digital Circuits
+#### 3.3.4 A Simulator for Digital Circuits
 
 Designing complex digital systems, such as computers, is an important
 engineering activity. Digital systems are constructed by interconnecting
@@ -17411,32 +17258,32 @@ simple, networks of them can have very complex behavior. Computer
 simulation of proposed circuit designs is an important tool used by
 digital systems engineers. In this section we design a system for
 performing digital logic simulations. This system typifies a kind of
-program called an *event-driven simulation*, in which actions (“events”)
+program called an _event-driven simulation_, in which actions (“events”)
 trigger further events that happen at a later time, which in turn
 trigger more events, and so on.
 
 Our computational model of a circuit will be composed of objects that
 correspond to the elementary components from which the circuit is
-constructed. There are *wires*, which carry *digital signals*. A digital
+constructed. There are _wires_, which carry _digital signals_. A digital
 signal may at any moment have only one of two possible values, 0 and 1.
-There are also various types of digital *function boxes*, which connect
+There are also various types of digital _function boxes_, which connect
 wires carrying input signals to other output wires. Such boxes produce
 output signals computed from their input signals. The output signal is
 delayed by a time that depends on the type of the function box. For
-example, an *inverter* is a primitive function box that inverts its
+example, an _inverter_ is a primitive function box that inverts its
 input. If the input signal to an inverter changes to 0, then one
 inverter-delay later the inverter will change its output signal to 1. If
 the input signal to an inverter changes to 1, then one inverter-delay
 later the inverter will change its output signal to 0. We draw an
 inverter symbolically as in [Figure
-3.24](#3_002e3.xhtml#Figure-3_002e24). An *and-gate*, also shown in
+3.24](#3_002e3.xhtml#Figure-3_002e24). An _and-gate_, also shown in
 figure 3.24, is a primitive function box with two inputs and one output.
-It drives its output signal to a value that is the *logical and* of the
+It drives its output signal to a value that is the _logical and_ of the
 inputs. That is, if both of its input signals become 1, then one
 and-gate-delay time later the and-gate will force its output signal to
-be 1; otherwise the output will be 0. An *or-gate* is a similar
+be 1; otherwise the output will be 0. An _or-gate_ is a similar
 two-input primitive function box that drives its output signal to a
-value that is the *logical or* of the inputs. That is, the output will
+value that is the _logical or_ of the inputs. That is, the output will
 become 1 if at least one of the input signals is 1; otherwise the output
 will become 0.
 
@@ -17445,7 +17292,7 @@ SVG
 
 We can connect primitive functions together to construct more complex
 functions. To accomplish this we wire the outputs of some function boxes
-to the inputs of other function boxes. For example, the *half-adder*
+to the inputs of other function boxes. For example, the _half-adder_
 circuit shown in [Figure 3.25](#3_002e3.xhtml#Figure-3_002e25) consists
 of an or-gate, two and-gates, and an inverter. It takes two input
 signals, A and B, and has two output signals, S and C. S will become 1
@@ -17468,7 +17315,7 @@ follows:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define a (make-wire))
 (define b (make-wire))
 (define c (make-wire))
@@ -17487,7 +17334,7 @@ half-adder shown in [Figure 3.25](#3_002e3.xhtml#Figure-3_002e25):
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (or-gate a b d)
 ok
 
@@ -17509,7 +17356,7 @@ external wires to be attached to the half-adder:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (half-adder a b s c)
   (let ((d (make-wire)) (e (make-wire)))
     (or-gate a b d)
@@ -17523,15 +17370,15 @@ external wires to be attached to the half-adder:
 
 The advantage of making this definition is that we can use `half-adder`
 itself as a building block in creating more complex circuits. [Figure
-3.26](#3_002e3.xhtml#Figure-3_002e26), for example, shows a *full-adder*
+3.26](#3_002e3.xhtml#Figure-3_002e26), for example, shows a _full-adder_
 composed of two half-adders and an or-gate.[¹⁵⁴](#3_002e3.xhtml#FOOT154)
 We can construct a full-adder as follows:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (full-adder a b c-in sum c-out)
-  (let ((c1 (make-wire)) 
+  (let ((c1 (make-wire))
         (c2 (make-wire))
         (s  (make-wire)))
     (half-adder b c-in s c1)
@@ -17563,20 +17410,20 @@ The primitive function boxes implement the “forces” by which a change in
 the signal on one wire influences the signals on other wires. To build
 function boxes, we use the following operations on wires:
 
--   `(get-signal ⟨wire⟩)`
+- `(get-signal ⟨wire⟩)`
 
-    returns the current value of the signal on the wire.
+  returns the current value of the signal on the wire.
 
--   `(set-signal! ⟨wire⟩ ⟨new value⟩)`
+- `(set-signal! ⟨wire⟩ ⟨new value⟩)`
 
-    changes the value of the signal on the wire to the new value.
+  changes the value of the signal on the wire to the new value.
 
--   `(add-action! ⟨wire⟩ ⟨procedure of no arguments⟩)`
+- `(add-action! ⟨wire⟩ ⟨procedure of no arguments⟩)`
 
-    asserts that the designated procedure should be run whenever the
-    signal on the wire changes value. Such procedures are the vehicles
-    by which changes in the signal value on the wire are communicated to
-    other wires.
+  asserts that the designated procedure should be run whenever the
+  signal on the wire changes value. Such procedures are the vehicles
+  by which changes in the signal value on the wire are communicated to
+  other wires.
 
 In addition, we will make use of a procedure `after-delay` that takes a
 time delay and a procedure to be run and executes the given procedure
@@ -17591,12 +17438,12 @@ computes the `logical-not` of the input signal, and then, after one
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (inverter input output)
   (define (invert-input)
-    (let ((new-value 
+    (let ((new-value
            (logical-not (get-signal input))))
-      (after-delay 
+      (after-delay
        inverter-delay
        (lambda ()
          (set-signal! output new-value)))))
@@ -17619,13 +17466,13 @@ value to occur on the output wire after one `and-gate-delay`.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (and-gate a1 a2 output)
   (define (and-action-procedure)
     (let ((new-value
-           (logical-and (get-signal a1) 
+           (logical-and (get-signal a1)
                         (get-signal a2))))
-      (after-delay 
+      (after-delay
        and-gate-delay
        (lambda ()
          (set-signal! output new-value)))))
@@ -17645,23 +17492,23 @@ value to occur on the output wire after one `and-gate-delay`.
 > time of the or-gate in terms of `and-gate-delay` and `inverter-delay`?
 
 > **Exercise 3.30:** [Figure 3.27](#3_002e3.xhtml#Figure-3_002e27) shows
-> a *ripple-carry adder* formed by stringing together *n* full-adders.
-> This is the simplest form of parallel adder for adding two *n*-bit
-> binary numbers. The inputs *A*₁, *A*₂, *A*₃, …, *A*_(*n*) and *B*₁,
-> *B*₂, *B*₃, …, *B*_(*n*) are the two binary numbers to be added (each
-> *A*_(*k*) and *B*_(*k*) is a 0 or a 1). The circuit generates *S*₁,
-> *S*₂, *S*₃, …, *S*_(*n*), the *n* bits of the sum, and *C*, the carry
+> a _ripple-carry adder_ formed by stringing together _n_ full-adders.
+> This is the simplest form of parallel adder for adding two _n_-bit
+> binary numbers. The inputs *A*₁, *A*₂, *A*₃, …, _A\_\_(*n*) and *B*₁,
+> *B*₂, *B*₃, …, *B*_(_n_) are the two binary numbers to be added (each
+> _A\_\_(*k*) and *B*_(_k_) is a 0 or a 1). The circuit generates *S*₁,
+> *S*₂, *S*₃, …, _S\_\_(*n*), the *n* bits of the sum, and *C*, the carry
 > from the addition. Write a procedure `ripple-carry-adder` that
 > generates this circuit. The procedure should take as arguments three
-> lists of *n* wires each—the *A*_(*k*), the *B*_(*k*), and the
-> *S*_(*k*)—and also another wire *C*. The major drawback of the
+> lists of *n* wires each—the *A*_(_k_), the _B\_\_(*k*), and the
+> *S*_(_k_)—and also another wire _C_. The major drawback of the
 > ripple-carry adder is the need to wait for the carry signals to
 > propagate. What is the delay needed to obtain the complete output from
-> an *n*-bit ripple-carry adder, expressed in terms of the delays for
+> an _n_-bit ripple-carry adder, expressed in terms of the delays for
 > and-gates, or-gates, and inverters?
 
 SVG
-**Figure 3.27:** A ripple-carry adder for *n*-bit numbers.
+**Figure 3.27:** A ripple-carry adder for _n_-bit numbers.
 
 ##### Representing wires
 
@@ -17675,28 +17522,28 @@ bank-account object in [3.1.1](#3_002e1.xhtml#g_t3_002e1_002e1):
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (make-wire)
-  (let ((signal-value 0) 
+  (let ((signal-value 0)
         (action-procedures '()))
     (define (set-my-signal! new-value)
       (if (not (= signal-value new-value))
           (begin (set! signal-value new-value)
-                 (call-each 
+                 (call-each
                   action-procedures))
           'done))
     (define (accept-action-procedure! proc)
-      (set! action-procedures 
+      (set! action-procedures
             (cons proc action-procedures))
       (proc))
     (define (dispatch m)
-      (cond ((eq? m 'get-signal) 
+      (cond ((eq? m 'get-signal)
              signal-value)
-            ((eq? m 'set-signal!) 
+            ((eq? m 'set-signal!)
              set-my-signal!)
-            ((eq? m 'add-action!) 
+            ((eq? m 'add-action!)
              accept-action-procedure!)
-            (else (error "Unknown operation: 
+            (else (error "Unknown operation:
                           WIRE" m))))
     dispatch))
 ```
@@ -17710,7 +17557,7 @@ of the items in a list of no-argument procedures:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (call-each procedures)
   (if (null? procedures)
       'done
@@ -17730,7 +17577,7 @@ wires:[¹⁵⁵](#3_002e3.xhtml#FOOT155)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (get-signal wire)
   (wire 'get-signal))
 (define (set-signal! wire new-value)
@@ -17758,27 +17605,27 @@ it when the connections were established.
 ##### The agenda
 
 The only thing needed to complete the simulator is `after-delay`. The
-idea here is that we maintain a data structure, called an *agenda*, that
+idea here is that we maintain a data structure, called an _agenda_, that
 contains a schedule of things to do. The following operations are
 defined for agendas:
 
--   `(make-agenda)` returns a new empty agenda.
--   `(empty-agenda? ⟨agenda⟩)` is true if the specified agenda is empty.
--   `(first-agenda-item ⟨agenda⟩)` returns the first item on the agenda.
--   `(remove-first-agenda-item! ⟨agenda⟩)` modifies the agenda by
-    removing the first item.
--   `(add-to-agenda! ⟨time⟩ ⟨action⟩ ⟨agenda⟩)` modifies the agenda by
-    adding the given action procedure to be run at the specified time.
--   `(current-time ⟨agenda⟩)` returns the current simulation time.
+- `(make-agenda)` returns a new empty agenda.
+- `(empty-agenda? ⟨agenda⟩)` is true if the specified agenda is empty.
+- `(first-agenda-item ⟨agenda⟩)` returns the first item on the agenda.
+- `(remove-first-agenda-item! ⟨agenda⟩)` modifies the agenda by
+  removing the first item.
+- `(add-to-agenda! ⟨time⟩ ⟨action⟩ ⟨agenda⟩)` modifies the agenda by
+  adding the given action procedure to be run at the specified time.
+- `(current-time ⟨agenda⟩)` returns the current simulation time.
 
 The particular agenda that we use is denoted by `the-agenda`. The
 procedure `after-delay` adds new elements to `the-agenda`:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (after-delay delay action)
-  (add-to-agenda! 
+  (add-to-agenda!
    (+ delay (current-time the-agenda))
    action
    the-agenda))
@@ -17794,11 +17641,11 @@ on the agenda:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (propagate)
   (if (empty-agenda? the-agenda)
       'done
-      (let ((first-item 
+      (let ((first-item
              (first-agenda-item the-agenda)))
         (first-item)
         (remove-first-agenda-item! the-agenda)
@@ -17816,9 +17663,9 @@ current time and a name that identifies the wire:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (probe name wire)
-  (add-action! 
+  (add-action!
    wire
    (lambda ()
      (newline)
@@ -17836,7 +17683,7 @@ primitive function boxes:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define the-agenda (make-agenda))
 (define inverter-delay 2)
 (define and-gate-delay 3)
@@ -17849,7 +17696,7 @@ Now we define four wires, placing probes on two of them:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define input-1 (make-wire))
 (define input-2 (make-wire))
 (define sum (make-wire))
@@ -17870,7 +17717,7 @@ Next we connect the wires in a half-adder circuit (as in [Figure
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (half-adder input-1 input-2 sum carry)
 ok
 
@@ -17890,7 +17737,7 @@ signal on `input-2` to 1 and allow the values to propagate:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (set-signal! input-2 1)
 done
 
@@ -17902,8 +17749,7 @@ done
 
 </div>
 
-The `carry` changes to 1 at time 11 and the `sum` changes to 0 at time
-16.
+The `carry` changes to 1 at time 11 and the `sum` changes to 0 at time 16.
 
 > **Exercise 3.31:** The internal procedure `accept-action-procedure!`
 > defined in `make-wire` specifies that when a new action procedure is
@@ -17914,9 +17760,9 @@ The `carry` changes to 1 at time 11 and the `sum` changes to 0 at time
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (accept-action-procedure! proc)
->   (set! action-procedures 
+>   (set! action-procedures
 >         (cons proc action-procedures)))
 > ```
 >
@@ -17927,14 +17773,14 @@ The `carry` changes to 1 at time 11 and the `sum` changes to 0 at time
 Finally, we give details of the agenda data structure, which holds the
 procedures that are scheduled for future execution.
 
-The agenda is made up of *time segments*. Each time segment is a pair
+The agenda is made up of _time segments_. Each time segment is a pair
 consisting of a number (the time) and a queue (see [Exercise
 3.32](#3_002e3.xhtml#Exercise-3_002e32)) that holds the procedures that
 are scheduled to be run during that time segment.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (make-time-segment time queue)
   (cons time queue))
 (define (segment-time s) (car s))
@@ -17949,14 +17795,14 @@ described in [3.3.2](#3_002e3.xhtml#g_t3_002e3_002e2).
 The agenda itself is a one-dimensional table of time segments. It
 differs from the tables described in
 [3.3.3](#3_002e3.xhtml#g_t3_002e3_002e3) in that the segments will be
-sorted in order of increasing time. In addition, we store the *current
-time* (i.e., the time of the last action that was processed) at the head
+sorted in order of increasing time. In addition, we store the _current
+time_ (i.e., the time of the last action that was processed) at the head
 of the agenda. A newly constructed agenda has no time segments and has a
 current time of 0:[¹⁵⁶](#3_002e3.xhtml#FOOT156)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (make-agenda) (list 0))
 (define (current-time agenda) (car agenda))
 (define (set-current-time! agenda time)
@@ -17964,9 +17810,9 @@ current time of 0:[¹⁵⁶](#3_002e3.xhtml#FOOT156)
 (define (segments agenda) (cdr agenda))
 (define (set-segments! agenda segments)
   (set-cdr! agenda segments))
-(define (first-segment agenda) 
+(define (first-segment agenda)
   (car (segments agenda)))
-(define (rest-segments agenda) 
+(define (rest-segments agenda)
   (cdr (segments agenda)))
 ```
 
@@ -17976,7 +17822,7 @@ An agenda is empty if it has no time segments:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (empty-agenda? agenda)
   (null? (segments agenda)))
 ```
@@ -17994,11 +17840,11 @@ segment at the end.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (add-to-agenda! time action agenda)
   (define (belongs-before? segments)
     (or (null? segments)
-        (< time 
+        (< time
            (segment-time (car segments)))))
   (define (make-new-time-segment time action)
     (let ((q (make-queue)))
@@ -18006,15 +17852,15 @@ segment at the end.
       (make-time-segment time q)))
   (define (add-to-segments! segments)
     (if (= (segment-time (car segments)) time)
-        (insert-queue! 
+        (insert-queue!
          (segment-queue (car segments))
          action)
         (let ((rest (cdr segments)))
           (if (belongs-before? rest)
               (set-cdr!
                segments
-               (cons (make-new-time-segment 
-                      time 
+               (cons (make-new-time-segment
+                      time
                       action)
                      (cdr segments)))
               (add-to-segments! rest)))))
@@ -18022,8 +17868,8 @@ segment at the end.
     (if (belongs-before? segments)
         (set-segments!
          agenda
-         (cons (make-new-time-segment 
-                time 
+         (cons (make-new-time-segment
+                time
                 action)
                segments))
         (add-to-segments! segments))))
@@ -18038,14 +17884,14 @@ segments:[¹⁵⁷](#3_002e3.xhtml#FOOT157)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (remove-first-agenda-item! agenda)
-  (let ((q (segment-queue 
+  (let ((q (segment-queue
             (first-segment agenda))))
     (delete-queue! q)
     (if (empty-queue? q)
-        (set-segments! 
-         agenda 
+        (set-segments!
+         agenda
          (rest-segments agenda)))))
 ```
 
@@ -18057,17 +17903,17 @@ time:[¹⁵⁸](#3_002e3.xhtml#FOOT158)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (first-agenda-item agenda)
   (if (empty-agenda? agenda)
-      (error "Agenda is empty: 
+      (error "Agenda is empty:
               FIRST-AGENDA-ITEM")
-      (let ((first-seg 
+      (let ((first-seg
              (first-segment agenda)))
-        (set-current-time! 
-         agenda 
+        (set-current-time!
+         agenda
          (segment-time first-seg))
-        (front-queue 
+        (front-queue
          (segment-queue first-seg)))))
 ```
 
@@ -18082,51 +17928,51 @@ time:[¹⁵⁸](#3_002e3.xhtml#FOOT158)
 > if we stored a segment’s procedures in an ordinary list, adding and
 > removing procedures only at the front (last in, first out).
 
-#### 3.3.5Propagation of Constraints
+#### 3.3.5 Propagation of Constraints
 
 Computer programs are traditionally organized as one-directional
 computations, which perform operations on prespecified arguments to
 produce desired outputs. On the other hand, we often model systems in
 terms of relations among quantities. For example, a mathematical model
 of a mechanical structure might include the information that the
-deflection *d* of a metal rod is related to the force *F* on the rod,
-the length *L* of the rod, the cross-sectional area *A*, and the elastic
-modulus *E* via the equation
-*d**A**E* = *F**L*.
+deflection _d_ of a metal rod is related to the force _F_ on the rod,
+the length _L_ of the rod, the cross-sectional area _A_, and the elastic
+modulus _E_ via the equation
+*d**A**E* = *F\*\*L*.
 Such an equation is not one-directional. Given any four of the
 quantities, we can use it to compute the fifth. Yet translating the
 equation into a traditional computer language would force us to choose
 one of the quantities to be computed in terms of the other four. Thus, a
-procedure for computing the area *A* could not be used to compute the
-deflection *d*, even though the computations of *A* and *d* arise from
+procedure for computing the area _A_ could not be used to compute the
+deflection _d_, even though the computations of _A_ and _d_ arise from
 the same equation.[¹⁵⁹](#3_002e3.xhtml#FOOT159)
 
 In this section, we sketch the design of a language that enables us to
 work in terms of relations themselves. The primitive elements of the
-language are *primitive constraints*, which state that certain relations
+language are _primitive constraints_, which state that certain relations
 hold between quantities. For example, `(adder a b c)` specifies that the
-quantities *a*, *b*, and *c* must be related by the equation
+quantities _a_, _b_, and _c_ must be related by the equation
 *a* + *b* = *c*, `(multiplier x y z)` expresses the constraint
-*x**y* = *z*, and `(constant 3.14 x)` says that the value of *x* must be
+*x\*\*y* = *z*, and `(constant 3.14 x)` says that the value of _x_ must be
 3.14.
 
 Our language provides a means of combining primitive constraints in
 order to express more complex relations. We combine constraints by
-constructing *constraint networks*, in which constraints are joined by
-*connectors*. A connector is an object that “holds” a value that may
+constructing _constraint networks_, in which constraints are joined by
+_connectors_. A connector is an object that “holds” a value that may
 participate in one or more constraints. For example, we know that the
 relationship between Fahrenheit and Celsius temperatures is
 9*C* = 5(*F*−32).
 Such a constraint can be thought of as a network consisting of primitive
 adder, multiplier, and constant constraints ([Figure
 3.28](#3_002e3.xhtml#Figure-3_002e28)). In the figure, we see on the
-left a multiplier box with three terminals, labeled *m*1, *m*2, and *p*.
+left a multiplier box with three terminals, labeled *m*1, *m*2, and _p_.
 These connect the multiplier to the rest of the network as follows: The
-*m*1 terminal is linked to a connector *C*, which will hold the Celsius
-temperature. The *m*2 terminal is linked to a connector *w*, which is
-also linked to a constant box that holds 9. The *p* terminal, which the
+*m*1 terminal is linked to a connector _C_, which will hold the Celsius
+temperature. The *m*2 terminal is linked to a connector _w_, which is
+also linked to a constant box that holds 9. The _p_ terminal, which the
 multiplier box constrains to be the product of *m*1 and *m*2, is linked
-to the *p* terminal of another multiplier box, whose *m*2 is connected
+to the _p_ terminal of another multiplier box, whose *m*2 is connected
 to a constant 5 and whose *m*1 is connected to one of the terms in a
 sum.
 
@@ -18142,13 +17988,13 @@ Each awakened constraint box then polls its connectors to see if there
 is enough information to determine a value for a connector. If so, the
 box sets that connector, which then awakens all of its associated
 constraints, and so on. For instance, in conversion between Celsius and
-Fahrenheit, *w*, *x*, and *y* are immediately set by the constant boxes
+Fahrenheit, _w_, _x_, and _y_ are immediately set by the constant boxes
 to 9, 5, and 32, respectively. The connectors awaken the multipliers and
 the adder, which determine that there is not enough information to
-proceed. If the user (or some other part of the network) sets *C* to a
+proceed. If the user (or some other part of the network) sets _C_ to a
 value (say 25), the leftmost multiplier will be awakened, and it will
-set *u* to 25 ⋅ 9 = 225. Then *u* awakens the second multiplier, which
-sets *v* to 45, and *v* awakens the adder, which sets *f* to 77.
+set _u_ to 25 ⋅ 9 = 225. Then _u_ awakens the second multiplier, which
+sets _v_ to 45, and _v_ awakens the adder, which sets _f_ to 77.
 
 ##### Using the constraint system
 
@@ -18159,7 +18005,7 @@ network:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define C (make-connector))
 (define F (make-connector))
 (celsius-fahrenheit-converter C F)
@@ -18172,7 +18018,7 @@ The procedure that creates the network is defined as follows:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (celsius-fahrenheit-converter c f)
   (let ((u (make-connector))
         (v (make-connector))
@@ -18207,7 +18053,7 @@ connector is given a value:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (probe "Celsius temp" C)
 (probe "Fahrenheit temp" F)
 ```
@@ -18219,7 +18065,7 @@ tells `C` that this directive comes from the `user`.)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (set-value! C 25 'user)
 Probe: Celsius temp = 25
 Probe: Fahrenheit temp = 77
@@ -18236,7 +18082,7 @@ Now we can try to set `F` to a new value, say 212:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (set-value! F 212 'user)
 Error! Contradiction (77 212)
 ```
@@ -18249,7 +18095,7 @@ the network with new values, we can tell `C` to forget its old value:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (forget-value! C 'user)
 Probe: Celsius temp = ?
 Probe: Fahrenheit temp = ?
@@ -18269,7 +18115,7 @@ Now that `F` has no value, we are free to set it to 212:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (set-value! F 212 'user)
 Probe: Fahrenheit temp = 212
 Probe: Celsius temp = 100
@@ -18294,15 +18140,15 @@ is simpler, since there is no concern about agendas and logic delays.
 
 The basic operations on connectors are the following:
 
--   `(has-value? ⟨connector⟩)` tells whether the connector has a value.
--   `(get-value ⟨connector⟩)` returns the connector’s current value.
--   `(set-value! ⟨connector⟩ ⟨new-value⟩ ⟨informant⟩)` indicates that
-    the informant is requesting the connector to set its value to the
-    new value.
--   `(forget-value! ⟨connector⟩ ⟨retractor⟩)` tells the connector that
-    the retractor is requesting it to forget its value.
--   `(connect ⟨connector⟩ ⟨new-constraint⟩)` tells the connector to
-    participate in the new constraint.
+- `(has-value? ⟨connector⟩)` tells whether the connector has a value.
+- `(get-value ⟨connector⟩)` returns the connector’s current value.
+- `(set-value! ⟨connector⟩ ⟨new-value⟩ ⟨informant⟩)` indicates that
+  the informant is requesting the connector to set its value to the
+  new value.
+- `(forget-value! ⟨connector⟩ ⟨retractor⟩)` tells the connector that
+  the retractor is requesting it to forget its value.
+- `(connect ⟨connector⟩ ⟨new-constraint⟩)` tells the connector to
+  participate in the new constraint.
 
 The connectors communicate with the constraints by means of the
 procedures `inform-about-value`, which tells the given constraint that
@@ -18315,25 +18161,25 @@ local state (the procedure `me` below):
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (adder a1 a2 sum)
   (define (process-new-value)
-    (cond ((and (has-value? a1) 
+    (cond ((and (has-value? a1)
                 (has-value? a2))
            (set-value! sum
-                       (+ (get-value a1) 
+                       (+ (get-value a1)
                           (get-value a2))
                        me))
-          ((and (has-value? a1) 
+          ((and (has-value? a1)
                 (has-value? sum))
            (set-value! a2
-                       (- (get-value sum) 
+                       (- (get-value sum)
                           (get-value a1))
                        me))
-          ((and (has-value? a2) 
+          ((and (has-value? a2)
                 (has-value? sum))
            (set-value! a1
-                       (- (get-value sum) 
+                       (- (get-value sum)
                           (get-value a2))
                        me))))
   (define (process-forget-value)
@@ -18346,7 +18192,7 @@ local state (the procedure `me` below):
            (process-new-value))
           ((eq? request 'I-lost-my-value)
            (process-forget-value))
-          (else (error "Unknown request: 
+          (else (error "Unknown request:
                         ADDER" request))))
   (connect a1 me)
   (connect a2 me)
@@ -18365,7 +18211,7 @@ the dispatch:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (inform-about-value constraint)
   (constraint 'I-have-a-value))
 (define (inform-about-no-value constraint)
@@ -18396,30 +18242,30 @@ if either of the factors is 0, even if the other factor is not known.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (multiplier m1 m2 product)
   (define (process-new-value)
-    (cond ((or (and (has-value? m1) 
+    (cond ((or (and (has-value? m1)
                     (= (get-value m1) 0))
-               (and (has-value? m2) 
+               (and (has-value? m2)
                     (= (get-value m2) 0)))
            (set-value! product 0 me))
-          ((and (has-value? m1) 
+          ((and (has-value? m1)
                 (has-value? m2))
            (set-value! product
-                       (* (get-value m1) 
+                       (* (get-value m1)
                           (get-value m2))
                        me))
-          ((and (has-value? product) 
+          ((and (has-value? product)
                 (has-value? m1))
            (set-value! m2
-                       (/ (get-value product) 
+                       (/ (get-value product)
                           (get-value m1))
                        me))
-          ((and (has-value? product) 
+          ((and (has-value? product)
                 (has-value? m2))
            (set-value! m1
-                       (/ (get-value product) 
+                       (/ (get-value product)
                           (get-value m2))
                        me))))
   (define (process-forget-value)
@@ -18433,8 +18279,8 @@ if either of the factors is 0, even if the other factor is not known.
           ((eq? request 'I-lost-my-value)
            (process-forget-value))
           (else
-           (error "Unknown request: 
-                   MULTIPLIER" 
+           (error "Unknown request:
+                   MULTIPLIER"
                   request))))
   (connect m1 me)
   (connect m2 me)
@@ -18450,10 +18296,10 @@ constant box will produce an error.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (constant value connector)
   (define (me request)
-    (error "Unknown request: CONSTANT" 
+    (error "Unknown request: CONSTANT"
            request))
   (connect connector me)
   (set-value! connector value me)
@@ -18467,7 +18313,7 @@ designated connector:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (probe name connector)
   (define (print-probe value)
     (newline) (display "Probe: ")
@@ -18482,7 +18328,7 @@ designated connector:
            (process-new-value))
           ((eq? request 'I-lost-my-value)
            (process-forget-value))
-          (else (error "Unknown request: 
+          (else (error "Unknown request:
                         PROBE" request))))
   (connect connector me)
   me)
@@ -18499,36 +18345,36 @@ constraints in which the connector participates.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (make-connector)
-  (let ((value false) 
-        (informant false) 
+  (let ((value false)
+        (informant false)
         (constraints '()))
     (define (set-my-value newval setter)
       (cond ((not (has-value? me))
              (set! value newval)
              (set! informant setter)
-             (for-each-except 
+             (for-each-except
               setter
               inform-about-value
               constraints))
             ((not (= value newval))
-             (error "Contradiction" 
+             (error "Contradiction"
                     (list value newval)))
             (else 'ignored)))
     (define (forget-my-value retractor)
       (if (eq? retractor informant)
           (begin (set! informant false)
-                 (for-each-except 
+                 (for-each-except
                   retractor
                   inform-about-no-value
                   constraints))
           'ignored))
     (define (connect new-constraint)
-      (if (not (memq new-constraint 
+      (if (not (memq new-constraint
                      constraints))
           (set! constraints
-                (cons new-constraint 
+                (cons new-constraint
                       constraints)))
       (if (has-value? me)
           (inform-about-value new-constraint))
@@ -18537,12 +18383,12 @@ constraints in which the connector participates.
       (cond ((eq? request 'has-value?)
              (if informant true false))
             ((eq? request 'value) value)
-            ((eq? request 'set-value!) 
+            ((eq? request 'set-value!)
              set-my-value)
-            ((eq? request 'forget) 
+            ((eq? request 'forget)
              forget-my-value)
             ((eq? request 'connect) connect)
-            (else (error "Unknown operation: 
+            (else (error "Unknown operation:
                           CONNECTOR"
                          request))))
     me))
@@ -18562,13 +18408,13 @@ given one:
 
 <div className="lisp">
 
-``` lisp
-(define (for-each-except exception 
-                         procedure 
+```lisp
+(define (for-each-except exception
+                         procedure
                          list)
   (define (loop items)
     (cond ((null? items) 'done)
-          ((eq? (car items) exception) 
+          ((eq? (car items) exception)
            (loop (cdr items)))
           (else (procedure (car items))
                 (loop (cdr items)))))
@@ -18593,16 +18439,16 @@ following procedures provide a syntax interface for the dispatch:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (has-value? connector)
   (connector 'has-value?))
 (define (get-value connector)
   (connector 'value))
-(define (set-value! connector 
-                    new-value 
+(define (set-value! connector
+                    new-value
                     informant)
-  ((connector 'set-value!) 
-   new-value 
+  ((connector 'set-value!)
+   new-value
    informant))
 (define (forget-value! connector retractor)
   ((connector 'forget) retractor))
@@ -18625,7 +18471,7 @@ following procedures provide a syntax interface for the dispatch:
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (squarer a b) (multiplier a a b))
 > ```
 >
@@ -18641,13 +18487,13 @@ following procedures provide a syntax interface for the dispatch:
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (squarer a b)
 >   (define (process-new-value)
 >     (if (has-value? b)
 >         (if (< (get-value b) 0)
->             (error "square less than 0: 
->                     SQUARER" 
+>             (error "square less than 0:
+>                     SQUARER"
 >                    (get-value b))
 >             ⟨alternative1⟩)
 >         ⟨alternative2⟩))
@@ -18664,7 +18510,7 @@ following procedures provide a syntax interface for the dispatch:
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define a (make-connector))
 > (define b (make-connector))
 > (set-value! a 10 'user)
@@ -18677,8 +18523,8 @@ following procedures provide a syntax interface for the dispatch:
 >
 > <div className="lisp">
 >
-> ``` lisp
-> (for-each-except 
+> ```lisp
+> (for-each-except
 >   setter inform-about-value constraints)
 > ```
 >
@@ -18693,7 +18539,7 @@ following procedures provide a syntax interface for the dispatch:
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (celsius-fahrenheit-converter x)
 >   (c+ (c* (c/ (cv 9) (cv 5))
 >           x)
@@ -18711,7 +18557,7 @@ following procedures provide a syntax interface for the dispatch:
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (c+ x y)
 >   (let ((z (make-connector)))
 >     (adder x y z)
@@ -18741,7 +18587,7 @@ for their effect.
 [¹⁴⁵](#3_002e3.xhtml#DOCF145) We see from this that mutation operations
 on lists can create “garbage” that is not part of any accessible
 structure. We will see in [5.3.2](#5_002e3.xhtml#g_t5_002e3_002e2) that
-Lisp memory-management systems include a *garbage collector*, which
+Lisp memory-management systems include a _garbage collector_, which
 identifies and recycles the memory space used by unneeded pairs.
 
 </div>
@@ -18833,10 +18679,10 @@ new record.
 
 [¹⁵⁴](#3_002e3.xhtml#DOCF154) A full-adder is a basic circuit element
 used in adding two binary numbers. Here A and B are the bits at
-corresponding positions in the two numbers to be added, and *C*_(*i**n*)
+corresponding positions in the two numbers to be added, and _C\_\_(*i\*\*n*)
 is the carry bit from the addition one place to the right. The circuit
 generates SUM, which is the sum bit in the corresponding position, and
-*C*_(*o**u**t*), which is the carry bit to be propagated to the left.
+*C*_(_o**u**t_), which is the carry bit to be propagated to the left.
 
 </div>
 
@@ -18869,11 +18715,11 @@ as the `*table*` symbol used with tables).
 <div id="3_002e3.xhtml#FOOT157">
 
 [¹⁵⁷](#3_002e3.xhtml#DOCF157) Observe that the `if` expression in this
-procedure has no `⟨``alternative``⟩` expression. Such a “one-armed `if`
+procedure has no ` ⟨``alternative``⟩ ` expression. Such a “one-armed `if`
 statement” is used to decide whether to do something, rather than to
 select between two expressions. An `if` expression returns an
 unspecified value if the predicate is false and there is no
-`⟨``alternative``⟩`.
+` ⟨``alternative``⟩ `.
 
 </div>
 
@@ -18917,14 +18763,14 @@ convenient because it avoids the need to name the intermediate
 expressions in a computation. Our original formulation of the constraint
 language is cumbersome in the same way that many languages are
 cumbersome when dealing with operations on compound data. For example,
-if we wanted to compute the product (*a*+*b*) ⋅ (*c*+*d*), where the
+if we wanted to compute the product (_a_+_b_) ⋅ (_c_+_d_), where the
 variables represent vectors, we could work in “imperative style,” using
 procedures that set the values of designated vector arguments but do not
 themselves return vectors as values:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (v-sum a b temp1)
 (v-sum c d temp2)
 (v-prod temp1 temp2 answer)
@@ -18938,8 +18784,8 @@ and `temp2`:
 
 <div className="lisp">
 
-``` lisp
-(define answer 
+```lisp
+(define answer
   (v-prod (v-sum a b) (v-sum c d)))
 ```
 
@@ -18966,23 +18812,13 @@ implementation, it is very difficult to do the converse.
 
 </div>
 
-Next: [3.4](#3_002e4.xhtml#g_t3_002e4), Prev:
-[3.2](#3_002e2.xhtml#g_t3_002e2), Up: [3.3](#3_002e3.xhtml#g_t3_002e3)  
-\[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
-
 </div>
-
-[⇣](#3_002e3.xhtml#pagebottom)
 
 <div className="section">
 
-[⇡](#3_002e4.xhtml#pagetop)
-Next: [3.5](#3_002e5.xhtml#g_t3_002e5), Prev:
-[3.3](#3_002e3.xhtml#g_t3_002e3), Up: [Chapter
-3](#Chapter-3.xhtml#Chapter-3)  
 \[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
 
-### 3.4Concurrency: Time Is of the Essence
+### 3.4 Concurrency: Time Is of the Essence
 
 We’ve seen the power of computational objects with local state as tools
 for modeling. Yet, as [3.1.3](#3_002e1.xhtml#g_t3_002e1_002e3) warned,
@@ -18992,7 +18828,7 @@ need to abandon the substitution model of evaluation in favor of the
 more intricate environment model.
 
 The central issue lurking beneath the complexity of state, sameness, and
-change is that by introducing assignment we are forced to admit *time*
+change is that by introducing assignment we are forced to admit _time_
 into our computational models. Before we introduced assignment, all our
 programs were timeless, in the sense that any expression that has a
 value always has the same value. In contrast, recall the example of
@@ -19002,7 +18838,7 @@ balance, introduced at the beginning of
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (withdraw 25)
 75
 
@@ -19015,7 +18851,7 @@ balance, introduced at the beginning of
 Here successive evaluations of the same expression yield different
 values. This behavior arises from the fact that the execution of
 assignment statements (in this case, assignments to the variable
-`balance`) delineates *moments in time* when values change. The result
+`balance`) delineates _moments in time_ when values change. The result
 of evaluating an expression depends not only on the expression itself,
 but also on whether the evaluation occurs before or after these moments.
 Building models in terms of computational objects with local state
@@ -19024,7 +18860,7 @@ forces us to confront time as an essential concept in programming.
 We can go further in structuring computational models to match our
 perception of the physical world. Objects in the world do not change one
 at a time in sequence. Rather we perceive them as acting
-*concurrently*—all at once. So it is often natural to model systems as
+_concurrently_—all at once. So it is often natural to model systems as
 collections of computational processes that execute concurrently. Just
 as we can make our programs modular by organizing models in terms of
 objects with separate local state, it is often appropriate to divide
@@ -19050,12 +18886,12 @@ execution, either because the world operates in parallel or because our
 computers do, entails additional complexity in our understanding of
 time.
 
-#### 3.4.1The Nature of Time in Concurrent Systems
+#### 3.4.1 The Nature of Time in Concurrent Systems
 
 On the surface, time seems straightforward. It is an ordering imposed on
-events.[¹⁶³](#3_002e4.xhtml#FOOT163) For any events *A* and *B*, either
-*A* occurs before *B*, *A* and *B* are simultaneous, or *A* occurs after
-*B*. For instance, returning to the bank account example, suppose that
+events.[¹⁶³](#3_002e4.xhtml#FOOT163) For any events _A_ and _B_, either
+_A_ occurs before _B_, _A_ and _B_ are simultaneous, or _A_ occurs after
+_B_. For instance, returning to the bank account example, suppose that
 Peter withdraws $10 and Paul withdraws $25 from a joint account that
 initially contains $100, leaving $65 in the account. Depending on the
 order of the two withdrawals, the sequence of balances in the account is
@@ -19078,11 +18914,11 @@ the procedure given in [3.1.1](#3_002e1.xhtml#g_t3_002e1_002e1):
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (withdraw amount)
   (if (>= balance amount)
-      (begin 
-        (set! balance 
+      (begin
+        (set! balance
               (- balance amount))
         balance)
       "Insufficient funds"))
@@ -19100,7 +18936,7 @@ Things can be worse still. Consider the expression
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (set! balance (- balance amount))
 ```
 
@@ -19115,8 +18951,7 @@ and set it to the new value.
 
 The timing diagram in [Figure 3.29](#3_002e4.xhtml#Figure-3_002e29)
 depicts an order of events where `balance` starts at 100, Peter
-withdraws 10, Paul withdraws 25, and yet the final value of `balance` is
-75. As shown in the diagram, the reason for this anomaly is that Paul’s
+withdraws 10, Paul withdraws 25, and yet the final value of `balance` is 75. As shown in the diagram, the reason for this anomaly is that Paul’s
 assignment of 75 to `balance` is made under the assumption that the
 value of `balance` to be decremented is 100. That assumption, however,
 became invalid when Peter changed `balance` to 90. This is a
@@ -19180,14 +19015,14 @@ A less stringent restriction on concurrency would ensure that a
 concurrent system produces the same result as if the processes had run
 sequentially in some order. There are two important aspects to this
 requirement. First, it does not require the processes to actually run
-sequentially, but only to produce results that are the same *as if* they
+sequentially, but only to produce results that are the same _as if_ they
 had run sequentially. For the example in [Figure
 3.30](#3_002e4.xhtml#Figure-3_002e30), the designer of the bank account
 system can safely allow Paul’s deposit and Peter’s withdrawal to happen
 concurrently, because the net result will be the same as if the two
 operations had happened sequentially. Second, there may be more than one
 possible “correct” result produced by a concurrent program, because we
-require only that the result be the same as for *some* sequential order.
+require only that the result be the same as for _some_ sequential order.
 For example, suppose that Peter and Paul’s joint account starts out with
 $100, and Peter deposits $40 while Paul concurrently withdraws half the
 money in the account. Then sequential execution could result in the
@@ -19211,10 +19046,10 @@ shared values.
 >
 > <div className="example">
 >
-> ``` example
+> ```example
 > Peter: (set! balance (+ balance 10))
 > Paul:  (set! balance (- balance 20))
-> Mary:  (set! balance (- balance 
+> Mary:  (set! balance (- balance
 >                         (/ balance 2)))
 > ```
 >
@@ -19229,26 +19064,26 @@ shared values.
 >     the one in [Figure 3.29](#3_002e4.xhtml#Figure-3_002e29) to
 >     explain how these values can occur.
 
-#### 3.4.2Mechanisms for Controlling Concurrency
+#### 3.4.2 Mechanisms for Controlling Concurrency
 
 We’ve seen that the difficulty in dealing with concurrent processes is
 rooted in the need to consider the interleaving of the order of events
 in the different processes. For example, suppose we have two processes,
-one with three ordered events (*a*,*b*,*c*) and one with three ordered
-events (*x*,*y*,*z*). If the two processes run concurrently, with no
+one with three ordered events (_a_,_b_,_c_) and one with three ordered
+events (_x_,_y_,_z_). If the two processes run concurrently, with no
 constraints on how their execution is interleaved, then there are 20
 different possible orderings for the events that are consistent with the
 individual orderings for the two processes:
 
 <div className="example">
 
-``` example
-(a,b,c,x,y,z)  (a,x,b,y,c,z)  (x,a,b,c,y,z)  
-(x,a,y,z,b,c)  (a,b,x,c,y,z)  (a,x,b,y,z,c)  
-(x,a,b,y,c,z)  (x,y,a,b,c,z)  (a,b,x,y,c,z)  
+```example
+(a,b,c,x,y,z)  (a,x,b,y,c,z)  (x,a,b,c,y,z)
+(x,a,y,z,b,c)  (a,b,x,c,y,z)  (a,x,b,y,z,c)
+(x,a,b,y,c,z)  (x,y,a,b,c,z)  (a,b,x,y,c,z)
 (a,x,y,b,c,z)  (x,a,b,y,z,c)  (x,y,a,b,z,c)
-(a,b,x,y,z,c)  (a,x,y,b,z,c)  (x,a,y,b,c,z)  
-(x,y,a,z,b,c)  (a,x,b,c,y,z)  (a,x,y,z,b,c)  
+(a,b,x,y,z,c)  (a,x,y,b,z,c)  (x,a,y,b,c,z)
+(x,y,a,z,b,c)  (a,x,b,c,y,z)  (a,x,y,z,b,c)
 (x,a,y,b,z,c)  (x,y,z,a,b,c)
 ```
 
@@ -19263,7 +19098,7 @@ A more practical approach to the design of concurrent systems is to
 devise general mechanisms that allow us to constrain the interleaving of
 concurrent processes so that we can be sure that the program behavior is
 correct. Many mechanisms have been developed for this purpose. In this
-section, we describe one of them, the *serializer*.
+section, we describe one of them, the _serializer_.
 
 ##### Serializing access to shared state
 
@@ -19293,17 +19128,17 @@ Scheme to include a procedure called `parallel-execute`:
 
 <div className="lisp">
 
-``` lisp
-(parallel-execute ⟨p₁⟩ 
-                  ⟨p₂⟩ 
-                  … 
+```lisp
+(parallel-execute ⟨p₁⟩
+                  ⟨p₂⟩
+                  …
                   ⟨pₖ⟩)
 ```
 
 </div>
 
-Each `⟨``p``⟩` must be a procedure of no arguments. `Parallel-execute`
-creates a separate process for each `⟨``p``⟩`, which applies `⟨``p``⟩`
+Each ` ⟨``p``⟩ ` must be a procedure of no arguments. `Parallel-execute`
+creates a separate process for each ` ⟨``p``⟩ `, which applies ` ⟨``p``⟩ `
 (to no arguments). These processes all run
 concurrently.[¹⁶⁸](#3_002e4.xhtml#FOOT168)
 
@@ -19311,7 +19146,7 @@ As an example of how this is used, consider
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define x 10)
 (parallel-execute (lambda () (set! x (* x x)))
                   (lambda () (set! x (+ x 1))))
@@ -19326,84 +19161,84 @@ interleaving of the events of *P*₁ and *P*₂:
 
 <div className="example">
 
-``` example
-101: 
-  
+```example
+101:
+
     P
     1
-  
- sets x to 100 and then 
-  
+
+ sets x to 100 and then
+
     P
     2
-  
+
  increments
      x to 101.
-121: 
-  
+121:
+
     P
     2
-  
- increments x to 11 and then 
-  
+
+ increments x to 11 and then
+
     P
     1
-  
+
  sets
      x to x times x.
-110: 
-  
+110:
+
     P
     2
-  
- changes x from 10 to 11 between the 
-     two times that 
-  
+
+ changes x from 10 to 11 between the
+     two times that
+
     P
     1
-  
- accesses the value of 
+
+ accesses the value of
      x during the evaluation of (* x x).
- 11: 
-  
+ 11:
+
     P
     2
-  
- accesses x, then 
-  
+
+ accesses x, then
+
     P
     1
-  
- sets x to 100, 
-     then 
-  
+
+ sets x to 100,
+     then
+
     P
     2
-  
+
  sets x.
-100: 
-  
+100:
+
     P
     1
-  
- accesses x (twice), then 
-  
+
+ accesses x (twice), then
+
     P
     2
-  
+
  sets
-     x to 11, then 
-  
+     x to 11, then
+
     P
     1
-  
+
  sets x.
 ```
 
 </div>
 
 We can constrain the concurrency by using serialized procedures, which
-are created by *serializers*. Serializers are constructed by
+are created by _serializers_. Serializers are constructed by
 `make-serializer`, whose implementation is given below. A serializer
 takes a procedure as argument and returns a serialized procedure that
 behaves like the original procedure. All calls to a given serializer
@@ -19413,10 +19248,10 @@ Thus, in contrast to the example above, executing
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define x 10)
 (define s (make-serializer))
-(parallel-execute 
+(parallel-execute
  (s (lambda () (set! x (* x x))))
  (s (lambda () (set! x (+ x 1)))))
 ```
@@ -19433,11 +19268,11 @@ withdrawals have been serialized:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (make-account balance)
   (define (withdraw amount)
     (if (>= balance amount)
-        (begin (set! balance 
+        (begin (set! balance
                      (- balance amount))
                balance)
         "Insufficient funds"))
@@ -19446,13 +19281,13 @@ withdrawals have been serialized:
     balance)
   (let ((protected (make-serializer)))
     (define (dispatch m)
-      (cond ((eq? m 'withdraw) 
+      (cond ((eq? m 'withdraw)
              (protected withdraw))
-            ((eq? m 'deposit) 
+            ((eq? m 'deposit)
              (protected deposit))
-            ((eq? m 'balance) 
+            ((eq? m 'balance)
              balance)
-            (else (error "Unknown request: 
+            (else (error "Unknown request:
                           MAKE-ACCOUNT"
                          m))))
     dispatch))
@@ -19475,11 +19310,11 @@ withdrawals for different accounts can proceed concurrently.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define x 10)
 > (define s (make-serializer))
-> (parallel-execute 
->   (lambda () 
+> (parallel-execute
+>   (lambda ()
 >     (set! x ((s (lambda () (* x x))))))
 >   (s (lambda () (set! x (+ x 1)))))
 > ```
@@ -19491,9 +19326,9 @@ withdrawals for different accounts can proceed concurrently.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define x 10)
-> (parallel-execute 
+> (parallel-execute
 >  (lambda () (set! x (* x x)))
 >  (lambda () (set! x (* x x x))))
 > ```
@@ -19505,10 +19340,10 @@ withdrawals for different accounts can proceed concurrently.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define x 10)
 > (define s (make-serializer))
-> (parallel-execute 
+> (parallel-execute
 >  (s (lambda () (set! x (* x x))))
 >  (s (lambda () (set! x (* x x x)))))
 > ```
@@ -19521,12 +19356,12 @@ withdrawals for different accounts can proceed concurrently.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (make-account balance)
 >   (define (withdraw amount)
 >     (if (>= balance amount)
->         (begin 
->           (set! balance 
+>         (begin
+>           (set! balance
 >                 (- balance amount))
 >           balance)
 >         "Insufficient funds"))
@@ -19535,17 +19370,17 @@ withdrawals for different accounts can proceed concurrently.
 >     balance)
 >   (let ((protected (make-serializer)))
 >     (define (dispatch m)
->       (cond ((eq? m 'withdraw) 
+>       (cond ((eq? m 'withdraw)
 >              (protected withdraw))
->             ((eq? m 'deposit) 
+>             ((eq? m 'deposit)
 >              (protected deposit))
 >             ((eq? m 'balance)
->              ((protected 
->                 (lambda () 
+>              ((protected
+>                 (lambda ()
 >                   balance)))) ; serialized
->             (else 
->              (error 
->               "Unknown request: 
+>             (else
+>              (error
+>               "Unknown request:
 >                MAKE-ACCOUNT"
 >               m))))
 >     dispatch))
@@ -19567,11 +19402,11 @@ withdrawals for different accounts can proceed concurrently.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (make-account balance)
 >   (define (withdraw amount)
 >     (if (>= balance amount)
->         (begin (set! balance 
+>         (begin (set! balance
 >                      (- balance amount))
 >                balance)
 >         "Insufficient funds"))
@@ -19579,19 +19414,19 @@ withdrawals for different accounts can proceed concurrently.
 >     (set! balance (+ balance amount))
 >     balance)
 >   (let ((protected (make-serializer)))
->     (let ((protected-withdraw 
+>     (let ((protected-withdraw
 >            (protected withdraw))
->           (protected-deposit 
+>           (protected-deposit
 >            (protected deposit)))
 >       (define (dispatch m)
->         (cond ((eq? m 'withdraw) 
+>         (cond ((eq? m 'withdraw)
 >                protected-withdraw)
->               ((eq? m 'deposit) 
+>               ((eq? m 'deposit)
 >                protected-deposit)
->               ((eq? m 'balance) 
+>               ((eq? m 'balance)
 >                balance)
->               (else 
->                (error "Unknown request: 
+>               (else
+>                (error "Unknown request:
 >                        MAKE-ACCOUNT"
 >                       m))))
 >       dispatch)))
@@ -19620,7 +19455,7 @@ could implement this as follows:[¹⁶⁹](#3_002e4.xhtml#FOOT169)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (exchange account1 account2)
   (let ((difference (- (account1 'balance)
                        (account2 'balance))))
@@ -19654,26 +19489,26 @@ and the serializer is exported via message passing:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (make-account-and-serializer balance)
   (define (withdraw amount)
     (if (>= balance amount)
-        (begin 
+        (begin
           (set! balance (- balance amount))
           balance)
         "Insufficient funds"))
   (define (deposit amount)
     (set! balance (+ balance amount))
     balance)
-  (let ((balance-serializer 
+  (let ((balance-serializer
          (make-serializer)))
     (define (dispatch m)
       (cond ((eq? m 'withdraw) withdraw)
             ((eq? m 'deposit) deposit)
             ((eq? m 'balance) balance)
-            ((eq? m 'serializer) 
+            ((eq? m 'serializer)
              balance-serializer)
-            (else (error "Unknown request: 
+            (else (error "Unknown request:
                           MAKE-ACCOUNT"
                          m))))
     dispatch))
@@ -19688,7 +19523,7 @@ serialization, for example as follows:[¹⁷¹](#3_002e4.xhtml#FOOT171)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (deposit account amount)
   (let ((s (account 'serializer))
         (d (account 'deposit)))
@@ -19703,7 +19538,7 @@ original `exchange` procedure with the serializers for both accounts:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (serialized-exchange account1 account2)
   (let ((serializer1 (account1 'serializer))
         (serializer2 (account2 'serializer)))
@@ -19738,8 +19573,8 @@ original `exchange` procedure with the serializers for both accounts:
 >
 > <div className="lisp">
 >
-> ``` lisp
-> (define 
+> ```lisp
+> (define
 >   (transfer from-account to-account amount)
 >   ((from-account 'withdraw) amount)
 >   ((to-account 'deposit) amount))
@@ -19764,30 +19599,30 @@ original `exchange` procedure with the serializers for both accounts:
 >
 > <div className="lisp">
 >
-> ``` lisp
-> (define 
+> ```lisp
+> (define
 >   (make-account-and-serializer balance)
 >   (define (withdraw amount)
 >     (if (>= balance amount)
->         (begin (set! balance 
+>         (begin (set! balance
 >                      (- balance amount))
 >                balance)
 >         "Insufficient funds"))
 >   (define (deposit amount)
 >     (set! balance (+ balance amount))
 >     balance)
->   (let ((balance-serializer 
+>   (let ((balance-serializer
 >          (make-serializer)))
 >     (define (dispatch m)
->       (cond ((eq? m 'withdraw) 
+>       (cond ((eq? m 'withdraw)
 >              (balance-serializer withdraw))
->             ((eq? m 'deposit) 
+>             ((eq? m 'deposit)
 >              (balance-serializer deposit))
->             ((eq? m 'balance) 
+>             ((eq? m 'balance)
 >              balance)
->             ((eq? m 'serializer) 
+>             ((eq? m 'serializer)
 >              balance-serializer)
->             (else (error "Unknown request: 
+>             (else (error "Unknown request:
 >                           MAKE-ACCOUNT"
 >                          m))))
 >     dispatch))
@@ -19799,7 +19634,7 @@ original `exchange` procedure with the serializers for both accounts:
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (deposit account amount)
 >   ((account 'deposit) amount))
 > ```
@@ -19812,8 +19647,8 @@ original `exchange` procedure with the serializers for both accounts:
 ##### Implementing serializers
 
 We implement serializers in terms of a more primitive synchronization
-mechanism called a *mutex*. A mutex is an object that supports two
-operations—the mutex can be *acquired*, and the mutex can be *released*.
+mechanism called a _mutex_. A mutex is an object that supports two
+operations—the mutex can be _acquired_, and the mutex can be _released_.
 Once a mutex has been acquired, no other acquire operations on that
 mutex may proceed until the mutex is
 released.[¹⁷²](#3_002e4.xhtml#FOOT172) In our implementation, each
@@ -19825,7 +19660,7 @@ the serialization property that we need to guarantee.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (make-serializer)
   (let ((mutex (make-mutex)))
     (lambda (p)
@@ -19840,7 +19675,7 @@ the serialization property that we need to guarantee.
 </div>
 
 The mutex is a mutable object (here we’ll use a one-element list, which
-we’ll refer to as a *cell*) that can hold the value true or false. When
+we’ll refer to as a _cell_) that can hold the value true or false. When
 the value is false, the mutex is available to be acquired. When the
 value is true, the mutex is unavailable, and any process that attempts
 to acquire the mutex must wait.
@@ -19854,7 +19689,7 @@ release the mutex, we set the cell contents to false.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (make-mutex)
   (let ((cell (list false)))
     (define (the-mutex m)
@@ -19875,7 +19710,7 @@ following procedure:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (test-and-set! cell)
   (if (car cell)
       true
@@ -19888,7 +19723,7 @@ following procedure:
 However, this implementation of `test-and-set!` does not suffice as it
 stands. There is a crucial subtlety here, which is the essential place
 where concurrency control enters the system: The `test-and-set!`
-operation must be performed *atomically*. That is, we must guarantee
+operation must be performed _atomically_. That is, we must guarantee
 that, once a process has tested the cell and found it to be false, the
 cell contents will actually be set to true before any other process can
 test the cell. If we do not make this guarantee, then the mutex can fail
@@ -19914,9 +19749,9 @@ in hardware.[¹⁷⁵](#3_002e4.xhtml#FOOT175)
 > implementation can fail by allowing two processes to acquire the mutex
 > at the same time.
 
-> **Exercise 3.47:** A semaphore (of size *n*) is a generalization of a
+> **Exercise 3.47:** A semaphore (of size _n_) is a generalization of a
 > mutex. Like a mutex, a semaphore supports acquire and release
-> operations, but it is more general in that up to *n* processes can
+> operations, but it is more general in that up to _n_ processes can
 > acquire it concurrently. Additional processes that attempt to acquire
 > the semaphore must wait for release operations. Give implementations
 > of semaphores
@@ -19937,7 +19772,7 @@ cannot proceed (to enter a serialized procedure protecting *a*2) until
 Paul exits the serialized procedure protecting *a*2. Similarly, Paul
 cannot proceed until Peter exits the serialized procedure protecting
 *a*1. Each process is stalled forever, waiting for the other. This
-situation is called a *deadlock*. Deadlock is always a danger in systems
+situation is called a _deadlock_. Deadlock is always a danger in systems
 that provide concurrent access to multiple shared resources.
 
 One way to avoid the deadlock in this situation is to give each account
@@ -20019,7 +19854,7 @@ complexity of the physical universe.
 <div id="3_002e4.xhtml#FOOT162">
 
 [¹⁶²](#3_002e4.xhtml#DOCF162) Most real processors actually execute a
-few operations at a time, following a strategy called *pipelining*.
+few operations at a time, following a strategy called _pipelining_.
 Although this technique greatly improves the effective utilization of
 the hardware, it is used only to speed up the execution of a sequential
 instruction stream, while retaining the behavior of the sequential
@@ -20045,7 +19880,7 @@ the two processes. Most computers have interlocks on the primitive
 memory-write operations, which protect against such simultaneous access.
 Even this seemingly simple kind of protection, however, raises
 implementation challenges in the design of multiprocessing computers,
-where elaborate *cache-coherence* protocols are required to ensure that
+where elaborate _cache-coherence_ protocols are required to ensure that
 the various processors will maintain a consistent view of memory
 contents, despite the fact that data may be replicated (“cached”) among
 the different processors to increase the speed of memory access.
@@ -20073,7 +19908,7 @@ withdraws $25 from Bank1.
 <div id="3_002e4.xhtml#FOOT167">
 
 [¹⁶⁷](#3_002e4.xhtml#DOCF167) A more formal way to express this idea is
-to say that concurrent programs are inherently *nondeterministic*. That
+to say that concurrent programs are inherently _nondeterministic_. That
 is, they are described not by single-valued functions, but by functions
 whose results are sets of possible values. In
 [4.3](#4_002e3.xhtml#g_t4_002e3) we will study a language for expressing
@@ -20121,16 +19956,16 @@ withdrawals are no longer automatically serialized by the account.
 <div id="3_002e4.xhtml#FOOT172">
 
 [¹⁷²](#3_002e4.xhtml#DOCF172) The term “mutex” is an abbreviation for
-*mutual exclusion*. The general problem of arranging a mechanism that
+_mutual exclusion_. The general problem of arranging a mechanism that
 permits concurrent processes to safely share resources is called the
 mutual exclusion problem. Our mutex is a simple variant of the
-*semaphore* mechanism (see [Exercise
+_semaphore_ mechanism (see [Exercise
 3.47](#3_002e4.xhtml#Exercise-3_002e47)), which was introduced in the
 “THE” Multiprogramming System developed at the Technological University
 of Eindhoven and named for the university’s initials in Dutch ([Dijkstra
 1968a](#References.xhtml#Dijkstra-1968a)). The acquire and release
 operations were originally called P and V, from the Dutch words
-*passeren* (to pass) and *vrijgeven* (to release), in reference to the
+_passeren_ (to pass) and _vrijgeven_ (to release), in reference to the
 semaphores used on railroad systems. Dijkstra’s classic exposition
 ([1968b](#References.xhtml#g_t1968b)) was one of the first to clearly
 present the issues of concurrency control, and showed how to use
@@ -20156,7 +19991,7 @@ follows:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (test-and-set! cell)
   (without-interrupts
    (lambda ()
@@ -20183,13 +20018,13 @@ One issue that arises here is to determine what happens if two processes
 attempt to acquire the same resource at exactly the same time by using
 such an instruction. This requires some mechanism for making a decision
 about which process gets control. Such a mechanism is called an
-*arbiter*. Arbiters usually boil down to some sort of hardware device.
+_arbiter_. Arbiters usually boil down to some sort of hardware device.
 Unfortunately, it is possible to prove that one cannot physically
 construct a fair arbiter that works 100% of the time unless one allows
 the arbiter an arbitrarily long time to make its decision. The
 fundamental phenomenon here was originally observed by the
 fourteenth-century French philosopher Jean Buridan in his commentary on
-Aristotle’s *De caelo*. Buridan argued that a perfectly rational dog
+Aristotle’s _De caelo_. Buridan argued that a perfectly rational dog
 placed between two equally attractive sources of food will starve to
 death, because it is incapable of deciding which to go to first.
 
@@ -20200,7 +20035,7 @@ death, because it is incapable of deciding which to go to first.
 [¹⁷⁶](#3_002e4.xhtml#DOCF176) The general technique for avoiding
 deadlock by numbering the shared resources and acquiring them in order
 is due to [Havender (1968)](#References.xhtml#Havender-_00281968_0029).
-Situations where deadlock cannot be avoided require *deadlock-recovery*
+Situations where deadlock cannot be avoided require _deadlock-recovery_
 methods, which entail having processes “back out” of the deadlocked
 state and try again. Deadlock-recovery mechanisms are widely used in
 database management systems, a topic that is treated in detail in [Gray
@@ -20211,7 +20046,7 @@ and Reuter 1993](#References.xhtml#Gray-and-Reuter-1993).
 <div id="3_002e4.xhtml#FOOT177">
 
 [¹⁷⁷](#3_002e4.xhtml#DOCF177) One such alternative to serialization is
-called *barrier synchronization*. The programmer permits concurrent
+called _barrier synchronization_. The programmer permits concurrent
 processes to execute as they please, but establishes certain
 synchronization points (“barriers”) through which no process can proceed
 until all the processes have reached the barrier. Modern processors
@@ -20245,30 +20080,20 @@ orderings on events in distributed systems.
 
 </div>
 
-Next: [3.5](#3_002e5.xhtml#g_t3_002e5), Prev:
-[3.3](#3_002e3.xhtml#g_t3_002e3), Up: [3.4](#3_002e4.xhtml#g_t3_002e4)  
-\[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
-
 </div>
-
-[⇣](#3_002e4.xhtml#pagebottom)
 
 <div className="section">
 
-[⇡](#3_002e5.xhtml#pagetop)
-Next: [Chapter 4](#Chapter-4.xhtml#Chapter-4), Prev:
-[3.4](#3_002e4.xhtml#g_t3_002e4), Up: [Chapter
-3](#Chapter-3.xhtml#Chapter-3)  
 \[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
 
-### 3.5Streams
+### 3.5 Streams
 
 We’ve gained a good understanding of assignment as a tool in modeling,
 as well as an appreciation of the complex problems that assignment
 raises. It is time to ask whether we could have gone about things in a
 different way, so as to avoid some of these problems. In this section,
 we explore an alternative approach to modeling state, based on data
-structures called *streams*. As we shall see, streams can mitigate some
+structures called _streams_. As we shall see, streams can mitigate some
 of the complexity of modeling state.
 
 Let’s step back and review where this complexity comes from. In an
@@ -20283,8 +20108,8 @@ Is there another approach? Can we avoid identifying time in the computer
 with time in the modeled world? Must we make the model change with time
 in order to model phenomena in a changing world? Think about the issue
 in terms of mathematical functions. We can describe the time-varying
-behavior of a quantity *x* as a function of time *x*(*t*). If we
-concentrate on *x* instant by instant, we think of it as a changing
+behavior of a quantity _x_ as a function of time _x_(_t_). If we
+concentrate on _x_ instant by instant, we think of it as a changing
 quantity. Yet if we concentrate on the entire time history of values, we
 do not emphasize change—the function itself does not
 change.[¹⁸⁰](#3_002e5.xhtml#FOOT180)
@@ -20293,12 +20118,12 @@ If time is measured in discrete steps, then we can model a time function
 as a (possibly infinite) sequence. In this section, we will see how to
 model change in terms of sequences that represent the time histories of
 the systems being modeled. To accomplish this, we introduce new data
-structures called *streams*. From an abstract point of view, a stream is
+structures called _streams_. From an abstract point of view, a stream is
 simply a sequence. However, we will find that the straightforward
 implementation of streams as lists (as in
 [2.2.1](#2_002e2.xhtml#g_t2_002e2_002e1)) doesn’t fully reveal the power
 of stream processing. As an alternative, we introduce the technique of
-*delayed evaluation*, which enables us to represent very large (even
+_delayed evaluation_, which enables us to represent very large (even
 infinite) sequences as streams.
 
 Stream processing lets us model systems that have state without ever
@@ -20309,7 +20134,7 @@ stream framework raises difficulties of its own, and the question of
 which modeling technique leads to more modular and more easily
 maintained systems remains open.
 
-#### 3.5.1Streams Are Delayed Lists
+#### 3.5.1 Streams Are Delayed Lists
 
 As we saw in [2.2.3](#2_002e2.xhtml#g_t2_002e2_002e3), sequences can
 serve as standard interfaces for combining program modules. We
@@ -20329,7 +20154,7 @@ written in standard iterative style:[¹⁸¹](#3_002e5.xhtml#FOOT181)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (sum-primes a b)
   (define (iter count accum)
     (cond ((> count b) accum)
@@ -20347,9 +20172,9 @@ operations of [2.2.3](#2_002e2.xhtml#g_t2_002e2_002e3):
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (sum-primes a b)
-  (accumulate 
+  (accumulate
    +
    0
    (filter prime? (enumerate-interval a b))))
@@ -20372,9 +20197,9 @@ sequence paradigm to compute the second prime in the interval from
 
 <div className="lisp">
 
-``` lisp
-(car (cdr 
-      (filter 
+```lisp
+(car (cdr
+      (filter
        prime?
        (enumerate-interval 10000 1000000))))
 ```
@@ -20410,7 +20235,7 @@ constraints
 
 <div className="example">
 
-``` example
+```example
 (stream-car (cons-stream x y)) = x
 (stream-cdr (cons-stream x y)) = y
 ```
@@ -20428,7 +20253,7 @@ particular, we can build stream analogs of the list operations from
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (stream-ref s n)
   (if (= n 0)
       (stream-car s)
@@ -20437,16 +20262,16 @@ particular, we can build stream analogs of the list operations from
 (define (stream-map proc s)
   (if (stream-null? s)
       the-empty-stream
-      (cons-stream 
+      (cons-stream
        (proc (stream-car s))
        (stream-map proc (stream-cdr s)))))
 
 (define (stream-for-each proc s)
   (if (stream-null? s)
       'done
-      (begin 
+      (begin
         (proc (stream-car s))
-        (stream-for-each proc 
+        (stream-for-each proc
                          (stream-cdr s)))))
 ```
 
@@ -20456,7 +20281,7 @@ particular, we can build stream analogs of the list operations from
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (display-stream s)
   (stream-for-each display-line s))
 
@@ -20486,8 +20311,8 @@ the `cdr` is evaluated at selection time.
 
 Our implementation of streams will be based on a special form called
 `delay`. Evaluating `(delay ⟨exp⟩)` does not evaluate the expression
-`⟨``exp``⟩`, but rather returns a so-called *delayed object*, which we
-can think of as a “promise” to evaluate `⟨``exp``⟩` at some future time.
+` ⟨``exp``⟩ `, but rather returns a so-called _delayed object_, which we
+can think of as a “promise” to evaluate ` ⟨``exp``⟩ ` at some future time.
 As a companion to `delay`, there is a procedure called `force` that
 takes a delayed object as argument and performs the evaluation—in
 effect, forcing the `delay` to fulfill its promise. We will see below
@@ -20498,7 +20323,7 @@ to construct streams.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (cons-stream ⟨a⟩ ⟨b⟩)
 ```
 
@@ -20508,7 +20333,7 @@ is equivalent to
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (cons ⟨a⟩ (delay ⟨b⟩))
 ```
 
@@ -20522,11 +20347,11 @@ procedures:
 
 <div className="lisp">
 
-``` lisp
-(define (stream-car stream) 
+```lisp
+(define (stream-car stream)
   (car stream))
 
-(define (stream-cdr stream) 
+(define (stream-cdr stream)
   (force (cdr stream)))
 ```
 
@@ -20543,11 +20368,11 @@ prime computation we saw above, reformulated in terms of streams:
 
 <div className="lisp">
 
-``` lisp
-(stream-car 
+```lisp
+(stream-car
  (stream-cdr
-  (stream-filter 
-   prime? (stream-enumerate-interval 
+  (stream-filter
+   prime? (stream-enumerate-interval
            10000 1000000))))
 ```
 
@@ -20561,7 +20386,7 @@ of `enumerate-interval` ([2.2.3](#2_002e2.xhtml#g_t2_002e2_002e3)):
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (stream-enumerate-interval low high)
   (if (> low high)
       the-empty-stream
@@ -20578,11 +20403,11 @@ the `cons-stream`, is[¹⁸⁵](#3_002e5.xhtml#FOOT185)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (cons 10000
-      (delay 
-        (stream-enumerate-interval 
-         10001 
+      (delay
+        (stream-enumerate-interval
+         10001
          1000000)))
 ```
 
@@ -20596,18 +20421,18 @@ primes, using the stream analog of the `filter` procedure
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (stream-filter pred stream)
-  (cond ((stream-null? stream) 
+  (cond ((stream-null? stream)
          the-empty-stream)
         ((pred (stream-car stream))
-         (cons-stream 
+         (cons-stream
           (stream-car stream)
-          (stream-filter 
+          (stream-filter
            pred
            (stream-cdr stream))))
-        (else (stream-filter 
-               pred 
+        (else (stream-filter
+               pred
                (stream-cdr stream)))))
 ```
 
@@ -20621,11 +20446,11 @@ returns
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (cons 10001
-      (delay 
-        (stream-enumerate-interval 
-         10002 
+      (delay
+        (stream-enumerate-interval
+         10002
          1000000)))
 ```
 
@@ -20638,8 +20463,8 @@ on, until `stream-enumerate-interval` yields the prime 10,007, whereupon
 
 <div className="lisp">
 
-``` lisp
-(cons-stream 
+```lisp
+(cons-stream
  (stream-car stream)
  (stream-filter pred (stream-cdr stream)))
 ```
@@ -20650,14 +20475,14 @@ which in this case is
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (cons 10007
       (delay
         (stream-filter
          prime?
          (cons 10008
                (delay
-                 (stream-enumerate-interval 
+                 (stream-enumerate-interval
                   10009 1000000))))))
 ```
 
@@ -20671,14 +20496,14 @@ expression is
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (cons 10009
       (delay
         (stream-filter
          prime?
          (cons 10010
                (delay
-                 (stream-enumerate-interval 
+                 (stream-enumerate-interval
                   10011 1000000))))))
 ```
 
@@ -20707,7 +20532,7 @@ procedure. `Delay` can be a special form such that
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (delay ⟨exp⟩)
 ```
 
@@ -20717,7 +20542,7 @@ is syntactic sugar for
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (lambda () ⟨exp⟩)
 ```
 
@@ -20728,7 +20553,7 @@ is syntactic sugar for
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (force delayed-object)
   (delayed-object))
 ```
@@ -20754,7 +20579,7 @@ result.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (memo-proc proc)
   (let ((already-run? false) (result false))
     (lambda ()
@@ -20771,7 +20596,7 @@ result.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (memo-proc (lambda () ⟨exp⟩))
 ```
 
@@ -20787,15 +20612,15 @@ and `force` is as defined previously.[¹⁸⁶](#3_002e5.xhtml#FOOT186)
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (stream-map proc . argstreams)
 >   (if (⟨??⟩ (car argstreams))
 >       the-empty-stream
 >       (⟨??⟩
 >        (apply proc (map ⟨??⟩ argstreams))
 >        (apply stream-map
->               (cons proc 
->                     (map ⟨??⟩ 
+>               (cons proc
+>                     (map ⟨??⟩
 >                          argstreams))))))
 > ```
 >
@@ -20807,7 +20632,7 @@ and `force` is as defined previously.[¹⁸⁶](#3_002e5.xhtml#FOOT186)
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (show x)
 >   (display-line x)
 >   x)
@@ -20820,10 +20645,10 @@ and `force` is as defined previously.[¹⁸⁶](#3_002e5.xhtml#FOOT186)
 >
 > <div className="lisp">
 >
-> ``` lisp
-> (define x 
->   (stream-map 
->    show 
+> ```lisp
+> (define x
+>   (stream-map
+>    show
 >    (stream-enumerate-interval 0 10)))
 >
 > (stream-ref x 5)
@@ -20836,23 +20661,23 @@ and `force` is as defined previously.[¹⁸⁶](#3_002e5.xhtml#FOOT186)
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define sum 0)
 >
 > (define (accum x)
 >   (set! sum (+ x sum))
 >   sum)
 >
-> (define seq 
->   (stream-map 
->    accum 
+> (define seq
+>   (stream-map
+>    accum
 >    (stream-enumerate-interval 1 20)))
 >
 > (define y (stream-filter even? seq))
 >
-> (define z 
->   (stream-filter 
->    (lambda (x) 
+> (define z
+>   (stream-filter
+>    (lambda (x)
 >      (= (remainder x 5) 0)) seq))
 >
 > (stream-ref y 7)
@@ -20867,7 +20692,7 @@ and `force` is as defined previously.[¹⁸⁶](#3_002e5.xhtml#FOOT186)
 > had implemented `(delay ⟨exp⟩)` simply as `(lambda () ⟨exp⟩)` without
 > using the optimization provided by `memo-proc`? Explain.
 
-#### 3.5.2Infinite Streams
+#### 3.5.2 Infinite Streams
 
 We have seen how to support the illusion of manipulating streams as
 complete entities even though, in actuality, we compute only as much of
@@ -20879,9 +20704,9 @@ definition of the stream of positive integers:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (integers-starting-from n)
-  (cons-stream 
+  (cons-stream
    n (integers-starting-from (+ n 1))))
 (define integers (integers-starting-from 1))
 ```
@@ -20899,10 +20724,10 @@ stream of integers that are not divisible by 7:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (divisible? x y) (= (remainder x y) 0))
 (define no-sevens
-  (stream-filter (lambda (x) 
+  (stream-filter (lambda (x)
                    (not (divisible? x 7)))
                  integers))
 ```
@@ -20914,7 +20739,7 @@ elements of this stream:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (stream-ref no-sevens 100)
 117
 ```
@@ -20926,7 +20751,7 @@ Fibonacci numbers:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (fibgen a b)
   (cons-stream a (fibgen b (+ a b))))
 (define fibs (fibgen 0 1))
@@ -20941,8 +20766,8 @@ evaluate `(fibgen 1 2)`, and so on.
 
 For a look at a more exciting infinite stream, we can generalize the
 `no-sevens` example to construct the infinite stream of prime numbers,
-using a method known as the *sieve of
-Eratosthenes*.[¹⁸⁸](#3_002e5.xhtml#FOOT188) We start with the integers
+using a method known as the _sieve of
+Eratosthenes_.[¹⁸⁸](#3_002e5.xhtml#FOOT188) We start with the integers
 beginning with 2, which is the first prime. To get the rest of the
 primes, we start by filtering the multiples of 2 from the rest of the
 integers. This leaves a stream beginning with 3, which is the next
@@ -20957,17 +20782,17 @@ of stream operations:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (sieve stream)
   (cons-stream
    (stream-car stream)
    (sieve (stream-filter
            (lambda (x)
-             (not (divisible? 
+             (not (divisible?
                    x (stream-car stream))))
            (stream-cdr stream)))))
 
-(define primes 
+(define primes
   (sieve (integers-starting-from 2)))
 ```
 
@@ -20977,7 +20802,7 @@ Now to find a particular prime we need only ask for it:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (stream-ref primes 50)
 233
 ```
@@ -21010,7 +20835,7 @@ of ones:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define ones (cons-stream 1 ones))
 ```
 
@@ -21027,8 +20852,8 @@ two given streams:[¹⁹⁰](#3_002e5.xhtml#FOOT190)
 
 <div className="lisp">
 
-``` lisp
-(define (add-streams s1 s2) 
+```lisp
+(define (add-streams s1 s2)
   (stream-map + s1 s2))
 ```
 
@@ -21038,8 +20863,8 @@ Now we can define the integers as follows:
 
 <div className="lisp">
 
-``` lisp
-(define integers 
+```lisp
+(define integers
   (cons-stream 1 (add-streams ones integers)))
 ```
 
@@ -21057,11 +20882,11 @@ We can define the Fibonacci numbers in the same style:
 
 <div className="lisp">
 
-``` lisp
-(define fibs 
-  (cons-stream 
+```lisp
+(define fibs
+  (cons-stream
    0 (cons-stream
-      1 (add-streams 
+      1 (add-streams
          (stream-cdr fibs) fibs))))
 ```
 
@@ -21073,7 +20898,7 @@ itself shifted by one place:
 
 <div className="example">
 
-``` example
+```example
     1 1 2 3 5  8 13 21 … = (stream-cdr fibs)
     0 1 1 2 3  5  8 13 … = fibs
 0 1 1 2 3 5 8 13 21 34 … = fibs
@@ -21086,7 +20911,7 @@ definitions. This multiplies each item in a stream by a given constant:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (scale-stream stream factor)
   (stream-map
    (lambda (x) (* x factor))
@@ -21099,8 +20924,8 @@ For example,
 
 <div className="lisp">
 
-``` lisp
-(define double 
+```lisp
+(define double
   (cons-stream 1 (scale-stream double 2)))
 ```
 
@@ -21114,22 +20939,22 @@ need the first prime, 2, to get started:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define primes
   (cons-stream
-   2 (stream-filter 
+   2 (stream-filter
       prime? (integers-starting-from 3))))
 ```
 
 </div>
 
 This definition is not so straightforward as it appears, because we will
-test whether a number *n* is prime by checking whether *n* is divisible
+test whether a number _n_ is prime by checking whether _n_ is divisible
 by a prime (not by just any integer) less than or equal to $\\sqrt{n}$:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (prime? n)
   (define (iter ps)
     (cond ((> (square (stream-car ps)) n) true)
@@ -21144,10 +20969,10 @@ This is a recursive definition, since `primes` is defined in terms of
 the `prime?` predicate, which itself uses the `primes` stream. The
 reason this procedure works is that, at any point, enough of the
 `primes` stream has been generated to test the primality of the numbers
-we need to check next. That is, for every *n* we test for primality,
-either *n* is not prime (in which case there is a prime already
-generated that divides it) or *n* is prime (in which case there is a
-prime already generated—i.e., a prime less than *n*—that is greater than
+we need to check next. That is, for every _n_ we test for primality,
+either _n_ is not prime (in which case there is a prime already
+generated that divides it) or _n_ is prime (in which case there is a
+prime already generated—i.e., a prime less than _n_—that is greater than
 $\\sqrt{n}$).[¹⁹¹](#3_002e5.xhtml#FOOT191)
 
 > **Exercise 3.53:** Without running the program, describe the elements
@@ -21155,7 +20980,7 @@ $\\sqrt{n}$).[¹⁹¹](#3_002e5.xhtml#FOOT191)
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define s (cons-stream 1 (add-streams s s)))
 > ```
 >
@@ -21164,20 +20989,20 @@ $\\sqrt{n}$).[¹⁹¹](#3_002e5.xhtml#FOOT191)
 > **Exercise 3.54:** Define a procedure `mul-streams`, analogous to
 > `add-streams`, that produces the elementwise product of its two input
 > streams. Use this together with the stream of `integers` to complete
-> the following definition of the stream whose *n*^(th) element
+> the following definition of the stream whose _n_^(th) element
 > (counting from 0) is *n* + 1 factorial:
 >
 > <div className="lisp">
 >
-> ``` lisp
-> (define factorials 
+> ```lisp
+> (define factorials
 >   (cons-stream 1 (mul-streams ⟨??⟩ ⟨??⟩)))
 > ```
 >
 > </div>
 
 > **Exercise 3.55:** Define a procedure `partial-sums` that takes as
-> argument a stream *S* and returns the stream whose elements are *S*₀,
+> argument a stream _S_ and returns the stream whose elements are *S*₀,
 > *S*₀ + *S*₁, *S*₀ + *S*₁ + *S*₂, …. For example,
 > `(partial-sums integers)` should be the stream 1, 3, 6, 10, 15, ….
 
@@ -21190,11 +21015,11 @@ $\\sqrt{n}$).[¹⁹¹](#3_002e5.xhtml#FOOT191)
 > requirement. As an alternative, let us call the required stream of
 > numbers `S` and notice the following facts about it.
 >
-> -   `S` begins with 1.
-> -   The elements of `(scale-stream S 2)` are also elements of `S`.
-> -   The same is true for `(scale-stream S 3)` and
->     `(scale-stream S 5)`.
-> -   These are all the elements of `S`.
+> - `S` begins with 1.
+> - The elements of `(scale-stream S 2)` are also elements of `S`.
+> - The same is true for `(scale-stream S 3)` and
+>   `(scale-stream S 5)`.
+> - These are all the elements of `S`.
 >
 > Now all we have to do is combine elements from these sources. For this
 > we define a procedure `merge` that combines two ordered streams into
@@ -21202,7 +21027,7 @@ $\\sqrt{n}$).[¹⁹¹](#3_002e5.xhtml#FOOT191)
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (merge s1 s2)
 >   (cond ((stream-null? s1) s2)
 >         ((stream-null? s2) s1)
@@ -21210,19 +21035,19 @@ $\\sqrt{n}$).[¹⁹¹](#3_002e5.xhtml#FOOT191)
 >          (let ((s1car (stream-car s1))
 >                (s2car (stream-car s2)))
 >            (cond ((< s1car s2car)
->                   (cons-stream 
->                    s1car 
->                    (merge (stream-cdr s1) 
+>                   (cons-stream
+>                    s1car
+>                    (merge (stream-cdr s1)
 >                           s2)))
 >                  ((> s1car s2car)
->                   (cons-stream 
->                    s2car 
->                    (merge s1 
+>                   (cons-stream
+>                    s2car
+>                    (merge s1
 >                           (stream-cdr s2))))
 >                  (else
->                   (cons-stream 
+>                   (cons-stream
 >                    s1car
->                    (merge 
+>                    (merge
 >                     (stream-cdr s1)
 >                     (stream-cdr s2)))))))))
 > ```
@@ -21233,7 +21058,7 @@ $\\sqrt{n}$).[¹⁹¹](#3_002e5.xhtml#FOOT191)
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define S (cons-stream 1 (merge ⟨??⟩ ⟨??⟩)))
 > ```
 >
@@ -21242,7 +21067,7 @@ $\\sqrt{n}$).[¹⁹¹](#3_002e5.xhtml#FOOT191)
 > Fill in the missing expressions in the places marked `⟨??⟩` above.
 
 > **Exercise 3.57:** How many additions are performed when we compute
-> the *n*^(th) Fibonacci number using the definition of `fibs` based on
+> the _n_^(th) Fibonacci number using the definition of `fibs` based on
 > the `add-streams` procedure? Show that the number of additions would
 > be exponentially greater if we had implemented `(delay ⟨exp⟩)` simply
 > as `(lambda () ⟨exp⟩)`, without using the optimization provided by the
@@ -21254,12 +21079,12 @@ $\\sqrt{n}$).[¹⁹¹](#3_002e5.xhtml#FOOT191)
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (expand num den radix)
 >   (cons-stream
 >    (quotient (* num radix) den)
->    (expand (remainder (* num radix) den) 
->            den 
+>    (expand (remainder (* num radix) den)
+>            den
 >            radix)))
 > ```
 >
@@ -21272,12 +21097,16 @@ $\\sqrt{n}$).[¹⁹¹](#3_002e5.xhtml#FOOT191)
 > **Exercise 3.59:** In [2.5.3](#2_002e5.xhtml#g_t2_002e5_002e3) we saw
 > how to implement a polynomial arithmetic system representing
 > polynomials as lists of terms. In a similar way, we can work with
-> *power series*, such as
-> $$\\begin{matrix}
+> _power series_, such as
+>
+> $$
+> \\begin{matrix}
 > e^{x} & = & {1 + x + \\frac{1}{2}x^{2} + \\frac{1}{3 \\cdot 2}x^{3} + \\frac{1}{4 \\cdot 3 \\cdot 2}x^{4} + \\ldots,} \\\\
 > {\\cos x} & = & {1 - \\frac{1}{2}x^{2} + \\frac{1}{4 \\cdot 3 \\cdot 2}x^{4} - \\ldots,} \\\\
 > {\\sin x} & = & {x - \\frac{1}{3 \\cdot 2}x^{3} + \\frac{1}{5 \\cdot 4 \\cdot 3 \\cdot 2}x^{5} - \\ldots} \\\\
-> \\end{matrix}$$
+> \\end{matrix}
+> $$
+>
 > represented as infinite streams. We will represent the series
 > *a*₀ + *a*₁*x* + *a*₂*x*² + *a*₃*x*³ + … as the stream whose elements
 > are the coefficients *a*₀, *a*₁, *a*₂, *a*₃, ….
@@ -21285,7 +21114,7 @@ $\\sqrt{n}$).[¹⁹¹](#3_002e5.xhtml#FOOT191)
 > 1.  The integral of the series
 >     *a*₀ + *a*₁*x* + *a*₂*x*² + *a*₃*x*³ + … is the series
 >     $$c + {a\_{0}x} + {\\frac{1}{2}a\_{1}x^{2}} + {\\frac{1}{3}a\_{2}x^{3}} + {\\frac{1}{4}a\_{3}x^{4} + \\ldots,}$$
->     where *c* is any constant. Define a procedure `integrate-series`
+>     where _c_ is any constant. Define a procedure `integrate-series`
 >     that takes as input a stream *a*₀, *a*₁, *a*₂, … representing a
 >     power series and returns the stream *a*₀, $\\frac{1}{2}a\_{1}$,
 >     $\\frac{1}{3}a\_{2}$, … of coefficients of the non-constant terms
@@ -21293,16 +21122,16 @@ $\\sqrt{n}$).[¹⁹¹](#3_002e5.xhtml#FOOT191)
 >     term, it doesn’t represent a power series; when we use
 >     `integrate-series`, we will `cons` on the appropriate constant.)
 >
-> 2.  The function *x* ↦ *e*^(*x*) is its own derivative. This implies
->     that *e*^(*x*) and the integral of *e*^(*x*) are the same series,
+> 2.  The function *x* ↦ *e*^(_x_) is its own derivative. This implies
+>     that _e_^(_x_) and the integral of _e_^(_x_) are the same series,
 >     except for the constant term, which is *e*⁰ = 1. Accordingly, we
->     can generate the series for *e*^(*x*) as
+>     can generate the series for _e_^(_x_) as
 >
 >     <div className="lisp">
 >
->     ``` lisp
+>     ```lisp
 >     (define exp-series
->       (cons-stream 
+>       (cons-stream
 >        1 (integrate-series exp-series)))
 >     ```
 >
@@ -21314,8 +21143,8 @@ $\\sqrt{n}$).[¹⁹¹](#3_002e5.xhtml#FOOT191)
 >
 >     <div className="lisp">
 >
->     ``` lisp
->     (define cosine-series 
+>     ```lisp
+>     (define cosine-series
 >       (cons-stream 1 ⟨??⟩))
 >
 >     (define sine-series
@@ -21331,7 +21160,7 @@ $\\sqrt{n}$).[¹⁹¹](#3_002e5.xhtml#FOOT191)
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (mul-series s1 s2)
 >   (cons-stream ⟨??⟩ (add-streams ⟨??⟩ ⟨??⟩)))
 > ```
@@ -21342,22 +21171,26 @@ $\\sqrt{n}$).[¹⁹¹](#3_002e5.xhtml#FOOT191)
 > using the series from [Exercise
 > 3.59](#3_002e5.xhtml#Exercise-3_002e59).
 
-> **Exercise 3.61:** Let *S* be a power series ([Exercise
+> **Exercise 3.61:** Let _S_ be a power series ([Exercise
 > 3.59](#3_002e5.xhtml#Exercise-3_002e59)) whose constant term is 1.
-> Suppose we want to find the power series 1/*S*, that is, the series
-> *X* such that *S**X* = 1. Write *S* = 1 + *S*_(*R*) where *S*_(*R*) is
-> the part of *S* after the constant term. Then we can solve for *X* as
+> Suppose we want to find the power series 1/_S_, that is, the series
+> _X_ such that *S\*\*X* = 1. Write *S* = 1 + *S*_(*R*) where *S*_(_R_) is
+> the part of _S_ after the constant term. Then we can solve for _X_ as
 > follows:
-> $$\\begin{matrix}
+>
+> $$
+> \\begin{matrix}
 > {S \\cdot X} & = & {1,} \\\\
 > {(1 + S\_{R}) \\cdot X} & = & {1,} \\\\
 > {X + S\_{R} \\cdot X} & = & {1,} \\\\
 > X & = & {1 - S\_{R} \\cdot X.} \\\\
-> \\end{matrix}$$
-> In other words, *X* is the power series whose constant term is 1 and
-> whose higher-order terms are given by the negative of *S*_(*R*) times
-> *X*. Use this idea to write a procedure `invert-unit-series` that
-> computes 1/*S* for a power series *S* with constant term 1. You will
+> \\end{matrix}
+> $$
+>
+> In other words, _X_ is the power series whose constant term is 1 and
+> whose higher-order terms are given by the negative of _S_\_(_R_) times
+> _X_. Use this idea to write a procedure `invert-unit-series` that
+> computes 1/_S_ for a power series _S_ with constant term 1. You will
 > need to use `mul-series` from [Exercise
 > 3.60](#3_002e5.xhtml#Exercise-3_002e60).
 
@@ -21372,7 +21205,7 @@ $\\sqrt{n}$).[¹⁹¹](#3_002e5.xhtml#FOOT191)
 > 3.59](#3_002e5.xhtml#Exercise-3_002e59) to generate the power series
 > for tangent.
 
-#### 3.5.3Exploiting the Stream Paradigm
+#### 3.5.3 Exploiting the Stream Paradigm
 
 Streams with delayed evaluation can be a powerful modeling tool,
 providing many of the benefits of local state and assignment. Moreover,
@@ -21395,11 +21228,11 @@ than as a set of variables to be updated. Let’s adopt this perspective
 in revisiting the square-root procedure from
 [1.1.7](#1_002e1.xhtml#g_t1_002e1_002e7). Recall that the idea is to
 generate a sequence of better and better guesses for the square root of
-*x* by applying over and over again the procedure that improves guesses:
+_x_ by applying over and over again the procedure that improves guesses:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (sqrt-improve guess x)
   (average guess (/ x guess)))
 ```
@@ -21413,10 +21246,10 @@ infinite stream of guesses, starting with an initial guess of
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (sqrt-stream x)
   (define guesses
-    (cons-stream 
+    (cons-stream
      1.0 (stream-map
           (lambda (guess)
             (sqrt-improve guess x))
@@ -21440,7 +21273,7 @@ generating terms until the answer is good enough. (See [Exercise
 3.64](#3_002e5.xhtml#Exercise-3_002e64).)
 
 Another iteration that we can treat in the same way is to generate an
-approximation to *π*, based upon the alternating series that we saw in
+approximation to _π_, based upon the alternating series that we saw in
 [1.3.1](#1_002e3.xhtml#g_t1_002e3_002e1):
 $$\\frac{\\pi}{4}\\, = \\, 1 - \\frac{1}{3} + \\frac{1}{5} - \\frac{1}{7} + {\\ldots.}$$
 We first generate the stream of summands of the series (the reciprocals
@@ -21451,14 +21284,14 @@ by 4:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (pi-summands n)
-  (cons-stream 
+  (cons-stream
    (/ 1.0 n)
    (stream-map - (pi-summands (+ n 2)))))
 
 (define pi-stream
-  (scale-stream 
+  (scale-stream
    (partial-sums (pi-summands 1)) 4))
 
 (display-stream pi-stream)
@@ -21475,21 +21308,21 @@ by 4:
 
 </div>
 
-This gives us a stream of better and better approximations to *π*,
+This gives us a stream of better and better approximations to _π_,
 although the approximations converge rather slowly. Eight terms of the
-sequence bound the value of *π* between 3.284 and 3.017.
+sequence bound the value of _π_ between 3.284 and 3.017.
 
 So far, our use of the stream of states approach is not much different
 from updating state variables. But streams give us an opportunity to do
 some interesting tricks. For example, we can transform a stream with a
-*sequence accelerator* that converts a sequence of approximations to a
+_sequence accelerator_ that converts a sequence of approximations to a
 new sequence that converges to the same value as the original, only
 faster.
 
 One such accelerator, due to the eighteenth-century Swiss mathematician
 Leonhard Euler, works well with sequences that are partial sums of
 alternating series (series of terms with alternating signs). In Euler’s
-technique, if *S*_(*n*) is the *n*^(th) term of the original sum
+technique, if _S_\_(_n_) is the _n_^(th) term of the original sum
 sequence, then the accelerated sequence has terms
 $$S\_{n + 1} - {\\frac{(S\_{n + 1} - S\_{n})^{2}}{S\_{n - 1} - 2S\_{n} + S\_{n + 1}}.}$$
 Thus, if the original sequence is represented as a stream of values, the
@@ -21497,12 +21330,12 @@ transformed sequence is given by
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (euler-transform s)
   (let ((s0 (stream-ref s 0))     ; Sₙ₋₁
         (s1 (stream-ref s 1))     ; Sₙ
         (s2 (stream-ref s 2)))    ; Sₙ₊₁
-    (cons-stream 
+    (cons-stream
      (- s2 (/ (square (- s2 s1))
               (+ s0 (* -2 s1) s2)))
      (euler-transform (stream-cdr s)))))
@@ -21511,12 +21344,12 @@ transformed sequence is given by
 </div>
 
 We can demonstrate Euler acceleration with our sequence of
-approximations to *π*:
+approximations to _π_:
 
 <div className="lisp">
 
-``` lisp
-(display-stream 
+```lisp
+(display-stream
  (euler-transform pi-stream))
 3.166666666666667
 3.1333333333333337
@@ -21533,14 +21366,14 @@ approximations to *π*:
 
 Even better, we can accelerate the accelerated sequence, and recursively
 accelerate that, and so on. Namely, we create a stream of streams (a
-structure we’ll call a *tableau*) in which each stream is the transform
+structure we’ll call a _tableau_) in which each stream is the transform
 of the preceding one:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (make-tableau transform s)
-  (cons-stream 
+  (cons-stream
    s
    (make-tableau
     transform
@@ -21550,18 +21383,22 @@ of the preceding one:
 </div>
 
 The tableau has the form
-$$\\begin{matrix}
+
+$$
+\\begin{matrix}
 s\_{00} & s\_{01} & s\_{02} & s\_{03} & s\_{04} & \\ldots \\\\
  & s\_{10} & s\_{11} & s\_{12} & s\_{13} & \\ldots \\\\
  & & s\_{20} & s\_{21} & s\_{22} & \\ldots \\\\
  & & & \\ldots & & \\\\
-\\end{matrix}$$
+\\end{matrix}
+$$
+
 Finally, we form a sequence by taking the first term in each row of the
 tableau:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (accelerated-sequence transform s)
   (stream-map stream-car
               (make-tableau transform s)))
@@ -21569,13 +21406,13 @@ tableau:
 
 </div>
 
-We can demonstrate this kind of “super-acceleration” of the *π*
+We can demonstrate this kind of “super-acceleration” of the _π_
 sequence:
 
 <div className="lisp">
 
-``` lisp
-(display-stream 
+```lisp
+(display-stream
  (accelerated-sequence euler-transform
                        pi-stream))
 4.
@@ -21592,8 +21429,8 @@ sequence:
 </div>
 
 The result is impressive. Taking eight terms of the sequence yields the
-correct value of *π* to 14 decimal places. If we had used only the
-original *π* sequence, we would need to compute on the order of 10¹³
+correct value of _π_ to 14 decimal places. If we had used only the
+original _π_ sequence, we would need to compute on the order of 10¹³
 terms (i.e., expanding the series far enough so that the individual
 terms are less than 10⁻¹³) to get that much accuracy!
 
@@ -21608,9 +21445,9 @@ data structure that can be manipulated with a uniform set of operations.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (sqrt-stream x)
->   (cons-stream 
+>   (cons-stream
 >    1.0
 >    (stream-map (lambda (guess)
 >                  (sqrt-improve guess x))
@@ -21635,7 +21472,7 @@ data structure that can be manipulated with a uniform set of operations.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (sqrt x tolerance)
 >   (stream-limit (sqrt-stream x) tolerance))
 > ```
@@ -21645,7 +21482,7 @@ data structure that can be manipulated with a uniform set of operations.
 > **Exercise 3.65:** Use the series
 > $$\\ln 2\\, = \\, 1 - \\frac{1}{2} + \\frac{1}{3} - \\frac{1}{4} + \\ldots$$
 > to compute three sequences of approximations to the natural logarithm
-> of 2, in the same way we did above for *π*. How rapidly do these
+> of 2, in the same way we did above for _π_. How rapidly do these
 > sequences converge?
 
 ##### Infinite streams of pairs
@@ -21658,15 +21495,15 @@ because the “looping” must range over an infinite set.
 
 For example, suppose we want to generalize the `prime-sum-pairs`
 procedure of [2.2.3](#2_002e2.xhtml#g_t2_002e2_002e3) to produce the
-stream of pairs of *all* integers (*i*,*j*) with *i* ≤ *j* such that
+stream of pairs of _all_ integers (_i_,_j_) with *i* ≤ *j* such that
 *i* + *j* is prime. If `int-pairs` is the sequence of all pairs of
-integers (*i*,*j*) with *i* ≤ *j*, then our required stream is
+integers (_i_,_j_) with *i* ≤ *j*, then our required stream is
 simply[¹⁹⁴](#3_002e5.xhtml#FOOT194)
 
 <div className="lisp">
 
-``` lisp
-(stream-filter 
+```lisp
+(stream-filter
  (lambda (pair)
    (prime? (+ (car pair) (cadr pair))))
  int-pairs)
@@ -21675,34 +21512,46 @@ simply[¹⁹⁴](#3_002e5.xhtml#FOOT194)
 </div>
 
 Our problem, then, is to produce the stream `int-pairs`. More generally,
-suppose we have two streams *S* = (*S*_(*i*)) and *T* = (*T*_(*j*)), and
+suppose we have two streams *S* = (_S\_\_(*i*)) and *T* = (*T*_(_j_)), and
 imagine the infinite rectangular array
-$$\\begin{matrix}
+
+$$
+\\begin{matrix}
 {(S\_{0},T\_{0})} & {(S\_{0},T\_{1})} & {(S\_{0},T\_{2})} & \\ldots \\\\
 {(S\_{1},T\_{0})} & {(S\_{1},T\_{1})} & {(S\_{1},T\_{2})} & \\ldots \\\\
 {(S\_{2},T\_{0})} & {(S\_{2},T\_{1})} & {(S\_{2},T\_{2})} & \\ldots \\\\
 \\ldots & & & \\\\
-\\end{matrix}$$
+\\end{matrix}
+$$
+
 We wish to generate a stream that contains all the pairs in the array
 that lie on or above the diagonal, i.e., the pairs
-$$\\begin{matrix}
+
+$$
+\\begin{matrix}
 {(S\_{0},T\_{0})} & {(S\_{0},T\_{1})} & {(S\_{0},T\_{2})} & \\ldots \\\\
  & {(S\_{1},T\_{1})} & {(S\_{1},T\_{2})} & \\ldots \\\\
  & & {(S\_{2},T\_{2})} & \\ldots \\\\
  & & & \\ldots \\\\
-\\end{matrix}$$
-(If we take both *S* and *T* to be the stream of integers, then this
+\\end{matrix}
+$$
+
+(If we take both _S_ and _T_ to be the stream of integers, then this
 will be our desired stream `int-pairs`.)
 
 Call the general stream of pairs `(pairs S T)`, and consider it to be
 composed of three parts: the pair (*S*₀,*T*₀), the rest of the pairs in
 the first row, and the remaining pairs:[¹⁹⁵](#3_002e5.xhtml#FOOT195)
-$$\\begin{matrix}
+
+$$
+\\begin{matrix}
 {(S\_{0},T\_{0})} & {(S\_{0},T\_{1})} & {(S\_{0},T\_{2})} & \\ldots \\\\
  & {(S\_{1},T\_{1})} & {(S\_{1},T\_{2})} & \\ldots \\\\
  & & {(S\_{2},T\_{2})} & \\ldots \\\\
  & & & \\ldots \\\\
-\\end{matrix}$$
+\\end{matrix}
+$$
+
 Observe that the third piece in this decomposition (pairs that are not
 in the first row) is (recursively) the pairs formed from
 `(stream-cdr S)` and `(stream-cdr T)`. Also note that the second piece
@@ -21710,8 +21559,8 @@ in the first row) is (recursively) the pairs formed from
 
 <div className="lisp">
 
-``` lisp
-(stream-map (lambda (x) 
+```lisp
+(stream-map (lambda (x)
               (list (stream-car s) x))
             (stream-cdr t))
 ```
@@ -21722,12 +21571,12 @@ Thus we can form our stream of pairs as follows:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (pairs s t)
   (cons-stream
    (list (stream-car s) (stream-car t))
    (⟨combine-in-some-way⟩
-    (stream-map (lambda (x) 
+    (stream-map (lambda (x)
                   (list (stream-car s) x))
                 (stream-cdr t))
     (pairs (stream-cdr s)
@@ -21742,11 +21591,11 @@ the two inner streams. One idea is to use the stream analog of the
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (stream-append s1 s2)
   (if (stream-null? s1)
       s2
-      (cons-stream 
+      (cons-stream
        (stream-car s1)
        (stream-append (stream-cdr s1) s2))))
 ```
@@ -21760,7 +21609,7 @@ integers using
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (pairs integers integers)
 ```
 
@@ -21777,11 +21626,11 @@ following `interleave` procedure:[¹⁹⁶](#3_002e5.xhtml#FOOT196)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (interleave s1 s2)
   (if (stream-null? s1)
       s2
-      (cons-stream 
+      (cons-stream
        (stream-car s1)
        (interleave s2 (stream-cdr s1)))))
 ```
@@ -21796,12 +21645,12 @@ We can thus generate the required stream of pairs as
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (pairs s t)
   (cons-stream
    (list (stream-car s) (stream-car t))
    (interleave
-    (stream-map (lambda (x) 
+    (stream-map (lambda (x)
                   (list (stream-car s) x))
                 (stream-cdr t))
     (pairs (stream-cdr s) (stream-cdr t)))))
@@ -21818,8 +21667,8 @@ We can thus generate the required stream of pairs as
 > getting bogged down.)
 
 > **Exercise 3.67:** Modify the `pairs` procedure so that
-> `(pairs integers integers)` will produce the stream of *all* pairs of
-> integers (*i*,*j*) (without the condition *i* ≤ *j*). Hint: You will
+> `(pairs integers integers)` will produce the stream of _all_ pairs of
+> integers (_i_,_j_) (without the condition *i* ≤ *j*). Hint: You will
 > need to mix in an additional stream.
 
 > **Exercise 3.68:** Louis Reasoner thinks that building a stream of
@@ -21829,11 +21678,11 @@ We can thus generate the required stream of pairs as
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (pairs s t)
 >   (interleave
 >    (stream-map
->     (lambda (x) 
+>     (lambda (x)
 >       (list (stream-car s) x))
 >     t)
 >    (pairs (stream-cdr s)
@@ -21846,21 +21695,21 @@ We can thus generate the required stream of pairs as
 > `(pairs integers integers)` using Louis’s definition of `pairs`.
 
 > **Exercise 3.69:** Write a procedure `triples` that takes three
-> infinite streams, *S*, *T*, and *U*, and produces the stream of
-> triples (*S*_(*i*),*T*_(*j*),*U*_(*k*)) such that *i* ≤ *j* ≤ *k*. Use
+> infinite streams, _S_, _T_, and _U_, and produces the stream of
+> triples (_S\_\_(*i*),*T*_(_j_),_U_\_(_k_)) such that *i* ≤ *j* ≤ *k*. Use
 > `triples` to generate the stream of all Pythagorean triples of
-> positive integers, i.e., the triples (*i*,*j*,*k*) such that *i* ≤ *j*
+> positive integers, i.e., the triples (_i_,_j_,_k_) such that *i* ≤ *j*
 > and *i*² + *j*² = *k*².
 
 > **Exercise 3.70:** It would be nice to be able to generate streams in
 > which the pairs appear in some useful order, rather than in the order
-> that results from an *ad hoc* interleaving process. We can use a
+> that results from an _ad hoc_ interleaving process. We can use a
 > technique similar to the `merge` procedure of [Exercise
 > 3.56](#3_002e5.xhtml#Exercise-3_002e56), if we define a way to say
 > that one pair of integers is “less than” another. One way to do this
-> is to define a “weighting function” *W*(*i*,*j*) and stipulate that
+> is to define a “weighting function” _W_(_i_,_j_) and stipulate that
 > (*i*₁,*j*₁) is less than (*i*₂,*j*₂) if
-> *W*(*i*₁,*j*₁)\<*W*(*i*₂,*j*₂). Write a procedure `merge-weighted`
+> _W_(*i*₁,*j*₁)\<_W_(*i*₂,*j*₂). Write a procedure `merge-weighted`
 > that is like `merge`, except that `merge-weighted` takes an additional
 > argument `weight`, which is a procedure that computes the weight of a
 > pair, and is used to determine the order in which elements should
@@ -21870,21 +21719,21 @@ We can thus generate the required stream of pairs as
 > function, and generates the stream of pairs, ordered according to
 > weight. Use your procedure to generate
 >
-> 1.  the stream of all pairs of positive integers (*i*,*j*) with
+> 1.  the stream of all pairs of positive integers (_i_,_j_) with
 >     *i* ≤ *j* ordered according to the sum *i* + *j*,
-> 2.  the stream of all pairs of positive integers (*i*,*j*) with
->     *i* ≤ *j*, where neither *i* nor *j* is divisible by 2, 3, or 5,
+> 2.  the stream of all pairs of positive integers (_i_,_j_) with
+>     *i* ≤ *j*, where neither _i_ nor _j_ is divisible by 2, 3, or 5,
 >     and the pairs are ordered according to the sum
->     2*i* + 3*j* + 5*i**j*.
+>     2*i* + 3*j* + 5*i\*\*j*.
 
 > **Exercise 3.71:** Numbers that can be expressed as the sum of two
-> cubes in more than one way are sometimes called *Ramanujan numbers*,
+> cubes in more than one way are sometimes called _Ramanujan numbers_,
 > in honor of the mathematician Srinivasa
 > Ramanujan.[¹⁹⁸](#3_002e5.xhtml#FOOT198) Ordered streams of pairs
 > provide an elegant solution to the problem of computing these numbers.
 > To find a number that can be written as the sum of two cubes in two
 > different ways, we need only generate the stream of pairs of integers
-> (*i*,*j*) weighted according to the sum *i*³ + *j*³ (see [Exercise
+> (_i_,_j_) weighted according to the sum *i*³ + *j*³ (see [Exercise
 > 3.70](#3_002e5.xhtml#Exercise-3_002e70)), then search the stream for
 > two consecutive pairs with the same weight. Write a procedure to
 > generate the Ramanujan numbers. The first such number is 1,729. What
@@ -21902,19 +21751,19 @@ analogs of the “signals” in signal-processing systems. In fact, we can
 use streams to model signal-processing systems in a very direct way,
 representing the values of a signal at successive time intervals as
 consecutive elements of a stream. For instance, we can implement an
-*integrator* or *summer* that, for an input stream *x* = (*x*_(*i*)), an
-initial value *C*, and a small increment *d**t*, accumulates the sum
+_integrator_ or _summer_ that, for an input stream *x* = (_x\_\_(*i*)), an
+initial value *C*, and a small increment *d\*\*t*, accumulates the sum
 $$S\_{i}\\, = \\, C + {\\sum\\limits\_{j = 1}^{i}x\_{j}\\, dt}$$
-and returns the stream of values *S* = (*S*_(*i*)). The following
+and returns the stream of values *S* = (*S*_(_i_)). The following
 `integral` procedure is reminiscent of the “implicit style” definition
 of the stream of integers ([3.5.2](#3_002e5.xhtml#g_t3_002e5_002e2)):
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (integral integrand initial-value dt)
   (define int
-    (cons-stream 
+    (cons-stream
      initial-value
      (add-streams (scale-stream integrand dt)
                   int)))
@@ -21925,7 +21774,7 @@ of the stream of integers ([3.5.2](#3_002e5.xhtml#g_t3_002e5_002e2)):
 
 [Figure 3.32](#3_002e5.xhtml#Figure-3_002e32) is a picture of a
 signal-processing system that corresponds to the `integral` procedure.
-The input stream is scaled by *d**t* and passed through an adder, whose
+The input stream is scaled by _d\*\*t_ and passed through an adder, whose
 output is passed back through the same adder. The self-reference in the
 definition of `int` is reflected in the figure by the feedback loop that
 connects the output of the adder to one of the inputs.
@@ -21936,9 +21785,9 @@ system.
 
 > **Exercise 3.73:** We can model electrical circuits using streams to
 > represent the values of currents or voltages at a sequence of times.
-> For instance, suppose we have an *RC circuit* consisting of a resistor
-> of resistance *R* and a capacitor of capacitance *C* in series. The
-> voltage response *v* of the circuit to an injected current *i* is
+> For instance, suppose we have an _RC circuit_ consisting of a resistor
+> of resistance _R_ and a capacitor of capacitance _C_ in series. The
+> voltage response _v_ of the circuit to an injected current _i_ is
 > determined by the formula in [Figure
 > 3.33](#3_002e5.xhtml#Figure-3_002e33), whose structure is shown by the
 > accompanying signal-flow diagram.
@@ -21948,11 +21797,11 @@ system.
 > **Figure 3.33:** An RC circuit and the associated signal-flow diagram.
 >
 > Write a procedure `RC` that models this circuit. `RC` should take as
-> inputs the values of *R*, *C*, and *d**t* and should return a
-> procedure that takes as inputs a stream representing the current *i*
+> inputs the values of _R_, _C_, and _d\*\*t_ and should return a
+> procedure that takes as inputs a stream representing the current _i_
 > and an initial value for the capacitor voltage *v*₀ and produces as
-> output the stream of voltages *v*. For example, you should be able to
-> use `RC` to model an RC circuit with *R* = 5 ohms, *C* = 1 farad, and
+> output the stream of voltages _v_. For example, you should be able to
+> use `RC` to model an RC circuit with _R_ = 5 ohms, _C_ = 1 farad, and
 > a 0.5-second time step by evaluating `(define RC1 (RC 5 1 0.5))`. This
 > defines `RC1` as a procedure that takes a stream representing the time
 > sequence of currents and an initial capacitor voltage and produces the
@@ -21960,7 +21809,7 @@ system.
 
 > **Exercise 3.74:** Alyssa P. Hacker is designing a system to process
 > signals coming from physical sensors. One important feature she wishes
-> to produce is a signal that describes the *zero crossings* of the
+> to produce is a signal that describes the _zero crossings_ of the
 > input signal. That is, the resulting signal should be  + 1 whenever
 > the input signal changes from negative to positive,  − 1 whenever the
 > input signal changes from positive to negative, and 0 otherwise.
@@ -21969,7 +21818,7 @@ system.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > … 1 2 1.5 1 0.5 -0.1 -2 -3 -2 -0.5 0.2 3 4 …
 > … 0 0  0  0  0   -1   0  0  0   0   1  0 0 …
 > ```
@@ -21985,18 +21834,18 @@ system.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (make-zero-crossings
 >          input-stream last-value)
 >   (cons-stream
->    (sign-change-detector 
->     (stream-car input-stream) 
+>    (sign-change-detector
+>     (stream-car input-stream)
 >     last-value)
->    (make-zero-crossings 
+>    (make-zero-crossings
 >     (stream-cdr input-stream)
 >     (stream-car input-stream))))
 >
-> (define zero-crossings 
+> (define zero-crossings
 >   (make-zero-crossings sense-data 0))
 > ```
 >
@@ -22009,16 +21858,16 @@ system.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define zero-crossings
->   (stream-map sign-change-detector 
->               sense-data 
+>   (stream-map sign-change-detector
+>               sense-data
 >               ⟨expression⟩))
 > ```
 >
 > </div>
 >
-> Complete the program by supplying the indicated `⟨``expression``⟩`.
+> Complete the program by supplying the indicated ` ⟨``expression``⟩ `.
 
 > **Exercise 3.75:** Unfortunately, Alyssa’s zero-crossing detector in
 > [Exercise 3.74](#3_002e5.xhtml#Exercise-3_002e74) proves to be
@@ -22033,16 +21882,16 @@ system.
 >
 > <div className="lisp">
 >
-> ``` lisp
-> (define (make-zero-crossings 
+> ```lisp
+> (define (make-zero-crossings
 >          input-stream last-value)
->   (let ((avpt 
->          (/ (+ (stream-car input-stream) 
->                last-value) 
+>   (let ((avpt
+>          (/ (+ (stream-car input-stream)
+>                last-value)
 >             2)))
->     (cons-stream 
+>     (cons-stream
 >      (sign-change-detector avpt last-value)
->      (make-zero-crossings 
+>      (make-zero-crossings
 >       (stream-cdr input-stream) avpt))))
 > ```
 >
@@ -22064,7 +21913,7 @@ system.
 > a component to implement the zero-crossing detector in a more modular
 > style.
 
-#### 3.5.4Streams and Delayed Evaluation
+#### 3.5.4 Streams and Delayed Evaluation
 
 The `integral` procedure at the end of the preceding section shows how
 we can use streams to model signal-processing systems that contain
@@ -22074,11 +21923,11 @@ feedback loops. The feedback loop for the adder shown in [Figure
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define int
-  (cons-stream 
+  (cons-stream
    initial-value
-   (add-streams 
+   (add-streams
     (scale-stream integrand dt) int)))
 ```
 
@@ -22098,21 +21947,21 @@ Unfortunately, stream models of systems with loops may require uses of
 `delay` beyond the “hidden” `delay` supplied by `cons-stream`. For
 instance, [Figure 3.34](#3_002e5.xhtml#Figure-3_002e34) shows a
 signal-processing system for solving the differential equation
-*d**y*/*d**t* = *f*(*y*) where *f* is a given function. The figure shows
-a mapping component, which applies *f* to its input signal, linked in a
+_d\*\*y_/*d\*\*t* = *f*(_y_) where _f_ is a given function. The figure shows
+a mapping component, which applies _f_ to its input signal, linked in a
 feedback loop to an integrator in a manner very similar to that of the
 analog computer circuits that are actually used to solve such equations.
 
 SVG
 **Figure 3.34:** An “analog computer circuit” that solves the equation
-*d**y*/*d**t* = *f*(*y*).
+_d\*\*y_/*d\*\*t* = *f*(_y_).
 
-Assuming we are given an initial value *y*₀ for *y*, we could try to
+Assuming we are given an initial value *y*₀ for _y_, we could try to
 model this system using the procedure
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (solve f y0 dt)
   (define y (integral dy y0 dt))
   (define dy (stream-map f y))
@@ -22138,21 +21987,21 @@ working to generate the first element of `dy`, which will produce the
 next element of `y`, and so on.
 
 To take advantage of this idea, we will redefine `integral` to expect
-the integrand stream to be a *delayed argument*. `Integral` will `force`
+the integrand stream to be a _delayed argument_. `Integral` will `force`
 the integrand to be evaluated only when it is required to generate more
 than the first element of the output stream:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (integral
          delayed-integrand initial-value dt)
   (define int
-    (cons-stream 
+    (cons-stream
      initial-value
-     (let ((integrand 
+     (let ((integrand
             (force delayed-integrand)))
-       (add-streams 
+       (add-streams
         (scale-stream integrand dt)
         int))))
   int)
@@ -22165,7 +22014,7 @@ Now we can implement our `solve` procedure by delaying the evaluation of
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (solve f y0 dt)
   (define y (integral (delay dy) y0 dt))
   (define dy (stream-map f y))
@@ -22177,13 +22026,13 @@ Now we can implement our `solve` procedure by delaying the evaluation of
 In general, every caller of `integral` must now `delay` the integrand
 argument. We can demonstrate that the `solve` procedure works by
 approximating *e* ≈ 2.718 by computing the value at *y* = 1 of the
-solution to the differential equation *d**y*/*d**t* = *y* with initial
-condition *y*(0) = 1:
+solution to the differential equation _d\*\*y_/*d\*\*t* = *y* with initial
+condition _y_(0) = 1:
 
 <div className="lisp">
 
-``` lisp
-(stream-ref 
+```lisp
+(stream-ref
  (solve (lambda (y) y) 1 0.001) 1000)
 2.716924
 ```
@@ -22198,14 +22047,14 @@ condition *y*(0) = 1:
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (integral
 >          integrand initial-value dt)
->   (cons-stream 
+>   (cons-stream
 >    initial-value
 >    (if (stream-null? integrand)
 >        the-empty-stream
->        (integral 
+>        (integral
 >         (stream-cdr integrand)
 >         (+ (* dt (stream-car integrand))
 >            initial-value)
@@ -22223,15 +22072,15 @@ condition *y*(0) = 1:
 > signal-processing system to study the homogeneous second-order linear
 > differential equation
 > $$\\frac{d^{2}y}{dt^{2}} - {a\\frac{dy}{dt}} - {by}\\, = \\, 0.$$
-> The output stream, modeling *y*, is generated by a network that
-> contains a loop. This is because the value of *d*²*y*/*d**t*² depends
-> upon the values of *y* and *d**y*/*d**t* and both of these are
-> determined by integrating *d*²*y*/*d**t*². The diagram we would like
+> The output stream, modeling _y_, is generated by a network that
+> contains a loop. This is because the value of *d*²*y*/*d\*\*t*² depends
+> upon the values of _y_ and _d\*\*y_/_d\*\*t_ and both of these are
+> determined by integrating *d*²*y*/*d\*\*t*². The diagram we would like
 > to encode is shown in [Figure 3.35](#3_002e5.xhtml#Figure-3_002e35).
 > Write a procedure `solve-2nd` that takes as arguments the constants
-> *a*, *b*, and *d**t* and the initial values *y*₀ and *d**y*₀ for *y*
-> and *d**y*/*d**t* and generates the stream of successive values of
-> *y*.
+> _a_, _b_, and _d\*\*t_ and the initial values *y*₀ and *d\*\*y*₀ for _y_
+> and _d\*\*y_/_d\*\*t_ and generates the stream of successive values of
+> _y_.
 
 SVG
 **Figure 3.35:** Signal-flow diagram for the solution to a second-order
@@ -22240,35 +22089,47 @@ linear differential equation.
 > **Exercise 3.79:** Generalize the `solve-2nd` procedure of [Exercise
 > 3.78](#3_002e5.xhtml#Exercise-3_002e78) so that it can be used to
 > solve general second-order differential equations
-> *d*²*y*/*d**t*² = *f*(*d**y*/*d**t*,*y*).
+> *d*²*y*/*d\*\*t*² = *f*(_d\*\*y_/_d\*\*t_,_y_).
 
 SVG
 **Figure 3.36:** A series RLC circuit.
 
-> **Exercise 3.80:** A *series RLC circuit* consists of a resistor, a
+> **Exercise 3.80:** A _series RLC circuit_ consists of a resistor, a
 > capacitor, and an inductor connected in series, as shown in [Figure
-> 3.36](#3_002e5.xhtml#Figure-3_002e36). If *R*, *L*, and *C* are the
+> 3.36](#3_002e5.xhtml#Figure-3_002e36). If _R_, _L_, and _C_ are the
 > resistance, inductance, and capacitance, then the relations between
-> voltage (*v*) and current (*i*) for the three components are described
+> voltage (_v_) and current (_i_) for the three components are described
 > by the equations
-> $$\\begin{matrix}
+>
+> $$
+> \\begin{matrix}
 > v\_{R} & = & {i\_{R}R,} \\\\
 > v\_{L} & = & {L\\,\\frac{di\_{L}}{dt},} \\\\
 > i\_{C} & = & {C\\,\\frac{dv\_{C}}{dt},} \\\\
-> \\end{matrix}$$
+> \\end{matrix}
+> $$
+>
 > and the circuit connections dictate the relations
-> $$\\begin{matrix}
+>
+> $$
+> \\begin{matrix}
 > i\_{R} & = & {i\_{L} = - i\_{C},} \\\\
 > v\_{C} & = & {v\_{L} + v\_{R}.} \\\\
-> \\end{matrix}$$
+> \\end{matrix}
+> $$
+>
 > Combining these equations shows that the state of the circuit
-> (summarized by *v*_(*C*), the voltage across the capacitor, and
-> *i*_(*L*), the current in the inductor) is described by the pair of
+> (summarized by _v\_\_(*C*), the voltage across the capacitor, and
+> *i*_(_L_), the current in the inductor) is described by the pair of
 > differential equations
-> $$\\begin{matrix}
+>
+> $$
+> \\begin{matrix}
 > \\frac{dv\_{C}}{dt} & = & {- \\frac{i\_{L}}{C}\\,,} \\\\
 > \\frac{di\_{L}}{dt} & = & {\\frac{1}{L}\\, v\_{C} - \\frac{R}{L}\\, i\_{L}.} \\\\
-> \\end{matrix}$$
+> \\end{matrix}
+> $$
+>
 > The signal-flow diagram representing this system of differential
 > equations is shown in [Figure 3.37](#3_002e5.xhtml#Figure-3_002e37).
 
@@ -22276,16 +22137,16 @@ SVG
 **Figure 3.37:** A signal-flow diagram for the solution to a series RLC
 circuit.
 
-> Write a procedure `RLC` that takes as arguments the parameters *R*,
-> *L*, and *C* of the circuit and the time increment *d**t*. In a manner
+> Write a procedure `RLC` that takes as arguments the parameters _R_,
+> _L_, and _C_ of the circuit and the time increment _d\*\*t_. In a manner
 > similar to that of the `RC` procedure of [Exercise
 > 3.73](#3_002e5.xhtml#Exercise-3_002e73), `RLC` should produce a
 > procedure that takes the initial values of the state variables,
-> *v*_(*C*₀) and *i*_(*L*₀), and produces a pair (using `cons`) of the
-> streams of states *v*_(*C*) and *i*_(*L*). Using `RLC`, generate the
+> _v\_\_(*C*₀) and *i*_(*L*₀), and produces a pair (using `cons`) of the
+> streams of states _v\_\_(*C*) and *i*_(_L_). Using `RLC`, generate the
 > pair of streams that models the behavior of a series RLC circuit with
-> *R* = 1 ohm, *C* = 0.2 farad, *L* = 1 henry, *d**t* = 0.1 second, and
-> initial values *i*_(*L*₀) = 0 amps and *v*_(*C*₀) = 10 volts.
+> _R_ = 1 ohm, _C_ = 0.2 farad, _L_ = 1 henry, _d\*\*t_ = 0.1 second, and
+> initial values _i\_\_(*L*₀) = 0 amps and *v*_(*C*₀) = 10 volts.
 
 ##### Normal-order evaluation
 
@@ -22324,14 +22185,14 @@ knows, mutability and delayed evaluation do not mix well in programming
 languages, and devising ways to deal with both of these at once is an
 active area of research.
 
-#### 3.5.5Modularity of Functional Programs and Modularity of Objects
+#### 3.5.5 Modularity of Functional Programs and Modularity of Objects
 
 As we saw in [3.1.2](#3_002e1.xhtml#g_t3_002e1_002e2), one of the major
 benefits of introducing assignment is that we can increase the
 modularity of our systems by encapsulating, or “hiding,” parts of the
 state of a large system within local variables. Stream models can
 provide an equivalent modularity without the use of assignment. As an
-illustration, we can reimplement the Monte Carlo estimation of *π*,
+illustration, we can reimplement the Monte Carlo estimation of _π_,
 which we examined in [3.1.2](#3_002e1.xhtml#g_t3_002e1_002e2), from a
 stream-processing point of view.
 
@@ -22343,7 +22204,7 @@ generator:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define rand
   (let ((x random-init))
     (lambda ()
@@ -22353,16 +22214,16 @@ generator:
 
 </div>
 
-In the stream formulation there is no random-number generator *per se*,
+In the stream formulation there is no random-number generator _per se_,
 just a stream of random numbers produced by successive calls to
 `rand-update`:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define random-numbers
   (cons-stream random-init
-               (stream-map rand-update 
+               (stream-map rand-update
                            random-numbers)))
 ```
 
@@ -22373,7 +22234,7 @@ performed on consecutive pairs in the `random-numbers` stream:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define cesaro-stream
   (map-successive-pairs
    (lambda (r1 r2) (= (gcd r1 r2) 1))
@@ -22381,9 +22242,9 @@ performed on consecutive pairs in the `random-numbers` stream:
 
 (define (map-successive-pairs f s)
   (cons-stream
-   (f (stream-car s) 
+   (f (stream-car s)
       (stream-car (stream-cdr s)))
-   (map-successive-pairs 
+   (map-successive-pairs
     f (stream-cdr (stream-cdr s)))))
 ```
 
@@ -22391,23 +22252,23 @@ performed on consecutive pairs in the `random-numbers` stream:
 
 The `cesaro-stream` is now fed to a `monte-carlo` procedure, which
 produces a stream of estimates of probabilities. The results are then
-converted into a stream of estimates of *π*. This version of the program
+converted into a stream of estimates of _π_. This version of the program
 doesn’t need a parameter telling how many trials to perform. Better
-estimates of *π* (from performing more experiments) are obtained by
+estimates of _π_ (from performing more experiments) are obtained by
 looking farther into the `pi` stream:
 
 <div className="lisp">
 
-``` lisp
-(define (monte-carlo experiment-stream 
-                     passed 
+```lisp
+(define (monte-carlo experiment-stream
+                     passed
                      failed)
   (define (next passed failed)
     (cons-stream
      (/ passed (+ passed failed))
      (monte-carlo
-      (stream-cdr experiment-stream) 
-      passed 
+      (stream-cdr experiment-stream)
+      passed
       failed)))
   (if (stream-car experiment-stream)
       (next (+ passed 1) failed)
@@ -22467,7 +22328,7 @@ implemented a simplified version of such a processor:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (make-simplified-withdraw balance)
   (lambda (amount)
     (set! balance (- balance amount))
@@ -22489,11 +22350,11 @@ produces the stream of successive balances in the account:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (stream-withdraw balance amount-stream)
   (cons-stream
    balance
-   (stream-withdraw 
+   (stream-withdraw
     (- balance (stream-car amount-stream))
     (stream-cdr amount-stream))))
 ```
@@ -22536,8 +22397,8 @@ matches the perception of interacting with a world of which we are part.
 However, as we’ve seen repeatedly throughout this chapter, these models
 raise thorny problems of constraining the order of events and of
 synchronizing multiple processes. The possibility of avoiding these
-problems has stimulated the development of *functional programming
-languages*, which do not include any provision for assignment or mutable
+problems has stimulated the development of _functional programming
+languages_, which do not include any provision for assignment or mutable
 data. In such a language, all procedures implement well-defined
 mathematical functions of their arguments, whose behavior does not
 change. The functional approach is extremely attractive for dealing with
@@ -22553,7 +22414,7 @@ objects, we would model the fact that Peter and Paul share an account by
 having both Peter and Paul send their transaction requests to the same
 bank-account object, as we saw in
 [3.1.3](#3_002e1.xhtml#g_t3_002e1_002e3). From the stream point of view,
-where there are no “objects” *per se*, we have already indicated that a
+where there are no “objects” _per se_, we have already indicated that a
 bank account can be modeled as a process that operates on a stream of
 transaction requests to produce a stream of responses. Accordingly, we
 could model the fact that Peter and Paul have a joint bank account by
@@ -22565,7 +22426,7 @@ SVG
 **Figure 3.38:** A joint bank account, modeled by merging two streams of
 transaction requests.
 
-The trouble with this formulation is in the notion of *merge*. It will
+The trouble with this formulation is in the notion of _merge_. It will
 not do to merge the two streams by simply taking alternately one request
 from Peter and one request from Paul. Suppose Paul accesses the account
 only very rarely. We could hardly force Peter to wait for Paul to access
@@ -22643,7 +22504,7 @@ lists and streams.
 be defined as procedures, `cons-stream` must be a special form. If
 `cons-stream` were a procedure, then, according to our model of
 evaluation, evaluating `(cons-stream ⟨a⟩ ⟨b⟩)` would automatically cause
-`⟨``b``⟩` to be evaluated, which is precisely what we do not want to
+` ⟨``b``⟩ ` to be evaluated, which is precisely what we do not want to
 happen. For the same reason, `delay` must be a special form, though
 `force` can be an ordinary procedure.
 
@@ -22664,16 +22525,16 @@ actually appears where `10001` is shown.
 [¹⁸⁶](#3_002e5.xhtml#DOCF186) There are many possible implementations of
 streams other than the one described in this section. Delayed
 evaluation, which is the key to making streams practical, was inherent
-in Algol 60’s *call-by-name* parameter-passing method. The use of this
+in Algol 60’s _call-by-name_ parameter-passing method. The use of this
 mechanism to implement streams was first described by [Landin
 (1965)](#References.xhtml#Landin-_00281965_0029). Delayed evaluation for
 streams was introduced into Lisp by [Friedman and Wise
 (1976)](#References.xhtml#Friedman-and-Wise-_00281976_0029). In their
 implementation, `cons` always delays evaluating its arguments, so that
 lists automatically behave as streams. The memoizing optimization is
-also known as *call-by-need*. The Algol community would refer to our
-original delayed objects as *call-by-name thunks* and to the optimized
-versions as *call-by-need thunks*.
+also known as _call-by-need_. The Algol community would refer to our
+original delayed objects as _call-by-name thunks_ and to the optimized
+versions as _call-by-need thunks_.
 
 </div>
 
@@ -22731,14 +22592,14 @@ than a stream.
 <div id="3_002e5.xhtml#FOOT191">
 
 [¹⁹¹](#3_002e5.xhtml#DOCF191) This last point is very subtle and relies
-on the fact that *p*_(*n* + 1) ≤ *p*_(*n*)². (Here, *p*_(*k*) denotes
+on the fact that _p\_\_(*n* + 1) ≤ *p*_(_n_)². (Here, _p\_\_(*k*) denotes
 the *k*^(th) prime.) Estimates such as these are very difficult to
 establish. The ancient proof by Euclid that there are an infinite number
 of primes shows that *p*_(*n* + 1) ≤ *p*₁*p*₂⋯*p*_(*n*) + 1, and no
 substantially better result was proved until 1851, when the Russian
 mathematician P. L. Chebyshev established that
-*p*_(*n* + 1) ≤ 2*p*_(*n*) for all *n*. This result, originally
-conjectured in 1845, is known as *Bertrand’s hypothesis*. A proof can be
+*p*_(*n* + 1) ≤ 2*p*\_(_n_) for all _n_. This result, originally
+conjectured in 1845, is known as _Bertrand’s hypothesis_. A proof can be
 found in section 22.3 of [Hardy and Wright
 1960](#References.xhtml#Hardy-and-Wright-1960).
 
@@ -22784,9 +22645,9 @@ chose this decomposition.
 
 [¹⁹⁶](#3_002e5.xhtml#DOCF196) The precise statement of the required
 property on the order of combination is as follows: There should be a
-function *f* of two arguments such that the pair corresponding to
-element *i* of the first stream and element *j* of the second stream
-will appear as element number *f*(*i*,*j*) of the output stream. The
+function _f_ of two arguments such that the pair corresponding to
+element _i_ of the first stream and element _j_ of the second stream
+will appear as element number _f_(_i_,_j_) of the output stream. The
 trick of using `interleave` to accomplish this was shown to us by David
 Turner, who employed it in the language KRC ([Turner
 1981](#References.xhtml#Turner-1981)).
@@ -22845,7 +22706,7 @@ problem is illustrated by the language ML ([Gordon et al.
 data types” include templates for higher-order transformations between
 data types. Moreover, data types for most procedures in ML are never
 explicitly declared by the programmer. Instead, ML includes a
-*type-inferencing* mechanism that uses information in the environment to
+_type-inferencing_ mechanism that uses information in the environment to
 deduce the data types for newly defined procedures.
 
 </div>
@@ -22901,22 +22762,11 @@ epistemological issues.
 
 </div>
 
-Next: [Chapter 4](#Chapter-4.xhtml#Chapter-4), Prev:
-[3.4](#3_002e4.xhtml#g_t3_002e4), Up: [3.5](#3_002e5.xhtml#g_t3_002e5)  
-\[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
-
 </div>
-
-[⇣](#3_002e5.xhtml#pagebottom)
 
 <div className="section">
 
-[⇡](#Chapter-4.xhtml#pagetop)
-Next: [4.1](#4_002e1.xhtml#g_t4_002e1), Prev:
-[3.5](#3_002e5.xhtml#g_t3_002e5), Up: [Top](#index.xhtml#Top)  
-\[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
-
-## 4Metalinguistic Abstraction
+## 4 Metalinguistic Abstraction
 
 > … It’s in words that the magic is—Abracadabra, Open Sesame, and the
 > rest—but the magic words in one story aren’t magical in the next. The
@@ -22926,7 +22776,7 @@ Next: [4.1](#4_002e1.xhtml#g_t4_002e1), Prev:
 > … And those words are made from the letters of our alphabet: a
 > couple-dozen squiggles we can draw with the pen. This is the key! And
 > the treasure, too, if we can only get our hands on it! It’s as if—as
-> if the key to the treasure *is* the treasure!
+> if the key to the treasure _is_ the treasure!
 >
 > —John Barth, Chimera
 
@@ -22963,11 +22813,11 @@ sequences of primitive instructions. These languages have means of
 combination and abstraction, such as procedure definition, that are
 appropriate to the larger-scale organization of systems.
 
-*Metalinguistic abstraction*—establishing new languages—plays an
+_Metalinguistic abstraction_—establishing new languages—plays an
 important role in all branches of engineering design. It is particularly
 important to computer programming, because in programming not only can
 we formulate new languages but we can also implement these languages by
-constructing evaluators. An *evaluator* (or *interpreter*) for a
+constructing evaluators. An _evaluator_ (or _interpreter_) for a
 programming language is a procedure that, when applied to an expression
 of the language, performs the actions required to evaluate that
 expression.
@@ -23030,11 +22880,11 @@ stream programs, however, were sometimes cumbersome, because they were
 constrained by the applicative-order evaluation of Scheme. In
 [4.2](#4_002e2.xhtml#g_t4_002e2), we’ll change the underlying language
 to provide for a more elegant approach, by modifying the evaluator to
-provide for *normal-order evaluation*.
+provide for _normal-order evaluation_.
 
 Section [4.3](#4_002e3.xhtml#g_t4_002e3) implements a more ambitious
 linguistic change, whereby expressions have many values, rather than
-just a single value. In this language of *nondeterministic computing*,
+just a single value. In this language of _nondeterministic computing_,
 it is natural to express processes that generate all possible values for
 expressions and then search for those values that satisfy certain
 constraints. In terms of models of computation and time, this is like
@@ -23043,7 +22893,7 @@ for appropriate time lines. With our nondeterministic evaluator, keeping
 track of multiple values and performing searches are handled
 automatically by the underlying mechanism of the language.
 
-In [4.4](#4_002e4.xhtml#g_t4_002e4) we implement a *logic-programming*
+In [4.4](#4_002e4.xhtml#g_t4_002e4) we implement a _logic-programming_
 language in which knowledge is expressed in terms of relations, rather
 than in terms of computations with inputs and outputs. Even though this
 makes the language drastically different from Lisp, or indeed from any
@@ -23059,7 +22909,7 @@ shares the essential structure of the Lisp evaluator.
 [²⁰⁵](#Chapter-4.xhtml#DOCF205) The same idea is pervasive throughout
 all of engineering. For example, electrical engineers use many different
 languages for describing circuits. Two of these are the language of
-electrical *networks* and the language of electrical *systems*. The
+electrical _networks_ and the language of electrical _systems_. The
 network language emphasizes the physical modeling of devices in terms of
 discrete electrical elements. The primitive objects of the network
 language are primitive electrical components such as resistors,
@@ -23094,23 +22944,13 @@ evaluators written in Scheme.
 
 </div>
 
-Next: [4.1](#4_002e1.xhtml#g_t4_002e1), Prev:
-[3.5](#3_002e5.xhtml#g_t3_002e5), Up: [Top](#index.xhtml#Top)  
-\[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
-
 </div>
-
-[⇣](#Chapter-4.xhtml#pagebottom)
 
 <div className="section">
 
-[⇡](#4_002e1.xhtml#pagetop)
-Next: [4.2](#4_002e2.xhtml#g_t4_002e2), Prev: [Chapter
-4](#Chapter-4.xhtml#Chapter-4), Up: [Chapter
-4](#Chapter-4.xhtml#Chapter-4)  
 \[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
 
-### 4.1The Metacircular Evaluator
+### 4.1 The Metacircular Evaluator
 
 Our evaluator for Lisp will be implemented as a Lisp program. It may
 seem circular to think about evaluating Lisp programs using an evaluator
@@ -23118,7 +22958,7 @@ that is itself implemented in Lisp. However, evaluation is a process, so
 it is appropriate to describe the evaluation process using Lisp, which,
 after all, is our tool for describing
 processes.[²⁰⁷](#4_002e1.xhtml#FOOT207) An evaluator that is written in
-the same language that it evaluates is said to be *metacircular*.
+the same language that it evaluates is said to be _metacircular_.
 
 The metacircular evaluator is essentially a Scheme formulation of the
 environment model of evaluation described in
@@ -23152,7 +22992,7 @@ SVG
 computer language.
 
 The implementation of the evaluator will depend upon procedures that
-define the *syntax* of the expressions to be evaluated. We will use data
+define the _syntax_ of the expressions to be evaluated. We will use data
 abstraction to make the evaluator independent of the representation of
 the language. For example, rather than committing to a choice that an
 assignment is to be represented by a list beginning with the symbol
@@ -23167,7 +23007,7 @@ representation of procedures and environments. For example,
 accesses the values of variables, and `apply-primitive-procedure`
 applies a primitive procedure to a given list of arguments.
 
-#### 4.1.1The Core of the Evaluator
+#### 4.1.1 The Core of the Evaluator
 
 The evaluation process can be described as the interplay between two
 procedures: `eval` and `apply`.
@@ -23181,80 +23021,80 @@ be evaluated. In order to keep the procedure general, we express the
 determination of the type of an expression abstractly, making no
 commitment to any particular representation for the various types of
 expressions. Each type of expression has a predicate that tests for it
-and an abstract means for selecting its parts. This *abstract syntax*
+and an abstract means for selecting its parts. This _abstract syntax_
 makes it easy to see how we can change the syntax of the language by
 using the same evaluator, but with a different collection of syntax
 procedures.
 
 **Primitive expressions**
 
--   For self-evaluating expressions, such as numbers, `eval` returns the
-    expression itself.
--   `Eval` must look up variables in the environment to find their
-    values.
+- For self-evaluating expressions, such as numbers, `eval` returns the
+  expression itself.
+- `Eval` must look up variables in the environment to find their
+  values.
 
 **Special forms**
 
--   For quoted expressions, `eval` returns the expression that was
-    quoted.
--   An assignment to (or a definition of) a variable must recursively
-    call `eval` to compute the new value to be associated with the
-    variable. The environment must be modified to change (or create) the
-    binding of the variable.
--   An `if` expression requires special processing of its parts, so as
-    to evaluate the consequent if the predicate is true, and otherwise
-    to evaluate the alternative.
--   A `lambda` expression must be transformed into an applicable
-    procedure by packaging together the parameters and body specified by
-    the `lambda` expression with the environment of the evaluation.
--   A `begin` expression requires evaluating its sequence of expressions
-    in the order in which they appear.
--   A case analysis (`cond`) is transformed into a nest of `if`
-    expressions and then evaluated.
+- For quoted expressions, `eval` returns the expression that was
+  quoted.
+- An assignment to (or a definition of) a variable must recursively
+  call `eval` to compute the new value to be associated with the
+  variable. The environment must be modified to change (or create) the
+  binding of the variable.
+- An `if` expression requires special processing of its parts, so as
+  to evaluate the consequent if the predicate is true, and otherwise
+  to evaluate the alternative.
+- A `lambda` expression must be transformed into an applicable
+  procedure by packaging together the parameters and body specified by
+  the `lambda` expression with the environment of the evaluation.
+- A `begin` expression requires evaluating its sequence of expressions
+  in the order in which they appear.
+- A case analysis (`cond`) is transformed into a nest of `if`
+  expressions and then evaluated.
 
 **Combinations**
 
--   For a procedure application, `eval` must recursively evaluate the
-    operator part and the operands of the combination. The resulting
-    procedure and arguments are passed to `apply`, which handles the
-    actual procedure application.
+- For a procedure application, `eval` must recursively evaluate the
+  operator part and the operands of the combination. The resulting
+  procedure and arguments are passed to `apply`, which handles the
+  actual procedure application.
 
 Here is the definition of `eval`:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (eval exp env)
-  (cond ((self-evaluating? exp) 
+  (cond ((self-evaluating? exp)
          exp)
-        ((variable? exp) 
+        ((variable? exp)
          (lookup-variable-value exp env))
-        ((quoted? exp) 
+        ((quoted? exp)
          (text-of-quotation exp))
-        ((assignment? exp) 
+        ((assignment? exp)
          (eval-assignment exp env))
-        ((definition? exp) 
+        ((definition? exp)
          (eval-definition exp env))
-        ((if? exp) 
+        ((if? exp)
          (eval-if exp env))
         ((lambda? exp)
-         (make-procedure 
+         (make-procedure
           (lambda-parameters exp)
           (lambda-body exp)
           env))
         ((begin? exp)
-         (eval-sequence 
-          (begin-actions exp) 
+         (eval-sequence
+          (begin-actions exp)
           env))
-        ((cond? exp) 
+        ((cond? exp)
          (eval (cond->if exp) env))
         ((application? exp)
          (apply (eval (operator exp) env)
-                (list-of-values 
-                 (operands exp) 
+                (list-of-values
+                 (operands exp)
                  env)))
         (else
-         (error "Unknown expression 
+         (error "Unknown expression
                  type: EVAL" exp))))
 ```
 
@@ -23283,24 +23123,24 @@ which the procedure is to be applied. Here is the definition of `apply`:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (apply procedure arguments)
   (cond ((primitive-procedure? procedure)
-         (apply-primitive-procedure 
-          procedure 
+         (apply-primitive-procedure
+          procedure
           arguments))
         ((compound-procedure? procedure)
          (eval-sequence
            (procedure-body procedure)
            (extend-environment
-             (procedure-parameters 
+             (procedure-parameters
               procedure)
              arguments
-             (procedure-environment 
+             (procedure-environment
               procedure))))
         (else
-         (error "Unknown procedure 
-                 type: APPLY" 
+         (error "Unknown procedure
+                 type: APPLY"
                 procedure))))
 ```
 
@@ -23316,13 +23156,13 @@ corresponding values:[²⁰⁹](#4_002e1.xhtml#FOOT209)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (list-of-values exps env)
   (if (no-operands? exps)
       '()
       (cons (eval (first-operand exps) env)
-            (list-of-values 
-             (rest-operands exps) 
+            (list-of-values
+             (rest-operands exps)
              env))))
 ```
 
@@ -23336,7 +23176,7 @@ consequent, otherwise it evaluates the alternative:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (eval-if exp env)
   (if (true? (eval (if-predicate exp) env))
       (eval (if-consequent exp) env)
@@ -23365,13 +23205,13 @@ expression.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (eval-sequence exps env)
-  (cond ((last-exp? exps) 
+  (cond ((last-exp? exps)
          (eval (first-exp exps) env))
-        (else 
+        (else
          (eval (first-exp exps) env)
-         (eval-sequence (rest-exps exps) 
+         (eval-sequence (rest-exps exps)
                         env))))
 ```
 
@@ -23386,9 +23226,9 @@ designated environment.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (eval-assignment exp env)
-  (set-variable-value! 
+  (set-variable-value!
    (assignment-variable exp)
    (eval (assignment-value exp) env)
    env)
@@ -23402,9 +23242,9 @@ manner.[²¹¹](#4_002e1.xhtml#FOOT211)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (eval-definition exp env)
-  (define-variable! 
+  (define-variable!
     (definition-variable exp)
     (eval (definition-value exp) env)
     env)
@@ -23429,7 +23269,7 @@ assignment or a definition.[²¹²](#4_002e1.xhtml#FOOT212)
 > Also write a version of `list-of-values` that evaluates operands from
 > right to left.
 
-#### 4.1.2Representing Expressions
+#### 4.1.2 Representing Expressions
 
 The evaluator is reminiscent of the symbolic differentiation program
 discussed in [2.3.2](#2_002e3.xhtml#g_t2_002e3_002e2). Both programs
@@ -23447,240 +23287,240 @@ classify and extract pieces of expressions.
 
 Here is the specification of the syntax of our language:
 
--   The only self-evaluating items are numbers and strings:
-    <div className="lisp">
+- The only self-evaluating items are numbers and strings:
+  <div className="lisp">
 
-    ``` lisp
-    (define (self-evaluating? exp)
-      (cond ((number? exp) true)
-            ((string? exp) true)
-            (else false)))
-    ```
+  ```lisp
+  (define (self-evaluating? exp)
+    (cond ((number? exp) true)
+          ((string? exp) true)
+          (else false)))
+  ```
 
-    </div>
+  </div>
 
--   Variables are represented by symbols:
-    <div className="lisp">
+- Variables are represented by symbols:
+  <div className="lisp">
 
-    ``` lisp
-    (define (variable? exp) (symbol? exp))
-    ```
+  ```lisp
+  (define (variable? exp) (symbol? exp))
+  ```
 
-    </div>
+  </div>
 
--   Quotations have the form
-    `(quote ⟨text-of-quotation⟩)`:[²¹³](#4_002e1.xhtml#FOOT213)
+- Quotations have the form
+  `(quote ⟨text-of-quotation⟩)`:[²¹³](#4_002e1.xhtml#FOOT213)
 
-    <div className="lisp">
+  <div className="lisp">
 
-    ``` lisp
-    (define (quoted? exp)
-      (tagged-list? exp 'quote))
+  ```lisp
+  (define (quoted? exp)
+    (tagged-list? exp 'quote))
 
-    (define (text-of-quotation exp)
-      (cadr exp))
-    ```
+  (define (text-of-quotation exp)
+    (cadr exp))
+  ```
 
-    </div>
+  </div>
 
-    `Quoted?` is defined in terms of the procedure `tagged-list?`, which
-    identifies lists beginning with a designated symbol:
+  `Quoted?` is defined in terms of the procedure `tagged-list?`, which
+  identifies lists beginning with a designated symbol:
 
-    <div className="lisp">
+  <div className="lisp">
 
-    ``` lisp
-    (define (tagged-list? exp tag)
-      (if (pair? exp)
-          (eq? (car exp) tag)
-          false))
-    ```
+  ```lisp
+  (define (tagged-list? exp tag)
+    (if (pair? exp)
+        (eq? (car exp) tag)
+        false))
+  ```
 
-    </div>
+  </div>
 
--   Assignments have the form `(set! ⟨var⟩ ⟨value⟩)`:
-    <div className="lisp">
+- Assignments have the form `(set! ⟨var⟩ ⟨value⟩)`:
+  <div className="lisp">
 
-    ``` lisp
-    (define (assignment? exp)
-      (tagged-list? exp 'set!))
+  ```lisp
+  (define (assignment? exp)
+    (tagged-list? exp 'set!))
 
-    (define (assignment-variable exp) 
-      (cadr exp))
+  (define (assignment-variable exp)
+    (cadr exp))
 
-    (define (assignment-value exp) (caddr exp))
-    ```
+  (define (assignment-value exp) (caddr exp))
+  ```
 
-    </div>
+  </div>
 
--   Definitions have the form
+- Definitions have the form
 
-    <div className="lisp">
+  <div className="lisp">
 
-    ``` lisp
-    (define ⟨var⟩ ⟨value⟩)
-    ```
+  ```lisp
+  (define ⟨var⟩ ⟨value⟩)
+  ```
 
-    </div>
+  </div>
 
-    or the form
+  or the form
 
-    <div className="lisp">
+  <div className="lisp">
 
-    ``` lisp
-    (define (⟨var⟩ ⟨param₁⟩ … ⟨paramₙ⟩)
-      ⟨body⟩)
-    ```
+  ```lisp
+  (define (⟨var⟩ ⟨param₁⟩ … ⟨paramₙ⟩)
+    ⟨body⟩)
+  ```
 
-    </div>
+  </div>
 
-    The latter form (standard procedure definition) is syntactic sugar
-    for
+  The latter form (standard procedure definition) is syntactic sugar
+  for
 
-    <div className="lisp">
+  <div className="lisp">
 
-    ``` lisp
-    (define ⟨var⟩
-      (lambda (⟨param₁⟩ … ⟨paramₙ⟩)
-        ⟨body⟩))
-    ```
+  ```lisp
+  (define ⟨var⟩
+    (lambda (⟨param₁⟩ … ⟨paramₙ⟩)
+      ⟨body⟩))
+  ```
 
-    </div>
+  </div>
 
-    The corresponding syntax procedures are the following:
+  The corresponding syntax procedures are the following:
 
-    <div className="lisp">
+  <div className="lisp">
 
-    ``` lisp
-    (define (definition? exp)
-      (tagged-list? exp 'define))
+  ```lisp
+  (define (definition? exp)
+    (tagged-list? exp 'define))
 
-    (define (definition-variable exp)
-      (if (symbol? (cadr exp))
-          (cadr exp)
-          (caadr exp)))
+  (define (definition-variable exp)
+    (if (symbol? (cadr exp))
+        (cadr exp)
+        (caadr exp)))
 
-    (define (definition-value exp)
-      (if (symbol? (cadr exp))
-          (caddr exp)
-          (make-lambda 
-           (cdadr exp)   ; formal parameters
-           (cddr exp)))) ; body
-    ```
+  (define (definition-value exp)
+    (if (symbol? (cadr exp))
+        (caddr exp)
+        (make-lambda
+         (cdadr exp)   ; formal parameters
+         (cddr exp)))) ; body
+  ```
 
-    </div>
+  </div>
 
--   `Lambda` expressions are lists that begin with the symbol `lambda`:
+- `Lambda` expressions are lists that begin with the symbol `lambda`:
 
-    <div className="lisp">
+  <div className="lisp">
 
-    ``` lisp
-    (define (lambda? exp) 
-      (tagged-list? exp 'lambda))
-    (define (lambda-parameters exp) (cadr exp))
-    (define (lambda-body exp) (cddr exp))
-    ```
-
-    </div>
-
-    We also provide a constructor for `lambda` expressions, which is
-    used by `definition-value`, above:
-
-    <div className="lisp">
-
-    ``` lisp
-    (define (make-lambda parameters body)
-      (cons 'lambda (cons parameters body)))
-    ```
-
-    </div>
-
--   Conditionals begin with `if` and have a predicate, a consequent, and
-    an (optional) alternative. If the expression has no alternative
-    part, we provide `false` as the
-    alternative.[²¹⁴](#4_002e1.xhtml#FOOT214)
-
-    <div className="lisp">
-
-    ``` lisp
-    (define (if? exp) (tagged-list? exp 'if))
-    (define (if-predicate exp) (cadr exp))
-    (define (if-consequent exp) (caddr exp))
-    (define (if-alternative exp)
-      (if (not (null? (cdddr exp)))
-          (cadddr exp)
-          'false))
-    ```
-
-    </div>
-
-    We also provide a constructor for `if` expressions, to be used by
-    `cond->if` to transform `cond` expressions into `if` expressions:
-
-    <div className="lisp">
-
-    ``` lisp
-    (define (make-if predicate 
-                     consequent 
-                     alternative)
-      (list 'if 
-            predicate 
-            consequent 
-            alternative))
-    ```
-
-    </div>
-
--   `Begin` packages a sequence of expressions into a single expression.
-    We include syntax operations on `begin` expressions to extract the
-    actual sequence from the `begin` expression, as well as selectors
-    that return the first expression and the rest of the expressions in
-    the sequence.[²¹⁵](#4_002e1.xhtml#FOOT215)
-
-    <div className="lisp">
-
-    ``` lisp
-    (define (begin? exp) 
-      (tagged-list? exp 'begin))
-    (define (begin-actions exp) (cdr exp))
-    (define (last-exp? seq) (null? (cdr seq)))
-    (define (first-exp seq) (car seq))
-    (define (rest-exps seq) (cdr seq))
-    ```
-
-    </div>
-
-    We also include a constructor `sequence->exp` (for use by
-    `cond->if`) that transforms a sequence into a single expression,
-    using `begin` if necessary:
-
-    <div className="lisp">
-
-    ``` lisp
-    (define (sequence->exp seq)
-      (cond ((null? seq) seq)
-            ((last-exp? seq) (first-exp seq))
-            (else (make-begin seq))))
-
-    (define (make-begin seq) (cons 'begin seq))
-    ```
-
-    </div>
-
--   A procedure application is any compound expression that is not one
-    of the above expression types. The `car` of the expression is the
-    operator, and the `cdr` is the list of operands:
-    <div className="lisp">
-
-    ``` lisp
-    (define (application? exp) (pair? exp))
-    (define (operator exp) (car exp))
-    (define (operands exp) (cdr exp))
-    (define (no-operands? ops) (null? ops))
-    (define (first-operand ops) (car ops))
-    (define (rest-operands ops) (cdr ops))
-    ```
-
-    </div>
+  ```lisp
+  (define (lambda? exp)
+    (tagged-list? exp 'lambda))
+  (define (lambda-parameters exp) (cadr exp))
+  (define (lambda-body exp) (cddr exp))
+  ```
+
+  </div>
+
+  We also provide a constructor for `lambda` expressions, which is
+  used by `definition-value`, above:
+
+  <div className="lisp">
+
+  ```lisp
+  (define (make-lambda parameters body)
+    (cons 'lambda (cons parameters body)))
+  ```
+
+  </div>
+
+- Conditionals begin with `if` and have a predicate, a consequent, and
+  an (optional) alternative. If the expression has no alternative
+  part, we provide `false` as the
+  alternative.[²¹⁴](#4_002e1.xhtml#FOOT214)
+
+  <div className="lisp">
+
+  ```lisp
+  (define (if? exp) (tagged-list? exp 'if))
+  (define (if-predicate exp) (cadr exp))
+  (define (if-consequent exp) (caddr exp))
+  (define (if-alternative exp)
+    (if (not (null? (cdddr exp)))
+        (cadddr exp)
+        'false))
+  ```
+
+  </div>
+
+  We also provide a constructor for `if` expressions, to be used by
+  `cond->if` to transform `cond` expressions into `if` expressions:
+
+  <div className="lisp">
+
+  ```lisp
+  (define (make-if predicate
+                   consequent
+                   alternative)
+    (list 'if
+          predicate
+          consequent
+          alternative))
+  ```
+
+  </div>
+
+- `Begin` packages a sequence of expressions into a single expression.
+  We include syntax operations on `begin` expressions to extract the
+  actual sequence from the `begin` expression, as well as selectors
+  that return the first expression and the rest of the expressions in
+  the sequence.[²¹⁵](#4_002e1.xhtml#FOOT215)
+
+  <div className="lisp">
+
+  ```lisp
+  (define (begin? exp)
+    (tagged-list? exp 'begin))
+  (define (begin-actions exp) (cdr exp))
+  (define (last-exp? seq) (null? (cdr seq)))
+  (define (first-exp seq) (car seq))
+  (define (rest-exps seq) (cdr seq))
+  ```
+
+  </div>
+
+  We also include a constructor `sequence->exp` (for use by
+  `cond->if`) that transforms a sequence into a single expression,
+  using `begin` if necessary:
+
+  <div className="lisp">
+
+  ```lisp
+  (define (sequence->exp seq)
+    (cond ((null? seq) seq)
+          ((last-exp? seq) (first-exp seq))
+          (else (make-begin seq))))
+
+  (define (make-begin seq) (cons 'begin seq))
+  ```
+
+  </div>
+
+- A procedure application is any compound expression that is not one
+  of the above expression types. The `car` of the expression is the
+  operator, and the `cdr` is the list of operands:
+  <div className="lisp">
+
+  ```lisp
+  (define (application? exp) (pair? exp))
+  (define (operator exp) (car exp))
+  (define (operands exp) (cdr exp))
+  (define (no-operands? ops) (null? ops))
+  (define (first-operand ops) (car ops))
+  (define (rest-operands ops) (cdr ops))
+  ```
+
+  </div>
 
 ##### Derived expressions
 
@@ -23692,7 +23532,7 @@ the expression
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (cond ((> x 0) x)
       ((= x 0) (display 'zero) 0)
       (else (- x)))
@@ -23705,7 +23545,7 @@ to the problem of evaluating the following expression involving `if` and
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (if (> x 0)
     x
     (if (= x 0)
@@ -23727,15 +23567,15 @@ if its predicate is the symbol `else`.[²¹⁶](#4_002e1.xhtml#FOOT216)
 
 <div className="lisp">
 
-``` lisp
-(define (cond? exp) 
+```lisp
+(define (cond? exp)
   (tagged-list? exp 'cond))
 (define (cond-clauses exp) (cdr exp))
 (define (cond-else-clause? clause)
   (eq? (cond-predicate clause) 'else))
-(define (cond-predicate clause) 
+(define (cond-predicate clause)
   (car clause))
-(define (cond-actions clause) 
+(define (cond-actions clause)
   (cdr clause))
 (define (cond->if exp)
   (expand-clauses (cond-clauses exp)))
@@ -23746,22 +23586,22 @@ if its predicate is the symbol `else`.[²¹⁶](#4_002e1.xhtml#FOOT216)
             (rest (cdr clauses)))
         (if (cond-else-clause? first)
             (if (null? rest)
-                (sequence->exp 
+                (sequence->exp
                  (cond-actions first))
-                (error "ELSE clause isn't 
+                (error "ELSE clause isn't
                         last: COND->IF"
                        clauses))
             (make-if (cond-predicate first)
-                     (sequence->exp 
+                     (sequence->exp
                       (cond-actions first))
-                     (expand-clauses 
+                     (expand-clauses
                       rest))))))
 ```
 
 </div>
 
 Expressions (such as `cond`) that we choose to implement as syntactic
-transformations are called *derived expressions*. `Let` expressions are
+transformations are called _derived expressions_. `Let` expressions are
 also derived expressions (see [Exercise
 4.6](#4_002e1.xhtml#Exercise-4_002e6)).[²¹⁷](#4_002e1.xhtml#FOOT217)
 
@@ -23793,16 +23633,16 @@ also derived expressions (see [Exercise
 > **Exercise 4.4:** Recall the definitions of the special forms `and`
 > and `or` from [Chapter 1](#Chapter-1.xhtml#Chapter-1):
 >
-> -   `and`: The expressions are evaluated from left to right. If any
->     expression evaluates to false, false is returned; any remaining
->     expressions are not evaluated. If all the expressions evaluate to
->     true values, the value of the last expression is returned. If
->     there are no expressions then true is returned.
-> -   `or`: The expressions are evaluated from left to right. If any
->     expression evaluates to a true value, that value is returned; any
->     remaining expressions are not evaluated. If all expressions
->     evaluate to false, or if there are no expressions, then false is
->     returned.
+> - `and`: The expressions are evaluated from left to right. If any
+>   expression evaluates to false, false is returned; any remaining
+>   expressions are not evaluated. If all the expressions evaluate to
+>   true values, the value of the last expression is returned. If
+>   there are no expressions then true is returned.
+> - `or`: The expressions are evaluated from left to right. If any
+>   expression evaluates to a true value, that value is returned; any
+>   remaining expressions are not evaluated. If all expressions
+>   evaluate to false, or if there are no expressions, then false is
+>   returned.
 >
 > Install `and` and `or` as new special forms for the evaluator by
 > defining appropriate syntax procedures and evaluation procedures
@@ -23810,15 +23650,15 @@ also derived expressions (see [Exercise
 > and `or` as derived expressions.
 
 > **Exercise 4.5:** Scheme allows an additional syntax for `cond`
-> clauses, `(⟨test⟩ => ⟨recipient⟩)`. If `⟨``test``⟩` evaluates to a
-> true value, then `⟨``recipient``⟩` is evaluated. Its value must be a
+> clauses, `(⟨test⟩ => ⟨recipient⟩)`. If ` ⟨``test``⟩ ` evaluates to a
+> true value, then ` ⟨``recipient``⟩ ` is evaluated. Its value must be a
 > procedure of one argument; this procedure is then invoked on the value
-> of the `⟨``test``⟩`, and the result is returned as the value of the
+> of the ` ⟨``test``⟩ `, and the result is returned as the value of the
 > `cond` expression. For example
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (cond ((assoc 'b '((a 1) (b 2))) => cadr)
 >       (else false))
 > ```
@@ -23832,7 +23672,7 @@ also derived expressions (see [Exercise
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (let ((⟨var₁⟩ ⟨exp₁⟩) … (⟨varₙ⟩ ⟨expₙ⟩))
 >   ⟨body⟩)
 > ```
@@ -23843,7 +23683,7 @@ also derived expressions (see [Exercise
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > ((lambda (⟨var₁⟩ … ⟨varₙ⟩)
 >    ⟨body⟩)
 >  ⟨exp₁⟩
@@ -23865,7 +23705,7 @@ also derived expressions (see [Exercise
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (let* ((x 3)
 >        (y (+ x 2))
 >        (z (+ x y 5)))
@@ -23883,7 +23723,7 @@ also derived expressions (see [Exercise
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (eval (let*->nested-lets exp) env)
 > ```
 >
@@ -23897,30 +23737,30 @@ also derived expressions (see [Exercise
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (let ⟨var⟩ ⟨bindings⟩ ⟨body⟩)
 > ```
 >
 > </div>
 >
-> The `⟨``bindings``⟩` and `⟨``body``⟩` are just as in ordinary `let`,
-> except that `⟨``var``⟩` is bound within `⟨``body``⟩` to a procedure
-> whose body is `⟨``body``⟩` and whose parameters are the variables in
-> the `⟨``bindings``⟩`. Thus, one can repeatedly execute the
-> `⟨``body``⟩` by invoking the procedure named `⟨``var``⟩`. For example,
+> The ` ⟨``bindings``⟩ ` and ` ⟨``body``⟩ ` are just as in ordinary `let`,
+> except that ` ⟨``var``⟩ ` is bound within ` ⟨``body``⟩ ` to a procedure
+> whose body is ` ⟨``body``⟩ ` and whose parameters are the variables in
+> the ` ⟨``bindings``⟩ `. Thus, one can repeatedly execute the
+> ` ⟨``body``⟩ ` by invoking the procedure named ` ⟨``var``⟩ `. For example,
 > the iterative Fibonacci procedure
 > ([1.2.2](#1_002e2.xhtml#g_t1_002e2_002e2)) can be rewritten using
 > named `let` as follows:
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (fib n)
 >   (let fib-iter ((a 1) (b 0) (count n))
 >     (if (= count 0)
 >         b
->         (fib-iter (+ a b) 
->                   a 
+>         (fib-iter (+ a b)
+>                   a
 >                   (- count 1)))))
 > ```
 >
@@ -23943,7 +23783,7 @@ also derived expressions (see [Exercise
 > new syntax for Scheme by modifying the procedures in this section,
 > without changing `eval` or `apply`.
 
-#### 4.1.3Evaluator Data Structures
+#### 4.1.3 Evaluator Data Structures
 
 In addition to defining the external syntax of expressions, the
 evaluator implementation must also define the data structures that the
@@ -23958,7 +23798,7 @@ For conditionals, we accept anything to be true that is not the explicit
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (true? x)
   (not (eq? x false)))
 
@@ -23973,14 +23813,14 @@ For conditionals, we accept anything to be true that is not the explicit
 To handle primitives, we assume that we have available the following
 procedures:
 
--   `(apply-primitive-procedure ⟨proc⟩ ⟨args⟩)`
+- `(apply-primitive-procedure ⟨proc⟩ ⟨args⟩)`
 
-    applies the given primitive procedure to the argument values in the
-    list `⟨``args``⟩` and returns the result of the application.
+  applies the given primitive procedure to the argument values in the
+  list ` ⟨``args``⟩ ` and returns the result of the application.
 
--   `(primitive-procedure? ⟨proc⟩)`
+- `(primitive-procedure? ⟨proc⟩)`
 
-    tests whether `⟨``proc``⟩` is a primitive procedure.
+  tests whether ` ⟨``proc``⟩ ` is a primitive procedure.
 
 These mechanisms for handling primitives are further described in
 [4.1.4](#4_002e1.xhtml#g_t4_002e1_002e4).
@@ -23990,7 +23830,7 @@ and environments using the constructor `make-procedure`:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (make-procedure parameters body env)
   (list 'procedure parameters body env))
 (define (compound-procedure? p)
@@ -24010,30 +23850,30 @@ sequence of frames, where each frame is a table of bindings that
 associate variables with their corresponding values. We use the
 following operations for manipulating environments:
 
--   `(lookup-variable-value ⟨var⟩ ⟨env⟩)`
+- `(lookup-variable-value ⟨var⟩ ⟨env⟩)`
 
-    returns the value that is bound to the symbol `⟨``var``⟩` in the
-    environment `⟨``env``⟩`, or signals an error if the variable is
-    unbound.
+  returns the value that is bound to the symbol ` ⟨``var``⟩ ` in the
+  environment ` ⟨``env``⟩ `, or signals an error if the variable is
+  unbound.
 
--   `(extend-environment ⟨variables⟩ ⟨values⟩ ⟨base-env⟩)`
+- `(extend-environment ⟨variables⟩ ⟨values⟩ ⟨base-env⟩)`
 
-    returns a new environment, consisting of a new frame in which the
-    symbols in the list `⟨``variables``⟩` are bound to the corresponding
-    elements in the list `⟨``values``⟩`, where the enclosing environment
-    is the environment `⟨``base-env``⟩`.
+  returns a new environment, consisting of a new frame in which the
+  symbols in the list ` ⟨``variables``⟩ ` are bound to the corresponding
+  elements in the list ` ⟨``values``⟩ `, where the enclosing environment
+  is the environment ` ⟨``base-env``⟩ `.
 
--   `(define-variable! ⟨var⟩ ⟨value⟩ ⟨env⟩)`
+- `(define-variable! ⟨var⟩ ⟨value⟩ ⟨env⟩)`
 
-    adds to the first frame in the environment `⟨``env``⟩` a new binding
-    that associates the variable `⟨``var``⟩` with the value
-    `⟨``value``⟩`.
+  adds to the first frame in the environment ` ⟨``env``⟩ ` a new binding
+  that associates the variable ` ⟨``var``⟩ ` with the value
+  ` ⟨``value``⟩ `.
 
--   `(set-variable-value! ⟨var⟩ ⟨value⟩ ⟨env⟩)`
+- `(set-variable-value! ⟨var⟩ ⟨value⟩ ⟨env⟩)`
 
-    changes the binding of the variable `⟨``var``⟩` in the environment
-    `⟨``env``⟩` so that the variable is now bound to the value
-    `⟨``value``⟩`, or signals an error if the variable is unbound.
+  changes the binding of the variable ` ⟨``var``⟩ ` in the environment
+  ` ⟨``env``⟩ ` so that the variable is now bound to the value
+  ` ⟨``value``⟩ `, or signals an error if the variable is unbound.
 
 To implement these operations we represent an environment as a list of
 frames. The enclosing environment of an environment is the `cdr` of the
@@ -24041,7 +23881,7 @@ list. The empty environment is simply the empty list.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (enclosing-environment env) (cdr env))
 (define (first-frame env) (car env))
 (define the-empty-environment '())
@@ -24055,7 +23895,7 @@ values.[²¹⁸](#4_002e1.xhtml#FOOT218)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (make-frame variables values)
   (cons variables values))
 (define (frame-variables frame) (car frame))
@@ -24074,16 +23914,16 @@ the number of variables does not match the number of values.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (extend-environment vars vals base-env)
   (if (= (length vars) (length vals))
       (cons (make-frame vars vals) base-env)
       (if (< (length vars) (length vals))
-          (error "Too many arguments supplied" 
-                 vars 
+          (error "Too many arguments supplied"
+                 vars
                  vals)
-          (error "Too few arguments supplied" 
-                 vars 
+          (error "Too few arguments supplied"
+                 vars
                  vals))))
 ```
 
@@ -24098,16 +23938,16 @@ variable” error.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (lookup-variable-value var env)
   (define (env-loop env)
     (define (scan vars vals)
       (cond ((null? vars)
-             (env-loop 
+             (env-loop
               (enclosing-environment env)))
             ((eq? var (car vars))
              (car vals))
-            (else (scan (cdr vars) 
+            (else (scan (cdr vars)
                         (cdr vals)))))
     (if (eq? env the-empty-environment)
         (error "Unbound variable" var)
@@ -24125,16 +23965,16 @@ corresponding value when we find it.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (set-variable-value! var val env)
   (define (env-loop env)
     (define (scan vars vals)
       (cond ((null? vars)
-             (env-loop 
+             (env-loop
               (enclosing-environment env)))
             ((eq? var (car vars))
              (set-car! vals val))
-            (else (scan (cdr vars) 
+            (else (scan (cdr vars)
                         (cdr vals)))))
     (if (eq? env the-empty-environment)
         (error "Unbound variable: SET!" var)
@@ -24153,16 +23993,16 @@ first frame.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (define-variable! var val env)
   (let ((frame (first-frame env)))
     (define (scan vars vals)
       (cond ((null? vars)
-             (add-binding-to-frame! 
+             (add-binding-to-frame!
               var val frame))
             ((eq? var (car vars))
              (set-car! vals val))
-            (else (scan (cdr vars) 
+            (else (scan (cdr vars)
                         (cdr vals)))))
     (scan (frame-variables frame)
           (frame-values frame))))
@@ -24201,7 +24041,7 @@ in a production system.[²¹⁹](#4_002e1.xhtml#FOOT219)
 > in the first frame of the environment? Complete the specification and
 > justify any choices you make.
 
-#### 4.1.4Running the Evaluator as a Program
+#### 4.1.4 Running the Evaluator as a Program
 
 Given the evaluator, we have in our hands a description (expressed in
 Lisp) of the process by which Lisp expressions are evaluated. One
@@ -24227,10 +24067,10 @@ evaluated.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (setup-environment)
   (let ((initial-env
-         (extend-environment 
+         (extend-environment
           (primitive-procedure-names)
           (primitive-procedure-objects)
           the-empty-environment)))
@@ -24238,7 +24078,7 @@ evaluated.
     (define-variable! 'false false initial-env)
     initial-env))
 
-(define the-global-environment 
+(define the-global-environment
   (setup-environment))
 ```
 
@@ -24253,11 +24093,11 @@ implements that primitive.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (primitive-procedure? proc)
   (tagged-list? proc 'primitive))
 
-(define (primitive-implementation proc) 
+(define (primitive-implementation proc)
   (cadr proc))
 ```
 
@@ -24268,7 +24108,7 @@ procedures from a list:[²²⁰](#4_002e1.xhtml#FOOT220)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define primitive-procedures
   (list (list 'car car)
         (list 'cdr cdr)
@@ -24280,7 +24120,7 @@ procedures from a list:[²²⁰](#4_002e1.xhtml#FOOT220)
   (map car primitive-procedures))
 
 (define (primitive-procedure-objects)
-  (map (lambda (proc) 
+  (map (lambda (proc)
          (list 'primitive (cadr proc)))
        primitive-procedures))
 ```
@@ -24293,7 +24133,7 @@ system:[²²¹](#4_002e1.xhtml#FOOT221)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (apply-primitive-procedure proc args)
   (apply-in-underlying-scheme
    (primitive-implementation proc) args))
@@ -24302,31 +24142,31 @@ system:[²²¹](#4_002e1.xhtml#FOOT221)
 </div>
 
 For convenience in running the metacircular evaluator, we provide a
-*driver loop* that models the read-eval-print loop of the underlying
-Lisp system. It prints a *prompt*, reads an input expression, evaluates
+_driver loop_ that models the read-eval-print loop of the underlying
+Lisp system. It prints a _prompt_, reads an input expression, evaluates
 this expression in the global environment, and prints the result. We
-precede each printed result by an *output prompt* so as to distinguish
+precede each printed result by an _output prompt_ so as to distinguish
 the value of the expression from other output that may be
 printed.[²²²](#4_002e1.xhtml#FOOT222)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define input-prompt  ";;; M-Eval input:")
 (define output-prompt ";;; M-Eval value:")
 
 (define (driver-loop)
   (prompt-for-input input-prompt)
   (let ((input (read)))
-    (let ((output 
-           (eval input 
+    (let ((output
+           (eval input
                  the-global-environment)))
       (announce-output output-prompt)
       (user-print output)))
   (driver-loop))
 
 (define (prompt-for-input string)
-  (newline) (newline) 
+  (newline) (newline)
   (display string) (newline))
 
 (define (announce-output string)
@@ -24341,10 +24181,10 @@ environment part of a compound procedure, which may be a very long list
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (user-print object)
   (if (compound-procedure? object)
-      (display 
+      (display
        (list 'compound-procedure
              (procedure-parameters object)
              (procedure-body object)
@@ -24359,8 +24199,8 @@ environment and start the driver loop. Here is a sample interaction:
 
 <div className="lisp">
 
-``` lisp
-(define the-global-environment 
+```lisp
+(define the-global-environment
   (setup-environment))
 
 (driver-loop)
@@ -24391,7 +24231,7 @@ ok
 > things go terribly wrong. Explain why Louis’s `map` fails even though
 > Eva’s works.
 
-#### 4.1.5Data as Programs
+#### 4.1.5 Data as Programs
 
 In thinking about a Lisp program that evaluates Lisp expressions, an
 analogy might be helpful. One operational view of the meaning of a
@@ -24401,7 +24241,7 @@ compute factorials:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (factorial n)
   (if (= n 1)
       1
@@ -24430,8 +24270,8 @@ be able to compute factorials.
 SVG
 **Figure 4.3:** The evaluator emulating a factorial machine.
 
-From this perspective, our evaluator is seen to be a *universal
-machine*. It mimics other machines when these are described as Lisp
+From this perspective, our evaluator is seen to be a _universal
+machine_. It mimics other machines when these are described as Lisp
 programs.[²²³](#4_002e1.xhtml#FOOT223) This is striking. Try to imagine
 an analogous evaluator for electrical circuits. This would be a circuit
 that takes as input a signal encoding the plans for some other circuit,
@@ -24463,7 +24303,7 @@ Thus,
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (eval '(* 5 5) user-initial-environment)
 ```
 
@@ -24473,8 +24313,8 @@ and
 
 <div className="lisp">
 
-``` lisp
-(eval (cons '* (list 5 5)) 
+```lisp
+(eval (cons '* (list 5 5))
       user-initial-environment)
 ```
 
@@ -24492,7 +24332,7 @@ will both return 25.[²²⁶](#4_002e1.xhtml#FOOT226)
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (run-forever)
 >   (run-forever))
 >
@@ -24508,7 +24348,7 @@ will both return 25.[²²⁶](#4_002e1.xhtml#FOOT226)
 > possible outcome (either halting or running forever) violates the
 > intended behavior of `halts?`.[²²⁷](#4_002e1.xhtml#FOOT227)
 
-#### 4.1.6Internal Definitions
+#### 4.1.6 Internal Definitions
 
 Our environment model of evaluation and our metacircular evaluator
 execute definitions in sequence, extending the environment frame one
@@ -24525,7 +24365,7 @@ Consider a procedure with internal definitions, such as
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (f x)
   (define (even? n)
     (if (= n 0)
@@ -24578,7 +24418,7 @@ example, the procedure
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (lambda ⟨vars⟩
   (define u ⟨e1⟩)
   (define v ⟨e2⟩)
@@ -24591,7 +24431,7 @@ would be transformed into
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (lambda ⟨vars⟩
   (let ((u '*unassigned*)
         (v '*unassigned*))
@@ -24629,7 +24469,7 @@ variables’ values.[²²⁹](#4_002e1.xhtml#FOOT229)
 >     Why?
 
 > **Exercise 4.17:** Draw diagrams of the environment in effect when
-> evaluating the expression `⟨``e3``⟩` in the procedure in the text,
+> evaluating the expression ` ⟨``e3``⟩ ` in the procedure in the text,
 > comparing how this will be structured when definitions are interpreted
 > sequentially with how it will be structured if definitions are scanned
 > out as described. Why is there an extra frame in the transformed
@@ -24643,7 +24483,7 @@ variables’ values.[²²⁹](#4_002e1.xhtml#FOOT229)
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (lambda ⟨vars⟩
 >   (let ((u '*unassigned*)
 >         (v '*unassigned*))
@@ -24662,7 +24502,7 @@ variables’ values.[²²⁹](#4_002e1.xhtml#FOOT229)
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (solve f y0 dt)
 >   (define y (integral (delay dy) y0 dt))
 >   (define dy (stream-map f y))
@@ -24680,7 +24520,7 @@ variables’ values.[²²⁹](#4_002e1.xhtml#FOOT229)
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (let ((a 1))
 >   (define (f x)
 >     (define b (+ a x))
@@ -24718,7 +24558,7 @@ variables’ values.[²²⁹](#4_002e1.xhtml#FOOT229)
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (f x)
 >   (letrec
 >       ((even?
@@ -24740,7 +24580,7 @@ variables’ values.[²²⁹](#4_002e1.xhtml#FOOT229)
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (letrec ((⟨var₁⟩ ⟨exp₁⟩) … (⟨varₙ⟩ ⟨expₙ⟩))
 >   ⟨body⟩)
 > ```
@@ -24757,7 +24597,7 @@ variables’ values.[²²⁹](#4_002e1.xhtml#FOOT229)
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (letrec
 >     ((fact
 >       (lambda (n)
@@ -24778,7 +24618,7 @@ variables’ values.[²²⁹](#4_002e1.xhtml#FOOT229)
 >     definitions. The way he sees it, if you don’t like to use `define`
 >     inside a procedure, you can just use `let`. Illustrate what is
 >     loose about his reasoning by drawing an environment diagram that
->     shows the environment in which the `⟨``rest of body of f``⟩` is
+>     shows the environment in which the ` ⟨``rest of body of f``⟩ ` is
 >     evaluated during evaluation of the expression `(f 5)`, with `f`
 >     defined as in this exercise. Draw an environment diagram for the
 >     same evaluation, but with `let` in place of `letrec` in the
@@ -24794,7 +24634,7 @@ variables’ values.[²²⁹](#4_002e1.xhtml#FOOT229)
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > ((lambda (n)
 >    ((lambda (fact) (fact fact n))
 >     (lambda (ft k)
@@ -24815,7 +24655,7 @@ variables’ values.[²²⁹](#4_002e1.xhtml#FOOT229)
 >
 >     <div className="lisp">
 >
->     ``` lisp
+>     ```lisp
 >     (define (f x)
 >       (define (even? n)
 >         (if (= n 0)
@@ -24836,23 +24676,23 @@ variables’ values.[²²⁹](#4_002e1.xhtml#FOOT229)
 >
 >     <div className="lisp">
 >
->     ``` lisp
+>     ```lisp
 >     (define (f x)
 >       ((lambda (even? odd?)
 >          (even? even? odd? x))
 >        (lambda (ev? od? n)
->          (if (= n 0) 
->              true 
+>          (if (= n 0)
+>              true
 >              (od? ⟨??⟩ ⟨??⟩ ⟨??⟩)))
 >        (lambda (ev? od? n)
->          (if (= n 0) 
->              false 
+>          (if (= n 0)
+>              false
 >              (ev? ⟨??⟩ ⟨??⟩ ⟨??⟩)))))
 >     ```
 >
 >     </div>
 
-#### 4.1.7Separating Syntactic Analysis from Execution
+#### 4.1.7 Separating Syntactic Analysis from Execution
 
 The evaluator implemented above is simple, but it is very inefficient,
 because the syntactic analysis of expressions is interleaved with their
@@ -24862,7 +24702,7 @@ using the following definition of `factorial`:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (factorial n)
   (if (= n 1)
       1
@@ -24885,7 +24725,7 @@ arranging things so that syntactic analysis is performed only
 once.[²³²](#4_002e1.xhtml#FOOT232) We split `eval`, which takes an
 expression and an environment, into two parts. The procedure `analyze`
 takes only the expression. It performs the syntactic analysis and
-returns a new procedure, the *execution procedure*, that encapsulates
+returns a new procedure, the _execution procedure_, that encapsulates
 the work to be done in executing the analyzed expression. The execution
 procedure takes an environment as its argument and completes the
 evaluation. This saves work because `analyze` will be called only once
@@ -24896,7 +24736,7 @@ With the separation into analysis and execution, `eval` now becomes
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (eval exp env) ((analyze exp) env))
 ```
 
@@ -24910,32 +24750,32 @@ which we dispatch perform only analysis, not full evaluation:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (analyze exp)
   (cond ((self-evaluating? exp)
          (analyze-self-evaluating exp))
-        ((quoted? exp) 
+        ((quoted? exp)
          (analyze-quoted exp))
-        ((variable? exp) 
+        ((variable? exp)
          (analyze-variable exp))
-        ((assignment? exp) 
+        ((assignment? exp)
          (analyze-assignment exp))
-        ((definition? exp) 
+        ((definition? exp)
          (analyze-definition exp))
-        ((if? exp) 
+        ((if? exp)
          (analyze-if exp))
-        ((lambda? exp) 
+        ((lambda? exp)
          (analyze-lambda exp))
-        ((begin? exp) 
-         (analyze-sequence 
+        ((begin? exp)
+         (analyze-sequence
           (begin-actions exp)))
-        ((cond? exp) 
+        ((cond? exp)
          (analyze (cond->if exp)))
-        ((application? exp) 
+        ((application? exp)
          (analyze-application exp))
         (else
-         (error "Unknown expression 
-                 type: ANALYZE" 
+         (error "Unknown expression
+                 type: ANALYZE"
                 exp))))
 ```
 
@@ -24947,7 +24787,7 @@ ignores its environment argument and just returns the expression:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (analyze-self-evaluating exp)
   (lambda (env) exp))
 ```
@@ -24960,7 +24800,7 @@ in the execution phase.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (analyze-quoted exp)
   (let ((qval (text-of-quotation exp)))
     (lambda (env) qval)))
@@ -24974,9 +24814,9 @@ environment.[²³³](#4_002e1.xhtml#FOOT233)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (analyze-variable exp)
-  (lambda (env) 
+  (lambda (env)
     (lookup-variable-value exp env)))
 ```
 
@@ -24991,19 +24831,19 @@ holds true for definitions.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (analyze-assignment exp)
   (let ((var (assignment-variable exp))
-        (vproc (analyze 
+        (vproc (analyze
                 (assignment-value exp))))
     (lambda (env)
-      (set-variable-value! 
+      (set-variable-value!
        var (vproc env) env)
       'ok)))
 
 (define (analyze-definition exp)
   (let ((var (definition-variable exp))
-        (vproc (analyze 
+        (vproc (analyze
                 (definition-value exp))))
     (lambda (env)
       (define-variable! var (vproc env) env)
@@ -25017,7 +24857,7 @@ and alternative at analysis time.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (analyze-if exp)
   (let ((pproc (analyze (if-predicate exp)))
         (cproc (analyze (if-consequent exp)))
@@ -25037,12 +24877,12 @@ times.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (analyze-lambda exp)
   (let ((vars (lambda-parameters exp))
-        (bproc (analyze-sequence 
+        (bproc (analyze-sequence
                 (lambda-body exp))))
-    (lambda (env) 
+    (lambda (env)
       (make-procedure vars bproc env))))
 ```
 
@@ -25057,14 +24897,14 @@ each individual execution procedure with the environment as argument.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (analyze-sequence exps)
   (define (sequentially proc1 proc2)
     (lambda (env) (proc1 env) (proc2 env)))
   (define (loop first-proc rest-procs)
     (if (null? rest-procs)
         first-proc
-        (loop (sequentially first-proc 
+        (loop (sequentially first-proc
                             (car rest-procs))
               (cdr rest-procs))))
   (let ((procs (map analyze exps)))
@@ -25088,12 +24928,12 @@ extended environment.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (analyze-application exp)
   (let ((fproc (analyze (operator exp)))
         (aprocs (map analyze (operands exp))))
     (lambda (env)
-      (execute-application 
+      (execute-application
        (fproc env)
        (map (lambda (aproc) (aproc env))
             aprocs)))))
@@ -25103,11 +24943,11 @@ extended environment.
          (apply-primitive-procedure proc args))
         ((compound-procedure? proc)
          ((procedure-body proc)
-          (extend-environment 
+          (extend-environment
            (procedure-parameters proc)
            args
            (procedure-environment proc))))
-        (else (error "Unknown procedure type: 
+        (else (error "Unknown procedure type:
                       EXECUTE-APPLICATION"
                      proc))))
 ```
@@ -25133,19 +24973,19 @@ run-time support procedures as in
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (analyze-sequence exps)
 >   (define (execute-sequence procs env)
->     (cond ((null? (cdr procs)) 
+>     (cond ((null? (cdr procs))
 >            ((car procs) env))
 >           (else ((car procs) env)
->                 (execute-sequence 
+>                 (execute-sequence
 >                  (cdr procs) env))))
 >   (let ((procs (map analyze exps)))
 >     (if (null? procs)
->         (error "Empty sequence: 
+>         (error "Empty sequence:
 >                 ANALYZE"))
->     (lambda (env) 
+>     (lambda (env)
 >       (execute-sequence procs env))))
 > ```
 >
@@ -25196,24 +25036,24 @@ but rather to provide the connective tissue—the means of combination and
 the means of abstraction—that binds a collection of primitives to form a
 language. Specifically:
 
--   The evaluator enables us to deal with nested expressions. For
-    example, although simply applying primitives would suffice for
-    evaluating the expression `(+ 1 6)`, it is not adequate for handling
-    `(+ 1 (* 2 3))`. As far as the primitive procedure `+` is concerned,
-    its arguments must be numbers, and it would choke if we passed it
-    the expression `(* 2 3)` as an argument. One important role of the
-    evaluator is to choreograph procedure composition so that `(* 2 3)`
-    is reduced to 6 before being passed as an argument to `+`.
--   The evaluator allows us to use variables. For example, the primitive
-    procedure for addition has no way to deal with expressions such as
-    `(+ x 1)`. We need an evaluator to keep track of variables and
-    obtain their values before invoking the primitive procedures.
--   The evaluator allows us to define compound procedures. This involves
-    keeping track of procedure definitions, knowing how to use these
-    definitions in evaluating expressions, and providing a mechanism
-    that enables procedures to accept arguments.
--   The evaluator provides the special forms, which must be evaluated
-    differently from procedure calls.
+- The evaluator enables us to deal with nested expressions. For
+  example, although simply applying primitives would suffice for
+  evaluating the expression `(+ 1 6)`, it is not adequate for handling
+  `(+ 1 (* 2 3))`. As far as the primitive procedure `+` is concerned,
+  its arguments must be numbers, and it would choke if we passed it
+  the expression `(* 2 3)` as an argument. One important role of the
+  evaluator is to choreograph procedure composition so that `(* 2 3)`
+  is reduced to 6 before being passed as an argument to `+`.
+- The evaluator allows us to use variables. For example, the primitive
+  procedure for addition has no way to deal with expressions such as
+  `(+ x 1)`. We need an evaluator to keep track of variables and
+  obtain their values before invoking the primitive procedures.
+- The evaluator allows us to define compound procedures. This involves
+  keeping track of procedure definitions, knowing how to use these
+  definitions in evaluating expressions, and providing a mechanism
+  that enables procedures to accept arguments.
+- The evaluator provides the special forms, which must be evaluated
+  differently from procedure calls.
 
 </div>
 
@@ -25301,7 +25141,7 @@ Scheme; we have chosen here to make it false.
 [²¹⁷](#4_002e1.xhtml#DOCF217) Practical Lisp systems provide a mechanism
 that allows a user to add new derived expressions and specify their
 implementation as syntactic transformations without modifying the
-evaluator. Such a user-defined transformation is called a *macro*.
+evaluator. Such a user-defined transformation is called a _macro_.
 Although it is easy to add an elementary mechanism for defining macros,
 the resulting language has subtle name-conflict problems. There has been
 much research on mechanisms for macro definition that do not cause these
@@ -25328,9 +25168,9 @@ to read.
 well as the variant in [Exercise
 4.11](#4_002e1.xhtml#Exercise-4_002e11)) is that the evaluator may have
 to search through many frames in order to find the binding for a given
-variable. (Such an approach is referred to as *deep binding*.) One way
-to avoid this inefficiency is to make use of a strategy called *lexical
-addressing*, which will be discussed in
+variable. (Such an approach is referred to as _deep binding_.) One way
+to avoid this inefficiency is to make use of a strategy called _lexical
+addressing_, which will be discussed in
 [5.5.6](#5_002e5.xhtml#g_t5_002e5_002e6).
 
 </div>
@@ -25363,7 +25203,7 @@ reference to the underlying `apply` by doing
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define apply-in-underlying-scheme apply)
 ```
 
@@ -25396,13 +25236,13 @@ C produces a C program that can execute any Lisp program. The deep idea
 here is that any evaluator can emulate any other. Thus, the notion of
 “what can in principle be computed” (ignoring practicalities of time and
 memory required) is independent of the language or the computer, and
-instead reflects an underlying notion of *computability*. This was first
+instead reflects an underlying notion of _computability_. This was first
 demonstrated in a clear way by Alan M. Turing (1912-1954), whose 1936
 paper laid the foundations for theoretical computer science. In the
 paper, Turing presented a simple computational model—now known as a
-*Turing machine*—and argued that any “effective process” can be
+_Turing machine_—and argued that any “effective process” can be
 formulated as a program for such a machine. (This argument is known as
-the *Church-Turing thesis*.) Turing then implemented a universal
+the _Church-Turing thesis_.) Turing then implemented a universal
 machine, i.e., a Turing machine that behaves as an evaluator for
 Turing-machine programs. He used this framework to demonstrate that
 there are well-posed problems that cannot be computed by Turing machines
@@ -25421,7 +25261,7 @@ general-purpose subroutines. See [Hodges
 an evaluator, which is implemented by a relatively simple procedure, can
 emulate programs that are more complex than the evaluator itself. The
 existence of a universal evaluator machine is a deep and wonderful
-property of computation. *Recursion theory*, a branch of mathematical
+property of computation. _Recursion theory_, a branch of mathematical
 logic, is concerned with logical limits of computation. Douglas
 Hofstadter’s beautiful book Gödel, Escher, Bach explores some of these
 ideas ([Hofstadter 1979](#References.xhtml#Hofstadter-1979)).
@@ -25432,7 +25272,7 @@ ideas ([Hofstadter 1979](#References.xhtml#Hofstadter-1979)).
 
 [²²⁵](#4_002e1.xhtml#DOCF225) Warning: This `eval` primitive is not
 identical to the `eval` procedure we implemented in
-[4.1.1](#4_002e1.xhtml#g_t4_002e1_002e1), because it uses *actual*
+[4.1.1](#4_002e1.xhtml#g_t4_002e1_002e1), because it uses _actual_
 Scheme environments rather than the sample environment structures we
 built in [4.1.3](#4_002e1.xhtml#g_t4_002e1_002e3). These actual
 environments cannot be manipulated by the user as ordinary lists; they
@@ -25459,8 +25299,8 @@ evaluated.
 [²²⁷](#4_002e1.xhtml#DOCF227) Although we stipulated that `halts?` is
 given a procedure object, notice that this reasoning still applies even
 if `halts?` can gain access to the procedure’s text and its environment.
-This is Turing’s celebrated *Halting Theorem*, which gave the first
-clear example of a *non-computable* problem, i.e., a well-posed task
+This is Turing’s celebrated _Halting Theorem_, which gave the first
+clear example of a _non-computable_ problem, i.e., a well-posed task
 that cannot be carried out as a computational procedure.
 
 </div>
@@ -25510,11 +25350,11 @@ to produce an incorrect answer (as Ben would have it).
 
 [²³¹](#4_002e1.xhtml#DOCF231) This example illustrates a programming
 trick for formulating recursive procedures without using `define`. The
-most general trick of this sort is the *Y* *operator*, which can be used
+most general trick of this sort is the _Y_ _operator_, which can be used
 to give a “pure λ-calculus” implementation of recursion. (See [Stoy
 1977](#References.xhtml#Stoy-1977) for details on the λ-calculus, and
 [Gabriel 1988](#References.xhtml#Gabriel-1988) for an exposition of the
-*Y* operator in Scheme.)
+_Y_ operator in Scheme.)
 
 </div>
 
@@ -25534,7 +25374,7 @@ invented this technique in his master’s thesis.
 <div id="4_002e1.xhtml#FOOT233">
 
 [²³³](#4_002e1.xhtml#DOCF233) There is, however, an important part of
-the variable search that *can* be done as part of the syntactic
+the variable search that _can_ be done as part of the syntactic
 analysis. As we will show in [5.5.6](#5_002e5.xhtml#g_t5_002e5_002e6),
 one can determine the position in the environment structure where the
 value of the variable will be found, thus obviating the need to scan the
@@ -25552,23 +25392,13 @@ processing of sequences.
 
 </div>
 
-Next: [4.2](#4_002e2.xhtml#g_t4_002e2), Prev: [Chapter
-4](#Chapter-4.xhtml#Chapter-4), Up: [4.1](#4_002e1.xhtml#g_t4_002e1)  
-\[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
-
 </div>
-
-[⇣](#4_002e1.xhtml#pagebottom)
 
 <div className="section">
 
-[⇡](#4_002e2.xhtml#pagetop)
-Next: [4.3](#4_002e3.xhtml#g_t4_002e3), Prev:
-[4.1](#4_002e1.xhtml#g_t4_002e1), Up: [Chapter
-4](#Chapter-4.xhtml#Chapter-4)  
 \[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
 
-### 4.2Variations on a Scheme — Lazy Evaluation
+### 4.2 Variations on a Scheme — Lazy Evaluation
 
 Now that we have an evaluator expressed as a Lisp program, we can
 experiment with alternative choices in language design simply by
@@ -25589,21 +25419,21 @@ a low-level language or in hardware. In this section and the next we
 explore some variations on Scheme that provide significant additional
 expressive power.
 
-#### 4.2.1Normal Order and Applicative Order
+#### 4.2.1 Normal Order and Applicative Order
 
 In [1.1](#1_002e1.xhtml#g_t1_002e1), where we began our discussion of
-models of evaluation, we noted that Scheme is an *applicative-order*
+models of evaluation, we noted that Scheme is an _applicative-order_
 language, namely, that all the arguments to Scheme procedures are
-evaluated when the procedure is applied. In contrast, *normal-order*
+evaluated when the procedure is applied. In contrast, _normal-order_
 languages delay evaluation of procedure arguments until the actual
 argument values are needed. Delaying evaluation of procedure arguments
 until the last possible moment (e.g., until they are required by a
-primitive operation) is called *lazy
-evaluation*.[²³⁶](#4_002e2.xhtml#FOOT236) Consider the procedure
+primitive operation) is called _lazy
+evaluation_.[²³⁶](#4_002e2.xhtml#FOOT236) Consider the procedure
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (try a b)
   (if (= a 0) 1 b))
 ```
@@ -25619,12 +25449,12 @@ procedure `unless`
 
 <div className="lisp">
 
-``` lisp
-(define (unless condition 
-                usual-value 
+```lisp
+(define (unless condition
+                usual-value
                 exceptional-value)
-  (if condition 
-      exceptional-value 
+  (if condition
+      exceptional-value
       usual-value))
 ```
 
@@ -25634,10 +25464,10 @@ that can be used in expressions such as
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (unless (= b 0)
         (/ a b)
-        (begin 
+        (begin
           (display "exception: returning 0")
           0))
 ```
@@ -25652,9 +25482,9 @@ can do useful computation even if evaluation of some of their arguments
 would produce errors or would not terminate.
 
 If the body of a procedure is entered before an argument has been
-evaluated we say that the procedure is *non-strict* in that argument. If
+evaluated we say that the procedure is _non-strict_ in that argument. If
 the argument is evaluated before the body of the procedure is entered we
-say that the procedure is *strict* in that
+say that the procedure is _strict_ in that
 argument.[²³⁷](#4_002e2.xhtml#FOOT237) In a purely applicative-order
 language, all procedures are strict in each argument. In a purely
 normal-order language, all compound procedures are non-strict in each
@@ -25680,7 +25510,7 @@ the individual elements in the list. We will exploit this idea in
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (factorial n)
 >   (unless (= n 1)
 >           (* n (factorial (- n 1)))
@@ -25703,7 +25533,7 @@ the individual elements in the list. We will exploit this idea in
 > situation where it might be useful to have `unless` available as a
 > procedure, rather than as a special form.
 
-#### 4.2.2An Interpreter with Lazy Evaluation
+#### 4.2.2 An Interpreter with Lazy Evaluation
 
 In this section we will implement a normal-order language that is the
 same as Scheme except that compound procedures are non-strict in each
@@ -25715,7 +25545,7 @@ required changes center around procedure application.
 The basic idea is that, when applying a procedure, the interpreter must
 determine which arguments are to be evaluated and which are to be
 delayed. The delayed arguments are not evaluated; instead, they are
-transformed into objects called *thunks*.[²³⁸](#4_002e2.xhtml#FOOT238)
+transformed into objects called _thunks_.[²³⁸](#4_002e2.xhtml#FOOT238)
 The thunk must contain the information required to produce the value of
 the argument when it is needed, as if it had been evaluated at the time
 of the application. Thus, the thunk must contain the argument expression
@@ -25723,12 +25553,12 @@ and the environment in which the procedure application is being
 evaluated.
 
 The process of evaluating the expression in a thunk is called
-*forcing*.[²³⁹](#4_002e2.xhtml#FOOT239) In general, a thunk will be
+_forcing_.[²³⁹](#4_002e2.xhtml#FOOT239) In general, a thunk will be
 forced only when its value is needed: when it is passed to a primitive
 procedure that will use the value of the thunk; when it is the value of
 a predicate of a conditional; and when it is the value of an operator
 that is about to be applied as a procedure. One design choice we have
-available is whether or not to *memoize* thunks, as we did with delayed
+available is whether or not to _memoize_ thunks, as we did with delayed
 objects in [3.5.1](#3_002e5.xhtml#g_t3_002e5_002e1). With memoization,
 the first time a thunk is forced, it stores the value that is computed.
 Subsequent forcings simply return the stored value without repeating the
@@ -25746,7 +25576,7 @@ The `application?` clause of `eval` becomes
 
 <div className="lisp">
 
-``` lisp
+```lisp
 ((application? exp)
  (apply (actual-value (operator exp) env)
         (operands exp)
@@ -25768,7 +25598,7 @@ Whenever we need the actual value of an expression, we use
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (actual-value exp env)
   (force-it (eval exp env)))
 ```
@@ -25787,25 +25617,25 @@ the arguments before applying the procedure.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (apply procedure arguments env)
   (cond ((primitive-procedure? procedure)
          (apply-primitive-procedure
           procedure
-          (list-of-arg-values 
-           arguments 
+          (list-of-arg-values
+           arguments
            env)))  ; changed
         ((compound-procedure? procedure)
          (eval-sequence
           (procedure-body procedure)
           (extend-environment
            (procedure-parameters procedure)
-           (list-of-delayed-args 
-            arguments 
+           (list-of-delayed-args
+            arguments
             env)   ; changed
            (procedure-environment procedure))))
-        (else (error "Unknown procedure 
-                      type: APPLY" 
+        (else (error "Unknown procedure
+                      type: APPLY"
                      procedure))))
 ```
 
@@ -25818,24 +25648,24 @@ and `list-of-arg-values` uses `actual-value` instead of `eval`:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (list-of-arg-values exps env)
   (if (no-operands? exps)
       '()
-      (cons (actual-value 
-             (first-operand exps) 
+      (cons (actual-value
+             (first-operand exps)
              env)
-            (list-of-arg-values 
+            (list-of-arg-values
              (rest-operands exps)
              env))))
 
 (define (list-of-delayed-args exps env)
   (if (no-operands? exps)
       '()
-      (cons (delay-it 
-             (first-operand exps) 
+      (cons (delay-it
+             (first-operand exps)
              env)
-            (list-of-delayed-args 
+            (list-of-delayed-args
              (rest-operands exps)
              env))))
 ```
@@ -25848,9 +25678,9 @@ the predicate expression before testing whether it is true or false:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (eval-if exp env)
-  (if (true? (actual-value (if-predicate exp) 
+  (if (true? (actual-value (if-predicate exp)
                            env))
       (eval (if-consequent exp) env)
       (eval (if-alternative exp) env)))
@@ -25866,15 +25696,15 @@ change the prompts to indicate that this is the lazy evaluator:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define input-prompt  ";;; L-Eval input:")
 (define output-prompt ";;; L-Eval value:")
 
 (define (driver-loop)
   (prompt-for-input input-prompt)
   (let ((input (read)))
-    (let ((output (actual-value 
-                   input 
+    (let ((output (actual-value
+                   input
                    the-global-environment)))
       (announce-output output-prompt)
       (user-print output)))
@@ -25890,8 +25720,8 @@ is performing lazy evaluation:
 
 <div className="lisp">
 
-``` lisp
-(define the-global-environment 
+```lisp
+(define the-global-environment
   (setup-environment))
 
 (driver-loop)
@@ -25924,10 +25754,10 @@ so on, until we reach something that is not a thunk:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (force-it obj)
   (if (thunk? obj)
-      (actual-value (thunk-exp obj) 
+      (actual-value (thunk-exp obj)
                     (thunk-env obj))
       obj))
 ```
@@ -25940,7 +25770,7 @@ thunk as follows:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (delay-it exp env)
   (list 'thunk exp env))
 (define (thunk? obj) (tagged-list? obj 'thunk))
@@ -25958,24 +25788,24 @@ already evaluated.[²⁴¹](#4_002e2.xhtml#FOOT241)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (evaluated-thunk? obj)
   (tagged-list? obj 'evaluated-thunk))
 
-(define (thunk-value evaluated-thunk) 
+(define (thunk-value evaluated-thunk)
   (cadr evaluated-thunk))
 
 (define (force-it obj)
   (cond ((thunk? obj)
          (let ((result
-                (actual-value 
+                (actual-value
                  (thunk-exp obj)
                  (thunk-env obj))))
            (set-car! obj 'evaluated-thunk)
            ;; replace exp with its value:
-           (set-car! (cdr obj) result) 
+           (set-car! (cdr obj) result)
            ;; forget unneeded env:
-           (set-cdr! (cdr obj) '()) 
+           (set-cdr! (cdr obj) '())
            result))
         ((evaluated-thunk? obj)
          (thunk-value obj))
@@ -25992,7 +25822,7 @@ memoization.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define count 0)
 > (define (id x) (set! count (+ count 1)) x)
 > ```
@@ -26004,7 +25834,7 @@ memoization.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define w (id (id 10)))
 >
 > ;;; L-Eval input:
@@ -26041,7 +25871,7 @@ memoization.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (square x) (* x x))
 >
 > ;;; L-Eval input:
@@ -26077,14 +25907,14 @@ memoization.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (eval-sequence exps env)
->   (cond ((last-exp? exps) 
+>   (cond ((last-exp? exps)
 >          (eval (first-exp exps) env))
->         (else 
->          (actual-value (first-exp exps) 
+>         (else
+>          (actual-value (first-exp exps)
 >                        env)
->          (eval-sequence (rest-exps exps) 
+>          (eval-sequence (rest-exps exps)
 >                         env))))
 > ```
 >
@@ -26097,12 +25927,12 @@ memoization.
 >
 >     <div className="lisp">
 >
->     ``` lisp
+>     ```lisp
 >     (define (for-each proc items)
 >       (if (null? items)
 >           'done
 >           (begin (proc (car items))
->                  (for-each proc 
+>                  (for-each proc
 >                            (cdr items)))))
 >     ```
 >
@@ -26113,7 +25943,7 @@ memoization.
 >
 >     <div className="lisp">
 >
->     ``` lisp
+>     ```lisp
 >     ;;; L-Eval input:
 >     (for-each
 >      (lambda (x) (newline) (display x))
@@ -26137,7 +25967,7 @@ memoization.
 >
 >     <div className="lisp">
 >
->     ``` lisp
+>     ```lisp
 >     (define (p1 x)
 >       (set! x (cons x '(2))) x)
 >
@@ -26162,8 +25992,8 @@ memoization.
 
 > **Exercise 4.31:** The approach taken in this section is somewhat
 > unpleasant, because it makes an incompatible change to Scheme. It
-> might be nicer to implement lazy evaluation as an *upward-compatible
-> extension*, that is, so that ordinary Scheme programs will work as
+> might be nicer to implement lazy evaluation as an _upward-compatible
+> extension_, that is, so that ordinary Scheme programs will work as
 > before. We can do this by extending the syntax of procedure
 > declarations to let the user control whether or not arguments are to
 > be delayed. While we’re at it, we may as well also give the user the
@@ -26172,7 +26002,7 @@ memoization.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (f a (b lazy) c (d lazy-memo))
 >   …)
 > ```
@@ -26193,7 +26023,7 @@ memoization.
 > arguments accordingly, and you must arrange for forcing to memoize or
 > not, as appropriate.
 
-#### 4.2.3Streams as Lazy Lists
+#### 4.2.3 Streams as Lazy Lists
 
 In [3.5.1](#3_002e5.xhtml#g_t3_002e5_002e1), we showed how to implement
 streams as delayed lists. We introduced special forms `delay` and
@@ -26220,7 +26050,7 @@ procedures:[²⁴⁴](#4_002e2.xhtml#FOOT244)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (cons x y) (lambda (m) (m x y)))
 (define (car z) (z (lambda (p q) p)))
 (define (cdr z) (z (lambda (p q) q)))
@@ -26235,7 +26065,7 @@ Here are some examples:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (list-ref items n)
   (if (= n 0)
       (car items)
@@ -26254,15 +26084,15 @@ Here are some examples:
 (define (add-lists list1 list2)
   (cond ((null? list1) list2)
         ((null? list2) list1)
-        (else (cons (+ (car list1) 
+        (else (cons (+ (car list1)
                        (car list2))
                     (add-lists
-                     (cdr list1) 
+                     (cdr list1)
                      (cdr list2))))))
 
 (define ones (cons 1 ones))
 
-(define integers 
+(define integers
   (cons 1 (add-lists ones integers)))
 
 ;;; L-Eval input:
@@ -26292,11 +26122,11 @@ originally intended in [3.5.4](#3_002e5.xhtml#g_t3_002e5_002e4):
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (integral integrand initial-value dt)
   (define int
     (cons initial-value
-          (add-lists (scale-list integrand dt) 
+          (add-lists (scale-list integrand dt)
                      int)))
   int)
 
@@ -26324,7 +26154,7 @@ originally intended in [3.5.4](#3_002e5.xhtml#g_t3_002e5_002e4):
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (car '(a b c))
 > ```
 >
@@ -26384,7 +26214,7 @@ their arguments by lazy evaluation.”
 
 <div id="4_002e2.xhtml#FOOT238">
 
-[²³⁸](#4_002e2.xhtml#DOCF238) The word *thunk* was invented by an
+[²³⁸](#4_002e2.xhtml#DOCF238) The word _thunk_ was invented by an
 informal working group that was discussing the implementation of
 call-by-name in Algol 60. They observed that most of the analysis of
 (“thinking about”) the expression could be done at compile time; thus,
@@ -26408,8 +26238,8 @@ throughout the language.
 <div id="4_002e2.xhtml#FOOT240">
 
 [²⁴⁰](#4_002e2.xhtml#DOCF240) Lazy evaluation combined with memoization
-is sometimes referred to as *call-by-need* argument passing, in contrast
-to *call-by-name* argument passing. (Call-by-name, introduced in Algol
+is sometimes referred to as _call-by-need_ argument passing, in contrast
+to _call-by-name_ argument passing. (Call-by-name, introduced in Algol
 60, is similar to non-memoized lazy evaluation.) As language designers,
 we can build our evaluator to memoize, not to memoize, or leave this an
 option for programmers ([Exercise
@@ -26430,7 +26260,7 @@ the thunk once the expression’s value has been computed. This makes no
 difference in the values returned by the interpreter. It does help save
 space, however, because removing the reference from the thunk to the
 `env` once it is no longer needed allows this structure to be
-*garbage-collected* and its space recycled, as we will discuss in
+_garbage-collected_ and its space recycled, as we will discuss in
 [5.3](#5_002e3.xhtml#g_t5_002e3).
 
 Similarly, we could have allowed unneeded environments in the memoized
@@ -26483,26 +26313,16 @@ of more general kinds of list structures, not just sequences. [Hughes
 
 </div>
 
-Next: [4.3](#4_002e3.xhtml#g_t4_002e3), Prev:
-[4.1](#4_002e1.xhtml#g_t4_002e1), Up: [4.2](#4_002e2.xhtml#g_t4_002e2)  
-\[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
-
 </div>
-
-[⇣](#4_002e2.xhtml#pagebottom)
 
 <div className="section">
 
-[⇡](#4_002e3.xhtml#pagetop)
-Next: [4.4](#4_002e4.xhtml#g_t4_002e4), Prev:
-[4.2](#4_002e2.xhtml#g_t4_002e2), Up: [Chapter
-4](#Chapter-4.xhtml#Chapter-4)  
 \[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
 
-### 4.3Variations on a Scheme — Nondeterministic Computing
+### 4.3 Variations on a Scheme — Nondeterministic Computing
 
 In this section, we extend the Scheme evaluator to support a programming
-paradigm called *nondeterministic computing* by building into the
+paradigm called _nondeterministic computing_ by building into the
 evaluator a facility to support automatic search. This is a much more
 profound change to the language than the introduction of lazy evaluation
 in [4.2](#4_002e2.xhtml#g_t4_002e2).
@@ -26528,7 +26348,7 @@ be prime. This is expressed by following procedure:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (prime-sum-pair list1 list2)
   (let ((a (an-element-of list1))
         (b (an-element-of list2)))
@@ -26575,7 +26395,7 @@ evaluator driver loop (along with definitions of `prime?`,
 
 <div className="lisp">
 
-``` lisp
+```lisp
 ;;; Amb-Eval input:
 (prime-sum-pair '(1 3 5 8) '(20 35 110))
 
@@ -26597,26 +26417,26 @@ presents examples of nondeterministic programs, and
 implement the `amb` evaluator by modifying the ordinary Scheme
 evaluator.
 
-#### 4.3.1Amb and Search
+#### 4.3.1 Amb and Search
 
 To extend Scheme to support nondeterminism, we introduce a new special
 form called `amb`.[²⁴⁷](#4_002e3.xhtml#FOOT247) The expression
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (amb ⟨e₁⟩ ⟨e₂⟩ … ⟨eₙ⟩)
 ```
 
 </div>
 
-returns the value of one of the *n* expressions
+returns the value of one of the _n_ expressions
 $\\langle\\mspace{1mu} e\_{i}\\rangle$ “ambiguously.” For example, the
 expression
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (list (amb 1 2 3) (amb 'a 'b))
 ```
 
@@ -26626,7 +26446,7 @@ can have six possible values:
 
 <div className="example">
 
-``` example
+```example
 (1 a) (1 b) (2 a) (2 b) (3 a) (3 b)
 ```
 
@@ -26643,7 +26463,7 @@ be true as follows:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (require p)
   (if (not p) (amb)))
 ```
@@ -26655,10 +26475,10 @@ used above:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (an-element-of items)
   (require (not (null? items)))
-  (amb (car items) 
+  (amb (car items)
        (an-element-of (cdr items))))
 ```
 
@@ -26669,11 +26489,11 @@ returns either the first element of the list or an element chosen from
 the rest of the list.
 
 We can also express infinite ranges of choices. The following procedure
-potentially returns any integer greater than or equal to some given *n*:
+potentially returns any integer greater than or equal to some given _n_:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (an-integer-starting-from n)
   (amb n (an-integer-starting-from (+ n 1))))
 ```
@@ -26683,13 +26503,13 @@ potentially returns any integer greater than or equal to some given *n*:
 This is like the stream procedure `integers-starting-from` described in
 [3.5.2](#3_002e5.xhtml#g_t3_002e5_002e2), but with an important
 difference: The stream procedure returns an object that represents the
-sequence of all integers beginning with *n*, whereas the `amb` procedure
+sequence of all integers beginning with _n_, whereas the `amb` procedure
 returns a single integer.[²⁴⁸](#4_002e3.xhtml#FOOT248)
 
 Abstractly, we can imagine that evaluating an `amb` expression causes
 time to split into branches, where the computation continues on each
 branch with one of the possible values of the expression. We say that
-`amb` represents a *nondeterministic choice point*. If we had a machine
+`amb` represents a _nondeterministic choice point_. If we had a machine
 with a sufficient number of processors that could be dynamically
 allocated, we could implement the search in a straightforward way.
 Execution would proceed as in a sequential machine, until an `amb`
@@ -26706,19 +26526,19 @@ alternatives sequentially. One could imagine modifying an evaluator to
 pick at random a branch to follow whenever it encounters a choice point.
 Random choice, however, can easily lead to failing values. We might try
 running the evaluator over and over, making random choices and hoping to
-find a non-failing value, but it is better to *systematically search*
+find a non-failing value, but it is better to _systematically search_
 all possible execution paths. The `amb` evaluator that we will develop
 and work with in this section implements a systematic search as follows:
 When the evaluator encounters an application of `amb`, it initially
 selects the first alternative. This selection may itself lead to a
 further choice. The evaluator will always initially choose the first
 alternative at each choice point. If a choice results in a failure, then
-the evaluator automagically[²⁵⁰](#4_002e3.xhtml#FOOT250) *backtracks* to
+the evaluator automagically[²⁵⁰](#4_002e3.xhtml#FOOT250) _backtracks_ to
 the most recent choice point and tries the next alternative. If it runs
 out of alternatives at any choice point, the evaluator will back up to
 the previous choice point and resume from there. This process leads to a
-search strategy known as *depth-first search* or *chronological
-backtracking*.[²⁵¹](#4_002e3.xhtml#FOOT251)
+search strategy known as _depth-first search_ or _chronological
+backtracking_.[²⁵¹](#4_002e3.xhtml#FOOT251)
 
 ##### Driver loop
 
@@ -26734,7 +26554,7 @@ Here is a sample interaction:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 ;;; Amb-Eval input:
 (prime-sum-pair '(1 3 5 8) '(20 35 110))
 
@@ -26758,8 +26578,8 @@ try-again
 try-again
 
 ;;; There are no more values of
-(prime-sum-pair 
- (quote (1 3 5 8)) 
+(prime-sum-pair
+ (quote (1 3 5 8))
  (quote (20 35 110)))
 
 ;;; Amb-Eval input:
@@ -26775,17 +26595,17 @@ try-again
 > **Exercise 4.35:** Write a procedure `an-integer-between` that returns
 > an integer between two given bounds. This can be used to implement a
 > procedure that finds Pythagorean triples, i.e., triples of integers
-> (*i*,*j*,*k*) between the given bounds such that *i* ≤ *j* and
+> (_i_,_j_,_k_) between the given bounds such that *i* ≤ *j* and
 > *i*² + *j*² = *k*², as follows:
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (a-pythagorean-triple-between low high)
 >   (let ((i (an-integer-between low high)))
 >     (let ((j (an-integer-between i high)))
 >       (let ((k (an-integer-between j high)))
->         (require (= (+ (* i i) (* j j)) 
+>         (require (= (+ (* i i) (* j j))
 >                     (* k k)))
 >         (list i j k)))))
 > ```
@@ -26793,7 +26613,7 @@ try-again
 > </div>
 
 > **Exercise 4.36:** [Exercise 3.69](#3_002e5.xhtml#Exercise-3_002e69)
-> discussed how to generate the stream of *all* Pythagorean triples,
+> discussed how to generate the stream of _all_ Pythagorean triples,
 > with no upper bound on the size of the integers to be searched.
 > Explain why simply replacing `an-integer-between` by
 > `an-integer-starting-from` in the procedure in [Exercise
@@ -26810,7 +26630,7 @@ try-again
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (a-pythagorean-triple-between low high)
 >   (let ((i (an-integer-between low high))
 >         (hsq (* high high)))
@@ -26824,7 +26644,7 @@ try-again
 >
 > </div>
 
-#### 4.3.2Examples of Nondeterministic Programs
+#### 4.3.2 Examples of Nondeterministic Programs
 
 Section [4.3.3](#4_002e3.xhtml#g_t4_002e3_002e3) describes the
 implementation of the `amb` evaluator. First, however, we give some
@@ -26852,7 +26672,7 @@ restrictions:[²⁵²](#4_002e3.xhtml#FOOT252)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (multiple-dwelling)
   (let ((baker (amb 1 2 3 4 5))
         (cooper (amb 1 2 3 4 5))
@@ -26860,7 +26680,7 @@ restrictions:[²⁵²](#4_002e3.xhtml#FOOT252)
         (miller (amb 1 2 3 4 5))
         (smith (amb 1 2 3 4 5)))
     (require
-     (distinct? (list baker cooper fletcher 
+     (distinct? (list baker cooper fletcher
                       miller smith)))
     (require (not (= baker 5)))
     (require (not (= cooper 1)))
@@ -26869,7 +26689,7 @@ restrictions:[²⁵²](#4_002e3.xhtml#FOOT252)
     (require (> miller cooper))
     (require
      (not (= (abs (- smith fletcher)) 1)))
-    (require 
+    (require
      (not (= (abs (- fletcher cooper)) 1)))
     (list (list 'baker baker)
           (list 'cooper cooper)
@@ -26884,7 +26704,7 @@ Evaluating the expression `(multiple-dwelling)` produces the result
 
 <div className="lisp">
 
-``` lisp
+```lisp
 ((baker 3) (cooper 2) (fletcher 4)
  (miller 5) (smith 1))
 ```
@@ -26930,12 +26750,12 @@ improvements.
 > girl should make one true statement and one untrue one. The following
 > are the relevant passages from their letters:
 >
-> -   Betty: “Kitty was second in the examination. I was only third.”
-> -   Ethel: “You’ll be glad to hear that I was on top. Joan was
->     second.”
-> -   Joan: “I was third, and poor old Ethel was bottom.”
-> -   Kitty: “I came out second. Mary was only fourth.”
-> -   Mary: “I was fourth. Top place was taken by Betty.”
+> - Betty: “Kitty was second in the examination. I was only third.”
+> - Ethel: “You’ll be glad to hear that I was on top. Joan was
+>   second.”
+> - Joan: “I was third, and poor old Ethel was bottom.”
+> - Kitty: “I came out second. Mary was only fourth.”
+> - Mary: “I was fourth. Top place was taken by Betty.”
 >
 > What in fact was the order in which the five girls were placed?
 
@@ -26964,7 +26784,7 @@ improvements.
 ##### Parsing natural language
 
 Programs designed to accept natural language as input usually start by
-attempting to *parse* the input, that is, to match the input against
+attempting to _parse_ the input, that is, to match the input against
 some grammatical structure. For example, we might try to recognize
 simple sentences consisting of an article followed by a noun followed by
 a verb, such as “The cat eats.” To accomplish such an analysis, we must
@@ -26974,11 +26794,11 @@ words:[²⁵⁴](#4_002e3.xhtml#FOOT254)
 
 <div className="lisp">
 
-``` lisp
-(define nouns 
+```lisp
+(define nouns
   '(noun student professor cat class))
 
-(define verbs 
+(define verbs
   '(verb studies lectures eats sleeps))
 
 (define articles '(article the a))
@@ -26986,7 +26806,7 @@ words:[²⁵⁴](#4_002e3.xhtml#FOOT254)
 
 </div>
 
-We also need a *grammar*, that is, a set of rules describing how
+We also need a _grammar_, that is, a set of rules describing how
 grammatical elements are composed from simpler elements. A very simple
 grammar might stipulate that a sentence always consists of two pieces—a
 noun phrase followed by a verb—and that a noun phrase consists of an
@@ -26995,7 +26815,7 @@ eats” is parsed as follows:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (sentence
  (noun-phrase (article the) (noun cat))
  (verb eats))
@@ -27010,7 +26830,7 @@ elements, tagged with the symbol `sentence`:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (parse-sentence)
   (list 'sentence
          (parse-noun-phrase)
@@ -27024,7 +26844,7 @@ noun:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (parse-noun-phrase)
   (list 'noun-phrase
         (parse-word articles)
@@ -27045,10 +26865,10 @@ list):[²⁵⁵](#4_002e3.xhtml#FOOT255)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (parse-word word-list)
   (require (not (null? *unparsed*)))
-  (require (memq (car *unparsed*) 
+  (require (memq (car *unparsed*)
                  (cdr word-list)))
   (let ((found-word (car *unparsed*)))
     (set! *unparsed* (cdr *unparsed*))
@@ -27063,7 +26883,7 @@ over:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define *unparsed* '())
 (define (parse input)
   (set! *unparsed* input)
@@ -27079,13 +26899,13 @@ sentence:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 ;;; Amb-Eval input:
 (parse '(the cat eats))
 
 ;;; Starting a new problem
 ;;; Amb-Eval value:
-(sentence 
+(sentence
  (noun-phrase (article the) (noun cat))
  (verb eats))
 ```
@@ -27101,8 +26921,8 @@ Let’s add to our grammar a list of prepositions:
 
 <div className="lisp">
 
-``` lisp
-(define prepositions 
+```lisp
+(define prepositions
   '(prep for to in by with))
 ```
 
@@ -27113,7 +26933,7 @@ preposition followed by a noun phrase:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (parse-prepositional-phrase)
   (list 'prep-phrase
         (parse-word prepositions)
@@ -27128,7 +26948,7 @@ extended by a prepositional phrase:[²⁵⁶](#4_002e3.xhtml#FOOT256)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (parse-sentence)
   (list 'sentence
          (parse-noun-phrase)
@@ -27136,9 +26956,9 @@ extended by a prepositional phrase:[²⁵⁶](#4_002e3.xhtml#FOOT256)
 
 (define (parse-verb-phrase)
   (define (maybe-extend verb-phrase)
-    (amb 
+    (amb
      verb-phrase
-     (maybe-extend 
+     (maybe-extend
       (list 'verb-phrase
             verb-phrase
             (parse-prepositional-phrase)))))
@@ -27155,7 +26975,7 @@ prepositional phrase:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (parse-simple-noun-phrase)
   (list 'simple-noun-phrase
         (parse-word articles)
@@ -27163,9 +26983,9 @@ prepositional phrase:
 
 (define (parse-noun-phrase)
   (define (maybe-extend noun-phrase)
-    (amb 
+    (amb
      noun-phrase
-     (maybe-extend 
+     (maybe-extend
       (list 'noun-phrase
             noun-phrase
             (parse-prepositional-phrase)))))
@@ -27178,8 +26998,8 @@ Our new grammar lets us parse more complex sentences. For example
 
 <div className="lisp">
 
-``` lisp
-(parse '(the student with the cat 
+```lisp
+(parse '(the student with the cat
          sleeps in the class))
 ```
 
@@ -27189,10 +27009,10 @@ produces
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (sentence
  (noun-phrase
-  (simple-noun-phrase (article the) 
+  (simple-noun-phrase (article the)
                       (noun student))
   (prep-phrase (prep with)
                (simple-noun-phrase
@@ -27215,8 +27035,8 @@ the cat. Our nondeterministic program finds both possibilities:
 
 <div className="lisp">
 
-``` lisp
-(parse '(the professor lectures to 
+```lisp
+(parse '(the professor lectures to
          the student with the cat))
 ```
 
@@ -27226,20 +27046,20 @@ produces
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (sentence
- (simple-noun-phrase (article the) 
+ (simple-noun-phrase (article the)
                      (noun professor))
  (verb-phrase
   (verb-phrase
    (verb lectures)
    (prep-phrase (prep to)
                 (simple-noun-phrase
-                 (article the) 
+                 (article the)
                  (noun student))))
   (prep-phrase (prep with)
                (simple-noun-phrase
-                (article the) 
+                (article the)
                 (noun cat)))))
 ```
 
@@ -27249,21 +27069,21 @@ Asking the evaluator to try again yields
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (sentence
- (simple-noun-phrase (article the) 
+ (simple-noun-phrase (article the)
                      (noun professor))
  (verb-phrase (verb lectures)
-              (prep-phrase 
+              (prep-phrase
                (prep to)
                (noun-phrase
                 (simple-noun-phrase
-                 (article the) 
+                 (article the)
                  (noun student))
-                (prep-phrase 
+                (prep-phrase
                  (prep with)
                  (simple-noun-phrase
-                  (article the) 
+                  (article the)
                   (noun cat)))))))
 ```
 
@@ -27287,10 +27107,10 @@ Asking the evaluator to try again yields
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (parse-verb-phrase)
 >   (amb (parse-word verbs)
->        (list 
+>        (list
 >         'verb-phrase
 >         (parse-verb-phrase)
 >         (parse-prepositional-phrase))))
@@ -27314,7 +27134,7 @@ Asking the evaluator to try again yields
 > generation instead. Implement Alyssa’s idea, and show the first
 > half-dozen or so sentences generated.[²⁵⁸](#4_002e3.xhtml#FOOT258)
 
-#### 4.3.3Implementing the `Amb` Evaluator
+#### 4.3.3 Implementing the `Amb` Evaluator
 
 The evaluation of an ordinary Scheme expression may return a value, may
 never terminate, or may signal an error. In nondeterministic Scheme the
@@ -27337,11 +27157,11 @@ entirely in the execution procedures.
 Recall that the execution procedures for the ordinary evaluator take one
 argument: the environment of execution. In contrast, the execution
 procedures in the `amb` evaluator take three arguments: the environment,
-and two procedures called *continuation procedures*. The evaluation of
+and two procedures called _continuation procedures_. The evaluation of
 an expression will finish by calling one of these two continuations: If
-the evaluation results in a value, the *success continuation* is called
+the evaluation results in a value, the _success continuation_ is called
 with that value; if the evaluation results in the discovery of a dead
-end, the *failure continuation* is called. Constructing and calling
+end, the _failure continuation_ is called. Constructing and calling
 appropriate continuations is the mechanism by which the nondeterministic
 evaluator implements backtracking.
 
@@ -27382,29 +27202,29 @@ side effect and propagates the failure.
 
 In summary, failure continuations are constructed by
 
--   `amb` expressions—to provide a mechanism to make alternative choices
-    if the current choice made by the `amb` expression leads to a dead
-    end;
--   the top-level driver—to provide a mechanism to report failure when
-    the choices are exhausted;
--   assignments—to intercept failures and undo assignments during
-    backtracking.
+- `amb` expressions—to provide a mechanism to make alternative choices
+  if the current choice made by the `amb` expression leads to a dead
+  end;
+- the top-level driver—to provide a mechanism to report failure when
+  the choices are exhausted;
+- assignments—to intercept failures and undo assignments during
+  backtracking.
 
 Failures are initiated only when a dead end is encountered. This occurs
 
--   if the user program executes `(amb)`;
--   if the user types `try-again` at the top-level driver.
+- if the user program executes `(amb)`;
+- if the user types `try-again` at the top-level driver.
 
 Failure continuations are also called during processing of a failure:
 
--   When the failure continuation created by an assignment finishes
-    undoing a side effect, it calls the failure continuation it
-    intercepted, in order to propagate the failure back to the choice
-    point that led to this assignment or to the top level.
--   When the failure continuation for an `amb` runs out of choices, it
-    calls the failure continuation that was originally given to the
-    `amb`, in order to propagate the failure back to the previous choice
-    point or to the top level.
+- When the failure continuation created by an assignment finishes
+  undoing a side effect, it calls the failure continuation it
+  intercepted, in order to propagate the failure back to the choice
+  point that led to this assignment or to the top level.
+- When the failure continuation for an `amb` runs out of choices, it
+  calls the failure continuation that was originally given to the
+  `amb`, in order to propagate the failure back to the previous choice
+  point or to the top level.
 
 ##### Structure of the evaluator
 
@@ -27416,7 +27236,7 @@ special form:[²⁶⁰](#4_002e3.xhtml#FOOT260)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (amb? exp) (tagged-list? exp 'amb))
 (define (amb-choices exp) (cdr exp))
 ```
@@ -27429,7 +27249,7 @@ procedure:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 ((amb? exp) (analyze-amb exp))
 ```
 
@@ -27442,7 +27262,7 @@ environment, together with two given continuations:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (ambeval exp env succeed fail)
   ((analyze exp) env succeed fail))
 ```
@@ -27456,7 +27276,7 @@ arguments. So the general form of an execution procedure is
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (lambda (env succeed fail)
   ;; succeed is (lambda (value fail) …)
   ;; fail is (lambda () …)
@@ -27469,7 +27289,7 @@ For example, executing
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (ambeval ⟨exp⟩
          the-global-environment
          (lambda (value fail) value)
@@ -27500,7 +27320,7 @@ continuation that was passed to them.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (analyze-self-evaluating exp)
   (lambda (env succeed fail)
     (succeed exp fail)))
@@ -27517,7 +27337,7 @@ continuation that was passed to them.
 
 (define (analyze-lambda exp)
   (let ((vars (lambda-parameters exp))
-        (bproc (analyze-sequence 
+        (bproc (analyze-sequence
                 (lambda-body exp))))
     (lambda (env succeed fail)
       (succeed (make-procedure vars bproc env)
@@ -27544,7 +27364,7 @@ the original failure continuation for the `if` expression is called.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (analyze-if exp)
   (let ((pproc (analyze (if-predicate exp)))
         (cproc (analyze (if-consequent exp)))
@@ -27572,7 +27392,7 @@ required for passing the continuations. Namely, to sequentially execute
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (analyze-sequence exps)
   (define (sequentially a b)
     (lambda (env succeed fail)
@@ -27585,7 +27405,7 @@ required for passing the continuations. Namely, to sequentially execute
   (define (loop first-proc rest-procs)
     (if (null? rest-procs)
         first-proc
-        (loop (sequentially first-proc 
+        (loop (sequentially first-proc
                             (car rest-procs))
               (cdr rest-procs))))
   (let ((procs (map analyze exps)))
@@ -27609,10 +27429,10 @@ is propagated:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (analyze-definition exp)
   (let ((var (definition-variable exp))
-        (vproc (analyze 
+        (vproc (analyze
                 (definition-value exp))))
     (lambda (env succeed fail)
       (vproc env
@@ -27649,26 +27469,26 @@ before actually calling `fail2`.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (analyze-assignment exp)
   (let ((var (assignment-variable exp))
-        (vproc (analyze 
+        (vproc (analyze
                 (assignment-value exp))))
     (lambda (env succeed fail)
       (vproc env
              (lambda (val fail2)    ; *1*
                (let ((old-value
-                      (lookup-variable-value 
-                       var 
+                      (lookup-variable-value
+                       var
                        env)))
                  (set-variable-value!
-                  var 
-                  val 
+                  var
+                  val
                   env)
-                 (succeed 
+                 (succeed
                   'ok
                   (lambda ()    ; *2*
-                    (set-variable-value! 
+                    (set-variable-value!
                      var
                      old-value
                      env)
@@ -27689,14 +27509,14 @@ operands, rather than a simple `map` as in the ordinary evaluator.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (analyze-application exp)
   (let ((fproc (analyze (operator exp)))
         (aprocs (map analyze (operands exp))))
     (lambda (env succeed fail)
       (fproc env
              (lambda (proc fail2)
-               (get-args 
+               (get-args
                 aprocs
                 env
                 (lambda (args fail3)
@@ -27717,15 +27537,15 @@ newly obtained argument onto the list of accumulated arguments:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (get-args aprocs env succeed fail)
   (if (null? aprocs)
       (succeed '() fail)
-      ((car aprocs) 
+      ((car aprocs)
        env
        ;; success continuation for this aproc
        (lambda (arg fail2)
-         (get-args 
+         (get-args
           (cdr aprocs)
           env
           ;; success continuation for
@@ -27745,23 +27565,23 @@ ordinary evaluator, except for the need to manage the continuations.
 
 <div className="lisp">
 
-``` lisp
-(define (execute-application 
+```lisp
+(define (execute-application
          proc args succeed fail)
   (cond ((primitive-procedure? proc)
-         (succeed 
-          (apply-primitive-procedure 
+         (succeed
+          (apply-primitive-procedure
            proc args)
           fail))
         ((compound-procedure? proc)
          ((procedure-body proc)
-          (extend-environment 
+          (extend-environment
            (procedure-parameters proc)
            args
            (procedure-environment proc))
           succeed
           fail))
-        (else (error "Unknown procedure type: 
+        (else (error "Unknown procedure type:
                       EXECUTE-APPLICATION"
                      proc))))
 ```
@@ -27781,7 +27601,7 @@ the next one. When there are no more alternatives to try, the entire
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (analyze-amb exp)
   (let ((cprocs
          (map analyze (amb-choices exp))))
@@ -27789,7 +27609,7 @@ the next one. When there are no more alternatives to try, the entire
       (define (try-next choices)
         (if (null? choices)
             (fail)
-            ((car choices) 
+            ((car choices)
              env
              succeed
              (lambda ()
@@ -27825,7 +27645,7 @@ in order to search for additional successful evaluations.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define input-prompt  ";;; Amb-Eval input:")
 (define output-prompt ";;; Amb-Eval value:")
 
@@ -27837,29 +27657,29 @@ in order to search for additional successful evaluations.
           (try-again)
           (begin
             (newline)
-            (display 
+            (display
              ";;; Starting a new problem ")
-            (ambeval 
+            (ambeval
              input
              the-global-environment
              ;; ambeval success
              (lambda (val next-alternative)
-               (announce-output 
+               (announce-output
                 output-prompt)
                (user-print val)
-               (internal-loop 
+               (internal-loop
                 next-alternative))
              ;; ambeval failure
              (lambda ()
                (announce-output
-                ";;; There are no 
+                ";;; There are no
                  more values of")
                (user-print input)
                (driver-loop)))))))
   (internal-loop
    (lambda ()
      (newline)
-     (display 
+     (display
       ";;; There is no current problem")
      (driver-loop))))
 ```
@@ -27883,7 +27703,7 @@ there is no evaluation in progress.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define count 0)
 > (let ((x (an-element-of '(a b c)))
 >       (y (an-element-of '(a b c))))
@@ -27916,9 +27736,9 @@ there is no evaluation in progress.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > ;;; Amb-Eval input:
-> (if-fail 
+> (if-fail
 >  (let ((x (an-element-of '(1 3 5))))
 >    (require (even? x))
 >    x)
@@ -27949,13 +27769,13 @@ there is no evaluation in progress.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (let ((pairs '()))
->   (if-fail 
->    (let ((p (prime-sum-pair 
->              '(1 3 5 8) 
+>   (if-fail
+>    (let ((p (prime-sum-pair
+>              '(1 3 5 8)
 >              '(20 35 110))))
->      (permanent-set! pairs 
+>      (permanent-set! pairs
 >                      (cons p pairs))
 >      (amb))
 >    pairs))
@@ -27970,11 +27790,11 @@ there is no evaluation in progress.
 >
 > <div className="lisp">
 >
-> ``` lisp
-> (define (require? exp) 
+> ```lisp
+> (define (require? exp)
 >   (tagged-list? exp 'require))
 >
-> (define (require-predicate exp) 
+> (define (require-predicate exp)
 >   (cadr exp))
 > ```
 >
@@ -27984,7 +27804,7 @@ there is no evaluation in progress.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > ((require? exp) (analyze-require exp))
 > ```
 >
@@ -27995,9 +27815,9 @@ there is no evaluation in progress.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (analyze-require exp)
->   (let ((pproc (analyze 
+>   (let ((pproc (analyze
 >                 (require-predicate exp))))
 >     (lambda (env succeed fail)
 >       (pproc env
@@ -28103,14 +27923,13 @@ unwieldy, however, and [Sussman and Stallman
 tractable approach while investigating methods of symbolic analysis for
 electrical circuits. They developed a non-chronological backtracking
 scheme that was based on tracing out the logical dependencies connecting
-facts, a technique that has come to be known as *dependency-directed
-backtracking*. Although their method was complex, it produced reasonably
+facts, a technique that has come to be known as _dependency-directed
+backtracking_. Although their method was complex, it produced reasonably
 efficient programs because it did little redundant search. [Doyle
-(1979)](#References.xhtml#Doyle-_00281979_0029) and [McAllester (1978;
-1980)](#References.xhtml#McAllester-_00281978_003b-1980_0029)
+(1979)](#References.xhtml#Doyle-_00281979_0029) and [McAllester (1978; 1980)](#References.xhtml#McAllester-_00281978_003b-1980_0029)
 generalized and clarified the methods of Stallman and Sussman,
 developing a new paradigm for formulating search that is now called
-*truth maintenance*. Modern problem-solving systems all use some form of
+_truth maintenance_. Modern problem-solving systems all use some form of
 truth-maintenance system as a substrate. See [Forbus and deKleer
 1993](#References.xhtml#Forbus-and-deKleer-1993) for a discussion of
 elegant ways to build truth-maintenance systems and applications using
@@ -28132,7 +27951,7 @@ to determine if the elements of a list are distinct:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (distinct? items)
   (cond ((null? items) true)
         ((null? (cdr items)) true)
@@ -28235,23 +28054,13 @@ since we can assume that internal definitions are scanned out
 
 </div>
 
-Next: [4.4](#4_002e4.xhtml#g_t4_002e4), Prev:
-[4.2](#4_002e2.xhtml#g_t4_002e2), Up: [4.3](#4_002e3.xhtml#g_t4_002e3)  
-\[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
-
 </div>
-
-[⇣](#4_002e3.xhtml#pagebottom)
 
 <div className="section">
 
-[⇡](#4_002e4.xhtml#pagetop)
-Next: [Chapter 5](#Chapter-5.xhtml#Chapter-5), Prev:
-[4.3](#4_002e3.xhtml#g_t4_002e3), Up: [Chapter
-4](#Chapter-4.xhtml#Chapter-4)  
 \[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
 
-### 4.4Logic Programming
+### 4.4 Logic Programming
 
 In [Chapter 1](#Chapter-1.xhtml#Chapter-1) we stressed that computer
 science deals with imperative (how to) knowledge, whereas mathematics
@@ -28292,7 +28101,7 @@ can have more than one value, and, as a result, the computation is
 dealing with relations rather than with single-valued functions. Logic
 programming extends this idea by combining a relational vision of
 programming with a powerful kind of symbolic pattern matching called
-*unification*.[²⁶²](#4_002e4.xhtml#FOOT262)
+_unification_.[²⁶²](#4_002e4.xhtml#FOOT262)
 
 This approach, when it works, can be a very powerful way to write
 programs. Part of the power comes from the fact that a single “what is”
@@ -28305,10 +28114,10 @@ as we did in [2.2.1](#2_002e2.xhtml#g_t2_002e2_002e1):
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (append x y)
-  (if (null? x) 
-      y 
+  (if (null? x)
+      y
       (cons (car x) (append (cdr x) y))))
 ```
 
@@ -28319,10 +28128,10 @@ following two rules, the first of which covers the case where the first
 list is empty and the second of which handles the case of a nonempty
 list, which is a `cons` of two parts:
 
--   For any list `y`, the empty list and `y` `append` to form `y`.
--   For any `u`, `v`, `y`, and `z`, `(cons u v)` and `y` `append` to
-    form `(cons u z)` if `v` and `y` `append` to form
-    `z`.[²⁶³](#4_002e4.xhtml#FOOT263)
+- For any list `y`, the empty list and `y` `append` to form `y`.
+- For any `u`, `v`, `y`, and `z`, `(cons u v)` and `y` `append` to
+  form `(cons u z)` if `v` and `y` `append` to form
+  `z`.[²⁶³](#4_002e4.xhtml#FOOT263)
 
 Using the `append` procedure, we can answer questions such as
 
@@ -28352,8 +28161,8 @@ interpreters and described the elements that are essential to an
 interpreter for a Lisp-like language (indeed, to an interpreter for any
 conventional language). Now we will apply these ideas to discuss an
 interpreter for a logic programming language. We call this language the
-*query language*, because it is very useful for retrieving information
-from data bases by formulating *queries*, or questions, expressed in the
+_query language_, because it is very useful for retrieving information
+from data bases by formulating _queries_, or questions, expressed in the
 language. Even though the query language is very different from Lisp, we
 will find it convenient to describe the language in terms of the same
 general framework we have been using all along: as a collection of
@@ -28367,14 +28176,14 @@ many of the same elements found in the interpreter of
 [4.1](#4_002e1.xhtml#g_t4_002e1). In particular, there will be an “eval”
 part that classifies expressions according to type and an “apply” part
 that implements the language’s abstraction mechanism (procedures in the
-case of Lisp, and *rules* in the case of logic programming). Also, a
+case of Lisp, and _rules_ in the case of logic programming). Also, a
 central role is played in the implementation by a frame data structure,
 which determines the correspondence between symbols and their associated
 values. One additional interesting aspect of our query-language
 implementation is that we make substantial use of streams, which were
 introduced in [Chapter 3](#Chapter-3.xhtml#Chapter-3).
 
-#### 4.4.1Deductive Information Retrieval
+#### 4.4.1 Deductive Information Retrieval
 
 Logic programming excels in providing interfaces to data bases for
 information retrieval. The query language we shall implement in this
@@ -28388,14 +28197,14 @@ take advantage of general rules in order to make logical deductions.
 
 ##### A sample data base
 
-The personnel data base for Microshaft contains *assertions* about
+The personnel data base for Microshaft contains _assertions_ about
 company personnel. Here is the information about Ben Bitdiddle, the
 resident computer wizard:
 
 <div className="lisp">
 
-``` lisp
-(address (Bitdiddle Ben) 
+```lisp
+(address (Bitdiddle Ben)
          (Slumerville (Ridge Road) 10))
 (job (Bitdiddle Ben) (computer wizard))
 (salary (Bitdiddle Ben) 60000)
@@ -28412,20 +28221,20 @@ information about them:
 
 <div className="lisp">
 
-``` lisp
-(address (Hacker Alyssa P) 
+```lisp
+(address (Hacker Alyssa P)
          (Cambridge (Mass Ave) 78))
 (job (Hacker Alyssa P) (computer programmer))
 (salary (Hacker Alyssa P) 40000)
 (supervisor (Hacker Alyssa P) (Bitdiddle Ben))
 
-(address (Fect Cy D) 
+(address (Fect Cy D)
          (Cambridge (Ames Street) 3))
 (job (Fect Cy D) (computer programmer))
 (salary (Fect Cy D) 35000)
 (supervisor (Fect Cy D) (Bitdiddle Ben))
 
-(address (Tweakit Lem E) 
+(address (Tweakit Lem E)
          (Boston (Bay State Road) 22))
 (job (Tweakit Lem E) (computer technician))
 (salary (Tweakit Lem E) 25000)
@@ -28438,13 +28247,13 @@ There is also a programmer trainee, who is supervised by Alyssa:
 
 <div className="lisp">
 
-``` lisp
-(address (Reasoner Louis) 
+```lisp
+(address (Reasoner Louis)
          (Slumerville (Pine Tree Road) 80))
-(job (Reasoner Louis) 
+(job (Reasoner Louis)
      (computer programmer trainee))
 (salary (Reasoner Louis) 30000)
-(supervisor (Reasoner Louis) 
+(supervisor (Reasoner Louis)
             (Hacker Alyssa P))
 ```
 
@@ -28458,11 +28267,11 @@ himself:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (supervisor (Bitdiddle Ben) (Warbucks Oliver))
-(address (Warbucks Oliver) 
+(address (Warbucks Oliver)
          (Swellesley (Top Heap Road)))
-(job (Warbucks Oliver) 
+(job (Warbucks Oliver)
      (administration big wheel))
 (salary (Warbucks Oliver) 150000)
 ```
@@ -28474,15 +28283,15 @@ accounting division, consisting of a chief accountant and his assistant:
 
 <div className="lisp">
 
-``` lisp
-(address (Scrooge Eben) 
+```lisp
+(address (Scrooge Eben)
          (Weston (Shady Lane) 10))
-(job (Scrooge Eben) 
+(job (Scrooge Eben)
      (accounting chief accountant))
 (salary (Scrooge Eben) 75000)
 (supervisor (Scrooge Eben) (Warbucks Oliver))
 
-(address (Cratchet Robert) 
+(address (Cratchet Robert)
          (Allston (N Harvard Street) 16))
 (job (Cratchet Robert) (accounting scrivener))
 (salary (Cratchet Robert) 18000)
@@ -28495,8 +28304,8 @@ There is also a secretary for the big wheel:
 
 <div className="lisp">
 
-``` lisp
-(address (Aull DeWitt) 
+```lisp
+(address (Aull DeWitt)
          (Slumerville (Onion Square) 5))
 (job (Aull DeWitt) (administration secretary))
 (salary (Aull DeWitt) 25000)
@@ -28512,11 +28321,11 @@ technician:
 
 <div className="lisp">
 
-``` lisp
-(can-do-job (computer wizard) 
+```lisp
+(can-do-job (computer wizard)
             (computer programmer))
 
-(can-do-job (computer wizard) 
+(can-do-job (computer wizard)
             (computer technician))
 ```
 
@@ -28526,7 +28335,7 @@ A computer programmer could fill in for a trainee:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (can-do-job (computer programmer)
             (computer programmer trainee))
 ```
@@ -28537,7 +28346,7 @@ Also, as is well known,
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (can-do-job (administration secretary)
             (administration big wheel))
 ```
@@ -28552,7 +28361,7 @@ to find all computer programmers one can say
 
 <div className="lisp">
 
-``` lisp
+```lisp
 ;;; Query input:
 (job ?x (computer programmer))
 ```
@@ -28563,7 +28372,7 @@ The system will respond with the following items:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 ;;; Query results:
 (job (Hacker Alyssa P) (computer programmer))
 (job (Fect Cy D) (computer programmer))
@@ -28572,11 +28381,11 @@ The system will respond with the following items:
 </div>
 
 The input query specifies that we are looking for entries in the data
-base that match a certain *pattern*. In this example, the pattern
+base that match a certain _pattern_. In this example, the pattern
 specifies entries consisting of three items, of which the first is the
 literal symbol `job`, the second can be anything, and the third is the
 literal list `(computer programmer)`. The “anything” that can be the
-second item in the matching list is specified by a *pattern variable*,
+second item in the matching list is specified by a _pattern variable_,
 `?x`. The general form of a pattern variable is a symbol, taken to be
 the name of the variable, preceded by a question mark. We will see below
 why it is useful to specify names for pattern variables rather than just
@@ -28588,7 +28397,7 @@ A pattern can have more than one variable. For example, the query
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (address ?x ?y)
 ```
 
@@ -28606,7 +28415,7 @@ is why variables have names. For example,
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (supervisor ?x ?x)
 ```
 
@@ -28619,7 +28428,7 @@ The query
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (job ?x (computer ?type))
 ```
 
@@ -28630,7 +28439,7 @@ first item is `computer`:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (job (Bitdiddle Ben) (computer wizard))
 (job (Hacker Alyssa P) (computer programmer))
 (job (Fect Cy D) (computer programmer))
@@ -28639,12 +28448,12 @@ first item is `computer`:
 
 </div>
 
-This same pattern does *not* match
+This same pattern does _not_ match
 
 <div className="lisp">
 
-``` lisp
-(job (Reasoner Louis) 
+```lisp
+(job (Reasoner Louis)
      (computer programmer trainee))
 ```
 
@@ -28657,7 +28466,7 @@ beginning with `computer`, we could specify[²⁶⁶](#4_002e4.xhtml#FOOT266)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (job ?x (computer . ?type))
 ```
 
@@ -28667,7 +28476,7 @@ For example,
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (computer . ?type)
 ```
 
@@ -28677,7 +28486,7 @@ matches the data
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (computer programmer trainee)
 ```
 
@@ -28688,7 +28497,7 @@ data
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (computer programmer)
 ```
 
@@ -28698,7 +28507,7 @@ with `?type` as the list `(programmer)`, and matches the data
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (computer)
 ```
 
@@ -28709,12 +28518,12 @@ with `?type` as the empty list `()`.
 We can describe the query language’s processing of simple queries as
 follows:
 
--   The system finds all assignments to variables in the query pattern
-    that *satisfy* the pattern—that is, all sets of values for the
-    variables such that if the pattern variables are *instantiated with*
-    (replaced by) the values, the result is in the data base.
--   The system responds to the query by listing all instantiations of
-    the query pattern with the variable assignments that satisfy it.
+- The system finds all assignments to variables in the query pattern
+  that _satisfy_ the pattern—that is, all sets of values for the
+  variables such that if the pattern variables are _instantiated with_
+  (replaced by) the values, the result is in the data base.
+- The system responds to the query by listing all instantiations of
+  the query pattern with the variable assignments that satisfy it.
 
 Note that if the pattern has no variables, the query reduces to a
 determination of whether that pattern is in the data base. If so, the
@@ -28743,7 +28552,7 @@ programmers:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (and (job ?person (computer programmer))
      (address ?person ?where))
 ```
@@ -28754,14 +28563,14 @@ The resulting output is
 
 <div className="lisp">
 
-``` lisp
-(and (job (Hacker Alyssa P) 
+```lisp
+(and (job (Hacker Alyssa P)
           (computer programmer))
-     (address (Hacker Alyssa P) 
+     (address (Hacker Alyssa P)
               (Cambridge (Mass Ave) 78)))
 
 (and (job (Fect Cy D) (computer programmer))
-     (address (Fect Cy D) 
+     (address (Fect Cy D)
               (Cambridge (Ames Street) 3)))
 ```
 
@@ -28771,7 +28580,7 @@ In general,
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (and ⟨query₁⟩ ⟨query₂⟩ … ⟨queryₙ⟩)
 ```
 
@@ -28790,7 +28599,7 @@ example,
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (or (supervisor ?x (Bitdiddle Ben))
     (supervisor ?x (Hacker Alyssa P)))
 ```
@@ -28801,25 +28610,25 @@ will find all employees supervised by Ben Bitdiddle or Alyssa P. Hacker:
 
 <div className="lisp">
 
-``` lisp
-(or (supervisor (Hacker Alyssa P) 
+```lisp
+(or (supervisor (Hacker Alyssa P)
                 (Bitdiddle Ben))
-    (supervisor (Hacker Alyssa P) 
+    (supervisor (Hacker Alyssa P)
                 (Hacker Alyssa P)))
 
-(or (supervisor (Fect Cy D) 
+(or (supervisor (Fect Cy D)
                 (Bitdiddle Ben))
-    (supervisor (Fect Cy D) 
+    (supervisor (Fect Cy D)
                 (Hacker Alyssa P)))
 
-(or (supervisor (Tweakit Lem E) 
+(or (supervisor (Tweakit Lem E)
                 (Bitdiddle Ben))
-    (supervisor (Tweakit Lem E) 
+    (supervisor (Tweakit Lem E)
                 (Hacker Alyssa P)))
 
-(or (supervisor (Reasoner Louis) 
+(or (supervisor (Reasoner Louis)
                 (Bitdiddle Ben))
-    (supervisor (Reasoner Louis) 
+    (supervisor (Reasoner Louis)
                 (Hacker Alyssa P)))
 ```
 
@@ -28829,7 +28638,7 @@ In general,
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (or ⟨query₁⟩ ⟨query₂⟩ … ⟨queryₙ⟩)
 ```
 
@@ -28843,7 +28652,7 @@ Compound queries can also be formed with `not`. For example,
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (and (supervisor ?x (Bitdiddle Ben))
      (not (job ?x (computer programmer))))
 ```
@@ -28855,7 +28664,7 @@ programmers. In general,
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (not ⟨query₁⟩)
 ```
 
@@ -28872,14 +28681,14 @@ as arguments. In general,
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (lisp-value ⟨predicate⟩ ⟨arg₁⟩ … ⟨argₙ⟩)
 ```
 
 </div>
 
 will be satisfied by assignments to the pattern variables for which the
-`⟨``predicate``⟩` applied to the instantiated
+` ⟨``predicate``⟩ ` applied to the instantiated
 $\\langle\\mspace{2mu} arg\_{1}\\rangle$ …
 $\\langle\\mspace{2mu} arg\_{n}\\rangle$ is true. For example, to find
 all people whose salary is greater than $30,000 we could
@@ -28887,7 +28696,7 @@ write[²⁶⁸](#4_002e4.xhtml#FOOT268)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (and (salary ?person ?amount)
      (lisp-value > ?amount 30000))
 ```
@@ -28908,15 +28717,15 @@ write[²⁶⁸](#4_002e4.xhtml#FOOT268)
 
 In addition to primitive queries and compound queries, the query
 language provides means for abstracting queries. These are given by
-*rules*. The rule
+_rules_. The rule
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (rule (lives-near ?person-1 ?person-2)
-      (and (address ?person-1 
+      (and (address ?person-1
                     (?town . ?rest-1))
-           (address ?person-2 
+           (address ?person-2
                     (?town . ?rest-2))
            (not (same ?person-1 ?person-2))))
 ```
@@ -28930,7 +28739,7 @@ simple rule:[²⁶⁹](#4_002e4.xhtml#FOOT269)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (rule (same ?x ?x))
 ```
 
@@ -28941,9 +28750,9 @@ organization if he supervises someone who is in turn a supervisor:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (rule (wheel ?person)
-      (and (supervisor ?middle-manager 
+      (and (supervisor ?middle-manager
                        ?person)
            (supervisor ?x ?middle-manager)))
 ```
@@ -28954,13 +28763,13 @@ The general form of a rule is
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (rule ⟨conclusion⟩ ⟨body⟩)
 ```
 
 </div>
 
-where `⟨``conclusion``⟩` is a pattern and `⟨``body``⟩` is any
+where ` ⟨``conclusion``⟩ ` is a pattern and ` ⟨``body``⟩ ` is any
 query.[²⁷⁰](#4_002e4.xhtml#FOOT270) We can think of a rule as
 representing a large (even infinite) set of assertions, namely all
 instantiations of the rule conclusion with variable assignments that
@@ -28972,7 +28781,7 @@ assertion implied by a rule. For example, the query
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (lives-near ?x (Bitdiddle Ben))
 ```
 
@@ -28982,7 +28791,7 @@ results in
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (lives-near (Reasoner Louis) (Bitdiddle Ben))
 (lives-near (Aull DeWitt) (Bitdiddle Ben))
 ```
@@ -28993,7 +28802,7 @@ To find all computer programmers who live near Ben Bitdiddle, we can ask
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (and (job ?x (computer programmer))
      (lives-near ?x (Bitdiddle Ben)))
 ```
@@ -29006,12 +28815,12 @@ defined recursively. For instance, the rule
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (rule (outranked-by ?staff-person ?boss)
       (or (supervisor ?staff-person ?boss)
-          (and (supervisor ?staff-person 
+          (and (supervisor ?staff-person
                            ?middle-manager)
-               (outranked-by ?middle-manager 
+               (outranked-by ?middle-manager
                              ?boss))))
 ```
 
@@ -29042,7 +28851,7 @@ supervisor is outranked by the boss.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (meeting accounting (Monday 9am))
 > (meeting administration (Monday 10am))
 > (meeting computer (Wednesday 3pm))
@@ -29057,7 +28866,7 @@ supervisor is outranked by the boss.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (meeting whole-company (Wednesday 4pm))
 > ```
 >
@@ -29072,12 +28881,13 @@ supervisor is outranked by the boss.
 >     division. Fill in the body of Alyssa’s rule.
 >     <div className="lisp">
 >
->     ``` lisp
+>     ```lisp
 >     (rule (meeting-time ?person ?day-and-time)
 >           ⟨rule-body⟩)
 >     ```
 >
 >     </div>
+>
 > 3.  Alyssa arrives at work on Wednesday morning and wonders what
 >     meetings she has to attend that day. Having defined the above
 >     rule, what query should she make to find this out?
@@ -29086,7 +28896,7 @@ supervisor is outranked by the boss.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (lives-near ?person (Hacker Alyssa P))
 > ```
 >
@@ -29098,7 +28908,7 @@ supervisor is outranked by the boss.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (lives-near ?person-1 ?person-2)
 > ```
 >
@@ -29109,7 +28919,7 @@ supervisor is outranked by the boss.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (lives-near (Hacker Alyssa P) (Fect Cy D))
 > (lives-near (Fect Cy D) (Hacker Alyssa P))
 > ```
@@ -29121,24 +28931,24 @@ supervisor is outranked by the boss.
 
 ##### Logic as programs
 
-We can regard a rule as a kind of logical implication: *If* an
-assignment of values to pattern variables satisfies the body, *then* it
+We can regard a rule as a kind of logical implication: _If_ an
+assignment of values to pattern variables satisfies the body, _then_ it
 satisfies the conclusion. Consequently, we can regard the query language
-as having the ability to perform *logical deductions* based upon the
+as having the ability to perform _logical deductions_ based upon the
 rules. As an example, consider the `append` operation described at the
 beginning of [4.4](#4_002e4.xhtml#g_t4_002e4). As we said, `append` can
 be characterized by the following two rules:
 
--   For any list `y`, the empty list and `y` `append` to form `y`.
--   For any `u`, `v`, `y`, and `z`, `(cons u v)` and `y` `append` to
-    form `(cons u z)` if `v` and `y` `append` to form `z`.
+- For any list `y`, the empty list and `y` `append` to form `y`.
+- For any `u`, `v`, `y`, and `z`, `(cons u v)` and `y` `append` to
+  form `(cons u z)` if `v` and `y` `append` to form `z`.
 
 To express this in our query language, we define two rules for a
 relation
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (append-to-form x y z)
 ```
 
@@ -29148,7 +28958,7 @@ which we can interpret to mean “`x` and `y` `append` to form `z`”:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (rule (append-to-form () ?y ?y))
 (rule (append-to-form (?u . ?v) ?y (?u . ?z))
       (append-to-form ?v ?y ?z))
@@ -29165,7 +28975,7 @@ Given these two rules, we can formulate queries that compute the
 
 <div className="lisp">
 
-``` lisp
+```lisp
 ;;; Query input:
 (append-to-form (a b) (c d) ?z)
 
@@ -29181,7 +28991,7 @@ done as follows:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 ;;; Query input:
 (append-to-form (a b) ?y (a b c d))
 
@@ -29196,7 +29006,7 @@ We can also ask for all pairs of lists that `append` to form
 
 <div className="lisp">
 
-``` lisp
+```lisp
 ;;; Query input:
 (append-to-form ?x ?y (a b c d))
 
@@ -29223,7 +29033,7 @@ methods may break down in more complex cases, as we will see in
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (rule (?x next-to ?y in (?x ?y . ?u)))
 > (rule (?x next-to ?y in (?v . ?z))
 >       (?x next-to ?y in ?z))
@@ -29235,7 +29045,7 @@ methods may break down in more complex cases, as we will see in
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (?x next-to ?y in (1 (2 3) 4))
 > (?x next-to 1 in (2 1 3 1))
 > ```
@@ -29254,7 +29064,7 @@ methods may break down in more complex cases, as we will see in
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (son Adam Cain) (son Cain Enoch)
 > (son Enoch Irad) (son Irad Mehujael)
 > (son Mehujael Methushael)
@@ -29265,16 +29075,16 @@ methods may break down in more complex cases, as we will see in
 >
 > </div>
 >
-> Formulate rules such as “If *S* is the son of *f*, and *f* is the son
-> of *G*, then *S* is the grandson of *G*” and “If *W* is the wife of
-> *M*, and *S* is the son of *W*, then *S* is the son of *M*” (which was
+> Formulate rules such as “If _S_ is the son of _f_, and _f_ is the son
+> of _G_, then _S_ is the grandson of _G_” and “If _W_ is the wife of
+> _M_, and _S_ is the son of _W_, then _S_ is the son of _M_” (which was
 > supposedly more true in biblical times than today) that will enable
 > the query system to find the grandson of Cain; the sons of Lamech; the
 > grandsons of Methushael. (See [Exercise
 > 4.69](#4_002e4.xhtml#Exercise-4_002e69) for some rules to deduce more
 > complicated relationships.)
 
-#### 4.4.2How the Query System Works
+#### 4.4.2 How the Query System Works
 
 In section [4.4.4](#4_002e4.xhtml#g_t4_002e4_002e4) we will present an
 implementation of the query interpreter as a collection of procedures.
@@ -29295,7 +29105,7 @@ manage the search with the aid of streams. Our implementation follows
 this second approach.
 
 The query system is organized around two central operations called
-*pattern matching* and *unification*. We first describe pattern matching
+_pattern matching_ and _unification_. We first describe pattern matching
 and explain how this operation, together with the organization of
 information in terms of streams of frames, enables us to implement both
 simple and compound queries. We next discuss unification, a
@@ -29307,7 +29117,7 @@ procedure that classifies expressions in a manner analogous to the way
 
 ##### Pattern matching
 
-A *pattern matcher* is a program that tests whether some datum fits a
+A _pattern matcher_ is a program that tests whether some datum fits a
 specified pattern. For example, the data list `((a b) c (a b))` matches
 the pattern `(?x c ?x)` with the pattern variable `?x` bound to `(a b)`.
 The same data list matches the pattern `(?x ?y ?z)` with `?x` and `?z`
@@ -29317,7 +29127,7 @@ However, it does not match the pattern `(?x a ?y)`, since that pattern
 specifies a list whose second element is the symbol `a`.
 
 The pattern matcher used by the query system takes as inputs a pattern,
-a datum, and a *frame* that specifies bindings for various pattern
+a datum, and a _frame_ that specifies bindings for various pattern
 variables. It checks whether the datum matches the pattern in a way that
 is consistent with the bindings already in the frame. If so, it returns
 the given frame augmented by any bindings that may have been determined
@@ -29337,7 +29147,7 @@ query
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (job ?x (computer programmer))
 ```
 
@@ -29389,9 +29199,9 @@ such as
 
 <div className="lisp">
 
-``` lisp
-(and (can-do-job 
-      ?x 
+```lisp
+(and (can-do-job
+      ?x
       (computer programmer trainee))
      (job ?person ?x))
 ```
@@ -29403,7 +29213,7 @@ programmer trainee”), we first find all entries that match the pattern
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (can-do-job ?x (computer programmer trainee))
 ```
 
@@ -29414,7 +29224,7 @@ This produces a stream of frames, each of which contains a binding for
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (job ?person ?x)
 ```
 
@@ -29459,7 +29269,7 @@ instance, given the pattern
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (not (job ?x (computer programmer)))
 ```
 
@@ -29474,7 +29284,7 @@ processing the query
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (and (supervisor ?x ?y)
      (not (job ?x (computer programmer))))
 ```
@@ -29497,7 +29307,7 @@ In order to handle rules in the query language, we must be able to find
 the rules whose conclusions match a given query pattern. Rule
 conclusions are like assertions except that they can contain variables,
 so we will need a generalization of pattern matching—called
-*unification*—in which both the “pattern” and the “datum” may contain
+_unification_—in which both the “pattern” and the “datum” may contain
 variables.
 
 A unifier takes two patterns, each containing constants and variables,
@@ -29526,7 +29336,7 @@ specifying the simultaneous equations
 
 <div className="lisp">
 
-``` lisp
+```lisp
 ?x = (a ?y c)
 ?x = (a b ?z)
 ```
@@ -29537,7 +29347,7 @@ These equations imply that
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (a ?y c) = (a b ?z)
 ```
 
@@ -29547,7 +29357,7 @@ which in turn implies that
 
 <div className="lisp">
 
-``` lisp
+```lisp
 a = a, ?y = b, c = ?z,
 ```
 
@@ -29557,7 +29367,7 @@ and hence that
 
 <div className="lisp">
 
-``` lisp
+```lisp
 ?x = (a b c)
 ```
 
@@ -29591,7 +29401,7 @@ processing a query that involves applying a rule, such as
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (lives-near ?x (Hacker Alyssa P))
 ```
 
@@ -29607,11 +29417,11 @@ rule
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (rule (lives-near ?person-1 ?person-2)
-      (and (address ?person-1 
+      (and (address ?person-1
                     (?town . ?rest-1))
-           (address ?person-2 
+           (address ?person-2
                     (?town . ?rest-2))
            (not (same ?person-1 ?person-2))))
 ```
@@ -29630,18 +29440,18 @@ In general, the query evaluator uses the following method to apply a
 rule when trying to establish a query pattern in a frame that specifies
 bindings for some of the pattern variables:
 
--   Unify the query with the conclusion of the rule to form, if
-    successful, an extension of the original frame.
--   Relative to the extended frame, evaluate the query formed by the
-    body of the rule.
+- Unify the query with the conclusion of the rule to form, if
+  successful, an extension of the original frame.
+- Relative to the extended frame, evaluate the query formed by the
+  body of the rule.
 
 Notice how similar this is to the method for applying a procedure in the
 `eval`/`apply` evaluator for Lisp:
 
--   Bind the procedure’s parameters to its arguments to form a frame
-    that extends the original procedure environment.
--   Relative to the extended environment, evaluate the expression formed
-    by the body of the procedure.
+- Bind the procedure’s parameters to its arguments to form a frame
+  that extends the original procedure environment.
+- Relative to the extended environment, evaluate the expression formed
+  by the body of the procedure.
 
 The similarity between the two evaluators should come as no surprise.
 Just as procedure definitions are the means of abstraction in Lisp, rule
@@ -29659,10 +29469,10 @@ assertions.
 Given the query pattern and a stream of frames, we produce, for each
 frame in the input stream, two streams:
 
--   a stream of extended frames obtained by matching the pattern against
-    all assertions in the data base (using the pattern matcher), and
--   a stream of extended frames obtained by applying all possible rules
-    (using the unifier).[²⁷⁷](#4_002e4.xhtml#FOOT277)
+- a stream of extended frames obtained by matching the pattern against
+  all assertions in the data base (using the pattern matcher), and
+- a stream of extended frames obtained by applying all possible rules
+  (using the unifier).[²⁷⁷](#4_002e4.xhtml#FOOT277)
 
 Appending these two streams produces a stream that consists of all the
 ways that the given pattern can be satisfied consistent with the
@@ -29700,14 +29510,14 @@ added to the data base. For instance,
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (assert!
  (job (Bitdiddle Ben)
       (computer wizard)))
 
 (assert!
  (rule (wheel ?person)
-       (and (supervisor 
+       (and (supervisor
              ?middle-manager ?person)
             (supervisor
              ?x ?middle-manager))))
@@ -29715,7 +29525,7 @@ added to the data base. For instance,
 
 </div>
 
-#### 4.4.3Is Logic Programming Mathematical Logic?
+#### 4.4.3 Is Logic Programming Mathematical Logic?
 
 The means of combination used in the query language may at first seem
 identical to the operations `and`, `or`, and `not` of mathematical
@@ -29723,7 +29533,7 @@ logic, and the application of query-language rules is in fact
 accomplished through a legitimate method of
 inference.[²⁷⁹](#4_002e4.xhtml#FOOT279) This identification of the query
 language with mathematical logic is not really valid, though, because
-the query language provides a *control structure* that interprets the
+the query language provides a _control structure_ that interprets the
 logical statements procedurally. We can often take advantage of this
 control structure. For example, to find all of the supervisors of
 programmers we could formulate a query in either of two logically
@@ -29731,7 +29541,7 @@ equivalent forms:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (and (job ?x (computer programmer))
      (supervisor ?x ?y))
 ```
@@ -29742,7 +29552,7 @@ or
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (and (supervisor ?x ?y)
      (job ?x (computer programmer)))
 ```
@@ -29792,7 +29602,7 @@ suppose we are setting up a data base of famous marriages, including
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (assert! (married Minnie Mickey))
 ```
 
@@ -29802,18 +29612,18 @@ If we now ask
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (married Mickey ?who)
 ```
 
 </div>
 
-we will get no response, because the system doesn’t know that if *A* is
-married to *B*, then *B* is married to *A*. So we assert the rule
+we will get no response, because the system doesn’t know that if _A_ is
+married to _B_, then _B_ is married to _A_. So we assert the rule
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (assert! (rule (married ?x ?y)
                (married ?y ?x)))
 ```
@@ -29824,7 +29634,7 @@ and again query
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (married Mickey ?who)
 ```
 
@@ -29833,17 +29643,17 @@ and again query
 Unfortunately, this will drive the system into an infinite loop, as
 follows:
 
--   The system finds that the `married` rule is applicable; that is, the
-    rule conclusion `(married ?x ?y)` successfully unifies with the
-    query pattern `(married Mickey ?who)` to produce a frame in which
-    `?x` is bound to `Mickey` and `?y` is bound to `?who`. So the
-    interpreter proceeds to evaluate the rule body `(married ?y ?x)` in
-    this frame—in effect, to process the query `(married ?who Mickey)`.
--   One answer appears directly as an assertion in the data base:
-    `(married Minnie Mickey)`.
--   The `married` rule is also applicable, so the interpreter again
-    evaluates the rule body, which this time is equivalent to
-    `(married Mickey ?who)`.
+- The system finds that the `married` rule is applicable; that is, the
+  rule conclusion `(married ?x ?y)` successfully unifies with the
+  query pattern `(married Mickey ?who)` to produce a frame in which
+  `?x` is bound to `Mickey` and `?y` is bound to `?who`. So the
+  interpreter proceeds to evaluate the rule body `(married ?y ?x)` in
+  this frame—in effect, to process the query `(married ?who Mickey)`.
+- One answer appears directly as an assertion in the data base:
+  `(married Minnie Mickey)`.
+- The `married` rule is also applicable, so the interpreter again
+  evaluates the rule body, which this time is equivalent to
+  `(married Mickey ?who)`.
 
 The system is now in an infinite loop. Indeed, whether the system will
 find the simple answer `(married Minnie Mickey)` before it goes into the
@@ -29864,7 +29674,7 @@ queries:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (and (supervisor ?x ?y)
      (not (job ?x (computer programmer))))
 
@@ -29896,14 +29706,14 @@ can’t work if some of its arguments are unbound. See [Exercise
 
 There is also a much more serious way in which the `not` of the query
 language differs from the `not` of mathematical logic. In logic, we
-interpret the statement “not *P*” to mean that *P* is not true. In the
-query system, however, “not *P*” means that *P* is not deducible from
+interpret the statement “not _P_” to mean that _P_ is not true. In the
+query system, however, “not _P_” means that _P_ is not deducible from
 the knowledge in the data base. For example, given the personnel data
 base of [4.4.1](#4_002e4.xhtml#g_t4_002e4_002e1), the system would
 happily deduce all sorts of `not` statements, such as that Ben Bitdiddle
 is not a baseball fan, that it is not raining outside, and that 2 + 2 is
 not 4.[²⁸²](#4_002e4.xhtml#FOOT282) In other words, the `not` of logic
-programming languages reflects the so-called *closed world assumption*
+programming languages reflects the so-called _closed world assumption_
 that all relevant information has been included in the data
 base.[²⁸³](#4_002e4.xhtml#FOOT283)
 
@@ -29915,12 +29725,12 @@ base.[²⁸³](#4_002e4.xhtml#FOOT283)
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (rule (outranked-by ?staff-person ?boss)
 >   (or (supervisor ?staff-person ?boss)
 >       (and (outranked-by ?middle-manager
 >                          ?boss)
->            (supervisor ?staff-person 
+>            (supervisor ?staff-person
 >                        ?middle-manager))))
 > ```
 >
@@ -29931,7 +29741,7 @@ base.[²⁸³](#4_002e4.xhtml#FOOT283)
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (outranked-by (Bitdiddle Ben) ?who)
 > ```
 >
@@ -29945,7 +29755,7 @@ base.[²⁸³](#4_002e4.xhtml#FOOT283)
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (wheel ?who)
 > ```
 >
@@ -29955,7 +29765,7 @@ base.[²⁸³](#4_002e4.xhtml#FOOT283)
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > ;;; Query results:
 > (wheel (Warbucks Oliver))
 > (wheel (Bitdiddle Ben))
@@ -29974,7 +29784,7 @@ base.[²⁸³](#4_002e4.xhtml#FOOT283)
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (sum ?amount
 >      (and (job ?x (computer programmer))
 >           (salary ?x ?amount)))
@@ -29986,7 +29796,7 @@ base.[²⁸³](#4_002e4.xhtml#FOOT283)
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (accumulation-function ⟨variable⟩
 >                        ⟨query pattern⟩)
 > ```
@@ -30034,17 +29844,17 @@ base.[²⁸³](#4_002e4.xhtml#FOOT283)
 > fact about Irad, for example, as `((great grandson) Adam Irad)`. Write
 > rules that determine if a list ends in the word `grandson`. Use this
 > to express a rule that allows one to derive the relationship
-> `((great .  ?rel) ?x ?y)`, where `?rel` is a list ending in
+> `((great . ?rel) ?x ?y)`, where `?rel` is a list ending in
 > `grandson`.) Check your rules on queries such as
 > `((great grandson) ?g ?ggs)` and `(?relationship Adam Irad)`.
 
-#### 4.4.4Implementing the Query System
+#### 4.4.4 Implementing the Query System
 
 Section [4.4.2](#4_002e4.xhtml#g_t4_002e4_002e2) described how the query
 system works. Now we fill in the details by presenting a complete
 implementation of the system.
 
-##### 4.4.4.1The Driver Loop and Instantiation
+##### 4.4.4.1 The Driver Loop and Instantiation
 
 The driver loop for the query system repeatedly reads input expressions.
 If the expression is a rule or assertion to be added to the data base,
@@ -30059,7 +29869,7 @@ of frames, and this final stream is printed at the terminal:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define input-prompt  ";;; Query input:")
 (define output-prompt ";;; Query results:")
 
@@ -30067,10 +29877,10 @@ of frames, and this final stream is printed at the terminal:
   (prompt-for-input input-prompt)
   (let ((q (query-syntax-process (read))))
     (cond ((assertion-to-be-added? q)
-           (add-rule-or-assertion! 
+           (add-rule-or-assertion!
             (add-assertion-body q))
            (newline)
-           (display 
+           (display
             "Assertion added to data base.")
            (query-driver-loop))
           (else
@@ -30116,21 +29926,21 @@ instantiated is given by a procedural argument to `instantiate`.
 
 <div className="lisp">
 
-``` lisp
-(define (instantiate 
+```lisp
+(define (instantiate
          exp frame unbound-var-handler)
   (define (copy exp)
     (cond ((var? exp)
-           (let ((binding 
-                  (binding-in-frame 
+           (let ((binding
+                  (binding-in-frame
                    exp frame)))
              (if binding
-                 (copy 
+                 (copy
                   (binding-value binding))
-                 (unbound-var-handler 
+                 (unbound-var-handler
                   exp frame))))
           ((pair? exp)
-           (cons (copy (car exp)) 
+           (cons (copy (car exp))
                  (copy (cdr exp))))
           (else exp)))
   (copy exp))
@@ -30141,7 +29951,7 @@ instantiated is given by a procedural argument to `instantiate`.
 The procedures that manipulate bindings are defined in
 [4.4.4.8](#4_002e4.xhtml#g_t4_002e4_002e4_002e8).
 
-##### 4.4.4.2The Evaluator
+##### 4.4.4.2 The Evaluator
 
 The `qeval` procedure, called by the `query-driver-loop`, is the basic
 evaluator of the query system. It takes as inputs a query and a stream
@@ -30154,7 +29964,7 @@ special form is assumed to be a simple query, to be processed by
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (qeval query frame-stream)
   (let ((qproc (get (type query) 'qeval)))
     (if qproc
@@ -30177,14 +29987,14 @@ data-base matches of the query.
 
 <div className="lisp">
 
-``` lisp
-(define (simple-query query-pattern 
+```lisp
+(define (simple-query query-pattern
                       frame-stream)
   (stream-flatmap
    (lambda (frame)
      (stream-append-delayed
       (find-assertions query-pattern frame)
-      (delay 
+      (delay
         (apply-rules query-pattern frame))))
    frame-stream))
 ```
@@ -30219,12 +30029,12 @@ stream, it recursively applies `conjoin` to the rest of the queries.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (conjoin conjuncts frame-stream)
   (if (empty-conjunction? conjuncts)
       frame-stream
       (conjoin (rest-conjuncts conjuncts)
-               (qeval 
+               (qeval
                 (first-conjunct conjuncts)
                 frame-stream))))
 ```
@@ -30235,7 +30045,7 @@ The expression
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (put 'and 'qeval conjoin)
 ```
 
@@ -30254,14 +30064,14 @@ disjuncts of the `or` are computed separately and merged using the
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (disjoin disjuncts frame-stream)
   (if (empty-disjunction? disjuncts)
       the-empty-stream
       (interleave-delayed
-       (qeval (first-disjunct disjuncts) 
+       (qeval (first-disjunct disjuncts)
               frame-stream)
-       (delay (disjoin 
+       (delay (disjoin
                (rest-disjuncts disjuncts)
                frame-stream)))))
 (put 'or 'qeval disjoin)
@@ -30282,11 +30092,11 @@ extended.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (negate operands frame-stream)
   (stream-flatmap
    (lambda (frame)
-     (if (stream-null? 
+     (if (stream-null?
           (qeval (negated-query operands)
                  (singleton-stream frame)))
          (singleton-stream frame)
@@ -30305,7 +30115,7 @@ are unbound pattern variables.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (lisp-value call frame-stream)
   (stream-flatmap
    (lambda (frame)
@@ -30314,8 +30124,8 @@ are unbound pattern variables.
            call
            frame
            (lambda (v f)
-             (error 
-              "Unknown pat var: LISP-VALUE" 
+             (error
+              "Unknown pat var: LISP-VALUE"
               v))))
          (singleton-stream frame)
          the-empty-stream))
@@ -30334,9 +30144,9 @@ underlying Lisp system.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (execute exp)
-  (apply (eval (predicate exp) 
+  (apply (eval (predicate exp)
                user-initial-environment)
          (args exp)))
 ```
@@ -30352,8 +30162,8 @@ rules whose conclusions are always satisfied).
 
 <div className="lisp">
 
-``` lisp
-(define (always-true ignore frame-stream) 
+```lisp
+(define (always-true ignore frame-stream)
   frame-stream)
 (put 'always-true 'qeval always-true)
 ```
@@ -30363,7 +30173,7 @@ rules whose conclusions are always satisfied).
 The selectors that define the syntax of `not` and `lisp-value` are given
 in [4.4.4.7](#4_002e4.xhtml#g_t4_002e4_002e4_002e7).
 
-##### 4.4.4.3Finding Assertions by Pattern Matching
+##### 4.4.4.3 Finding Assertions by Pattern Matching
 
 `Find-assertions`, called by `simple-query`
 ([4.4.4.2](#4_002e4.xhtml#g_t4_002e4_002e4_002e2)), takes as input a
@@ -30381,10 +30191,10 @@ because we would need to make many more calls to the matcher.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (find-assertions pattern frame)
-  (stream-flatmap 
-    (lambda (datum) 
+  (stream-flatmap
+    (lambda (datum)
       (check-an-assertion datum pattern frame))
     (fetch-assertions pattern frame)))
 ```
@@ -30397,11 +30207,11 @@ containing the extended frame or `the-empty-stream` if the match fails.
 
 <div className="lisp">
 
-``` lisp
-(define (check-an-assertion 
+```lisp
+(define (check-an-assertion
          assertion query-pat query-frame)
   (let ((match-result
-         (pattern-match 
+         (pattern-match
           query-pat assertion query-frame)))
     (if (eq? match-result 'failed)
         the-empty-stream
@@ -30425,16 +30235,16 @@ cases are applicable, the match fails and we return the symbol `failed`.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (pattern-match pat dat frame)
   (cond ((eq? frame 'failed) 'failed)
         ((equal? pat dat) frame)
-        ((var? pat) 
-         (extend-if-consistent 
+        ((var? pat)
+         (extend-if-consistent
           pat dat frame))
         ((and (pair? pat) (pair? dat))
-         (pattern-match 
-          (cdr pat) 
+         (pattern-match
+          (cdr pat)
           (cdr dat)
           (pattern-match
            (car pat) (car dat) frame)))
@@ -30448,11 +30258,11 @@ this is consistent with the bindings already in the frame:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (extend-if-consistent var dat frame)
   (let ((binding (binding-in-frame var frame)))
     (if binding
-        (pattern-match 
+        (pattern-match
          (binding-value binding) dat frame)
         (extend var dat frame))))
 ```
@@ -30509,7 +30319,7 @@ example, matching the pattern `(computer . ?type)` against
 `(computer programmer trainee)` will match `?type` against the list
 `(programmer trainee)`.
 
-##### 4.4.4.4Rules and Unification
+##### 4.4.4.4 Rules and Unification
 
 `Apply-rules` is the rule analog of `find-assertions`
 ([4.4.4.3](#4_002e4.xhtml#g_t4_002e4_002e4_002e3)). It takes as input a
@@ -30521,9 +30331,9 @@ resulting streams of frames.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (apply-rules pattern frame)
-  (stream-flatmap 
+  (stream-flatmap
    (lambda (rule)
      (apply-a-rule rule pattern frame))
    (fetch-rules pattern frame)))
@@ -30551,11 +30361,11 @@ here is the most straightforward, even if not the most efficient. (See
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (apply-a-rule rule
                       query-pattern
                       query-frame)
-  (let ((clean-rule 
+  (let ((clean-rule
          (rename-variables-in rule)))
     (let ((unify-result
            (unify-match query-pattern
@@ -30564,7 +30374,7 @@ here is the most straightforward, even if not the most efficient. (See
       (if (eq? unify-result 'failed)
           the-empty-stream
           (qeval (rule-body clean-rule)
-                 (singleton-stream 
+                 (singleton-stream
                   unify-result))))))
 ```
 
@@ -30583,14 +30393,14 @@ to `?x-7` and each `?y` in the rule to `?y-7`. (`Make-new-variable` and
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (rename-variables-in rule)
-  (let ((rule-application-id 
+  (let ((rule-application-id
          (new-rule-application-id)))
     (define (tree-walk exp)
       (cond ((var? exp)
-             (make-new-variable 
-              exp 
+             (make-new-variable
+              exp
               rule-application-id))
             ((pair? exp)
              (cons (tree-walk (car exp))
@@ -30611,23 +30421,23 @@ object on the right side of the match is a variable.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (unify-match p1 p2 frame)
   (cond ((eq? frame 'failed) 'failed)
         ((equal? p1 p2) frame)
         ((var? p1)
          (extend-if-possible p1 p2 frame))
         ((var? p2)
-         (extend-if-possible 
-          p2 
-          p1 
+         (extend-if-possible
+          p2
+          p1
           frame))        ; ***
-        ((and (pair? p1) 
+        ((and (pair? p1)
               (pair? p2))
-         (unify-match 
-          (cdr p1) 
+         (unify-match
+          (cdr p1)
           (cdr p2)
-          (unify-match 
+          (unify-match
            (car p1)
            (car p2)
            frame)))
@@ -30669,21 +30479,21 @@ second attempt to bind `?x` to `?y` matches `?y` (the stored value of
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (extend-if-possible var val frame)
   (let ((binding (binding-in-frame var frame)))
     (cond (binding
            (unify-match
             (binding-value binding) val frame))
           ((var? val)                   ; ***
-           (let ((binding 
-                  (binding-in-frame 
+           (let ((binding
+                  (binding-in-frame
                    val
                    frame)))
              (if binding
                  (unify-match
-                  var 
-                  (binding-value binding) 
+                  var
+                  (binding-value binding)
                   frame)
                  (extend var val frame))))
           ((depends-on? val var frame)  ; ***
@@ -30703,18 +30513,18 @@ necessary.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (depends-on? exp var frame)
   (define (tree-walk e)
     (cond ((var? e)
            (if (equal? var e)
                true
                (let
-                 ((b (binding-in-frame 
-                      e 
+                 ((b (binding-in-frame
+                      e
                       frame)))
                   (if b
-                      (tree-walk 
+                      (tree-walk
                        (binding-value b))
                       false))))
           ((pair? e)
@@ -30726,7 +30536,7 @@ necessary.
 
 </div>
 
-##### 4.4.4.5Maintaining the Data Base
+##### 4.4.4.5 Maintaining the Data Base
 
 One important problem in designing logic programming languages is that
 of arranging things so that as few irrelevant data-base entries as
@@ -30746,7 +30556,7 @@ call on predicates and selectors that embody our criteria.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define THE-ASSERTIONS the-empty-stream)
 
 (define (fetch-assertions pattern frame)
@@ -30768,7 +30578,7 @@ if nothing is stored there.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (get-stream key1 key2)
   (let ((s (get key1 key2)))
     (if s s the-empty-stream)))
@@ -30789,7 +30599,7 @@ in a separate stream in our table, indexed by the symbol `?`.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define THE-RULES the-empty-stream)
 
 (define (fetch-rules pattern frame)
@@ -30815,7 +30625,7 @@ base.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (add-rule-or-assertion! assertion)
   (if (rule? assertion)
       (add-rule! assertion)
@@ -30825,7 +30635,7 @@ base.
   (store-assertion-in-index assertion)
   (let ((old-assertions THE-ASSERTIONS))
     (set! THE-ASSERTIONS
-          (cons-stream assertion 
+          (cons-stream assertion
                        old-assertions))
     'ok))
 
@@ -30844,16 +30654,16 @@ indexed. If so, we store it in the appropriate stream.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (store-assertion-in-index assertion)
   (if (indexable? assertion)
       (let ((key (index-key-of assertion)))
         (let ((current-assertion-stream
-               (get-stream 
+               (get-stream
                 key 'assertion-stream)))
           (put key
                'assertion-stream
-               (cons-stream 
+               (cons-stream
                 assertion
                 current-assertion-stream))))))
 
@@ -30862,11 +30672,11 @@ indexed. If so, we store it in the appropriate stream.
     (if (indexable? pattern)
         (let ((key (index-key-of pattern)))
           (let ((current-rule-stream
-                 (get-stream 
+                 (get-stream
                   key 'rule-stream)))
             (put key
                  'rule-stream
-                 (cons-stream 
+                 (cons-stream
                   rule
                   current-rule-stream)))))))
 ```
@@ -30879,7 +30689,7 @@ if it starts with a variable or a constant symbol.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (indexable? pat)
   (or (constant-symbol? (car pat))
       (var? (car pat))))
@@ -30892,7 +30702,7 @@ it starts with a variable) or the constant symbol with which it starts.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (index-key-of pat)
   (let ((key (car pat)))
     (if (var? key) '? key)))
@@ -30905,7 +30715,7 @@ the pattern starts with a constant symbol.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (use-index? pat)
   (constant-symbol? (car pat)))
 ```
@@ -30921,18 +30731,18 @@ the pattern starts with a constant symbol.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (add-assertion! assertion)
 >   (store-assertion-in-index assertion)
 >   (set! THE-ASSERTIONS
->         (cons-stream assertion 
+>         (cons-stream assertion
 >                      THE-ASSERTIONS))
 >   'ok)
 > ```
 >
 > </div>
 
-##### 4.4.4.6Stream Operations
+##### 4.4.4.6 Stream Operations
 
 The query system uses a few stream operations that were not presented in
 [Chapter 3](#Chapter-3.xhtml#Chapter-3).
@@ -30946,7 +30756,7 @@ some cases (see [Exercise 4.71](#4_002e4.xhtml#Exercise-4_002e71)).
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (stream-append-delayed s1 delayed-s2)
   (if (stream-null? s1)
       (force delayed-s2)
@@ -30960,7 +30770,7 @@ some cases (see [Exercise 4.71](#4_002e4.xhtml#Exercise-4_002e71)).
       (force delayed-s2)
       (cons-stream
        (stream-car s1)
-       (interleave-delayed 
+       (interleave-delayed
         (force delayed-s2)
         (delay (stream-cdr s1))))))
 ```
@@ -30978,7 +30788,7 @@ interleaving process, rather than simply appending them (see [Exercise
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (stream-flatmap proc s)
   (flatten-stream (stream-map proc s)))
 
@@ -30998,14 +30808,14 @@ stream consisting of a single element:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (singleton-stream x)
   (cons-stream x the-empty-stream))
 ```
 
 </div>
 
-##### 4.4.4.7Query Syntax Procedures
+##### 4.4.4.7 Query Syntax Procedures
 
 `Type` and `contents`, used by `qeval`
 ([4.4.4.2](#4_002e4.xhtml#g_t4_002e4_002e4_002e2)), specify that a
@@ -31015,7 +30825,7 @@ as the `type-tag` and `contents` procedures in
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (type exp)
   (if (pair? exp)
       (car exp)
@@ -31038,7 +30848,7 @@ and assertions are added to the data base by expressions of the form
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (assertion-to-be-added? exp)
   (eq? (type exp) 'assert!))
 
@@ -31054,7 +30864,7 @@ Here are the syntax definitions for the `and`, `or`, `not`, and
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (empty-conjunction? exps) (null? exps))
 (define (first-conjunct exps) (car exps))
 (define (rest-conjuncts exps) (cdr exps))
@@ -31072,7 +30882,7 @@ The following three procedures define the syntax of rules:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (rule? statement)
   (tagged-list? statement 'rule))
 
@@ -31100,15 +30910,15 @@ procedure:[²⁸⁵](#4_002e4.xhtml#FOOT285)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (query-syntax-process exp)
   (map-over-symbols expand-question-mark exp))
 
 (define (map-over-symbols proc exp)
   (cond ((pair? exp)
-         (cons (map-over-symbols 
+         (cons (map-over-symbols
                 proc (car exp))
-               (map-over-symbols 
+               (map-over-symbols
                 proc (cdr exp))))
         ((symbol? exp) (proc exp))
         (else exp)))
@@ -31118,8 +30928,8 @@ procedure:[²⁸⁵](#4_002e4.xhtml#FOOT285)
     (if (string=? (substring chars 0 1) "?")
         (list '? (string->symbol
                   (substring
-                   chars 
-                   1 
+                   chars
+                   1
                    (string-length chars))))
         symbol)))
 ```
@@ -31133,7 +30943,7 @@ need to be recognized for data-base indexing,
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (var? exp) (tagged-list? exp '?))
 (define (constant-symbol? exp) (symbol? exp))
 ```
@@ -31147,14 +30957,14 @@ number, which is incremented each time a rule is applied.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define rule-counter 0)
 
 (define (new-rule-application-id)
   (set! rule-counter (+ 1 rule-counter))
   rule-counter)
 
-(define (make-new-variable 
+(define (make-new-variable
          var rule-application-id)
   (cons '? (cons rule-application-id
                  (cdr var))))
@@ -31168,7 +30978,7 @@ printing, using
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (contract-question-mark variable)
   (string->symbol
    (string-append "?"
@@ -31182,14 +30992,14 @@ printing, using
 
 </div>
 
-##### 4.4.4.8Frames and Bindings
+##### 4.4.4.8 Frames and Bindings
 
 Frames are represented as lists of bindings, which are variable-value
 pairs:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (make-binding variable value)
   (cons variable value))
 
@@ -31216,8 +31026,8 @@ pairs:
 >
 > <div className="lisp">
 >
-> ``` lisp
-> (define (simple-query 
+> ```lisp
+> (define (simple-query
 >          query-pattern frame-stream)
 >   (stream-flatmap
 >    (lambda (frame)
@@ -31251,12 +31061,12 @@ pairs:
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (flatten-stream stream)
 >   (if (stream-null? stream)
 >       the-empty-stream
 >       (interleave (stream-car stream)
->                   (flatten-stream 
+>                   (flatten-stream
 >                    (stream-cdr stream)))))
 > ```
 >
@@ -31271,17 +31081,18 @@ pairs:
 > 1.  Fill in the missing expressions in Alyssa’s program.
 >     <div className="lisp">
 >
->     ``` lisp
+>     ```lisp
 >     (define (simple-stream-flatmap proc s)
 >       (simple-flatten (stream-map proc s)))
 >
 >     (define (simple-flatten stream)
 >       (stream-map ⟨??⟩
->                   (stream-filter ⟨??⟩ 
+>                   (stream-filter ⟨??⟩
 >                                  stream)))
 >     ```
 >
 >     </div>
+>
 > 2.  Does the query system’s behavior change if we change it in this
 >     way?
 
@@ -31291,7 +31102,7 @@ pairs:
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (unique (job ?x (computer wizard)))
 > ```
 >
@@ -31301,7 +31112,7 @@ pairs:
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (unique (job (Bitdiddle Ben)
 >              (computer wizard)))
 > ```
@@ -31312,7 +31123,7 @@ pairs:
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (unique (job ?x (computer programmer)))
 > ```
 >
@@ -31323,8 +31134,8 @@ pairs:
 >
 > <div className="lisp">
 >
-> ``` lisp
-> (and (job ?x ?j) 
+> ```lisp
+> (and (job ?x ?j)
 >      (unique (job ?anyone ?j)))
 > ```
 >
@@ -31341,7 +31152,7 @@ pairs:
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (put 'unique 'qeval uniquely-asserted)
 > ```
 >
@@ -31367,14 +31178,14 @@ pairs:
 > of queries ([Figure 4.5](#4_002e4.xhtml#Figure-4_002e5)) is elegant,
 > but it is inefficient because in processing the second query of the
 > `and` we must scan the data base for each frame produced by the first
-> query. If the data base has *n* elements, and a typical query produces
-> a number of output frames proportional to *n* (say *n* / *k*), then
+> query. If the data base has _n_ elements, and a typical query produces
+> a number of output frames proportional to _n_ (say *n* / *k*), then
 > scanning the data base for each frame produced by the first query will
 > require *n*²/ *k* calls to the pattern matcher. Another approach would
 > be to process the two clauses of the `and` separately, then look for
 > all pairs of output frames that are compatible. If each query produces
 > *n* / *k* output frames, then this means that we must perform
-> *n*²/ *k*² compatibility checks—a factor of *k* fewer than the number
+> *n*²/ *k*² compatibility checks—a factor of _k_ fewer than the number
 > of matches required in our current method.
 >
 > Devise an implementation of `and` that uses this strategy. You must
@@ -31413,8 +31224,8 @@ pairs:
 >
 > <div className="lisp">
 >
-> ``` lisp
-> (define (square x) 
+> ```lisp
+> (define (square x)
 >   (* x x))
 >
 > (define (sum-of-squares x y)
@@ -31440,8 +31251,8 @@ pairs:
 > environment structure to create constructs in the query language for
 > dealing with large systems, such as the rule analog of
 > block-structured procedures. Can you relate any of this to the problem
-> of making deductions in a context (e.g., “If I supposed that *P* were
-> true, then I would be able to deduce *A* and *B*.”) as a method of
+> of making deductions in a context (e.g., “If I supposed that _P_ were
+> true, then I would be able to deduce _A_ and _B_.”) as a method of
 > problem solving? (This problem is open-ended. A good answer is
 > probably worth a Ph.D.)
 
@@ -31456,7 +31267,7 @@ history of research in automatic theorem proving. Early theorem-proving
 programs could accomplish very little, because they exhaustively
 searched the space of possible proofs. The major breakthrough that made
 such a search plausible was the discovery in the early 1960s of the
-*unification algorithm* and the *resolution principle* ([Robinson
+_unification algorithm_ and the _resolution principle_ ([Robinson
 1965](#References.xhtml#Robinson-1965)). Resolution was used, for
 example, by [Green and Raphael
 (1968)](#References.xhtml#Green-and-Raphael-_00281968_0029) (see also
@@ -31474,8 +31285,7 @@ done, Colmerauer, in Marseille, was developing rule-based systems for
 manipulating natural language (see [Colmerauer et al.
 1973](#References.xhtml#Colmerauer-et-al_002e-1973)). He invented a
 programming language called Prolog for representing those rules.
-[Kowalski (1973;
-1979)](#References.xhtml#Kowalski-_00281973_003b-1979_0029), in
+[Kowalski (1973; 1979)](#References.xhtml#Kowalski-_00281973_003b-1979_0029), in
 Edinburgh, recognized that execution of a Prolog program could be
 interpreted as proving theorems (using a proof technique called linear
 Horn-clause resolution). The merging of the last two strands led to the
@@ -31507,7 +31317,7 @@ different mathematically equivalent sets of rules for formulating the
 `append` relation, only some of which can be turned into effective
 devices for computing in any direction. In addition, sometimes “what is”
 information gives no clue “how to” compute an answer. For example,
-consider the problem of computing the *y* such that *y*² = *x*.
+consider the problem of computing the _y_ such that *y*² = *x*.
 
 </div>
 
@@ -31592,7 +31402,7 @@ process into a fast, coarse match and the final match. The coarse match
 filters the data base to produce a small set of candidates for the final
 match. With care, we can arrange our data base so that some of the work
 of coarse matching can be done when the data base is constructed rather
-then when we want to select the candidates. This is called *indexing*
+then when we want to select the candidates. This is called _indexing_
 the data base. There is a vast technology built around
 data-base-indexing schemes. Our implementation, described in
 [4.4.4](#4_002e4.xhtml#g_t4_002e4_002e4), contains a simple-minded form
@@ -31670,9 +31480,9 @@ or infinite number of responses.
 [²⁷⁹](#4_002e4.xhtml#DOCF279) That a particular method of inference is
 legitimate is not a trivial assertion. One must prove that if one starts
 with true premises, only true conclusions can be derived. The method of
-inference represented by rule applications is *modus ponens*, the
-familiar method of inference that says that if *A* is true and *A
-implies B* is true, then we may conclude that *B* is true.
+inference represented by rule applications is _modus ponens_, the
+familiar method of inference that says that if _A_ is true and _A
+implies B_ is true, then we may conclude that _B_ is true.
 
 </div>
 
@@ -31713,8 +31523,8 @@ is to put in special knowledge, such as detectors for particular kinds
 of loops ([Exercise 4.67](#4_002e4.xhtml#Exercise-4_002e67)). However,
 there can be no general scheme for reliably preventing a system from
 going down infinite paths in performing deductions. Imagine a diabolical
-rule of the form “To show *P*(*x*) is true, show that *P*(*f*(*x*)) is
-true,” for some suitably chosen function *f*.
+rule of the form “To show _P_(_x_) is true, show that _P_(_f_(_x_)) is
+true,” for some suitably chosen function _f_.
 
 </div>
 
@@ -31742,7 +31552,7 @@ treatment of `not` can be found in the article by [Clark
 
 [²⁸⁴](#4_002e4.xhtml#DOCF284) In general, unifying `?y` with an
 expression involving `?y` would require our being able to find a fixed
-point of the equation `?y` = `⟨``expression involving ?y``⟩`. It is
+point of the equation `?y` = ` ⟨``expression involving ?y``⟩ `. It is
 sometimes possible to syntactically form an expression that appears to
 be the solution. For example, `?y` = `(f ?y)` seems to have the fixed
 point `(f (f (f … )))`, which we can produce by beginning with the
@@ -31751,7 +31561,7 @@ Unfortunately, not every such equation has a meaningful fixed point. The
 issues that arise here are similar to the issues of manipulating
 infinite series in mathematics. For example, we know that 2 is the
 solution to the equation *y* = 1 + *y*/2. Beginning with the expression
-1 + *y*/2 and repeatedly substituting 1 + *y*/2 for *y* gives
+1 + *y*/2 and repeatedly substituting 1 + *y*/2 for _y_ gives
 $$2 = y = 1 + \\frac{y}{2} = 1 + {\\frac{1}{2}\\left( 1 + \\frac{y}{2} \\right)} = 1 + \\frac{1}{2} + \\frac{y}{4} = {\\ldots,}$$
 which leads to
 $$2 = 1 + \\frac{1}{2} + \\frac{1}{4} + \\frac{1}{8} + {\\ldots.}$$
@@ -31772,7 +31582,7 @@ lead to errors.
 
 [²⁸⁵](#4_002e4.xhtml#DOCF285) Most Lisp systems give the user the
 ability to modify the ordinary `read` procedure to perform such
-transformations by defining *reader macro characters*. Quoted
+transformations by defining _reader macro characters_. Quoted
 expressions are already handled in this way: The reader automatically
 translates `'expression` into `(quote expression)` before the evaluator
 sees it. We could arrange for `?expression` to be transformed into
@@ -31786,23 +31596,13 @@ procedures with `string` in their names. These are Scheme primitives.
 
 </div>
 
-Next: [Chapter 5](#Chapter-5.xhtml#Chapter-5), Prev:
-[4.3](#4_002e3.xhtml#g_t4_002e3), Up:
-[4.4.4](#4_002e4.xhtml#g_t4_002e4_002e4)  
 \[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
 
 </div>
 
-[⇣](#4_002e4.xhtml#pagebottom)
-
 <div className="section">
 
-[⇡](#Chapter-5.xhtml#pagetop)
-Next: [5.1](#5_002e1.xhtml#g_t5_002e1), Prev:
-[4.4](#4_002e4.xhtml#g_t4_002e4), Up: [Top](#index.xhtml#Top)  
-\[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
-
-## 5Computing with Register Machines
+## 5 Computing with Register Machines
 
 > My aim is to show that the heavenly machine is not a kind of divine,
 > live being, but a kind of clockwork (and he who believes that a clock
@@ -31834,9 +31634,9 @@ of the control structure of the Lisp evaluator, we must work at a more
 primitive level than Lisp itself.
 
 In this chapter we will describe processes in terms of the step-by-step
-operation of a traditional computer. Such a computer, or *register
-machine*, sequentially executes *instructions* that manipulate the
-contents of a fixed set of storage elements called *registers*. A
+operation of a traditional computer. Such a computer, or _register
+machine_, sequentially executes _instructions_ that manipulate the
+contents of a fixed set of storage elements called _registers_. A
 typical register-machine instruction applies a primitive operation to
 the contents of some registers and assigns the result to another
 register. Our descriptions of processes executed by register machines
@@ -31872,26 +31672,16 @@ study a simple compiler that translates Scheme programs into sequences
 of instructions that can be executed directly with the registers and
 operations of the evaluator register machine.
 
-Next: [5.1](#5_002e1.xhtml#g_t5_002e1), Prev:
-[4.4](#4_002e4.xhtml#g_t4_002e4), Up: [Top](#index.xhtml#Top)  
-\[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
-
 </div>
-
-[⇣](#Chapter-5.xhtml#pagebottom)
 
 <div className="section">
 
-[⇡](#5_002e1.xhtml#pagetop)
-Next: [5.2](#5_002e2.xhtml#g_t5_002e2), Prev: [Chapter
-5](#Chapter-5.xhtml#Chapter-5), Up: [Chapter
-5](#Chapter-5.xhtml#Chapter-5)  
 \[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
 
-### 5.1Designing Register Machines
+### 5.1 Designing Register Machines
 
-To design a register machine, we must design its *data paths* (registers
-and operations) and the *controller* that sequences these operations. To
+To design a register machine, we must design its _data paths_ (registers
+and operations) and the _controller_ that sequences these operations. To
 illustrate the design of a simple register machine, let us examine
 Euclid’s Algorithm, which is used to compute the greatest common divisor
 (GCD) of two integers. As we saw in
@@ -31901,7 +31691,7 @@ procedure:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (gcd a b)
   (if (= b 0)
       a
@@ -31911,7 +31701,7 @@ procedure:
 </div>
 
 A machine to carry out this algorithm must keep track of two numbers,
-*a* and *b*, so let us assume that these numbers are stored in two
+_a_ and _b_, so let us assume that these numbers are stored in two
 registers with those names. The basic operations required are testing
 whether the contents of register `b` is zero and computing the remainder
 of the contents of register `a` divided by the contents of register `b`.
@@ -31996,7 +31786,7 @@ SVG
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (factorial n)
 >   (define (iter product counter)
 >     (if (> counter n)
@@ -32008,7 +31798,7 @@ SVG
 >
 > </div>
 
-#### 5.1.1A Language for Describing Register Machines
+#### 5.1.1 A Language for Describing Register Machines
 
 Data-path and controller diagrams are adequate for representing simple
 machines such as GCD, but they are unwieldy for describing large
@@ -32026,21 +31816,21 @@ the button’s control. (The source is a register, a constant, or an
 operation.) To describe an operation, we give it a name and specify its
 inputs (registers or constants).
 
-We define the controller of a machine as a sequence of *instructions*
-together with *labels* that identify *entry points* in the sequence. An
+We define the controller of a machine as a sequence of _instructions_
+together with _labels_ that identify _entry points_ in the sequence. An
 instruction is one of the following:
 
--   The name of a data-path button to push to assign a value to a
-    register. (This corresponds to a box in the controller diagram.)
--   A `test` instruction, that performs a specified test.
--   A conditional branch (`branch` instruction) to a location indicated
-    by a controller label, based on the result of the previous test.
-    (The test and branch together correspond to a diamond in the
-    controller diagram.) If the test is false, the controller should
-    continue with the next instruction in the sequence. Otherwise, the
-    controller should continue with the instruction after the label.
--   An unconditional branch (`goto` instruction) naming a controller
-    label at which to continue execution.
+- The name of a data-path button to push to assign a value to a
+  register. (This corresponds to a box in the controller diagram.)
+- A `test` instruction, that performs a specified test.
+- A conditional branch (`branch` instruction) to a location indicated
+  by a controller label, based on the result of the previous test.
+  (The test and branch together correspond to a diamond in the
+  controller diagram.) If the test is false, the controller should
+  continue with the next instruction in the sequence. Otherwise, the
+  controller should continue with the instruction after the label.
+- An unconditional branch (`goto` instruction) naming a controller
+  label at which to continue execution.
 
 The machine starts at the beginning of the controller instruction
 sequence and stops when execution reaches the end of the sequence.
@@ -32057,11 +31847,11 @@ in the controller.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (data-paths
 >  (registers
 >   ((name a)
->    (buttons ((name a<-b) 
+>    (buttons ((name a<-b)
 >              (source (register b)))))
 >   ((name b)
 >    (buttons ((name b<-t)
@@ -32078,12 +31868,12 @@ in the controller.
 > (controller
 >  test-b                ; label
 >    (test =)            ; test
->    (branch 
+>    (branch
 >     (label gcd-done))  ; conditional branch
 >    (t<-r)              ; button push
 >    (a<-b)              ; button push
 >    (b<-t)              ; button push
->    (goto 
+>    (goto
 >     (label test-b))    ; unconditional branch
 >  gcd-done)             ; label
 > ```
@@ -32115,7 +31905,7 @@ Thus, the GCD machine is described as follows:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (controller
  test-b
    (test (op =) (reg b) (const 0))
@@ -32133,20 +31923,20 @@ This form of description is easier to read than the kind illustrated in
 [Figure 5.3](#5_002e1.xhtml#Figure-5_002e3), but it also has
 disadvantages:
 
--   It is more verbose for large machines, because complete descriptions
-    of the data-path elements are repeated whenever the elements are
-    mentioned in the controller instruction sequence. (This is not a
-    problem in the GCD example, because each operation and button is
-    used only once.) Moreover, repeating the data-path descriptions
-    obscures the actual data-path structure of the machine; it is not
-    obvious for a large machine how many registers, operations, and
-    buttons there are and how they are interconnected.
--   Because the controller instructions in a machine definition look
-    like Lisp expressions, it is easy to forget that they are not
-    arbitrary Lisp expressions. They can notate only legal machine
-    operations. For example, operations can operate directly only on
-    constants and the contents of registers, not on the results of other
-    operations.
+- It is more verbose for large machines, because complete descriptions
+  of the data-path elements are repeated whenever the elements are
+  mentioned in the controller instruction sequence. (This is not a
+  problem in the GCD example, because each operation and button is
+  used only once.) Moreover, repeating the data-path descriptions
+  obscures the actual data-path structure of the machine; it is not
+  obvious for a large machine how many registers, operations, and
+  buttons there are and how they are interconnected.
+- Because the controller instructions in a machine definition look
+  like Lisp expressions, it is easy to forget that they are not
+  arbitrary Lisp expressions. They can notate only legal machine
+  operations. For example, operations can operate directly only on
+  constants and the contents of registers, not on the results of other
+  operations.
 
 In spite of these disadvantages, we will use this register-machine
 language throughout this chapter, because we will be more concerned with
@@ -32177,7 +31967,7 @@ of `read` just as we do any other operation that computes a value.
 using in a fundamental way: It does not produce an output value to be
 stored in a register. Though it has an effect, this effect is not on a
 part of the machine we are designing. We will refer to this kind of
-operation as an *action*. We will represent an action in a data-path
+operation as an _action_. We will represent an action in a data-path
 diagram just as we represent an operation that computes a value—as a
 trapezoid that contains the name of the action. Arrows point to the
 action box from any inputs (registers or constants). We also associate a
@@ -32188,7 +31978,7 @@ called `perform`. Thus, the action of printing the contents of register
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (perform (op print) (reg a))
 ```
 
@@ -32204,7 +31994,7 @@ interpreters of [Chapter 4](#Chapter-4.xhtml#Chapter-4).
 SVG
 **Figure 5.4:** A GCD machine that reads inputs and prints results.
 
-#### 5.1.2Abstraction in Machine Design
+#### 5.1.2 Abstraction in Machine Design
 
 We will often define a machine to include “primitive” operations that
 are actually very complex. For example, in
@@ -32225,7 +32015,7 @@ we can write a Scheme procedure that finds remainders in this way:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (remainder n d)
   (if (< n d) n (remainder (- n d) d)))
 ```
@@ -32239,7 +32029,7 @@ for the elaborated machine. The instruction
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (assign t (op rem) (reg a) (reg b))
 ```
 
@@ -32258,7 +32048,7 @@ machine.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (controller
 >  test-b
 >    (test (op =) (reg b) (const 0))
@@ -32284,7 +32074,7 @@ machine.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (sqrt x)
 >   (define (good-enough? guess)
 >     (< (abs (- (square guess) x)) 0.001))
@@ -32305,7 +32095,7 @@ machine.
 > design by drawing a data-path diagram and writing a controller
 > definition in the register-machine language.
 
-#### 5.1.3Subroutines
+#### 5.1.3 Subroutines
 
 When designing a machine to perform a computation, we would often prefer
 to arrange for components to be shared by different parts of the
@@ -32343,7 +32133,7 @@ shown in [Figure 5.8](#5_002e1.xhtml#Figure-5_002e8).
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > gcd-1
 >  (test (op =) (reg b) (const 0))
 >  (branch (label after-gcd-1))
@@ -32369,7 +32159,7 @@ We have removed the duplicate data-path components (so that the data
 paths are again as in [Figure 5.1](#5_002e1.xhtml#Figure-5_002e1)), but
 the controller now has two GCD sequences that differ only in their
 entry-point labels. It would be better to replace these two sequences by
-branches to a single sequence—a `gcd` *subroutine*—at the end of which
+branches to a single sequence—a `gcd` _subroutine_—at the end of which
 we branch back to the correct place in the main instruction sequence. We
 can accomplish this as follows: Before branching to `gcd`, we place a
 distinguishing value (such as 0 or 1) into a special register,
@@ -32384,7 +32174,7 @@ includes only a single copy of the `gcd` instructions.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > gcd
 >  (test (op =) (reg b) (const 0))
 >  (branch (label gcd-done))
@@ -32404,7 +32194,7 @@ includes only a single copy of the `gcd` instructions.
 >  (goto (label gcd))
 > after-gcd-1
 >   …
-> ;; Before the second use of gcd, 
+> ;; Before the second use of gcd,
 > ;; we place 1 in the continue register
 >  (assign continue (const 1))
 >  (goto (label gcd))
@@ -32443,7 +32233,7 @@ sequence shown in [Figure 5.10](#5_002e1.xhtml#Figure-5_002e10).
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > gcd
 >  (test (op =) (reg b) (const 0))
 >  (branch (label gcd-done))
@@ -32454,7 +32244,7 @@ sequence shown in [Figure 5.10](#5_002e1.xhtml#Figure-5_002e10).
 > gcd-done
 >  (goto (reg continue))
 >   …
-> ;; Before calling gcd, 
+> ;; Before calling gcd,
 > ;; we assign to continue the label
 > ;; to which gcd should return.
 >  (assign continue (label after-gcd-1))
@@ -32480,7 +32270,7 @@ call to `sub2`, `sub1` will not know where to go when it is finished.
 The mechanism developed in the next section to handle recursion also
 provides a better solution to this problem of nested subroutine calls.
 
-#### 5.1.4Using a Stack to Implement Recursion
+#### 5.1.4 Using a Stack to Implement Recursion
 
 With the ideas illustrated so far, we can implement any iterative
 process by specifying a register machine that has a register
@@ -32498,23 +32288,23 @@ factorials, which we first examined in
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (factorial n)
-  (if (= n 1) 
+  (if (= n 1)
       1
       (* (factorial (- n 1)) n)))
 ```
 
 </div>
 
-As we see from the procedure, computing *n*! requires computing
+As we see from the procedure, computing _n_! requires computing
 (*n*−1)!. Our GCD machine, modeled on the procedure
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (gcd a b)
-  (if (= b 0) 
+  (if (= b 0)
       a
       (gcd b (remainder a b))))
 ```
@@ -32533,7 +32323,7 @@ GCD problem, it has completed the entire computation.
 
 In the case of factorial (or any recursive process) the answer to the
 new factorial subproblem is not the answer to the original problem. The
-value obtained for (*n*−1)! must be multiplied by *n* to get the final
+value obtained for (*n*−1)! must be multiplied by _n_ to get the final
 answer. If we try to imitate the GCD design, and solve the factorial
 subproblem by decrementing the `n` register and rerunning the factorial
 machine, we will no longer have available the old value of `n` by which
@@ -32547,7 +32337,7 @@ parts.
 
 Nevertheless, we can implement the factorial process as a register
 machine if we can arrange to use the same components for each nested
-instance of the machine. Specifically, the machine that computes *n*!
+instance of the machine. Specifically, the machine that computes _n_!
 should use the same components to work on the subproblem of computing
 (*n*−1)!, on the subproblem for (*n*−2)!, and so on. This is plausible
 because, although the factorial process dictates that an unbounded
@@ -32566,11 +32356,11 @@ the suspended computation. In the case of factorial, we will save the
 old value of `n`, to be restored when we are finished computing the
 factorial of the decremented `n` register.[²⁸⁷](#5_002e1.xhtml#FOOT287)
 
-Since there is no *a priori* limit on the depth of nested recursive
+Since there is no _a priori_ limit on the depth of nested recursive
 calls, we may need to save an arbitrary number of register values. These
 values must be restored in the reverse of the order in which they were
 saved, since in a nest of recursions the last subproblem to be entered
-is the first to be finished. This dictates the use of a *stack*, or
+is the first to be finished. This dictates the use of a _stack_, or
 “last in, first out” data structure, to save register values. We can
 extend the register-machine language to include a stack by adding two
 kinds of instructions: Values are placed on the stack using a `save`
@@ -32585,8 +32375,8 @@ design issue in reusing the controller sequence that operates the data
 paths. To reexecute the factorial computation, the controller cannot
 simply loop back to the beginning, as with an iterative process, because
 after solving the (*n*−1)! subproblem the machine must still multiply
-the result by *n*. The controller must suspend its computation of *n*!,
-solve the (*n*−1)! subproblem, then continue its computation of *n*!.
+the result by _n_. The controller must suspend its computation of _n_!,
+solve the (*n*−1)! subproblem, then continue its computation of _n_!.
 This view of the factorial computation suggests the use of the
 subroutine mechanism described in
 [5.1.3](#5_002e1.xhtml#g_t5_002e1_002e3), which has the controller use a
@@ -32648,10 +32438,10 @@ computation of the Fibonacci numbers, which we introduced in
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (fib n)
-  (if (< n 2) 
-      n 
+  (if (< n 2)
+      n
       (+ (fib (- n 1)) (fib (- n 2)))))
 ```
 
@@ -32676,7 +32466,7 @@ controller sequence for this machine.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (controller
 >    (assign continue (label fib-done))
 >  fib-loop
@@ -32686,11 +32476,11 @@ controller sequence for this machine.
 >    (save continue)
 >    (assign continue (label afterfib-n-1))
 >    (save n)           ; save old value of n
->    (assign n 
+>    (assign n
 >            (op -)
 >            (reg n)
 >            (const 1)) ; clobber n to n-1
->    (goto 
+>    (goto
 >     (label fib-loop)) ; perform recursive call
 >  afterfib-n-1 ; upon return, val contains Fib(n − 1)
 >    (restore n)
@@ -32702,18 +32492,18 @@ controller sequence for this machine.
 >    (save val)         ; save Fib(n − 1)
 >    (goto (label fib-loop))
 >  afterfib-n-2 ; upon return, val contains Fib(n − 2)
->    (assign n 
+>    (assign n
 >            (reg val)) ; n now contains Fib(n − 2)
 >    (restore val)      ; val now contains Fib(n − 1)
 >    (restore continue)
 >    (assign val        ; Fib(n − 1) + Fib(n − 2)
->            (op +) 
+>            (op +)
 >            (reg val)
 >            (reg n))
 >    (goto              ; return to caller,
 >     (reg continue))   ; answer is in val
 >  immediate-answer
->    (assign val 
+>    (assign val
 >            (reg n))   ; base case: Fib(n) = n
 >    (goto (reg continue))
 >  fib-done)
@@ -32728,7 +32518,7 @@ controller sequence for this machine.
 > 1.  Recursive exponentiation:
 >     <div className="lisp">
 >
->     ``` lisp
+>     ```lisp
 >     (define (expt b n)
 >       (if (= n 0)
 >           1
@@ -32736,10 +32526,11 @@ controller sequence for this machine.
 >     ```
 >
 >     </div>
+>
 > 2.  Iterative exponentiation:
 >     <div className="lisp">
 >
->     ``` lisp
+>     ```lisp
 >     (define (expt b n)
 >       (define (expt-iter counter product)
 >         (if (= counter 0)
@@ -32760,7 +32551,7 @@ controller sequence for this machine.
 > controller sequence has an extra `save` and an extra `restore`, which
 > can be removed to make a faster machine. Where are these instructions?
 
-#### 5.1.5Instruction Summary
+#### 5.1.5 Instruction Summary
 
 A controller instruction in our register-machine language has one of the
 following forms, where each $\\langle\\mspace{1mu} input\_{i}\\rangle$
@@ -32770,20 +32561,20 @@ instructions were introduced in
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (assign ⟨register-name⟩ (reg ⟨register-name⟩))
-(assign ⟨register-name⟩ 
+(assign ⟨register-name⟩
         (const ⟨constant-value⟩))
-(assign ⟨register-name⟩ 
-        (op ⟨operation-name⟩) 
+(assign ⟨register-name⟩
+        (op ⟨operation-name⟩)
         ⟨input₁⟩ … ⟨inputₙ⟩)
-(perform (op ⟨operation-name⟩) 
-         ⟨input₁⟩ 
-         … 
+(perform (op ⟨operation-name⟩)
+         ⟨input₁⟩
+         …
          ⟨inputₙ⟩)
-(test (op ⟨operation-name⟩) 
-      ⟨input₁⟩ 
-      … 
+(test (op ⟨operation-name⟩)
+      ⟨input₁⟩
+      …
       ⟨inputₙ⟩)
 (branch (label ⟨label-name⟩))
 (goto (label ⟨label-name⟩))
@@ -32796,7 +32587,7 @@ The use of registers to hold labels was introduced in
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (assign ⟨register-name⟩ (label ⟨label-name⟩))
 (goto (reg ⟨register-name⟩))
 ```
@@ -32808,14 +32599,14 @@ Instructions to use the stack were introduced in
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (save ⟨register-name⟩)
 (restore ⟨register-name⟩)
 ```
 
 </div>
 
-The only kind of `⟨``constant-value``⟩` we have seen so far is a number,
+The only kind of ` ⟨``constant-value``⟩ ` we have seen so far is a number,
 but later we will use strings, symbols, and lists. For example,  
 `(const "abc")` is the string `"abc"`,  
 `(const abc)` is the symbol `abc`,  
@@ -32853,23 +32644,13 @@ will see how to implement a stack in terms of more primitive operations.
 
 </div>
 
-Next: [5.2](#5_002e2.xhtml#g_t5_002e2), Prev: [Chapter
-5](#Chapter-5.xhtml#Chapter-5), Up: [5.1](#5_002e1.xhtml#g_t5_002e1)  
-\[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
-
 </div>
-
-[⇣](#5_002e1.xhtml#pagebottom)
 
 <div className="section">
 
-[⇡](#5_002e2.xhtml#pagetop)
-Next: [5.3](#5_002e3.xhtml#g_t5_002e3), Prev:
-[5.1](#5_002e1.xhtml#g_t5_002e1), Up: [Chapter
-5](#Chapter-5.xhtml#Chapter-5)  
 \[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
 
-### 5.2A Register-Machine Simulator
+### 5.2 A Register-Machine Simulator
 
 In order to gain a good understanding of the design of register
 machines, we must test the machines we design to see if they perform as
@@ -32885,7 +32666,7 @@ three allow us to simulate the machine by manipulating the model:
 
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (make-machine ⟨register-names⟩
 >               ⟨operations⟩
 >               ⟨controller⟩)
@@ -32898,9 +32679,9 @@ three allow us to simulate the machine by manipulating the model:
 >
 > <div className="lisp">
 >
-> ``` lisp
-> (set-register-contents! ⟨machine-model⟩ 
->                         ⟨register-name⟩ 
+> ```lisp
+> (set-register-contents! ⟨machine-model⟩
+>                         ⟨register-name⟩
 >                         ⟨value⟩)
 > ```
 >
@@ -32910,7 +32691,7 @@ three allow us to simulate the machine by manipulating the model:
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (get-register-contents ⟨machine-model⟩
 >                        ⟨register-name⟩)
 > ```
@@ -32921,7 +32702,7 @@ three allow us to simulate the machine by manipulating the model:
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (start ⟨machine-model⟩)
 > ```
 >
@@ -32937,7 +32718,7 @@ As an example of how these procedures are used, we can define
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define gcd-machine
   (make-machine
    '(a b t)
@@ -32966,7 +32747,7 @@ machine, and examine the result when the simulation terminates:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (set-register-contents! gcd-machine 'a 206)
 done
 
@@ -32989,7 +32770,7 @@ instructions, such as `assign`, by much more complex operations.
 > **Exercise 5.7:** Use the simulator to test the machines you designed
 > in [Exercise 5.4](#5_002e1.xhtml#Exercise-5_002e4).
 
-#### 5.2.1The Machine Model
+#### 5.2.1 The Machine Model
 
 The machine model generated by `make-machine` is represented as a
 procedure with local state using the message-passing techniques
@@ -33005,7 +32786,7 @@ controller instructions one by one.
 include the registers, operations, and controller of the particular
 machine being defined. First it allocates a register in the new machine
 for each of the supplied register names and installs the designated
-operations in the machine. Then it uses an *assembler* (described below
+operations in the machine. Then it uses an _assembler_ (described below
 in [5.2.2](#5_002e2.xhtml#g_t5_002e2_002e2)) to transform the controller
 list into instructions for the new machine and installs these as the
 machine’s instruction sequence. `Make-machine` returns as its value the
@@ -33013,13 +32794,13 @@ modified machine model.
 
 <div className="lisp">
 
-``` lisp
-(define (make-machine register-names 
-                      ops 
+```lisp
+(define (make-machine register-names
+                      ops
                       controller-text)
   (let ((machine (make-new-machine)))
     (for-each (lambda (register-name)
-                ((machine 'allocate-register) 
+                ((machine 'allocate-register)
                  register-name))
               register-names)
     ((machine 'install-operations) ops)
@@ -33038,16 +32819,16 @@ creates a register that holds a value that can be accessed or changed:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (make-register name)
   (let ((contents '*unassigned*))
     (define (dispatch message)
       (cond ((eq? message 'get) contents)
             ((eq? message 'set)
-             (lambda (value) 
+             (lambda (value)
                (set! contents value)))
             (else
-             (error "Unknown request: 
+             (error "Unknown request:
                      REGISTER"
                     message))))
     dispatch))
@@ -33059,7 +32840,7 @@ The following procedures are used to access registers:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (get-contents register)
   (register 'get))
 
@@ -33079,7 +32860,7 @@ and to `initialize` the stack to empty.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (make-stack)
   (let ((s '()))
     (define (push x)
@@ -33096,9 +32877,9 @@ and to `initialize` the stack to empty.
     (define (dispatch message)
       (cond ((eq? message 'push) push)
             ((eq? message 'pop) (pop))
-            ((eq? message 'initialize) 
+            ((eq? message 'initialize)
              (initialize))
-            (else 
+            (else
              (error "Unknown request: STACK"
                     message))))
     dispatch))
@@ -33110,7 +32891,7 @@ The following procedures are used to access stacks:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (pop stack) (stack 'pop))
 (define (push stack value)
   ((stack 'push) value))
@@ -33124,7 +32905,7 @@ The `make-new-machine` procedure, shown in
 [Figure 5.13](#5_002e2.xhtml#Figure-5_002e13), constructs an object
 whose local state consists of a stack, an initially empty instruction
 sequence, a list of operations that initially contains an operation to
-initialize the stack, and a *register table* that initially contains two
+initialize the stack, and a _register table_ that initially contains two
 registers, named `flag` and `pc` (for “program counter”). The internal
 procedure `allocate-register` adds new entries to the register table,
 and the internal procedure `lookup-register` looks up registers in the
@@ -33135,73 +32916,73 @@ the basic machine model.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (make-new-machine)
   (let ((pc (make-register 'pc))
         (flag (make-register 'flag))
         (stack (make-stack))
         (the-instruction-sequence '()))
     (let ((the-ops
-           (list 
+           (list
             (list 'initialize-stack
-                  (lambda () 
+                  (lambda ()
                     (stack 'initialize)))))
           (register-table
-           (list (list 'pc pc) 
+           (list (list 'pc pc)
                  (list 'flag flag))))
       (define (allocate-register name)
         (if (assoc name register-table)
-            (error 
-             "Multiply defined register: " 
+            (error
+             "Multiply defined register: "
              name)
             (set! register-table
-                  (cons 
-                   (list name 
+                  (cons
+                   (list name
                          (make-register name))
                    register-table)))
         'register-allocated)
       (define (lookup-register name)
-        (let ((val 
+        (let ((val
                (assoc name register-table)))
           (if val
               (cadr val)
-              (error "Unknown register:" 
+              (error "Unknown register:"
                      name))))
       (define (execute)
         (let ((insts (get-contents pc)))
           (if (null? insts)
               'done
               (begin
-                ((instruction-execution-proc 
+                ((instruction-execution-proc
                   (car insts)))
                 (execute)))))
       (define (dispatch message)
         (cond ((eq? message 'start)
-               (set-contents! 
+               (set-contents!
                 pc
                 the-instruction-sequence)
                (execute))
-              ((eq? 
-                message 
+              ((eq?
+                message
                 'install-instruction-sequence)
-               (lambda (seq) 
-                 (set! 
-                  the-instruction-sequence 
+               (lambda (seq)
+                 (set!
+                  the-instruction-sequence
                   seq)))
-              ((eq? message 
-                    'allocate-register) 
+              ((eq? message
+                    'allocate-register)
                allocate-register)
-              ((eq? message 'get-register) 
+              ((eq? message 'get-register)
                lookup-register)
-              ((eq? message 
+              ((eq? message
                     'install-operations)
-               (lambda (ops) 
-                 (set! the-ops 
+               (lambda (ops)
+                 (set! the-ops
                        (append the-ops ops))))
               ((eq? message 'stack) stack)
-              ((eq? message 'operations) 
+              ((eq? message 'operations)
                the-ops)
-              (else (error "Unknown request: 
+              (else (error "Unknown request:
                             MACHINE"
                            message))))
       dispatch)))
@@ -33218,7 +32999,7 @@ The `pc` register determines the sequencing of instructions as the
 machine runs. This sequencing is implemented by the internal procedure
 `execute`. In the simulation model, each machine instruction is a data
 structure that includes a procedure of no arguments, called the
-*instruction execution procedure*, such that calling this procedure
+_instruction execution procedure_, such that calling this procedure
 simulates executing the instruction. As the simulation runs, `pc` points
 to the place in the instruction sequence beginning with the next
 instruction to be executed. `Execute` gets that instruction, executes it
@@ -33247,19 +33028,19 @@ register contents, as specified at the beginning of
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (start machine)
   (machine 'start))
 
-(define (get-register-contents 
+(define (get-register-contents
          machine register-name)
-  (get-contents 
+  (get-contents
    (get-register machine register-name)))
 
-(define (set-register-contents! 
+(define (set-register-contents!
          machine register-name value)
-  (set-contents! 
-   (get-register machine register-name) 
+  (set-contents!
+   (get-register machine register-name)
    value)
   'done)
 ```
@@ -33273,14 +33054,14 @@ the register with a given name in a given machine:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (get-register machine reg-name)
   ((machine 'get-register) reg-name))
 ```
 
 </div>
 
-#### 5.2.2The Assembler
+#### 5.2.2 The Assembler
 
 The assembler transforms the sequence of controller expressions for a
 machine into a corresponding list of machine instructions, each with its
@@ -33322,7 +33103,7 @@ returns the modified list.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (assemble controller-text machine)
   (extract-labels controller-text
     (lambda (insts labels)
@@ -33341,24 +33122,24 @@ position in the list `insts` that the label designates.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (extract-labels text receive)
   (if (null? text)
       (receive '() '())
-      (extract-labels 
+      (extract-labels
        (cdr text)
        (lambda (insts labels)
          (let ((next-inst (car text)))
            (if (symbol? next-inst)
-               (receive 
+               (receive
                    insts
-                   (cons 
-                    (make-label-entry 
+                   (cons
+                    (make-label-entry
                      next-inst
                      insts)
                     labels))
-               (receive 
-                   (cons (make-instruction 
+               (receive
+                   (cons (make-instruction
                           next-inst)
                          insts)
                    labels)))))))
@@ -33378,7 +33159,7 @@ execution procedures:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (update-insts! insts labels machine)
   (let ((pc (get-register machine 'pc))
         (flag (get-register machine 'flag))
@@ -33389,7 +33170,7 @@ execution procedures:
        (set-instruction-execution-proc!
         inst
         (make-execution-procedure
-         (instruction-text inst) 
+         (instruction-text inst)
          labels
          machine
          pc
@@ -33408,7 +33189,7 @@ is inserted later by `update-insts!`.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (make-instruction text)
   (cons text '()))
 (define (instruction-text inst) (car inst))
@@ -33430,7 +33211,7 @@ Elements of the label table are pairs:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (make-label-entry label-name insts)
   (cons label-name insts))
 ```
@@ -33441,12 +33222,12 @@ Entries will be looked up in the table with
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (lookup-label labels label-name)
   (let ((val (assoc label-name labels)))
     (if val
         (cdr val)
-        (error "Undefined label: ASSEMBLE" 
+        (error "Undefined label: ASSEMBLE"
                label-name))))
 ```
 
@@ -33457,7 +33238,7 @@ Entries will be looked up in the table with
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > start
 >   (goto (label here))
 > here
@@ -33476,7 +33257,7 @@ Entries will be looked up in the table with
 > so that the assembler will signal an error if the same label name is
 > used to indicate two different locations.
 
-#### 5.2.3Generating Execution Procedures for Instructions
+#### 5.2.3 Generating Execution Procedures for Instructions
 
 The assembler calls `make-execution-procedure` to generate the execution
 procedure for an instruction. Like the `analyze` procedure in the
@@ -33486,17 +33267,17 @@ procedure.
 
 <div className="lisp">
 
-``` lisp
-(define (make-execution-procedure 
+```lisp
+(define (make-execution-procedure
          inst labels machine pc flag stack ops)
   (cond ((eq? (car inst) 'assign)
-         (make-assign 
+         (make-assign
           inst machine labels ops pc))
         ((eq? (car inst) 'test)
-         (make-test 
+         (make-test
           inst machine labels ops flag pc))
         ((eq? (car inst) 'branch)
-         (make-branch 
+         (make-branch
           inst machine labels flag pc))
         ((eq? (car inst) 'goto)
          (make-goto inst machine labels pc))
@@ -33507,7 +33288,7 @@ procedure.
         ((eq? (car inst) 'perform)
          (make-perform
           inst machine labels ops pc))
-        (else (error "Unknown instruction 
+        (else (error "Unknown instruction
                       type: ASSEMBLE"
                      inst))))
 ```
@@ -33529,18 +33310,18 @@ The `make-assign` procedure handles `assign` instructions:
 
 <div className="lisp">
 
-``` lisp
-(define (make-assign 
+```lisp
+(define (make-assign
          inst machine labels operations pc)
-  (let ((target 
-         (get-register 
-          machine 
+  (let ((target
+         (get-register
+          machine
           (assign-reg-name inst)))
         (value-exp (assign-value-exp inst)))
     (let ((value-proc
            (if (operation-exp? value-exp)
                (make-operation-exp
-                value-exp 
+                value-exp
                 machine
                 labels
                 operations)
@@ -33562,7 +33343,7 @@ forms the instruction) from the `assign` instruction using the selectors
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (assign-reg-name assign-instruction)
   (cadr assign-instruction))
 (define (assign-value-exp assign-instruction)
@@ -33593,7 +33374,7 @@ advances the `pc` to the next instruction by running the procedure
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (advance-pc pc)
   (set-contents! pc (cdr (get-contents pc))))
 ```
@@ -33613,23 +33394,23 @@ the `pc` is advanced:
 
 <div className="lisp">
 
-``` lisp
-(define 
-  (make-test 
+```lisp
+(define
+  (make-test
    inst machine labels operations flag pc)
   (let ((condition (test-condition inst)))
     (if (operation-exp? condition)
         (let ((condition-proc
                (make-operation-exp
-                condition 
+                condition
                 machine
                 labels
                 operations)))
-          (lambda () 
-            (set-contents! 
+          (lambda ()
+            (set-contents!
              flag (condition-proc))
             (advance-pc pc)))
-        (error "Bad TEST instruction: 
+        (error "Bad TEST instruction:
                 ASSEMBLE" inst))))
 
 (define (test-condition test-instruction)
@@ -33648,21 +33429,21 @@ assembly time, not each time the `branch` instruction is simulated.
 
 <div className="lisp">
 
-``` lisp
-(define 
-  (make-branch 
+```lisp
+(define
+  (make-branch
    inst machine labels flag pc)
   (let ((dest (branch-dest inst)))
     (if (label-exp? dest)
         (let ((insts
-               (lookup-label 
-                labels 
+               (lookup-label
+                labels
                 (label-exp-label dest))))
           (lambda ()
             (if (get-contents flag)
                 (set-contents! pc insts)
                 (advance-pc pc))))
-        (error "Bad BRANCH instruction: 
+        (error "Bad BRANCH instruction:
                 ASSEMBLE"
                inst))))
 
@@ -33678,26 +33459,26 @@ condition to check—the `pc` is always set to the new destination.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (make-goto inst machine labels pc)
   (let ((dest (goto-dest inst)))
     (cond ((label-exp? dest)
            (let ((insts
-                  (lookup-label 
+                  (lookup-label
                    labels
                    (label-exp-label dest))))
-             (lambda () 
+             (lambda ()
                (set-contents! pc insts))))
           ((register-exp? dest)
            (let ((reg
-                  (get-register 
+                  (get-register
                    machine
                    (register-exp-reg dest))))
              (lambda ()
-               (set-contents! 
+               (set-contents!
                 pc
                 (get-contents reg)))))
-          (else (error "Bad GOTO instruction: 
+          (else (error "Bad GOTO instruction:
                         ASSEMBLE"
                        inst)))))
 
@@ -33714,9 +33495,9 @@ the designated register and advance the `pc`:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (make-save inst machine stack pc)
-  (let ((reg (get-register 
+  (let ((reg (get-register
               machine
               (stack-inst-reg-name inst))))
     (lambda ()
@@ -33731,7 +33512,7 @@ the designated register and advance the `pc`:
       (set-contents! reg (pop stack))
       (advance-pc pc))))
 
-(define (stack-inst-reg-name 
+(define (stack-inst-reg-name
          stack-instruction)
   (cadr stack-instruction))
 ```
@@ -33744,8 +33525,8 @@ the action procedure is executed and the `pc` advanced.
 
 <div className="lisp">
 
-``` lisp
-(define (make-perform 
+```lisp
+(define (make-perform
          inst machine labels operations pc)
   (let ((action (perform-action inst)))
     (if (operation-exp? action)
@@ -33758,7 +33539,7 @@ the action procedure is executed and the `pc` advanced.
           (lambda ()
             (action-proc)
             (advance-pc pc)))
-        (error "Bad PERFORM instruction: 
+        (error "Bad PERFORM instruction:
                 ASSEMBLE"
                inst))))
 
@@ -33777,14 +33558,14 @@ simulation:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (make-primitive-exp exp machine labels)
   (cond ((constant-exp? exp)
          (let ((c (constant-exp-value exp)))
            (lambda () c)))
         ((label-exp? exp)
          (let ((insts
-                (lookup-label 
+                (lookup-label
                  labels
                  (label-exp-label exp))))
            (lambda () insts)))
@@ -33793,7 +33574,7 @@ simulation:
                    machine
                    (register-exp-reg exp))))
            (lambda () (get-contents r))))
-        (else (error "Unknown expression type: 
+        (else (error "Unknown expression type:
                       ASSEMBLE"
                      exp))))
 ```
@@ -33804,7 +33585,7 @@ The syntax of `reg`, `label`, and `const` expressions is determined by
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (register-exp? exp)
   (tagged-list? exp 'reg))
 (define (register-exp-reg exp)
@@ -33815,7 +33596,7 @@ The syntax of `reg`, `label`, and `const` expressions is determined by
   (cadr exp))
 (define (label-exp? exp)
   (tagged-list? exp 'label))
-(define (label-exp-label exp) 
+(define (label-exp-label exp)
   (cadr exp))
 ```
 
@@ -33830,15 +33611,15 @@ the instruction:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (make-operation-exp
          exp machine labels operations)
-  (let ((op (lookup-prim 
+  (let ((op (lookup-prim
              (operation-exp-op exp)
              operations))
         (aprocs
          (map (lambda (e)
-                (make-primitive-exp 
+                (make-primitive-exp
                  e machine labels))
               (operation-exp-operands exp))))
     (lambda () (apply op (map (lambda (p) (p))
@@ -33851,7 +33632,7 @@ The syntax of operation expressions is determined by
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (operation-exp? exp)
   (and (pair? exp)
        (tagged-list? (car exp) 'op)))
@@ -33874,7 +33655,7 @@ operation table for the machine:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (lookup-prim symbol operations)
   (let ((val (assoc symbol operations)))
     (if val
@@ -33903,7 +33684,7 @@ operation table for the machine:
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (save y)
 > (save x)
 > (restore y)
@@ -33937,18 +33718,18 @@ operation table for the machine:
 > controller. Extend the assembler to store the following information in
 > the machine model:
 >
-> -   a list of all instructions, with duplicates removed, sorted by
->     instruction type (`assign`, `goto`, and so on);
-> -   a list (without duplicates) of the registers used to hold entry
->     points (these are the registers referenced by `goto`
->     instructions);
-> -   a list (without duplicates) of the registers that are `save`d or
->     `restore`d;
-> -   for each register, a list (without duplicates) of the sources from
->     which it is assigned (for example, the sources for register `val`
->     in the factorial machine of [Figure
->     5.11](#5_002e1.xhtml#Figure-5_002e11) are `(const 1)` and
->     `((op *) (reg n) (reg val))`).
+> - a list of all instructions, with duplicates removed, sorted by
+>   instruction type (`assign`, `goto`, and so on);
+> - a list (without duplicates) of the registers used to hold entry
+>   points (these are the registers referenced by `goto`
+>   instructions);
+> - a list (without duplicates) of the registers that are `save`d or
+>   `restore`d;
+> - for each register, a list (without duplicates) of the sources from
+>   which it is assigned (for example, the sources for register `val`
+>   in the factorial machine of [Figure
+>   5.11](#5_002e1.xhtml#Figure-5_002e11) are `(const 1)` and
+>   `((op *) (reg n) (reg val))`).
 >
 > Extend the message-passing interface to the machine to provide access
 > to this new information. To test your analyzer, define the Fibonacci
@@ -33962,7 +33743,7 @@ operation table for the machine:
 > allocate them one at a time when they are first seen during assembly
 > of the instructions.
 
-#### 5.2.4Monitoring Machine Performance
+#### 5.2.4 Monitoring Machine Performance
 
 Simulation is useful not only for verifying the correctness of a
 proposed machine design but also for measuring the machine’s
@@ -33977,12 +33758,12 @@ the basic machine model to print the stack statistics, by initializing
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (list (list 'initialize-stack
-            (lambda () 
+            (lambda ()
               (stack 'initialize)))
       (list 'print-stack-statistics
-            (lambda () 
+            (lambda ()
               (stack 'print-statistics))))
 ```
 
@@ -33992,7 +33773,7 @@ Here is the new version of `make-stack`:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (make-stack)
   (let ((s '())
         (number-pushes 0)
@@ -34002,7 +33783,7 @@ Here is the new version of `make-stack`:
       (set! s (cons x s))
       (set! number-pushes (+ 1 number-pushes))
       (set! current-depth (+ 1 current-depth))
-      (set! max-depth 
+      (set! max-depth
             (max current-depth max-depth)))
     (define (pop)
       (if (null? s)
@@ -34021,8 +33802,8 @@ Here is the new version of `make-stack`:
 
     (define (print-statistics)
       (newline)
-      (display (list 'total-pushes 
-                     '= 
+      (display (list 'total-pushes
+                     '=
                      number-pushes
                      'maximum-depth
                      '=
@@ -34048,29 +33829,29 @@ and debugging features that can be added to the register-machine
 simulator.
 
 > **Exercise 5.14:** Measure the number of pushes and the maximum stack
-> depth required to compute *n*! for various small values of *n* using
+> depth required to compute _n_! for various small values of _n_ using
 > the factorial machine shown in [Figure
 > 5.11](#5_002e1.xhtml#Figure-5_002e11). From your data determine
-> formulas in terms of *n* for the total number of push operations and
-> the maximum stack depth used in computing *n*! for any *n* \> 1. Note
-> that each of these is a linear function of *n* and is thus determined
+> formulas in terms of _n_ for the total number of push operations and
+> the maximum stack depth used in computing _n_! for any *n* \> 1. Note
+> that each of these is a linear function of _n_ and is thus determined
 > by two constants. In order to get the statistics printed, you will
 > have to augment the factorial machine with instructions to initialize
 > the stack and print the statistics. You may want to also modify the
-> machine so that it repeatedly reads a value for *n*, computes the
+> machine so that it repeatedly reads a value for _n_, computes the
 > factorial, and prints the result (as we did for the GCD machine in
 > [Figure 5.4](#5_002e1.xhtml#Figure-5_002e4)), so that you will not
 > have to repeatedly invoke `get-register-contents`,
 > `set-register-contents!`, and `start`.
 
-> **Exercise 5.15:** Add *instruction counting* to the register machine
+> **Exercise 5.15:** Add _instruction counting_ to the register machine
 > simulation. That is, have the machine model keep track of the number
 > of instructions executed. Extend the machine model’s interface to
 > accept a new message that prints the value of the instruction count
 > and resets the count to zero.
 
-> **Exercise 5.16:** Augment the simulator to provide for *instruction
-> tracing*. That is, before each instruction is executed, the simulator
+> **Exercise 5.16:** Augment the simulator to provide for _instruction
+> tracing_. That is, before each instruction is executed, the simulator
 > should print the text of the instruction. Make the machine model
 > accept `trace-on` and `trace-off` messages to turn tracing on and off.
 
@@ -34091,7 +33872,7 @@ simulator.
 > model to permit you to turn tracing on and off for designated machine
 > registers.
 
-> **Exercise 5.19:** Alyssa P. Hacker wants a *breakpoint* feature in
+> **Exercise 5.19:** Alyssa P. Hacker wants a _breakpoint_ feature in
 > the simulator to help her debug her machine designs. You have been
 > hired to install this feature for her. She wants to be able to specify
 > a place in the controller sequence where the simulator will stop and
@@ -34100,18 +33881,18 @@ simulator.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (set-breakpoint ⟨machine⟩ ⟨label⟩ ⟨n⟩)
 > ```
 >
 > </div>
 >
-> that sets a breakpoint just before the *n*^(th) instruction after the
+> that sets a breakpoint just before the _n_^(th) instruction after the
 > given label. For example,
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (set-breakpoint gcd-machine 'test-b 4)
 > ```
 >
@@ -34126,7 +33907,7 @@ simulator.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (proceed-machine ⟨machine⟩)
 > ```
 >
@@ -34136,7 +33917,7 @@ simulator.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (cancel-breakpoint ⟨machine⟩ ⟨label⟩ ⟨n⟩)
 > ```
 >
@@ -34146,7 +33927,7 @@ simulator.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (cancel-all-breakpoints ⟨machine⟩)
 > ```
 >
@@ -34166,25 +33947,25 @@ values, is
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (extract-labels text)
   (if (null? text)
       (cons '() '())
-      (let ((result 
+      (let ((result
              (extract-labels (cdr text))))
         (let ((insts (car result))
               (labels (cdr result)))
           (let ((next-inst (car text)))
             (if (symbol? next-inst)
-                (cons 
+                (cons
                  insts
-                 (cons 
-                  (make-label-entry 
-                   next-inst insts) 
+                 (cons
+                  (make-label-entry
+                   next-inst insts)
                   labels))
-                (cons 
-                 (cons 
-                  (make-instruction next-inst) 
+                (cons
+                 (cons
+                  (make-instruction next-inst)
                   insts)
                  labels)))))))
 ```
@@ -34195,9 +33976,9 @@ which would be called by `assemble` as follows:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (assemble controller-text machine)
-  (let ((result 
+  (let ((result
          (extract-labels controller-text)))
     (let ((insts (car result))
           (labels (cdr result)))
@@ -34218,28 +33999,18 @@ continuations to implement the backtracking control structure in the
 
 </div>
 
-Next: [5.3](#5_002e3.xhtml#g_t5_002e3), Prev:
-[5.1](#5_002e1.xhtml#g_t5_002e1), Up: [5.2](#5_002e2.xhtml#g_t5_002e2)  
-\[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
-
 </div>
-
-[⇣](#5_002e2.xhtml#pagebottom)
 
 <div className="section">
 
-[⇡](#5_002e3.xhtml#pagetop)
-Next: [5.4](#5_002e4.xhtml#g_t5_002e4), Prev:
-[5.2](#5_002e2.xhtml#g_t5_002e2), Up: [Chapter
-5](#Chapter-5.xhtml#Chapter-5)  
 \[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
 
-### 5.3Storage Allocation and Garbage Collection
+### 5.3 Storage Allocation and Garbage Collection
 
 In section [5.4](#5_002e4.xhtml#g_t5_002e4), we will show how to
 implement a Scheme evaluator as a register machine. In order to simplify
 the discussion, we will assume that our register machines can be
-equipped with a *list-structured memory*, in which the basic operations
+equipped with a _list-structured memory_, in which the basic operations
 for manipulating list-structured data are primitive. Postulating the
 existence of such a memory is a useful abstraction when one is focusing
 on the mechanisms of control in a Scheme interpreter, but this does not
@@ -34261,18 +34032,18 @@ structures created by the interpreter itself, such as environments and
 argument lists. Although the constant creation of new data objects would
 pose no problem on a computer with an infinite amount of rapidly
 addressable memory, computer memories are available only in finite sizes
-(more’s the pity). Lisp systems thus provide an *automatic storage
-allocation* facility to support the illusion of an infinite memory. When
+(more’s the pity). Lisp systems thus provide an _automatic storage
+allocation_ facility to support the illusion of an infinite memory. When
 a data object is no longer needed, the memory allocated to it is
 automatically recycled and used to construct new data objects. There are
 various techniques for providing such automatic storage allocation. The
-method we shall discuss in this section is called *garbage collection*.
+method we shall discuss in this section is called _garbage collection_.
 
-#### 5.3.1Memory as Vectors
+#### 5.3.1 Memory as Vectors
 
 A conventional computer memory can be thought of as an array of
 cubbyholes, each of which can contain a piece of information. Each
-cubbyhole has a unique name, called its *address* or *location*. Typical
+cubbyhole has a unique name, called its _address_ or _location_. Typical
 memory systems provide two primitive operations: one that fetches the
 data stored in a specified location and one that assigns new data to a
 specified location. Memory addresses can be incremented to support
@@ -34280,27 +34051,27 @@ sequential access to some set of the cubbyholes. More generally, many
 important data operations require that memory addresses be treated as
 data, which can be stored in memory locations and manipulated in machine
 registers. The representation of list structure is one application of
-such *address arithmetic*.
+such _address arithmetic_.
 
 To model computer memory, we use a new kind of data structure called a
-*vector*. Abstractly, a vector is a compound data object whose
+_vector_. Abstractly, a vector is a compound data object whose
 individual elements can be accessed by means of an integer index in an
 amount of time that is independent of the
 index.[²⁹⁰](#5_002e3.xhtml#FOOT290) In order to describe memory
 operations, we use two primitive Scheme procedures for manipulating
 vectors:
 
--   `(vector-ref ⟨vector⟩ ⟨n⟩)` returns the *n*^(th) element of the
-    vector.
--   `(vector-set! ⟨vector⟩ ⟨n⟩ ⟨value⟩)` sets the *n*^(th) element of
-    the vector to the designated value.
+- `(vector-ref ⟨vector⟩ ⟨n⟩)` returns the _n_^(th) element of the
+  vector.
+- `(vector-set! ⟨vector⟩ ⟨n⟩ ⟨value⟩)` sets the _n_^(th) element of
+  the vector to the designated value.
 
 For example, if `v` is a vector, then `(vector-ref v 5)` gets the fifth
 entry in the vector `v` and `(vector-set! v 5 7)` changes the value of
 the fifth entry of the vector `v` to 7.[²⁹¹](#5_002e3.xhtml#FOOT291) For
 computer memory, this access can be implemented through the use of
-address arithmetic to combine a *base address* that specifies the
-beginning location of a vector in memory with an *index* that specifies
+address arithmetic to combine a _base address_ that specifies the
+beginning location of a vector in memory with an _index_ that specifies
 the offset of a particular element of the vector.
 
 ##### Representing Lisp data
@@ -34314,7 +34085,7 @@ designated index, and the `cdr` of the pair is the entry in `the-cdrs`
 with the designated index. We also need a representation for objects
 other than pairs (such as numbers and symbols) and a way to distinguish
 one kind of data from another. There are many methods of accomplishing
-this, but they all reduce to using *typed pointers*, that is, to
+this, but they all reduce to using _typed pointers_, that is, to
 extending the notion of “pointer” to include information on data
 type.[²⁹²](#5_002e3.xhtml#FOOT292) The data type enables the system to
 distinguish a pointer to a pair (which consists of the “pair” data type
@@ -34339,10 +34110,9 @@ SVG
 the list `((1 2) 3 4)`.
 
 A pointer to a number, such as `n4`, might consist of a type indicating
-numeric data together with the actual representation of the number
-4.[²⁹⁴](#5_002e3.xhtml#FOOT294) To deal with numbers that are too large
+numeric data together with the actual representation of the number 4.[²⁹⁴](#5_002e3.xhtml#FOOT294) To deal with numbers that are too large
 to be represented in the fixed amount of space allocated for a single
-pointer, we could use a distinct *bignum* data type, for which the
+pointer, we could use a distinct _bignum_ data type, for which the
 pointer designates a list in which the parts of the number are
 stored.[²⁹⁵](#5_002e3.xhtml#FOOT295)
 
@@ -34355,7 +34125,7 @@ we want `eq?` to be a simple test for equality of pointers, we must
 ensure that if the reader sees the same character string twice, it will
 use the same pointer (to the same sequence of characters) to represent
 both occurrences. To accomplish this, the reader maintains a table,
-traditionally called the *obarray*, of all the symbols it has ever
+traditionally called the _obarray_, of all the symbols it has ever
 encountered. When the reader encounters a character string and is about
 to construct a symbol, it checks the obarray to see if it has ever
 before seen the same character string. If it has not, it uses the
@@ -34363,7 +34133,7 @@ characters to construct a new symbol (a typed pointer to a new character
 sequence) and enters this pointer in the obarray. If the reader has seen
 the string before, it returns the symbol pointer stored in the obarray.
 This process of replacing character strings by unique pointers is called
-*interning* symbols.
+_interning_ symbols.
 
 ##### Implementing the primitive list operations
 
@@ -34380,7 +34150,7 @@ For example, we can make a register machine support the instructions
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (assign ⟨reg₁⟩ (op car) (reg ⟨reg₂⟩))
 (assign ⟨reg₁⟩ (op cdr) (reg ⟨reg₂⟩))
 ```
@@ -34391,8 +34161,8 @@ if we implement these, respectively, as
 
 <div className="lisp">
 
-``` lisp
-(assign ⟨reg₁⟩ 
+```lisp
+(assign ⟨reg₁⟩
         (op vector-ref)
         (reg the-cars)
         (reg ⟨reg₂⟩))
@@ -34408,7 +34178,7 @@ The instructions
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (perform (op set-car!) (reg ⟨reg₁⟩) (reg ⟨reg₂⟩))
 (perform (op set-cdr!) (reg ⟨reg₁⟩) (reg ⟨reg₂⟩))
 ```
@@ -34419,7 +34189,7 @@ are implemented as
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (perform (op vector-set!)
          (reg the-cars)
          (reg ⟨reg₁⟩)
@@ -34441,7 +34211,7 @@ free location.[²⁹⁶](#5_002e3.xhtml#FOOT296) For example, the instruction
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (assign ⟨reg₁⟩
         (op cons)
         (reg ⟨reg₂⟩)
@@ -34455,7 +34225,7 @@ operations:[²⁹⁷](#5_002e3.xhtml#FOOT297)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (perform (op vector-set!)
          (reg the-cars)
          (reg free)
@@ -34474,7 +34244,7 @@ The `eq?` operation
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (op eq?) (reg ⟨reg₁⟩) (reg ⟨reg₂⟩)
 ```
 
@@ -34493,8 +34263,8 @@ Thus, `(save ⟨reg⟩)` can be implemented as
 
 <div className="lisp">
 
-``` lisp
-(assign the-stack 
+```lisp
+(assign the-stack
         (op cons)
         (reg ⟨reg⟩)
         (reg the-stack))
@@ -34506,7 +34276,7 @@ Similarly, `(restore ⟨reg⟩)` can be implemented as
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (assign ⟨reg⟩ (op car) (reg the-stack))
 (assign the-stack (op cdr) (reg the-stack))
 ```
@@ -34517,7 +34287,7 @@ and `(perform (op initialize-stack))` can be implemented as
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (assign the-stack (const ()))
 ```
 
@@ -34536,7 +34306,7 @@ or decrementing an index into that vector.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define x (cons 1 2))
 > (define y (list x x))
 > ```
@@ -34553,28 +34323,29 @@ or decrementing an index into that vector.
 > 1.  Recursive `count-leaves`:
 >     <div className="lisp">
 >
->     ``` lisp
+>     ```lisp
 >     (define (count-leaves tree)
 >       (cond ((null? tree) 0)
 >             ((not (pair? tree)) 1)
->             (else 
+>             (else
 >              (+ (count-leaves (car tree))
 >                 (count-leaves (cdr tree))))))
 >     ```
 >
 >     </div>
+>
 > 2.  Recursive `count-leaves` with explicit counter:
 >     <div className="lisp">
 >
->     ``` lisp
+>     ```lisp
 >     (define (count-leaves tree)
 >       (define (count-iter tree n)
 >         (cond ((null? tree) n)
 >               ((not (pair? tree)) (+ n 1))
->               (else 
->                (count-iter 
+>               (else
+>                (count-iter
 >                 (cdr tree)
->                 (count-iter (car tree) 
+>                 (count-iter (car tree)
 >                             n)))))
 >       (count-iter tree 0))
 >     ```
@@ -34588,7 +34359,7 @@ or decrementing an index into that vector.
 > to implement each of these procedures. Assume that the list-structure
 > memory operations are available as primitive operations.
 
-#### 5.3.2Maintaining the Illusion of Infinite Memory
+#### 5.3.2 Maintaining the Illusion of Infinite Memory
 
 The representation method outlined in
 [5.3.1](#5_002e3.xhtml#g_t5_002e3_002e1) solves the problem of
@@ -34597,13 +34368,13 @@ memory. With a real computer we will eventually run out of free space in
 which to construct new pairs.[²⁹⁸](#5_002e3.xhtml#FOOT298) However, most
 of the pairs generated in a typical computation are used only to hold
 intermediate results. After these results are accessed, the pairs are no
-longer needed—they are *garbage*. For instance, the computation
+longer needed—they are _garbage_. For instance, the computation
 
 <div className="lisp">
 
-``` lisp
-(accumulate 
- + 
+```lisp
+(accumulate
+ +
  0
  (filter odd? (enumerate-interval 0 n)))
 ```
@@ -34621,7 +34392,7 @@ amount of memory.
 In order to recycle pairs, we must have a way to determine which
 allocated pairs are not needed (in the sense that their contents can no
 longer influence the future of the computation). The method we shall
-examine for accomplishing this is known as *garbage collection*. Garbage
+examine for accomplishing this is known as _garbage collection_. Garbage
 collection is based on the observation that, at any moment in a Lisp
 interpretation, the only objects that can affect the future of the
 computation are those that can be reached by some succession of `car`
@@ -34630,7 +34401,7 @@ the machine registers.[²⁹⁹](#5_002e3.xhtml#FOOT299) Any memory cell that
 is not so accessible may be recycled.
 
 There are many ways to perform garbage collection. The method we shall
-examine here is called *stop-and-copy*. The basic idea is to divide
+examine here is called _stop-and-copy_. The basic idea is to divide
 memory into two halves: “working memory” and “free memory.” When `cons`
 constructs pairs, it allocates these in working memory. When working
 memory is full, we perform garbage collection by locating all the useful
@@ -34687,8 +34458,8 @@ the `free` pointer is incremented. In addition, the old location of the
 pair is marked to show that its contents have been moved. This marking
 is done as follows: In the `car` position, we place a special tag that
 signals that this is an already-moved object. (Such an object is
-traditionally called a *broken heart*.)[³⁰²](#5_002e3.xhtml#FOOT302) In
-the `cdr` position we place a *forwarding address* that points at the
+traditionally called a _broken heart_.)[³⁰²](#5_002e3.xhtml#FOOT302) In
+the `cdr` position we place a _forwarding address_ that points at the
 location to which the object has been moved.
 
 After relocating the root, the garbage collector enters its basic cycle.
@@ -34725,12 +34496,12 @@ enter the main loop of the garbage collector.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 begin-garbage-collection
   (assign free (const 0))
   (assign scan (const 0))
   (assign old (reg root))
-  (assign relocate-continue 
+  (assign relocate-continue
           (label reassign-root))
   (goto (label relocate-old-result-in-new))
 reassign-root
@@ -34752,15 +34523,15 @@ set up so that the subroutine will return to update the `car` pointer.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 gc-loop
   (test (op =) (reg scan) (reg free))
   (branch (label gc-flip))
-  (assign old 
+  (assign old
           (op vector-ref)
           (reg new-cars)
           (reg scan))
-  (assign relocate-continue 
+  (assign relocate-continue
           (label update-car))
   (goto (label relocate-old-result-in-new))
 ```
@@ -34775,13 +34546,13 @@ so we continue with the main loop.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 update-car
   (perform (op vector-set!)
            (reg new-cars)
            (reg scan)
            (reg new))
-  (assign  old 
+  (assign  old
            (op vector-ref)
            (reg new-cdrs)
            (reg scan))
@@ -34819,14 +34590,14 @@ or the `cdr` of the object pointed at by
 
 <div className="lisp">
 
-``` lisp
+```lisp
 relocate-old-result-in-new
   (test (op pointer-to-pair?) (reg old))
   (branch (label pair))
   (assign new (reg old))
   (goto (reg relocate-continue))
 pair
-  (assign  oldcr 
+  (assign  oldcr
            (op vector-ref)
            (reg the-cars)
            (reg old))
@@ -34840,7 +34611,7 @@ pair
            (reg new-cars)
            (reg new)
            (reg oldcr))
-  (assign  oldcr 
+  (assign  oldcr
            (op vector-ref)
            (reg the-cdrs)
            (reg old))
@@ -34876,7 +34647,7 @@ out.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 gc-flip
   (assign temp (reg the-cdrs))
   (assign the-cdrs (reg new-cdrs))
@@ -34896,7 +34667,7 @@ gc-flip
 
 [²⁹⁰](#5_002e3.xhtml#DOCF290) We could represent memory as lists of
 items. However, the access time would then not be independent of the
-index, since accessing the *n*^(th) element of a list requires *n* − 1
+index, since accessing the _n_^(th) element of a list requires *n* − 1
 `cdr` operations.
 
 </div>
@@ -34928,13 +34699,13 @@ Lisp system is to be implemented. The execution efficiency of Lisp
 programs will be strongly dependent on how cleverly this choice is made,
 but it is difficult to formulate general design rules for good choices.
 The most straightforward way to implement typed pointers is to allocate
-a fixed set of bits in each pointer to be a *type field* that encodes
+a fixed set of bits in each pointer to be a _type field_ that encodes
 the data type. Important questions to be addressed in designing such a
 representation include the following: How many type bits are required?
 How large must the vector indices be? How efficiently can the primitive
 machine instructions be used to manipulate the type fields of pointers?
 Machines that include special hardware for the efficient handling of
-type fields are said to have *tagged architectures*.
+type fields are said to have _tagged architectures_.
 
 </div>
 
@@ -34962,7 +34733,7 @@ the largest number that can be stored in a single pointer.
 
 [²⁹⁶](#5_002e3.xhtml#DOCF296) There are other ways of finding free
 storage. For example, we could link together all the unused pairs into a
-*free list*. Our free locations are consecutive (and hence can be
+_free list_. Our free locations are consecutive (and hence can be
 accessed by incrementing a pointer) because we are using a compacting
 garbage collector, as we will see in
 [5.3.2](#5_002e3.xhtml#g_t5_002e3_002e2).
@@ -35020,7 +34791,7 @@ the fact that some structure is more volatile and other structure is
 more permanent.
 
 An alternative commonly used garbage-collection technique is the
-*mark-sweep* method. This consists of tracing all the structure
+_mark-sweep_ method. This consists of tracing all the structure
 accessible from the machine registers and marking each pair we reach. We
 then scan all of memory, and any location that is unmarked is “swept up”
 as garbage and made available for reuse. A full discussion of the
@@ -35031,7 +34802,7 @@ The Minsky-Fenichel-Yochelson algorithm is the dominant algorithm in use
 for large-memory systems because it examines only the useful part of
 memory. This is in contrast to mark-sweep, in which the sweep phase must
 check all of memory. A second advantage of stop-and-copy is that it is a
-*compacting* garbage collector. That is, at the end of the
+_compacting_ garbage collector. That is, at the end of the
 garbage-collection phase the useful data will have been moved to
 consecutive memory locations, with all garbage pairs compressed out.
 This can be an extremely important performance consideration in machines
@@ -35051,7 +34822,7 @@ section.
 
 <div id="5_002e3.xhtml#FOOT302">
 
-[³⁰²](#5_002e3.xhtml#DOCF302) The term *broken heart* was coined by
+[³⁰²](#5_002e3.xhtml#DOCF302) The term _broken heart_ was coined by
 David Cressey, who wrote a garbage collector for MDL, a dialect of Lisp
 developed at MIT during the early 1970s.
 
@@ -35072,23 +34843,13 @@ implemented as `pair?`.
 
 </div>
 
-Next: [5.4](#5_002e4.xhtml#g_t5_002e4), Prev:
-[5.2](#5_002e2.xhtml#g_t5_002e2), Up: [5.3](#5_002e3.xhtml#g_t5_002e3)  
-\[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
-
 </div>
-
-[⇣](#5_002e3.xhtml#pagebottom)
 
 <div className="section">
 
-[⇡](#5_002e4.xhtml#pagetop)
-Next: [5.5](#5_002e5.xhtml#g_t5_002e5), Prev:
-[5.3](#5_002e3.xhtml#g_t5_002e3), Up: [Chapter
-5](#Chapter-5.xhtml#Chapter-5)  
 \[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
 
-### 5.4The Explicit-Control Evaluator
+### 5.4 The Explicit-Control Evaluator
 
 In [5.1](#5_002e1.xhtml#g_t5_002e1) we saw how to transform simple
 Scheme programs into descriptions of register machines. We will now
@@ -35096,8 +34857,8 @@ perform this transformation on a more complex program, the metacircular
 evaluator of
 [4.1.1](#4_002e1.xhtml#g_t4_002e1_002e1)–[4.1.4](#4_002e1.xhtml#g_t4_002e1_002e4),
 which shows how the behavior of a Scheme interpreter can be described in
-terms of the procedures `eval` and `apply`. The *explicit-control
-evaluator* that we develop in this section shows how the underlying
+terms of the procedures `eval` and `apply`. The _explicit-control
+evaluator_ that we develop in this section shows how the underlying
 procedure-calling and argument-passing mechanisms used in the evaluation
 process can be described in terms of operations on registers and stacks.
 In addition, the explicit-control evaluator can serve as an
@@ -35155,7 +34916,7 @@ operations of the evaluator are connected, nor will we give the complete
 list of machine operations. These are implicit in the evaluator’s
 controller, which will be presented in detail.
 
-#### 5.4.1The Core of the Explicit-Control Evaluator
+#### 5.4.1 The Core of the Explicit-Control Evaluator
 
 The central element in the evaluator is the sequence of instructions
 beginning at `eval-dispatch`. This corresponds to the `eval` procedure
@@ -35171,7 +34932,7 @@ evaluated.[³⁰⁵](#5_002e4.xhtml#FOOT305)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 eval-dispatch
   (test (op self-evaluating?) (reg exp))
   (branch (label ev-self-eval))
@@ -35207,7 +34968,7 @@ following controller code:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 ev-self-eval
   (assign val (reg exp))
   (goto (reg continue))
@@ -35226,10 +34987,10 @@ ev-lambda
   (assign unev
           (op lambda-parameters)
           (reg exp))
-  (assign exp 
+  (assign exp
           (op lambda-body)
           (reg exp))
-  (assign val 
+  (assign val
           (op make-procedure)
           (reg unev)
           (reg exp)
@@ -35273,7 +35034,7 @@ the application.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 ev-application
   (save continue)
   (save env)
@@ -35298,7 +35059,7 @@ argument-evaluation loop:[³⁰⁷](#5_002e4.xhtml#FOOT307)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 ev-appl-did-operator
   (restore unev)             ; the operands
   (restore env)
@@ -35323,7 +35084,7 @@ made for the evaluation of the last operand, which is handled at
 
 <div className="lisp">
 
-``` lisp
+```lisp
 ev-appl-operand-loop
   (save argl)
   (assign exp
@@ -35333,7 +35094,7 @@ ev-appl-operand-loop
   (branch (label ev-appl-last-arg))
   (save env)
   (save unev)
-  (assign continue 
+  (assign continue
           (label ev-appl-accumulate-arg))
   (goto (label eval-dispatch))
 ```
@@ -35346,12 +35107,12 @@ unevaluated operands in `unev`, and the argument-evaluation continues.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 ev-appl-accumulate-arg
   (restore unev)
   (restore env)
   (restore argl)
-  (assign argl 
+  (assign argl
           (op adjoin-arg)
           (reg val)
           (reg argl))
@@ -35373,14 +35134,14 @@ to perform the application.[³⁰⁸](#5_002e4.xhtml#FOOT308)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 ev-appl-last-arg
-  (assign continue 
+  (assign continue
           (label ev-appl-accum-last-arg))
   (goto (label eval-dispatch))
 ev-appl-accum-last-arg
   (restore argl)
-  (assign argl 
+  (assign argl
           (op adjoin-arg)
           (reg val)
           (reg argl))
@@ -35418,7 +35179,7 @@ procedure to be applied is a primitive or it is a compound procedure.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 apply-dispatch
   (test (op primitive-procedure?) (reg proc))
   (branch (label primitive-apply))
@@ -35448,7 +35209,7 @@ the designated entry point.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 primitive-apply
   (assign val (op apply-primitive-procedure)
               (reg proc)
@@ -35469,9 +35230,9 @@ evaluation of the sequence.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 compound-apply
-  (assign unev 
+  (assign unev
           (op procedure-parameters)
           (reg proc))
   (assign env
@@ -35496,7 +35257,7 @@ evaluator, the new environment is constructed from the environment
 carried by the procedure, together with the argument list and the
 corresponding list of variables to be bound.
 
-#### 5.4.2Sequence Evaluation and Tail Recursion
+#### 5.4.2 Sequence Evaluation and Tail Recursion
 
 The portion of the explicit-control evaluator at `ev-sequence` is
 analogous to the metacircular evaluator’s `eval-sequence` procedure. It
@@ -35509,7 +35270,7 @@ and jumping to `ev-sequence`.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 ev-begin
   (assign unev
           (op begin-actions)
@@ -35549,7 +35310,7 @@ point after evaluating the expression.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 ev-sequence
   (assign exp (op first-exp) (reg unev))
   (test (op last-exp?) (reg unev))
@@ -35580,7 +35341,7 @@ described by a procedure such as
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (sqrt-iter guess x)
   (if (good-enough? guess x)
       guess
@@ -35595,7 +35356,7 @@ for an evaluator to save information in passing from one call to
 `sqrt-iter` to the next.[³¹⁰](#5_002e4.xhtml#FOOT310) An evaluator that
 can execute a procedure such as `sqrt-iter` without requiring increasing
 storage as the procedure continues to call itself is called a
-*tail-recursive* evaluator. The metacircular implementation of the
+_tail-recursive_ evaluator. The metacircular implementation of the
 evaluator in [Chapter 4](#Chapter-4.xhtml#Chapter-4) does not specify
 whether the evaluator is tail-recursive, because that evaluator inherits
 its mechanism for saving state from the underlying Scheme. With the
@@ -35620,7 +35381,7 @@ been evaluated:[³¹²](#5_002e4.xhtml#FOOT312)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 ev-sequence
   (test (op no-more-exps?) (reg unev))
   (branch (label ev-sequence-end))
@@ -35657,7 +35418,7 @@ expressed using only the procedure-call mechanism:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (count n)
   (newline)
   (display n)
@@ -35670,7 +35431,7 @@ Without tail recursion, such a procedure would eventually run out of
 stack space, and expressing a true iteration would require some control
 mechanism other than procedure call.
 
-#### 5.4.3Conditionals, Assignments, and Definitions
+#### 5.4.3 Conditionals, Assignments, and Definitions
 
 As with the metacircular evaluator, special forms are handled by
 selectively evaluating fragments of the expression. For an `if`
@@ -35687,7 +35448,7 @@ is waiting for the value of the `if`.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 ev-if
   (save exp)   ; save expression for later
   (save env)
@@ -35695,7 +35456,7 @@ ev-if
   (assign continue (label ev-if-decide))
   (assign exp (op if-predicate) (reg exp))
   ; evaluate the predicate:
-  (goto (label eval-dispatch))  
+  (goto (label eval-dispatch))
 ```
 
 </div>
@@ -35709,7 +35470,7 @@ value of the `if` expression.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 ev-if-decide
   (restore continue)
   (restore env)
@@ -35736,9 +35497,9 @@ assumed to be available as a machine operation.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 ev-assignment
-  (assign unev 
+  (assign unev
           (op assignment-variable)
           (reg exp))
   (save unev)   ; save variable for later
@@ -35750,7 +35511,7 @@ ev-assignment
   (assign continue
           (label ev-assignment-1))
   ; evaluate the assignment value:
-  (goto (label eval-dispatch))  
+  (goto (label eval-dispatch))
 ev-assignment-1
   (restore continue)
   (restore env)
@@ -35770,20 +35531,20 @@ Definitions are handled in a similar way:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 ev-definition
-  (assign unev 
+  (assign unev
           (op definition-variable)
           (reg exp))
   (save unev)   ; save variable for later
-  (assign exp 
+  (assign exp
           (op definition-value)
           (reg exp))
   (save env)
   (save continue)
   (assign continue (label ev-definition-1))
   ; evaluate the definition value:
-  (goto (label eval-dispatch))  
+  (goto (label eval-dispatch))
 ev-definition-1
   (restore continue)
   (restore env)
@@ -35814,7 +35575,7 @@ ev-definition-1
 > evaluation, based on the lazy evaluator of
 > [4.2](#4_002e2.xhtml#g_t4_002e2).
 
-#### 5.4.4Running the Evaluator
+#### 5.4.4 Running the Evaluator
 
 With the implementation of the explicit-control evaluator we come to the
 end of a development, begun in [Chapter 1](#Chapter-1.xhtml#Chapter-1),
@@ -35843,7 +35604,7 @@ sequence:[³¹⁴](#5_002e4.xhtml#FOOT314)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 read-eval-print-loop
   (perform (op initialize-stack))
   (perform (op prompt-for-input)
@@ -35867,16 +35628,16 @@ message and return to the driver loop.[³¹⁵](#5_002e4.xhtml#FOOT315)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 unknown-expression-type
-  (assign 
+  (assign
    val
    (const unknown-expression-type-error))
   (goto (label signal-error))
 unknown-procedure-type
   ; clean up stack (from apply-dispatch):
-  (restore continue)    
-  (assign 
+  (restore continue)
+  (assign
    val
    (const unknown-procedure-type-error))
   (goto (label signal-error))
@@ -35899,13 +35660,13 @@ register-machine simulator of [5.2](#5_002e2.xhtml#g_t5_002e2).
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define eceval
   (make-machine
    '(exp env val proc argl continue unev)
    eceval-operations
    '(read-eval-print-loop
-     ⟨entire machine controller 
+     ⟨entire machine controller
       as given above⟩)))
 ```
 
@@ -35919,11 +35680,11 @@ with the few additional ones defined in footnotes throughout
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define eceval-operations
-  (list (list 'self-evaluating? 
+  (list (list 'self-evaluating?
               self-evaluating)
-        ⟨complete list of operations 
+        ⟨complete list of operations
          for eceval machine⟩))
 ```
 
@@ -35933,7 +35694,7 @@ Finally, we can initialize the global environment and run the evaluator:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define the-global-environment
   (setup-environment))
 
@@ -35978,7 +35739,7 @@ the evaluator’s `print-result` entry point to print the statistics:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 print-result
   ; added instruction:
   (perform (op print-stack-statistics))
@@ -35993,7 +35754,7 @@ Interactions with the evaluator now look like this:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 ;;; EC-Eval input:
 (define (factorial n)
   (if (= n 1) 1 (* (factorial (- n 1)) n)))
@@ -36024,7 +35785,7 @@ only to stack operations used to evaluate the previous expression.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (factorial n)
 >   (define (iter product counter)
 >     (if (> counter n)
@@ -36036,16 +35797,16 @@ only to stack operations used to evaluate the previous expression.
 >
 > </div>
 >
-> Run the procedure with some small values of *n*. Record the maximum
-> stack depth and the number of pushes required to compute *n*! for each
+> Run the procedure with some small values of _n_. Record the maximum
+> stack depth and the number of pushes required to compute _n_! for each
 > of these values.
 >
-> 1.  You will find that the maximum depth required to evaluate *n*! is
->     independent of *n*. What is that depth?
-> 2.  Determine from your data a formula in terms of *n* for the total
->     number of push operations used in evaluating *n*! for any *n* ≥ 1.
+> 1.  You will find that the maximum depth required to evaluate _n_! is
+>     independent of _n_. What is that depth?
+> 2.  Determine from your data a formula in terms of _n_ for the total
+>     number of push operations used in evaluating _n_! for any *n* ≥ 1.
 >     Note that the number of operations used is a linear function of
->     *n* and is thus determined by two constants.
+>     _n_ and is thus determined by two constants.
 
 > **Exercise 5.27:** For comparison with [Exercise
 > 5.26](#5_002e4.xhtml#Exercise-5_002e26), explore the behavior of the
@@ -36053,7 +35814,7 @@ only to stack operations used to evaluate the previous expression.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (factorial n)
 >   (if (= n 1)
 >       1
@@ -36063,18 +35824,22 @@ only to stack operations used to evaluate the previous expression.
 > </div>
 >
 > By running this procedure with the monitored stack, determine, as a
-> function of *n*, the maximum depth of the stack and the total number
-> of pushes used in evaluating *n*! for *n* ≥ 1. (Again, these functions
+> function of _n_, the maximum depth of the stack and the total number
+> of pushes used in evaluating _n_! for *n* ≥ 1. (Again, these functions
 > will be linear.) Summarize your experiments by filling in the
-> following table with the appropriate expressions in terms of *n*:
-> $$\\begin{matrix}
+> following table with the appropriate expressions in terms of _n_:
+>
+> $$
+> \\begin{matrix}
 >  & \\text{Maximum} & \\text{Number\\ of} \\\\
 >  & \\text{depth} & \\text{pushes} \\\\
 > \\text{Recursive} & & \\\\
 > \\text{factorial} & & \\\\
 > \\text{Iterative} & & \\\\
 > \\text{factorial} & & \\\\
-> \\end{matrix}$$
+> \\end{matrix}
+> $$
+>
 > The maximum depth is a measure of the amount of space used by the
 > evaluator in carrying out the computation, and the number of pushes
 > correlates well with the time required.
@@ -36093,7 +35858,7 @@ only to stack operations used to evaluate the previous expression.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (fib n)
 >   (if (< n 2)
 >       n
@@ -36102,20 +35867,20 @@ only to stack operations used to evaluate the previous expression.
 >
 > </div>
 >
-> 1.  Give a formula in terms of *n* for the maximum depth of the stack
->     required to compute Fib(*n*) for *n* ≥ 2. Hint: In
+> 1.  Give a formula in terms of _n_ for the maximum depth of the stack
+>     required to compute Fib(_n_) for *n* ≥ 2. Hint: In
 >     [1.2.2](#1_002e2.xhtml#g_t1_002e2_002e2) we argued that the space
->     used by this process grows linearly with *n*.
+>     used by this process grows linearly with _n_.
 > 2.  Give a formula for the total number of pushes used to compute
->     Fib(*n*) for *n* ≥ 2. You should find that the number of pushes
+>     Fib(_n_) for *n* ≥ 2. You should find that the number of pushes
 >     (which correlates well with the time used) grows exponentially
->     with *n*. Hint: Let *S*(*n*) be the number of pushes used in
->     computing Fib(*n*). You should be able to argue that there is a
->     formula that expresses *S*(*n*) in terms of *S*(*n*−1),
->     *S*(*n*−2), and some fixed “overhead” constant *k* that is
->     independent of *n*. Give the formula, and say what *k* is. Then
->     show that *S*(*n*) can be expressed as *a* ⋅ Fib(*n*+1) + *b* and
->     give the values of *a* and *b*.
+>     with _n_. Hint: Let _S_(_n_) be the number of pushes used in
+>     computing Fib(_n_). You should be able to argue that there is a
+>     formula that expresses _S_(_n_) in terms of _S_(*n*−1),
+>     _S_(*n*−2), and some fixed “overhead” constant _k_ that is
+>     independent of _n_. Give the formula, and say what _k_ is. Then
+>     show that _S_(_n_) can be expressed as *a* ⋅ Fib(_n_+1) + *b* and
+>     give the values of _a_ and _b_.
 
 > **Exercise 5.30:** Our evaluator currently catches and signals only
 > two kinds of errors—unknown expression types and unknown procedure
@@ -36181,7 +35946,7 @@ dispatches.
 translating algorithms from a procedural language, such as Lisp, to a
 register-machine language. As an alternative to saving only what is
 needed, we could save all the registers (except `val`) before each
-recursive call. This is called a *framed-stack* discipline. This would
+recursive call. This is called a _framed-stack_ discipline. This would
 work but might save more registers than necessary; this could be an
 important consideration in a system where stack operations are
 expensive. Saving registers whose contents will not be needed later may
@@ -36198,7 +35963,7 @@ procedures for manipulating argument lists:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (empty-arglist) '())
 (define (adjoin-arg arg arglist)
   (append arglist (list arg)))
@@ -36211,7 +35976,7 @@ in a combination:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (last-operand? ops) (null? (cdr ops)))
 ```
 
@@ -36222,7 +35987,7 @@ in a combination:
 <div id="5_002e4.xhtml#FOOT308">
 
 [³⁰⁸](#5_002e4.xhtml#DOCF308) The optimization of treating the last
-operand specially is known as *evlis tail recursion* (see [Wand
+operand specially is known as _evlis tail recursion_ (see [Wand
 1980](#References.xhtml#Wand-1980)). We could be somewhat more efficient
 in the argument evaluation loop if we made evaluation of the first
 operand a special case too. This would permit us to postpone
@@ -36270,7 +36035,7 @@ language.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (no-more-exps? seq) (null? seq))
 ```
 
@@ -36301,7 +36066,7 @@ To support the `get-global-environment` operation we define
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define the-global-environment
   (setup-environment))
 
@@ -36341,23 +36106,13 @@ offers you the opportunity to reboot the computer—if you’re lucky.
 
 </div>
 
-Next: [5.5](#5_002e5.xhtml#g_t5_002e5), Prev:
-[5.3](#5_002e3.xhtml#g_t5_002e3), Up: [5.4](#5_002e4.xhtml#g_t5_002e4)  
-\[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
-
 </div>
-
-[⇣](#5_002e4.xhtml#pagebottom)
 
 <div className="section">
 
-[⇡](#5_002e5.xhtml#pagetop)
-Next: [References](#References.xhtml#References), Prev:
-[5.4](#5_002e4.xhtml#g_t5_002e4), Up: [Chapter
-5](#Chapter-5.xhtml#Chapter-5)  
 \[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
 
-### 5.5Compilation
+### 5.5 Compilation
 
 The explicit-control evaluator of [5.4](#5_002e4.xhtml#g_t5_002e4) is a
 register machine whose controller interprets Scheme programs. In this
@@ -36376,7 +36131,7 @@ around a collection of registers and operations that constitute an
 efficient and convenient universal set of data paths. The controller for
 a general-purpose machine is an interpreter for a register-machine
 language like the one we have been using. This language is called the
-*native language* of the machine, or simply *machine language*. Programs
+_native language_ of the machine, or simply _machine language_. Programs
 written in machine language are sequences of instructions that use the
 machine’s data paths. For example, the explicit-control evaluator’s
 instruction sequence can be thought of as a machine-language program for
@@ -36388,18 +36143,18 @@ higher-level languages and register-machine languages. The
 explicit-control evaluator illustrates the strategy of interpretation.
 An interpreter written in the native language of a machine configures
 the machine to execute programs written in a language (called the
-*source language*) that may differ from the native language of the
+_source language_) that may differ from the native language of the
 machine performing the evaluation. The primitive procedures of the
 source language are implemented as a library of subroutines written in
 the native language of the given machine. A program to be interpreted
-(called the *source program*) is represented as a data structure. The
+(called the _source program_) is represented as a data structure. The
 interpreter traverses this data structure, analyzing the source program.
 As it does so, it simulates the intended behavior of the source program
 by calling appropriate primitive subroutines from the library.
 
-In this section, we explore the alternative strategy of *compilation*. A
+In this section, we explore the alternative strategy of _compilation_. A
 compiler for a given source language and machine translates a source
-program into an equivalent program (called the *object program*) written
+program into an equivalent program (called the _object program_) written
 in the machine’s native language. The compiler that we implement in this
 section translates programs written in Scheme into sequences of
 instructions to be executed using the explicit-control evaluator
@@ -36487,8 +36242,8 @@ fact and generate code that evaluates the operator using the instruction
 
 <div className="lisp">
 
-``` lisp
-(assign proc 
+```lisp
+(assign proc
         (op lookup-variable-value)
         (const f)
         (reg env))
@@ -36515,7 +36270,7 @@ such as coding primitive operations “in line” instead of using a general
 these here. Our main goal in this section is to illustrate the
 compilation process in a simplified (but still interesting) context.
 
-#### 5.5.1Structure of the Compiler
+#### 5.5.1 Structure of the Compiler
 
 In [4.1.7](#4_002e1.xhtml#g_t4_002e1_002e7) we modified our original
 metacircular interpreter to separate analysis from execution. We
@@ -36535,19 +36290,19 @@ interpreters, uses the expression-syntax procedures defined in
 [4.1.2](#4_002e1.xhtml#g_t4_002e1_002e2).[³²⁰](#5_002e5.xhtml#FOOT320)
 `Compile` performs a case analysis on the syntactic type of the
 expression to be compiled. For each type of expression, it dispatches to
-a specialized *code generator*:
+a specialized _code generator_:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (compile exp target linkage)
   (cond ((self-evaluating? exp)
-         (compile-self-evaluating 
+         (compile-self-evaluating
           exp target linkage))
-        ((quoted? exp) 
+        ((quoted? exp)
          (compile-quoted exp target linkage))
         ((variable? exp)
-         (compile-variable 
+         (compile-variable
           exp target linkage))
         ((assignment? exp)
          (compile-assignment
@@ -36560,17 +36315,17 @@ a specialized *code generator*:
         ((lambda? exp)
          (compile-lambda exp target linkage))
         ((begin? exp)
-         (compile-sequence 
+         (compile-sequence
           (begin-actions exp) target linkage))
-        ((cond? exp) 
-         (compile 
+        ((cond? exp)
+         (compile
           (cond->if exp) target linkage))
         ((application? exp)
-         (compile-application 
+         (compile-application
           exp target linkage))
         (else
-         (error "Unknown expression type: 
-                 COMPILE" 
+         (error "Unknown expression type:
+                 COMPILE"
                 exp))))
 ```
 
@@ -36579,19 +36334,19 @@ a specialized *code generator*:
 ##### Targets and linkages
 
 `Compile` and the code generators that it calls take two arguments in
-addition to the expression to compile. There is a *target*, which
+addition to the expression to compile. There is a _target_, which
 specifies the register in which the compiled code is to return the value
-of the expression. There is also a *linkage descriptor*, which describes
+of the expression. There is also a _linkage descriptor_, which describes
 how the code resulting from the compilation of the expression should
 proceed when it has finished its execution. The linkage descriptor can
 require that the code do one of the following three things:
 
--   continue at the next instruction in sequence (this is specified by
-    the linkage descriptor `next`),
--   return from the procedure being compiled (this is specified by the
-    linkage descriptor `return`), or
--   jump to a named entry point (this is specified by using the
-    designated label as the linkage descriptor).
+- continue at the next instruction in sequence (this is specified by
+  the linkage descriptor `next`),
+- return from the procedure being compiled (this is specified by the
+  linkage descriptor `return`), or
+- jump to a named entry point (this is specified by using the
+  designated label as the linkage descriptor).
 
 For example, compiling the expression `5` (which is self-evaluating)
 with a target of the `val` register and a linkage of `next` should
@@ -36599,7 +36354,7 @@ produce the instruction
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (assign val (const 5))
 ```
 
@@ -36610,7 +36365,7 @@ the instructions
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (assign val (const 5))
 (goto (reg continue))
 ```
@@ -36624,7 +36379,7 @@ target `val` register.
 
 ##### Instruction sequences and stack usage
 
-Each code generator returns an *instruction sequence* containing the
+Each code generator returns an _instruction sequence_ containing the
 object code it has generated for the expression. Code generation for a
 compound expression is accomplished by combining the output from simpler
 code generators for component expressions, just as evaluation of a
@@ -36641,7 +36396,7 @@ then evaluating
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (append-instruction-sequences ⟨seq₁⟩ ⟨seq₂⟩)
 ```
 
@@ -36651,7 +36406,7 @@ produces the sequence
 
 <div className="lisp">
 
-``` lisp
+```lisp
 ⟨seq₁⟩
 ⟨seq₂⟩
 ```
@@ -36676,14 +36431,17 @@ $\\langle\\mspace{2mu} seq\_{1}\\rangle$ and
 $\\langle\\mspace{2mu} seq\_{2}\\rangle$ use
 $\\langle\\mspace{2mu} reg\_{1}\\rangle$ and
 $\\langle\\mspace{2mu} reg\_{2}\\rangle$:
-$$\\begin{matrix}
+
+$$
+\\begin{matrix}
 {\\langle\\mspace{2mu}{seq\_{1}}\\rangle} & \\text{(save} & \\text{(save} & {\\text{(save}\\mspace{41mu}\\langle\\mspace{2mu}{reg\_{2}}\\rangle\\text{)}} \\\\
 {\\langle\\mspace{2mu}{seq\_{2}}\\rangle} & {\\mspace{41mu}\\langle\\mspace{2mu}{reg\_{1}}\\rangle\\text{)}} & {\\mspace{41mu}\\langle\\mspace{2mu}{reg\_{2}}\\rangle\\text{)}} & {\\text{(save}\\mspace{41mu}\\langle\\mspace{2mu}{reg\_{1}}\\rangle\\text{)}} \\\\
  & {\\langle\\mspace{2mu}{seq\_{1}}\\rangle} & {\\langle\\mspace{2mu}{seq\_{1}}\\rangle} & {\\langle\\mspace{2mu}{seq\_{1}}\\rangle} \\\\
  & \\text{(restore} & \\text{(restore} & {\\text{(restore}\\mspace{41mu}\\langle\\mspace{2mu}{reg\_{1}}\\rangle\\text{)}} \\\\
  & {\\mspace{41mu}\\langle\\mspace{2mu}{reg\_{1}}\\rangle\\text{)}} & {\\mspace{41mu}\\langle\\mspace{2mu}{reg\_{2}}\\rangle\\text{)}} & {\\text{(restore}\\mspace{41mu}\\langle\\mspace{2mu}{reg\_{2}}\\rangle\\text{)}} \\\\
  & {\\langle\\mspace{2mu}{seq\_{2}}\\rangle} & {\\langle\\mspace{2mu}{seq\_{2}}\\rangle} & {\\langle\\mspace{2mu}{seq\_{2}}\\rangle} \\\\
-\\end{matrix}$$
+\\end{matrix}
+$$
 
 By using `preserving` to combine instruction sequences the compiler
 avoids unnecessary stack operations. This also isolates the details of
@@ -36710,20 +36468,20 @@ information associated with the component sequences.
 
 An instruction sequence will contain three pieces of information:
 
--   the set of registers that must be initialized before the
-    instructions in the sequence are executed (these registers are said
-    to be *needed* by the sequence),
--   the set of registers whose values are modified by the instructions
-    in the sequence, and
--   the actual instructions (also called *statements*) in the sequence.
+- the set of registers that must be initialized before the
+  instructions in the sequence are executed (these registers are said
+  to be _needed_ by the sequence),
+- the set of registers whose values are modified by the instructions
+  in the sequence, and
+- the actual instructions (also called _statements_) in the sequence.
 
 We will represent an instruction sequence as a list of its three parts.
 The constructor for instruction sequences is thus
 
 <div className="lisp">
 
-``` lisp
-(define (make-instruction-sequence 
+```lisp
+(define (make-instruction-sequence
          needs modifies statements)
   (list needs modifies statements))
 ```
@@ -36738,7 +36496,7 @@ be constructed as
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (make-instruction-sequence
  '(env continue)
  '(val)
@@ -36756,7 +36514,7 @@ statements:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (empty-instruction-sequence)
   (make-instruction-sequence '() '() '()))
 ```
@@ -36778,7 +36536,7 @@ The procedures for combining instruction sequences are shown in
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (f 'x 'y)
 > ((f) 'x 'y)
 > (f (g 'x) y)
@@ -36804,7 +36562,7 @@ The procedures for combining instruction sequences are shown in
 >     advantage of compilation altogether. What do you think of this
 >     idea?
 
-#### 5.5.2Compiling Expressions
+#### 5.5.2 Compiling Expressions
 
 In this section and the next we implement the code generators to which
 the `compile` procedure dispatches.
@@ -36823,10 +36581,10 @@ registers.[³²¹](#5_002e5.xhtml#FOOT321)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (compile-linkage linkage)
   (cond ((eq? linkage 'return)
-         (make-instruction-sequence 
+         (make-instruction-sequence
           '(continue)
           '()
           '((goto (reg continue)))))
@@ -36847,8 +36605,8 @@ restored.
 
 <div className="lisp">
 
-``` lisp
-(define (end-with-linkage 
+```lisp
+(define (end-with-linkage
          linkage instruction-sequence)
   (preserving '(continue)
    instruction-sequence
@@ -36866,11 +36624,11 @@ descriptor.
 
 <div className="lisp">
 
-``` lisp
-(define (compile-self-evaluating 
+```lisp
+(define (compile-self-evaluating
          exp target linkage)
   (end-with-linkage
-   linkage (make-instruction-sequence 
+   linkage (make-instruction-sequence
             '()
             (list target)
             `((assign ,target (const ,exp))))))
@@ -36881,15 +36639,15 @@ descriptor.
    (make-instruction-sequence
     '()
     (list target)
-    `((assign 
+    `((assign
        ,target
        (const ,(text-of-quotation exp)))))))
 
 (define (compile-variable
          exp target linkage)
-  (end-with-linkage 
+  (end-with-linkage
    linkage
-   (make-instruction-sequence 
+   (make-instruction-sequence
     '(env)
     (list target)
     `((assign ,target
@@ -36917,17 +36675,17 @@ might modify the registers in arbitrary ways.
 
 <div className="lisp">
 
-``` lisp
-(define (compile-assignment 
+```lisp
+(define (compile-assignment
          exp target linkage)
   (let ((var (assignment-variable exp))
         (get-value-code
-         (compile (assignment-value exp) 
+         (compile (assignment-value exp)
                   'val
                   'next)))
-    (end-with-linkage 
+    (end-with-linkage
      linkage
-     (preserving 
+     (preserving
       '(env)
       get-value-code
       (make-instruction-sequence
@@ -36939,7 +36697,7 @@ might modify the registers in arbitrary ways.
                   (reg env))
          (assign ,target (const ok))))))))
 
-(define (compile-definition 
+(define (compile-definition
          exp target linkage)
   (let ((var (definition-variable exp))
         (get-value-code
@@ -36948,7 +36706,7 @@ might modify the registers in arbitrary ways.
                   'next)))
     (end-with-linkage
      linkage
-     (preserving 
+     (preserving
       '(env)
       get-value-code
       (make-instruction-sequence
@@ -36978,16 +36736,16 @@ has the form
 
 <div className="lisp">
 
-``` lisp
-⟨compilation of predicate, 
+```lisp
+⟨compilation of predicate,
  target val, linkage next⟩
  (test (op false?) (reg val))
  (branch (label false-branch))
 true-branch
- ⟨compilation of consequent with given 
+ ⟨compilation of consequent with given
   target and given linkage or after-if⟩
 false-branch
- ⟨compilation of alternative 
+ ⟨compilation of alternative
   with given target and linkage⟩
 after-if
 ```
@@ -37008,38 +36766,38 @@ the false branch to the label at the end of the conditional.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (compile-if exp target linkage)
   (let ((t-branch (make-label 'true-branch))
         (f-branch (make-label 'false-branch))
         (after-if (make-label 'after-if)))
     (let ((consequent-linkage
-           (if (eq? linkage 'next) 
+           (if (eq? linkage 'next)
                after-if
                linkage)))
-      (let ((p-code 
+      (let ((p-code
              (compile (if-predicate exp)
                       'val
                       'next))
             (c-code
-             (compile (if-consequent exp) 
-                      target 
+             (compile (if-consequent exp)
+                      target
                       consequent-linkage))
             (a-code
              (compile (if-alternative exp)
                       target
                       linkage)))
-        (preserving 
+        (preserving
          '(env continue)
          p-code
          (append-instruction-sequences
-          (make-instruction-sequence 
-           '(val) 
+          (make-instruction-sequence
+           '(val)
            '()
            `((test (op false?) (reg val))
              (branch (label ,f-branch))))
           (parallel-instruction-sequences
-           (append-instruction-sequences 
+           (append-instruction-sequences
             t-branch c-code)
            (append-instruction-sequences
             f-branch a-code))
@@ -37074,7 +36832,7 @@ preserved.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (compile-sequence seq target linkage)
   (if (last-exp? seq)
       (compile (first-exp seq) target linkage)
@@ -37094,8 +36852,8 @@ preserved.
 
 <div className="lisp">
 
-``` lisp
-⟨construct procedure object 
+```lisp
+⟨construct procedure object
  and assign it to target register⟩
 ⟨linkage⟩
 ```
@@ -37113,10 +36871,10 @@ after the body. The object code thus has the form
 
 <div className="lisp">
 
-``` lisp
-⟨construct procedure object 
+```lisp
+⟨construct procedure object
  and assign it to target register⟩
- ⟨code for given linkage⟩ or 
+ ⟨code for given linkage⟩ or
   (goto (label after-lambda))
  ⟨compilation of procedure body⟩
 after-lambda
@@ -37133,11 +36891,11 @@ label).[³²³](#5_002e5.xhtml#FOOT323)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (compile-lambda exp target linkage)
-  (let ((proc-entry 
+  (let ((proc-entry
          (make-label 'entry))
-        (after-lambda 
+        (after-lambda
          (make-label 'after-lambda)))
     (let ((lambda-linkage
            (if (eq? linkage 'next)
@@ -37145,12 +36903,12 @@ label).[³²³](#5_002e5.xhtml#FOOT323)
                linkage)))
       (append-instruction-sequences
        (tack-on-instruction-sequence
-        (end-with-linkage 
+        (end-with-linkage
          lambda-linkage
-         (make-instruction-sequence 
+         (make-instruction-sequence
           '(env)
           (list target)
-          `((assign 
+          `((assign
              ,target
              (op make-compiled-procedure)
              (label ,proc-entry)
@@ -37183,15 +36941,15 @@ by returning from the procedure with the procedure result in `val`.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (compile-lambda-body exp proc-entry)
   (let ((formals (lambda-parameters exp)))
     (append-instruction-sequences
-     (make-instruction-sequence 
+     (make-instruction-sequence
       '(env proc argl)
       '(env)
       `(,proc-entry
-        (assign env 
+        (assign env
                 (op compiled-procedure-env)
                 (reg proc))
         (assign env
@@ -37206,7 +36964,7 @@ by returning from the procedure with the procedure result in `val`.
 
 </div>
 
-#### 5.5.3Compiling Combinations
+#### 5.5.3 Compiling Combinations
 
 The essence of the compilation process is the compilation of procedure
 applications. The code for a combination compiled with a given target
@@ -37214,12 +36972,12 @@ and linkage has the form
 
 <div className="lisp">
 
-``` lisp
-⟨compilation of operator, 
+```lisp
+⟨compilation of operator,
  target proc, linkage next⟩
-⟨evaluate operands and construct 
+⟨evaluate operands and construct
  argument list in argl⟩
-⟨compilation of procedure call 
+⟨compilation of procedure call
  with given target and linkage⟩
 ```
 
@@ -37249,22 +37007,22 @@ needed for the linkage in the procedure call.
 
 <div className="lisp">
 
-``` lisp
-(define (compile-application 
+```lisp
+(define (compile-application
          exp target linkage)
-  (let ((proc-code 
+  (let ((proc-code
          (compile (operator exp) 'proc 'next))
         (operand-codes
          (map (lambda (operand)
                 (compile operand 'val 'next))
               (operands exp))))
-    (preserving 
+    (preserving
      '(env continue)
      proc-code
-     (preserving 
+     (preserving
       '(proc continue)
       (construct-arglist operand-codes)
-      (compile-procedure-call 
+      (compile-procedure-call
        target
        linkage)))))
 ```
@@ -37283,7 +37041,7 @@ of the argument-list construction is thus as follows:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 ⟨compilation of last operand, targeted to val⟩
 (assign argl (op list) (reg val))
 ⟨compilation of next operand, targeted to val⟩
@@ -37308,7 +37066,7 @@ there are no operands at all, it simply emits the instruction
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (assign argl (const ()))
 ```
 
@@ -37322,19 +37080,19 @@ code sequences from the order supplied by `compile-application`.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (construct-arglist operand-codes)
-  (let ((operand-codes 
+  (let ((operand-codes
          (reverse operand-codes)))
     (if (null? operand-codes)
-        (make-instruction-sequence 
-         '() 
+        (make-instruction-sequence
+         '()
          '(argl)
          '((assign argl (const ()))))
         (let ((code-to-get-last-arg
                (append-instruction-sequences
                 (car operand-codes)
-                (make-instruction-sequence 
+                (make-instruction-sequence
                  '(val)
                  '(argl)
                  '((assign argl
@@ -37342,7 +37100,7 @@ code sequences from the order supplied by `compile-application`.
                            (reg val)))))))
           (if (null? (cdr operand-codes))
               code-to-get-last-arg
-              (preserving 
+              (preserving
                '(env)
                code-to-get-last-arg
                (code-to-get-rest-args
@@ -37350,10 +37108,10 @@ code sequences from the order supplied by `compile-application`.
 
 (define (code-to-get-rest-args operand-codes)
   (let ((code-for-next-arg
-         (preserving 
+         (preserving
           '(argl)
           (car operand-codes)
-          (make-instruction-sequence 
+          (make-instruction-sequence
            '(val argl)
            '(argl)
            '((assign argl
@@ -37362,10 +37120,10 @@ code sequences from the order supplied by `compile-application`.
                      (reg argl)))))))
     (if (null? (cdr operand-codes))
         code-for-next-arg
-        (preserving 
+        (preserving
          '(env)
          code-for-next-arg
-         (code-to-get-rest-args 
+         (code-to-get-rest-args
           (cdr operand-codes))))))
 ```
 
@@ -37386,11 +37144,11 @@ procedures. The procedure-application code has the following form:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (test (op primitive-procedure?) (reg proc))
  (branch (label primitive-branch))
 compiled-branch
- ⟨code to apply compiled procedure 
+ ⟨code to apply compiled procedure
   with given target and appropriate linkage⟩
 primitive-branch
  (assign ⟨target⟩
@@ -37411,12 +37169,12 @@ used for the true branch in `compile-if`.)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (compile-procedure-call
          target linkage)
-  (let ((primitive-branch 
+  (let ((primitive-branch
          (make-label 'primitive-branch))
-        (compiled-branch 
+        (compiled-branch
          (make-label 'compiled-branch))
         (after-call
          (make-label 'after-call)))
@@ -37425,18 +37183,18 @@ used for the true branch in `compile-if`.)
                after-call
                linkage)))
       (append-instruction-sequences
-       (make-instruction-sequence 
+       (make-instruction-sequence
         '(proc)
         '()
-        `((test 
+        `((test
            (op primitive-procedure?)
            (reg proc))
-          (branch 
+          (branch
            (label ,primitive-branch))))
        (parallel-instruction-sequences
         (append-instruction-sequences
          compiled-branch
-         (compile-proc-appl 
+         (compile-proc-appl
           target
           compiled-linkage))
         (append-instruction-sequences
@@ -37446,7 +37204,7 @@ used for the true branch in `compile-if`.)
           (make-instruction-sequence
            '(proc argl)
            (list target)
-           `((assign 
+           `((assign
               ,target
               (op apply-primitive-procedure)
               (reg proc)
@@ -37475,15 +37233,15 @@ look like this if the linkage is a label
 
 <div className="lisp">
 
-``` lisp
-(assign continue 
+```lisp
+(assign continue
         (label proc-return))
  (assign val
          (op compiled-procedure-entry)
          (reg proc))
  (goto (reg val))
 proc-return
- (assign ⟨target⟩ 
+ (assign ⟨target⟩
          (reg val))   ; included if target is not val
  (goto (label ⟨linkage⟩))   ; linkage code
 ```
@@ -37494,11 +37252,11 @@ or like this if the linkage is `return`.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (save continue)
- (assign continue 
+ (assign continue
          (label proc-return))
- (assign val 
+ (assign val
          (op compiled-procedure-entry)
          (reg proc))
  (goto (reg val))
@@ -37530,9 +37288,9 @@ simplify the code by setting up `continue` so that the procedure will
 
 <div className="lisp">
 
-``` lisp
+```lisp
 ⟨set up continue for linkage⟩
-(assign val 
+(assign val
         (op compiled-procedure-entry)
         (reg proc))
 (goto (reg val))
@@ -37547,8 +37305,8 @@ at `proc-return` above.)
 
 <div className="lisp">
 
-``` lisp
-(assign continue 
+```lisp
+(assign continue
         (label ⟨linkage⟩))
 (assign val
         (op compiled-procedure-entry)
@@ -37566,7 +37324,7 @@ gone.)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (assign val
         (op compiled-procedure-entry)
         (reg proc))
@@ -37601,30 +37359,30 @@ correct value when we enter the compiled procedure.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (compile-proc-appl target linkage)
   (cond ((and (eq? target 'val)
               (not (eq? linkage 'return)))
-         (make-instruction-sequence 
+         (make-instruction-sequence
           '(proc)
           all-regs
           `((assign continue (label ,linkage))
-            (assign 
-             val 
+            (assign
+             val
              (op compiled-procedure-entry)
              (reg proc))
             (goto (reg val)))))
         ((and (not (eq? target 'val))
               (not (eq? linkage 'return)))
-         (let ((proc-return 
+         (let ((proc-return
                 (make-label 'proc-return)))
-           (make-instruction-sequence 
+           (make-instruction-sequence
             '(proc)
             all-regs
-            `((assign continue 
+            `((assign continue
                       (label ,proc-return))
-              (assign 
-               val 
+              (assign
+               val
                (op compiled-procedure-entry)
                (reg proc))
               (goto (reg val))
@@ -37633,24 +37391,24 @@ correct value when we enter the compiled procedure.
               (goto (label ,linkage))))))
         ((and (eq? target 'val)
               (eq? linkage 'return))
-         (make-instruction-sequence 
-          '(proc continue) 
+         (make-instruction-sequence
+          '(proc continue)
           all-regs
-          '((assign 
-             val 
+          '((assign
+             val
              (op compiled-procedure-entry)
              (reg proc))
             (goto (reg val)))))
         ((and (not (eq? target 'val))
               (eq? linkage 'return))
-         (error "return linkage, 
+         (error "return linkage,
                  target not val: COMPILE"
                 target))))
 ```
 
 </div>
 
-#### 5.5.4Combining Instruction Sequences
+#### 5.5.4 Combining Instruction Sequences
 
 This section describes the details on how instruction sequences are
 represented and combined. Recall from
@@ -37663,7 +37421,7 @@ by instruction sequences we use the selectors
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (registers-needed s)
   (if (symbol? s) '() (car s)))
 (define (registers-modified s)
@@ -37679,7 +37437,7 @@ register we use the predicates
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (needs-register? seq reg)
   (memq reg (registers-needed seq)))
 (define (modifies-register? seq reg)
@@ -37717,13 +37475,13 @@ needed by `seq2` and the registers modified by `seq1`.) Thus,
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (append-instruction-sequences . seqs)
   (define (append-2-sequences seq1 seq2)
     (make-instruction-sequence
-     (list-union 
+     (list-union
       (registers-needed seq1)
-      (list-difference 
+      (list-difference
        (registers-needed seq2)
        (registers-modified seq1)))
      (list-union
@@ -37734,7 +37492,7 @@ needed by `seq2` and the registers modified by `seq1`.) Thus,
   (define (append-seq-list seqs)
     (if (null? seqs)
         (empty-instruction-sequence)
-        (append-2-sequences 
+        (append-2-sequences
          (car seqs)
          (append-seq-list (cdr seqs)))))
   (append-seq-list seqs))
@@ -37748,7 +37506,7 @@ described in [2.3.3](#2_002e3.xhtml#g_t2_002e3_002e3):
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (list-union s1 s2)
   (cond ((null? s1) s2)
         ((memq (car s1) s2)
@@ -37761,7 +37519,7 @@ described in [2.3.3](#2_002e3.xhtml#g_t2_002e3_002e3):
   (cond ((null? s1) '())
         ((memq (car s1) s2)
          (list-difference (cdr s1) s2))
-        (else 
+        (else
          (cons (car s1)
                (list-difference (cdr s1)
                                 s2)))))
@@ -37787,19 +37545,19 @@ preserved:[³²⁷](#5_002e5.xhtml#FOOT327)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (preserving regs seq1 seq2)
   (if (null? regs)
       (append-instruction-sequences seq1 seq2)
       (let ((first-reg (car regs)))
-        (if (and 
+        (if (and
              (needs-register? seq2 first-reg)
-             (modifies-register? seq1 
+             (modifies-register? seq1
                                  first-reg))
-            (preserving 
+            (preserving
              (cdr regs)
              (make-instruction-sequence
-              (list-union 
+              (list-union
                (list first-reg)
                (registers-needed seq1))
               (list-difference
@@ -37809,7 +37567,7 @@ preserved:[³²⁷](#5_002e5.xhtml#FOOT327)
                       (statements seq1)
                       `((restore ,first-reg))))
              seq2)
-            (preserving 
+            (preserving
              (cdr regs)
              seq1
              seq2)))))
@@ -37827,8 +37585,8 @@ other sequence.
 
 <div className="lisp">
 
-``` lisp
-(define (tack-on-instruction-sequence 
+```lisp
+(define (tack-on-instruction-sequence
          seq body-seq)
   (make-instruction-sequence
    (registers-needed seq)
@@ -37849,8 +37607,8 @@ are modified by the first branch.
 
 <div className="lisp">
 
-``` lisp
-(define (parallel-instruction-sequences 
+```lisp
+(define (parallel-instruction-sequences
          seq1 seq2)
   (make-instruction-sequence
    (list-union (registers-needed seq1)
@@ -37863,7 +37621,7 @@ are modified by the first branch.
 
 </div>
 
-#### 5.5.5An Example of Compiled Code
+#### 5.5.5 An Example of Compiled Code
 
 Now that we have seen all the elements of the compiler, let us examine
 an example of compiled code to see how things fit together. We will
@@ -37872,7 +37630,7 @@ compile the definition of a recursive `factorial` procedure by calling
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (compile
  '(define (factorial n)
     (if (= n 1)
@@ -37901,9 +37659,9 @@ compiled code is thus
 
 <div className="lisp">
 
-``` lisp
+```lisp
 ⟨save env if modified by code to compute value⟩
-  ⟨compilation of definition value, 
+  ⟨compilation of definition value,
    target val, linkage next⟩
   ⟨restore env if saved above⟩
   (perform (op define-variable!)
@@ -37933,7 +37691,7 @@ Therefore, the skeleton for the compiled code becomes
 
 <div className="lisp">
 
-``` lisp
+```lisp
   (assign val (op make-compiled-procedure)
               (label entry2)
               (reg env))
@@ -37961,7 +37719,7 @@ case consists of a single `if` expression:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (if (= n 1)
     1
     (* (factorial (- n 1)) n))
@@ -37982,19 +37740,19 @@ branches, is the value of the procedure.)
 
 <div className="lisp">
 
-``` lisp
-⟨save continue, env if modified by 
+```lisp
+⟨save continue, env if modified by
  predicate and needed by branches⟩
-  ⟨compilation of predicate, 
+  ⟨compilation of predicate,
    target val, linkage next⟩
   ⟨restore continue, env if saved above⟩
   (test (op false?) (reg val))
   (branch (label false-branch4))
 true-branch5
-  ⟨compilation of true branch, 
+  ⟨compilation of true branch,
    target val, linkage return⟩
 false-branch4
-  ⟨compilation of false branch, 
+  ⟨compilation of false branch,
    target val, linkage return⟩
 after-if3
 ```
@@ -38013,9 +37771,9 @@ registers in question.
 
 <div className="lisp">
 
-``` lisp
+```lisp
   (assign proc (op lookup-variable-value)
-               (const =) 
+               (const =)
                (reg env))
   (assign val (const 1))
   (assign argl (op list) (reg val))
@@ -38044,7 +37802,7 @@ and linkage `return`) to
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (assign val (const 1))
 (goto (reg continue))
 ```
@@ -38067,36 +37825,36 @@ for the procedure call and the `return` linkage in the branches.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > ;; construct the procedure and skip over code
 > ;; for the procedure body
 >   (assign val
->           (op make-compiled-procedure) 
->           (label entry2) 
+>           (op make-compiled-procedure)
+>           (label entry2)
 >           (reg env))
 >   (goto (label after-lambda1))
 > entry2     ; calls to factorial will enter here
->   (assign env 
+>   (assign env
 >           (op compiled-procedure-env)
 >           (reg proc))
 >   (assign env
->           (op extend-environment) 
->           (const (n)) 
->           (reg argl) 
+>           (op extend-environment)
+>           (const (n))
+>           (reg argl)
 >           (reg env))
 > ;; begin actual procedure body
 >   (save continue)
 >   (save env)
 > ;; compute (= n 1)
->   (assign proc 
->           (op lookup-variable-value) 
->           (const =) 
+>   (assign proc
+>           (op lookup-variable-value)
+>           (const =)
 >           (reg env))
 >   (assign val (const 1))
 >   (assign argl (op list) (reg val))
->   (assign val 
->           (op lookup-variable-value) 
->           (const n) 
+>   (assign val
+>           (op lookup-variable-value)
+>           (const n)
 >           (reg env))
 >   (assign argl (op cons) (reg val) (reg argl))
 >   (test (op primitive-procedure?) (reg proc))
@@ -38108,9 +37866,9 @@ for the procedure call and the `return` linkage in the branches.
 >           (reg proc))
 >   (goto (reg val))
 > primitive-branch17
->   (assign val 
->           (op apply-primitive-procedure) 
->           (reg proc) 
+>   (assign val
+>           (op apply-primitive-procedure)
+>           (reg proc)
 >           (reg argl))
 > after-call15   ; val now contains result of (= n 1)
 >   (restore env)
@@ -38123,35 +37881,35 @@ for the procedure call and the `return` linkage in the branches.
 >
 > false-branch4
 > ;; compute and return (* (factorial (- n 1)) n)
->   (assign proc 
->           (op lookup-variable-value) 
->           (const *) 
+>   (assign proc
+>           (op lookup-variable-value)
+>           (const *)
 >           (reg env))
 >   (save continue)
 >   (save proc)   ; save * procedure
->   (assign val 
->           (op lookup-variable-value) 
->           (const n) 
+>   (assign val
+>           (op lookup-variable-value)
+>           (const n)
 >           (reg env))
 >   (assign argl (op list) (reg val))
 >   (save argl)   ; save partial argument list for *
-> ;; compute (factorial (- n 1)), 
+> ;; compute (factorial (- n 1)),
 > ;; which is the other argument for *
 >   (assign proc
->           (op lookup-variable-value) 
->           (const factorial) 
+>           (op lookup-variable-value)
+>           (const factorial)
 >           (reg env))
 >   (save proc)  ; save factorial procedure
 > ;; compute (- n 1), which is the argument for factorial
->   (assign proc 
+>   (assign proc
 >           (op lookup-variable-value)
->           (const -) 
+>           (const -)
 >           (reg env))
 >   (assign val (const 1))
 >   (assign argl (op list) (reg val))
->   (assign val 
->           (op lookup-variable-value) 
->           (const n) 
+>   (assign val
+>           (op lookup-variable-value)
+>           (const n)
 >           (reg env))
 >   (assign argl (op cons) (reg val) (reg argl))
 >   (test (op primitive-procedure?) (reg proc))
@@ -38163,9 +37921,9 @@ for the procedure call and the `return` linkage in the branches.
 >           (reg proc))
 >   (goto (reg val))
 > primitive-branch8
->   (assign val 
->           (op apply-primitive-procedure) 
->           (reg proc) 
+>   (assign val
+>           (op apply-primitive-procedure)
+>           (reg proc)
 >           (reg argl))
 >
 > after-call6   ; val now contains result of (- n 1)
@@ -38181,11 +37939,11 @@ for the procedure call and the `return` linkage in the branches.
 >           (reg proc))
 >   (goto (reg val))
 > primitive-branch11
->   (assign val 
->           (op apply-primitive-procedure) 
->           (reg proc) 
+>   (assign val
+>           (op apply-primitive-procedure)
+>           (reg proc)
 >           (reg argl))
-> after-call9      ; val now contains result 
+> after-call9      ; val now contains result
 >                  ; of (factorial (- n 1))
 >   (restore argl) ; restore partial argument list for *
 >   (assign argl (op cons) (reg val) (reg argl))
@@ -38202,18 +37960,18 @@ for the procedure call and the `return` linkage in the branches.
 >           (reg proc))
 >   (goto (reg val))
 > primitive-branch14
->   (assign val 
->           (op apply-primitive-procedure) 
->           (reg proc) 
+>   (assign val
+>           (op apply-primitive-procedure)
+>           (reg proc)
 >           (reg argl))
 >   (goto (reg continue))
 > after-call12
 > after-if3
 > after-lambda1
 > ;; assign the procedure to the variable factorial
->   (perform (op define-variable!) 
->            (const factorial) 
->            (reg val) 
+>   (perform (op define-variable!)
+>            (const factorial)
+>            (reg val)
 >            (reg env))
 >   (assign val (const ok))
 > ```
@@ -38225,7 +37983,7 @@ for the procedure call and the `return` linkage in the branches.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (factorial-alt n)
 >   (if (= n 1)
 >       1
@@ -38242,7 +38000,7 @@ for the procedure call and the `return` linkage in the branches.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (factorial n)
 >   (define (iter product counter)
 >     (if (> counter n)
@@ -38267,33 +38025,33 @@ for the procedure call and the `return` linkage in the branches.
 >
 > <div className="lisp">
 >
-> ``` lisp
-> (assign val (op make-compiled-procedure) 
->             (label entry16) 
+> ```lisp
+> (assign val (op make-compiled-procedure)
+>             (label entry16)
 >             (reg env))
 >   (goto (label after-lambda15))
 > entry16
 >   (assign env (op compiled-procedure-env)
 >               (reg proc))
->   (assign env (op extend-environment) 
->               (const (x)) 
->               (reg argl) 
+>   (assign env (op extend-environment)
+>               (const (x))
+>               (reg argl)
 >               (reg env))
->   (assign proc (op lookup-variable-value) 
->                (const +) 
+>   (assign proc (op lookup-variable-value)
+>                (const +)
 >                (reg env))
 >   (save continue) (save proc) (save env)
->   (assign proc (op lookup-variable-value) 
->                (const g) 
+>   (assign proc (op lookup-variable-value)
+>                (const g)
 >                (reg env))
 >   (save proc)
->   (assign proc (op lookup-variable-value) 
->                (const +) 
+>   (assign proc (op lookup-variable-value)
+>                (const +)
 >                (reg env))
 >   (assign val (const 2))
 >   (assign argl (op list) (reg val))
 >   (assign val (op lookup-variable-value)
->               (const x) 
+>               (const x)
 >               (reg env))
 >   (assign argl (op cons)
 >                (reg val)
@@ -38310,7 +38068,7 @@ for the procedure call and the `return` linkage in the branches.
 > primitive-branch19
 >   (assign val
 >           (op apply-primitive-procedure)
->           (reg proc) 
+>           (reg proc)
 >           (reg argl))
 > after-call17
 >   (assign argl (op list) (reg val))
@@ -38325,16 +38083,16 @@ for the procedure call and the `return` linkage in the branches.
 >           (reg proc))
 >   (goto (reg val))
 > primitive-branch22
->   (assign val 
->           (op apply-primitive-procedure) 
->           (reg proc) 
+>   (assign val
+>           (op apply-primitive-procedure)
+>           (reg proc)
 >           (reg argl))
 > after-call20
 >   (assign argl (op list) (reg val))
 >   (restore env)
 >   (assign val
->           (op lookup-variable-value) 
->           (const x) 
+>           (op lookup-variable-value)
+>           (const x)
 >           (reg env))
 >   (assign argl
 >           (op cons)
@@ -38350,16 +38108,16 @@ for the procedure call and the `return` linkage in the branches.
 >               (reg proc))
 >   (goto (reg val))
 > primitive-branch25
->   (assign val 
+>   (assign val
 >           (op apply-primitive-procedure)
->           (reg proc) 
+>           (reg proc)
 >           (reg argl))
 >   (goto (reg continue))
 > after-call23
 > after-lambda15
->   (perform (op define-variable!) 
->            (const f) 
->            (reg val) 
+>   (perform (op define-variable!)
+>            (const f)
+>            (reg val)
 >            (reg env))
 >   (assign val (const ok))
 > ```
@@ -38398,15 +38156,15 @@ for the procedure call and the `return` linkage in the branches.
 > implements primitives, but we presume that these instructions make use
 > of primitive arithmetic operations in the machine’s data paths.
 > Consider how much less code would be generated if the compiler could
-> *open-code* primitives—that is, if it could generate code to directly
+> _open-code_ primitives—that is, if it could generate code to directly
 > use these primitive machine operations. The expression `(+ a 1)` might
 > be compiled into something as simple as[³²⁸](#5_002e5.xhtml#FOOT328)
 >
 > <div className="lisp">
 >
-> ``` lisp
-> (assign val (op lookup-variable-value) 
->             (const a) 
+> ```lisp
+> (assign val (op lookup-variable-value)
+>             (const a)
 >             (reg env))
 > (assign val (op +)
 >             (reg val)
@@ -38454,7 +38212,7 @@ for the procedure call and the `return` linkage in the branches.
 >     expression with more than two operands will have to be compiled
 >     into a sequence of operations, each with only two inputs.
 
-#### 5.5.6Lexical Addressing
+#### 5.5.6 Lexical Addressing
 
 One of the most common optimizations performed by compilers is the
 optimization of variable lookup. Our compiler, as we have implemented it
@@ -38469,7 +38227,7 @@ that is returned by
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (let ((x 3) (y 4))
   (lambda (a b c d e)
     (let ((y (* a b x))
@@ -38484,7 +38242,7 @@ combination, this expression is equivalent to
 
 <div className="lisp">
 
-``` lisp
+```lisp
 ((lambda (x y)
    (lambda (a b c d e)
      ((lambda (y z) (* x y z))
@@ -38510,9 +38268,9 @@ from the current frame and will be the first variable in that frame.
 
 We can exploit this fact by inventing a new kind of variable-lookup
 operation, `lexical-address-lookup`, that takes as arguments an
-environment and a *lexical address* that consists of two numbers: a
-*frame number*, which specifies how many frames to pass over, and a
-*displacement number*, which specifies how many variables to pass over
+environment and a _lexical address_ that consists of two numbers: a
+_frame number_, which specifies how many frames to pass over, and a
+_displacement number_, which specifies how many variables to pass over
 in that frame. `Lexical-address-lookup` will produce the value of the
 variable stored at that lexical address relative to the current
 environment. If we add the `lexical-address-lookup` operation to our
@@ -38525,14 +38283,14 @@ In order to generate such code, the compiler must be able to determine
 the lexical address of a variable it is about to compile a reference to.
 The lexical address of a variable in a program depends on where one is
 in the code. For example, in the following program, the address of `x`
-in expression `⟨``e1``⟩` is (2, 0)—two frames back and the first
+in expression ` ⟨``e1``⟩ ` is (2, 0)—two frames back and the first
 variable in the frame. At that point `y` is at address (0, 0) and `c` is
-at address (1, 2). In expression `⟨``e2``⟩`, `x` is at (1, 0), `y` is at
+at address (1, 2). In expression ` ⟨``e2``⟩ `, `x` is at (1, 0), `y` is at
 (1, 1), and `c` is at (0, 2).
 
 <div className="lisp">
 
-``` lisp
+```lisp
 ((lambda (x y)
    (lambda (a b c d e)
      ((lambda (y z) ⟨e1⟩)
@@ -38545,7 +38303,7 @@ at address (1, 2). In expression `⟨``e2``⟩`, `x` is at (1, 0), `y` is at
 </div>
 
 One way for the compiler to produce code that uses lexical addressing is
-to maintain a data structure called a *compile-time environment*. This
+to maintain a data structure called a _compile-time environment_. This
 keeps track of which variables will be at which positions in which
 frames in the run-time environment when a particular variable-access
 operation is executed. The compile-time environment is a list of frames,
@@ -38587,21 +38345,21 @@ compile-time environment.
 > arguments a variable and a compile-time environment and returns the
 > lexical address of the variable with respect to that environment. For
 > example, in the program fragment that is shown above, the compile-time
-> environment during the compilation of expression `⟨``e1``⟩` is
+> environment during the compilation of expression ` ⟨``e1``⟩ ` is
 > `((y z) (a b c d e) (x y))`. `Find-variable` should produce
 >
 > <div className="lisp">
 >
-> ``` lisp
-> (find-variable 
+> ```lisp
+> (find-variable
 >  'c '((y z) (a b c d e) (x y)))
 > (1 2)
 >
-> (find-variable 
+> (find-variable
 >  'x '((y z) (a b c d e) (x y)))
 > (2 0)
 >
-> (find-variable 
+> (find-variable
 >  'w '((y z) (a b c d e) (x y)))
 > not-found
 > ```
@@ -38650,7 +38408,7 @@ compile-time environment.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (lambda (+ * a b x y)
 >   (+ (* a x) (* b y)))
 > ```
@@ -38666,7 +38424,7 @@ compile-time environment.
 > procedures. (The code will work correctly as long as the program does
 > not `define` or `set!` these names.)
 
-#### 5.5.7Interfacing Compiled Code to the Evaluator
+#### 5.5.7 Interfacing Compiled Code to the Evaluator
 
 We have not yet explained how to load compiled code into the evaluator
 machine or how to run it. We will assume that the
@@ -38683,7 +38441,7 @@ compiled procedure into the machine and use the evaluator to call it:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (compile-and-go
  '(define (factorial n)
     (if (= n 1)
@@ -38711,7 +38469,7 @@ compiled code:[³³³](#5_002e5.xhtml#FOOT333)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 apply-dispatch
   (test (op primitive-procedure?) (reg proc))
   (branch (label primitive-apply))
@@ -38744,9 +38502,9 @@ machine, which causes the machine to go to a new entry point if the
 
 <div className="lisp">
 
-``` lisp
+```lisp
 ;; branches if flag is set:
-(branch (label external-entry)) 
+(branch (label external-entry))
 read-eval-print-loop
   (perform (op initialize-stack))
   …
@@ -38764,7 +38522,7 @@ read-eval-print loop.[³³⁵](#5_002e5.xhtml#FOOT335)
 
 <div className="lisp">
 
-``` lisp
+```lisp
 external-entry
   (perform (op initialize-stack))
   (assign env (op get-global-environment))
@@ -38788,19 +38546,19 @@ the evaluator will go to `external-entry`, and start the evaluator.
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (compile-and-go expression)
   (let ((instructions
-         (assemble 
+         (assemble
           (statements
-           (compile 
+           (compile
             expression 'val 'return))
           eceval)))
     (set! the-global-environment
           (setup-environment))
-    (set-register-contents! 
+    (set-register-contents!
      eceval 'val instructions)
-    (set-register-contents! 
+    (set-register-contents!
      eceval 'flag true)
     (start eceval)))
 ```
@@ -38813,7 +38571,7 @@ of compiled code:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (compile-and-go
  '(define (factorial n)
     (if (= n 1)
@@ -38883,8 +38641,8 @@ produce an interpreter that runs on the new machine.
 > of the quality of the compiler.
 >
 > 1.  [Exercise 5.27](#5_002e4.xhtml#Exercise-5_002e27) asked you to
->     determine, as a function of *n*, the number of pushes and the
->     maximum stack depth needed by the evaluator to compute *n*! using
+>     determine, as a function of _n_, the number of pushes and the
+>     maximum stack depth needed by the evaluator to compute _n_! using
 >     the recursive factorial procedure given above. [Exercise
 >     5.14](#5_002e2.xhtml#Exercise-5_002e14) asked you to do the same
 >     measurements for the special-purpose factorial machine shown in
@@ -38894,8 +38652,8 @@ produce an interpreter that runs on the new machine.
 >     Take the ratio of the number of pushes in the compiled version to
 >     the number of pushes in the interpreted version, and do the same
 >     for the maximum stack depth. Since the number of operations and
->     the stack depth used to compute *n*! are linear in *n*, these
->     ratios should approach constants as *n* becomes large. What are
+>     the stack depth used to compute _n_! are linear in _n_, these
+>     ratios should approach constants as _n_ becomes large. What are
 >     these constants? Similarly, find the ratios of the stack usage in
 >     the special-purpose machine to the usage in the interpreted
 >     version.
@@ -38917,7 +38675,7 @@ produce an interpreter that runs on the new machine.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > (define (fib n)
 >   (if (< n 2)
 >       n
@@ -38930,9 +38688,9 @@ produce an interpreter that runs on the new machine.
 > machine of [Figure 5.12](#5_002e1.xhtml#Figure-5_002e12). (For
 > measurement of the interpreted performance, see [Exercise
 > 5.29](#5_002e4.xhtml#Exercise-5_002e29).) For Fibonacci, the time
-> resource used is not linear in *n*; hence the ratios of stack
+> resource used is not linear in _n_; hence the ratios of stack
 > operations will not approach a limiting value that is independent of
-> *n*.
+> _n_.
 
 > **Exercise 5.47:** This section described how to modify the
 > explicit-control evaluator so that interpreted code can call compiled
@@ -38951,7 +38709,7 @@ produce an interpreter that runs on the new machine.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 >   (assign compapp (label compound-apply))
 >   ;; branches if flag is set:
 >   (branch (label external-entry))
@@ -38973,7 +38731,7 @@ produce an interpreter that runs on the new machine.
 >
 > <div className="lisp">
 >
-> ``` lisp
+> ```lisp
 > ;;; EC-Eval input:
 > (compile-and-run
 >  '(define (factorial n)
@@ -39066,7 +38824,7 @@ simulation.)
 <div id="5_002e5.xhtml#FOOT321">
 
 [³²¹](#5_002e5.xhtml#DOCF321) This procedure uses a feature of Lisp
-called *backquote* (or *quasiquote*) that is handy for constructing
+called _backquote_ (or _quasiquote_) that is handy for constructing
 lists. Preceding a list with a backquote symbol is much like quoting it,
 except that anything in the list that is flagged with a comma is
 evaluated.
@@ -39076,7 +38834,7 @@ the expression
 
 <div className="lisp">
 
-``` lisp
+```lisp
 `((goto (label ,linkage)))
 ```
 
@@ -39086,8 +38844,8 @@ evaluates to the list
 
 <div className="lisp">
 
-``` lisp
-((goto (label branch25))) 
+```lisp
+((goto (label branch25)))
 ```
 
 </div>
@@ -39096,8 +38854,8 @@ Similarly, if the value of `x` is the list `(a b c)`, then
 
 <div className="lisp">
 
-``` lisp
-`(1 2 ,(car x)) 
+```lisp
+`(1 2 ,(car x))
 ```
 
 </div>
@@ -39106,7 +38864,7 @@ evaluates to the list
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (1 2 a)
 ```
 
@@ -39127,7 +38885,7 @@ generation of unique variable names in the query language, as follows:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define label-counter 0)
 
 (define (new-label-number)
@@ -39136,7 +38894,7 @@ generation of unique variable names in the query language, as follows:
 
 (define (make-label name)
   (string->symbol
-   (string-append 
+   (string-append
     (symbol->string name)
     (number->string (new-label-number)))))
 ```
@@ -39154,12 +38912,12 @@ structure for compound procedures described in
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (make-compiled-procedure entry env)
   (list 'compiled-procedure entry env))
 (define (compiled-procedure? proc)
   (tagged-list? proc 'compiled-procedure))
-(define (compiled-procedure-entry c-proc) 
+(define (compiled-procedure-entry c-proc)
   (cadr c-proc))
 (define (compiled-procedure-env c-proc)
   (caddr c-proc))
@@ -39210,7 +38968,7 @@ list of names of all the registers:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define all-regs '(env proc val argl continue))
 ```
 
@@ -39297,7 +39055,7 @@ read-eval-print loop, we could use
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (start-eceval)
   (set! the-global-environment
         (setup-environment))
@@ -39319,10 +39077,10 @@ procedure:
 
 <div className="lisp">
 
-``` lisp
+```lisp
 (define (user-print object)
   (cond ((compound-procedure? object)
-         (display 
+         (display
           (list 'compound-procedure
                 (procedure-parameters object)
                 (procedure-body object)
@@ -39399,20 +39157,9 @@ because the results are extremely sensitive to minuscule details.
 
 </div>
 
-Next: [References](#References.xhtml#References), Prev:
-[5.4](#5_002e4.xhtml#g_t5_002e4), Up: [5.5](#5_002e5.xhtml#g_t5_002e5)  
-\[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
-
 </div>
 
-[⇣](#5_002e5.xhtml#pagebottom)
-
 <div className="section">
-
-[⇡](#References.xhtml#pagetop)
-Next: [Exercises](#Exercises.xhtml#Exercises), Prev:
-[5.5](#5_002e5.xhtml#g_t5_002e5), Up: [Top](#index.xhtml#Top)  
-\[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
 
 ## References
 
@@ -39539,7 +39286,7 @@ Friedman, Daniel P., Mitchell Wand, and Christopher T. Haynes. 1992.
 Essentials of Programming Languages. Cambridge, MA: MIT
 Press/McGraw-Hill.
 
-Gabriel, Richard P. 1988. The Why of *Y*. Lisp Pointers 2(2): 15-25.
+Gabriel, Richard P. 1988. The Why of _Y_. Lisp Pointers 2(2): 15-25.
 [–›](http://www.dreamsongs.com/Files/WhyOfY.pdf)
 
 Goldberg, Adele, and David Robson. 1983. Smalltalk-80: The Language and
@@ -39855,27 +39602,16 @@ Science, MIT.
 Zippel, Richard. 1993. Effective Polynomial Computation. Boston, MA:
 Kluwer Academic Publishers.
 
-Next: [Exercises](#Exercises.xhtml#Exercises), Prev:
-[5.5](#5_002e5.xhtml#g_t5_002e5), Up: [Top](#index.xhtml#Top)  
-\[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
-
 </div>
 
-[⇣](#References.xhtml#pagebottom)
-
 <div className="section">
-
-[⇡](#Exercises.xhtml#pagetop)
-Next: [Figures](#Figures.xhtml#Figures), Prev:
-[References](#References.xhtml#References), Up: [Top](#index.xhtml#Top)
-  \[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
 
 ## List of Exercises
 
 ##### Chapter 1
 
 |                                          |                                          |                                          |                                          |                                          |                                          |                                          |                                          |
-|------------------------------------------|------------------------------------------|------------------------------------------|------------------------------------------|------------------------------------------|------------------------------------------|------------------------------------------|------------------------------------------|
+| ---------------------------------------- | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- |
 | [1.1](#1_002e1.xhtml#Exercise-1_002e1)   | [1.2](#1_002e1.xhtml#Exercise-1_002e2)   | [1.3](#1_002e1.xhtml#Exercise-1_002e3)   | [1.4](#1_002e1.xhtml#Exercise-1_002e4)   | [1.5](#1_002e1.xhtml#Exercise-1_002e5)   | [1.6](#1_002e1.xhtml#Exercise-1_002e6)   | [1.7](#1_002e1.xhtml#Exercise-1_002e7)   | [1.8](#1_002e1.xhtml#Exercise-1_002e8)   |
 | [1.9](#1_002e2.xhtml#Exercise-1_002e9)   | [1.10](#1_002e2.xhtml#Exercise-1_002e10) | [1.11](#1_002e2.xhtml#Exercise-1_002e11) | [1.12](#1_002e2.xhtml#Exercise-1_002e12) | [1.13](#1_002e2.xhtml#Exercise-1_002e13) | [1.14](#1_002e2.xhtml#Exercise-1_002e14) | [1.15](#1_002e2.xhtml#Exercise-1_002e15) | [1.16](#1_002e2.xhtml#Exercise-1_002e16) |
 | [1.17](#1_002e2.xhtml#Exercise-1_002e17) | [1.18](#1_002e2.xhtml#Exercise-1_002e18) | [1.19](#1_002e2.xhtml#Exercise-1_002e19) | [1.20](#1_002e2.xhtml#Exercise-1_002e20) | [1.21](#1_002e2.xhtml#Exercise-1_002e21) | [1.22](#1_002e2.xhtml#Exercise-1_002e22) | [1.23](#1_002e2.xhtml#Exercise-1_002e23) | [1.24](#1_002e2.xhtml#Exercise-1_002e24) |
@@ -39886,7 +39622,7 @@ Next: [Figures](#Figures.xhtml#Figures), Prev:
 ##### Chapter 2
 
 |                                          |                                          |                                          |                                          |                                          |                                          |                                          |                                          |
-|------------------------------------------|------------------------------------------|------------------------------------------|------------------------------------------|------------------------------------------|------------------------------------------|------------------------------------------|------------------------------------------|
+| ---------------------------------------- | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- |
 | [2.1](#2_002e1.xhtml#Exercise-2_002e1)   | [2.2](#2_002e1.xhtml#Exercise-2_002e2)   | [2.3](#2_002e1.xhtml#Exercise-2_002e3)   | [2.4](#2_002e1.xhtml#Exercise-2_002e4)   | [2.5](#2_002e1.xhtml#Exercise-2_002e5)   | [2.6](#2_002e1.xhtml#Exercise-2_002e6)   | [2.7](#2_002e1.xhtml#Exercise-2_002e7)   | [2.8](#2_002e1.xhtml#Exercise-2_002e8)   |
 | [2.9](#2_002e1.xhtml#Exercise-2_002e9)   | [2.10](#2_002e1.xhtml#Exercise-2_002e10) | [2.11](#2_002e1.xhtml#Exercise-2_002e11) | [2.12](#2_002e1.xhtml#Exercise-2_002e12) | [2.13](#2_002e1.xhtml#Exercise-2_002e13) | [2.14](#2_002e1.xhtml#Exercise-2_002e14) | [2.15](#2_002e1.xhtml#Exercise-2_002e15) | [2.16](#2_002e1.xhtml#Exercise-2_002e16) |
 | [2.17](#2_002e2.xhtml#Exercise-2_002e17) | [2.18](#2_002e2.xhtml#Exercise-2_002e18) | [2.19](#2_002e2.xhtml#Exercise-2_002e19) | [2.20](#2_002e2.xhtml#Exercise-2_002e20) | [2.21](#2_002e2.xhtml#Exercise-2_002e21) | [2.22](#2_002e2.xhtml#Exercise-2_002e22) | [2.23](#2_002e2.xhtml#Exercise-2_002e23) | [2.24](#2_002e2.xhtml#Exercise-2_002e24) |
@@ -39904,7 +39640,7 @@ Next: [Figures](#Figures.xhtml#Figures), Prev:
 ##### Chapter 3
 
 |                                          |                                          |                                          |                                          |                                          |                                          |                                          |                                          |
-|------------------------------------------|------------------------------------------|------------------------------------------|------------------------------------------|------------------------------------------|------------------------------------------|------------------------------------------|------------------------------------------|
+| ---------------------------------------- | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- |
 | [3.1](#3_002e1.xhtml#Exercise-3_002e1)   | [3.2](#3_002e1.xhtml#Exercise-3_002e2)   | [3.3](#3_002e1.xhtml#Exercise-3_002e3)   | [3.4](#3_002e1.xhtml#Exercise-3_002e4)   | [3.5](#3_002e1.xhtml#Exercise-3_002e5)   | [3.6](#3_002e1.xhtml#Exercise-3_002e6)   | [3.7](#3_002e1.xhtml#Exercise-3_002e7)   | [3.8](#3_002e1.xhtml#Exercise-3_002e8)   |
 | [3.9](#3_002e2.xhtml#Exercise-3_002e9)   | [3.10](#3_002e2.xhtml#Exercise-3_002e10) | [3.11](#3_002e2.xhtml#Exercise-3_002e11) | [3.12](#3_002e3.xhtml#Exercise-3_002e12) | [3.13](#3_002e3.xhtml#Exercise-3_002e13) | [3.14](#3_002e3.xhtml#Exercise-3_002e14) | [3.15](#3_002e3.xhtml#Exercise-3_002e15) | [3.16](#3_002e3.xhtml#Exercise-3_002e16) |
 | [3.17](#3_002e3.xhtml#Exercise-3_002e17) | [3.18](#3_002e3.xhtml#Exercise-3_002e18) | [3.19](#3_002e3.xhtml#Exercise-3_002e19) | [3.20](#3_002e3.xhtml#Exercise-3_002e20) | [3.21](#3_002e3.xhtml#Exercise-3_002e21) | [3.22](#3_002e3.xhtml#Exercise-3_002e22) | [3.23](#3_002e3.xhtml#Exercise-3_002e23) | [3.24](#3_002e3.xhtml#Exercise-3_002e24) |
@@ -39920,7 +39656,7 @@ Next: [Figures](#Figures.xhtml#Figures), Prev:
 ##### Chapter 4
 
 |                                          |                                          |                                          |                                          |                                          |                                          |                                          |                                          |
-|------------------------------------------|------------------------------------------|------------------------------------------|------------------------------------------|------------------------------------------|------------------------------------------|------------------------------------------|------------------------------------------|
+| ---------------------------------------- | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- |
 | [4.1](#4_002e1.xhtml#Exercise-4_002e1)   | [4.2](#4_002e1.xhtml#Exercise-4_002e2)   | [4.3](#4_002e1.xhtml#Exercise-4_002e3)   | [4.4](#4_002e1.xhtml#Exercise-4_002e4)   | [4.5](#4_002e1.xhtml#Exercise-4_002e5)   | [4.6](#4_002e1.xhtml#Exercise-4_002e6)   | [4.7](#4_002e1.xhtml#Exercise-4_002e7)   | [4.8](#4_002e1.xhtml#Exercise-4_002e8)   |
 | [4.9](#4_002e1.xhtml#Exercise-4_002e9)   | [4.10](#4_002e1.xhtml#Exercise-4_002e10) | [4.11](#4_002e1.xhtml#Exercise-4_002e11) | [4.12](#4_002e1.xhtml#Exercise-4_002e12) | [4.13](#4_002e1.xhtml#Exercise-4_002e13) | [4.14](#4_002e1.xhtml#Exercise-4_002e14) | [4.15](#4_002e1.xhtml#Exercise-4_002e15) | [4.16](#4_002e1.xhtml#Exercise-4_002e16) |
 | [4.17](#4_002e1.xhtml#Exercise-4_002e17) | [4.18](#4_002e1.xhtml#Exercise-4_002e18) | [4.19](#4_002e1.xhtml#Exercise-4_002e19) | [4.20](#4_002e1.xhtml#Exercise-4_002e20) | [4.21](#4_002e1.xhtml#Exercise-4_002e21) | [4.22](#4_002e1.xhtml#Exercise-4_002e22) | [4.23](#4_002e1.xhtml#Exercise-4_002e23) | [4.24](#4_002e1.xhtml#Exercise-4_002e24) |
@@ -39935,7 +39671,7 @@ Next: [Figures](#Figures.xhtml#Figures), Prev:
 ##### Chapter 5
 
 |                                          |                                          |                                          |                                          |                                          |                                          |                                          |                                          |
-|------------------------------------------|------------------------------------------|------------------------------------------|------------------------------------------|------------------------------------------|------------------------------------------|------------------------------------------|------------------------------------------|
+| ---------------------------------------- | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- |
 | [5.1](#5_002e1.xhtml#Exercise-5_002e1)   | [5.2](#5_002e1.xhtml#Exercise-5_002e2)   | [5.3](#5_002e1.xhtml#Exercise-5_002e3)   | [5.4](#5_002e1.xhtml#Exercise-5_002e4)   | [5.5](#5_002e1.xhtml#Exercise-5_002e5)   | [5.6](#5_002e1.xhtml#Exercise-5_002e6)   | [5.7](#5_002e2.xhtml#Exercise-5_002e7)   | [5.8](#5_002e2.xhtml#Exercise-5_002e8)   |
 | [5.9](#5_002e2.xhtml#Exercise-5_002e9)   | [5.10](#5_002e2.xhtml#Exercise-5_002e10) | [5.11](#5_002e2.xhtml#Exercise-5_002e11) | [5.12](#5_002e2.xhtml#Exercise-5_002e12) | [5.13](#5_002e2.xhtml#Exercise-5_002e13) | [5.14](#5_002e2.xhtml#Exercise-5_002e14) | [5.15](#5_002e2.xhtml#Exercise-5_002e15) | [5.16](#5_002e2.xhtml#Exercise-5_002e16) |
 | [5.17](#5_002e2.xhtml#Exercise-5_002e17) | [5.18](#5_002e2.xhtml#Exercise-5_002e18) | [5.19](#5_002e2.xhtml#Exercise-5_002e19) | [5.20](#5_002e3.xhtml#Exercise-5_002e20) | [5.21](#5_002e3.xhtml#Exercise-5_002e21) | [5.22](#5_002e3.xhtml#Exercise-5_002e22) | [5.23](#5_002e4.xhtml#Exercise-5_002e23) | [5.24](#5_002e4.xhtml#Exercise-5_002e24) |
@@ -39944,33 +39680,22 @@ Next: [Figures](#Figures.xhtml#Figures), Prev:
 | [5.41](#5_002e5.xhtml#Exercise-5_002e41) | [5.42](#5_002e5.xhtml#Exercise-5_002e42) | [5.43](#5_002e5.xhtml#Exercise-5_002e43) | [5.44](#5_002e5.xhtml#Exercise-5_002e44) | [5.45](#5_002e5.xhtml#Exercise-5_002e45) | [5.46](#5_002e5.xhtml#Exercise-5_002e46) | [5.47](#5_002e5.xhtml#Exercise-5_002e47) | [5.48](#5_002e5.xhtml#Exercise-5_002e48) |
 | [5.49](#5_002e5.xhtml#Exercise-5_002e49) | [5.50](#5_002e5.xhtml#Exercise-5_002e50) | [5.51](#5_002e5.xhtml#Exercise-5_002e51) | [5.52](#5_002e5.xhtml#Exercise-5_002e52) |                                          |                                          |                                          |                                          |
 
-Next: [Figures](#Figures.xhtml#Figures), Prev:
-[References](#References.xhtml#References), Up: [Top](#index.xhtml#Top)
-  \[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
-
 </div>
 
-[⇣](#Exercises.xhtml#pagebottom)
-
 <div className="section">
-
-[⇡](#Figures.xhtml#pagetop)
-Next: [Term Index](#Term-Index.xhtml#Term-Index), Prev:
-[Exercises](#Exercises.xhtml#Exercises), Up: [Top](#index.xhtml#Top)  
-\[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
 
 ## List of Figures
 
 ##### Chapter 1
 
 |                                      |                                      |                                      |                                      |                                      |     |
-|--------------------------------------|--------------------------------------|--------------------------------------|--------------------------------------|--------------------------------------|-----|
+| ------------------------------------ | ------------------------------------ | ------------------------------------ | ------------------------------------ | ------------------------------------ | --- |
 | [1.1](#1_002e1.xhtml#Figure-1_002e1) | [1.2](#1_002e1.xhtml#Figure-1_002e2) | [1.3](#1_002e2.xhtml#Figure-1_002e3) | [1.4](#1_002e2.xhtml#Figure-1_002e4) | [1.5](#1_002e2.xhtml#Figure-1_002e5) |     |
 
 ##### Chapter 2
 
 |                                        |                                        |                                        |                                        |                                        |                                        |                                        |                                        |
-|----------------------------------------|----------------------------------------|----------------------------------------|----------------------------------------|----------------------------------------|----------------------------------------|----------------------------------------|----------------------------------------|
+| -------------------------------------- | -------------------------------------- | -------------------------------------- | -------------------------------------- | -------------------------------------- | -------------------------------------- | -------------------------------------- | -------------------------------------- |
 | [2.1](#2_002e1.xhtml#Figure-2_002e1)   | [2.2](#2_002e2.xhtml#Figure-2_002e2)   | [2.3](#2_002e2.xhtml#Figure-2_002e3)   | [2.4](#2_002e2.xhtml#Figure-2_002e4)   | [2.5](#2_002e2.xhtml#Figure-2_002e5)   | [2.6](#2_002e2.xhtml#Figure-2_002e6)   | [2.7](#2_002e2.xhtml#Figure-2_002e7)   | [2.8](#2_002e2.xhtml#Figure-2_002e8)   |
 | [2.9](#2_002e2.xhtml#Figure-2_002e9)   | [2.10](#2_002e2.xhtml#Figure-2_002e10) | [2.11](#2_002e2.xhtml#Figure-2_002e11) | [2.12](#2_002e2.xhtml#Figure-2_002e12) | [2.13](#2_002e2.xhtml#Figure-2_002e13) | [2.14](#2_002e2.xhtml#Figure-2_002e14) | [2.15](#2_002e2.xhtml#Figure-2_002e15) | [2.16](#2_002e3.xhtml#Figure-2_002e16) |
 | [2.17](#2_002e3.xhtml#Figure-2_002e17) | [2.18](#2_002e3.xhtml#Figure-2_002e18) | [2.19](#2_002e4.xhtml#Figure-2_002e19) | [2.20](#2_002e4.xhtml#Figure-2_002e20) | [2.21](#2_002e4.xhtml#Figure-2_002e21) | [2.22](#2_002e4.xhtml#Figure-2_002e22) | [2.23](#2_002e5.xhtml#Figure-2_002e23) | [2.24](#2_002e5.xhtml#Figure-2_002e24) |
@@ -39979,7 +39704,7 @@ Next: [Term Index](#Term-Index.xhtml#Term-Index), Prev:
 ##### Chapter 3
 
 |                                        |                                        |                                        |                                        |                                        |                                        |                                        |                                        |
-|----------------------------------------|----------------------------------------|----------------------------------------|----------------------------------------|----------------------------------------|----------------------------------------|----------------------------------------|----------------------------------------|
+| -------------------------------------- | -------------------------------------- | -------------------------------------- | -------------------------------------- | -------------------------------------- | -------------------------------------- | -------------------------------------- | -------------------------------------- |
 | [3.1](#3_002e2.xhtml#Figure-3_002e1)   | [3.2](#3_002e2.xhtml#Figure-3_002e2)   | [3.3](#3_002e2.xhtml#Figure-3_002e3)   | [3.4](#3_002e2.xhtml#Figure-3_002e4)   | [3.5](#3_002e2.xhtml#Figure-3_002e5)   | [3.6](#3_002e2.xhtml#Figure-3_002e6)   | [3.7](#3_002e2.xhtml#Figure-3_002e7)   | [3.8](#3_002e2.xhtml#Figure-3_002e8)   |
 | [3.9](#3_002e2.xhtml#Figure-3_002e9)   | [3.10](#3_002e2.xhtml#Figure-3_002e10) | [3.11](#3_002e2.xhtml#Figure-3_002e11) | [3.12](#3_002e3.xhtml#Figure-3_002e12) | [3.13](#3_002e3.xhtml#Figure-3_002e13) | [3.14](#3_002e3.xhtml#Figure-3_002e14) | [3.15](#3_002e3.xhtml#Figure-3_002e15) | [3.16](#3_002e3.xhtml#Figure-3_002e16) |
 | [3.17](#3_002e3.xhtml#Figure-3_002e17) | [3.18](#3_002e3.xhtml#Figure-3_002e18) | [3.19](#3_002e3.xhtml#Figure-3_002e19) | [3.20](#3_002e3.xhtml#Figure-3_002e20) | [3.21](#3_002e3.xhtml#Figure-3_002e21) | [3.22](#3_002e3.xhtml#Figure-3_002e22) | [3.23](#3_002e3.xhtml#Figure-3_002e23) | [3.24](#3_002e3.xhtml#Figure-3_002e24) |
@@ -39989,31 +39714,20 @@ Next: [Term Index](#Term-Index.xhtml#Term-Index), Prev:
 ##### Chapter 4
 
 |                                      |                                      |                                      |                                      |                                      |                                      |     |
-|--------------------------------------|--------------------------------------|--------------------------------------|--------------------------------------|--------------------------------------|--------------------------------------|-----|
+| ------------------------------------ | ------------------------------------ | ------------------------------------ | ------------------------------------ | ------------------------------------ | ------------------------------------ | --- |
 | [4.1](#4_002e1.xhtml#Figure-4_002e1) | [4.2](#4_002e1.xhtml#Figure-4_002e2) | [4.3](#4_002e1.xhtml#Figure-4_002e3) | [4.4](#4_002e4.xhtml#Figure-4_002e4) | [4.5](#4_002e4.xhtml#Figure-4_002e5) | [4.6](#4_002e4.xhtml#Figure-4_002e6) |     |
 
 ##### Chapter 5
 
 |                                        |                                        |                                        |                                        |                                        |                                        |                                        |                                        |
-|----------------------------------------|----------------------------------------|----------------------------------------|----------------------------------------|----------------------------------------|----------------------------------------|----------------------------------------|----------------------------------------|
+| -------------------------------------- | -------------------------------------- | -------------------------------------- | -------------------------------------- | -------------------------------------- | -------------------------------------- | -------------------------------------- | -------------------------------------- |
 | [5.1](#5_002e1.xhtml#Figure-5_002e1)   | [5.2](#5_002e1.xhtml#Figure-5_002e2)   | [5.3](#5_002e1.xhtml#Figure-5_002e3)   | [5.4](#5_002e1.xhtml#Figure-5_002e4)   | [5.5](#5_002e1.xhtml#Figure-5_002e5)   | [5.6](#5_002e1.xhtml#Figure-5_002e6)   | [5.7](#5_002e1.xhtml#Figure-5_002e7)   | [5.8](#5_002e1.xhtml#Figure-5_002e8)   |
 | [5.9](#5_002e1.xhtml#Figure-5_002e9)   | [5.10](#5_002e1.xhtml#Figure-5_002e10) | [5.11](#5_002e1.xhtml#Figure-5_002e11) | [5.12](#5_002e1.xhtml#Figure-5_002e12) | [5.13](#5_002e2.xhtml#Figure-5_002e13) | [5.14](#5_002e3.xhtml#Figure-5_002e14) | [5.15](#5_002e3.xhtml#Figure-5_002e15) | [5.16](#5_002e4.xhtml#Figure-5_002e16) |
 | [5.17](#5_002e5.xhtml#Figure-5_002e17) | [5.18](#5_002e5.xhtml#Figure-5_002e18) |                                        |                                        |                                        |                                        |                                        |                                        |
 
-Next: [Term Index](#Term-Index.xhtml#Term-Index), Prev:
-[Exercises](#Exercises.xhtml#Exercises), Up: [Top](#index.xhtml#Top)  
-\[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
-
 </div>
 
-[⇣](#Figures.xhtml#pagebottom)
-
 <div className="section">
-
-[⇡](#Term-Index.xhtml#pagetop)
-Next: [Colophon](#Colophon.xhtml#Colophon), Prev:
-[Figures](#Figures.xhtml#Figures), Up: [Top](#index.xhtml#Top)  
-\[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
 
 ## Term Index
 
@@ -40024,11 +39738,11 @@ Next: [Colophon](#Colophon.xhtml#Colophon), Prev:
 > (Volume 1 of The Art of Computer Programming)
 
 |            |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-|------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Jump to:   | [**A**](#Term-Index.xhtml#Term-Index_cp_letter-A)   [**B**](#Term-Index.xhtml#Term-Index_cp_letter-B)   [**C**](#Term-Index.xhtml#Term-Index_cp_letter-C)   [**D**](#Term-Index.xhtml#Term-Index_cp_letter-D)   [**E**](#Term-Index.xhtml#Term-Index_cp_letter-E)   [**F**](#Term-Index.xhtml#Term-Index_cp_letter-F)   [**G**](#Term-Index.xhtml#Term-Index_cp_letter-G)   [**H**](#Term-Index.xhtml#Term-Index_cp_letter-H)   [**I**](#Term-Index.xhtml#Term-Index_cp_letter-I)   [**K**](#Term-Index.xhtml#Term-Index_cp_letter-K)   [**L**](#Term-Index.xhtml#Term-Index_cp_letter-L)   [**M**](#Term-Index.xhtml#Term-Index_cp_letter-M)   [**N**](#Term-Index.xhtml#Term-Index_cp_letter-N)   [**O**](#Term-Index.xhtml#Term-Index_cp_letter-O)   [**P**](#Term-Index.xhtml#Term-Index_cp_letter-P)   [**Q**](#Term-Index.xhtml#Term-Index_cp_letter-Q)   [**R**](#Term-Index.xhtml#Term-Index_cp_letter-R)   [**S**](#Term-Index.xhtml#Term-Index_cp_letter-S)   [**T**](#Term-Index.xhtml#Term-Index_cp_letter-T)   [**U**](#Term-Index.xhtml#Term-Index_cp_letter-U)   [**V**](#Term-Index.xhtml#Term-Index_cp_letter-V)   [**W**](#Term-Index.xhtml#Term-Index_cp_letter-W)   [**Z**](#Term-Index.xhtml#Term-Index_cp_letter-Z)   |
 
 |     |                                                                                                |     |                                                  |
-|-----|:-----------------------------------------------------------------------------------------------|-----|:-------------------------------------------------|
+| --- | :--------------------------------------------------------------------------------------------- | --- | :----------------------------------------------- |
 |     | Index Entry                                                                                    |     | Section                                          |
 |     |                                                                                                |     |                                                  |
 | A   |                                                                                                |     |                                                  |
@@ -40249,7 +39963,7 @@ Next: [Colophon](#Colophon.xhtml#Colophon), Prev:
 |     | [iterative process](#1_002e2.xhtml#index-iterative-process):                                   |     | [1.2.1](#1_002e2.xhtml#g_t1_002e2_002e1)         |
 |     |                                                                                                |     |                                                  |
 | K   |                                                                                                |     |                                                  |
-|     | [*k*-term](#1_002e3.xhtml#index-k_002dterm):                                                   |     | [1.3.3](#1_002e3.xhtml#g_t1_002e3_002e3)         |
+|     | [_k_-term](#1_002e3.xhtml#index-k_002dterm):                                                   |     | [1.3.3](#1_002e3.xhtml#g_t1_002e3_002e3)         |
 |     | [key](#2_002e3.xhtml#index-key):                                                               |     | [2.3.3](#2_002e3.xhtml#g_t2_002e3_002e3)         |
 |     |                                                                                                |     |                                                  |
 | L   |                                                                                                |     |                                                  |
@@ -40303,7 +40017,7 @@ Next: [Colophon](#Colophon.xhtml#Colophon), Prev:
 |     | [mutual exclusion](#3_002e4.xhtml#index-mutual-exclusion):                                     |     | [3.4.2](#3_002e4.xhtml#g_t3_002e4_002e2)         |
 |     |                                                                                                |     |                                                  |
 | N   |                                                                                                |     |                                                  |
-|     | [*n*-fold smoothed function](#1_002e3.xhtml#index-n_002dfold-smoothed-function):               |     | [1.3.4](#1_002e3.xhtml#g_t1_002e3_002e4)         |
+|     | [_n_-fold smoothed function](#1_002e3.xhtml#index-n_002dfold-smoothed-function):               |     | [1.3.4](#1_002e3.xhtml#g_t1_002e3_002e4)         |
 |     | [native language](#5_002e5.xhtml#index-native-language):                                       |     | [5.5](#5_002e5.xhtml#g_t5_002e5)                 |
 |     | [needed](#5_002e5.xhtml#index-needed):                                                         |     | [5.5.1](#5_002e5.xhtml#g_t5_002e5_002e1)         |
 |     | [networks](#Chapter-4.xhtml#index-networks):                                                   |     | [Chapter 4](#Chapter-4.xhtml#Chapter-4)          |
@@ -40502,20 +40216,13 @@ Next: [Colophon](#Colophon.xhtml#Colophon), Prev:
 |     |                                                                                                |     |                                                  |
 
 |            |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-|------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Jump to:   | [**A**](#Term-Index.xhtml#Term-Index_cp_letter-A)   [**B**](#Term-Index.xhtml#Term-Index_cp_letter-B)   [**C**](#Term-Index.xhtml#Term-Index_cp_letter-C)   [**D**](#Term-Index.xhtml#Term-Index_cp_letter-D)   [**E**](#Term-Index.xhtml#Term-Index_cp_letter-E)   [**F**](#Term-Index.xhtml#Term-Index_cp_letter-F)   [**G**](#Term-Index.xhtml#Term-Index_cp_letter-G)   [**H**](#Term-Index.xhtml#Term-Index_cp_letter-H)   [**I**](#Term-Index.xhtml#Term-Index_cp_letter-I)   [**K**](#Term-Index.xhtml#Term-Index_cp_letter-K)   [**L**](#Term-Index.xhtml#Term-Index_cp_letter-L)   [**M**](#Term-Index.xhtml#Term-Index_cp_letter-M)   [**N**](#Term-Index.xhtml#Term-Index_cp_letter-N)   [**O**](#Term-Index.xhtml#Term-Index_cp_letter-O)   [**P**](#Term-Index.xhtml#Term-Index_cp_letter-P)   [**Q**](#Term-Index.xhtml#Term-Index_cp_letter-Q)   [**R**](#Term-Index.xhtml#Term-Index_cp_letter-R)   [**S**](#Term-Index.xhtml#Term-Index_cp_letter-S)   [**T**](#Term-Index.xhtml#Term-Index_cp_letter-T)   [**U**](#Term-Index.xhtml#Term-Index_cp_letter-U)   [**V**](#Term-Index.xhtml#Term-Index_cp_letter-V)   [**W**](#Term-Index.xhtml#Term-Index_cp_letter-W)   [**Z**](#Term-Index.xhtml#Term-Index_cp_letter-Z)   |
-
-Next: [Colophon](#Colophon.xhtml#Colophon), Prev:
-[Figures](#Figures.xhtml#Figures), Up: [Top](#index.xhtml#Top)  
-\[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
 
 </div>
 
-[⇣](#Term-Index.xhtml#pagebottom)
-
 <div className="section">
 
-[⇡](#Colophon.xhtml#pagetop)
 Prev: [Term Index](#Term-Index.xhtml#Term-Index), Up:
 [Top](#index.xhtml#Top)  
 \[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
@@ -40542,5 +40249,3 @@ Prev: [Term Index](#Term-Index.xhtml#Term-Index), Up:
 \[[Contents](#index.xhtml#SEC_Contents "Table of contents")\]
 
 </div>
-
-[⇣](#Colophon.xhtml#pagebottom)
