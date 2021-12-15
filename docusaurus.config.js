@@ -4,6 +4,7 @@
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const remarkGfm = require("remark-gfm");
+const remarkFootnote = require("remark-numbered-footnote-labels");
 const math = require("remark-math");
 const katex = require("rehype-katex");
 
@@ -24,7 +25,7 @@ const config = {
       ({
         docs: {
           routeBasePath: "/",
-          remarkPlugins: [remarkGfm, math],
+          remarkPlugins: [remarkGfm, remarkFootnote, math],
           rehypePlugins: [katex],
           sidebarPath: require.resolve("./sidebars.js"),
         },

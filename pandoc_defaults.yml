@@ -1,4 +1,4 @@
-to: gfm-raw_html
+to: gfm-raw_html+footnotes
 
 filters:
 - luaFilters/meta.lua
