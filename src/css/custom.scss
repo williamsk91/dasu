@@ -27,24 +27,3 @@
 html[data-theme="dark"] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
 }
-
-.navbar {
-  border: 1px solid lightgrey;
-  border-top: none;
-  border-radius: 0 0 24px 24px;
-  margin: 0 36px;
-  padding: 12px;
-  box-shadow: none;
-}
-
-aside {
-  border: none;
-}
-
-nav.menu {
-  border: none;
-}
-
-.table-of-contents {
-  display: none;
-}
