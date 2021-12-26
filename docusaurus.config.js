@@ -42,6 +42,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
+        hideOnScroll: true,
         items: [
           {
             type: "doc",
@@ -51,6 +52,8 @@ const config = {
           },
         ],
       },
+
+      hideableSidebar: true,
 
       colorMode: {
         switchConfig: {
