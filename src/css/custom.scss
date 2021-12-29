@@ -6,24 +6,15 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #111;
-  --ifm-color-primary-dark: rgb(33, 175, 144);
-  --ifm-color-primary-darker: rgb(31, 165, 136);
-  --ifm-color-primary-darkest: rgb(26, 136, 112);
-  --ifm-color-primary-light: rgb(70, 203, 174);
-  --ifm-color-primary-lighter: rgb(102, 212, 189);
-  --ifm-color-primary-lightest: rgb(146, 224, 208);
+  // https://ant.design/docs/spec/colors Dust Red red-5
+  --ifm-color-primary: #ff4d4f;
+  --ifm-color-primary-dark: #cf1322;
+  --ifm-color-primary-darker: #a8071a;
+  --ifm-color-primary-darkest: #820014;
+  --ifm-color-primary-light: #ff7875;
+  --ifm-color-primary-lighter: #ffa39e;
+  --ifm-color-primary-lightest: #ffccc7;
   --ifm-code-font-size: 95%;
-  --ifm-menu-color-background-active: white;
-}
-
-body {
-  background: #fffff8;
-}
-
-.navbar,
-.navbar-sidebar {
-  background: #fffff8;
 }
 
 @media (min-width: 997px) {
