@@ -10,7 +10,7 @@ const katex = require("rehype-katex");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "SICP",
+  title: "DEMO: SICP Chapter 1",
   // tagline: "Dinosaurs are cool",
   url: "https://your-docusaurus-test-site.com",
   baseUrl: "/",
@@ -24,7 +24,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          routeBasePath: "/",
+          routeBasePath: "/demo/sicp",
           remarkPlugins: [remarkGfm, remarkFootnote, math],
           rehypePlugins: [katex],
           sidebarPath: require.resolve("./sidebars.js"),
@@ -46,9 +46,9 @@ const config = {
         items: [
           {
             type: "doc",
-            docId: "direct",
+            docId: "1 Building Abstraction with Procedures/index",
             position: "left",
-            label: "SICP",
+            label: "DEMO: SICP Chapter 1",
           },
         ],
       },
@@ -85,7 +85,7 @@ const config = {
       {
         // `hashed` is recommended as long-term-cache of index file is possible.
         hashed: true,
-        docsRouteBasePath: "/",
+        docsRouteBasePath: "/demo/sicp",
       },
     ],
   ],
