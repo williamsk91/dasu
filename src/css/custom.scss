@@ -37,3 +37,12 @@
 html[data-theme="dark"] .docusaurus-highlight-code-line {
   background: #1c1f2b;
 }
+
+// hide toc
+.col.col--3 {
+  display: none;
+}
+
+.theme-doc-toc-mobile {
+  display: none;
+}
