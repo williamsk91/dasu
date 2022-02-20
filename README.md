@@ -2,6 +2,9 @@
 
 Book conversion is done using [Pandoc](https://pandoc.org/) with Lua filters. We aim to convert any popular book writing formats (e.g. EPUB) into Markdown. This Markdown files is then used to generate a static book website.
 
+Landing page: https://dasu.vercel.app/demo/sicp/1%20Building%20Abstraction%20with%20Procedures/1.1%20The%20Elements%20of%20Programming/1.1.1%20Expressions
+Related repo: https://github.com/williamsk91/dasu-web
+
 # Book Website
 
 Built using [Docusaurus 2](https://docusaurus.io/)
